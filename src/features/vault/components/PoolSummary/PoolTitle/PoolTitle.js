@@ -72,9 +72,10 @@ const PoolTitle = ({
       <div className={classes.texts}>
         <Typography className={classes.title} variant="body2" gutterBottom>
           {poolId ? (
-            <a href={`/vault/${poolId}`} className={classes.url}>
-              {name}
-            </a>
+            <a className={classes.url}> {name} </a>
+            // <a href={`/vault/${poolId}`} className={classes.url}>
+            //   {name}
+            // </a>
           ) : (
             name
           )}

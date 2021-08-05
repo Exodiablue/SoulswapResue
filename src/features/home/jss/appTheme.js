@@ -46,11 +46,6 @@ const createTheme = (isNightMode) => createMuiTheme({
         },
       },
     },
-    MuiInputBase : {
-      input : {
-        width: '1', //fix text wrapping on zap
-      },
-    },
     MuiSelect : {
       icon : {
         color:"white"
