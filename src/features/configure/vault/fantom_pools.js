@@ -8058,7 +8058,7 @@ const vaultTokens = pools
   .map(v => {
     return {
       id: v.id,
-      name: `${v.name.replace('LP', '')} Vault`,
+      name: `${v.name.replace('LP', '')} Vault (${v.platform})`,
       address: v.earnContractAddress,
       symbol: v.earnedToken,
       decimals: v.tokenDecimals,
