@@ -13,6 +13,7 @@ const styles = theme => ({
     display: 'flex',
     alignItems: 'center',
     background: theme.palette.background.retired,
+    borderRadius: '20px',
   },
   mobilePadding: {
     paddingTop: '20px',
