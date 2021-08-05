@@ -9,6 +9,7 @@ const SUSHI_ROUTER = '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506';
 const BOMB_ROUTER = '0xb9799De71100e20aC1cdbCc63C69ddA2D0D81710';
 const SHIBA_ROUTER = '0xB6f7b3d8CD9dBf30805C0dd79809dace5603Ce6A';
 const OPERA_ROUTER = '0xE372753F66644A1197AB85Ff529ed02995ED2d6C';
+const ZOO_ROUTER = '0x40b12a3E261416fF0035586ff96e23c2894560f2';
 
 
 const zapTokens = [
@@ -205,13 +206,11 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -249,8 +248,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 }, 
@@ -281,13 +278,11 @@ const pools = [
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -324,8 +319,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -361,8 +354,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -466,13 +457,11 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -504,13 +493,11 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -542,13 +529,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -580,13 +565,11 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xdbf31df14b66535af65aac99c32e9ea844e14501',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -622,8 +605,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -661,8 +642,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -698,8 +677,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -737,8 +714,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -774,8 +749,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -813,8 +786,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -849,8 +820,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -887,8 +856,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -923,8 +890,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -962,8 +927,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -999,8 +962,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1038,8 +999,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -1075,8 +1034,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1114,8 +1071,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -1150,8 +1105,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1188,8 +1141,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -1225,8 +1176,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -1261,8 +1210,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1300,8 +1247,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -1336,8 +1281,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1374,8 +1317,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -1411,8 +1352,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -1447,8 +1386,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1486,8 +1423,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -1523,8 +1458,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1562,8 +1495,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -1599,8 +1530,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1638,8 +1567,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -1675,8 +1602,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1714,8 +1639,6 @@ const pools = [
      
       ...zapTokens,
 
-
-
     ],
   },
 },
@@ -1745,13 +1668,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1783,13 +1704,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x841fad6eae12c286d1fd18d1d525dffa75c7effe',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1822,13 +1741,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x82f0b8b456c1a451378467398982d4834b6829c1',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1861,13 +1778,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xb3654dc3d10ea7645f8319668e8f54d2574fbdc8',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1899,13 +1814,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xddcb3ffd12750b45d32e084887fdf1aabab34239',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1937,13 +1850,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -1974,13 +1885,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2012,13 +1921,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xd0660cd418a64a1d44e9214ad8e459324d8157f1',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2049,13 +1956,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x46E7628E8b4350b2716ab470eE0bA1fa9e76c6C5',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2086,13 +1991,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2123,13 +2026,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x1E4F97b9f9F913c46F1632781732927B9019C68b',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2161,13 +2062,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x753fbc5800a8C8e3Fb6DC6415810d627A387Dfc9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2198,13 +2097,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xf16e81dce15b08f326220742020379b855b87df9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2235,13 +2132,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x049d68029688eabf473097a2fc38ef61633a3c7a',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2272,13 +2167,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x04068da6c83afcfa0e13ba15a6696662335d5b75',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2309,13 +2202,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2346,13 +2237,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2383,13 +2272,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2421,13 +2308,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2459,13 +2344,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2497,13 +2380,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xd6070ae98b8069de6b494332d1a1a81b6179d960',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2535,13 +2416,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x627524d78B4fC840C887ffeC90563c7A42b671fD',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2573,13 +2452,11 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2612,13 +2489,11 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xbc2451aad349b6b43fd05f4f0cc327f8a6bca2d4',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -2650,7 +2525,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -2688,7 +2563,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x04068da6c83afcfa0e13ba15a6696662335d5b75',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -2726,7 +2601,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -2764,7 +2639,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -2803,7 +2678,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -2841,7 +2716,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -2879,7 +2754,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -2917,7 +2792,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -2955,7 +2830,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -2993,7 +2868,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xb3654dc3d10ea7645f8319668e8f54d2574fbdc8',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3031,7 +2906,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3069,7 +2944,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3106,7 +2981,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3143,7 +3018,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3181,7 +3056,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x735abe48e8782948a37c7765ecb76b98cde97b0f',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3220,7 +3095,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3258,7 +3133,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3296,7 +3171,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xdbf31df14b66535af65aac99c32e9ea844e14501',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3334,7 +3209,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3372,7 +3247,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x31a0d1a199631d244761eeba67e8501296d2e383',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3410,7 +3285,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3448,7 +3323,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xc3fEd6eB39178A541D274e6Fc748d48f0Ca01CC3',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3486,7 +3361,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3524,7 +3399,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xf16e81dce15b08f326220742020379b855b87df9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3562,7 +3437,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x09e145a1d53c0045f41aeef25d8ff982ae74dd56',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3600,7 +3475,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x1E4F97b9f9F913c46F1632781732927B9019C68b',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3638,7 +3513,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -3676,7 +3551,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -3714,7 +3589,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -3752,7 +3627,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -3790,7 +3665,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -3828,7 +3703,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -3865,7 +3740,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -3902,7 +3777,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -3939,7 +3814,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -3976,7 +3851,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -4013,7 +3888,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -4050,7 +3925,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -4087,7 +3962,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -4124,7 +3999,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -4161,7 +4036,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -4198,7 +4073,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -4235,7 +4110,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -4273,7 +4148,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -4311,7 +4186,7 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
@@ -4349,13 +4224,11 @@ const pools = [
   buyTokenUrl: 'https://waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: WAKA_ROUTER,
 
     tokens: [
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -4389,7 +4262,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x9ba3e4f84a34df4e08c112e1a0ff148b81655615',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4427,7 +4300,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x004B122eb5632077abdD2C38e8d9392348d5cA15',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4465,7 +4338,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x004B122eb5632077abdD2C38e8d9392348d5cA15',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4503,7 +4376,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4541,7 +4414,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4579,7 +4452,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4617,7 +4490,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4655,7 +4528,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4693,7 +4566,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4731,7 +4604,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4769,7 +4642,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4807,7 +4680,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4845,7 +4718,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4883,7 +4756,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4921,7 +4794,7 @@ const pools = [
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SHIBA_ROUTER,
 
     tokens: [
      
@@ -4959,7 +4832,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -5042,7 +4915,6 @@ const pools = [
       ...zapTokens,
 
 
-
     ],
   },
 },
@@ -5108,7 +4980,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xAe0C241Ec740309c2cbdc27456eB3C1a2aD74737',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -5146,7 +5018,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -5184,7 +5056,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -5222,7 +5094,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -5260,7 +5132,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -5298,7 +5170,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -5336,7 +5208,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -5374,7 +5246,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0xf16e81dce15B08F326220742020379B855B87DF9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5412,7 +5284,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -5450,7 +5322,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -5488,7 +5360,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5526,7 +5398,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5565,7 +5437,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5604,7 +5476,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5643,7 +5515,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5682,7 +5554,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5721,7 +5593,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5760,7 +5632,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5799,7 +5671,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5838,7 +5710,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5877,7 +5749,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5916,7 +5788,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5955,7 +5827,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -5994,7 +5866,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -6033,7 +5905,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -6072,7 +5944,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x09e145a1d53c0045f41aeef25d8ff982ae74dd56',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -6111,7 +5983,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -6150,7 +6022,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -6188,7 +6060,7 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0xA92d41Ab8eFeE617d80a829CD9F5683c5F793ADA',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SUSHI_ROUTER,
 
     tokens: [
      
@@ -6226,7 +6098,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -6264,7 +6136,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -6302,7 +6174,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6340,7 +6212,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6378,7 +6250,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6416,7 +6288,7 @@ const pools = [
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6455,7 +6327,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6493,7 +6365,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6531,7 +6403,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6569,7 +6441,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6607,7 +6479,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6645,7 +6517,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xC8Da1a26ABEF9e2E41B4C89c1b345Cc05ce034e8',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6683,7 +6555,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6721,7 +6593,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x9ba3e4f84a34df4e08c112e1a0ff148b81655615',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6760,7 +6632,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xb2da66c4a89d0f93935d1efdb9c9c8d1d3ba9343',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: PAINT_ROUTER,
 
     tokens: [
      
@@ -6798,7 +6670,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb&inputCurrency=FTM',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -6836,7 +6708,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb&inputCurrency=FTM',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -6874,7 +6746,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb&inputCurrency=FTM',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -6912,7 +6784,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -6950,7 +6822,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xCF7e516E2dd67C3B0Bd52266DA41F403A0F19A07',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -6988,7 +6860,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7026,7 +6898,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xCF7e516E2dd67C3B0Bd52266DA41F403A0F19A07',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7064,7 +6936,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7102,7 +6974,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7140,7 +7012,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56&inputCurrency=FTM',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7178,7 +7050,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56&inputCurrency=FTM',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7216,7 +7088,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x3853f3839ca1655acc8c433eef8c086f9895d0bf',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -7254,7 +7126,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x3853f3839ca1655acc8c433eef8c086f9895d0bf',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -7292,7 +7164,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x3853f3839ca1655acc8c433eef8c086f9895d0bf',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -7330,7 +7202,7 @@ const pools = [
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xb207a6623764e149ee5cd681dc95f71620a0abd5',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: HYPER_ROUTER,
 
     tokens: [
      
@@ -7368,7 +7240,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7406,7 +7278,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7444,7 +7316,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7482,7 +7354,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7520,7 +7392,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7558,7 +7430,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7596,7 +7468,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7634,7 +7506,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7672,7 +7544,7 @@ const pools = [
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: ZOO_ROUTER,
 
     tokens: [
      
@@ -7710,7 +7582,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x471762a7017a5b1a3e931f1a97aa03ef1e7f4a73',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -7748,7 +7620,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.operaswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: OPERA_ROUTER,
 
     tokens: [
      
@@ -7786,7 +7658,7 @@ const pools = [
   buyTokenUrl: 'https://exchange.operaswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: OPERA_ROUTER,
 
     tokens: [
      
@@ -7824,7 +7696,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -7862,7 +7734,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -7900,7 +7772,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -7938,7 +7810,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -7976,7 +7848,7 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
      
@@ -8014,7 +7886,7 @@ const pools = [
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: BOMB_ROUTER,
 
     tokens: [
      
@@ -8052,7 +7924,7 @@ const pools = [
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: BOMB_ROUTER,
 
     tokens: [
      
@@ -8090,7 +7962,7 @@ const pools = [
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: BOMB_ROUTER,
 
     tokens: [
      
@@ -8128,7 +8000,7 @@ const pools = [
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: BOMB_ROUTER,
 
     tokens: [
      
@@ -8166,7 +8038,7 @@ const pools = [
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: BOMB_ROUTER,
 
     tokens: [
      
