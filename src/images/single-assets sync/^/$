@@ -1,0 +1,123 @@
+var map = {
+	"./AAVE.png": 304,
+	"./AAVE.svg": 536,
+	"./ADA.svg": 537,
+	"./ANY.png": 305,
+	"./ATOM.png": 306,
+	"./AVAX.png": 307,
+	"./BAKE.png": 308,
+	"./BANANA.svg": 538,
+	"./BCH.svg": 539,
+	"./BDO.png": 309,
+	"./BETH.png": 310,
+	"./BHC.png": 311,
+	"./BIFI.png": 312,
+	"./BNB.png": 313,
+	"./BORING.png": 314,
+	"./BTCB.svg": 540,
+	"./BTD.png": 315,
+	"./BTS.png": 316,
+	"./BUNNY.png": 317,
+	"./BURGER.png": 318,
+	"./BUSD.png": 319,
+	"./BUSD.svg": 541,
+	"./CAKE.png": 320,
+	"./CTK.png": 321,
+	"./DAI.svg": 542,
+	"./DG.png": 322,
+	"./DOT.png": 323,
+	"./DRUGS.png": 324,
+	"./ETH.png": 325,
+	"./ETH.svg": 543,
+	"./FFF.png": 326,
+	"./FIL.svg": 544,
+	"./FISH.svg": 545,
+	"./FTM.png": 327,
+	"./HAI.png": 328,
+	"./HARD.png": 329,
+	"./HBTC.png": 330,
+	"./HPS.png": 331,
+	"./HT.png": 332,
+	"./HTB.svg": 546,
+	"./HUSD.png": 333,
+	"./ICA.svg": 547,
+	"./INCH.png": 334,
+	"./INJ.png": 335,
+	"./JETS.png": 336,
+	"./JULD.png": 337,
+	"./KEBAB.png": 338,
+	"./LINK.png": 339,
+	"./LTC.svg": 548,
+	"./MARSH.png": 340,
+	"./MATIC.png": 341,
+	"./MATIC.svg": 549,
+	"./MDX.png": 342,
+	"./MERL.svg": 550,
+	"./MSC.png": 343,
+	"./MSS.png": 344,
+	"./NUTS.png": 345,
+	"./NYA.png": 346,
+	"./NYAC.png": 347,
+	"./NYAS.png": 348,
+	"./O3.png": 349,
+	"./PBNB.png": 350,
+	"./PMP.svg": 551,
+	"./POLYGON.png": 351,
+	"./PolyDoge.png": 352,
+	"./QUICK.png": 353,
+	"./SBDO.png": 354,
+	"./SFP.png": 355,
+	"./SMART.png": 356,
+	"./SNX.png": 357,
+	"./SOAK.png": 358,
+	"./SPIRIT.png": 359,
+	"./STEEL.png": 360,
+	"./SUSHI.png": 361,
+	"./SWAMP.svg": 552,
+	"./SXP.svg": 553,
+	"./TENFI.png": 362,
+	"./TYPH.png": 363,
+	"./UNI.png": 364,
+	"./USDC.png": 365,
+	"./USDC.svg": 554,
+	"./USDT.png": 366,
+	"./USDT.svg": 555,
+	"./WBNB.svg": 556,
+	"./WBTC.png": 367,
+	"./WOO.svg": 557,
+	"./WOOFY.png": 368,
+	"./XRP.svg": 558,
+	"./XTZ.png": 369,
+	"./XVS.png": 370,
+	"./YELD.png": 371,
+	"./YFI.png": 372,
+	"./ZBTC.svg": 559,
+	"./ZETH.svg": 560,
+	"./cakeHARD.png": 373,
+	"./cakeROOBEE.png": 374,
+	"./cakeSTAX.png": 375,
+	"./cakeTWT.png": 376,
+	"./cakebROOBEE.png": 377,
+	"./fUSDT.png": 378,
+	"./sALPACA.svg": 561
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 1100;
