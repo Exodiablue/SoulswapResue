@@ -1,4 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles';
+import { NoEncryption } from '@material-ui/icons';
 import { normalizeUnits } from 'moment';
 
 const createTheme = (isNightMode) => createMuiTheme({
@@ -43,6 +44,11 @@ const createTheme = (isNightMode) => createMuiTheme({
         '&:before': {
           borderBottom: '2px solid #fff',
         },
+      },
+    },
+    MuiInputBase : {
+      input : {
+        width: '1', //fix text wrapping on zap
       },
     },
     MuiSelect : {

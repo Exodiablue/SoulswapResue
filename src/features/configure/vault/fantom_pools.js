@@ -4904,7 +4904,6 @@ const pools = [
   platform: 'Casper DeFi',
   assets: ['WFTM'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4941,7 +4940,6 @@ const pools = [
   platform: 'Casper DeFi',
   assets: ['USDC'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
