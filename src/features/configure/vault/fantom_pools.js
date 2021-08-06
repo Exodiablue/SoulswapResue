@@ -342,49 +342,6 @@ const pools = [
 }, 
 
 {
-  id: 'chad-chad-grim',
-  logo: 'fantom/CHAD-GRIM.png',
-  name: 'CHAD-GRIM LP',
-  token: 'CHAD-GRIM LP (PaintSwap)',
-  tokenDescription: 'Chad Finance',
-  tokenAddress: '0x6680B936216e770605E43E7214e5838E2803f514',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-CHA-GRI-5',
-  earnedTokenAddress: '0x406B349af1187dA303894b933B3a781c67851fa1',
-  earnContractAddress: '0x406B349af1187dA303894b933B3a781c67851fa1',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'chad-chad-grim',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'Chad',
-  assets: ['CHAD', 'GRIM'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
-  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x7eC94C4327dC757601B4273cD67014d7760Be97E',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: PAINT_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-
-    ],
-  },
-},
-
-{
   id: 'reaper',
   logo: 'fantom/REAPER.png',
   name: 'REAPER',
@@ -547,114 +504,6 @@ const pools = [
         chainId: 250,
         logoURI: '',
       },
-     
-      ...zapTokens,
-
-    ],
-  },
-},
-
-{
-  id: 'butt-butt-reaper',
-  logo: 'fantom/BUTT-REAPER.png',
-  name: 'BUTT-REAPER LP',
-  token: 'BUTT-REAPER LP (Zoo)',
-  tokenDescription: 'Buttcoin',
-  tokenAddress: '0x3309AD0e5Eb8DF992F7D153AFb48866B0e5cC829',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-BUT-REA-E',
-  earnedTokenAddress: '0xbEd160F93757C623C4CFC9B7A80b14e120a13173',
-  earnContractAddress: '0xbEd160F93757C623C4CFC9B7A80b14e120a13173',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'butt-butt-reaper',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'Buttcoin',
-  assets: ['BUTT', 'REAPER'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0&outputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: ZOO_ROUTER,
-
-    tokens: [
-     
-      ...zapTokensReduced,
-
-    ],
-  },
-},
-
-{
-  id: 'butt-shit-reaper',
-  logo: 'fantom/SHIT-REAPER.png',
-  name: 'SHIT-REAPER LP',
-  token: 'SHIT-REAPER LP (Zoo)',
-  tokenDescription: 'Buttcoin',
-  tokenAddress: '0x5Fc97bB549b607F6A2f22AE9bdfd5aF06836378e',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-SHI-REA-E',
-  earnedTokenAddress: '0x4127d4d8c75E6E5345051dF337508787C31D9CDE',
-  earnContractAddress: '0x4127d4d8c75E6E5345051dF337508787C31D9CDE',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'butt-shit-reaper',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'Buttcoin',
-  assets: ['SHIT', 'REAPER'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B&outputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: ZOO_ROUTER,
-
-    tokens: [
-     
-      ...zapTokensReduced,
-
-    ],
-  },
-},
-
-{
-  id: 'behodl-behodl-reaper',
-  logo: 'fantom/beHODL-REAPER.png',
-  name: 'beHODL-REAPER LP',
-  token: 'beHODL-REAPER LP (SpookySwap)',
-  tokenDescription: 'beHODL',
-  tokenAddress: '0xe422335D1C766cE5c45987293DB555BB108b9A74',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-BEH-REA-F',
-  earnedTokenAddress: '0x5fee5EA92bf82d5b441fBD0b270F9D1C98cdC069',
-  earnContractAddress: '0x5fee5EA92bf82d5b441fBD0b270F9D1C98cdC069',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'behodl-behodl-reaper',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'beHODL',
-  assets: ['beHODL', 'REAPER'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://spookyswap.finance/add/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb/0x6b60d2b6bb9fe657ec0e5b7d44e557504e78af6a',
-  buyTokenUrl: 'https://spookyswap.finance/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
-
-    tokens: [
      
       ...zapTokens,
 
@@ -7330,6 +7179,49 @@ const pools = [
 },
 
 {
+  id: 'chad-chad-grim',
+  logo: 'fantom/CHAD-GRIM.png',
+  name: 'CHAD-GRIM LP',
+  token: 'CHAD-GRIM LP (PaintSwap)',
+  tokenDescription: 'Chad Finance',
+  tokenAddress: '0x6680B936216e770605E43E7214e5838E2803f514',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-CHA-GRI-5',
+  earnedTokenAddress: '0x406B349af1187dA303894b933B3a781c67851fa1',
+  earnContractAddress: '0x406B349af1187dA303894b933B3a781c67851fa1',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'chad-chad-grim',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Chad',
+  assets: ['CHAD', 'GRIM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
+  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: PAINT_ROUTER,
+
+    tokens: [
+
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
+    ],
+  },
+},
+
+{
   id: 'chad',
   logo: 'fantom/CHAD.png',
   name: 'CHAD',
@@ -8444,6 +8336,79 @@ const pools = [
   },
 },
 
+
+{
+  id: 'butt-butt-reaper',
+  logo: 'fantom/BUTT-REAPER.png',
+  name: 'BUTT-REAPER LP',
+  token: 'BUTT-REAPER LP (Zoo)',
+  tokenDescription: 'Buttcoin',
+  tokenAddress: '0x3309AD0e5Eb8DF992F7D153AFb48866B0e5cC829',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BUT-REA-E',
+  earnedTokenAddress: '0xbEd160F93757C623C4CFC9B7A80b14e120a13173',
+  earnContractAddress: '0xbEd160F93757C623C4CFC9B7A80b14e120a13173',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'butt-butt-reaper',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Buttcoin',
+  assets: ['BUTT', 'REAPER'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0&outputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: ZOO_ROUTER,
+
+    tokens: [
+     
+      ...zapTokensReduced,
+
+    ],
+  },
+},
+
+{
+  id: 'butt-shit-reaper',
+  logo: 'fantom/SHIT-REAPER.png',
+  name: 'SHIT-REAPER LP',
+  token: 'SHIT-REAPER LP (Zoo)',
+  tokenDescription: 'Buttcoin',
+  tokenAddress: '0x5Fc97bB549b607F6A2f22AE9bdfd5aF06836378e',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SHI-REA-E',
+  earnedTokenAddress: '0x4127d4d8c75E6E5345051dF337508787C31D9CDE',
+  earnContractAddress: '0x4127d4d8c75E6E5345051dF337508787C31D9CDE',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'butt-shit-reaper',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Buttcoin',
+  assets: ['SHIT', 'REAPER'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B&outputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: ZOO_ROUTER,
+
+    tokens: [
+     
+      ...zapTokensReduced,
+
+    ],
+  },
+},
+
 {
   id: 'butt',
   logo: 'fantom/BUTT.png',
@@ -8980,6 +8945,43 @@ const pools = [
         chainId: 250,
         logoURI: '',
       },     
+
+    ],
+  },
+},
+
+
+{
+  id: 'behodl-behodl-reaper',
+  logo: 'fantom/beHODL-REAPER.png',
+  name: 'beHODL-REAPER LP',
+  token: 'beHODL-REAPER LP (SpookySwap)',
+  tokenDescription: 'beHODL',
+  tokenAddress: '0xe422335D1C766cE5c45987293DB555BB108b9A74',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BEH-REA-F',
+  earnedTokenAddress: '0x5fee5EA92bf82d5b441fBD0b270F9D1C98cdC069',
+  earnContractAddress: '0x5fee5EA92bf82d5b441fBD0b270F9D1C98cdC069',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'behodl-behodl-reaper',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'eol',
+  platform: 'beHODL',
+  assets: ['beHODL', 'REAPER'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb/0x6b60d2b6bb9fe657ec0e5b7d44e557504e78af6a',
+  buyTokenUrl: 'https://spookyswap.finance/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+
+    tokens: [
+     
+      ...zapTokens,
 
     ],
   },
