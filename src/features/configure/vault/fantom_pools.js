@@ -5774,40 +5774,6 @@ const pools = [
 },
 
 {
-  id: 'casper-usdc',
-  logo: 'fantom/USDC.png',
-  name: 'USDC',
-  token: 'USDC',
-  tokenDescription: 'Casper DeFi',
-  tokenAddress: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  tokenDecimals: 6,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-USDC-J',
-  earnedTokenAddress: '0x4E6AF18f41E7e07f355618Fe6D7aeEa3dce34FA5',
-  earnContractAddress: '0x4E6AF18f41E7e07f355618Fe6D7aeEa3dce34FA5',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'tokens',
-  oracleId: 'casper-usdc',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Casper DeFi',
-  assets: ['USDC'],
-  callFee: 0.5,
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-     
-      ...zapTokens,
-    ],
-  },
-},
-
-{
   id: 'zoo-wild-ftm',
   logo: 'fantom/WILD-FTM.png',
   name: 'WILD-FTM LP',
@@ -7338,50 +7304,6 @@ const pools = [
         chainId: 250,
         logoURI: '',
       },
-
-    ],
-  },
-},
-
-{
-  id: 'chad-chad-casper',
-  logo: 'fantom/CHAD-CASPER.png',
-  name: 'CHAD-CASPER LP',
-  token: 'CHAD-CASPER LP (SpiritSwap)',
-  tokenDescription: 'Chad Finance',
-  tokenAddress: '0x4171DE2115DBCe3a9064a5d6D0255b274FDC0B25',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-CHA-CAS-5',
-  earnedTokenAddress: '0x47Fc26e031421B54E996308AC7D1FAc57c0CdDaF',
-  earnContractAddress: '0x47Fc26e031421B54E996308AC7D1FAc57c0CdDaF',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'chad-chad-casper',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Chad',
-  assets: ['CHAD', 'CASPER'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xCcE93540b80ABF71B66E0a44fd71E322cE9C4D9e/0xC30d1b0Ce932C3dd3373a2C23aDA4E9608CAf345',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: PAINT_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-
 
     ],
   },
