@@ -23,6 +23,7 @@ const zapTokens = [
     decimals: 18,
     chainId: 250,
     logoURI: 'https://ftmscan.com/token/images/WFTM_32.png',
+    isToken: true,
   },
   {
     name: 'Dai Stablecoin',
@@ -31,6 +32,7 @@ const zapTokens = [
     decimals: 18,
     chainId: 250,
     logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
+    isToken: true,
   },
   {
     name: 'USD Coin',
@@ -39,6 +41,7 @@ const zapTokens = [
     decimals: 6,
     chainId: 250,
     logoURI: 'https://ftmscan.com/token/images/USDC_32.png',
+    isToken: true,
   },
   {
     name: 'ChainLink',
@@ -47,6 +50,7 @@ const zapTokens = [
     decimals: 18,
     chainId: 250,
     logoURI: 'https://ftmscan.com/token/images/chainlink_32.png',
+    isToken: true,
   },
   {
     name: 'Fantom USD',
@@ -55,6 +59,7 @@ const zapTokens = [
     decimals: 18,
     chainId: 250,
     logoURI: 'https://ftmscan.com/token/images/fUSD_32.png',
+    isToken: true,
   },
   {
     name: 'Wrapped Bitcoin',
@@ -63,6 +68,7 @@ const zapTokens = [
     decimals: 8,
     chainId: 250,
     logoURI: 'https://ftmscan.com/token/images/wBTC_32.png',
+    isToken: true,
   },
   {
     name: 'Wrapped Ether',
@@ -71,6 +77,7 @@ const zapTokens = [
     decimals: 18,
     chainId: 250,
     logoURI: 'https://ftmscan.com/token/images/wETH_32.png',
+    isToken: true,
   },
   {
     name: 'yearn.finance',
@@ -79,6 +86,7 @@ const zapTokens = [
     decimals: 18,
     chainId: 250,
     logoURI: 'https://ftmscan.com/token/images/YFI_32.png',
+    isToken: true,
   },
   {
     name: 'Curve DAO',
@@ -87,6 +95,7 @@ const zapTokens = [
     decimals: 18,
     chainId: 250,
     logoURI: 'https://ftmscan.com/token/images/CurveFi_32.png',
+    isToken: true,
   },
   {
     name: 'IceToken',
@@ -94,8 +103,8 @@ const zapTokens = [
     symbol: 'ICE',
     decimals: 18,
     chainId: 250,
-    logoURI:
-      'https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xf16e81dce15B08F326220742020379B855B87DF9/logo.png',
+    logoURI: 'https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xf16e81dce15B08F326220742020379B855B87DF9/logo.png',
+    isToken: true,
   },
   {
     name: 'Frapped USDT',
@@ -103,8 +112,8 @@ const zapTokens = [
     symbol: 'fUSDT',
     decimals: 6,
     chainId: 250,
-    logoURI:
-      'https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png',
+    logoURI: 'https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png',
+    isToken: true,
   },
 ];
 

@@ -96,7 +96,7 @@ const _zapDeposit = ({
 //address _to, address routerAddr, address _vault, address _recipient
 
 
-    transaction = contract.methods.zapInToSingleSidedVault(tokenAddress,ammRouter, vaultAddress, address).send({
+    transaction = contract.methods.zapInToSingleSideVault(tokenAddress,ammRouter, vaultAddress, address).send({
       from: address,
       value: tokenAmount,
     });
@@ -105,7 +105,6 @@ const _zapDeposit = ({
       'zapInTokenToLPVault(tokenAddress, tokenAmount, earningToken, ammRouter, vaultAddress, address)',
       tokenAddress,
       tokenAmount,
-      earningToken,
       ammRouter,
       vaultAddress,
       address

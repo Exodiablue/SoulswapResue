@@ -273,7 +273,7 @@ const DepositSection = ({ pool }) => {
         isLP: deposit.isLP,
         isVault: deposit.token.isVault,
         fromRouter: deposit.token.router,
-        tokenAddress: deposit.earningToken,
+        tokenAddress: deposit.token.address, //the bug
         ammRouter: deposit.ammRouter,
         tokenAmount: convertAmountToRawNumber(deposit.amount, deposit.token.decimals),
         zapAddress: deposit.depositAddress,
@@ -281,7 +281,7 @@ const DepositSection = ({ pool }) => {
         address,
         web3,
       };
-      console.log("zapDepositArgs",deposit);
+      console.log(zapDepositArgs);
       console.log(deposit);
       fetchZapDeposit(zapDepositArgs)
         .then(() => {
