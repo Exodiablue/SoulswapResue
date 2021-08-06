@@ -9345,7 +9345,7 @@ const vaultTokens = pools
   });
 
 export const fantomPools = pools.map(p => {
-  //p.zap.tokens = [...p.zap.tokens, ...vaultTokens];
-  p.zap.tokens = [...p.zap.tokens, ...lpTokens, ...vaultTokens];
+  p.zap.tokens = [...p.zap.tokens];
+  //p.zap.tokens = [...p.zap.tokens, ...lpTokens, ...vaultTokens];
   return p;
 });
