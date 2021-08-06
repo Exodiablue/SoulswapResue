@@ -5738,42 +5738,6 @@ const pools = [
 },
 
 {
-  id: 'casper-ftm',
-  logo: 'fantom/WFTM.png',
-  name: 'WFTM',
-  token: 'WFTM',
-  tokenDescription: 'Casper DeFi',
-  tokenAddress: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-FTM-J',
-  earnedTokenAddress: '0x3372677989FfBfeD723Ac3192560C072D22C7FBf',
-  earnContractAddress: '0x3372677989FfBfeD723Ac3192560C072D22C7FBf',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'tokens',
-  oracleId: 'casper-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Casper DeFi',
-  assets: ['WFTM'],
-  callFee: 0.5,
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-     
-      ...zapTokens,
-
-
-    ],
-  },
-},
-
-{
   id: 'zoo-wild-ftm',
   logo: 'fantom/WILD-FTM.png',
   name: 'WILD-FTM LP',
