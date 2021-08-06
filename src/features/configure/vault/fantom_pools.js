@@ -1,4 +1,6 @@
-const VAULT_ZAP = '0x6e5219606c8850D5B06781308fc72be4FE27d788';
+const VAULT_ZAP = '0xD8D5b20439f94F2662801c0Be57627f5e623e875'; //blues zapper
+//const VAULT_ZAP = '0x425D1af0d59c20d9964881dB40D8995C205Dd56d';
+
 
 const SPIRIT_ROUTER = '0x16327E3FbDaCA3bcF7E38F5Af2599D2DDc33aE52';
 const SPOOKY_ROUTER = '0xF491e7B69E4244ad4002BC14e878a34207E38c29';
@@ -106,7 +108,48 @@ const zapTokens = [
   },
 ];
 
+
+const zapTokensReduced = [
+  {
+    name: 'Fantom',
+    address: '',
+    symbol: 'FTM',
+    wrappedSymbol: 'WFTM',
+    decimals: 18,
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/WFTM_32.png',
+  },
+  {
+    name: 'USD Coin',
+    address: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+    symbol: 'USDC',
+    decimals: 6,
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/USDC_32.png',
+  },
+  {
+    name: 'Wrapped Ether',
+    address: '0x74b23882a30290451A17c44f4F05243b6b58C76d',
+    symbol: 'WETH',
+    decimals: 18,
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/wETH_32.png',
+  },
+  {
+    name: 'Frapped USDT',
+    address: '0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+    symbol: 'fUSDT',
+    decimals: 6,
+    chainId: 250,
+    logoURI:
+      'https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png',
+  },
+];
+
+
 const pools = [
+
+  
 {
   id: 'grim',
   logo: 'fantom/GRIM.png',
@@ -146,7 +189,7 @@ const pools = [
   id: 'reaper-grim-ftm',
   logo: 'fantom/GRIM-FTM.png',
   name: 'GRIM-FTM LP',
-  token: 'GRIM-FTM LP-SPIRIT',
+  token: 'GRIM-FTM LP (SpiritSwap)',
   tokenDescription: 'Grim Finance',
   tokenAddress: '0x2c18c39622b90318b0124ecfd6d4ac81efcc51db',
   tokenDecimals: 18,
@@ -171,9 +214,17 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'GRIM',
+        address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+        symbol: 'GRIM',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
-
 
 
     ],
@@ -184,7 +235,7 @@ const pools = [
   id: 'waka-ftm-grim',
   logo: 'fantom/GRIM-FTM.png',
   name: 'GRIM-FTM LP',
-  token: 'GRIM-FTM LP-WAKA',
+  token: 'GRIM-FTM LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x0b3b9452c6ed14f823cfb95ed271a43ada9e12cd',
   tokenDecimals: 18,
@@ -209,6 +260,25 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'GRIM',
+        address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+        symbol: 'GRIM',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
      
       ...zapTokens,
 
@@ -220,7 +290,7 @@ const pools = [
   id: 'spirit-spirit-grim',
   logo: 'fantom/SPIRIT-GRIM.png',
   name: 'SPIRIT-GRIM LP',
-  token: 'SPIRIT-GRIM LP-SPIRIT',
+  token: 'SPIRIT-GRIM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xebe5174d117af9c71d76b3138b16e743df983c76',
   tokenDecimals: 18,
@@ -245,6 +315,25 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'GRIM',
+        address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+        symbol: 'GRIM',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
      
       ...zapTokens,
 
@@ -256,7 +345,7 @@ const pools = [
   id: 'chad-chad-grim',
   logo: 'fantom/CHAD-GRIM.png',
   name: 'CHAD-GRIM LP',
-  token: 'CHAD-GRIM LP-PAINTSWAP',
+  token: 'CHAD-GRIM LP (PaintSwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0x6680B936216e770605E43E7214e5838E2803f514',
   tokenDecimals: 18,
@@ -281,8 +370,15 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
+
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
     ],
   },
@@ -327,7 +423,7 @@ const pools = [
   id: 'reaper-reaper-ftm',
   logo: 'fantom/REAPER-FTM.png',
   name: 'REAPER-FTM LP',
-  token: 'REAPER-FTM LP-SPIRIT',
+  token: 'REAPER-FTM LP (SpiritSwap)',
   tokenDescription: 'Grim Finance',
   tokenAddress: '0x355416b389a25244f4b842516fbd98de869bbb74',
   tokenDecimals: 18,
@@ -352,6 +448,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'REAPER',
+        address: '0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+        symbol: 'REAPER',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -363,7 +468,7 @@ const pools = [
   id: 'reaper-reaper-usdc',
   logo: 'fantom/REAPER-USDC.png',
   name: 'REAPER-USDC LP',
-  token: 'REAPER-USDC LP-SPIRIT',
+  token: 'REAPER-USDC LP (SpiritSwap)',
   tokenDescription: 'Grim Finance',
   tokenAddress: '0x63AA709D3Bae838AafC5000B0b6f475Bf01BCbaA',
   tokenDecimals: 18,
@@ -388,6 +493,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'REAPER',
+        address: '0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+        symbol: 'REAPER',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -399,7 +513,7 @@ const pools = [
   id: 'reaper-reaper-casper',
   logo: 'fantom/REAPER-CASPER.png',
   name: 'REAPER-CASPER LP',
-  token: 'REAPER-CASPER LP-SPIRIT',
+  token: 'REAPER-CASPER LP (SpiritSwap)',
   tokenDescription: 'Grim Finance',
   tokenAddress: '0x827f642c7d1182ff2b91c45c650526d9072477ca',
   tokenDecimals: 18,
@@ -424,6 +538,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'REAPER',
+        address: '0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+        symbol: 'REAPER',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -435,7 +558,7 @@ const pools = [
   id: 'butt-butt-reaper',
   logo: 'fantom/BUTT-REAPER.png',
   name: 'BUTT-REAPER LP',
-  token: 'BUTT-REAPER LP-ZOO',
+  token: 'BUTT-REAPER LP (Zoo)',
   tokenDescription: 'Buttcoin',
   tokenAddress: '0x3309AD0e5Eb8DF992F7D153AFb48866B0e5cC829',
   tokenDecimals: 18,
@@ -461,7 +584,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
     ],
   },
@@ -471,7 +594,7 @@ const pools = [
   id: 'butt-shit-reaper',
   logo: 'fantom/SHIT-REAPER.png',
   name: 'SHIT-REAPER LP',
-  token: 'SHIT-REAPER LP-ZOO',
+  token: 'SHIT-REAPER LP (Zoo)',
   tokenDescription: 'Buttcoin',
   tokenAddress: '0x5Fc97bB549b607F6A2f22AE9bdfd5aF06836378e',
   tokenDecimals: 18,
@@ -497,7 +620,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
     ],
   },
@@ -507,7 +630,7 @@ const pools = [
   id: 'behodl-behodl-reaper',
   logo: 'fantom/beHODL-REAPER.png',
   name: 'beHODL-REAPER LP',
-  token: 'beHODL-REAPER LP-SPOOKY',
+  token: 'beHODL-REAPER LP (SpookySwap)',
   tokenDescription: 'beHODL',
   tokenAddress: '0xe422335D1C766cE5c45987293DB555BB108b9A74',
   tokenDecimals: 18,
@@ -543,7 +666,7 @@ const pools = [
   id: 'reaper-wbtc-rbtc',
   logo: 'fantom/BTC-RBTC.png',
   name: 'WBTC-renBTC LP',
-  token: 'wBTC-renBTC LP-HYPER',
+  token: 'wBTC-renBTC LP (HyperJump)',
   tokenDescription: 'Grim Finance',
   tokenAddress: '0x69ea05ee07c2d06753827f90b522b0ba3d3dab63',
   tokenDecimals: 18,
@@ -614,7 +737,7 @@ const pools = [
   id: 'spirit-spirit-ftm',
   logo: 'fantom/SPIRIT-FTM.png',
   name: 'SPIRIT-FTM LP',
-  token: 'SPIRIT-FTM LP-SPIRIT',
+  token: 'SPIRIT-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x30748322B6E34545DBe0788C421886AEB5297789',
   tokenDecimals: 18,
@@ -639,6 +762,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -650,7 +782,7 @@ const pools = [
   id: 'spirit-spirit-xsteak',
   logo: 'fantom/SPIRIT-XSTEAK.png',
   name: 'SPIRIT-XSTEAK LP',
-  token: 'SPIRIT-XSTEAK LP-SPIRIT',
+  token: 'SPIRIT-XSTEAK LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xe276a71991a7a7b16cb453db2994ce9fcda2eda6',
   tokenDecimals: 18,
@@ -675,6 +807,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -686,7 +827,7 @@ const pools = [
   id: 'spirit-dis-ftm',
   logo: 'fantom/DIS-FTM.png',
   name: 'DIS-FTM LP',
-  token: 'DIS-FTM LP-SPIRIT',
+  token: 'DIS-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xa6020794594568e2bf987718b6520C14b9C4Ccd9',
   tokenDecimals: 18,
@@ -711,6 +852,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -722,7 +872,7 @@ const pools = [
   id: 'spirit-yfi-ftm',
   logo: 'fantom/YFI-FTM.png',
   name: 'YFI-FTM LP',
-  token: 'YFI-FTM LP-SPIRIT',
+  token: 'YFI-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x4fc38a2735C7da1d71ccAbf6DeC235a7DA4Ec52C',
   tokenDecimals: 18,
@@ -747,6 +897,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -758,7 +917,7 @@ const pools = [
   id: 'spirit-dai-spirit',
   logo: 'fantom/DAI-SPIRIT.png',
   name: 'DAI-SPIRIT LP',
-  token: 'DAI-SPIRIT LP-SPIRIT',
+  token: 'DAI-SPIRIT LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xfFbfc0446cA725b21256461e214E9D472f9be390',
   tokenDecimals: 18,
@@ -783,6 +942,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -794,7 +962,7 @@ const pools = [
   id: 'spirit-busd-fusdt',
   logo: 'fantom/BUSD-FUSDT.png',
   name: 'BUSD-FUSDT LP',
-  token: 'BUSD-FUSDT LP-SPIRIT',
+  token: 'BUSD-FUSDT LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x1Ac51904cFAaD15679B3500F0fC41D2971657f80',
   tokenDecimals: 18,
@@ -818,6 +986,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -828,7 +1005,7 @@ const pools = [
   id: 'spirit-frax-ftm',
   logo: 'fantom/FRAX-FTM.png',
   name: 'FRAX-FTM LP',
-  token: 'FRAX-FTM LP-SPIRIT',
+  token: 'FRAX-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x0eC0E1629E776272FA3E55548D4A656BE0EEdcF4',
   tokenDecimals: 18,
@@ -853,6 +1030,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -863,7 +1049,7 @@ const pools = [
   id: 'spirit-fxs-frax',
   logo: 'fantom/FRAX-FXS.png',
   name: 'FXS-FRAX LP',
-  token: 'FXS-FRAX LP-SPIRIT',
+  token: 'FXS-FRAX LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x100FcF27C87D1cc7b8D6c28b69b84A359e4fd377',
   tokenDecimals: 18,
@@ -888,6 +1074,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -899,7 +1094,7 @@ const pools = [
   id: 'spirit-spirit-elk',
   logo: 'fantom/SPIRIT-ELK.png',
   name: 'SPIRIT-ELK LP',
-  token: 'SPIRIT-ELK LP-SPIRIT',
+  token: 'SPIRIT-ELK LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xbc7984937c34d8234046eb52649683efc243cb5e',
   tokenDecimals: 18,
@@ -925,6 +1120,15 @@ const pools = [
 
     tokens: [
      
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
       ...zapTokens,
 
     ],
@@ -935,7 +1139,7 @@ const pools = [
   id: 'spirit-ice-ftm',
   logo: 'fantom/ICE-FTM.png',
   name: 'ICE-FTM LP',
-  token: 'ICE-FTM LP-SPIRIT',
+  token: 'ICE-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x936D23C83c2469f6a14B9f5bEaec13879598A5aC',
   tokenDecimals: 18,
@@ -960,6 +1164,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -971,7 +1184,7 @@ const pools = [
   id: 'spirit-yfi-woofy',
   logo: 'fantom/YFI-WOOFY.png',
   name: 'YFI-WOOFY LP',
-  token: 'YFI-WOOFY LP-SPIRIT',
+  token: 'YFI-WOOFY LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x287ebF376c59a037B8D8E0e987461b2fd8550D8c',
   tokenDecimals: 18,
@@ -996,6 +1209,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1007,7 +1229,7 @@ const pools = [
   id: 'spirit-ftm-usdc',
   logo: 'fantom/USDC-FTM.png',
   name: 'FTM-USDC LP',
-  token: 'FTM-USDC LP-SPIRIT',
+  token: 'FTM-USDC LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xe7E90f5a767406efF87Fdad7EB07ef407922EC1D',
   tokenDecimals: 18,
@@ -1032,6 +1254,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1043,7 +1274,7 @@ const pools = [
   id: 'spirit-wbtc-ftm',
   logo: 'fantom/WBTC-FTM.png',
   name: 'WBTC-FTM LP',
-  token: 'WBTC-FTM LP-SPIRIT',
+  token: 'WBTC-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x279b2c897737a50405ED2091694F225D83F2D3bA',
   tokenDecimals: 18,
@@ -1069,6 +1300,15 @@ const pools = [
 
     tokens: [
      
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
       ...zapTokens,
 
     ],
@@ -1078,7 +1318,7 @@ const pools = [
   id: 'spirit-weth-ftm',
   logo: 'fantom/WETH-FTM.png',
   name: 'WETH-FTM LP',
-  token: 'WETH-FTM LP-SPIRIT',
+  token: 'WETH-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x613BF4E46b4817015c01c6Bb31C7ae9edAadc26e',
   tokenDecimals: 18,
@@ -1103,6 +1343,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1113,7 +1362,7 @@ const pools = [
   id: 'spirit-sushi-ftm',
   logo: 'fantom/SUSHI-FTM.png',
   name: 'SUSHI-FTM LP',
-  token: 'SUSHI-FTM LP-SPIRIT',
+  token: 'SUSHI-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x9Fe4c0CE5F533e96C2b72d852f190961AD5a7bB3',
   tokenDecimals: 18,
@@ -1138,6 +1387,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1148,7 +1406,7 @@ const pools = [
   id: 'spirit-cream-ftm',
   logo: 'fantom/CREAM-FTM.png',
   name: 'CREAM-FTM LP',
-  token: 'CREAM-FTM LP-SPIRIT',
+  token: 'CREAM-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x040dd0d0f5e2a01fEb0C5457AbB588B23Cf4c43a',
   tokenDecimals: 18,
@@ -1173,6 +1431,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1183,7 +1450,7 @@ const pools = [
   id: 'spirit-cover-ftm',
   logo: 'fantom/COVER-FTM.png',
   name: 'COVER-FTM LP',
-  token: 'COVER-FTM LP-SPIRIT',
+  token: 'COVER-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x5427E7AB61145c41b1e58453121245dAEF3929C3',
   tokenDecimals: 18,
@@ -1208,6 +1475,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1219,7 +1495,7 @@ const pools = [
   id: 'spirit-any-ftm',
   logo: 'fantom/ANY-FTM.png',
   name: 'ANY-FTM LP',
-  token: 'ANY-FTM LP-SPIRIT',
+  token: 'ANY-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x26D583028989378Cc1b7CBC023f4Ae049d5e5899',
   tokenDecimals: 18,
@@ -1244,6 +1520,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1254,7 +1539,7 @@ const pools = [
   id: 'spirit-bnb-ftm',
   logo: 'fantom/BNB-FTM.png',
   name: 'BNB-FTM LP',
-  token: 'BNB-FTM LP-SPIRIT',
+  token: 'BNB-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x74fE5Ddc4c27F91a1898ccd5Ac62dFeb2d3dF726',
   tokenDecimals: 18,
@@ -1279,6 +1564,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1289,7 +1583,7 @@ const pools = [
   id: 'spirit-link-ftm',
   logo: 'fantom/LINK-FTM.png',
   name: 'LINK-FTM LP',
-  token: 'LINK-FTM LP-SPIRIT',
+  token: 'LINK-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xd061c6586670792331E14a80f3b3Bb267189C681',
   tokenDecimals: 18,
@@ -1314,6 +1608,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1324,7 +1627,7 @@ const pools = [
   id: 'spirit-crv-ftm',
   logo: 'fantom/CRV-FTM.png',
   name: 'CRV-FTM LP',
-  token: 'CRV-FTM LP-SPIRIT',
+  token: 'CRV-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x374C8ACb146407Ef0AE8F82BaAFcF8f4EC1708CF',
   tokenDecimals: 18,
@@ -1349,6 +1652,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1359,7 +1671,7 @@ const pools = [
   id: 'spirit-fusdt-ftm',
   logo: 'fantom/FUSDT-FTM.png',
   name: 'FUSDT-FTM LP',
-  token: 'FUSDT-FTM LP-SPIRIT',
+  token: 'FUSDT-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xd14Dd3c56D9bc306322d4cEa0E1C49e9dDf045D4',
   tokenDecimals: 18,
@@ -1384,6 +1696,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1395,7 +1716,7 @@ const pools = [
   id: 'spirit-cztears-spirit',
   logo: 'fantom/CZTEARS-SPIRIT.png',
   name: 'CZTEARS-SPIRIT LP',
-  token: 'CZTEARS-SPIRIT LP-SPIRIT',
+  token: 'CZTEARS-SPIRIT LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xC66c0F0318e2777A53F884C8874B6CA3c2ED8f84',
   tokenDecimals: 18,
@@ -1420,6 +1741,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1431,7 +1761,7 @@ const pools = [
   id: 'spirit-bnb-spirit',
   logo: 'fantom/BNB-SPIRIT.png',
   name: 'BNB-SPIRIT LP',
-  token: 'BNB-SPIRIT LP-SPIRIT',
+  token: 'BNB-SPIRIT LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x9D103Bc85A33B007B58bE2fDee3e1A64651f676d',
   tokenDecimals: 18,
@@ -1456,6 +1786,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1467,7 +1806,7 @@ const pools = [
   id: 'spirit-usdc-gton',
   logo: 'fantom/GTON-USDC.png',
   name: 'USDC-GTON LP',
-  token: 'USDC-GTON LP-SPIRIT',
+  token: 'USDC-GTON LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x8a5555c4996B72E5725Cf108Ad773Ce5E715DED4',
   tokenDecimals: 18,
@@ -1492,6 +1831,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1503,7 +1851,7 @@ const pools = [
   id: 'spirit-zoo-ftm',
   logo: 'fantom/ZOO-FTM.png',
   name: 'ZOO-FTM LP',
-  token: 'ZOO-FTM LP-SPIRIT',
+  token: 'ZOO-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xDF18DD2631f02D930071DF7d6FF89bbc3718C62F',
   tokenDecimals: 18,
@@ -1528,6 +1876,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1539,7 +1896,7 @@ const pools = [
   id: 'spirit-mim-ftm',
   logo: 'fantom/MIM-FTM.png',
   name: 'MIM-FTM LP',
-  token: 'MIM-FTM LP-SPIRIT',
+  token: 'MIM-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xB32b31DfAfbD53E310390F641C7119b5B9Ea0488',
   tokenDecimals: 18,
@@ -1564,6 +1921,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1575,7 +1941,7 @@ const pools = [
   id: 'spirit-just-ftm',
   logo: 'fantom/JUST-FTM.png',
   name: 'JUST-FTM LP',
-  token: 'JUST-FTM LP-SPIRIT',
+  token: 'JUST-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xea294E3C837ef457530b916Accbc3e3444a75A72',
   tokenDecimals: 18,
@@ -1600,6 +1966,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1611,7 +1986,7 @@ const pools = [
   id: 'spirit-spirit-lqdr',
   logo: 'fantom/LQDR-SPIRIT.png',
   name: 'SPIRIT-LQDR LP',
-  token: 'SPIRIT-LQDR LP-SPIRIT',
+  token: 'SPIRIT-LQDR LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xFeBbfeA7674720cEdD35e9384d07F235365c1B3e',
   tokenDecimals: 18,
@@ -1636,6 +2011,15 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
+
+      {
+        name: 'SPIRIT',
+        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+        symbol: 'SPIRIT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1682,7 +2066,7 @@ const pools = [
   id: 'boo-ftm-boo',
   logo: 'fantom/BOO-FTM.png',
   name: 'FTM-BOO LP',
-  token: 'FTM-BOO LP-SPOOKY',
+  token: 'FTM-BOO LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0xEc7178F4C41f346b2721907F5cF7628E388A7a58',
   tokenDecimals: 18,
@@ -1707,6 +2091,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1719,7 +2112,7 @@ const pools = [
   id: 'boo-ftm-mim',
   logo: 'fantom/MIM-FTM.png',
   name: 'FTM-MIM LP',
-  token: 'FTM-MIM LP-SPOOKY',
+  token: 'FTM-MIM LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x6f86e65b255c9111109d2d2325ca2dfc82456efc',
   tokenDecimals: 18,
@@ -1744,6 +2137,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1756,7 +2158,7 @@ const pools = [
   id: 'boo-link-ftm',
   logo: 'fantom/LINK-FTM.png',
   name: 'FTM-LINK LP',
-  token: 'FTM-LINK LP-SPOOKY',
+  token: 'FTM-LINK LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x89d9bc2f2d091cfbfc31e333d6dc555ddbc2fd29',
   tokenDecimals: 18,
@@ -1781,6 +2183,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1792,7 +2203,7 @@ const pools = [
   id: 'boo-any-ftm',
   logo: 'fantom/ANY-FTM.png',
   name: 'FTM-ANY LP',
-  token: 'FTM-ANY LP-SPOOKY',
+  token: 'FTM-ANY LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x5c021D9cfaD40aaFC57786b409A9ce571de375b4',
   tokenDecimals: 18,
@@ -1818,6 +2229,15 @@ const pools = [
 
     tokens: [
      
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
       ...zapTokens,
 
     ],
@@ -1828,7 +2248,7 @@ const pools = [
   id: 'boo-ftm-bnb',
   logo: 'fantom/BNB-FTM.png',
   name: 'FTM-BNB LP',
-  token: 'FTM-BNB LP-SPOOKY',
+  token: 'FTM-BNB LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x956DE13EA0FA5b577E4097Be837BF4aC80005820',
   tokenDecimals: 18,
@@ -1853,6 +2273,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1863,7 +2292,7 @@ const pools = [
   id: 'boo-sushi-ftm',
   logo: 'fantom/SUSHI-FTM.png',
   name: 'FTM-SUSHI LP',
-  token: 'FTM-SUSHI LP-SPOOKY',
+  token: 'FTM-SUSHI LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0xf84e313b36e86315af7a06ff26c8b20e9eb443c3',
   tokenDecimals: 18,
@@ -1888,6 +2317,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1899,7 +2337,7 @@ const pools = [
   id: 'boo-ftm-woofy',
   logo: 'fantom/WOOFY-FTM.png',
   name: 'FTM-WOOFY LP',
-  token: 'FTM-WOOFY LP-SPOOKY',
+  token: 'FTM-WOOFY LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0xfD0aB56B83130ce8f2b7A4f4d4532dEe495c0794',
   tokenDecimals: 18,
@@ -1924,6 +2362,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1934,7 +2381,7 @@ const pools = [
   id: 'boo-ftm-band',
   logo: 'fantom/BAND-FTM.png',
   name: 'FTM-BAND LP',
-  token: 'FTM-BAND LP-SPOOKY',
+  token: 'FTM-BAND LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x91b39d5584e2a7dc829f696235742cc293f2e8cf',
   tokenDecimals: 18,
@@ -1959,6 +2406,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -1969,7 +2425,7 @@ const pools = [
   id: 'boo-ftm-cream',
   logo: 'fantom/CREAM-FTM.png',
   name: 'FTM-CREAM LP',
-  token: 'FTM-CREAM LP-SPOOKY',
+  token: 'FTM-CREAM LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0xb77b223490e1f5951ec79a8d09db9eab2adcb934',
   tokenDecimals: 18,
@@ -1994,6 +2450,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2004,7 +2469,7 @@ const pools = [
   id: 'boo-crv-ftm',
   logo: 'fantom/CRV-FTM.png',
   name: 'CRV-FTM LP',
-  token: 'CRV-FTM LP-SPOOKY',
+  token: 'CRV-FTM LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0xb471ac6ef617e952b84c6a9ff5de65a9da96c93b',
   tokenDecimals: 18,
@@ -2029,6 +2494,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2040,7 +2514,7 @@ const pools = [
   id: 'boo-ftm-badger',
   logo: 'fantom/BADGER-FTM.png',
   name: 'FTM-BADGER LP',
-  token: 'FTM-BADGER LP-SPOOKY',
+  token: 'FTM-BADGER LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x1c94665fd3ecfa969feda7ed01e35522e6982022',
   tokenDecimals: 18,
@@ -2065,6 +2539,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2075,7 +2558,7 @@ const pools = [
   id: 'boo-ftm-ice',
   logo: 'fantom/ICE-FTM.png',
   name: 'FTM-ICE LP ',
-  token: 'FTM-ICE LP-SPOOKY',
+  token: 'FTM-ICE LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x623ee4a7f290d11c11315994db70fb148b13021d',
   tokenDecimals: 18,
@@ -2100,6 +2583,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2110,7 +2602,7 @@ const pools = [
   id: 'boo-fusdt-ftm',
   logo: 'fantom/FUSDT-FTM.png',
   name: 'FUSDT-FTM LP',
-  token: 'FUSDT-FTM LP-SPOOKY',
+  token: 'FUSDT-FTM LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x5965e53aa80a0bcf1cd6dbdd72e6a9b2aa047410',
   tokenDecimals: 18,
@@ -2135,6 +2627,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2145,7 +2646,7 @@ const pools = [
   id: 'boo-ftm-usdc',
   logo: 'fantom/USDC-FTM.png',
   name: 'USDC-FTM LP',
-  token: 'USDC-FTM LP-SPOOKY',
+  token: 'USDC-FTM LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x2b4c76d0dc16be1c31d4c1dc53bf9b45987fc75c',
   tokenDecimals: 18,
@@ -2171,6 +2672,15 @@ const pools = [
 
     tokens: [
      
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
       ...zapTokens,
 
     ],
@@ -2180,7 +2690,7 @@ const pools = [
   id: 'boo-ftm-dai',
   logo: 'fantom/DAI-FTM.png',
   name: 'FTM-DAI LP',
-  token: 'FTM-DAI LP-SPOOKY',
+  token: 'FTM-DAI LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0xe120ffbda0d14f3bb6d6053e90e63c572a66a428',
   tokenDecimals: 18,
@@ -2205,6 +2715,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2215,7 +2734,7 @@ const pools = [
   id: 'boo-btc-ftm',
   logo: 'fantom/WBTC-FTM.png',
   name: 'FTM-BTC LP',
-  token: 'FTM-BTC LP-SPOOKY',
+  token: 'FTM-BTC LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0xfdb9ab8b9513ad9e419cf19530fee49d412c3ee3',
   tokenDecimals: 18,
@@ -2241,6 +2760,15 @@ const pools = [
 
     tokens: [
      
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
       ...zapTokens,
 
     ],
@@ -2250,7 +2778,7 @@ const pools = [
   id: 'boo-eth-ftm',
   logo: 'fantom/WETH-FTM.png',
   name: 'FTM-WETH LP',
-  token: 'FTM-WETH LP-SPOOKY',
+  token: 'FTM-WETH LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0xf0702249f4d3a25cd3ded7859a165693685ab577',
   tokenDecimals: 18,
@@ -2275,6 +2803,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2286,7 +2823,7 @@ const pools = [
   id: 'boo-aave-ftm',
   logo: 'fantom/AAVE-FTM.png',
   name: 'FTM-AAVE LP',
-  token: 'FTM-AAVE LP-SPOOKY',
+  token: 'FTM-AAVE LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0xebf374bb21d83cf010cc7363918776adf6ff2bf6',
   tokenDecimals: 18,
@@ -2311,6 +2848,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2322,7 +2868,7 @@ const pools = [
   id: 'boo-ftm-snx',
   logo: 'fantom/SNX-FTM.png',
   name: 'FTM-SNX LP',
-  token: 'FTM-SNX LP-SPOOKY',
+  token: 'FTM-SNX LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x06d173628be105fe81f1c82c9979ba79ebcafcb7',
   tokenDecimals: 18,
@@ -2347,6 +2893,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2358,7 +2913,7 @@ const pools = [
   id: 'boo-ftm-bifi',
   logo: 'fantom/FTM-BIFI.png',
   name: 'FTM-BIFI LP',
-  token: 'FTM-BIFI LP-SPOOKY',
+  token: 'FTM-BIFI LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x1656728af3a14e1319F030Dc147fAbf6f627059e',
   tokenDecimals: 18,
@@ -2383,6 +2938,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2394,7 +2958,7 @@ const pools = [
   id: 'boo-ftm-kek',
   logo: 'fantom/KEK-FTM.png',
   name: 'FTM-KEK LP ',
-  token: 'FTM-KEK LP-SPOOKY',
+  token: 'FTM-KEK LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0xf3582dbaebb4287b462f00d308911621a960a5fd',
   tokenDecimals: 18,
@@ -2419,6 +2983,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2430,7 +3003,7 @@ const pools = [
   id: 'boo-yfi-eth',
   logo: 'fantom/YFI-ETH.png',
   name: 'YFI-ETH LP ',
-  token: 'YFI-ETH LP-SPOOKY',
+  token: 'YFI-ETH LP (SpookySwap)',
   tokenDescription: 'SpookySwap',
   tokenAddress: '0x0845c0bfe75691b1e21b24351aac581a7fb6b7df',
   tokenDecimals: 18,
@@ -2455,6 +3028,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2467,7 +3049,7 @@ const pools = [
   id: 'hyper-aurora-ftm',
   logo: 'fantom/AURORA-FTM.png',
   name: 'AURORA-FTM LP ',
-  token: 'AURORA-FTM LP-HYPER',
+  token: 'AURORA-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x483D07BC99CdD1DF66F64aE0A769A70725C46fA4',
   tokenDecimals: 18,
@@ -2492,6 +3074,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2503,7 +3094,7 @@ const pools = [
   id: 'hyper-ori-ftm',
   logo: 'fantom/ORI-FTM.png',
   name: 'ORI-FTM LP ',
-  token: 'ORI-FTM LP-HYPER',
+  token: 'ORI-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x0433305Ae161d28eD1408D11581610339dfC9BE4',
   tokenDecimals: 18,
@@ -2528,6 +3119,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2541,7 +3141,7 @@ const pools = [
   id: 'hyper-usdc-ftm',
   logo: 'fantom/USDC-FTM.png',
   name: 'USDC-FTM LP ',
-  token: 'USDC-FTM LP-HYPER',
+  token: 'USDC-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x50Cc648E45B84D68405BA0707e94c507b08e593d',
   tokenDecimals: 18,
@@ -2566,6 +3166,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2579,7 +3188,7 @@ const pools = [
   id: 'hyper-ori-usdc',
   logo: 'fantom/USDC-ORI.png',
   name: 'ORI-USDC LP ',
-  token: 'ORI-USDC LP-HYPER',
+  token: 'ORI-USDC LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0xF70a9Af9f581c2F752Acc779148712c43E58d2f0',
   tokenDecimals: 18,
@@ -2604,6 +3213,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2617,7 +3235,7 @@ const pools = [
   id: 'hyper-dai-ftm',
   logo: 'fantom/DAI-FTM.png',
   name: 'DAI-FTM LP ',
-  token: 'DAI-FTM LP-HYPER',
+  token: 'DAI-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x6D898d98818e670C695E374ED77cd1753cF109Dd',
   tokenDecimals: 18,
@@ -2642,6 +3260,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2656,7 +3283,7 @@ const pools = [
   id: 'hyper-dai-usdc',
   logo: 'fantom/DAI-USDC.png',
   name: 'DAI-USDC LP ',
-  token: 'DAI-USDC LP-HYPER',
+  token: 'DAI-USDC LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0xD7Ee3fd59a2d8082B56319f858fceaD9a902C0A1',
   tokenDecimals: 18,
@@ -2681,6 +3308,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2694,7 +3330,7 @@ const pools = [
   id: 'hyper-eth-ftm',
   logo: 'fantom/WETH-FTM.png',
   name: 'ETH-FTM LP ',
-  token: 'ETH-FTM LP-HYPER',
+  token: 'ETH-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0xc81a9cE5Be68dF6A52F82D83398420D8A1C245c2',
   tokenDecimals: 18,
@@ -2719,6 +3355,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2732,7 +3377,7 @@ const pools = [
   id: 'hyper-eth-ori',
   logo: 'fantom/WETH-ORI.png',
   name: 'ETH-ORI LP ',
-  token: 'ETH-ORI LP-HYPER',
+  token: 'ETH-ORI LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0xb18E654Af9c3bd229aD72C9F1e8B67518CE6aF37',
   tokenDecimals: 18,
@@ -2757,6 +3402,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2770,7 +3424,7 @@ const pools = [
   id: 'hyper-btc-ftm',
   logo: 'fantom/WBTC-FTM.png',
   name: 'BTC-FTM LP ',
-  token: 'BTC-FTM LP-HYPER',
+  token: 'BTC-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x9a2B08B7620B8c387d96f9C1DC315aFD93651F5e',
   tokenDecimals: 18,
@@ -2795,6 +3449,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2808,7 +3471,7 @@ const pools = [
   id: 'hyper-btc-ori',
   logo: 'fantom/WBTC-ORI.png',
   name: 'BTC-ORI LP ',
-  token: 'BTC-ORI LP-HYPER',
+  token: 'BTC-ORI LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0xdDe0ACA9Dc806544f7D5D4DD308a4ee065364Cca',
   tokenDecimals: 18,
@@ -2833,6 +3496,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2846,7 +3518,7 @@ const pools = [
   id: 'hyper-link-ftm',
   logo: 'fantom/LINK-FTM.png',
   name: 'LINK-FTM LP ',
-  token: 'LINK-FTM LP-HYPER',
+  token: 'LINK-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x442bEcA06141F99466d288bde60e79330eCbDf51',
   tokenDecimals: 18,
@@ -2871,6 +3543,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2884,7 +3565,7 @@ const pools = [
   id: 'hyper-link-ori',
   logo: 'fantom/LINK-ORI.png',
   name: 'LINK-ORI LP ',
-  token: 'LINK-ORI LP-HYPER',
+  token: 'LINK-ORI LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x9571d8B11035657d6FcC26fbD26ABFa23Fb62ae2',
   tokenDecimals: 18,
@@ -2909,6 +3590,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2922,7 +3612,7 @@ const pools = [
   id: 'hyper-sushi-ftm',
   logo: 'fantom/SUSHI-FTM.png',
   name: 'SUSHI-FTM LP ',
-  token: 'SUSHI-FTM LP-HYPER',
+  token: 'SUSHI-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0xF9f979b0283031c4afA4d668626779363B5fE510',
   tokenDecimals: 18,
@@ -2947,6 +3637,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2959,7 +3658,7 @@ const pools = [
   id: 'hyper-yfi-ftm',
   logo: 'fantom/YFI-FTM.png',
   name: 'YFI-FTM LP ',
-  token: 'YFI-FTM LP-HYPER',
+  token: 'YFI-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0xbD9d4981dEd98F5Dedfd7920C3857c4d6A5eA113',
   tokenDecimals: 18,
@@ -2984,6 +3683,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -2996,7 +3704,7 @@ const pools = [
   id: 'hyper-snx-ftm',
   logo: 'fantom/SNX-FTM.png',
   name: 'SNX-FTM LP ',
-  token: 'SNX-FTM LP-HYPER',
+  token: 'SNX-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0xF2fCd382Ee404B105bfc0086ED41F1Bd19B8952a',
   tokenDecimals: 18,
@@ -3021,6 +3729,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3034,7 +3751,7 @@ const pools = [
   id: 'hyper-ftm-eswap',
   logo: 'fantom/FTM-ESWAP.png',
   name: 'FTM-ESWAP LP ',
-  token: 'FTM-ESWAP LP-HYPER',
+  token: 'FTM-ESWAP LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x08492d0fF546B08a9Fb3bd056665cfD240B7D55c',
   tokenDecimals: 18,
@@ -3059,6 +3776,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3073,7 +3799,7 @@ const pools = [
   id: 'hyper-ori-eswap',
   logo: 'fantom/ORI-ESWAP.png',
   name: 'ORI-ESWAP LP ',
-  token: 'ORI-ESWAP LP-HYPER',
+  token: 'ORI-ESWAP LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x1935776c366db172a3c4881c7548Cd35D7457c5c',
   tokenDecimals: 18,
@@ -3098,6 +3824,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3111,7 +3846,7 @@ const pools = [
   id: 'hyper-bnb-ftm',
   logo: 'fantom/BNB-FTM.png',
   name: 'BNB-FTM LP ',
-  token: 'BNB-FTM LP-HYPER',
+  token: 'BNB-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x55c5B2868eae98f38C8c6b84435eD90B400466f9',
   tokenDecimals: 18,
@@ -3136,6 +3871,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3149,7 +3893,7 @@ const pools = [
   id: 'hyper-rbtc-ftm',
   logo: 'fantom/RENBTC-FTM.png',
   name: 'renBTC-FTM LP ',
-  token: 'renBTC-FTM LP-HYPER',
+  token: 'renBTC-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x91BDC3Dc2028E53Be65f7fd84f21a4a46eA3CB4B',
   tokenDecimals: 18,
@@ -3174,6 +3918,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3187,7 +3940,7 @@ const pools = [
   id: 'hyper-rbtc-ori',
   logo: 'fantom/RENBTC-ORI.png',
   name: 'renBTC-ORI LP ',
-  token: 'renBTC-ORI LP-HYPER',
+  token: 'renBTC-ORI LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0xB7A8659fe7a9741EB2082F177d102f58C86BBe87',
   tokenDecimals: 18,
@@ -3212,6 +3965,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3225,7 +3987,7 @@ const pools = [
   id: 'hyper-rzec-ftm',
   logo: 'fantom/RENZEC-FTM.png',
   name: 'renZEC-FTM LP ',
-  token: 'renZEC-FTM LP-HYPER',
+  token: 'renZEC-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x6B7EDB556B0428fa4FE58609052618b56CCC7C46',
   tokenDecimals: 18,
@@ -3250,6 +4012,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3263,7 +4034,7 @@ const pools = [
   id: 'hyper-rzec-ori',
   logo: 'fantom/RENZEC-ORI.png',
   name: 'renZEC-ORI LP ',
-  token: 'renZEC-ORI LP-HYPER',
+  token: 'renZEC-ORI LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x28ac64a278A51c84E0C4C65ba561148e5b15CF43',
   tokenDecimals: 18,
@@ -3288,6 +4059,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3301,7 +4081,7 @@ const pools = [
   id: 'hyper-rbch-ftm',
   logo: 'fantom/RENBCH-FTM.png',
   name: 'renBCH-FTM LP ',
-  token: 'renBCH-FTM LP-HYPER',
+  token: 'renBCH-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0xCb90e14e3d73090C6137623225c2E155272038D2',
   tokenDecimals: 18,
@@ -3326,6 +4106,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3339,7 +4128,7 @@ const pools = [
   id: 'hyper-rbch-ori',
   logo: 'fantom/RENBCH-ORI.png',
   name: 'renBCH-ORI LP ',
-  token: 'renBCH-ORI LP-HYPER',
+  token: 'renBCH-ORI LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x9b6553e4A939DC1f56524337AE10E298B3aFb9CD',
   tokenDecimals: 18,
@@ -3364,6 +4153,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3377,7 +4175,7 @@ const pools = [
   id: 'hyper-ice-ftm',
   logo: 'fantom/ICE-FTM.png',
   name: 'ICE-FTM LP ',
-  token: 'ICE-FTM LP-HYPER',
+  token: 'ICE-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x3D7bC2eE79a21e56dc52B874de3aD5c341f6D888',
   tokenDecimals: 18,
@@ -3402,6 +4200,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3415,7 +4222,7 @@ const pools = [
   id: 'hyper-zoo-ftm',
   logo: 'fantom/ZOO-FTM.png',
   name: 'ZOO-FTM LP ',
-  token: 'ZOO-FTM LP-HYPER',
+  token: 'ZOO-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0xe200510dC1F28b53C1b1f629861ddE4f8B06B373',
   tokenDecimals: 18,
@@ -3440,6 +4247,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3453,7 +4269,7 @@ const pools = [
   id: 'hyper-crv-ftm',
   logo: 'fantom/CRV-FTM.png',
   name: 'CRV-FTM LP ',
-  token: 'CRV-FTM LP-HYPER',
+  token: 'CRV-FTM LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x7785698F2Aa354558C77a0186bE0dFD2a9B2452d',
   tokenDecimals: 18,
@@ -3478,6 +4294,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3491,7 +4316,7 @@ const pools = [
   id: 'hyper-crv-ori',
   logo: 'fantom/CRV-ORI.png',
   name: 'CRV-ORI LP ',
-  token: 'CRV-ORI LP-HYPER',
+  token: 'CRV-ORI LP (HyperJump)',
   tokenDescription: 'HyperJump',
   tokenAddress: '0x1449Eb84698D6C2faf86863faB8A91aa975ef2F8',
   tokenDecimals: 18,
@@ -3516,6 +4341,15 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+
+      {
+        name: 'ORI',
+        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+        symbol: 'ORI',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3529,7 +4363,7 @@ const pools = [
   id: 'waka-waka-ftm',
   logo: 'fantom/WAKA-FTM.png',
   name: 'WAKA-FTM LP',
-  token: 'WAKA-FTM LP-WAKA',
+  token: 'WAKA-FTM LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x696885e9581bd33ee9877bd8750ddda65381ff01',
   tokenDecimals: 18,
@@ -3554,6 +4388,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3567,7 +4410,7 @@ const pools = [
   id: 'waka-ftm-wbtc',
   logo: 'fantom/WBTC-FTM.png',
   name: 'FTM-WBTC LP',
-  token: 'FTM-WBTC LP-WAKA',
+  token: 'FTM-WBTC LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x195C45044B121D8CAF4C9e2d8F47fb81f4E12f21',
   tokenDecimals: 18,
@@ -3592,6 +4435,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3605,7 +4457,7 @@ const pools = [
   id: 'waka-ftm-yfi',
   logo: 'fantom/YFI-FTM.png',
   name: 'FTM-YFI LP',
-  token: 'FTM-YFI LP-WAKA',
+  token: 'FTM-YFI LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0xb0e5d65b4c22ff9f099e449df03acb3a57bb5f27',
   tokenDecimals: 18,
@@ -3630,6 +4482,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3643,7 +4504,7 @@ const pools = [
   id: 'waka-ftm-usdc',
   logo: 'fantom/USDC-FTM.png',
   name: 'FTM-USDC LP',
-  token: 'FTM-USDC LP-WAKA',
+  token: 'FTM-USDC LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x97a490e7c90b4d8f6d18752672f4c8e3c35891a2',
   tokenDecimals: 18,
@@ -3668,6 +4529,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3681,7 +4551,7 @@ const pools = [
   id: 'waka-ftm-dai',
   logo: 'fantom/DAI-FTM.png',
   name: 'FTM-DAI LP',
-  token: 'FTM-DAI LP-WAKA',
+  token: 'FTM-DAI LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x78da2bd2c18837c9d1b9008c81078e378f1952c6',
   tokenDecimals: 18,
@@ -3706,7 +4576,16 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-     
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+      
       ...zapTokens,
 
 
@@ -3718,7 +4597,7 @@ const pools = [
   id: 'waka-ftm-sushi',
   logo: 'fantom/SUSHI-FTM.png',
   name: 'FTM-SUSHI LP',
-  token: 'FTM-SUSHI LP-WAKA',
+  token: 'FTM-SUSHI LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x1b084cda6e11347b3c15eae537cf8a7ce39f96da',
   tokenDecimals: 18,
@@ -3743,6 +4622,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3755,7 +4643,7 @@ const pools = [
   id: 'waka-ftm-badger',
   logo: 'fantom/BADGER-FTM.png',
   name: 'FTM-BADGER LP',
-  token: 'FTM-BADGER LP-WAKA',
+  token: 'FTM-BADGER LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x8a400d6bf3cdf070af6e3312ef4f9681f16a92bd',
   tokenDecimals: 18,
@@ -3780,6 +4668,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3792,7 +4689,7 @@ const pools = [
   id: 'waka-ftm-aave',
   logo: 'fantom/AAVE-FTM.png',
   name: 'FTM-AAVE LP',
-  token: 'FTM-AAVE LP-WAKA',
+  token: 'FTM-AAVE LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x2e783ce36830a6274761cc4a9d04d275553f3bc1',
   tokenDecimals: 18,
@@ -3817,6 +4714,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3829,7 +4735,7 @@ const pools = [
   id: 'waka-ftm-ice',
   logo: 'fantom/ICE-FTM.png',
   name: 'FTM-ICE LP',
-  token: 'FTM-ICE LP-WAKA',
+  token: 'FTM-ICE LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0xef179689b6d242ffc93dfc69241f74d4d391fa7c',
   tokenDecimals: 18,
@@ -3854,6 +4760,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3866,7 +4781,7 @@ const pools = [
   id: 'waka-ftm-snx',
   logo: 'fantom/SNX-FTM.png',
   name: 'FTM-SNX LP',
-  token: 'FTM-SNX LP-WAKA',
+  token: 'FTM-SNX LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0xff09b99aed8fb58c209904f6adc4a1fcceea79ac',
   tokenDecimals: 18,
@@ -3891,6 +4806,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3903,7 +4827,7 @@ const pools = [
   id: 'waka-ftm-cream',
   logo: 'fantom/CREAM-FTM.png',
   name: 'FTM-CREAM LP',
-  token: 'FTM-CREAM LP-WAKA',
+  token: 'FTM-CREAM LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x3c4ad49f26b47f00f7e5165b942d41367dd60a04',
   tokenDecimals: 18,
@@ -3928,6 +4852,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3940,7 +4873,7 @@ const pools = [
   id: 'waka-ftm-cover',
   logo: 'fantom/COVER-FTM.png',
   name: 'FTM-COVER LP',
-  token: 'FTM-COVER LP-WAKA',
+  token: 'FTM-COVER LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x9c58df352fcd984700c57324a116845378adc5ba',
   tokenDecimals: 18,
@@ -3965,6 +4898,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -3977,7 +4919,7 @@ const pools = [
   id: 'waka-ftm-link',
   logo: 'fantom/LINK-FTM.png',
   name: 'FTM-LINK LP',
-  token: 'FTM-LINK LP-WAKA',
+  token: 'FTM-LINK LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x32736ae178d0debf137326a0c0c6d50e374d9f19',
   tokenDecimals: 18,
@@ -4002,6 +4944,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -4014,7 +4965,7 @@ const pools = [
   id: 'waka-ftm-crv',
   logo: 'fantom/CRV-FTM.png',
   name: 'FTM-CRV LP',
-  token: 'FTM-CRV LP-WAKA',
+  token: 'FTM-CRV LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x3b1b72d6de14a45096227c3319dd58fceae95faf',
   tokenDecimals: 18,
@@ -4039,6 +4990,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -4051,7 +5011,7 @@ const pools = [
   id: 'waka-ftm-band',
   logo: 'fantom/BAND-FTM.png',
   name: 'FTM-BAND LP',
-  token: 'FTM-BAND LP-WAKA',
+  token: 'FTM-BAND LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x60ff8c1dffc8252cfd94c07f65feb4ce90ee9b99',
   tokenDecimals: 18,
@@ -4076,6 +5036,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -4088,7 +5057,7 @@ const pools = [
   id: 'waka-ftm-weth',
   logo: 'fantom/WETH-FTM.png',
   name: 'FTM-WETH LP',
-  token: 'FTM-WETH LP-WAKA',
+  token: 'FTM-WETH LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x0eea1bf6342c71171882c2ac3838a9c78e00b5cb',
   tokenDecimals: 18,
@@ -4113,6 +5082,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -4126,7 +5104,7 @@ const pools = [
   id: 'waka-ftm-atari',
   logo: 'fantom/ATARI-FTM.png',
   name: 'FTM-ATARI LP',
-  token: 'FTM-ATARI LP-WAKA',
+  token: 'FTM-ATARI LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x0370dc24570ed93db0b67d20340923e56c0aadd9',
   tokenDecimals: 18,
@@ -4151,6 +5129,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -4164,7 +5151,7 @@ const pools = [
   id: 'waka-ftm-bomb',
   logo: 'fantom/FTM-BOMB.png',
   name: 'FTM-BOMB LP',
-  token: 'FTM-BOMB LP-WAKA',
+  token: 'FTM-BOMB LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0xbb51d140661bfc4232d0838a0400d5161984616f',
   tokenDecimals: 18,
@@ -4189,6 +5176,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -4202,7 +5198,7 @@ const pools = [
   id: 'waka-ftm-shiba',
   logo: 'fantom/FTM-SHIBA.png',
   name: 'FTM-SHIBA LP',
-  token: 'FTM-SHIBA LP-WAKA',
+  token: 'FTM-SHIBA LP (WakaSwap)',
   tokenDescription: 'WakaSwap',
   tokenAddress: '0x5d520c7cfd8ed8acf2b2529e374676121639680a',
   tokenDecimals: 18,
@@ -4227,6 +5223,15 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
+
+      {
+        name: 'WAKA',
+        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+        symbol: 'WAKA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -4240,8 +5245,8 @@ const pools = [
   id: 'gbone-shiba-ftm',
   logo: 'fantom/SHIBA-FTM.png',
   name: 'SHIBA-FTM LP',
-  token: 'SHIBA-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'SHIBA-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0xD7199dc9F406444808930F72701E8ed9F18c4767',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4255,7 +5260,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['SHIBA','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/FTM/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
@@ -4266,7 +5271,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4278,8 +5283,8 @@ const pools = [
   id: 'gbone-gbone-shiba',
   logo: 'fantom/GBONE-SHIBA.png',
   name: 'GBONE-SHIBA LP',
-  token: 'GBONE-SHIBA LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'GBONE-SHIBA LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0x76A40824e2a554349290BD53CaC78653d062Fe21',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4293,7 +5298,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['GBONE','SHIBA'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x004B122eb5632077abdD2C38e8d9392348d5cA15/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
@@ -4304,7 +5309,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4316,8 +5321,8 @@ const pools = [
   id: 'gbone-gbone-ftm',
   logo: 'fantom/GBONE-FTM.png',
   name: 'GBONE-FTM LP',
-  token: 'GBONE-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'GBONE-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0x881D898BA9806D5065e5fe4dd26991d57bA32Ff0',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4331,7 +5336,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['GBONE','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x004B122eb5632077abdD2C38e8d9392348d5cA15/FTM',
@@ -4342,7 +5347,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4354,8 +5359,8 @@ const pools = [
   id: 'bone-bone-ftm',
   logo: 'fantom/BONE-FTM.png',
   name: 'BONE-FTM LP',
-  token: 'BONE-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'BONE-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0xFb6732e6b145Dd4b11eFD6725A759056Fa605EbF',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4369,7 +5374,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['BONE','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/FTM',
@@ -4380,7 +5385,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4392,8 +5397,8 @@ const pools = [
   id: 'bone-ftm-usdc',
   logo: 'fantom/USDC-FTM.png',
   name: 'FTM-USDC LP',
-  token: 'FTM-USDC LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'FTM-USDC LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0x9C2BeaC6062b843b23CF96FF53B5C63193Da92bb',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4407,7 +5412,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['USDC','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/FTM',
@@ -4418,7 +5423,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4430,8 +5435,8 @@ const pools = [
   id: 'bone-boo-ftm',
   logo: 'fantom/BOO-FTM.png',
   name: 'BOO-FTM LP',
-  token: 'BOO-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'BOO-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0x2980380598Ca85295637499D52fbB271c051d9d3',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4445,7 +5450,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['BOO','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE/FTM',
@@ -4456,7 +5461,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4468,8 +5473,8 @@ const pools = [
   id: 'bone-waka-ftm',
   logo: 'fantom/WAKA-FTM.png',
   name: 'WAKA-FTM LP',
-  token: 'WAKA-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'WAKA-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0x83Df88197db0AaC646162ae53C5eCdBD066f6fae',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4483,7 +5488,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['WAKA','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0xf61cCdE1D4bB76CeD1dAa9D4c429cCA83022B08B/FTM',
@@ -4494,7 +5499,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4506,8 +5511,8 @@ const pools = [
   id: 'bone-dai-ftm',
   logo: 'fantom/DAI-FTM.png',
   name: 'DAI-FTM LP',
-  token: 'DAI-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'DAI-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0x200c4f35c03845b340629527799d38177f5fb283',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4521,7 +5526,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['DAI','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/FTM',
@@ -4532,7 +5537,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4544,8 +5549,8 @@ const pools = [
   id: 'bone-fusdt-ftm',
   logo: 'fantom/FUSDT-FTM.png',
   name: 'FUSDT-FTM LP',
-  token: 'FUSDT-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'FUSDT-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0x7de2e65476B0a08e49c5D0f30A4cF567047cd80E',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4559,7 +5564,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['FUSDT','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/FTM',
@@ -4570,7 +5575,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4582,8 +5587,8 @@ const pools = [
   id: 'bone-eth-ftm',
   logo: 'fantom/WETH-FTM.png',
   name: 'ETH-FTM LP',
-  token: 'ETH-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'ETH-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0xcaD589120FdcF8083d076b2467d884742783e5B3',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4597,7 +5602,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['ETH','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
@@ -4608,7 +5613,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4620,8 +5625,8 @@ const pools = [
   id: 'bone-btc-ftm',
   logo: 'fantom/WBTC-FTM.png',
   name: 'BTC-FTM LP',
-  token: 'BTC-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'BTC-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0xe0D5053E2d98831F092F7289a21DA8Fc54330F4b',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4635,7 +5640,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['BTC','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/FTM',
@@ -4646,7 +5651,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4658,8 +5663,8 @@ const pools = [
   id: 'bone-bnb-ftm',
   logo: 'fantom/BNB-FTM.png',
   name: 'BNB-FTM LP',
-  token: 'BNB-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'BNB-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0xC2FC322BaE7804d4c1a655189DCE78eBeBaECfc8',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4673,7 +5678,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['BNB','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/FTM',
@@ -4684,7 +5689,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4696,8 +5701,8 @@ const pools = [
   id: 'bone-lqdr-ftm',
   logo: 'fantom/LQDR-FTM.png',
   name: 'LQDR-FTM LP',
-  token: 'LQDR-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'LQDR-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0x93C9Ca8B2C26c9D61Eb35a1ca6b464f995E48DAc',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4711,7 +5716,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['LQDR','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9/FTM',
@@ -4722,7 +5727,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4734,8 +5739,8 @@ const pools = [
   id: 'bone-nips-ftm',
   logo: 'fantom/NIPS-FTM.png',
   name: 'NIPS-FTM LP',
-  token: 'NIPS-FTM LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'NIPS-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0x9605f6CC0E930c21965241bDA304A3437CdBD94B',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4749,7 +5754,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['NIPS','FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x667Afbb7D558c3dFd20fAbd295D31221Dab9dBC2/FTM',
@@ -4760,7 +5765,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4772,8 +5777,8 @@ const pools = [
   id: 'bone-bone-shiba',
   logo: 'fantom/BONE-SHIBA.png',
   name: 'BONE-SHIBA LP',
-  token: 'BONE-SHIBA LP-SHIBA',
-  tokenDescription: 'Shiba Fantom',
+  token: 'BONE-SHIBA LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
   tokenAddress: '0x7dF481f03c3dA6A609aDcA14AB2a99F8040c4C3C',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -4787,7 +5792,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Shiba Fantom',
+  platform: 'ShibaSwap',
   assets: ['BONE','SHIBA'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
@@ -4798,7 +5803,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4810,7 +5815,7 @@ const pools = [
   id: 'curve-ftm-fusdt',
   logo: 'fantom/DAI-USDC-FUSDT.png',
   name: 'DAI-USDT-FUSDT LP',
-  token: 'FUSDT-2CRV LP-CURVE',
+  token: 'FUSDT-2CRV LP (Curve)',
   tokenDescription: 'Curve',
   tokenAddress: '0x92D5ebF3593a92888C25C0AbEF126583d4b5312E',
   tokenDecimals: 18,
@@ -4831,12 +5836,13 @@ const pools = [
   addLiquidityUrl: 'https://ftm.curve.fi/fusdt/deposit',
   buyTokenUrl: 'https://app.sushi.com/swap',
   zap: {
+    disabled: true,
+
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
 
     tokens: [
      
-      ...zapTokens,
 
 
 
@@ -4956,7 +5962,7 @@ const pools = [
   id: 'zoo-wild-ftm',
   logo: 'fantom/WILD-FTM.png',
   name: 'WILD-FTM LP',
-  token: 'WILD-FTM LP-ZOO',
+  token: 'WILD-FTM LP (Zoo)',
   tokenDescription: 'Zoo',
   tokenAddress: '0x80C70A23AB388c3B8624f8FC9dBfB4ee469A69a1',
   tokenDecimals: 18,
@@ -4982,7 +5988,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -4994,7 +6000,7 @@ const pools = [
   id: 'zoo-ftm-usdc',
   logo: 'fantom/USDC-FTM.png',
   name: 'USDC-FTM LP',
-  token: 'USDC-FTM LP-ZOO',
+  token: 'USDC-FTM LP (Zoo)',
   tokenDescription: 'Zoo',
   tokenAddress: '0x38E3AD31EC5eee7D0908353231E639849E1510c0',
   tokenDecimals: 18,
@@ -5020,7 +6026,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -5032,7 +6038,7 @@ const pools = [
   id: 'zoo-ftm-fusdt',
   logo: 'fantom/FUSDT-FTM.png',
   name: 'FUSDT-FTM LP',
-  token: 'FUSDT-FTM LP-ZOO',
+  token: 'FUSDT-FTM LP (Zoo)',
   tokenDescription: 'Zoo',
   tokenAddress: '0x9b7f941894548c905866843a50fDF54517eAeAbb',
   tokenDecimals: 18,
@@ -5058,7 +6064,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -5070,7 +6076,7 @@ const pools = [
   id: 'zoo-ftm-eth',
   logo: 'fantom/WETH-FTM.png',
   name: 'ETH-FTM LP',
-  token: 'ETH-FTM LP-ZOO',
+  token: 'ETH-FTM LP (Zoo)',
   tokenDescription: 'Zoo',
   tokenAddress: '0xC89dbCB06A74BD2Ec521A3e49e192906C2CC5512',
   tokenDecimals: 18,
@@ -5096,7 +6102,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -5108,7 +6114,7 @@ const pools = [
   id: 'zoo-ftm-zoo',
   logo: 'fantom/ZOO-FTM.png',
   name: 'ZOO-FTM LP',
-  token: 'ZOO-FTM LP-ZOO',
+  token: 'ZOO-FTM LP (Zoo)',
   tokenDescription: 'Zoo',
   tokenAddress: '0x128dF293532203eFaf6e2801656844F8738dB001',
   tokenDecimals: 18,
@@ -5134,7 +6140,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -5146,7 +6152,7 @@ const pools = [
   id: 'zoo-ftm-atari',
   logo: 'fantom/ATARI-FTM.png',
   name: 'ATARI-FTM LP',
-  token: 'ATARI-FTM LP-ZOO',
+  token: 'ATARI-FTM LP (Zoo)',
   tokenDescription: 'Zoo',
   tokenAddress: '0xcA618f90850B7e0b34E38B353188EF46b969CEC5',
   tokenDecimals: 18,
@@ -5172,7 +6178,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -5183,8 +6189,8 @@ const pools = [
 {
   id: 'ice-ice-ftm-boo',
   logo: 'fantom/ICE-FTM.png',
-  name: 'ICE-FTM LP-SPOOKYSWAP',
-  token: 'ICE-FTM LP-SPOOKYSWAP',
+  name: 'ICE-FTM LP (SpookySwap)',
+  token: 'ICE-FTM LP (SpookySwap)',
   tokenDescription: 'Popsicle',
   tokenAddress: '0x623ee4a7f290d11c11315994db70fb148b13021d',
   tokenDecimals: 18,
@@ -5260,7 +6266,7 @@ const pools = [
   id: 'tomb-tomb-ftm',
   logo: 'fantom/TOMB-FTM.png',
   name: 'TOMB-FTM LP',
-  token: 'TOMB-FTM LP-SPOOKYSWAP',
+  token: 'TOMB-FTM LP (SpookySwap)',
   tokenDescription: 'Tomb',
   tokenAddress: '0x2A651563C9d3Af67aE0388a5c8F89b867038089e',
   tokenDecimals: 18,
@@ -5285,10 +6291,17 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'TSHARE',
+        symbol: 'TSHARE',
+        address: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
+        tokenAddress: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
-
-
 
     ],
   },
@@ -5298,7 +6311,7 @@ const pools = [
   id: "tomb-tshare-ftm",
   logo: 'fantom/TSHARE-FTM.png',
   name: 'TSHARE-FTM LP',
-  token: 'TSHARE-FTM LP-SPOOKYSWAP',
+  token: 'TSHARE-FTM LP (SpookySwap)',
   tokenDescription: 'Tomb',
   tokenAddress: '0x4733bc45eF91cF7CcEcaeeDb794727075fB209F2',
   tokenDecimals: 18,
@@ -5323,6 +6336,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+
+      {
+        name: 'TSHARE',
+        symbol: 'TSHARE',
+        address: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
+        tokenAddress: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5336,7 +6358,7 @@ const pools = [
   id: "lqdr-lqdr-ftm",
   logo: 'fantom/LQDR-FTM.png',
   name: 'LQDR-FTM LP',
-  token: 'LQDR-FTM LP-LIQUID',
+  token: 'LQDR-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0xfA7cA6E6D17368e0a1fA9C75f2eBE5A8d7bE9fc6',
   tokenDecimals: 18,
@@ -5361,6 +6383,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5374,7 +6405,7 @@ const pools = [
   id: "lqdr-lqdr-fusdt",
   logo: 'fantom/LQDR-FUSDT.png',
   name: 'LQDR-FUSDT LP',
-  token: 'LQDR-FUSDT LP-LIQUID',
+  token: 'LQDR-FUSDT LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0xA1BB6830fAbdDB99Ed365C0611a33741c5e6173f',
   tokenDecimals: 18,
@@ -5399,6 +6430,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5412,7 +6452,7 @@ const pools = [
   id: "lqdr-yfi-ftm",
   logo: 'fantom/YFI-FTM.png',
   name: 'YFI-FTM LP',
-  token: 'YFI-FTM LP-LIQUID',
+  token: 'YFI-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0x280AbC0D9727f4DE3A46Ca9CF93C16b4a9c127D1',
   tokenDecimals: 18,
@@ -5438,7 +6478,16 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
-     
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
+
       ...zapTokens,
 
 
@@ -5451,7 +6500,7 @@ const pools = [
   id: "lqdr-dai-ftm",
   logo: 'fantom/DAI-FTM.png',
   name: 'DAI-FTM LP',
-  token: 'DAI-FTM LP-LIQUID',
+  token: 'DAI-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0xd32F2EB49E91aA160946f3538564118388d6246a',
   tokenDecimals: 18,
@@ -5477,6 +6526,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5490,7 +6548,7 @@ const pools = [
   id: "lqdr-link-ftm",
   logo: 'fantom/LINK-FTM.png',
   name: 'LINK-FTM LP',
-  token: 'LINK-FTM LP-LIQUID',
+  token: 'LINK-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0x1Ca86e57103564F47fFCea7259a6ce8Cc1301549',
   tokenDecimals: 18,
@@ -5516,6 +6574,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5529,7 +6596,7 @@ const pools = [
   id: "lqdr-weth-ftm",
   logo: 'fantom/WETH-FTM.png',
   name: 'WETH-FTM LP',
-  token: 'WETH-FTM LP-LIQUID',
+  token: 'WETH-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0x3d0BD54c48C2C433ea6fed609Cc3d5Fb7A77622B',
   tokenDecimals: 18,
@@ -5555,6 +6622,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5568,7 +6644,7 @@ const pools = [
   id: "lqdr-fusdt-ftm",
   logo: 'fantom/FUSDT-FTM.png',
   name: 'FUSDT-FTM LP',
-  token: 'FUSDT-FTM LP-LIQUID',
+  token: 'FUSDT-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0xd019dd7C760c6431797d6ed170bFFb8FAee11F99',
   tokenDecimals: 18,
@@ -5594,6 +6670,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5607,7 +6692,7 @@ const pools = [
   id: "lqdr-wbtc-ftm",
   logo: 'fantom/WBTC-FTM.png',
   name: 'WBTC-FTM LP',
-  token: 'WBTC-FTM LP-LIQUID',
+  token: 'WBTC-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0xC92D97416328A461BcE2F539498b505c6c97748f',
   tokenDecimals: 18,
@@ -5633,6 +6718,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5646,7 +6740,7 @@ const pools = [
   id: "lqdr-sushi-ftm",
   logo: 'fantom/SUSHI-FTM.png',
   name: 'SUSHI-FTM LP',
-  token: 'SUSHI-FTM LP-LIQUID',
+  token: 'SUSHI-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0x49D2e0DC99C7358D7A9A8633Bf6df111D0EE7F65',
   tokenDecimals: 18,
@@ -5672,6 +6766,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5685,7 +6788,7 @@ const pools = [
   id: "lqdr-cream-ftm",
   logo: 'fantom/CREAM-FTM.png',
   name: 'CREAM-FTM LP',
-  token: 'CREAM-FTM LP-LIQUID',
+  token: 'CREAM-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0x147e27BE8E66f74c7659d88E2e6a13188873D58b',
   tokenDecimals: 18,
@@ -5711,6 +6814,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5724,7 +6836,7 @@ const pools = [
   id: "lqdr-frax-fxs",
   logo: 'fantom/FRAX-FXS.png',
   name: 'FRAX-FXS LP',
-  token: 'FRAX-FXS LP-LIQUID',
+  token: 'FRAX-FXS LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0xCFF4353E10A7207Bd16427CA9549437d439b68Df',
   tokenDecimals: 18,
@@ -5750,6 +6862,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5763,7 +6884,7 @@ const pools = [
   id: "lqdr-aave-usdc",
   logo: 'fantom/AAVE-USDC.png',
   name: 'AAVE-USDC LP',
-  token: 'AAVE-USDC LP-LIQUID',
+  token: 'AAVE-USDC LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0x2d89BB3b1448152002453AA37fbE4051AfdBf56d',
   tokenDecimals: 18,
@@ -5789,6 +6910,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5802,7 +6932,7 @@ const pools = [
   id: "lqdr-snx-ftm",
   logo: 'fantom/SNX-FTM.png',
   name: 'SNX-FTM LP',
-  token: 'SNX-FTM LP-LIQUID',
+  token: 'SNX-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0xFe69403CF2e22390c0D87aB05062F67D9084935B',
   tokenDecimals: 18,
@@ -5828,6 +6958,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5841,7 +6980,7 @@ const pools = [
   id: "lqdr-ice-ftm",
   logo: 'fantom/ICE-FTM.png',
   name: 'ICE-FTM LP',
-  token: 'ICE-FTM LP-LIQUID',
+  token: 'ICE-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0x84311ECC54D7553378c067282940b0fdfb913675',
   tokenDecimals: 18,
@@ -5867,6 +7006,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5880,7 +7028,7 @@ const pools = [
   id: "lqdr-cover-ftm",
   logo: 'fantom/COVER-FTM.png',
   name: 'COVER-FTM LP',
-  token: 'COVER-FTM LP-LIQUID',
+  token: 'COVER-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0xAFa1BF9b2a89DFD60499838c331538283b3346ED',
   tokenDecimals: 18,
@@ -5906,6 +7054,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5919,7 +7076,7 @@ const pools = [
   id: "lqdr-zoo-ftm",
   logo: 'fantom/ZOO-FTM.png',
   name: 'ZOO-FTM LP',
-  token: 'ZOO-FTM LP-LIQUID',
+  token: 'ZOO-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0x3Ac28d350C59ef9054B305DFe9078fADc3cecABe',
   tokenDecimals: 18,
@@ -5945,6 +7102,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5958,7 +7124,7 @@ const pools = [
   id: "lqdr-crv-ftm",
   logo: 'fantom/CRV-FTM.png',
   name: 'CRV-FTM LP',
-  token: 'CRV-FTM LP-LIQUID',
+  token: 'CRV-FTM LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0x177e2cc843d2Ee20AA884DC8af2a865adf78adb2',
   tokenDecimals: 18,
@@ -5984,6 +7150,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -5997,7 +7172,7 @@ const pools = [
   id: "lqdr-fusdt-frax",
   logo: 'fantom/FUSDT-FRAX.png',
   name: 'FUSDT-FRAX LP',
-  token: 'FUSDT-FRAX LP-LIQUID',
+  token: 'FUSDT-FRAX LP (LiquidDriver)',
   tokenDescription: 'LiquidDriver',
   tokenAddress: '0x4669751cD7933c9Ca2aC8147aE7043d8561f4C8D',
   tokenDecimals: 18,
@@ -6023,6 +7198,15 @@ const pools = [
     router: SUSHI_ROUTER,
 
     tokens: [
+
+      {
+        name: 'LQDR',
+        symbol: 'LQDR',
+        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
+        decimals: 18,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -6063,7 +7247,6 @@ const pools = [
     tokens: [
      
       ...zapTokens,
-
 
 
     ],
@@ -6112,7 +7295,7 @@ const pools = [
   id: 'shade-shade-ftm',
   logo: 'fantom/SHADE-FTM.png',
   name: 'SHADE-FTM LP',
-  token: 'SHADE-FTM LP-SPOOKY',
+  token: 'SHADE-FTM LP (SpookySwap)',
   tokenDescription: 'ShadeCash',
   tokenAddress: '0x20aa395F3bcc4dc44a94215D129650533B3da0b3',
   tokenDecimals: 18,
@@ -6176,9 +7359,6 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
-
-
 
     ],
   },
@@ -6188,7 +7368,7 @@ const pools = [
   id: 'chad-chad-ftm',
   logo: 'fantom/CHAD-FTM.png',
   name: 'CHAD-FTM LP',
-  token: 'CHAD-FTM LP-PAINTSWAP',
+  token: 'CHAD-FTM LP (PaintSwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0x55a00f4daf71e3ef4b385991b2bf23bd3bef627a',
   tokenDecimals: 18,
@@ -6213,9 +7393,15 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
 
     ],
@@ -6226,7 +7412,7 @@ const pools = [
   id: 'chad-chad-usdc',
   logo: 'fantom/CHAD-USDC.png',
   name: 'CHAD-USDC LP',
-  token: 'CHAD-USDC LP-PAINTSWAP',
+  token: 'CHAD-USDC LP (PaintSwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0x698a49A0Bb3947897611A4C5e289FbeDB557D150',
   tokenDecimals: 18,
@@ -6251,10 +7437,15 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
-
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
     ],
   },
@@ -6264,7 +7455,7 @@ const pools = [
   id: 'chad-chad-casper',
   logo: 'fantom/CHAD-CASPER.png',
   name: 'CHAD-CASPER LP',
-  token: 'CHAD-CASPER LP-SPIRITSWAP',
+  token: 'CHAD-CASPER LP (SpiritSwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0x4171DE2115DBCe3a9064a5d6D0255b274FDC0B25',
   tokenDecimals: 18,
@@ -6289,9 +7480,15 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
 
     ],
@@ -6303,7 +7500,7 @@ const pools = [
   id: 'chad-chad-brush',
   logo: 'fantom/CHAD-BRUSH.png',
   name: 'CHAD-BRUSH LP',
-  token: 'CHAD-BRUSH LP-PAINTSWAP',
+  token: 'CHAD-BRUSH LP (PaintSwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0xaf7ae01e65244f260eb5c8f0142ecf5d4434aa05',
   tokenDecimals: 18,
@@ -6328,9 +7525,15 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
 
     ],
@@ -6341,7 +7544,7 @@ const pools = [
   id: 'chad-chad-fbomb',
   logo: 'fantom/CHAD-FBOMB.png',
   name: 'CHAD-BOMB LP',
-  token: 'CHAD-BOMB LP-SPOOKYSWAP',
+  token: 'CHAD-BOMB LP (SpookySwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0x2acf18104ffce06ac4b7dfb9c1ff539119d96b27',
   tokenDecimals: 18,
@@ -6363,11 +7566,9 @@ const pools = [
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: PAINT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
 
 
@@ -6379,7 +7580,7 @@ const pools = [
   id: 'chad-chad-tomb',
   logo: 'fantom/CHAD-TOMB.png',
   name: 'CHAD-TOMB LP',
-  token: 'CHAD-TOMB LP-PAINTSWAP',
+  token: 'CHAD-TOMB LP (PaintSwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0x777445A6E9DE0e7a2E38D091f76060Dd4c09cdd9',
   tokenDecimals: 18,
@@ -6404,10 +7605,15 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
-
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
     ],
   },
@@ -6417,7 +7623,7 @@ const pools = [
   id: 'chad-chad-cztears',
   logo: 'fantom/CHAD-CZTEARS.png',
   name: 'CHAD-CZTEARS LP',
-  token: 'CHAD-CZTEARS LP-PAINTSWAP',
+  token: 'CHAD-CZTEARS LP (PaintSwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0x2B932f3C08C73f4d698E1D91Bb838435bA7b4931',
   tokenDecimals: 18,
@@ -6442,9 +7648,15 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
 
     ],
@@ -6455,7 +7667,7 @@ const pools = [
   id: 'chad-chad-atari',
   logo: 'fantom/CHAD-ATARI.png',
   name: 'CHAD-ATARI LP',
-  token: 'CHAD-ATARI LP-PAINTSWAP',
+  token: 'CHAD-ATARI LP (PaintSwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0xb7b3Ca37483117B797Db428948d9CAf79491E97C',
   tokenDecimals: 18,
@@ -6480,10 +7692,15 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
-
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
     ],
   },
@@ -6493,7 +7710,7 @@ const pools = [
   id: 'chad-chad-just',
   logo: 'fantom/CHAD-JUST.png',
   name: 'CHAD-JUST LP',
-  token: 'CHAD-JUST LP-ZOODEX',
+  token: 'CHAD-JUST LP (Zoo)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0xF096E1375a4200072D08993cd1d0C2A903EF57E7',
   tokenDecimals: 18,
@@ -6519,7 +7736,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -6531,7 +7748,7 @@ const pools = [
   id: 'chad-chad-shiba',
   logo: 'fantom/CHAD-SHIBA.png',
   name: 'CHAD-SHIBA LP',
-  token: 'CHAD-SHIBA LP-PAINTSWAP',
+  token: 'CHAD-SHIBA LP (PaintSwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0x5886A4566Dc8605DF9A477863D1A2aA9a4384143',
   tokenDecimals: 18,
@@ -6556,9 +7773,15 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
 
     ],
@@ -6569,7 +7792,7 @@ const pools = [
   id: 'chad-shiba-ftm',
   logo: 'fantom/FTM-SHIBA.png',
   name: 'FTM-SHIBA LP',
-  token: 'FTM-SHIBA LP-PAINTSWAP',
+  token: 'FTM-SHIBA LP (PaintSwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0x71020669C6cbeD08e511ecE3A28e5aF5eA0cB6aE',
   tokenDecimals: 18,
@@ -6594,10 +7817,15 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
-
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
     ],
   },
@@ -6607,7 +7835,7 @@ const pools = [
   id: 'chad-ftm-hodl',
   logo: 'fantom/HODL-FTM.png',
   name: 'FTM-HODL LP',
-  token: 'FTM-HODL LP-PAINTSWAP',
+  token: 'FTM-HODL LP (PaintSwap)',
   tokenDescription: 'Chad Finance',
   tokenAddress: '0x06BEF78Cd8bb17a6dAceD10B610884C09f36FdB7',
   tokenDecimals: 18,
@@ -6633,10 +7861,15 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
-
+      {
+        name: 'CHAD',
+        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+        symbol: 'CHAD',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
     ],
   },
@@ -6646,7 +7879,7 @@ const pools = [
   id: "yoro-grim-yoro",
   logo: 'fantom/GRIM-YORO.png',
   name: 'GRIM-YORO LP',
-  token: 'GRIM-YORO LP-ZOO',
+  token: 'GRIM-YORO LP (Zoo)',
   tokenDescription: 'Yoro',
   tokenAddress: '0x2e028c6eaCcFE2a4aA82A86Ad983C8bCAec32c73',
   tokenDecimals: 18,
@@ -6672,8 +7905,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
-
+      ...zapTokensReduced,
 
 
     ],
@@ -6684,7 +7916,7 @@ const pools = [
   id: "yoro-grim-catnip",
   logo: 'fantom/GRIM-CATNIP.png',
   name: 'GRIM-CATNIP LP',
-  token: 'GRIM-CATNIP LP-ZOO',
+  token: 'GRIM-CATNIP LP (Zoo)',
   tokenDescription: 'Yoro',
   tokenAddress: '0x45f446cD7ECc82eD1655cC00663004d5eac6c841',
   tokenDecimals: 18,
@@ -6710,7 +7942,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -6722,7 +7954,7 @@ const pools = [
   id: "yoro-reaper-catnip",
   logo: 'fantom/CATNIP-REAPER.png',
   name: 'REAPER-CATNIP LP',
-  token: 'REAPER-CATNIP LP-ZOO',
+  token: 'REAPER-CATNIP LP (Zoo)',
   tokenDescription: 'Yoro',
   tokenAddress: '0xE177d58724092d6d3a3178b0C557C35928DD471F',
   tokenDecimals: 18,
@@ -6748,7 +7980,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -6798,7 +8030,7 @@ const pools = [
   id: "yoro-yoro-ftm",
   logo: 'fantom/YORO-FTM.png',
   name: 'YORO-FTM LP',
-  token: 'YORO-FTM LP-ZOO',
+  token: 'YORO-FTM LP (Zoo)',
   tokenDescription: 'Yoro',
   tokenAddress: '0x116f65A1F1A206Dd541d58cb7580DdC4675D13b5',
   tokenDecimals: 18,
@@ -6824,7 +8056,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -6836,7 +8068,7 @@ const pools = [
   id: "yoro-catnip-ftm",
   logo: 'fantom/CATNIP-FTM.png',
   name: 'CATNIP-FTM LP',
-  token: 'CATNIP-FTM LP-ZOO',
+  token: 'CATNIP-FTM LP (Zoo)',
   tokenDescription: 'Yoro',
   tokenAddress: '0xDaBaCA4523345023C32BfC6B156Ae42e41A49821',
   tokenDecimals: 18,
@@ -6862,7 +8094,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -6874,7 +8106,7 @@ const pools = [
   id: "yoro-yoro-zoo",
   logo: 'fantom/YORO-ZOO.png',
   name: 'YORO-ZOO LP',
-  token: 'YORO-ZOO LP-ZOO',
+  token: 'YORO-ZOO LP (Zoo)',
   tokenDescription: 'Yoro',
   tokenAddress: '0xC4430E31ceC5967949dE2cAb4961a8D17D3D7ff0',
   tokenDecimals: 18,
@@ -6900,7 +8132,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -6912,7 +8144,7 @@ const pools = [
   id: "yoro-catnip-zoo",
   logo: 'fantom/CATNIP-ZOO.png',
   name: 'CATNIP-ZOO LP',
-  token: 'CATNIP-ZOO LP-ZOO',
+  token: 'CATNIP-ZOO LP (Zoo)',
   tokenDescription: 'Yoro',
   tokenAddress: '0x6DF2fc52bC307954E7eD6A07104F8378E97cACcF',
   tokenDecimals: 18,
@@ -6938,7 +8170,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -6950,7 +8182,7 @@ const pools = [
   id: "yoro-yoro-catnip",
   logo: 'fantom/YORO-CATNIP.png',
   name: 'YORO-CATNIP LP',
-  token: 'YORO-CATNIP LP-ZOO',
+  token: 'YORO-CATNIP LP (Zoo)',
   tokenDescription: 'Yoro',
   tokenAddress: '0x2cA2B777f5D3cAF8247E31a0C8e4b0bD8a22A33b',
   tokenDecimals: 18,
@@ -6976,7 +8208,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -6988,7 +8220,7 @@ const pools = [
   id: "yoro-atari-zoo",
   logo: 'fantom/ATARI-ZOO.png',
   name: 'ATARI-ZOO LP',
-  token: 'ATARI-ZOO LP-ZOO',
+  token: 'ATARI-ZOO LP (Zoo)',
   tokenDescription: 'Yoro',
   tokenAddress: '0x5FBcb37F7E2723CFa91d0F2A3c8B8cbF3B2A77B1',
   tokenDecimals: 18,
@@ -7014,7 +8246,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -7026,7 +8258,7 @@ const pools = [
   id: "yoro-echo-ftm",
   logo: 'fantom/ECHO-FTM.png',
   name: 'ECHO-FTM LP',
-  token: 'ECHO-FTM LP-ZOO',
+  token: 'ECHO-FTM LP (Zoo)',
   tokenDescription: 'Yoro',
   tokenAddress: '0x79d25d00C159BAf1bdE8831B00e2f7370Bf5Fe46',
   tokenDecimals: 18,
@@ -7052,7 +8284,7 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -7102,7 +8334,7 @@ const pools = [
   id: 'sbrw-sbrw-ftm',
   logo: 'fantom/SBRW-FTM.png',
   name: 'SBRW-FTM LP',
-  token: 'SBRW-FTM LP-HYPER',
+  token: 'SBRW-FTM LP (HyperJump)',
   tokenDescription: 'StrangeBrew',
   tokenAddress: '0x5360aedcaed83d4fc694755af80ef8c6896d04c6',
   tokenDecimals: 18,
@@ -7140,7 +8372,7 @@ const pools = [
   id: 'sbrw-sbrw-usdc',
   logo: 'fantom/SBRW-USDC.png',
   name: 'SBRW-USDC LP',
-  token: 'SBRW-USDC LP-HYPER',
+  token: 'SBRW-USDC LP (HyperJump)',
   tokenDescription: 'StrangeBrew',
   tokenAddress: '0x01fa4d84f5bd205e11ac5aff836094ee77363c2c',
   tokenDecimals: 18,
@@ -7178,7 +8410,7 @@ const pools = [
   id: 'sbrw-beermoney-ftm',
   logo: 'fantom/SBRW-FTM.png',
   name: 'BEERMONEY-FTM LP',
-  token: 'BEERMONEY-FTM LP-HYPER',
+  token: 'BEERMONEY-FTM LP (HyperJump)',
   tokenDescription: 'StrangeBrew',
   tokenAddress: '0xaab4b34e89e9b3d8f628019278b8bfd2745671a3',
   tokenDecimals: 18,
@@ -7254,7 +8486,7 @@ const pools = [
   id: 'butt-butt-ftm',
   logo: 'fantom/BUTT-FTM.png',
   name: 'BUTT-FTM LP',
-  token: 'BUTT-FTM LP-ZOO',
+  token: 'BUTT-FTM LP (Zoo)',
   tokenDescription: 'Buttcoin',
   tokenAddress: '0x823aa5dccb5bb602b393081365d9e3e92867e123',
   tokenDecimals: 18,
@@ -7279,8 +8511,18 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
+
+      
+      {
+        name: 'BUTT',
+        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
+        symbol: 'BUTT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -7292,7 +8534,7 @@ const pools = [
   id: 'butt-shit-ftm',
   logo: 'fantom/SHIT-FTM.png',
   name: 'SHIT-FTM LP',
-  token: 'SHIT-FTM LP-ZOO',
+  token: 'SHIT-FTM LP (Zoo)',
   tokenDescription: 'Buttcoin',
   tokenAddress: '0xf386ce2d4de9fe8fc47d00ebc6816cc5f79a350b',
   tokenDecimals: 18,
@@ -7317,8 +8559,17 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
+      
+      {
+        name: 'BUTT',
+        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
+        symbol: 'BUTT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
+      ...zapTokensReduced,
 
 
 
@@ -7330,7 +8581,7 @@ const pools = [
   id: 'butt-butt-shit',
   logo: 'fantom/BUTT-SHIT.png',
   name: 'BUTT-SHIT LP',
-  token: 'BUTT-SHIT LP-ZOO',
+  token: 'BUTT-SHIT LP (Zoo)',
   tokenDescription: 'Buttcoin',
   tokenAddress: '0xf5F1Bc0100D8A46091a861c8C5c2a18e2427c169',
   tokenDecimals: 18,
@@ -7355,8 +8606,17 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BUTT',
+        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
+        symbol: 'BUTT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -7368,7 +8628,7 @@ const pools = [
   id: 'butt-butt-zoo',
   logo: 'fantom/BUTT-ZOO.png',
   name: 'BUTT-ZOO LP',
-  token: 'BUTT-ZOO LP-ZOO',
+  token: 'BUTT-ZOO LP (Zoo)',
   tokenDescription: 'Buttcoin',
   tokenAddress: '0x81d82a53f2b96ad0307a30626559ca164e4acd8a',
   tokenDecimals: 18,
@@ -7394,7 +8654,16 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
+      {
+        name: 'BUTT',
+        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
+        symbol: 'BUTT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
+
+      ...zapTokensReduced,
 
 
 
@@ -7406,7 +8675,7 @@ const pools = [
   id: 'butt-shit-wild',
   logo: 'fantom/SHIT-WILD.png',
   name: 'WILD-SHIT LP',
-  token: 'WILD-SHIT LP-ZOO',
+  token: 'WILD-SHIT LP (Zoo)',
   tokenDescription: 'Buttcoin',
   tokenAddress: '0x4aC3643E27E41f630F1c0b7E39B2e849876D01C3',
   tokenDecimals: 18,
@@ -7431,8 +8700,18 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
+
+      
+      {
+        name: 'BUTT',
+        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
+        symbol: 'BUTT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -7444,7 +8723,7 @@ const pools = [
   id: 'butt-hodl-shit',
   logo: 'fantom/SHIT-HODL.png',
   name: 'HODL-SHIT LP',
-  token: 'HODL-SHIT LP-ZOO',
+  token: 'HODL-SHIT LP (Zoo)',
   tokenDescription: 'Buttcoin',
   tokenAddress: '0x9030c1F9Af5a7457A8E89a05C42a0Ed6DeE51A8D',
   tokenDecimals: 18,
@@ -7469,8 +8748,17 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BUTT',
+        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
+        symbol: 'BUTT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -7482,7 +8770,7 @@ const pools = [
   id: 'butt-hodl-butt',
   logo: 'fantom/BUTT-HODL.png',
   name: 'HODL-BUTT LP',
-  token: 'HODL-BUTT LP-ZOO',
+  token: 'HODL-BUTT LP (Zoo)',
   tokenDescription: 'Buttcoin',
   tokenAddress: '0x3cAF51d882594c5aA980611aead947f80794A804',
   tokenDecimals: 18,
@@ -7507,8 +8795,17 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
+
+      {
+        name: 'BUTT',
+        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
+        symbol: 'BUTT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -7520,7 +8817,7 @@ const pools = [
   id: 'butt-shit-totem',
   logo: 'fantom/SHIT-TOTEM.png',
   name: 'SHIT-TOTEM LP',
-  token: 'SHIT-TOTEM LP-ZOO',
+  token: 'SHIT-TOTEM LP (Zoo)',
   tokenDescription: 'Buttcoin',
   tokenAddress: '0x778569244e2a7A73804435f170832E938596EF94',
   tokenDecimals: 18,
@@ -7545,8 +8842,17 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
+      
+      {
+        name: 'BUTT',
+        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
+        symbol: 'BUTT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
-      ...zapTokens,
+      ...zapTokensReduced,
 
 
 
@@ -7558,7 +8864,7 @@ const pools = [
   id: 'butt-shit-babyboo',
   logo: 'fantom/SHIT-BABYBOO.png',
   name: 'SHIT-BABYBOO LP',
-  token: 'SHIT-BABYBOO LP-SPOOKY',
+  token: 'SHIT-BABYBOO LP (SpookySwap)',
   tokenDescription: 'Buttcoin',
   tokenAddress: '0x2B870b5EcD0Ad4ACeeCb4Aa27A8A2c47eB476d50',
   tokenDecimals: 18,
@@ -7583,6 +8889,15 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
+      
+      {
+        name: 'BUTT',
+        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
+        symbol: 'BUTT',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
      
       ...zapTokens,
 
@@ -7621,9 +8936,6 @@ const pools = [
     router: OPERA_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
-
 
 
     ],
@@ -7634,7 +8946,7 @@ const pools = [
   id: "opera-opera-ftm",
   logo: 'fantom/OPERA-FTM.png',
   name: 'OPERA-FTM LP',
-  token: 'OPERA-FTM LP-OPERA',
+  token: 'OPERA-FTM LP (OperaSwap)',
   tokenDescription: 'OperaSwap',
   tokenAddress: '0x31C782F4f7bdabc2f1Ac02Da1782eA6107C4CFCf',
   tokenDecimals: 18,
@@ -7659,10 +8971,15 @@ const pools = [
     router: OPERA_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
 
-
+      {
+        name: 'OPERA',
+        address: '0xed940c1db02a8e7dc2e6748aff3aab165b59c7e3',
+        symbol: 'OPERA',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },     
 
     ],
   },
@@ -7672,7 +8989,7 @@ const pools = [
   id: 'behodl-hodlcc-ftm',
   logo: 'fantom/HODLcc-FTM.png',
   name: 'HODLcc-FTM LP',
-  token: 'HODLcc-FTM LP-SPOOKY',
+  token: 'HODLcc-FTM LP (SpookySwap)',
   tokenDescription: 'beHODL',
   tokenAddress: '0x64e559154a6AD93AD0F1Ef1AfA697Fd00804709A',
   tokenDecimals: 18,
@@ -7710,7 +9027,7 @@ const pools = [
   id: 'behodl-behodl-ftm',
   logo: 'fantom/beHODL-FTM.png',
   name: 'beHODL-FTM LP',
-  token: 'beHODL-FTM LP-SPOOKY',
+  token: 'beHODL-FTM LP (SpookySwap)',
   tokenDescription: 'beHODL',
   tokenAddress: '0xF26bD52EFE714870e31f58E4F0F7E9fe01424328',
   tokenDecimals: 18,
@@ -7748,7 +9065,7 @@ const pools = [
   id: 'behodl-behodl-nips',
   logo: 'fantom/beHODL-NIPS.png',
   name: 'beHODL-NIPS LP',
-  token: 'beHODL-NIPS LP-SPOOKY',
+  token: 'beHODL-NIPS LP (SpookySwap)',
   tokenDescription: 'beHODL',
   tokenAddress: '0xbE1B408A803A9d073d8ee3635b468a47a49D800C',
   tokenDecimals: 18,
@@ -7786,7 +9103,7 @@ const pools = [
   id: 'behodl-behodl-shiba',
   logo: 'fantom/beHODL-SHIBA.png',
   name: 'beHODL-SHIBA LP',
-  token: 'beHODL-SHIBA LP-SPOOKY',
+  token: 'beHODL-SHIBA LP (SpookySwap)',
   tokenDescription: 'beHODL',
   tokenAddress: '0xBDaD44dC4886695D6b1B7c1DDCAbDa5621D10A03',
   tokenDecimals: 18,
@@ -7824,7 +9141,7 @@ const pools = [
   id: 'behodl-ftm-babyboo',
   logo: 'fantom/beHODL-BABYBOO.png',
   name: 'FTM-BABYBOO LP',
-  token: 'FTM-BABYBOO LP-SPOOKY',
+  token: 'FTM-BABYBOO LP (SpookySwap)',
   tokenDescription: 'beHODL',
   tokenAddress: '0x24a5D3e0E3D8F21d94508f148682379fCaB532D8',
   tokenDecimals: 18,
@@ -7862,7 +9179,7 @@ const pools = [
   id: 'bomb-bomb-ftm',
   logo: 'fantom/BOMB-FTM.png',
   name: 'BOMB-FTM LP',
-  token: 'BOMB-FTM LP-Bomb',
+  token: 'BOMB-FTM LP (BombSwap)',
   tokenDescription: 'BombSwap',
   tokenAddress: '0x8264f247E4571e2879A05D5d2115C26406c0bC2b',
   tokenDecimals: 18,
@@ -7887,9 +9204,6 @@ const pools = [
     router: BOMB_ROUTER,
 
     tokens: [
-     
-      ...zapTokens,
-
 
 
     ],
@@ -7900,7 +9214,7 @@ const pools = [
   id: 'bomb-shrap-ftm',
   logo: 'fantom/SHRAP-FTM.png',
   name: 'SHRAP-FTM LP',
-  token: 'SHRAP-FTM LP-Bomb',
+  token: 'SHRAP-FTM LP (BombSwap)',
   tokenDescription: 'BombSwap',
   tokenAddress: '0xE69b45BE6260634de4e432F66179ce47EE846800',
   tokenDecimals: 18,
@@ -7926,9 +9240,15 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
-
-
+      
+      {
+        name: 'SHRAP',
+        address: '0xbf4906762c38f50bc7be0a11bb452c944f6c72e1',
+        symbol: 'SHRAP',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
     ],
   },
@@ -7938,7 +9258,7 @@ const pools = [
   id: 'bomb-bomb-shrap',
   logo: 'fantom/BOMB-SHRAP.png',
   name: 'BOMB-SHRAP LP',
-  token: 'BOMB-SHRAP LP-Bomb',
+  token: 'BOMB-SHRAP LP (BombSwap)',
   tokenDescription: 'BombSwap',
   tokenAddress: '0x4710D96DCAeD0dBb1f82E77F620C03C1D9f4A5e1',
   tokenDecimals: 18,
@@ -7964,8 +9284,15 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
-
+      
+      {
+        name: 'SHRAP',
+        address: '0xbf4906762c38f50bc7be0a11bb452c944f6c72e1',
+        symbol: 'SHRAP',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
 
     ],
@@ -7976,7 +9303,7 @@ const pools = [
   id: 'bomb-bomb-usdc',
   logo: 'fantom/BOMB-USDC.png',
   name: 'BOMB-USDC LP',
-  token: 'BOMB-USDC LP-Bomb',
+  token: 'BOMB-USDC LP (BombSwap)',
   tokenDescription: 'BombSwap',
   tokenAddress: '0xFD98aa53999613CfFB57a784553e7B3F6D4e25B8',
   tokenDecimals: 18,
@@ -8002,9 +9329,14 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
-
-
+      {
+        name: 'SHRAP',
+        address: '0xbf4906762c38f50bc7be0a11bb452c944f6c72e1',
+        symbol: 'SHRAP',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
     ],
   },
@@ -8014,7 +9346,7 @@ const pools = [
   id: 'bomb-shrap-usdc',
   logo: 'fantom/SHRAP-USDC.png',
   name: 'SHRAP-USDC LP',
-  token: 'SHRAP-USDC LP-Bomb',
+  token: 'SHRAP-USDC LP (BombSwap)',
   tokenDescription: 'BombSwap',
   tokenAddress: '0x873fa944414F569B23649EB92DBB254340B6b25D',
   tokenDecimals: 18,
@@ -8040,8 +9372,14 @@ const pools = [
 
     tokens: [
      
-      ...zapTokens,
-
+      {
+        name: 'SHRAP',
+        address: '0xbf4906762c38f50bc7be0a11bb452c944f6c72e1',
+        symbol: 'SHRAP',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
 
 
     ],
@@ -8050,6 +9388,49 @@ const pools = [
 
   
 ];
+
+
+// const spiritLps = [
+  //   {
+  //     id: 'spirit-spirit-ftm',
+  //     name: 'SPIRIT-FTM LP',
+  //     address: '0x30748322B6E34545DBe0788C421886AEB5297789',
+  //     symbol: 'SPIRIT-FTM LP (SpiritSwap)',
+  //     decimals: 18,
+  //     chainId: 250,
+  //     router: SPIRIT_ROUTER,
+  //   },
+  
+  //   {
+  //     id: 'spirit-spirit-xsteak',
+  //     name: 'SPIRIT-FTM LP',
+  //     address: '0xe276a71991a7a7b16cb453db2994ce9fcda2eda6',
+  //     symbol: 'SPIRIT-XSTEAK LP (SpiritSwap)',
+  //     decimals: 18,
+  //     chainId: 250,
+  //     router: SPIRIT_ROUTER,
+  //   },
+  
+  
+  
+  // ];
+
+
+const lpTokens = pools
+  .filter(v => v.assets.length > 1 && v.assets.length < 3)
+  .map(v => {
+    return {
+      id: v.id,
+      name: `${v.name} (${v.platform})`,
+      address: v.tokenAddress,
+      symbol: v.token,
+      decimals: v.tokenDecimals,
+      chainId: 250,
+      isLP: true,
+      router: v.zap.router,
+    };
+  });
+
 
 const vaultTokens = pools
   .filter(v => v.assets.length > 1 && v.assets.length < 3)
@@ -8067,6 +9448,7 @@ const vaultTokens = pools
   });
 
 export const fantomPools = pools.map(p => {
-  p.zap.tokens = [...p.zap.tokens, ...vaultTokens];
+  //p.zap.tokens = [...p.zap.tokens, ...vaultTokens];
+  p.zap.tokens = [...p.zap.tokens, ...lpTokens, ...vaultTokens];
   return p;
 });

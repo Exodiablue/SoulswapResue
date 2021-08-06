@@ -30,12 +30,12 @@ const hexToRgb = input => {
 // #############################
 
 const primaryColor = ['#000000', '#c1454b'];
-const hoverColor = ['#c11857'];
+const hoverColor = ['#c11828'];
 
 const secondaryColor = ['#FBF6F0', '#EFE6DC', '#DED9D5'];
 const warningColor = ['#ff9800'];
 const dangerColor = ['#f44336'];
-const successColor = ['#c11857','#a5104e'];
+const successColor = ['#c11828','#a5104e'];
 const infoColor = ['#00acc1'];
 const roseColor = ['#e91e63'];
 const grayColor = [

@@ -48,8 +48,8 @@ const DepositSection = ({ pool }) => {
     const zap = pool.zap;
     const filteredZapTokens = zap.tokens
       .filter(t => t.address !== pool.earnContractAddress)
-      .filter(t => t.id !== 'mlnl-mlnl')
-      .filter(t => (pool.assets.length < 2 ? !t.isVault : true))
+      //.filter(t => t.id !== 'mlnl-mlnl')
+      .filter(t => (pool.assets.length < 2 ? !t.isVault : true ))
       .filter(t => (t.isVault ? t.address !== pool.earnedTokenAddress : true));
     if (zap.disabled) {
       return {

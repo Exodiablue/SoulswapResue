@@ -54,7 +54,7 @@ const styles = theme => ({
       '& .MuiButton-label': {
         color: 'white',
       },
-      backgroundColor: '#c11857'
+      backgroundColor: '#c11828'
     },
     '& .MuiTouchRipple-root span': {
       backgroundColor: primaryColor[0],
@@ -66,7 +66,7 @@ const styles = theme => ({
       color: 'white',
     },
     '&:hover': {
-      backgroundColor: '#c11857'
+      backgroundColor: '#c11828'
     },
   },
   numericInput: {

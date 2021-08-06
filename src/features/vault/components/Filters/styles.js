@@ -10,7 +10,7 @@ const styles = theme => ({
     border: '3px solid #000',
     '&:hover': {
       // backgroundColor: '#fcf5ff00',
-      border: '3px solid #c11857',
+      border: '3px solid #c11828',
       transition: 'all 0.30s ease-in-out',
     },
   },
@@ -58,7 +58,7 @@ const styles = theme => ({
       textTransform: 'capitalize',
     },
     '&:hover': {
-      backgroundColor: '#c11857',
+      backgroundColor: '#c11828',
     },
   }
 });

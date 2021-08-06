@@ -50,6 +50,11 @@ const createTheme = (isNightMode) => createMuiTheme({
       icon : {
         color:"white"
       },
+      selectMenu : {
+        textOverflow: "initial",
+        whiteSpace: "normal",
+        paddingRight: "40px !important"
+      }
     },
     MuiAvatar : {
       root : {

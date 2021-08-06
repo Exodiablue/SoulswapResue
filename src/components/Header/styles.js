@@ -231,7 +231,7 @@ const styles = theme => ({
     textDecoration: 'none',
     color:"#fff",
     '&:hover,&:focus': {
-      color: '#c11857',
+      color: '#c11828',
       // textDecoration: 'underline',
     },
     '@media (min-width: 960px) and (max-width: 1110px)': {

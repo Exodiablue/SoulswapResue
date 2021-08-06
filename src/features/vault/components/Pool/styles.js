@@ -10,7 +10,7 @@ const styles = theme => ({
     transition: 'all 0.30s ease-in-out',
     border: '3px solid #000',
     '&:hover': {
-      border: '3px solid #c11857',
+      border: '3px solid #c11828',
       transition: 'all 0.30s ease-in-out',
       backgroundColor: '#fff5f5',  
       // textDecoration: 'underline',

@@ -92,7 +92,7 @@ export default function App({ children }) {
 
         loading ?
         <div className={classes.loadbox}>
-          <ClipLoader color={'#c11857'} loading={loading} css={override} size={100} />
+          <ClipLoader color={'#c11828'} loading={loading} css={override} size={100} />
         </div>
 
         :
