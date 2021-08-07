@@ -1485,43 +1485,6 @@ const pools = [
 },
 
 {
-  id: 'spirit-cztears-spirit',
-  logo: 'fantom/CZTEARS-SPIRIT.png',
-  name: 'CZTEARS-SPIRIT LP',
-  token: 'CZTEARS-SPIRIT LP (SpiritSwap)',
-  tokenDescription: 'SpiritSwap',
-  tokenAddress: '0xC66c0F0318e2777A53F884C8874B6CA3c2ED8f84',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-CZT-SPI-1',
-  earnedTokenAddress: '0x0122Ce265e2F7B1E641233fd0Fd03B721B4fDa62',
-  earnContractAddress: '0x0122Ce265e2F7B1E641233fd0Fd03B721B4fDa62',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'spirit-cztears-spirit',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'SpiritSwap',
-  assets: ['CZTEARS', 'SPIRIT'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x907f1A48918Bb5DE07c12443CAB0e6EEfCC611BC/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      ...spiritTokens,
-      ...zapTokens,
-
-
-    ],
-  },
-},
-
-{
   id: 'spirit-bnb-spirit',
   logo: 'fantom/BNB-SPIRIT.png',
   name: 'BNB-SPIRIT LP',
@@ -7084,44 +7047,6 @@ const pools = [
   status: 'eol',
   platform: 'Yoro',
   assets: ['CATNIP', 'ZOO'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: ZOO_ROUTER,
-
-    tokens: [
-      ...zooTokens,
-      ...zapTokensReduced,
-
-
-
-    ],
-  },
-},
-
-{
-  id: "yoro-yoro-catnip",
-  logo: 'fantom/YORO-CATNIP.png',
-  name: 'YORO-CATNIP LP',
-  token: 'YORO-CATNIP LP (Zoo)',
-  tokenDescription: 'Yoro',
-  tokenAddress: '0x2cA2B777f5D3cAF8247E31a0C8e4b0bD8a22A33b',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-YOR-CAT-C',
-  earnedTokenAddress: '0x800D64b93231ef0Ce67E3eEcAD593EcD082508e5',
-  earnContractAddress: '0x800D64b93231ef0Ce67E3eEcAD593EcD082508e5',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "yoro-yoro-catnip",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Yoro',
-  assets: ['YORO', 'CATNIP'],
   callFee: 0.5,
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
