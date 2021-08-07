@@ -299,8 +299,48 @@ const zooTokens = [
   },
 ];
 
+const paintTokens = [
+  {
+    name: 'Fantom',
+    address: '',
+    symbol: 'FTM',
+    wrappedSymbol: 'WFTM',
+    decimals: 18,
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/WFTM_32.png',
+    isToken: true,
+  },
+  {
+    name: 'CHAD',
+    address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
+    symbol: 'CHAD',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+
+  {
+    name: 'BRUSH',
+    address: '0x85dec8c4b2680793661bca91a8f129607571863d',
+    symbol: 'BRUSH',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+
+];
 
 const bombTokens = [
+  {
+    name: 'Fantom',
+    address: '',
+    symbol: 'FTM',
+    wrappedSymbol: 'WFTM',
+    decimals: 18,
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/WFTM_32.png',
+    isToken: true,
+  },
   {
     name: 'SHRAP',
     address: '0xbf4906762c38f50bc7be0a11bb452c944f6c72e1',
@@ -6246,14 +6286,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...paintTokens,
 
     ],
   },
@@ -6324,14 +6357,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...paintTokens,
 
 
     ],
@@ -6368,14 +6394,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...paintTokens,
 
     ],
   },
@@ -6412,14 +6431,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...paintTokens,
 
 
     ],
@@ -6455,7 +6467,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
+      ...spookyTokens,
+      ...zapTokens,
 
 
     ],
@@ -6492,14 +6505,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...paintTokens,
 
     ],
   },
@@ -6535,14 +6541,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...paintTokens,
 
 
     ],
@@ -6579,14 +6578,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...paintTokens,
 
     ],
   },
@@ -6621,7 +6613,7 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -6660,14 +6652,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...paintTokens,
 
 
     ],
@@ -6704,14 +6689,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...paintTokens,
 
     ],
   },
@@ -6748,14 +6726,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'CHAD',
-        address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-        symbol: 'CHAD',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...paintTokens,
 
     ],
   },
