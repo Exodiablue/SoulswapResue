@@ -71,8 +71,10 @@ const _zapDeposit = ({
       });
   } else if (isETH && isLP) {
     console.log(
-      'zapInToLPVault(tokenAddress,ammRouter, vaultAddress, address)',
-      tokenAddress,
+      //'zapInToLPVault(tokenAddress,ammRouter, vaultAddress, address)',
+      'zapInToLPVault(tokenAmount, earningToken, ammRouter, vaultAddress, address)',
+      tokenAmount,
+      earningToken,
       ammRouter,
       vaultAddress,
       address
@@ -86,7 +88,8 @@ const _zapDeposit = ({
     });
   } else if (isETH) {
     console.log(
-      'zapInToSSVault(tokenaddress,ammRouter, vaultAddress, address)',
+      'zapInToSSVault(tokenamount, tokenaddress,ammRouter, vaultAddress, address)',
+      tokenAmount,
       tokenAddress,
       ammRouter,
       vaultAddress,
@@ -116,16 +119,17 @@ const _zapDeposit = ({
       });
   } else {
     console.log(
-      'zapInTokenToSSVault(from, amt, router, vaultAddress, recipient)',
+      'zapInTokenToSSVault(from, amt, earningToken, router, vaultAddress, recipient)',
       tokenAddress,
       tokenAmount,
+      earningToken,
       ammRouter,
       vaultAddress,
       address
     );
 
     transaction = contract.methods
-      .zapInTokenToSSVault(tokenAddress, tokenAmount, ammRouter, vaultAddress, address)
+      .zapInTokenToSSVault(tokenAddress, tokenAmount, earningToken, ammRouter, vaultAddress, address)
       .send({
         from: address,
       });
