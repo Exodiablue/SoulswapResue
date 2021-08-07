@@ -8166,6 +8166,117 @@ const pools = [
   },
 },
 
+{
+  id: 'bomb-usdc-ftm',
+  logo: 'fantom/USDC-FTM.png',
+  name: 'USDC-FTM LP',
+  token: 'USDC-FTM LP (BombSwap)',
+  tokenDescription: 'BombSwap',
+  tokenAddress: '0x82c40B555f2dbb6704f214d984da3efdDE64711C',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-USD-FTM-L',
+  earnedTokenAddress: '0x1Ceab897Ce5B2152a377Ab065436bE0b48C867bB',
+  earnContractAddress: '0x1Ceab897Ce5B2152a377Ab065436bE0b48C867bB',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'bomb-usdc-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'BombSwap',
+  assets: ['FTM','USDC'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.fbomb.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: BOMB_ROUTER,
+
+    tokens: [
+     
+    ...bombTokens,
+
+
+    ],
+  },
+},
+
+{
+  id: 'bomb-btc-ftm',
+  logo: 'fantom/WBTC-FTM.png',
+  name: 'BTC-FTM LP',
+  token: 'BTC-FTM LP (BombSwap)',
+  tokenDescription: 'BombSwap',
+  tokenAddress: '0x874bB203aBb6AB8A791b56277B680c555f29aB1c',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BTC-FTM-L',
+  earnedTokenAddress: '0x83D7839A52614Dea753708F1Fd4C0F9B33B51057',
+  earnContractAddress: '0x83D7839A52614Dea753708F1Fd4C0F9B33B51057',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'bomb-btc-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'BombSwap',
+  assets: ['FTM','BTC'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.fbomb.finance/#/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
+  buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: BOMB_ROUTER,
+
+    tokens: [
+     
+    ...bombTokens,
+
+
+    ],
+  },
+},
+
+{
+  id: 'bomb-eth-ftm',
+  logo: 'fantom/WETH-FTM.png',
+  name: 'ETH-FTM LP',
+  token: 'ETH-FTM LP (BombSwap)',
+  tokenDescription: 'BombSwap',
+  tokenAddress: '0xDe8908Bc8aA9Fe4515079E2Dbc9380f659dFAd62',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-ETH-FTM-L',
+  earnedTokenAddress: '0x104386C3df14B52B1f3B4C1E252fc9C557480101',
+  earnContractAddress: '0x104386C3df14B52B1f3B4C1E252fc9C557480101',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'bomb-eth-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'BombSwap',
+  assets: ['FTM','ETH'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.fbomb.finance/#/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: BOMB_ROUTER,
+
+    tokens: [
+     
+    ...bombTokens,
+
+
+    ],
+  },
+},
+
   
 ];
 
