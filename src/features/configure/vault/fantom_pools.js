@@ -4247,8 +4247,8 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-      // ...shibaTokens,
-      // ...zapTokensReduced,
+      ...shibaTokens,
+      ...zapTokensReduced,
 
 
 
