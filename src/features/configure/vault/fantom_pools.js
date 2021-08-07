@@ -155,6 +155,171 @@ const zapTokensReduced = [
   },
 ];
 
+const spiritTokens = [
+  {
+    name: 'GRIM',
+    address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+    symbol: 'GRIM',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+
+  {
+    name: 'REAPER',
+    address: '0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+    symbol: 'REAPER',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+
+  {
+    name: 'SPIRIT',
+    address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+    symbol: 'SPIRIT',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+]
+
+const spookyTokens = [
+  {
+    name: 'BOO',
+    address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+    symbol: 'BOO',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+
+  {
+    name: 'TOMB',
+    symbol: 'TOMB',
+    address: '0x6c021ae822bea943b2e66552bde1d2696a53fbb7',
+    decimals: 18,
+    logoURI: '',
+  },
+
+  {
+    name: 'TSHARE',
+    symbol: 'TSHARE',
+    address: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
+    decimals: 18,
+    logoURI: '',
+  },
+
+];
+
+const wakaTokens = [
+  {
+    name: 'GRIM',
+    address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+    symbol: 'GRIM',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+  {
+    name: 'WAKA',
+    address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
+    symbol: 'WAKA',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+];
+
+const hyperTokens = [
+  {
+    name: 'ORI',
+    address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
+    symbol: 'ORI',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+  {
+    name: 'AURORA',
+    address: '0xbc2451aad349b6b43fd05f4f0cc327f8a6bca2d4',
+    symbol: 'AURORA',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+];
+
+const shibaTokens = [
+  {
+    name: 'SHIBA',
+    address: '0x9ba3e4f84a34df4e08c112e1a0ff148b81655615',
+    symbol: 'SHIBA',
+    decimals: 9,
+    chainId: 250,
+    logoURI: '',
+  },
+
+  {
+    name: 'GBONE',
+    address: '0x004b122eb5632077abdd2c38e8d9392348d5ca15',
+    symbol: 'GBONE',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+
+  {
+    name: 'BONE',
+    address: '0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
+    symbol: 'BONE',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+];
+
+const zooTokens = [
+  {
+    name: 'WILD',
+    address: '0xae0c241ec740309c2cbdc27456eb3c1a2ad74737',
+    symbol: 'WILD',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+
+  {
+    name: 'ZOO',
+    address: '0x09e145a1d53c0045f41aeef25d8ff982ae74dd56',
+    symbol: 'WILD',
+    decimals: 0,
+    chainId: 250,
+    logoURI: '',
+  },
+];
+
+
+const bombTokens = [
+  {
+    name: 'SHRAP',
+    address: '0xbf4906762c38f50bc7be0a11bb452c944f6c72e1',
+    symbol: 'SHRAP',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+  {
+    name: 'BOMB',
+    address: '0x8503eb4a136bdbeb323e37aa6e0fa0c772228378',
+    symbol: 'BOMB',
+    decimals: 0,
+    chainId: 250,
+    logoURI: '',
+  },
+
+];
+
 
 const pools = [
 
@@ -187,9 +352,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-     
       ...zapTokens,
-
     ],
   },
 },
@@ -223,19 +386,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'GRIM',
-        address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
-        symbol: 'GRIM',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
-
-
     ],
   },
 },
@@ -269,28 +421,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'GRIM',
-        address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
-        symbol: 'GRIM',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-
-     
+      ...wakaTokens,
       ...zapTokens,
-
     ],
   },
 },
@@ -324,28 +456,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'GRIM',
-        address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
-        symbol: 'GRIM',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-
-     
+      ...spiritTokens,
       ...zapTokens,
-
     ],
   },
 }, 
@@ -378,9 +490,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-     
       ...zapTokens,
-
     ],
   },
 },
@@ -414,18 +524,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'REAPER',
-        address: '0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
-        symbol: 'REAPER',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
-
     ],
   },
 },
@@ -459,18 +559,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'REAPER',
-        address: '0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
-        symbol: 'REAPER',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
-
     ],
   },
 },
@@ -504,18 +594,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'REAPER',
-        address: '0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
-        symbol: 'REAPER',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
-
     ],
   },
 },
@@ -549,9 +629,7 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-     
       ...zapTokens,
-
     ],
   },
 },
@@ -621,14 +699,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -666,14 +737,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -711,14 +775,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -756,14 +813,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -801,14 +851,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -845,14 +888,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -889,14 +925,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -933,14 +962,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -978,14 +1000,7 @@ const pools = [
 
     tokens: [
      
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
 
       ...zapTokens,
 
@@ -1023,14 +1038,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -1068,14 +1076,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -1113,14 +1114,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -1158,14 +1152,7 @@ const pools = [
 
     tokens: [
      
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
 
       ...zapTokens,
 
@@ -1202,14 +1189,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -1246,14 +1226,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -1290,14 +1263,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+...spiritTokens,
      
       ...zapTokens,
 
@@ -1333,16 +1299,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1378,16 +1335,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1422,16 +1370,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1466,17 +1405,9 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
+
 
     ],
   },
@@ -1510,17 +1441,9 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
+
 
     ],
   },
@@ -1554,16 +1477,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1599,17 +1513,9 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
+
 
     ],
   },
@@ -1644,17 +1550,9 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
+
 
     ],
   },
@@ -1689,17 +1587,9 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
+
 
     ],
   },
@@ -1734,17 +1624,9 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
+
 
     ],
   },
@@ -1779,16 +1661,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1824,17 +1697,9 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
+
 
     ],
   },
@@ -1869,17 +1734,9 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-      {
-        name: 'SPIRIT',
-        address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-        symbol: 'SPIRIT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spiritTokens,
       ...zapTokens,
+
 
     ],
   },
@@ -1949,16 +1806,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -1995,16 +1843,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2041,16 +1880,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2086,16 +1916,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2131,16 +1952,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2175,16 +1987,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2220,18 +2023,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
-
     ],
   },
 },
@@ -2264,16 +2057,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2308,16 +2092,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2352,16 +2127,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2397,16 +2163,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2441,16 +2198,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2485,16 +2233,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2529,16 +2268,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2573,16 +2303,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2617,16 +2338,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2661,16 +2373,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2706,16 +2409,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2751,16 +2445,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2796,16 +2481,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2841,18 +2517,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
-
     ],
   },
 },
@@ -2886,16 +2552,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BOO',
-        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-        symbol: 'BOO',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -2932,16 +2589,7 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
 
     ],
@@ -2977,20 +2625,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
-
     ],
   },
 },
@@ -3024,19 +2660,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3071,19 +2696,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3118,19 +2732,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3166,18 +2769,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
 
 
     ],
@@ -3213,19 +2806,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3260,19 +2842,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3307,18 +2878,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
 
 
     ],
@@ -3354,19 +2915,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3401,19 +2951,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3448,19 +2987,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3495,19 +3023,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3541,19 +3058,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3587,19 +3093,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3634,19 +3129,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3682,19 +3166,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3729,19 +3202,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3776,19 +3238,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3823,19 +3274,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3870,19 +3310,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3917,19 +3346,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -3964,19 +3382,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4011,19 +3418,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4058,19 +3454,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4105,19 +3490,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4152,19 +3526,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4199,19 +3562,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-
-      {
-        name: 'ORI',
-        address: '0x0575f8738efda7f512e3654f277c77e80c7d2725',
-        symbol: 'ORI',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...hyperTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4246,19 +3598,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4293,18 +3634,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
 
 
     ],
@@ -4340,19 +3671,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4387,19 +3707,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4434,19 +3743,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-      
+      ...wakaTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4480,18 +3778,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
 
 
     ],
@@ -4526,18 +3814,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
 
 
     ],
@@ -4572,18 +3850,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
 
 
     ],
@@ -4618,18 +3886,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
 
 
     ],
@@ -4664,19 +3922,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4710,19 +3957,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4756,19 +3992,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -4802,18 +4027,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
 
 
     ],
@@ -4848,18 +4063,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
 
 
     ],
@@ -4894,18 +4099,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
 
 
     ],
@@ -4940,18 +4135,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
 
 
     ],
@@ -4987,18 +4172,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
 
 
     ],
@@ -5034,18 +4209,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
-
 
 
     ],
@@ -5081,16 +4246,7 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-
-      {
-        name: 'WAKA',
-        address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
-        symbol: 'WAKA',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...wakaTokens,
       ...zapTokens,
 
     ],
@@ -5128,7 +4284,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5166,7 +4322,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5204,7 +4360,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5242,7 +4398,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5280,7 +4436,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5318,7 +4474,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5356,7 +4512,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5394,7 +4550,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5432,7 +4588,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5470,7 +4626,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5508,7 +4664,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5546,7 +4702,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5584,7 +4740,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5622,7 +4778,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5660,7 +4816,7 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-     
+      ...shibaTokens,
       ...zapTokensReduced,
 
 
@@ -5775,7 +4931,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -5813,7 +4969,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -5851,7 +5007,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,    
       ...zapTokensReduced,
 
 
@@ -5889,7 +5045,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens, 
       ...zapTokensReduced,
 
 
@@ -5927,7 +5083,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -5965,7 +5121,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -6003,7 +5159,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
+      ...spookyTokens,
       ...zapTokens,
 
 
@@ -6079,16 +5235,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'TSHARE',
-        symbol: 'TSHARE',
-        address: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
-        tokenAddress: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
-        decimals: 18,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -6124,19 +5271,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-
-      {
-        name: 'TSHARE',
-        symbol: 'TSHARE',
-        address: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
-        tokenAddress: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
-        decimals: 18,
-        logoURI: '',
-      },
-     
+      ...spookyTokens,
       ...zapTokens,
-
-
 
     ],
   },
@@ -7070,7 +6206,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
+      ...spookyTokens,
       ...zapTokens,
 
 
@@ -7108,7 +6244,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
+      ...spookyTokens,     
       ...zapTokens,
 
 
@@ -7691,7 +6827,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -7728,7 +6864,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -7766,7 +6902,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -7804,7 +6940,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokens,
 
 
@@ -7842,7 +6978,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -7880,7 +7016,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -7918,7 +7054,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -7956,7 +7092,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -7994,7 +7130,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -8032,7 +7168,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -8070,7 +7206,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -8108,7 +7244,7 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-     
+      ...hyperTokens,
       ...zapTokens,
 
 
@@ -8146,7 +7282,7 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-     
+      ...hyperTokens,
       ...zapTokens,
 
 
@@ -8184,7 +7320,7 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-     
+      ...hyperTokens,
       ...zapTokens,
 
 
@@ -8222,7 +7358,7 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-     
+      ...hyperTokens,
       ...zapTokens,
 
 
@@ -8261,7 +7397,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
     ],
@@ -8297,7 +7433,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
     ],
@@ -8333,7 +7469,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
+      ...zooTokens,
       ...zapTokens,
 
 
@@ -8371,20 +7507,8 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-
-      
-      {
-        name: 'BUTT',
-        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
-        symbol: 'BUTT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...zooTokens,
       ...zapTokensReduced,
-
-
 
     ],
   },
@@ -8419,16 +7543,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-      
-      {
-        name: 'BUTT',
-        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
-        symbol: 'BUTT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -8466,19 +7581,8 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BUTT',
-        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
-        symbol: 'BUTT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...zooTokens,
       ...zapTokensReduced,
-
-
 
     ],
   },
@@ -8513,19 +7617,8 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-     
-      {
-        name: 'BUTT',
-        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
-        symbol: 'BUTT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-
+      ...zooTokens,
       ...zapTokensReduced,
-
-
 
     ],
   },
@@ -8560,20 +7653,8 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-
-      
-      {
-        name: 'BUTT',
-        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
-        symbol: 'BUTT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...zooTokens,
       ...zapTokensReduced,
-
-
 
     ],
   },
@@ -8608,19 +7689,8 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BUTT',
-        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
-        symbol: 'BUTT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...zooTokens,
       ...zapTokensReduced,
-
-
 
     ],
   },
@@ -8655,16 +7725,7 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-
-      {
-        name: 'BUTT',
-        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
-        symbol: 'BUTT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...zooTokens,
       ...zapTokensReduced,
 
 
@@ -8702,19 +7763,8 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-      
-      {
-        name: 'BUTT',
-        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
-        symbol: 'BUTT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...zooTokens,
       ...zapTokensReduced,
-
-
 
     ],
   },
@@ -8749,20 +7799,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      
-      {
-        name: 'BUTT',
-        address: '0xF42cc7284389fBf749590f26539002ca931323D0',
-        symbol: 'BUTT',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
-     
+      ...zooTokens,
       ...zapTokens,
-
-
-
     ],
   },
 },
@@ -8875,7 +7913,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -8911,7 +7949,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
+      ...spookyTokens,
       ...zapTokens,
 
 
@@ -8949,7 +7987,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
+      ...spookyTokens,
       ...zapTokens,
 
 
@@ -8987,7 +8025,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
+      ...spookyTokens,
       ...zapTokens,
 
 
@@ -9025,7 +8063,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
+      ...spookyTokens,
       ...zapTokens,
 
 
@@ -9063,7 +8101,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-     
+      ...spookyTokens,
       ...zapTokens,
 
 
@@ -9102,6 +8140,7 @@ const pools = [
 
     tokens: [
 
+    ...bombTokens,
 
     ],
   },
@@ -9137,15 +8176,7 @@ const pools = [
 
     tokens: [
      
-      
-      {
-        name: 'SHRAP',
-        address: '0xbf4906762c38f50bc7be0a11bb452c944f6c72e1',
-        symbol: 'SHRAP',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...bombTokens,
 
     ],
   },
@@ -9182,14 +8213,7 @@ const pools = [
     tokens: [
      
       
-      {
-        name: 'SHRAP',
-        address: '0xbf4906762c38f50bc7be0a11bb452c944f6c72e1',
-        symbol: 'SHRAP',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...bombTokens,
 
 
     ],
@@ -9226,14 +8250,7 @@ const pools = [
 
     tokens: [
      
-      {
-        name: 'SHRAP',
-        address: '0xbf4906762c38f50bc7be0a11bb452c944f6c72e1',
-        symbol: 'SHRAP',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...bombTokens,
 
     ],
   },
@@ -9269,14 +8286,7 @@ const pools = [
 
     tokens: [
      
-      {
-        name: 'SHRAP',
-        address: '0xbf4906762c38f50bc7be0a11bb452c944f6c72e1',
-        symbol: 'SHRAP',
-        decimals: 18,
-        chainId: 250,
-        logoURI: '',
-      },
+    ...bombTokens,
 
 
     ],
@@ -9285,33 +8295,6 @@ const pools = [
 
   
 ];
-
-
-// const spiritLps = [
-  //   {
-  //     id: 'spirit-spirit-ftm',
-  //     name: 'SPIRIT-FTM LP',
-  //     address: '0x30748322B6E34545DBe0788C421886AEB5297789',
-  //     symbol: 'SPIRIT-FTM LP (SpiritSwap)',
-  //     decimals: 18,
-  //     chainId: 250,
-  //     router: SPIRIT_ROUTER,
-  //   },
-  
-  //   {
-  //     id: 'spirit-spirit-xsteak',
-  //     name: 'SPIRIT-FTM LP',
-  //     address: '0xe276a71991a7a7b16cb453db2994ce9fcda2eda6',
-  //     symbol: 'SPIRIT-XSTEAK LP (SpiritSwap)',
-  //     decimals: 18,
-  //     chainId: 250,
-  //     router: SPIRIT_ROUTER,
-  //   },
-  
-  
-  
-  // ];
-
 
 const lpTokens = pools
   .filter(v => v.assets.length > 1 && v.assets.length < 3)
