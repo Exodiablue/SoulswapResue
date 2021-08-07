@@ -88,18 +88,15 @@ const _zapDeposit = ({
     });
   } else if (isETH) {
     console.log(
-      'zapInToSSVault(tokenamount, tokenaddress,ammRouter, vaultAddress, address)',
-      tokenAmount,
-      tokenAddress,
+      //function zapInToSSVault(address _to, address routerAddr, address _vault, address _recipient)
+      'zapInToSSVault(earningToken, ammRouter, vaultAddress, address)',
+      earningToken,
       ammRouter,
       vaultAddress,
       address
     );
 
-//address _to, address routerAddr, address _vault, address _recipient
-
-
-    transaction = contract.methods.zapInToSingleSideVault(tokenAmount, tokenAddress,ammRouter, vaultAddress, address).send({
+    transaction = contract.methods.zapInToSSVault(earningToken,ammRouter, vaultAddress, address).send({
       from: address,
       value: tokenAmount,
     });
@@ -120,6 +117,7 @@ const _zapDeposit = ({
       });
   } else {
     console.log(
+      //function zapInTokenToSSVault(address _from, uint amount, address _to, address routerAddr, address _vault, address _recipient)
       'zapInTokenToSSVault(from, amt, earningToken, router, vaultAddress, recipient)',
       tokenAddress,
       tokenAmount,

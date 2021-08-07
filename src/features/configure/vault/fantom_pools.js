@@ -1,5 +1,5 @@
-const VAULT_ZAP = '0xD8D5b20439f94F2662801c0Be57627f5e623e875'; //blues zapper
-//const VAULT_ZAP = '0x425D1af0d59c20d9964881dB40D8995C205Dd56d';
+//const VAULT_ZAP = '0xD8D5b20439f94F2662801c0Be57627f5e623e875'; //blues zapper - public
+const VAULT_ZAP = '0x2f88d0370F71a95a70a593B074256eFb34E65Fc5'; //blues zapper - private
 
 
 const SPIRIT_ROUTER = '0x16327E3FbDaCA3bcF7E38F5Af2599D2DDc33aE52';
@@ -156,14 +156,14 @@ const zapTokensReduced = [
 ];
 
 const spiritTokens = [
-  {
-    name: 'GRIM',
-    address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
-    symbol: 'GRIM',
-    decimals: 18,
-    chainId: 250,
-    logoURI: '',
-  },
+  // {
+  //   name: 'GRIM',
+  //   address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+  //   symbol: 'GRIM',
+  //   decimals: 18,
+  //   chainId: 250,
+  //   logoURI: '',
+  // },
 
   {
     name: 'REAPER',
@@ -213,14 +213,14 @@ const spookyTokens = [
 ];
 
 const wakaTokens = [
-  {
-    name: 'GRIM',
-    address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
-    symbol: 'GRIM',
-    decimals: 18,
-    chainId: 250,
-    logoURI: '',
-  },
+  // {
+  //   name: 'GRIM',
+  //   address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+  //   symbol: 'GRIM',
+  //   decimals: 18,
+  //   chainId: 250,
+  //   logoURI: '',
+  // },
   {
     name: 'WAKA',
     address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
@@ -260,14 +260,14 @@ const shibaTokens = [
     logoURI: '',
   },
 
-  {
-    name: 'GBONE',
-    address: '0x004b122eb5632077abdd2c38e8d9392348d5ca15',
-    symbol: 'GBONE',
-    decimals: 18,
-    chainId: 250,
-    logoURI: '',
-  },
+  // {
+  //   name: 'GBONE',
+  //   address: '0x004b122eb5632077abdd2c38e8d9392348d5ca15',
+  //   symbol: 'GBONE',
+  //   decimals: 18,
+  //   chainId: 250,
+  //   logoURI: '',
+  // },
 
   {
     name: 'BONE',
@@ -292,7 +292,7 @@ const zooTokens = [
   {
     name: 'ZOO',
     address: '0x09e145a1d53c0045f41aeef25d8ff982ae74dd56',
-    symbol: 'WILD',
+    symbol: 'ZOO',
     decimals: 0,
     chainId: 250,
     logoURI: '',
@@ -340,14 +340,14 @@ const bombTokens = [
     chainId: 250,
     logoURI: '',
   },
-  {
-    name: 'BOMB',
-    address: '0x8503eb4a136bdbeb323e37aa6e0fa0c772228378',
-    symbol: 'BOMB',
-    decimals: 0,
-    chainId: 250,
-    logoURI: '',
-  },
+  // {
+  //   name: 'BOMB',
+  //   address: '0x8503eb4a136bdbeb323e37aa6e0fa0c772228378',
+  //   symbol: 'BOMB',
+  //   decimals: 0,
+  //   chainId: 250,
+  //   logoURI: '',
+  // },
 
 ];
 
@@ -383,7 +383,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...zapTokens,
+      // ...zapTokens,
     ],
   },
 },
@@ -417,8 +417,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
     ],
   },
 },
@@ -452,8 +452,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-      ...wakaTokens,
-      ...zapTokens,
+      // ...wakaTokens,
+      // ...zapTokens,
     ],
   },
 },
@@ -461,7 +461,7 @@ const pools = [
 {
   id: 'spirit-spirit-grim',
   logo: 'fantom/SPIRIT-GRIM.png',
-  name: 'SPIRIT-GRIM LP',
+  name: 'SPIRIT-GRIM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!)',
   token: 'SPIRIT-GRIM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xebe5174d117af9c71d76b3138b16e743df983c76',
@@ -477,7 +477,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['GRIM', 'SPIRIT'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
@@ -487,8 +487,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
     ],
   },
 }, 
@@ -660,6 +660,7 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
+      ...hyperTokens,
       ...zapTokens,
     ],
   },
@@ -668,7 +669,7 @@ const pools = [
 {
   id: 'spirit',
   logo: 'fantom/SPIRIT.png',
-  name: 'SPIRIT',
+  name: 'SPIRIT (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!)',
   token: 'SPIRIT',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
@@ -684,7 +685,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['SPIRIT'],
   callFee: 0.5,
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
@@ -703,7 +704,7 @@ const pools = [
 {
   id: 'spirit-spirit-ftm',
   logo: 'fantom/SPIRIT-FTM.png',
-  name: 'SPIRIT-FTM LP',
+  name: 'SPIRIT-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'SPIRIT-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x30748322B6E34545DBe0788C421886AEB5297789',
@@ -719,7 +720,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['FTM', 'SPIRIT'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
@@ -729,9 +730,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -741,7 +740,7 @@ const pools = [
 {
   id: 'spirit-spirit-xsteak',
   logo: 'fantom/SPIRIT-XSTEAK.png',
-  name: 'SPIRIT-XSTEAK LP',
+  name: 'SPIRIT-XSTEAK LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'SPIRIT-XSTEAK LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xe276a71991a7a7b16cb453db2994ce9fcda2eda6',
@@ -757,7 +756,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['SPIRIT', 'XSTEAK'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0xb632c5d42BD4a44a617608Ad1c7d38f597E22E3C',
@@ -767,9 +766,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -779,7 +776,7 @@ const pools = [
 {
   id: 'spirit-dis-ftm',
   logo: 'fantom/DIS-FTM.png',
-  name: 'DIS-FTM LP',
+  name: 'DIS-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'DIS-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xa6020794594568e2bf987718b6520C14b9C4Ccd9',
@@ -795,7 +792,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['DIS', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x0e121961DD741C9D49C9A04379da944A9D2FAc7a',
@@ -805,9 +802,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -817,7 +812,7 @@ const pools = [
 {
   id: 'spirit-yfi-ftm',
   logo: 'fantom/YFI-FTM.png',
-  name: 'YFI-FTM LP',
+  name: 'YFI-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'YFI-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x4fc38a2735C7da1d71ccAbf6DeC235a7DA4Ec52C',
@@ -833,7 +828,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['YFI', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
@@ -843,9 +838,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -855,7 +848,7 @@ const pools = [
 {
   id: 'spirit-dai-spirit',
   logo: 'fantom/DAI-SPIRIT.png',
-  name: 'DAI-SPIRIT LP',
+  name: 'DAI-SPIRIT LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'DAI-SPIRIT LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xfFbfc0446cA725b21256461e214E9D472f9be390',
@@ -871,7 +864,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['DAI', 'SPIRIT'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
@@ -881,9 +874,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -893,7 +884,7 @@ const pools = [
 {
   id: 'spirit-busd-fusdt',
   logo: 'fantom/BUSD-FUSDT.png',
-  name: 'BUSD-FUSDT LP',
+  name: 'BUSD-FUSDT LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'BUSD-FUSDT LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x1Ac51904cFAaD15679B3500F0fC41D2971657f80',
@@ -908,7 +899,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['BUSD', 'FUSDT'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xC931f61B1534EB21D8c11B24f3f5Ab2471d4aB50/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
@@ -918,9 +909,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -929,7 +918,7 @@ const pools = [
 {
   id: 'spirit-frax-ftm',
   logo: 'fantom/FRAX-FTM.png',
-  name: 'FRAX-FTM LP',
+  name: 'FRAX-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'FRAX-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x0eC0E1629E776272FA3E55548D4A656BE0EEdcF4',
@@ -945,7 +934,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['FRAX', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0xaf319E5789945197e365E7f7fbFc56B130523B33',
@@ -955,9 +944,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -966,7 +953,7 @@ const pools = [
 {
   id: 'spirit-fxs-frax',
   logo: 'fantom/FRAX-FXS.png',
-  name: 'FXS-FRAX LP',
+  name: 'FXS-FRAX LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'FXS-FRAX LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x100FcF27C87D1cc7b8D6c28b69b84A359e4fd377',
@@ -982,7 +969,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['FXS', 'FRAX'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x82F8Cb20c14F134fe6Ebf7aC3B903B2117aAfa62/0xaf319E5789945197e365E7f7fbFc56B130523B33',
@@ -992,9 +979,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1004,7 +989,7 @@ const pools = [
 {
   id: 'spirit-spirit-elk',
   logo: 'fantom/SPIRIT-ELK.png',
-  name: 'SPIRIT-ELK LP',
+  name: 'SPIRIT-ELK LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'SPIRIT-ELK LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xbc7984937c34d8234046eb52649683efc243cb5e',
@@ -1020,7 +1005,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'eol',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['SPIRIT', 'ELK'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/0xE1C110E1B1b4A1deD0cAf3E42BfBdbB7b5d7cE1C',
@@ -1030,9 +1015,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-     
-...spiritTokens,
-
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1042,7 +1025,7 @@ const pools = [
 {
   id: 'spirit-ice-ftm',
   logo: 'fantom/ICE-FTM.png',
-  name: 'ICE-FTM LP',
+  name: 'ICE-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'ICE-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x936D23C83c2469f6a14B9f5bEaec13879598A5aC',
@@ -1058,7 +1041,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['ICE', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xf16e81dce15B08F326220742020379B855B87DF9/FTM',
@@ -1068,9 +1051,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1080,7 +1061,7 @@ const pools = [
 {
   id: 'spirit-yfi-woofy',
   logo: 'fantom/YFI-WOOFY.png',
-  name: 'YFI-WOOFY LP',
+  name: 'YFI-WOOFY LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'YFI-WOOFY LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x287ebF376c59a037B8D8E0e987461b2fd8550D8c',
@@ -1096,7 +1077,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['YFI', 'WOOFY'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x29b0Da86e484E1C0029B56e817912d778aC0EC69/0xD0660cD418a64a1d44E9214ad8e459324D8157f1',
@@ -1106,9 +1087,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1118,7 +1097,7 @@ const pools = [
 {
   id: 'spirit-ftm-usdc',
   logo: 'fantom/USDC-FTM.png',
-  name: 'FTM-USDC LP',
+  name: 'FTM-USDC LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'FTM-USDC LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xe7E90f5a767406efF87Fdad7EB07ef407922EC1D',
@@ -1134,7 +1113,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['FTM', 'USDC'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
@@ -1144,9 +1123,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1156,7 +1133,7 @@ const pools = [
 {
   id: 'spirit-wbtc-ftm',
   logo: 'fantom/WBTC-FTM.png',
-  name: 'WBTC-FTM LP',
+  name: 'WBTC-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'WBTC-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x279b2c897737a50405ED2091694F225D83F2D3bA',
@@ -1172,7 +1149,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['BTC', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/FTM',
@@ -1182,9 +1159,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-     
-...spiritTokens,
-
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1193,7 +1168,7 @@ const pools = [
 {
   id: 'spirit-weth-ftm',
   logo: 'fantom/WETH-FTM.png',
-  name: 'WETH-FTM LP',
+  name: 'WETH-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'WETH-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x613BF4E46b4817015c01c6Bb31C7ae9edAadc26e',
@@ -1209,7 +1184,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['ETH', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
@@ -1219,9 +1194,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1230,7 +1203,7 @@ const pools = [
 {
   id: 'spirit-sushi-ftm',
   logo: 'fantom/SUSHI-FTM.png',
-  name: 'SUSHI-FTM LP',
+  name: 'SUSHI-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'SUSHI-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x9Fe4c0CE5F533e96C2b72d852f190961AD5a7bB3',
@@ -1246,7 +1219,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['SUSHI', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC/FTM',
@@ -1256,9 +1229,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1267,7 +1238,7 @@ const pools = [
 {
   id: 'spirit-cream-ftm',
   logo: 'fantom/CREAM-FTM.png',
-  name: 'CREAM-FTM LP',
+  name: 'CREAM-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'CREAM-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x040dd0d0f5e2a01fEb0C5457AbB588B23Cf4c43a',
@@ -1283,7 +1254,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['CREAM', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6/FTM',
@@ -1293,9 +1264,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-
-...spiritTokens,
-     
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -1304,7 +1273,7 @@ const pools = [
 {
   id: 'spirit-cover-ftm',
   logo: 'fantom/COVER-FTM.png',
-  name: 'COVER-FTM LP',
+  name: 'COVER-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'COVER-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x5427E7AB61145c41b1e58453121245dAEF3929C3',
@@ -1320,7 +1289,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['COVER', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xB01E8419d842beebf1b70A7b5f7142abbaf7159D/FTM',
@@ -1340,7 +1309,7 @@ const pools = [
 {
   id: 'spirit-any-ftm',
   logo: 'fantom/ANY-FTM.png',
-  name: 'ANY-FTM LP',
+  name: 'ANY-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'ANY-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x26D583028989378Cc1b7CBC023f4Ae049d5e5899',
@@ -1356,7 +1325,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['ANY', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xdDcb3fFD12750B45d32E084887fdf1aABAb34239/FTM',
@@ -1375,7 +1344,7 @@ const pools = [
 {
   id: 'spirit-bnb-ftm',
   logo: 'fantom/BNB-FTM.png',
-  name: 'BNB-FTM LP',
+  name: 'BNB-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'BNB-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x74fE5Ddc4c27F91a1898ccd5Ac62dFeb2d3dF726',
@@ -1391,7 +1360,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['BNB', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/FTM',
@@ -1410,7 +1379,7 @@ const pools = [
 {
   id: 'spirit-link-ftm',
   logo: 'fantom/LINK-FTM.png',
-  name: 'LINK-FTM LP',
+  name: 'LINK-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'LINK-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xd061c6586670792331E14a80f3b3Bb267189C681',
@@ -1426,7 +1395,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['LINK', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8/FTM',
@@ -1446,7 +1415,7 @@ const pools = [
 {
   id: 'spirit-crv-ftm',
   logo: 'fantom/CRV-FTM.png',
-  name: 'CRV-FTM LP',
+  name: 'CRV-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'CRV-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x374C8ACb146407Ef0AE8F82BaAFcF8f4EC1708CF',
@@ -1462,7 +1431,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['CRV', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x1E4F97b9f9F913c46F1632781732927B9019C68b/FTM',
@@ -1482,7 +1451,7 @@ const pools = [
 {
   id: 'spirit-fusdt-ftm',
   logo: 'fantom/FUSDT-FTM.png',
-  name: 'FUSDT-FTM LP',
+  name: 'FUSDT-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'FUSDT-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xd14Dd3c56D9bc306322d4cEa0E1C49e9dDf045D4',
@@ -1498,7 +1467,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['FUSDT', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/FTM',
@@ -1518,7 +1487,7 @@ const pools = [
 {
   id: 'spirit-bnb-spirit',
   logo: 'fantom/BNB-SPIRIT.png',
-  name: 'BNB-SPIRIT LP',
+  name: 'BNB-SPIRIT LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'BNB-SPIRIT LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x9D103Bc85A33B007B58bE2fDee3e1A64651f676d',
@@ -1534,7 +1503,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['BNB', 'SPIRIT'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
@@ -1555,7 +1524,7 @@ const pools = [
 {
   id: 'spirit-usdc-gton',
   logo: 'fantom/GTON-USDC.png',
-  name: 'USDC-GTON LP',
+  name: 'USDC-GTON LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'USDC-GTON LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x8a5555c4996B72E5725Cf108Ad773Ce5E715DED4',
@@ -1571,7 +1540,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['USDC', 'GTON'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0xC1Be9a4D5D45BeeACAE296a7BD5fADBfc14602C4',
@@ -1592,7 +1561,7 @@ const pools = [
 {
   id: 'spirit-zoo-ftm',
   logo: 'fantom/ZOO-FTM.png',
-  name: 'ZOO-FTM LP',
+  name: 'ZOO-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'ZOO-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xDF18DD2631f02D930071DF7d6FF89bbc3718C62F',
@@ -1608,7 +1577,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['ZOO', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56/FTM',
@@ -1629,7 +1598,7 @@ const pools = [
 {
   id: 'spirit-mim-ftm',
   logo: 'fantom/MIM-FTM.png',
-  name: 'MIM-FTM LP',
+  name: 'MIM-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'MIM-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xB32b31DfAfbD53E310390F641C7119b5B9Ea0488',
@@ -1645,7 +1614,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['MIM', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x82f0B8B456c1A451378467398982d4834b6829c1/FTM',
@@ -1665,7 +1634,7 @@ const pools = [
 {
   id: 'spirit-just-ftm',
   logo: 'fantom/JUST-FTM.png',
-  name: 'JUST-FTM LP',
+  name: 'JUST-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'JUST-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xea294E3C837ef457530b916Accbc3e3444a75A72',
@@ -1681,7 +1650,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['JUST', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xC8Da1a26ABEF9e2E41B4C89c1b345Cc05ce034e8/FTM',
@@ -1702,7 +1671,7 @@ const pools = [
 {
   id: 'spirit-spirit-lqdr',
   logo: 'fantom/LQDR-SPIRIT.png',
-  name: 'SPIRIT-LQDR LP',
+  name: 'SPIRIT-LQDR LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
   token: 'SPIRIT-LQDR LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xFeBbfeA7674720cEdD35e9384d07F235365c1B3e',
@@ -1718,7 +1687,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'SpiritSwap',
+  platform: 'SpiritSwap (Purge Weekend Event!)',
   assets: ['SPIRIT', 'LQDR'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
@@ -4278,8 +4247,8 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-      ...shibaTokens,
-      ...zapTokensReduced,
+      // ...shibaTokens,
+      // ...zapTokensReduced,
 
 
 
@@ -4316,8 +4285,8 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-      ...shibaTokens,
-      ...zapTokensReduced,
+      // ...shibaTokens,
+      // ...zapTokensReduced,
 
 
 
@@ -4354,8 +4323,8 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-      ...shibaTokens,
-      ...zapTokensReduced,
+      // ...shibaTokens,
+      // ...zapTokensReduced,
 
 
 
@@ -6277,7 +6246,7 @@ const pools = [
 
     tokens: [
 
-    ...paintTokens,
+    // ...paintTokens,
 
     ],
   },
@@ -6312,7 +6281,7 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-     
+      ...paintTokens,
 
     ],
   },
@@ -6752,8 +6721,8 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-      ...zooTokens,
-      ...zapTokensReduced,
+      // ...zooTokens,
+      // ...zapTokensReduced,
 
 
     ],
@@ -6789,8 +6758,8 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-      ...zooTokens,
-      ...zapTokensReduced,
+      // ...zooTokens,
+      // ...zapTokensReduced,
 
 
 
@@ -7721,7 +7690,15 @@ const pools = [
     router: OPERA_ROUTER,
 
     tokens: [
-
+      {
+        name: 'Fantom',
+        address: '',
+        symbol: 'FTM',
+        wrappedSymbol: 'WFTM',
+        decimals: 18,
+        chainId: 250,
+        logoURI: 'https://ftmscan.com/token/images/WFTM_32.png',
+      },
 
     ],
   },
@@ -7756,6 +7733,15 @@ const pools = [
     router: OPERA_ROUTER,
 
     tokens: [
+      {
+        name: 'Fantom',
+        address: '',
+        symbol: 'FTM',
+        wrappedSymbol: 'WFTM',
+        decimals: 18,
+        chainId: 250,
+        logoURI: 'https://ftmscan.com/token/images/WFTM_32.png',
+      },
 
       {
         name: 'OPERA',
