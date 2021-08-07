@@ -311,15 +311,6 @@ const paintTokens = [
     isToken: true,
   },
   {
-    name: 'CHAD',
-    address: '0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
-    symbol: 'CHAD',
-    decimals: 18,
-    chainId: 250,
-    logoURI: '',
-  },
-
-  {
     name: 'BRUSH',
     address: '0x85dec8c4b2680793661bca91a8f129607571863d',
     symbol: 'BRUSH',
