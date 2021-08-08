@@ -961,42 +961,6 @@ const pools = [
 },
 
 {
-  id: 'spirit-spirit-elk',
-  logo: 'fantom/SPIRIT-ELK.png',
-  name: 'SPIRIT-ELK LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
-  token: 'SPIRIT-ELK LP (SpiritSwap)',
-  tokenDescription: 'SpiritSwap',
-  tokenAddress: '0xbc7984937c34d8234046eb52649683efc243cb5e',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-SPI-ELK-1',
-  earnedTokenAddress: '0x59DfF3203383f6A7573a8bA71FF3DAFD95ebee72',
-  earnContractAddress: '0x59DfF3203383f6A7573a8bA71FF3DAFD95ebee72',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'spirit-spirit-elk',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'SpiritSwap (Purge Weekend Event!)',
-  assets: ['SPIRIT', 'ELK'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/0xE1C110E1B1b4A1deD0cAf3E42BfBdbB7b5d7cE1C',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      ...spiritTokens,
-      ...zapTokens,
-
-    ],
-  },
-},
-
-{
   id: 'spirit-ice-ftm',
   logo: 'fantom/ICE-FTM.png',
   name: 'ICE-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
@@ -2519,6 +2483,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['AURORA', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0xbc2451AaD349b6B43FD05F4F0cC327F8A6bcA2d4',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xbc2451aad349b6b43fd05f4f0cc327f8a6bca2d4',
   zap: {
@@ -2555,6 +2520,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ORI', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0x0575f8738EFdA7F512e3654F277C77e80C7d2725',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
@@ -2590,6 +2556,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['USDC', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x04068da6c83afcfa0e13ba15a6696662335d5b75',
   zap: {
@@ -2626,6 +2593,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ORI', 'USDC'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
@@ -2662,6 +2630,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['DAI', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e',
   zap: {
@@ -2699,6 +2668,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['DAI', 'USDC'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e',
   zap: {
@@ -2736,6 +2706,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ETH', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
@@ -2772,6 +2743,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ETH', 'ORI'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/0x0575f8738EFdA7F512e3654F277C77e80C7d2725',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
@@ -2808,6 +2780,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['BTC', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
@@ -2845,6 +2818,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['BTC', 'ORI'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/0x0575f8738EFdA7F512e3654F277C77e80C7d2725',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
@@ -2881,6 +2855,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['LINK', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xb3654dc3d10ea7645f8319668e8f54d2574fbdc8',
   zap: {
@@ -2917,6 +2892,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['LINK', 'ORI'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8/0x0575f8738EFdA7F512e3654F277C77e80C7d2725',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
@@ -2953,6 +2929,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['SUSHI', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   zap: {
@@ -2988,6 +2965,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['YFI', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   zap: {
@@ -3023,6 +3001,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['SNX', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc',
   zap: {
@@ -3059,6 +3038,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['FTM', 'ESWAP'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0x735aBE48e8782948a37C7765ECb76b98CdE97B0F',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x735abe48e8782948a37c7765ecb76b98cde97b0f',
   zap: {
@@ -3096,6 +3076,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ORI', 'ESWAP'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0x735aBE48e8782948a37C7765ECb76b98CdE97B0F',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
@@ -3132,6 +3113,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['BNB', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454',
   zap: {
@@ -3168,6 +3150,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renBTC', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0xDBf31dF14B66535aF65AaC99C32e9eA844e14501',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xdbf31df14b66535af65aac99c32e9ea844e14501',
   zap: {
@@ -3204,6 +3187,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renBTC', 'ORI'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0xDBf31dF14B66535aF65AaC99C32e9eA844e14501',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
@@ -3240,6 +3224,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renZEC', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0x31a0D1A199631D244761EEba67e8501296d2E383',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x31a0d1a199631d244761eeba67e8501296d2e383',
   zap: {
@@ -3276,6 +3261,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renZEC', 'ORI'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0x31a0D1A199631D244761EEba67e8501296d2E383',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
@@ -3312,6 +3298,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renBCH', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0xc3fEd6eB39178A541D274e6Fc748d48f0Ca01CC3',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xc3fEd6eB39178A541D274e6Fc748d48f0Ca01CC3',
   zap: {
@@ -3348,6 +3335,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renBCH', 'ORI'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0xc3fEd6eB39178A541D274e6Fc748d48f0Ca01CC3',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
@@ -3384,6 +3372,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ICE', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0xf16e81dce15B08F326220742020379B855B87DF9/FTM',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0xf16e81dce15b08f326220742020379b855b87df9',
   zap: {
@@ -3420,6 +3409,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ZOO', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56/FTM',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x09e145a1d53c0045f41aeef25d8ff982ae74dd56',
   zap: {
@@ -3456,6 +3446,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['CRV', 'FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0x1E4F97b9f9F913c46F1632781732927B9019C68b/FTM',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x1E4F97b9f9F913c46F1632781732927B9019C68b',
   zap: {
@@ -3492,6 +3483,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['CRV', 'ORI'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/0x1E4F97b9f9F913c46F1632781732927B9019C68b/0x0575f8738EFdA7F512e3654F277C77e80C7d2725',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
   zap: {
@@ -4794,44 +4786,6 @@ const pools = [
 
     tokens: [
      
-
-
-
-    ],
-  },
-},
-
-{
-  id: 'casper',
-  logo: 'fantom/CASPER.png',
-  name: 'CASPER',
-  token: 'CASPER',
-  tokenDescription: 'Casper DeFi',
-  tokenAddress: '0xC30d1b0Ce932C3dd3373a2C23aDA4E9608CAf345',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-CASPER-J',
-  earnedTokenAddress: '0x7b058960309332da366FE98ea9274b3361a03d34',
-  earnContractAddress: '0x7b058960309332da366FE98ea9274b3361a03d34',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'tokens',
-  oracleId: 'casper',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Casper DeFi',
-  assets: ['CASPER'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0xC30d1b0Ce932C3dd3373a2C23aDA4E9608CAf345',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-     
-      ...zapTokens,
 
 
 
@@ -6876,44 +6830,6 @@ const pools = [
   callFee: 0.5,
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xCF7e516E2dd67C3B0Bd52266DA41F403A0F19A07',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xCF7e516E2dd67C3B0Bd52266DA41F403A0F19A07',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: ZOO_ROUTER,
-
-    tokens: [
-      ...zooTokens,
-      ...zapTokensReduced,
-
-
-
-    ],
-  },
-},
-
-{
-  id: "yoro-catnip-zoo",
-  logo: 'fantom/CATNIP-ZOO.png',
-  name: 'CATNIP-ZOO LP',
-  token: 'CATNIP-ZOO LP (Zoo)',
-  tokenDescription: 'Yoro',
-  tokenAddress: '0x6DF2fc52bC307954E7eD6A07104F8378E97cACcF',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-CAT-ZOO-C',
-  earnedTokenAddress: '0x412785363F59fc575C351679EB21F6ee8dfd0176',
-  earnContractAddress: '0x412785363F59fc575C351679EB21F6ee8dfd0176',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "yoro-catnip-zoo",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Yoro',
-  assets: ['CATNIP', 'ZOO'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   zap: {
     zapAddress: VAULT_ZAP,
     router: ZOO_ROUTER,
