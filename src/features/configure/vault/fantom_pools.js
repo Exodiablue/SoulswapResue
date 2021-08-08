@@ -150,8 +150,8 @@ const zapTokensReduced = [
     symbol: 'fUSDT',
     decimals: 6,
     chainId: 250,
-    logoURI:
-      'https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png',
+    logoURI: 'https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png',
+    isToken: true,
   },
 ];
 
@@ -240,14 +240,6 @@ const hyperTokens = [
     chainId: 250,
     logoURI: '',
   },
-  {
-    name: 'AURORA',
-    address: '0xbc2451aad349b6b43fd05f4f0cc327f8a6bca2d4',
-    symbol: 'AURORA',
-    decimals: 18,
-    chainId: 250,
-    logoURI: '',
-  },
 ];
 
 const shibaTokens = [
@@ -285,15 +277,6 @@ const zooTokens = [
     address: '0xae0c241ec740309c2cbdc27456eb3c1a2ad74737',
     symbol: 'WILD',
     decimals: 18,
-    chainId: 250,
-    logoURI: '',
-  },
-
-  {
-    name: 'ZOO',
-    address: '0x09e145a1d53c0045f41aeef25d8ff982ae74dd56',
-    symbol: 'ZOO',
-    decimals: 0,
     chainId: 250,
     logoURI: '',
   },
@@ -660,8 +643,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
     ],
   },
 },
@@ -2552,8 +2535,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -2588,8 +2571,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
     ],
   },
 },
@@ -2623,8 +2606,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -2659,8 +2642,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -2695,8 +2678,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -2732,8 +2715,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
 
     ],
@@ -2769,8 +2752,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -2805,8 +2788,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -2841,8 +2824,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
 
     ],
@@ -2878,8 +2861,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -2914,8 +2897,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -2950,8 +2933,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -2986,8 +2969,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3021,8 +3004,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3056,8 +3039,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3092,8 +3075,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3129,8 +3112,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3165,8 +3148,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3201,8 +3184,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3237,8 +3220,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3273,8 +3256,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3309,8 +3292,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3345,8 +3328,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3381,8 +3364,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3417,8 +3400,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3453,8 +3436,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3489,8 +3472,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -3525,8 +3508,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
     ],
   },
@@ -4247,8 +4230,8 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-      ...shibaTokens,
-      ...zapTokensReduced,
+      // ...shibaTokens,
+      // ...zapTokensReduced,
 
 
 
@@ -4741,8 +4724,8 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-      ...shibaTokens,
-      ...zapTokensReduced,
+      // ...shibaTokens,
+      // ...zapTokensReduced,
 
 
 
@@ -4779,8 +4762,8 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-      ...shibaTokens,
-      ...zapTokensReduced,
+      // ...shibaTokens,
+      // ...zapTokensReduced,
 
 
 
@@ -7055,15 +7038,14 @@ const pools = [
   platform: 'StrangeBrew',
   assets: ['SBRW'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://ftm-swap.hyperjump.fi/#/add/FTM/0x3853F3839ca1655AcC8c433EEF8C086F9895d0BF',
   buyTokenUrl: 'https://ftm-swap.hyperjump.fi/#/swap?outputCurrency=0x3853f3839ca1655acc8c433eef8c086f9895d0bf',
   zap: {
     zapAddress: VAULT_ZAP,
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      // ...hyperTokens,
+      // ...zapTokens,
 
 
 
@@ -7100,8 +7082,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      // ...hyperTokens,
+      // ...zapTokens,
 
 
 
@@ -7138,8 +7120,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
 
 
@@ -7176,8 +7158,8 @@ const pools = [
     router: HYPER_ROUTER,
 
     tokens: [
-      ...hyperTokens,
-      ...zapTokens,
+      //...hyperTokens,
+      //...zapTokens,
 
 
 
