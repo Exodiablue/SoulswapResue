@@ -6136,7 +6136,6 @@ const pools = [
   platform: 'ShadeCash',
   assets: ['SHADE'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://spookyswap.finance/add',
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6248,7 +6247,6 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6763,7 +6761,6 @@ const pools = [
   platform: 'Yoro',
   assets: ['CATNIP'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -7253,7 +7250,6 @@ const pools = [
   platform: 'Buttcoin',
   assets: ['BUTT'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0&outputCurrency=FTM',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -7618,7 +7614,6 @@ const pools = [
   platform: 'OperaSwap',
   assets: ['OPERA'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.operaswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.operaswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
