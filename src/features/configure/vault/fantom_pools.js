@@ -6730,44 +6730,6 @@ const pools = [
 },
 
 {
-  id: "yoro-grim-catnip",
-  logo: 'fantom/GRIM-CATNIP.png',
-  name: 'GRIM-CATNIP LP',
-  token: 'GRIM-CATNIP LP (Zoo)',
-  tokenDescription: 'Yoro',
-  tokenAddress: '0x45f446cD7ECc82eD1655cC00663004d5eac6c841',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-GRI-CAT-C',
-  earnedTokenAddress: '0x71bA6AD792E9ce8f154cc5bA461A57Aa8b432D87',
-  earnContractAddress: '0x71bA6AD792E9ce8f154cc5bA461A57Aa8b432D87',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "yoro-grim-catnip",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Yoro',
-  assets: ['GRIM', 'CATNIP'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb&outputCurrency=0x7eC94C4327dC757601B4273cD67014d7760Be97E',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb&inputCurrency=FTM',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: ZOO_ROUTER,
-
-    tokens: [
-      // ...zooTokens,
-      // ...zapTokensReduced,
-
-
-
-    ],
-  },
-},
-
-{
   id: "yoro-reaper-catnip",
   logo: 'fantom/CATNIP-REAPER.png',
   name: 'REAPER-CATNIP LP',
