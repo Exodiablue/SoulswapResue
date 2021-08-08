@@ -243,15 +243,6 @@ const hyperTokens = [
 ];
 
 const shibaTokens = [
-  {
-    name: 'SHIBA',
-    address: '0x9ba3e4f84a34df4e08c112e1a0ff148b81655615',
-    symbol: 'SHIBA',
-    decimals: 9,
-    chainId: 250,
-    logoURI: '',
-  },
-
   // {
   //   name: 'GBONE',
   //   address: '0x004b122eb5632077abdd2c38e8d9392348d5ca15',
@@ -4192,8 +4183,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-      ...wakaTokens,
-      ...zapTokens,
+      // ...wakaTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -6595,7 +6586,7 @@ const pools = [
 
     tokens: [
 
-    ...paintTokens,
+    // ...paintTokens,
 
 
     ],
@@ -6632,7 +6623,7 @@ const pools = [
 
     tokens: [
 
-    ...paintTokens,
+    // ...paintTokens,
 
     ],
   },
@@ -7880,8 +7871,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spookyTokens,
-      ...zapTokens,
+      // ...spookyTokens,
+      // ...zapTokens,
 
 
 
