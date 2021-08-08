@@ -1665,7 +1665,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['BOO'],
   callFee: 0.5,
-  buyTokenUrl: 'https://spookyswap.finance/swap',
+  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x841fad6eae12c286d1fd18d1d525dffa75c7effe',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
