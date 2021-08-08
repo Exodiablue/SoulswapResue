@@ -5238,7 +5238,7 @@ const pools = [
   platform: 'LiquidDriver',
   assets: ['LQDR', 'fUSDT'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5286,7 +5286,7 @@ const pools = [
   assets: ['YFI', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5334,7 +5334,7 @@ const pools = [
   assets: ['DAI', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5382,7 +5382,7 @@ const pools = [
   assets: ['LINK', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5430,7 +5430,7 @@ const pools = [
   assets: ['ETH', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5478,7 +5478,7 @@ const pools = [
   assets: ['fUSDT', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5526,7 +5526,7 @@ const pools = [
   assets: ['BTC', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5574,7 +5574,7 @@ const pools = [
   assets: ['SUSHI', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5622,7 +5622,7 @@ const pools = [
   assets: ['CREAM', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5670,7 +5670,7 @@ const pools = [
   assets: ['FRAX', 'FXS'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/0xaf319E5789945197e365E7f7fbFc56B130523B33/0x82F8Cb20c14F134fe6Ebf7aC3B903B2117aAfa62',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5718,7 +5718,7 @@ const pools = [
   assets: ['AAVE', 'USDC'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5766,7 +5766,7 @@ const pools = [
   assets: ['SNX', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5814,7 +5814,7 @@ const pools = [
   assets: ['ICE', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0xf16e81dce15B08F326220742020379B855B87DF9',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5862,7 +5862,7 @@ const pools = [
   assets: ['COVER', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0xB01E8419d842beebf1b70A7b5f7142abbaf7159D',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5910,7 +5910,7 @@ const pools = [
   assets: ['ZOO', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
   buyTokenUrl: 'https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x09e145a1d53c0045f41aeef25d8ff982ae74dd56',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5958,7 +5958,7 @@ const pools = [
   assets: ['CRV', 'FTM'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x1E4F97b9f9F913c46F1632781732927B9019C68b',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6006,7 +6006,7 @@ const pools = [
   assets: ['fUSDT', 'FRAX'],
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  addLiquidityUrl: 'https://app.sushi.com/add/0xaf319E5789945197e365E7f7fbFc56B130523B33/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
