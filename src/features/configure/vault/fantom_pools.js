@@ -4138,8 +4138,8 @@ const pools = [
     router: WAKA_ROUTER,
 
     tokens: [
-      ...wakaTokens,
-      ...zapTokens,
+      // ...wakaTokens,
+      // ...zapTokens,
 
 
     ],
@@ -6353,8 +6353,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spookyTokens,
-      ...zapTokens,
+      // ...spookyTokens,
+      // ...zapTokens,
 
 
     ],
@@ -7859,7 +7859,7 @@ const pools = [
 
     tokens: [
 
-    ...bombTokens,
+    // ...bombTokens,
 
     ],
   },
@@ -7932,7 +7932,7 @@ const pools = [
     tokens: [
      
       
-    ...bombTokens,
+    // ...bombTokens,
 
 
     ],
@@ -7969,7 +7969,7 @@ const pools = [
 
     tokens: [
      
-    ...bombTokens,
+    // ...bombTokens,
 
     ],
   },
