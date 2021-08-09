@@ -1598,8 +1598,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
 
     ],
@@ -6499,8 +6499,8 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-      ...zooTokens,
-      ...zapTokensReduced,
+      // ...zooTokens,
+      // ...zapTokensReduced,
 
 
 
@@ -6612,7 +6612,7 @@ const pools = [
 
     tokens: [
 
-    ...paintTokens,
+    // ...paintTokens,
 
     ],
   },
@@ -6911,8 +6911,8 @@ const pools = [
     router: ZOO_ROUTER,
 
     tokens: [
-      ...zooTokens,
-      ...zapTokensReduced,
+      // ...zooTokens,
+      // ...zapTokensReduced,
 
 
 
@@ -7668,8 +7668,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spookyTokens,
-      ...zapTokens,
+      // ...spookyTokens,
+      // ...zapTokens,
 
 
 
