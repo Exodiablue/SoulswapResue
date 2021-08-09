@@ -678,7 +678,7 @@ const pools = [
 {
   id: 'spirit-spirit-ftm',
   logo: 'fantom/SPIRIT-FTM.png',
-  name: 'SPIRIT-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'SPIRIT-FTM LP',
   token: 'SPIRIT-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x30748322B6E34545DBe0788C421886AEB5297789',
@@ -714,7 +714,7 @@ const pools = [
 {
   id: 'spirit-spirit-xsteak',
   logo: 'fantom/SPIRIT-XSTEAK.png',
-  name: 'SPIRIT-XSTEAK LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'SPIRIT-XSTEAK LP',
   token: 'SPIRIT-XSTEAK LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xe276a71991a7a7b16cb453db2994ce9fcda2eda6',
@@ -750,7 +750,7 @@ const pools = [
 {
   id: 'spirit-dis-ftm',
   logo: 'fantom/DIS-FTM.png',
-  name: 'DIS-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'DIS-FTM LP',
   token: 'DIS-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xa6020794594568e2bf987718b6520C14b9C4Ccd9',
@@ -786,7 +786,7 @@ const pools = [
 {
   id: 'spirit-yfi-ftm',
   logo: 'fantom/YFI-FTM.png',
-  name: 'YFI-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'YFI-FTM LP',
   token: 'YFI-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x4fc38a2735C7da1d71ccAbf6DeC235a7DA4Ec52C',
@@ -822,7 +822,7 @@ const pools = [
 {
   id: 'spirit-dai-spirit',
   logo: 'fantom/DAI-SPIRIT.png',
-  name: 'DAI-SPIRIT LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'DAI-SPIRIT LP',
   token: 'DAI-SPIRIT LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xfFbfc0446cA725b21256461e214E9D472f9be390',
@@ -858,7 +858,7 @@ const pools = [
 {
   id: 'spirit-busd-fusdt',
   logo: 'fantom/BUSD-FUSDT.png',
-  name: 'BUSD-FUSDT LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'BUSD-FUSDT LP',
   token: 'BUSD-FUSDT LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x1Ac51904cFAaD15679B3500F0fC41D2971657f80',
@@ -892,7 +892,7 @@ const pools = [
 {
   id: 'spirit-frax-ftm',
   logo: 'fantom/FRAX-FTM.png',
-  name: 'FRAX-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'FRAX-FTM LP',
   token: 'FRAX-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x0eC0E1629E776272FA3E55548D4A656BE0EEdcF4',
@@ -927,7 +927,7 @@ const pools = [
 {
   id: 'spirit-fxs-frax',
   logo: 'fantom/FRAX-FXS.png',
-  name: 'FXS-FRAX LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'FXS-FRAX LP',
   token: 'FXS-FRAX LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x100FcF27C87D1cc7b8D6c28b69b84A359e4fd377',
@@ -963,7 +963,7 @@ const pools = [
 {
   id: 'spirit-ice-ftm',
   logo: 'fantom/ICE-FTM.png',
-  name: 'ICE-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'ICE-FTM LP',
   token: 'ICE-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x936D23C83c2469f6a14B9f5bEaec13879598A5aC',
@@ -999,7 +999,7 @@ const pools = [
 {
   id: 'spirit-yfi-woofy',
   logo: 'fantom/YFI-WOOFY.png',
-  name: 'YFI-WOOFY LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'YFI-WOOFY LP',
   token: 'YFI-WOOFY LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x287ebF376c59a037B8D8E0e987461b2fd8550D8c',
@@ -1035,7 +1035,7 @@ const pools = [
 {
   id: 'spirit-ftm-usdc',
   logo: 'fantom/USDC-FTM.png',
-  name: 'FTM-USDC LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'FTM-USDC LP',
   token: 'FTM-USDC LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xe7E90f5a767406efF87Fdad7EB07ef407922EC1D',
@@ -1071,7 +1071,7 @@ const pools = [
 {
   id: 'spirit-wbtc-ftm',
   logo: 'fantom/WBTC-FTM.png',
-  name: 'WBTC-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'WBTC-FTM LP',
   token: 'WBTC-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x279b2c897737a50405ED2091694F225D83F2D3bA',
@@ -1106,7 +1106,7 @@ const pools = [
 {
   id: 'spirit-weth-ftm',
   logo: 'fantom/WETH-FTM.png',
-  name: 'WETH-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'WETH-FTM LP',
   token: 'WETH-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x613BF4E46b4817015c01c6Bb31C7ae9edAadc26e',
@@ -1141,7 +1141,7 @@ const pools = [
 {
   id: 'spirit-sushi-ftm',
   logo: 'fantom/SUSHI-FTM.png',
-  name: 'SUSHI-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'SUSHI-FTM LP',
   token: 'SUSHI-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x9Fe4c0CE5F533e96C2b72d852f190961AD5a7bB3',
@@ -1176,7 +1176,7 @@ const pools = [
 {
   id: 'spirit-cream-ftm',
   logo: 'fantom/CREAM-FTM.png',
-  name: 'CREAM-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'CREAM-FTM LP',
   token: 'CREAM-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x040dd0d0f5e2a01fEb0C5457AbB588B23Cf4c43a',
@@ -1211,7 +1211,7 @@ const pools = [
 {
   id: 'spirit-cover-ftm',
   logo: 'fantom/COVER-FTM.png',
-  name: 'COVER-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'COVER-FTM LP',
   token: 'COVER-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x5427E7AB61145c41b1e58453121245dAEF3929C3',
@@ -1247,7 +1247,7 @@ const pools = [
 {
   id: 'spirit-any-ftm',
   logo: 'fantom/ANY-FTM.png',
-  name: 'ANY-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'ANY-FTM LP',
   token: 'ANY-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x26D583028989378Cc1b7CBC023f4Ae049d5e5899',
@@ -1282,7 +1282,7 @@ const pools = [
 {
   id: 'spirit-bnb-ftm',
   logo: 'fantom/BNB-FTM.png',
-  name: 'BNB-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'BNB-FTM LP',
   token: 'BNB-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x74fE5Ddc4c27F91a1898ccd5Ac62dFeb2d3dF726',
@@ -1317,7 +1317,7 @@ const pools = [
 {
   id: 'spirit-link-ftm',
   logo: 'fantom/LINK-FTM.png',
-  name: 'LINK-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'LINK-FTM LP',
   token: 'LINK-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xd061c6586670792331E14a80f3b3Bb267189C681',
@@ -1353,7 +1353,7 @@ const pools = [
 {
   id: 'spirit-crv-ftm',
   logo: 'fantom/CRV-FTM.png',
-  name: 'CRV-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'CRV-FTM LP',
   token: 'CRV-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x374C8ACb146407Ef0AE8F82BaAFcF8f4EC1708CF',
@@ -1389,7 +1389,7 @@ const pools = [
 {
   id: 'spirit-fusdt-ftm',
   logo: 'fantom/FUSDT-FTM.png',
-  name: 'FUSDT-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'FUSDT-FTM LP',
   token: 'FUSDT-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xd14Dd3c56D9bc306322d4cEa0E1C49e9dDf045D4',
@@ -1425,7 +1425,7 @@ const pools = [
 {
   id: 'spirit-bnb-spirit',
   logo: 'fantom/BNB-SPIRIT.png',
-  name: 'BNB-SPIRIT LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'BNB-SPIRIT LP',
   token: 'BNB-SPIRIT LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x9D103Bc85A33B007B58bE2fDee3e1A64651f676d',
@@ -1462,7 +1462,7 @@ const pools = [
 {
   id: 'spirit-usdc-gton',
   logo: 'fantom/GTON-USDC.png',
-  name: 'USDC-GTON LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'USDC-GTON LP',
   token: 'USDC-GTON LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0x8a5555c4996B72E5725Cf108Ad773Ce5E715DED4',
@@ -1499,7 +1499,7 @@ const pools = [
 {
   id: 'spirit-zoo-ftm',
   logo: 'fantom/ZOO-FTM.png',
-  name: 'ZOO-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'ZOO-FTM LP',
   token: 'ZOO-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xDF18DD2631f02D930071DF7d6FF89bbc3718C62F',
@@ -1536,7 +1536,7 @@ const pools = [
 {
   id: 'spirit-mim-ftm',
   logo: 'fantom/MIM-FTM.png',
-  name: 'MIM-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'MIM-FTM LP',
   token: 'MIM-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xB32b31DfAfbD53E310390F641C7119b5B9Ea0488',
@@ -1572,7 +1572,7 @@ const pools = [
 {
   id: 'spirit-just-ftm',
   logo: 'fantom/JUST-FTM.png',
-  name: 'JUST-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'JUST-FTM LP',
   token: 'JUST-FTM LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xea294E3C837ef457530b916Accbc3e3444a75A72',
@@ -1609,7 +1609,7 @@ const pools = [
 {
   id: 'spirit-spirit-lqdr',
   logo: 'fantom/LQDR-SPIRIT.png',
-  name: 'SPIRIT-LQDR LP (Purge Weekend Event: Zero Harvest Fees Until 12:00AM 8/9/21!',
+  name: 'SPIRIT-LQDR LP',
   token: 'SPIRIT-LQDR LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
   tokenAddress: '0xFeBbfeA7674720cEdD35e9384d07F235365c1B3e',
