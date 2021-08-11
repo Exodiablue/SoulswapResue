@@ -57,7 +57,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             {renderLink('Bridge', 'Bridge', 'sync-alt', classes)}
             {renderLink('Discord', 'Discord', 'discord', classes)}
             {renderLink('Docs', 'Docs', 'book', classes)}
-            {renderLink('Github', 'Github', 'github', classes)}
+            {/* {renderLink('Github', 'Github', 'github', classes)} */}
             {renderLink('Portfolio', 'Portfolio', 'chart-pie', classes)}
             {renderLink('Stats', 'Stats', 'sort-numeric-up', classes)}
             {renderLink('Store', 'Store', 'tshirt', classes)}
@@ -109,7 +109,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             <LinkSidebar name="Bridge" label="Bridge" icon="sync-alt" classes={classes} />
             <LinkSidebar name="Discord" label="Discord" icon="discord" classes={classes} />
             <LinkSidebar name="Docs" label="Docs" icon="book" classes={classes} />
-            <LinkSidebar name="Github" label="Github" icon="github" classes={classes} />
+            {/* <LinkSidebar name="Github" label="Github" icon="github" classes={classes} /> */}
             <LinkSidebar name="Portfolio" label="Portfolio" icon="chart-pie" classes={classes} />
             <LinkSidebar name="Stats" label="Stats" icon="sort-numeric-up" classes={classes} />
             <LinkSidebar name="Store" label="Store" icon="t-shit" classes={classes} />
@@ -175,8 +175,8 @@ const getLinkUrl = name => {
     return 'https://discord.gg/vDFkVT6tE6';
   if (name === 'Twitter')
     return 'https://twitter.com/financegrim';
-  if (name === 'Github')
-    return 'https://github.com/Grim-Finance';
+  // if (name === 'Github')
+  //   return 'https://github.com/Grim-Finance';
   if (name === 'Docs')
     return 'https://docs.grim.finance';
   if (name === 'Stats')
