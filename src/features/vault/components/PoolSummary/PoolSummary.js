@@ -11,6 +11,7 @@ import PoolPaused from './PoolPaused/PoolPaused';
 import PoolTitle from './PoolTitle/PoolTitle';
 import LabeledStat from './LabeledStat/LabeledStat';
 import ApyStats from './ApyStats/ApyStats';
+import { useConnectWallet } from '../../../home/redux/connectWallet'; //add for stats
 
 const useStyles = makeStyles(styles);
 
@@ -27,6 +28,8 @@ const PoolSummary = ({
 }) => {
   const { t } = useTranslation();
   const classes = useStyles();
+
+  const { web3, address } = useConnectWallet(); //add for stats
 
   const vaultStateTitle = useMemo(() => {
     let state =
@@ -96,6 +99,8 @@ const PoolSummary = ({
             launchpool={launchpool}
             addLiquidityUrl={pool.addLiquidityUrl}
             removeLiquidityUrl={pool.removeLiquidityUrl}
+            statsUrl={'https://www.yieldstation.net/account/portfolio?selectFarms=' + address + ':68&openPosition=' + address + ':' + pool.earnedTokenAddress + ':vault'}
+            //https://www.yieldstation.net/account/portfolio?selectFarms=0x9176FA969181058A8d477436342113D7299aFC06:68&openPosition=0x9176FA969181058A8d477436342113D7299aFC06:0x6d149DA26c4b3AFB9E4D5CEb5C426242532cBEE2:vault
             buyTokenUrl={pool.buyTokenUrl}
             assets={pool.assets}
           />
@@ -139,6 +144,7 @@ const PoolSummary = ({
     </AccordionSummary>
   );
 };
+
 
 const formatDecimals = number => {
   return number >= 10 ? number.toFixed(4) : number.isEqualTo(0) ? 0 : number.toFixed(8);

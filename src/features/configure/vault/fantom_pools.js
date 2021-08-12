@@ -6346,7 +6346,7 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD', 'BOMB'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://spookyswap.finance/add',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0xCcE93540b80ABF71B66E0a44fd71E322cE9C4D9e/0x8503eb4A136bDBeB323E37Aa6e0FA0C772228378',
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -8219,7 +8219,7 @@ const pools = [
   callFee: 0.5,
   depositFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0x9fC071cE771c7B27b7d9A57C32c0a84c18200F8a',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -8287,6 +8287,7 @@ const pools = [
   depositsPaused: false,
   status: 'active',
   platform: 'Steak',
+  contract: 'https://spookyswap.finance/add/FTM/0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
   assets: ['SCREAM','FTM'],
   callFee: 0.5,
   depositFee: '0.5% from Farm Provider',

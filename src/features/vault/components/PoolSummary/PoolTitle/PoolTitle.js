@@ -31,6 +31,7 @@ const PoolTitle = ({
   buyTokenUrl,
   addLiquidityUrl,
   removeLiquidityUrl,
+  statsUrl,
   assets,
 }) => {
   const classes = useStyles();
@@ -100,6 +101,7 @@ const PoolTitle = ({
               rel="noopener noreferrer"
             >
               <span>{t('Add-Liquidity')}</span>
+              {'\u00A0\u00A0'}
             </a>
           ) : (
             ''
@@ -112,6 +114,20 @@ const PoolTitle = ({
               rel="noopener noreferrer"
             >
               <span>{t('Remove-Liquidity')}</span>
+              {'\u00A0\u00A0'}
+            </a>
+          ) : (
+            ''
+          )}
+          {statsUrl ? (
+            <a
+              className={classes.url}
+              href={statsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>{t('Analytics')}</span>
+              {'\u00A0\u00A0'}
             </a>
           ) : (
             ''
