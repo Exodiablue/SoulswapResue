@@ -351,7 +351,7 @@ const pools = [
   platform: 'Grim Finance',
   assets: ['GRIM'],
   callFee: 0.5,
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap?outputCurrency=0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -385,7 +385,7 @@ const pools = [
   assets: ['FTM', 'GRIM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap?outputCurrency=0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -455,7 +455,7 @@ const pools = [
   assets: ['GRIM', 'SPIRIT'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -489,7 +489,7 @@ const pools = [
   platform: 'Grim Finance',
   assets: ['REAPER'],
   callFee: 0.5,
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap?outputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -523,7 +523,7 @@ const pools = [
   assets: ['FTM', 'REAPER'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap?outputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -558,7 +558,7 @@ const pools = [
   assets: ['USDC', 'REAPER'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap?outputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -593,7 +593,7 @@ const pools = [
   assets: ['CASPER', 'REAPER'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb/0xC30d1b0Ce932C3dd3373a2C23aDA4E9608CAf345',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap?outputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -770,7 +770,7 @@ const pools = [
   assets: ['DIS', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x0e121961DD741C9D49C9A04379da944A9D2FAc7a',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x0e121961DD741C9D49C9A04379da944A9D2FAc7a',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -806,7 +806,7 @@ const pools = [
   assets: ['YFI', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -877,7 +877,7 @@ const pools = [
   assets: ['BUSD', 'fUSDT'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xC931f61B1534EB21D8c11B24f3f5Ab2471d4aB50/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xC931f61B1534EB21D8c11B24f3f5Ab2471d4aB50',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -912,7 +912,7 @@ const pools = [
   assets: ['FRAX', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0xaf319E5789945197e365E7f7fbFc56B130523B33',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xaf319E5789945197e365E7f7fbFc56B130523B33',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -947,7 +947,7 @@ const pools = [
   assets: ['FXS', 'FRAX'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x82F8Cb20c14F134fe6Ebf7aC3B903B2117aAfa62/0xaf319E5789945197e365E7f7fbFc56B130523B33',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xaf319E5789945197e365E7f7fbFc56B130523B33',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -983,7 +983,7 @@ const pools = [
   assets: ['ICE', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xf16e81dce15B08F326220742020379B855B87DF9/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xf16e81dce15B08F326220742020379B855B87DF9',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1019,7 +1019,7 @@ const pools = [
   assets: ['YFI', 'WOOFY'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x29b0Da86e484E1C0029B56e817912d778aC0EC69/0xD0660cD418a64a1d44E9214ad8e459324D8157f1',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xD0660cD418a64a1d44E9214ad8e459324D8157f1',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1055,7 +1055,7 @@ const pools = [
   assets: ['FTM', 'USDC'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1091,7 +1091,7 @@ const pools = [
   assets: ['BTC', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1126,7 +1126,7 @@ const pools = [
   assets: ['ETH', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1161,7 +1161,7 @@ const pools = [
   assets: ['SUSHI', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1196,7 +1196,7 @@ const pools = [
   assets: ['CREAM', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1231,7 +1231,7 @@ const pools = [
   assets: ['COVER', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xB01E8419d842beebf1b70A7b5f7142abbaf7159D/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xB01E8419d842beebf1b70A7b5f7142abbaf7159D',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1267,7 +1267,7 @@ const pools = [
   assets: ['ANY', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xdDcb3fFD12750B45d32E084887fdf1aABAb34239/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xdDcb3fFD12750B45d32E084887fdf1aABAb34239',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1302,7 +1302,7 @@ const pools = [
   assets: ['BNB', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1337,7 +1337,7 @@ const pools = [
   assets: ['LINK', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1373,7 +1373,7 @@ const pools = [
   assets: ['CRV', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x1E4F97b9f9F913c46F1632781732927B9019C68b/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x1E4F97b9f9F913c46F1632781732927B9019C68b',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1409,7 +1409,7 @@ const pools = [
   assets: ['fUSDT', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1445,7 +1445,7 @@ const pools = [
   assets: ['BNB', 'SPIRIT'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1482,7 +1482,7 @@ const pools = [
   assets: ['USDC', 'GTON'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0xC1Be9a4D5D45BeeACAE296a7BD5fADBfc14602C4',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xC1Be9a4D5D45BeeACAE296a7BD5fADBfc14602C4',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1519,7 +1519,7 @@ const pools = [
   assets: ['ZOO', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1556,7 +1556,7 @@ const pools = [
   assets: ['MIM', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x82f0B8B456c1A451378467398982d4834b6829c1/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x82f0B8B456c1A451378467398982d4834b6829c1',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -1592,7 +1592,7 @@ const pools = [
   assets: ['JUST', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xC8Da1a26ABEF9e2E41B4C89c1b345Cc05ce034e8/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xC8Da1a26ABEF9e2E41B4C89c1b345Cc05ce034e8',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
