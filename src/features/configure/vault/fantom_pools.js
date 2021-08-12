@@ -8147,7 +8147,7 @@ const pools = [
   callFee: 0.5,
   depositFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x05848B832E872d9eDd84AC5718D58f21fD9c9649/0x9fC071cE771c7B27b7d9A57C32c0a84c18200F8a',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x05848B832E872d9eDd84AC5718D58f21fD9c9649',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -8183,7 +8183,7 @@ const pools = [
   callFee: 0.5,
   depositFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x9fC071cE771c7B27b7d9A57C32c0a84c18200F8a',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://stakesteak.com/staking-fusd',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -8219,7 +8219,7 @@ const pools = [
   callFee: 0.5,
   depositFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0x9fC071cE771c7B27b7d9A57C32c0a84c18200F8a',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
