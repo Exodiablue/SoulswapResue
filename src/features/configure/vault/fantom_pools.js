@@ -1608,43 +1608,6 @@ const pools = [
 },
 
 {
-  id: 'spirit-just-ftm',
-  logo: 'fantom/JUST-FTM.png',
-  name: 'JUST-FTM LP',
-  token: 'JUST-FTM LP (SpiritSwap)',
-  tokenDescription: 'SpiritSwap',
-  tokenAddress: '0xea294E3C837ef457530b916Accbc3e3444a75A72',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-JUS-FTM-1',
-  earnedTokenAddress: '0x42B6890dd673579CB6554939398D53365eb12482',
-  earnContractAddress: '0x42B6890dd673579CB6554939398D53365eb12482',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'spirit-just-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'SpiritSwap',
-  assets: ['JUST', 'FTM'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xC8Da1a26ABEF9e2E41B4C89c1b345Cc05ce034e8/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xC8Da1a26ABEF9e2E41B4C89c1b345Cc05ce034e8',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      // ...spiritTokens,
-      // ...zapTokens,
-
-
-    ],
-  },
-},
-
-{
   id: 'spirit-spirit-lqdr',
   logo: 'fantom/LQDR-SPIRIT.png',
   name: 'SPIRIT-LQDR LP',
@@ -8457,7 +8420,7 @@ const pools = [
 
 
 {
-  id: 'BABYBOO',
+  id: 'babyboo',
   logo: 'fantom/BABYBOO.png',
   name: 'BABYBOO',
   token: 'BABYBOO',
@@ -8466,8 +8429,8 @@ const pools = [
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
   earnedToken: 'G-babyBOO',
-  earnedTokenAddress: '0x4230756F5FDD5e240488F68E0788975BF235B50D',
-  earnContractAddress: '0x4230756F5FDD5e240488F68E0788975BF235B50D',
+  earnedTokenAddress: '0x9f643828c560570ACc898ad902c452D724DeD23b',
+  earnContractAddress: '0x9f643828c560570ACc898ad902c452D724DeD23b',
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'tokens',
