@@ -8455,6 +8455,42 @@ const pools = [
   },
 },
 
+
+{
+  id: 'BABYBOO',
+  logo: 'fantom/BABYBOO.png',
+  name: 'BABYBOO',
+  token: 'BABYBOO',
+  tokenDescription: 'babyBOO',
+  tokenAddress: '0x471762A7017A5B1A3e931F1A97aa03Ef1E7F4A73',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-babyBOO',
+  earnedTokenAddress: '0x4230756F5FDD5e240488F68E0788975BF235B50D',
+  earnContractAddress: '0x4230756F5FDD5e240488F68E0788975BF235B50D',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'BABYBOO',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'babyBOO',
+  assets: ['BABYBOO'],
+  callFee: 0.5,
+  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x471762A7017A5B1A3e931F1A97aa03Ef1E7F4A73',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+
+    tokens: [
+     
+      ...zapTokens,
+
+    ],
+  },
+},
+
   
 ];
 
