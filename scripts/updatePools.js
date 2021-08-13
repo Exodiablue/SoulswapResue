@@ -25,7 +25,7 @@ async function main() {
         .then();
       pools[i].creationBlock = response.data['result'][0]['blockNumber'];
     }
-    console.log(pools[i]);
+    // console.log(pools[i]);
     arr.push(pools[i]);
   }
 

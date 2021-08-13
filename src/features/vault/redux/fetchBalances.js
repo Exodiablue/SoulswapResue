@@ -147,7 +147,7 @@ export function useFetchBalances() {
     }),
     shallowEqual
   );
-  console.log(tokens);
+  // console.log(tokens);
 
   const boundAction = useCallback(
     data => {

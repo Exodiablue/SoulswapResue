@@ -536,6 +536,44 @@ const pools = [
 },
 
 {
+  id: 'bone-reaper-ftm',
+  logo: 'fantom/REAPER-FTM.png',
+  name: 'REAPER-FTM LP',
+  token: 'REAPER-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
+  tokenAddress: '0x253a039319Ff0Ac7fAc27b71b3C55C54f1240f0C',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-REA-FTM-I',
+  earnedTokenAddress: '0xCd8cAce3EecF190659336B33558AF62105F65e62',
+  earnContractAddress: '0xCd8cAce3EecF190659336B33558AF62105F65e62',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'bone-reaper-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'ShibaSwap',
+  assets: ['REAPER','FTM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb/FTM',
+  buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SHIBA_ROUTER,
+
+    tokens: [
+      ...shibaTokens,
+      ...zapTokensReduced,
+
+
+
+    ],
+  },
+},
+
+{
   id: 'reaper-reaper-usdc',
   logo: 'fantom/REAPER-USDC.png',
   name: 'REAPER-USDC LP',
@@ -1587,7 +1625,7 @@ const pools = [
   oracleId: 'spirit-just-ftm',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'SpiritSwap',
   assets: ['JUST', 'FTM'],
   callFee: 0.5,
@@ -1629,6 +1667,43 @@ const pools = [
   assets: ['SPIRIT', 'LQDR'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      ...spiritTokens,
+      ...zapTokens,
+
+
+    ],
+  },
+},
+
+{
+  id: 'spirit-spirit-unidex',
+  logo: 'fantom/UNIDX-SPIRIT.png',
+  name: 'SPIRIT-UNIDEX LP',
+  token: 'SPIRIT-UNIDEX LP (SpiritSwap)',
+  tokenDescription: 'SpiritSwap',
+  tokenAddress: '0x2a520963F332C347C83a6e20F4CA33E2F24B6305',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SPI-UNI-1',
+  earnedTokenAddress: '0x81EC66969da39f5786E654AC2647424A26D1d4Ff',
+  earnContractAddress: '0x81EC66969da39f5786E654AC2647424A26D1d4Ff',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'spirit-spirit-unidx',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SpiritSwap',
+  assets: ['SPIRIT', 'UNIDX'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/0x2130d2a1e51112D349cCF78D2a1EE65843ba36e0',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4755,6 +4830,82 @@ const pools = [
 },
 
 {
+  id: 'bone-babybone-bone',
+  logo: 'fantom/BONE-BABYBONE.png',
+  name: 'BABYBONE-BONE LP',
+  token: 'BABYBONE-BONE LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
+  tokenAddress: '0x0a40278fC50389F73E73e6e02A159784f7F67CE2',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BAB-BON-I',
+  earnedTokenAddress: '0x209d19e1439Ae78BB69f34A0d5D52eF43b7ea747',
+  earnContractAddress: '0x209d19e1439Ae78BB69f34A0d5D52eF43b7ea747',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'bone-babybone-bone',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'ShibaSwap',
+  assets: ['BONE','BABYBONE'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0x7f431316E419e0188337739196D04E67cb7A23D7',
+  buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SHIBA_ROUTER,
+
+    tokens: [
+      // ...shibaTokens,
+      // ...zapTokensReduced,
+
+
+
+    ],
+  },
+},
+
+{
+  id: 'bone-laika-ftm',
+  logo: 'fantom/LAIKA-FTM.png',
+  name: 'LAIKA-FTM LP',
+  token: 'LAIKA-FTM LP (ShibaSwap)',
+  tokenDescription: 'ShibaSwap',
+  tokenAddress: '0x96403B19065D604De3D3D7FC9aAE84BFe96Fd3dC',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-LAI-FTM-I',
+  earnedTokenAddress: '0x7D38eD6f93D3f5558E714E3474c81B3DA8a25563',
+  earnContractAddress: '0x7D38eD6f93D3f5558E714E3474c81B3DA8a25563',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'bone-laika-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'ShibaSwap',
+  assets: ['LAIKA','FTM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0xaeDdc4A469acE97e90C605e3F52EB89620e305C0',
+  buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SHIBA_ROUTER,
+
+    tokens: [
+      ...shibaTokens,
+      ...zapTokensReduced,
+
+
+
+    ],
+  },
+},
+
+{
   id: 'curve-ftm-fusdt',
   logo: 'fantom/DAI-USDC-FUSDT.png',
   name: 'DAI-USDT-FUSDT LP',
@@ -6488,7 +6639,7 @@ const pools = [
   oracleId: 'chad-chad-just',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['CHAD', 'JUST'],
   callFee: 0.5,
