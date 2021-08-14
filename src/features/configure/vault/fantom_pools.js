@@ -1682,6 +1682,80 @@ const pools = [
 },
 
 {
+  id: 'spirit-just-ftm',
+  logo: 'fantom/JUST-FTM.png',
+  name: 'JUST-FTM LP',
+  token: 'JUST-FTM LP (SpiritSwap)',
+  tokenDescription: 'SpiritSwap',
+  tokenAddress: '0x0133660D0578Bf9D085033Ea753a27F5Aa2b9de1',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-JUS-FTM-1',
+  earnedTokenAddress: '0xf172FE031015036991005c2efF02810fAC4D7FbD',
+  earnContractAddress: '0xf172FE031015036991005c2efF02810fAC4D7FbD',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'spirit-just-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SpiritSwap',
+  assets: ['JUST', 'FTM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x37C045bE4641328DFEB625f1Dde610D061613497/FTM',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x37c045be4641328dfeb625f1dde610d061613497',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      ...spiritTokens,
+      ...zapTokens,
+
+
+    ],
+  },
+},
+
+{
+  id: 'spirit-rai-ftm',
+  logo: 'fantom/RAI-FTM.png',
+  name: 'RAI-FTM LP',
+  token: 'RAI-FTM LP (SpiritSwap)',
+  tokenDescription: 'SpiritSwap',
+  tokenAddress: '0x414F9DC80bFe3966d4D30878fd4CE9cAC3cE63c4',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-RAI-FTM-1',
+  earnedTokenAddress: '0xDeF54452EafdD0c9824d5fbE3966819D909dDDA0',
+  earnContractAddress: '0xDeF54452EafdD0c9824d5fbE3966819D909dDDA0',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'spirit-rai-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SpiritSwap',
+  assets: ['RAI', 'FTM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xa71353Bb71DdA105D383B02fc2dD172C4D39eF8B/FTM',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xa71353Bb71DdA105D383B02fc2dD172C4D39eF8B',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      ...spiritTokens,
+      ...zapTokens,
+
+
+    ],
+  },
+},
+
+{
   id: 'boo',
   logo: 'fantom/BOO.png',
   name: 'BOO',
@@ -6579,44 +6653,6 @@ const pools = [
     tokens: [
 
     ...paintTokens,
-
-    ],
-  },
-},
-
-{
-  id: 'chad-chad-just',
-  logo: 'fantom/CHAD-JUST.png',
-  name: 'CHAD-JUST LP',
-  token: 'CHAD-JUST LP (Zoo)',
-  tokenDescription: 'Chad Finance',
-  tokenAddress: '0xF096E1375a4200072D08993cd1d0C2A903EF57E7',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-CHA-JUS-5',
-  earnedTokenAddress: '0x31627D796E02bf87EA8B67985c1648457F3EF5cC',
-  earnContractAddress: '0x31627D796E02bf87EA8B67985c1648457F3EF5cC',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'chad-chad-just',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Chad',
-  assets: ['CHAD', 'JUST'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xCcE93540b80ABF71B66E0a44fd71E322cE9C4D9e&outputCurrency=0xC8Da1a26ABEF9e2E41B4C89c1b345Cc05ce034e8',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xC8Da1a26ABEF9e2E41B4C89c1b345Cc05ce034e8',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: PAINT_ROUTER,
-
-    tokens: [
-      // ...zooTokens,
-      // ...zapTokensReduced,
-
-
 
     ],
   },
