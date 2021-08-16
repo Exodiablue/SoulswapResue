@@ -772,14 +772,14 @@ const pools = [
   assets: ['SPIRIT', 'XSTEAK'],
   callFee: 0.5,
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0xb632c5d42BD4a44a617608Ad1c7d38f597E22E3C',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  buyTokenUrl: 'https://stakesteak.com/staking',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -5288,7 +5288,7 @@ const pools = [
 {
   id: 'tomb-tomb-ftm',
   logo: 'fantom/TOMB-FTM.png',
-  name: 'TOMB-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 8/16 12:00AM!)',
+  name: 'TOMB-FTM LP',
   token: 'TOMB-FTM LP (SpookySwap)',
   tokenDescription: 'Tomb',
   tokenAddress: '0x2A651563C9d3Af67aE0388a5c8F89b867038089e',
@@ -5304,7 +5304,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Tomb (Purge Weekend Event!)',
+  platform: 'Tomb',
   assets: ['TOMB', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://spookyswap.finance/add',
@@ -5324,7 +5324,7 @@ const pools = [
 {
   id: "tomb-tshare-ftm",
   logo: 'fantom/TSHARE-FTM.png',
-  name: 'TSHARE-FTM LP (Purge Weekend Event: Zero Harvest Fees Until 8/16 12:00AM!)',
+  name: 'TSHARE-FTM LP',
   token: 'TSHARE-FTM LP (SpookySwap)',
   tokenDescription: 'Tomb',
   tokenAddress: '0x4733bc45eF91cF7CcEcaeeDb794727075fB209F2',
@@ -5340,7 +5340,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Tomb (Purge Weekend Event!)',
+  platform: 'Tomb',
   assets: ['TSHARE', 'FTM'],
   callFee: 0.5,
   addLiquidityUrl: 'https://spookyswap.finance/add',
