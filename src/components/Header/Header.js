@@ -57,6 +57,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             {renderLink('Bridge', 'Bridge', 'sync-alt', classes)}
             {renderLink('Discord', 'Discord', 'discord', classes)}
             {renderLink('Docs', 'Docs', 'book', classes)}
+            {renderLink('Lending', 'Lending', 'hand-holding-usd', classes)}
             {/* {renderLink('Github', 'Github', 'github', classes)} */}
             {renderLink('Portfolio', 'Portfolio', 'chart-pie', classes)}
             {renderLink('Stats', 'Stats', 'sort-numeric-up', classes)}
@@ -109,10 +110,11 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             <LinkSidebar name="Bridge" label="Bridge" icon="sync-alt" classes={classes} />
             <LinkSidebar name="Discord" label="Discord" icon="discord" classes={classes} />
             <LinkSidebar name="Docs" label="Docs" icon="book" classes={classes} />
+            <LinkSidebar name="Lending" label="Lending" icon="hand-holding-usd" classes={classes} />
             {/* <LinkSidebar name="Github" label="Github" icon="github" classes={classes} /> */}
             <LinkSidebar name="Portfolio" label="Portfolio" icon="chart-pie" classes={classes} />
             <LinkSidebar name="Stats" label="Stats" icon="sort-numeric-up" classes={classes} />
-            <LinkSidebar name="Store" label="Store" icon="t-shit" classes={classes} />
+            <LinkSidebar name="Store" label="Store" icon="tshit" classes={classes} />
             <LinkSidebar name="Twitter" label="Twitter" icon="twitter-square" classes={classes} />
             {/* <LinkSidebar name="dashboard" label={t('stats')} icon="chart-bar" classes={classes} /> */}
             {/* <LinkSidebar name="buy" label={t('buy')} icon="dollar-sign" classes={classes} /> */}
@@ -127,7 +129,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
 };
 
 const renderLink = (name, label, icon, classes) => {
-    if (name =='Bridge' || name == 'Portfolio' || name == 'Stats' || name == 'Docs' || name == 'Arcade' || name == 'Store'){
+    if (name =='Bridge' || name == 'Portfolio' || name == 'Stats' || name == 'Docs' || name == 'Arcade' || name == 'Store' || name == 'Lending'){
       return (
         <a
         href={getLinkUrl(name)}
@@ -179,6 +181,8 @@ const getLinkUrl = name => {
   //   return 'https://github.com/Grim-Finance';
   if (name === 'Docs')
     return 'https://docs.grim.finance';
+  if (name === 'Lending')
+    return 'https://www.kitten.finance/new/#net=Fantom';
   if (name === 'Stats')
     return 'https://dashboard.grim.finance';
   if (name === 'Portfolio')

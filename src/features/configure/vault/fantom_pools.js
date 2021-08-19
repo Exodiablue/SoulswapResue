@@ -557,6 +557,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['REAPER','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
@@ -4318,6 +4319,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['SHIBA','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/FTM/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x9ba3e4f84a34df4e08c112e1a0ff148b81655615',
   zap: {
@@ -4356,6 +4358,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['GBONE','SHIBA'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x004B122eb5632077abdD2C38e8d9392348d5cA15/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x004B122eb5632077abdD2C38e8d9392348d5cA15',
   zap: {
@@ -4394,6 +4397,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['GBONE','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x004B122eb5632077abdD2C38e8d9392348d5cA15/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x004B122eb5632077abdD2C38e8d9392348d5cA15',
   zap: {
@@ -4432,6 +4436,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BONE','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
@@ -4470,6 +4475,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['USDC','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
@@ -4508,6 +4514,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BOO','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4546,6 +4553,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['WAKA','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0xf61cCdE1D4bB76CeD1dAa9D4c429cCA83022B08B/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4584,6 +4592,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['DAI','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4622,6 +4631,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['fUSDT','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4660,6 +4670,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['ETH','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4698,6 +4709,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BTC','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4736,6 +4748,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BNB','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4774,6 +4787,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['LQDR','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4812,6 +4826,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['NIPS','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x667Afbb7D558c3dFd20fAbd295D31221Dab9dBC2/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4850,6 +4865,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BONE','SHIBA'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
@@ -4888,6 +4904,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BONE','BABYBONE'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0x7f431316E419e0188337739196D04E67cb7A23D7',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
@@ -4926,6 +4943,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['LAIKA','FTM'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0xaeDdc4A469acE97e90C605e3F52EB89620e305C0',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
@@ -7752,43 +7770,6 @@ const pools = [
   },
 },
 
-
-{
-  id: 'behodl-behodl-reaper',
-  logo: 'fantom/beHODL-REAPER.png',
-  name: 'beHODL-REAPER LP',
-  token: 'beHODL-REAPER LP (SpookySwap)',
-  tokenDescription: 'beHODL',
-  tokenAddress: '0xe422335D1C766cE5c45987293DB555BB108b9A74',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-BEH-REA-F',
-  earnedTokenAddress: '0x5fee5EA92bf82d5b441fBD0b270F9D1C98cdC069',
-  earnContractAddress: '0x5fee5EA92bf82d5b441fBD0b270F9D1C98cdC069',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'behodl-behodl-reaper',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'beHODL',
-  assets: ['beHODL', 'REAPER'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://spookyswap.finance/add/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb/0x6b60d2b6bb9fe657ec0e5b7d44e557504e78af6a',
-  buyTokenUrl: 'https://spookyswap.finance/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
-
-    tokens: [
-      ...spookyTokens,
-      ...zapTokens,
-
-    ],
-  },
-},
-
 {
   id: 'behodl-hodlcc-ftm',
   logo: 'fantom/HODLcc-FTM.png',
@@ -7921,49 +7902,11 @@ const pools = [
   oracleId: 'behodl-behodl-shiba',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'beHODL',
   assets: ['beHODL', 'SHIBA'],
   callFee: 0.5,
   addLiquidityUrl: 'https://spookyswap.finance/add/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615/0x6b60d2b6bb9fe657ec0e5b7d44e557504e78af6a',
-  buyTokenUrl: 'https://spookyswap.finance/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
-
-    tokens: [
-      // ...spookyTokens,
-      // ...zapTokens,
-
-
-
-    ],
-  },
-},
-
-{
-  id: 'behodl-ftm-babyboo',
-  logo: 'fantom/beHODL-BABYBOO.png',
-  name: 'FTM-BABYBOO LP',
-  token: 'FTM-BABYBOO LP (SpookySwap)',
-  tokenDescription: 'beHODL',
-  tokenAddress: '0x24a5D3e0E3D8F21d94508f148682379fCaB532D8',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-FTM-BAB-F',
-  earnedTokenAddress: '0x170de72957b543f3cA958207fCc7f21F93D97b85',
-  earnContractAddress: '0x170de72957b543f3cA958207fCc7f21F93D97b85',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'behodl-ftm-babyboo',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'beHODL',
-  assets: ['FTM', 'BABYBOO'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x471762A7017A5B1A3e931F1A97aa03Ef1E7F4A73',
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -8488,7 +8431,8 @@ const pools = [
 
     ],
   },
-},
+}
+
 
   
 ];
