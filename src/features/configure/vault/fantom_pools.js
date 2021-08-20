@@ -334,7 +334,7 @@ const pools = [
   logo: 'fantom/GRIM.png',
   name: 'GRIM',
   token: 'GRIM',
-  tokenDescription: 'Grim Finance',
+  tokenDescription: 'Grim Finance | Note: 50% of all Grim Finance platform harvest fees are distributed to this pool',
   tokenAddress: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -489,7 +489,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['GRIM', 'SPIRIT'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4791,8 +4791,8 @@ const pools = [
     router: SHIBA_ROUTER,
 
     tokens: [
-      ...shibaTokens,
-      ...zapTokensReduced,
+      // ...shibaTokens,
+      // ...zapTokensReduced,
 
 
 
@@ -9253,6 +9253,258 @@ const pools = [
     tokens: [
       ...spiritTokens,
       ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'paint-brush-ftm',
+  logo: 'fantom/BRUSH-FTM.png',
+  name: 'BRUSH-FTM LP',
+  token: 'BRUSH-FTM LP (PaintSwap)',
+  tokenDescription: 'PaintSwap | Note: 50% of Rewards are Locked and Automatically Redeemed After 12 Weeks',
+  tokenAddress: '0x452590b8Aa292b963a9d0f2B5E71bC7c927859b3',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BRU-FTM-N',
+  earnedTokenAddress: '0xCb8E27D03cd90af22D68Efc83A487489494Df7Ff',
+  earnContractAddress: '0xCb8E27D03cd90af22D68Efc83A487489494Df7Ff',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'paint-brush-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'PaintSwap',
+  assets: ['BRUSH', 'FTM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x85dec8c4B2680793661bCA91a8F129607571863d',
+  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x85dec8c4b2680793661bca91a8f129607571863d',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: PAINT_ROUTER,
+
+    tokens: [
+    
+    ...paintTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'paint-usdc-ftm',
+  logo: 'fantom/USDC-FTM.png',
+  name: 'USDC-FTM LP',
+  token: 'USDC-FTM LP (PaintSwap)',
+  tokenDescription: 'PaintSwap | Note: 50% of Rewards are Locked and Automatically Redeemed After 12 Weeks',
+  tokenAddress: '0x7924F76918769fcdcF854C2fdf5D5538DCD7401A',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-USD-FTM-N',
+  earnedTokenAddress: '0x8D1f84AFfB91387ab4D9d8a9da8E36c2Dd2e8FA7',
+  earnContractAddress: '0x8D1f84AFfB91387ab4D9d8a9da8E36c2Dd2e8FA7',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'paint-usdc-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'PaintSwap',
+  assets: ['USDC', 'FTM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x04068da6c83afcfa0e13ba15a6696662335d5b75',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: PAINT_ROUTER,
+
+    tokens: [
+    
+    ...paintTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'paint-bnb-ftm',
+  logo: 'fantom/BNB-FTM.png',
+  name: 'BNB-FTM LP',
+  token: 'BNB-FTM LP (PaintSwap)',
+  tokenDescription: 'PaintSwap | Note: 50% of Rewards are Locked and Automatically Redeemed After 12 Weeks',
+  tokenAddress: '0xC6Cf63EC4d79C710a880c2f8cD0e7C8eE7Cdbc27',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BNB-FTM-N',
+  earnedTokenAddress: '0x8848879d6E62f9F4EA4049dF4B70c29aCD3AF312',
+  earnContractAddress: '0x8848879d6E62f9F4EA4049dF4B70c29aCD3AF312',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'paint-bnb-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'PaintSwap',
+  assets: ['BNB', 'FTM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
+  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: PAINT_ROUTER,
+
+    tokens: [
+    
+    ...paintTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'paint-eth-ftm',
+  logo: 'fantom/WETH-FTM.png',
+  name: 'ETH-FTM LP',
+  token: 'ETH-FTM LP (PaintSwap)',
+  tokenDescription: 'PaintSwap | Note: 50% of Rewards are Locked and Automatically Redeemed After 12 Weeks',
+  tokenAddress: '0x21e93724a11870Ab65857373bc38dbd1eFfC3738',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-ETH-FTM-N',
+  earnedTokenAddress: '0x1039154AAAa6E56502Cc226B6Fa6259dC43D6432',
+  earnContractAddress: '0x1039154AAAa6E56502Cc226B6Fa6259dC43D6432',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'paint-eth-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'PaintSwap',
+  assets: ['ETH', 'FTM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: PAINT_ROUTER,
+
+    tokens: [
+    
+    ...paintTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'paint-btc-ftm',
+  logo: 'fantom/WBTC-FTM.png',
+  name: 'BTC-FTM LP',
+  token: 'BTC-FTM LP (PaintSwap)',
+  tokenDescription: 'PaintSwap | Note: 50% of Rewards are Locked and Automatically Redeemed After 12 Weeks',
+  tokenAddress: '0x84dC02D1D1416B696406F2172c847ec07b3EB3ef',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BTC-FTM-N',
+  earnedTokenAddress: '0x6Be0d9922061Ed57265B9A7b9d1F8eAD8b443306',
+  earnContractAddress: '0x6Be0d9922061Ed57265B9A7b9d1F8eAD8b443306',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'paint-btc-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'PaintSwap',
+  assets: ['BTC', 'FTM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
+  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: PAINT_ROUTER,
+
+    tokens: [
+    
+    ...paintTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'paint-zoo-brush',
+  logo: 'fantom/BRUSH-ZOO.png',
+  name: 'ZOO-BRUSH LP',
+  token: 'ZOO-BRUSH LP (PaintSwap)',
+  tokenDescription: 'PaintSwap | Note: 50% of Rewards are Locked and Automatically Redeemed After 12 Weeks',
+  tokenAddress: '0x1eb9E69f58c2B0a6c73522156Cc2dBE529ADf81b',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-ZOO-BRU-N',
+  earnedTokenAddress: '0x9A57B392cBa70B9Aed9d3C0f4c7B43B049615Cd4',
+  earnContractAddress: '0x9A57B392cBa70B9Aed9d3C0f4c7B43B049615Cd4',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'paint-zoo-brush',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'PaintSwap',
+  assets: ['ZOO', 'BRUSH'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56/0x85dec8c4B2680793661bCA91a8F129607571863d',
+  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x85dec8c4b2680793661bca91a8f129607571863d',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: PAINT_ROUTER,
+
+    tokens: [
+    
+    // ...paintTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'paint-hodl-ftm',
+  logo: 'fantom/HODL-FTM.png',
+  name: 'HODL-FTM LP',
+  token: 'HODL-FTM LP (PaintSwap)',
+  tokenDescription: 'PaintSwap | Note: 50% of Rewards are Locked and Automatically Redeemed After 12 Weeks',
+  tokenAddress: '0x06BEF78Cd8bb17a6dAceD10B610884C09f36FdB7',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-HOD-FTM-N',
+  earnedTokenAddress: '0x1DFFe61B283BF4aFbC9265A33f58Efe221157d73',
+  earnContractAddress: '0x1DFFe61B283BF4aFbC9265A33f58Efe221157d73',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'paint-hodl-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'PaintSwap',
+  assets: ['HODL', 'FTM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343/FTM',
+  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: PAINT_ROUTER,
+
+    tokens: [
+    
+    ...paintTokens,
 
     ],
   },
