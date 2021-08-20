@@ -48,7 +48,7 @@ const createTheme = (isNightMode) => createMuiTheme({
     },
     MuiSelect : {
       icon : {
-        color:"white"
+        color:"#c11828"
       },
       selectMenu : {
         textOverflow: "initial",
