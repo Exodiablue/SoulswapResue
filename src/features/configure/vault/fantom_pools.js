@@ -419,7 +419,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'GRIM'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -3668,7 +3668,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['WAKA', 'FTM'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0xf61cCdE1D4bB76CeD1dAa9D4c429cCA83022B08B',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -3704,7 +3704,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'BTC'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -3741,7 +3741,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'YFI'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -3777,7 +3777,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'USDC'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -3813,7 +3813,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'DAI'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -3848,7 +3848,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'SUSHI'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -3884,7 +3884,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'BADGER'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x753fbc5800a8C8e3Fb6DC6415810d627A387Dfc9',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -3920,7 +3920,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'AAVE'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -3956,7 +3956,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'ICE'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0xf16e81dce15B08F326220742020379B855B87DF9',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -3992,7 +3992,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'SNX'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4027,7 +4027,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'CREAM'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4062,7 +4062,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'COVER'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0xB01E8419d842beebf1b70A7b5f7142abbaf7159D',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4097,7 +4097,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'LINK'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4133,7 +4133,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'CRV'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x1E4F97b9f9F913c46F1632781732927B9019C68b',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4169,7 +4169,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'BAND'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x46E7628E8b4350b2716ab470eE0bA1fa9e76c6C5',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4205,7 +4205,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'ETH'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4242,7 +4242,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'ATARI'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4279,7 +4279,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'BOMB'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x8503eb4A136bDBeB323E37Aa6e0FA0C772228378',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -4316,7 +4316,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'SHIBA'],
   callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/liquidity',
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
     zapAddress: VAULT_ZAP,
