@@ -9280,6 +9280,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['BRUSH', 'FTM'],
   callFee: 0.5,
+  withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x85dec8c4B2680793661bCA91a8F129607571863d',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x85dec8c4b2680793661bca91a8f129607571863d',
   zap: {
@@ -9316,6 +9317,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['USDC', 'FTM'],
   callFee: 0.5,
+  withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x04068da6c83afcfa0e13ba15a6696662335d5b75',
   zap: {
@@ -9352,6 +9354,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['BNB', 'FTM'],
   callFee: 0.5,
+  withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   zap: {
@@ -9388,6 +9391,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['ETH', 'FTM'],
   callFee: 0.5,
+  withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   zap: {
@@ -9424,6 +9428,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['BTC', 'FTM'],
   callFee: 0.5,
+  withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
@@ -9460,6 +9465,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['ZOO', 'BRUSH'],
   callFee: 0.5,
+  withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56/0x85dec8c4B2680793661bCA91a8F129607571863d',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x85dec8c4b2680793661bca91a8f129607571863d',
   zap: {
@@ -9496,6 +9502,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['HODL', 'FTM'],
   callFee: 0.5,
+  withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343/FTM',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343',
   zap: {
