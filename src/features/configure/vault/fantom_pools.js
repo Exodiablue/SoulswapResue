@@ -435,7 +435,7 @@ const pools = [
 {
   id: 'totem-grim-ftm',
   logo: 'fantom/GRIM-FTM.png',
-  name: 'GRIM-FTM LP [Emmissions Not Yet Activated]',
+  name: 'GRIM-FTM LP ',
   token: 'GRIM-FTM LP (SpiritSwap)',
   tokenDescription: 'Totem',
   tokenAddress: '0x2c18c39622b90318B0124eCFd6d4aC81efcC51db',
@@ -6893,7 +6893,7 @@ const pools = [
 {
   id: 'totem-totem',
   logo: 'fantom/TOTEM.png',
-  name: 'TOTEM [Emmissions Not Yet Activated]',
+  name: 'TOTEM',
   token: 'TOTEM',
   tokenDescription: 'Totem',
   tokenAddress: '0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
@@ -6928,7 +6928,7 @@ const pools = [
 {
   id: 'totem-spirit',
   logo: 'fantom/SPIRIT.png',
-  name: 'SPIRIT [Emmissions Not Yet Activated]',
+  name: 'SPIRIT',
   token: 'SPIRIT',
   tokenDescription: 'Totem',
   tokenAddress: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
@@ -6963,7 +6963,7 @@ const pools = [
 {
   id: 'totem-zoo',
   logo: 'fantom/ZOO.png',
-  name: 'ZOO [Emmissions Not Yet Activated]',
+  name: 'ZOO',
   token: 'ZOO',
   tokenDescription: 'Totem',
   tokenAddress: '0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
@@ -6998,7 +6998,7 @@ const pools = [
 {
   id: 'totem-totem-ftm',
   logo: 'fantom/TOTEM-FTM.png',
-  name: 'TOTEM-FTM LP [Emmissions Not Yet Activated]',
+  name: 'TOTEM-FTM LP',
   token: 'TOTEM-FTM LP (SpiritSwap)',
   tokenDescription: 'Totem',
   tokenAddress: '0xe6c7f64A2D8B0D40a02D27CAE14e84DaAD60cEbe',
@@ -7033,7 +7033,7 @@ const pools = [
 {
   id: 'totem-spirit-ftm',
   logo: 'fantom/SPIRIT-FTM.png',
-  name: 'SPIRIT-FTM LP [Emmissions Not Yet Activated]',
+  name: 'SPIRIT-FTM LP',
   token: 'SPIRIT-FTM LP (SpiritSwap)',
   tokenDescription: 'Totem',
   tokenAddress: '0x30748322B6E34545DBe0788C421886AEB5297789',
@@ -7068,7 +7068,7 @@ const pools = [
 {
   id: 'totem-usdc-ftm',
   logo: 'fantom/USDC-FTM.png',
-  name: 'USDC-FTM LP [Emmissions Not Yet Activated]',
+  name: 'USDC-FTM LP',
   token: 'USDC-FTM LP (SpiritSwap)',
   tokenDescription: 'Totem',
   tokenAddress: '0xe7E90f5a767406efF87Fdad7EB07ef407922EC1D',
@@ -7103,7 +7103,7 @@ const pools = [
 {
   id: 'totem-eth-ftm',
   logo: 'fantom/WETH-FTM.png',
-  name: 'ETH-FTM LP [Emmissions Not Yet Activated]',
+  name: 'ETH-FTM LP',
   token: 'ETH-FTM LP (SpiritSwap)',
   tokenDescription: 'Totem',
   tokenAddress: '0x613BF4E46b4817015c01c6Bb31C7ae9edAadc26e',
@@ -7138,7 +7138,7 @@ const pools = [
 {
   id: 'totem-btc-ftm',
   logo: 'fantom/WBTC-FTM.png',
-  name: 'BTC-FTM LP [Emmissions Not Yet Activated]',
+  name: 'BTC-FTM LP',
   token: 'BTC-FTM LP (SpiritSwap)',
   tokenDescription: 'Totem',
   tokenAddress: '0x279b2c897737a50405ED2091694F225D83F2D3bA',
@@ -7173,7 +7173,7 @@ const pools = [
 {
   id: 'totem-bnb-ftm',
   logo: 'fantom/BNB-FTM.png',
-  name: 'BNB-FTM LP [Emmissions Not Yet Activated]',
+  name: 'BNB-FTM LP',
   token: 'BNB-FTM LP (SpiritSwap)',
   tokenDescription: 'Totem',
   tokenAddress: '0x74fE5Ddc4c27F91a1898ccd5Ac62dFeb2d3dF726',
@@ -7208,7 +7208,7 @@ const pools = [
 {
   id: 'totem-yfi-ftm',
   logo: 'fantom/YFI-FTM.png',
-  name: 'YFI-FTM LP [Emmissions Not Yet Activated]',
+  name: 'YFI-FTM LP',
   token: 'YFI-FTM LP (SpiritSwap)',
   tokenDescription: 'Totem',
   tokenAddress: '0x4fc38a2735C7da1d71ccAbf6DeC235a7DA4Ec52C',
@@ -7243,8 +7243,8 @@ const pools = [
 {
   id: 'totem-zoo-ftm',
   logo: 'fantom/ZOO-FTM.png',
-  name: 'ZOO-FTM LP [Emmissions Not Yet Activated]',
-  token: 'ZOO-FTM LP (SpiritSwap) [Emmissions Not Yet Activated]',
+  name: 'ZOO-FTM LP',
+  token: 'ZOO-FTM LP (SpiritSwap) ',
   tokenDescription: 'Totem',
   tokenAddress: '0xDF18DD2631f02D930071DF7d6FF89bbc3718C62F',
   tokenDecimals: 18,
@@ -7278,7 +7278,7 @@ const pools = [
 {
   id: 'totem-hodl-ftm',
   logo: 'fantom/HODL-FTM.png',
-  name: 'HODL-FTM LP [Emmissions Not Yet Activated]',
+  name: 'HODL-FTM LP',
   token: 'HODL-FTM LP (SpiritSwap)',
   tokenDescription: 'Totem',
   tokenAddress: '0xBE7133Ee3a172D2a92c26e40f511f9d089a9b1fe',
@@ -7313,7 +7313,7 @@ const pools = [
 {
   id: 'totem-butt-ftm',
   logo: 'fantom/BUTT-FTM.png',
-  name: 'BUTT-FTM LP [Emmissions Not Yet Activated]',
+  name: 'BUTT-FTM LP',
   token: 'BUTT-FTM LP (SpiritSwap)',
   tokenDescription: 'Totem',
   tokenAddress: '0x5A14032cD11BEc488e58D90dF3EF3a7C002d1b9F',
@@ -7348,7 +7348,7 @@ const pools = [
 {
   id: 'totem-shit-ftm',
   logo: 'fantom/SHIT-FTM.png',
-  name: 'SHIT-FTM LP [Emmissions Not Yet Activated]',
+  name: 'SHIT-FTM LP',
   token: 'SHIT-FTM LP (SpiritSwap)',
   tokenDescription: 'Totem',
   tokenAddress: '0xbc3B0D165Cd8dCc7d7eca3a225d1e5ea85E54E84',
