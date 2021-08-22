@@ -28,7 +28,7 @@ export function fetchApys() {
               for (const vault in res2.data) {
                 d[vault] = { totalApy: res2.data[vault] };
               }
-              d['shade'] = { totalApy: 1299.55 };
+              // d['shade'] = { totalApy: 1299.55 };
               dispatch({
                 type: VAULT_FETCH_APYS_SUCCESS,
                 data: d,

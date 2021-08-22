@@ -398,41 +398,6 @@ const pools = [
 },
 
 {
-  id: 'waka-ftm-grim',
-  logo: 'fantom/GRIM-FTM.png',
-  name: 'GRIM-FTM LP',
-  token: 'GRIM-FTM LP (WakaSwap)',
-  tokenDescription: 'WakaSwap',
-  tokenAddress: '0x0b3b9452c6ed14f823cfb95ed271a43ada9e12cd',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-GRI-FTM-4',
-  earnedTokenAddress: '0x6d149DA26c4b3AFB9E4D5CEb5C426242532cBEE2',
-  earnContractAddress: '0x6d149DA26c4b3AFB9E4D5CEb5C426242532cBEE2',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'waka-ftm-grim',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'WakaSwap',
-  assets: ['FTM', 'GRIM'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
-  buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: WAKA_ROUTER,
-
-    tokens: [
-      // ...wakaTokens,
-      // ...zapTokens,
-    ],
-  },
-},
-
-{
   id: 'totem-grim-ftm',
   logo: 'fantom/GRIM-FTM.png',
   name: 'GRIM-FTM LP ',
@@ -462,6 +427,41 @@ const pools = [
 
     tokens: [
       // ...spiritTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'waka-ftm-grim',
+  logo: 'fantom/GRIM-FTM.png',
+  name: 'GRIM-FTM LP',
+  token: 'GRIM-FTM LP (WakaSwap)',
+  tokenDescription: 'WakaSwap',
+  tokenAddress: '0x0b3b9452c6ed14f823cfb95ed271a43ada9e12cd',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-GRI-FTM-4',
+  earnedTokenAddress: '0x6d149DA26c4b3AFB9E4D5CEb5C426242532cBEE2',
+  earnContractAddress: '0x6d149DA26c4b3AFB9E4D5CEb5C426242532cBEE2',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'waka-ftm-grim',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'WakaSwap',
+  assets: ['FTM', 'GRIM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+  buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: WAKA_ROUTER,
+
+    tokens: [
+      // ...wakaTokens,
       // ...zapTokens,
     ],
   },
