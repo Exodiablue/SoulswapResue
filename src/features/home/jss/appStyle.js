@@ -24,7 +24,7 @@ const appStyle = theme => ({
   },
 
   grimMoon: {
-    background:'url(GrimMoonCoffeeXparentBanner.png)', 
+    background:'url(GrimMoonCoffeeBanner.png)', 
     bottom:"0", 
     right:"0",
     width:'2650px',
