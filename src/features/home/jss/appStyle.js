@@ -22,11 +22,10 @@ const appStyle = theme => ({
   Header: {
     backgroundColor: '#fafafa00',
   },
-  triangles: {
-    // background:'url(triangles.png)', 
-    bottom:"0px", 
-    width:"100%", 
-    height:"197px", 
+  grimMoon: {
+    background:'url(GrimMoonCoffeeXparentBanner.png)', 
+    bottom:"0", 
+    right:"0",
     position:'fixed', 
     zIndex:'-1',
   },

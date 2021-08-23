@@ -128,10 +128,8 @@ export default function App({ children }) {
                 </div>
                 </div>
                 {/* <Footer /> */}
-  
                 {/* triangles banner */}
-                <div className={classes.triangles} ></div>
-                
+                <div className={classes.grimMoon} ></div>
               </div>
             </NetworksProvider>
           </SnackbarProvider>
