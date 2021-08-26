@@ -723,7 +723,7 @@ const pools = [
   tokenAddress: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
-  earnedToken: 'SPIRIT',
+  earnedToken: 'GinSPIRIT',
   earnedTokenAddress: '0xDCE3d5d906085988461eb836Ece21b8514a93761',
   earnContractAddress: '0xDCE3d5d906085988461eb836Ece21b8514a93761',
   pricePerFullShare: 1,
@@ -735,6 +735,7 @@ const pools = [
   status: 'active',
   platform: 'SpiritSwap',
   assets: ['SPIRIT'],
+  analytics: false,
   callFee: 0.5,
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
