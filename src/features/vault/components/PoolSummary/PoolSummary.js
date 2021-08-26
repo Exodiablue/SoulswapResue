@@ -123,9 +123,9 @@ const PoolSummary = ({
             isLoading={!fetchBalancesDone}
             className={classes.itemInner}
             />
-          }
+        } 
         </Grid>
-        {pool.id === 'spiritxginspirit' ?  '' :  
+        {pool.id === 'spiritxginspirit' ?  ''  : 
           <ApyStats
             apy={apy}
             launchpool={launchpool}
@@ -133,16 +133,16 @@ const PoolSummary = ({
             itemClasses={`${classes.item} ${classes.itemStats}`}
             itemInnerClasses={classes.itemInner}
           />
-          }
+      }
         <Grid item xs={4} className={`${classes.item} ${classes.itemStats}`}>
-          {pool.id === 'spiritxginspirit' ?  '' :  
+        {pool.id === 'spiritxginspirit' ?  '' :  
             <LabeledStat
               value={formatTvl(pool.tvl, pool.oraclePrice)}
               label={t('Vault-TVL')}
               isLoading={!fetchVaultsDataDone}
               className={classes.itemInner}
             />
-          }
+        }
         </Grid>
       </Grid>
     </AccordionSummary>
