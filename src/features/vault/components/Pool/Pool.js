@@ -40,12 +40,11 @@ const Pool = ({
       }
     }
   };
-
   return (
     <Grid item xs={12} container key={index} className={classes.container} spacing={0}>
       <Accordion
         expanded={isOpen}
-        className={classes.accordion}
+        className={ pool.id.includes("inspirit-") ? classes.inspiritAccordiion : classes.accordion }
         square={true}
         TransitionProps={{ unmountOnExit: true }}
       >

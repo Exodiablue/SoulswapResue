@@ -25,7 +25,7 @@ const createTheme = (isNightMode) => createMuiTheme({
     },
     text: {
       primary: isNightMode ? '#fff' : '#000',
-      secondary: isNightMode ? '#B0B0DD' : '#00000066',
+      secondary: isNightMode ? '#B0B0DD' : 'black',
     },
   },
   overrides: {
