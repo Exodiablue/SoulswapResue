@@ -7821,41 +7821,6 @@ const pools = [
 },
 
 {
-  id: 'totem-tbond',
-  logo: 'fantom/TBOND.png',
-  name: 'TBOND',
-  token: 'TBOND',
-  tokenDescription: 'Totem',
-  tokenAddress: '0x24248CD1747348bDC971a5395f4b3cd7feE94ea0',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-TBOND-M',
-  earnedTokenAddress: '0x9884014Ea68552603c2fEF04D84Adc5d2A060d66',
-  earnContractAddress: '0x9884014Ea68552603c2fEF04D84Adc5d2A060d66',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'tokens',
-  oracleId: 'TBOND',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'Totem',
-  assets: ['TBOND'],
-  callFee: 0.5,
-  buyTokenUrl: 'https://tomb.finance/pit',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
-
-    tokens: [
-      // ...spiritTokens,
-      // ...zapTokens,
-
-    ],
-  },
-},
-
-{
   id: 'totem-scream',
   logo: 'fantom/SCREAM.png',
   name: 'SCREAM',
