@@ -5361,44 +5361,6 @@ const pools = [
 },
 
 {
-  id: 'zoo-ftm-atari',
-  logo: 'fantom/ATARI-FTM.png',
-  name: 'ATARI-FTM LP',
-  token: 'ATARI-FTM LP (Zoo)',
-  tokenDescription: 'Zoo',
-  tokenAddress: '0xcA618f90850B7e0b34E38B353188EF46b969CEC5',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-ATR-FTM-K',
-  earnedTokenAddress: '0x231492214B5bbF0Ddd80971d966D5ec8a568e24f',
-  earnContractAddress: '0x231492214B5bbF0Ddd80971d966D5ec8a568e24f',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'zoo-ftm-atari',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Zoo',
-  assets: ['ATARI','FTM'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b&outputCurrency=FTM',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: ZOO_ROUTER,
-
-    tokens: [
-      ...zooTokens,
-      ...zapTokensReduced,
-
-
-
-    ],
-  },
-},
-
-{
   id: 'ice-ice-ftm-boo',
   logo: 'fantom/ICE-FTM.png',
   name: 'ICE-FTM LP (SpookySwap)',
@@ -6048,7 +6010,7 @@ const pools = [
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://app.sushi.com/add/0xaf319E5789945197e365E7f7fbFc56B130523B33/0x82F8Cb20c14F134fe6Ebf7aC3B903B2117aAfa62',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0xaf319E5789945197e365E7f7fbFc56B130523B33',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SUSHI_ROUTER,
