@@ -5987,54 +5987,6 @@ const pools = [
 },
 
 {
-  id: "lqdr-frax-fxs",
-  logo: 'fantom/FRAX-FXS.png',
-  name: 'FRAX-FXS LP',
-  token: 'FRAX-FXS LP (LiquidDriver)',
-  tokenDescription: 'LiquidDriver',
-  tokenAddress: '0xCFF4353E10A7207Bd16427CA9549437d439b68Df',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-FRA-FXS-0',
-  earnedTokenAddress: '0x6a4cB2Bf6361DC9661A56dBe81Bd33Bf82398be8',
-  earnContractAddress: '0x6a4cB2Bf6361DC9661A56dBe81Bd33Bf82398be8',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "lqdr-frax-fxs",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'LiquidDriver',
-  assets: ['FRAX', 'FXS'],
-  callFee: 0.5,
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/0xaf319E5789945197e365E7f7fbFc56B130523B33/0x82F8Cb20c14F134fe6Ebf7aC3B903B2117aAfa62',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0xaf319E5789945197e365E7f7fbFc56B130523B33',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
-     
-      ...zapTokens,
-
-
-
-    ],
-  },
-},
-
-{
   id: "lqdr-aave-usdc",
   logo: 'fantom/AAVE-USDC.png',
   name: 'AAVE-USDC LP',
