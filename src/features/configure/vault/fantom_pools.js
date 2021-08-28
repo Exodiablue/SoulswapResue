@@ -7628,9 +7628,9 @@ const pools = [
 
 {
   id: 'totem-wftm',
-  logo: 'fantom/FUSDT.png',
-  name: 'fUSDT',
-  token: 'fUSDT',
+  logo: 'fantom/WFTM.png',
+  name: 'WFTM',
+  token: 'WFTM',
   tokenDescription: 'Totem',
   tokenAddress: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
   tokenDecimals: 18,
