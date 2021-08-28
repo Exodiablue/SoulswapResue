@@ -7673,8 +7673,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      // ...spiritTokens,
-      // ...zapTokens,
+      ...spookyTokens,
+      ...zapTokens,
 
     ],
   },
@@ -7708,8 +7708,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      // ...spiritTokens,
-      // ...zapTokens,
+      ...spookyTokens,
+      ...zapTokens,
 
     ],
   },
