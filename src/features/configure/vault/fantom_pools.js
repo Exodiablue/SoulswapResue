@@ -4436,7 +4436,6 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['USDC','FTM'],
   callFee: 0.5,
-  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
@@ -4553,7 +4552,6 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['DAI','FTM'],
   callFee: 0.5,
-  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4592,7 +4590,6 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['fUSDT','FTM'],
   callFee: 0.5,
-  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4631,7 +4628,6 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['ETH','FTM'],
   callFee: 0.5,
-  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4670,7 +4666,6 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BTC','FTM'],
   callFee: 0.5,
-  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4709,7 +4704,6 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BNB','FTM'],
   callFee: 0.5,
-  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
