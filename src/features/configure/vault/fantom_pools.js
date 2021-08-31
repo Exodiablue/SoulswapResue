@@ -1000,7 +1000,7 @@ const pools = [
 
 {
   id: 'spirit-spirit-nips',
-  logo: 'fantom/SPIRIT-FTM.png',
+  logo: 'fantom/SPIRIT-NIPS.png',
   name: 'SPIRIT-NIPS LP',
   token: 'SPIRIT-NIPS LP (SpiritSwap)',
   tokenDescription: 'SpiritSwap',
