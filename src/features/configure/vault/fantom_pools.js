@@ -689,8 +689,8 @@ const pools = [
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
   earnedToken: 'GinSPIRIT',
-  earnedTokenAddress: '0x4a2227F8c03D016187e3d30f3296F39072e687d1',
-  earnContractAddress: '0x4a2227F8c03D016187e3d30f3296F39072e687d1',
+  earnedTokenAddress: '0xA20E8756E0BDc405c1A92821131341C6F8232891', //fake to prevent tvl load block, not needed since withdrawal is disabled
+  earnContractAddress: '0x4a2227F8c03D016187e3d30f3296F39072e687d1', //deposit value
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'tokens',
@@ -721,9 +721,9 @@ const pools = [
   tokenAddress: '0x1C1dD1c5a5F19373D91951Ca704d3B4016C9c691',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
-  earnedToken: 'GinSPIRIT',
-  earnedTokenAddress: '0xf63750D9337ACb1eC4c9Af259a9186dF88Df82De',
-  earnContractAddress: '0xf63750D9337ACb1eC4c9Af259a9186dF88Df82De',
+  earnedToken: 'XGINSPIRIT',
+  earnedTokenAddress: '0x3d5De82ab7ABE41FD3f0fD1cb998C8af18BcbE16',
+  earnContractAddress: '0x3d5De82ab7ABE41FD3f0fD1cb998C8af18BcbE16',
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'tokens',
