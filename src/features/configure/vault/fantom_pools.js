@@ -690,7 +690,7 @@ const pools = [
   tokenDescriptionUrl: '#',
   earnedToken: 'GinSPIRIT',
   earnedTokenAddress: '0xA20E8756E0BDc405c1A92821131341C6F8232891', //fake to prevent tvl load block, not needed since withdrawal is disabled
-  earnContractAddress: '0x4a2227F8c03D016187e3d30f3296F39072e687d1', //deposit value
+  earnContractAddress: '0x777fe54255a14bbDe0661748858B6C9C8DEA08A8', //ginspirit depositer
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'tokens',
@@ -707,7 +707,7 @@ const pools = [
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
     tokens: [
-      ...zapTokens,
+      // ...zapTokens,
     ],
   },
 },
@@ -718,12 +718,12 @@ const pools = [
   name: 'GinSPIRIT',
   token: 'GinSPIRIT',
   tokenDescription: 'Grim Finance | By staking GinSPIRIT, you’re earning the usual rewards from inSPIRIT (protocol revenue (swap fees) + all airdrops).',
-  tokenAddress: '0x1C1dD1c5a5F19373D91951Ca704d3B4016C9c691',
+  tokenAddress: '0x2787bea3366335068bf8b4a253044d09ea4e1c96',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
   earnedToken: 'XGINSPIRIT',
-  earnedTokenAddress: '0x3d5De82ab7ABE41FD3f0fD1cb998C8af18BcbE16',
-  earnContractAddress: '0x3d5De82ab7ABE41FD3f0fD1cb998C8af18BcbE16',
+  earnedTokenAddress: '0x51BA7ffB4424BF19283d0e0391FfD418FfEcDB8b',
+  earnContractAddress: '0x51BA7ffB4424BF19283d0e0391FfD418FfEcDB8b',
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'tokens',
@@ -7256,41 +7256,6 @@ const pools = [
     ],
   },
 },
-
-{
-  id: 'totem-totem-fusdt',
-  logo: 'fantom/TOTEM-FUSDT.png',
-  name: 'TOTEM-FUSDT LP',
-  token: 'TOTEM-FUSDT LP (SpiritSwap)',
-  tokenDescription: 'Totem',
-  tokenAddress: '0x60688C9d64F1f739cdb95E2520290367359D140A',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-TOT-FUS-M',
-  earnedTokenAddress: '0xFe8E89d883d3A4867ED6E49Ca64497e4f1Bf53e1',
-  earnContractAddress: '0xFe8E89d883d3A4867ED6E49Ca64497e4f1Bf53e1',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'totem-totem-fusdt',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Totem',
-  assets: ['TOTEM', 'fUSDT'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      ...spiritTokens,
-      ...zapTokens,
-    ],
-  },
-}, 
 
 {
   id: 'totem-totem-dai',

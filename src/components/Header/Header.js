@@ -59,7 +59,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             {renderLink('Docs', 'Docs', 'book', classes)}
             {renderLink('Lending', 'Lending', 'hand-holding-usd', classes)}
             {/* {renderLink('Github', 'Github', 'github', classes)} */}
-            {renderLink('Portfolio', 'Portfolio', 'chart-pie', classes)}
+            {/* {renderLink('Portfolio', 'Portfolio', 'chart-pie', classes)} */}
             {renderLink('Stats', 'Stats', 'sort-numeric-up', classes)}
             {renderLink('Store', 'Store', 'tshirt', classes)}
             {renderLink('Twitter', 'Twitter', 'twitter-square', classes)}
@@ -112,7 +112,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             <LinkSidebar name="Docs" label="Docs" icon="book" classes={classes} />
             <LinkSidebar name="Lending" label="Lending" icon="hand-holding-usd" classes={classes} />
             {/* <LinkSidebar name="Github" label="Github" icon="github" classes={classes} /> */}
-            <LinkSidebar name="Portfolio" label="Portfolio" icon="chart-pie" classes={classes} />
+            {/* <LinkSidebar name="Portfolio" label="Portfolio" icon="chart-pie" classes={classes} /> */}
             <LinkSidebar name="Stats" label="Stats" icon="sort-numeric-up" classes={classes} />
             <LinkSidebar name="Store" label="Store" icon="tshit" classes={classes} />
             <LinkSidebar name="Twitter" label="Twitter" icon="twitter-square" classes={classes} />
@@ -185,8 +185,8 @@ const getLinkUrl = name => {
     return 'https://www.kitten.finance/new/#net=Fantom';
   if (name === 'Stats')
     return 'https://dashboard.grim.finance';
-  if (name === 'Portfolio')
-    return 'https://beta.degen.watch/?platforms[]=grim.finance';
+  // if (name === 'Portfolio')
+  //   return 'https://beta.degen.watch/?platforms[]=grim.finance';
   if (name === 'Arcade')
     return 'https://main.dlteow40fr5xj.amplifyapp.com/';
   if (name === 'Store')
