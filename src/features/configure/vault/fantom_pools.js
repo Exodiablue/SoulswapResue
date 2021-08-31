@@ -684,7 +684,7 @@ const pools = [
   logo: 'fantom/SPIRIT.png',
   name: 'SPIRIT x GinSPIRIT',
   token: 'SPIRIT',
-  tokenDescription: 'Grim Finance | Convert SPIRIT to GinSPIRIT, 1 to 1. Converting SPIRIT to GinSPIRIT is irreversible. You may stake and unstake GinSPIRIT tokens, but not convert them back to SPIRIT.',
+  tokenDescription: 'Grim Finance | Convert SPIRIT to GinSPIRIT, 1 to 1 by depositing SPIRIT. Converting SPIRIT to GinSPIRIT is irreversible. You may stake and unstake GinSPIRIT tokens, but not convert them back to SPIRIT.',
   tokenAddress: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
