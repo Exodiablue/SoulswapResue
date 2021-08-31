@@ -7329,41 +7329,6 @@ const pools = [
 },
 
 {
-  id: 'totem-totem-dai',
-  logo: 'fantom/TOTEM-DAI.png',
-  name: 'TOTEM-DAI LP',
-  token: 'TOTEM-DAI LP (SpiritSwap)',
-  tokenDescription: 'Totem',
-  tokenAddress: '0x4Fc8f8303912542EBe5539bdD6abB52E179d427C',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-TOT-DAI-M',
-  earnedTokenAddress: '0x6e5902099b1565e675C0706D011381289a24D7D9',
-  earnContractAddress: '0x6e5902099b1565e675C0706D011381289a24D7D9',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'totem-totem-dai',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Totem',
-  assets: ['TOTEM', 'DAI'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      ...spiritTokens,
-      ...zapTokens,
-    ],
-  },
-}, 
-
-{
   id: 'totem-bscr-ftm',
   logo: 'fantom/SCORUM-FTM.png',
   name: 'BSCR-FTM LP',
