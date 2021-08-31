@@ -722,8 +722,8 @@ const pools = [
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
   earnedToken: 'XGINSPIRIT',
-  earnedTokenAddress: '0x51BA7ffB4424BF19283d0e0391FfD418FfEcDB8b',
-  earnContractAddress: '0x51BA7ffB4424BF19283d0e0391FfD418FfEcDB8b',
+  earnedTokenAddress: '0x53abD9F4B30F7d1A1bCF918055B53e749afDC775',
+  earnContractAddress: '0x53abD9F4B30F7d1A1bCF918055B53e749afDC775',
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'tokens',
@@ -921,6 +921,114 @@ const pools = [
     tokens: [
       ...spiritTokens,
       ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'spirit-spirit-ginspirit',
+  logo: 'fantom/SPIRIT-GINSPIRIT.png',
+  name: 'SPIRIT-GinSPIRIT LP',
+  token: 'SPIRIT-GinSPIRIT LP (SpiritSwap)',
+  tokenDescription: 'SpiritSwap',
+  tokenAddress: '0xc6ED96EdC14a199bde017A273A2CBd4a129bdC65',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SPI-GIN-1',
+  earnedTokenAddress: '0x7fFEb61f0d26Ec67fC4064A7231479c7E4A052Dd',
+  earnContractAddress: '0x7fFEb61f0d26Ec67fC4064A7231479c7E4A052Dd',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'spirit-spirit-ginspirit',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SpiritSwap',
+  assets: ['GinSPIRIT', 'SPIRIT'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x2787bea3366335068bf8b4a253044d09ea4e1c96/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'spirit-spirit-start',
+  logo: 'fantom/SPIRIT-START.png',
+  name: 'SPIRIT-START LP',
+  token: 'SPIRIT-START LP (SpiritSwap)',
+  tokenDescription: 'SpiritSwap',
+  tokenAddress: '0x466EB66161B2dfC000a37017896c7a5d846b0900',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SPI-BSC-1',
+  earnedTokenAddress: '0x42Db7251139F610e7B1C969967285294f354998a',
+  earnContractAddress: '0x42Db7251139F610e7B1C969967285294f354998a',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'spirit-spirit-start',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SpiritSwap',
+  assets: ['START', 'SPIRIT'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x8ca2ecbCE34c322fceA6Db912d9DbfD2DdA5920D/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      ...spiritTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'spirit-spirit-nips',
+  logo: 'fantom/SPIRIT-FTM.png',
+  name: 'SPIRIT-NIPS LP',
+  token: 'SPIRIT-NIPS LP (SpiritSwap)',
+  tokenDescription: 'SpiritSwap',
+  tokenAddress: '0x594627998b11f4Cd13999e43198C16204D3265a3',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SPI-NIP-1',
+  earnedTokenAddress: '0xAc443a65206681CBb4F798AC5DB0e27F7783e8F5',
+  earnContractAddress: '0xAc443a65206681CBb4F798AC5DB0e27F7783e8F5',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'spirit-spirit-nips',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SpiritSwap',
+  assets: ['NIPS', 'SPIRIT'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x667Afbb7D558c3dFd20fAbd295D31221Dab9dBC2/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -6249,43 +6357,6 @@ const pools = [
 },
 
 {
-  id: "froyo-froyo-ftm",
-  logo: 'fantom/FROYO-FTM.png',
-  name: 'FROYO-FTM LP',
-  token: 'FROYO-FTM LP-FROYO',
-  tokenDescription: 'Froyo',
-  tokenAddress: '0xBE0AF661BC9794E05fAb18C08C2C99811A0F45D2',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-FRO-FTM-A',
-  earnedTokenAddress: '0x0eF324f07df0292B5F562cCD5E0E7599DE2cA8ba',
-  earnContractAddress: '0x0eF324f07df0292B5F562cCD5E0E7599DE2cA8ba',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "froyo-froyo-ftm",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Froyo',
-  assets: ['FROYO', 'FTM'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0xA92d41Ab8eFeE617d80a829CD9F5683c5F793ADA',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0xA92d41Ab8eFeE617d80a829CD9F5683c5F793ADA',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-     
-      ...zapTokens,
-
-
-    ],
-  },
-},
-
-{
   id: 'shade',
   logo: 'fantom/SHADE.png',
   name: 'SHADE',
@@ -9224,44 +9295,6 @@ const pools = [
         chainId: 250,
         logoURI: '',
       },     
-
-    ],
-  },
-},
-
-{
-  id: 'behodl-behodl-ftm',
-  logo: 'fantom/beHODL-FTM.png',
-  name: 'beHODL-FTM LP',
-  token: 'beHODL-FTM LP (SpookySwap)',
-  tokenDescription: 'beHODL',
-  tokenAddress: '0xF26bD52EFE714870e31f58E4F0F7E9fe01424328',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-BEH-FTM-F',
-  earnedTokenAddress: '0x619B73417520E7A2B6bd7Fa3074A720aD99Ac120',
-  earnContractAddress: '0x619B73417520E7A2B6bd7Fa3074A720aD99Ac120',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'behodl-behodl-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'beHODL',
-  assets: ['beHODL', 'FTM'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x6b60d2b6bb9fe657ec0e5b7d44e557504e78af6a',
-  buyTokenUrl: 'https://spookyswap.finance/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
-
-    tokens: [
-      ...spookyTokens,
-      ...zapTokens,
-
-
 
     ],
   },
