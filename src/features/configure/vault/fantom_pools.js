@@ -1,6 +1,4 @@
-//const VAULT_ZAP = '0xD8D5b20439f94F2662801c0Be57627f5e623e875'; //blues zapper - public
-const VAULT_ZAP = '0x2f88d0370F71a95a70a593B074256eFb34E65Fc5'; //blues zapper - private
-
+const VAULT_ZAP = '0xe6098d5A2F817Ab55D91eF74b775236825ab9808'; //blues zapper - private
 
 const SPIRIT_ROUTER = '0x16327E3FbDaCA3bcF7E38F5Af2599D2DDc33aE52';
 const SPOOKY_ROUTER = '0xF491e7B69E4244ad4002BC14e878a34207E38c29';
@@ -12,7 +10,6 @@ const BOMB_ROUTER = '0xb9799De71100e20aC1cdbCc63C69ddA2D0D81710';
 const SHIBA_ROUTER = '0xB6f7b3d8CD9dBf30805C0dd79809dace5603Ce6A';
 const OPERA_ROUTER = '0xE372753F66644A1197AB85Ff529ed02995ED2d6C';
 const ZOO_ROUTER = '0x40b12a3E261416fF0035586ff96e23c2894560f2';
-
 
 const zapTokens = [
   {
@@ -174,14 +171,14 @@ const spiritTokens = [
     logoURI: '',
   },
 
-  {
-    name: 'SPIRIT',
-    address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-    symbol: 'SPIRIT',
-    decimals: 18,
-    chainId: 250,
-    logoURI: '',
-  },
+  // {
+  //   name: 'SPIRIT',
+  //   address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+  //   symbol: 'SPIRIT',
+  //   decimals: 18,
+  //   chainId: 250,
+  //   logoURI: '',
+  // },
 ]
 
 const spookyTokens = [
@@ -717,7 +714,7 @@ const pools = [
   logo: 'fantom/GinSpirit.png',
   name: 'GinSPIRIT',
   token: 'GinSPIRIT',
-  tokenDescription: 'Grim Finance | By staking GinSPIRIT, you’re earning the usual rewards from inSPIRIT (protocol revenue (swap fees) + all airdrops).',
+  tokenDescription: 'Grim Finance | By staking GinSPIRIT, you’re earning the usual rewards from inSPIRIT protocol revenue (swap fees).',
   tokenAddress: '0x2787bea3366335068bf8b4a253044d09ea4e1c96',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -1016,7 +1013,7 @@ const pools = [
   oracleId: 'spirit-spirit-nips',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'SpiritSwap',
   assets: ['NIPS', 'SPIRIT'],
   callFee: 0.5,
@@ -5028,7 +5025,7 @@ const pools = [
   oracleId: 'bone-nips-ftm',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'ShibaSwap',
   assets: ['NIPS','FTM'],
   callFee: 0.5,
