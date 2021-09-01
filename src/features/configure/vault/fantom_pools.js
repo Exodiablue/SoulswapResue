@@ -699,6 +699,7 @@ const pools = [
   assets: ['SPIRIT'],
   analytics: false,
   callFee: 0.5,
+  withdrawalFee: 'NA',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
