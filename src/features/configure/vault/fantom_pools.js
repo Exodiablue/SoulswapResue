@@ -22,15 +22,15 @@ const zapTokens = [
     logoURI: 'https://ftmscan.com/token/images/WFTM_32.png',
     isToken: true,
   },
-  {
-    name: 'Dai Stablecoin',
-    address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
-    symbol: 'DAI',
-    decimals: 18,
-    chainId: 250,
-    logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
-    isToken: true,
-  },
+  // {
+  //   name: 'Dai Stablecoin',
+  //   address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+  //   symbol: 'DAI',
+  //   decimals: 18,
+  //   chainId: 250,
+  //   logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
+  //   isToken: true,
+  // },
   {
     name: 'USD Coin',
     address: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
@@ -49,15 +49,15 @@ const zapTokens = [
     logoURI: 'https://ftmscan.com/token/images/chainlink_32.png',
     isToken: true,
   },
-  {
-    name: 'Fantom USD',
-    address: '0xAd84341756Bf337f5a0164515b1f6F993D194E1f',
-    symbol: 'fUSD',
-    decimals: 18,
-    chainId: 250,
-    logoURI: 'https://ftmscan.com/token/images/fUSD_32.png',
-    isToken: true,
-  },
+  // {
+  //   name: 'Fantom USD',
+  //   address: '0xAd84341756Bf337f5a0164515b1f6F993D194E1f',
+  //   symbol: 'fUSD',
+  //   decimals: 18,
+  //   chainId: 250,
+  //   logoURI: 'https://ftmscan.com/token/images/fUSD_32.png',
+  //   isToken: true,
+  // },
   {
     name: 'Wrapped Bitcoin',
     address: '0x321162Cd933E2Be498Cd2267a90534A804051b11',
@@ -171,14 +171,14 @@ const spiritTokens = [
     logoURI: '',
   },
 
-  // {
-  //   name: 'SPIRIT',
-  //   address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
-  //   symbol: 'SPIRIT',
-  //   decimals: 18,
-  //   chainId: 250,
-  //   logoURI: '',
-  // },
+  {
+    name: 'SPIRIT',
+    address: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
+    symbol: 'SPIRIT',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
 ]
 
 const spookyTokens = [
@@ -206,6 +206,15 @@ const spookyTokens = [
     decimals: 18,
     logoURI: '',
   },
+  {
+    name: 'Dai Stablecoin',
+    address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+    symbol: 'DAI',
+    decimals: 18,
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
+    isToken: true,
+  },
 
 ];
 
@@ -226,6 +235,15 @@ const wakaTokens = [
     chainId: 250,
     logoURI: '',
   },
+  {
+    name: 'Dai Stablecoin',
+    address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+    symbol: 'DAI',
+    decimals: 18,
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
+    isToken: true,
+  },
 ];
 
 const hyperTokens = [
@@ -236,6 +254,15 @@ const hyperTokens = [
     decimals: 18,
     chainId: 250,
     logoURI: '',
+  },
+  {
+    name: 'Dai Stablecoin',
+    address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+    symbol: 'DAI',
+    decimals: 18,
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
+    isToken: true,
   },
 ];
 
@@ -256,6 +283,15 @@ const shibaTokens = [
     decimals: 18,
     chainId: 250,
     logoURI: '',
+  },
+  {
+    name: 'Dai Stablecoin',
+    address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+    symbol: 'DAI',
+    decimals: 18,
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
+    isToken: true,
   },
 ];
 
@@ -946,6 +982,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['GinSPIRIT', 'SPIRIT'],
   callFee: 0.5,
+  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x2787bea3366335068bf8b4a253044d09ea4e1c96/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
@@ -989,8 +1026,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -1025,8 +1062,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -1060,8 +1097,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -1636,8 +1673,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
 
     ],
@@ -1710,8 +1747,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
 
     ],
@@ -1747,8 +1784,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
 
     ],
@@ -8558,10 +8595,7 @@ const pools = [
 
     tokens: [
       ...zooTokens,
-      ...zapTokens,
-
-
-
+      ...zapTokensReduced,
     ],
   },
 },
