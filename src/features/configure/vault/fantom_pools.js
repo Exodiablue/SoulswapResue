@@ -7780,7 +7780,7 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-      ...paintTokens,
+      // ...paintTokens,
 
     ],
   },
@@ -7816,7 +7816,7 @@ const pools = [
 
     tokens: [
 
-    ...paintTokens,
+    // ...paintTokens,
 
 
     ],
@@ -7853,7 +7853,7 @@ const pools = [
 
     tokens: [
 
-    ...paintTokens,
+    // ...paintTokens,
 
     ],
   },
@@ -7890,7 +7890,7 @@ const pools = [
 
     tokens: [
 
-    ...paintTokens,
+    // ...paintTokens,
 
 
     ],
@@ -7964,7 +7964,7 @@ const pools = [
 
     tokens: [
 
-    ...paintTokens,
+    // ...paintTokens,
 
     ],
   },
@@ -8000,7 +8000,7 @@ const pools = [
 
     tokens: [
 
-    ...paintTokens,
+    // ...paintTokens,
 
 
     ],
@@ -8037,7 +8037,7 @@ const pools = [
 
     tokens: [
 
-    ...paintTokens,
+    // ...paintTokens,
 
     ],
   },
