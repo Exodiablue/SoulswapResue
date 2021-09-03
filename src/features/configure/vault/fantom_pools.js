@@ -982,7 +982,6 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['GinSPIRIT', 'SPIRIT'],
   callFee: 0.5,
-  depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x2787bea3366335068bf8b4a253044d09ea4e1c96/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
@@ -4994,45 +4993,6 @@ const pools = [
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9/FTM',
-  buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SHIBA_ROUTER,
-
-    tokens: [
-      // ...shibaTokens,
-      // ...zapTokensReduced,
-
-
-
-    ],
-  },
-},
-
-{
-  id: 'bone-nips-ftm',
-  logo: 'fantom/NIPS-FTM.png',
-  name: 'NIPS-FTM LP',
-  token: 'NIPS-FTM LP (ShibaSwap)',
-  tokenDescription: 'ShibaSwap',
-  tokenAddress: '0x9605f6CC0E930c21965241bDA304A3437CdBD94B',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-NIP-FTM-I',
-  earnedTokenAddress: '0x026F4E45A42E88f70F0B4BA9869035b538F351e4',
-  earnContractAddress: '0x026F4E45A42E88f70F0B4BA9869035b538F351e4',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'bone-nips-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'ShibaSwap',
-  assets: ['NIPS','FTM'],
-  callFee: 0.5,
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x667Afbb7D558c3dFd20fAbd295D31221Dab9dBC2/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
