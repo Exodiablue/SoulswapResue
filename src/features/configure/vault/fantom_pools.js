@@ -5394,6 +5394,44 @@ const pools = [
 },
 
 {
+  id: 'zoo-ftm-just',
+  logo: 'fantom/JUST-FTM.png',
+  name: 'JUST-FTM LP',
+  token: 'JUST-FTM LP (Zoo)',
+  tokenDescription: 'Zoo',
+  tokenAddress: '0x0427f89dD11025560CB32F51e058120dbd015B7D',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-JUS-FTM-K',
+  earnedTokenAddress: '0x05738ACe82a1d3eeFa87c24b545dfd79Dc4A8a75',
+  earnContractAddress: '0x05738ACe82a1d3eeFa87c24b545dfd79Dc4A8a75',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'zoo-ftm-just',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Zoo',
+  assets: ['JUST','FTM'],
+  callFee: 0.5,
+  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x37C045bE4641328DFEB625f1Dde610D061613497&outputCurrency=FTM',
+  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x37C045bE4641328DFEB625f1Dde610D061613497',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: ZOO_ROUTER,
+
+    tokens: [
+      ...zooTokens,
+      ...zapTokensReduced,
+
+
+
+    ],
+  },
+},
+
+{
   id: 'ice-ice-ftm-boo',
   logo: 'fantom/ICE-FTM.png',
   name: 'ICE-FTM LP (SpookySwap)',
@@ -5684,54 +5722,6 @@ const pools = [
 },
 
 {
-  id: "lqdr-dai-ftm",
-  logo: 'fantom/DAI-FTM.png',
-  name: 'DAI-FTM LP',
-  token: 'DAI-FTM LP (LiquidDriver)',
-  tokenDescription: 'LiquidDriver',
-  tokenAddress: '0xd32F2EB49E91aA160946f3538564118388d6246a',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-DAI-FTM-0',
-  earnedTokenAddress: '0x4e37A6b7E814b3FB22A1A9c5f5B1C92100eb290F',
-  earnContractAddress: '0x4e37A6b7E814b3FB22A1A9c5f5B1C92100eb290F',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "lqdr-dai-ftm",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'LiquidDriver',
-  assets: ['DAI', 'FTM'],
-  callFee: 0.5,
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
-     
-      ...zapTokens,
-
-
-
-    ],
-  },
-},
-
-{
   id: "lqdr-link-ftm",
   logo: 'fantom/LINK-FTM.png',
   name: 'LINK-FTM LP',
@@ -5876,54 +5866,6 @@ const pools = [
 },
 
 {
-  id: "lqdr-sushi-ftm",
-  logo: 'fantom/SUSHI-FTM.png',
-  name: 'SUSHI-FTM LP',
-  token: 'SUSHI-FTM LP (LiquidDriver)',
-  tokenDescription: 'LiquidDriver',
-  tokenAddress: '0x49D2e0DC99C7358D7A9A8633Bf6df111D0EE7F65',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-SUS-FTM-0',
-  earnedTokenAddress: '0xc599431b1cec674f5264c1984bf139d29a0A5263',
-  earnContractAddress: '0xc599431b1cec674f5264c1984bf139d29a0A5263',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "lqdr-sushi-ftm",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'LiquidDriver',
-  assets: ['SUSHI', 'FTM'],
-  callFee: 0.5,
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
-     
-      ...zapTokens,
-
-
-
-    ],
-  },
-},
-
-{
   id: "lqdr-ice-ftm",
   logo: 'fantom/ICE-FTM.png',
   name: 'ICE-FTM LP',
@@ -6043,54 +5985,6 @@ const pools = [
   callFee: 0.5,
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x1E4F97b9f9F913c46F1632781732927B9019C68b',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
-     
-      ...zapTokens,
-
-
-
-    ],
-  },
-},
-
-{
-  id: "lqdr-fusdt-frax",
-  logo: 'fantom/FUSDT-FRAX.png',
-  name: 'FUSDT-FRAX LP',
-  token: 'FUSDT-FRAX LP (LiquidDriver)',
-  tokenDescription: 'LiquidDriver',
-  tokenAddress: '0x4669751cD7933c9Ca2aC8147aE7043d8561f4C8D',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-FUS-FRA-0',
-  earnedTokenAddress: '0x79D6Ae816A8e27930497c74d32C2b6660A8708D6',
-  earnContractAddress: '0x79D6Ae816A8e27930497c74d32C2b6660A8708D6',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "lqdr-fusdt-frax",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'LiquidDriver',
-  assets: ['fUSDT', 'FRAX'],
-  callFee: 0.5,
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/0xaf319E5789945197e365E7f7fbFc56B130523B33/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   zap: {
     zapAddress: VAULT_ZAP,
