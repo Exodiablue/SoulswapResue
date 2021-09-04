@@ -15,7 +15,7 @@ const Footer = () => {
       <div className={classes.column}>
         <div className={classes.title}>grim.finance</div>
         <a
-          href=""
+          href="https://docs.grim.finance/"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}
@@ -25,7 +25,7 @@ const Footer = () => {
         </a>
 
         <a
-          href=""
+          href="https://github.com/Grim-Finance"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}
@@ -38,7 +38,27 @@ const Footer = () => {
       <div className={classes.column}>
         <div className={classes.title}>{t('socials')}</div>
         <a
-          href=""
+          href="https://discord.gg/vDFkVT6tE6"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.link}
+        >
+          <i className={`fab fa-discord ${classes.linkIcon}`}></i>
+
+          <span>discord</span>
+        </a>
+        <a
+          href="https://t.me/financegrim"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.link}
+        >
+          <i className={`fab fa-telegram ${classes.linkIcon}`}></i>
+
+          <span>telegram</span>
+        </a>
+        <a
+          href="https://twitter.com/financegrim"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}
@@ -46,15 +66,6 @@ const Footer = () => {
           <i className={`fab fa-twitter ${classes.linkIcon}`}></i>
 
           <span>twitter</span>
-        </a>
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          className={classes.link}
-        >
-          <i className={`fab fa-discord ${classes.linkIcon}`}></i>
-          <span>discord</span>
         </a>
       </div>
     </div>

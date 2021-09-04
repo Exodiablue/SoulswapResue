@@ -14,7 +14,7 @@ const styles = theme => ({
     flexDirection: 'column',
   },
   title: {
-    color: theme.palette.text.primary,
+    color: '#fff',
     fontWeight: 900,
     fontSize: '1.2rem',
     marginBottom: '0.5rem',
@@ -22,7 +22,7 @@ const styles = theme => ({
   link: {
     margin: '0.5rem 0',
     fontWeight: 400,
-    color: theme.palette.text.primary,
+    color: '#fff',
     textDecoration: 'none',
     '&:hover': {
       textDecoration: 'underline',

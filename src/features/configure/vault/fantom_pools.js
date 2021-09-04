@@ -1212,42 +1212,6 @@ const pools = [
 },
 
 {
-  id: 'spirit-weth-ftm',
-  logo: 'fantom/WETH-FTM.png',
-  name: 'WETH-FTM LP',
-  token: 'WETH-FTM LP (SpiritSwap)',
-  tokenDescription: 'SpiritSwap',
-  tokenAddress: '0x613BF4E46b4817015c01c6Bb31C7ae9edAadc26e',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-WET-FTM-1',
-  earnedTokenAddress: '0x106A8d32D4CcC8fA3BCf6BA39dC999853B5F4C2E',
-  earnContractAddress: '0x106A8d32D4CcC8fA3BCf6BA39dC999853B5F4C2E',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'spirit-weth-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'SpiritSwap',
-  assets: ['ETH', 'FTM'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x74b23882a30290451A17c44f4F05243b6b58C76d',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      ...spiritTokens,
-      ...zapTokens,
-
-    ],
-  },
-},
-
-{
   id: 'spirit-mim-ftm',
   logo: 'fantom/MIM-FTM.png',
   name: 'MIM-FTM LP',
@@ -8327,7 +8291,7 @@ const pools = [
   oracleId: 'sbrw-beermoney-ftm',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'eol',
+  status: 'active',
   platform: 'StrangeBrew',
   assets: ['BEERMONEY', 'FTM'],
   callFee: 0.5,

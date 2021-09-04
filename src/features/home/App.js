@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 import { SnackbarProvider } from 'notistack';
 import Notifier from '../common/Notifier';
 
-// import Footer from 'components/Footer/Footer';
+import Footer from 'components/Footer/Footer';
 // import Pastures from 'components/Pastures/Pastures';
 // import bgImage from "images/bg.jpg"
 
@@ -127,7 +127,7 @@ export default function App({ children }) {
                   </div>
                 </div>
                 </div>
-                {/* <Footer /> */}
+                <Footer />
                 {/* triangles banner */}
                 <div className={classes.grimMoon} ></div>
               </div>
