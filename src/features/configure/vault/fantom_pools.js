@@ -5551,53 +5551,6 @@ const pools = [
 },
 
 {
-  id: "lqdr-lqdr-fusdt",
-  logo: 'fantom/LQDR-FUSDT.png',
-  name: 'LQDR-FUSDT LP',
-  token: 'LQDR-FUSDT LP (LiquidDriver)',
-  tokenDescription: 'LiquidDriver',
-  tokenAddress: '0xA1BB6830fAbdDB99Ed365C0611a33741c5e6173f',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-LQD-FUS-0',
-  earnedTokenAddress: '0x588B594348E1d7057163433332ef5E282eE9D5F8',
-  earnContractAddress: '0x588B594348E1d7057163433332ef5E282eE9D5F8',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "lqdr-lqdr-fusdt",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'LiquidDriver',
-  assets: ['LQDR', 'fUSDT'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://app.sushi.com/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
-     
-      ...zapTokens,
-
-
-
-    ],
-  },
-},
-
-{
   id: "lqdr-yfi-ftm",
   logo: 'fantom/YFI-FTM.png',
   name: 'YFI-FTM LP',

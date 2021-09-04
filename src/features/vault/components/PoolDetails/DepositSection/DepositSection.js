@@ -495,7 +495,7 @@ const DepositSection = ({ pool }) => {
 
       {vaultFee ? <h3 className={classes.subtitle}>{vaultFee}</h3> : ''}
       <p className={classes.note}>
-        {t('Vault-DepositTokensNote', { mooToken: pool.earnedToken, assetToken: pool.token })}
+        {pool.id === 'spiritxginspirit' ?  'You will receive GinSPIRIT token as a receipt for your deposited SPIRIT assets.'  :  t('Vault-DepositTokensNote', { mooToken: pool.earnedToken, assetToken: pool.token })  }
       </p>
     </Grid>
   );
