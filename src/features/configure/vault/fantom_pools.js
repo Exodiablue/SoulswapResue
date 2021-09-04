@@ -7538,7 +7538,7 @@ const pools = [
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'lps',
-  oracleId: 'hertz',
+  oracleId: 'HTZ',
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
