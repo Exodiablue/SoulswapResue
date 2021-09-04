@@ -15,6 +15,16 @@ const Footer = () => {
       <div className={classes.column}>
         <div className={classes.title}>grim.finance</div>
         <a
+          href="https://solidity.finance/audits/GrimVault/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.link}
+        >
+          <i className={`fas fa-lock ${classes.linkIcon}`}></i>
+          <span>audit</span>
+        </a>
+
+        <a
           href="https://docs.grim.finance/"
           target="_blank"
           rel="noopener noreferrer"
