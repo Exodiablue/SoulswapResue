@@ -191,22 +191,6 @@ const spookyTokens = [
     chainId: 250,
     logoURI: '',
   },
-
-  {
-    name: 'TOMB',
-    symbol: 'TOMB',
-    address: '0x6c021ae822bea943b2e66552bde1d2696a53fbb7',
-    decimals: 18,
-    logoURI: '',
-  },
-
-  {
-    name: 'TSHARE',
-    symbol: 'TSHARE',
-    address: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
-    decimals: 18,
-    logoURI: '',
-  },
   {
     name: 'Dai Stablecoin',
     address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
@@ -6322,7 +6306,7 @@ const pools = [
     router: BOMB_ROUTER,
 
     tokens: [
-    ...bombTokens,
+    //...bombTokens,
 
     ],
   },
@@ -6357,7 +6341,7 @@ const pools = [
     router: BOMB_ROUTER,
 
     tokens: [
-    ...bombTokens,
+    //...bombTokens,
 
     ],
   },
@@ -6481,8 +6465,8 @@ const pools = [
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
   earnedToken: 'G-STE-FTM-7',
-  earnedTokenAddress: '0xa533fa55d7257c473C99ED051b611FCDc935DB24',
-  earnContractAddress: '0xa533fa55d7257c473C99ED051b611FCDc935DB24',
+  earnedTokenAddress: '0x6B79A088fCc619aB9B57867a01d16C7341ddeD86',
+  earnContractAddress: '0x6B79A088fCc619aB9B57867a01d16C7341ddeD86',
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'lps',
@@ -6501,47 +6485,47 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spookyTokens,
-      ...zapTokens,
+      // ...spookyTokens,
+      // ...zapTokens,
     ],
   },
 },
 
-{
-  id: 'steak-usdc-fusd',
-  logo: 'fantom/USDC-FUSD.png',
-  name: 'USDC-FUSD LP',
-  token: 'USDC-FUSD LP (SpookySwap)',
-  tokenDescription: 'Steak',
-  tokenAddress: '0xa0828eE559110b041DEdbf10Ae0cf42274251de1',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-USD-FUS-7',
-  earnedTokenAddress: '0x7d2df8360Bab95F9F6A54a96E9fd63aB62Aa627d',
-  earnContractAddress: '0x7d2df8360Bab95F9F6A54a96E9fd63aB62Aa627d',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'steak-usdc-fusd',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'Steak',
-  assets: ['USDC','FUSD'],
-  callFee: 0.5,
-  depositFee: '0.5% from Farm Provider',
-  addLiquidityUrl: 'https://spookyswap.finance/add/0xAd84341756Bf337f5a0164515b1f6F993D194E1f/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
+// {
+//   id: 'steak-usdc-fusd',
+//   logo: 'fantom/USDC-FUSD.png',
+//   name: 'USDC-FUSD LP',
+//   token: 'USDC-FUSD LP (SpookySwap)',
+//   tokenDescription: 'Steak',
+//   tokenAddress: '0xa0828eE559110b041DEdbf10Ae0cf42274251de1',
+//   tokenDecimals: 6,
+//   tokenDescriptionUrl: '#',
+//   earnedToken: 'G-USD-FUS-7',
+//   earnedTokenAddress: '0x7d2df8360Bab95F9F6A54a96E9fd63aB62Aa627d',
+//   earnContractAddress: '0x7d2df8360Bab95F9F6A54a96E9fd63aB62Aa627d',
+//   pricePerFullShare: 1,
+//   tvl: 0,
+//   oracle: 'lps',
+//   oracleId: 'steak-usdc-fusd',
+//   oraclePrice: 0,
+//   depositsPaused: false,
+//   status: 'active',
+//   platform: 'Steak',
+//   assets: ['USDC','FUSD'],
+//   callFee: 0.5,
+//   depositFee: '0.5% from Farm Provider',
+//   addLiquidityUrl: 'https://stakesteak.app/',
+//   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+//   zap: {
+//     zapAddress: VAULT_ZAP,
+//     router: SPOOKY_ROUTER,
 
-    tokens: [
-      ...spookyTokens,
-      ...zapTokens,
-    ],
-  },
-},
+//     tokens: [
+//       // ...spookyTokens,
+//       // ...zapTokens,
+//     ],
+//   },
+// },
 
 
 {
