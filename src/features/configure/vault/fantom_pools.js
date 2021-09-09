@@ -2739,7 +2739,7 @@ const pools = [
 },
 
 {
-  id: 'boo-ftm-foo',
+  id: 'boo-foo-ftm',
   logo: 'fantom/FOO-FTM.png',
   name: 'FTM-FOO LP',
   token: 'FTM-FOO LP (SpookySwap)',
@@ -2753,7 +2753,7 @@ const pools = [
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'lps',
-  oracleId: 'boo-ftm-foo',
+  oracleId: 'boo-foo-ftm',
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
@@ -5526,245 +5526,6 @@ const pools = [
 },
 
 {
-  id: "lqdr-lqdr-ftm",
-  logo: 'fantom/LQDR-FTM.png',
-  name: 'LQDR-FTM LP',
-  token: 'LQDR-FTM LP (LiquidDriver)',
-  tokenDescription: 'LiquidDriver',
-  tokenAddress: '0xfA7cA6E6D17368e0a1fA9C75f2eBE5A8d7bE9fc6',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-LQD-FTM-0',
-  earnedTokenAddress: '0xb96a04bc0a52180568894bABB8DBc21A559AE9F1',
-  earnContractAddress: '0xb96a04bc0a52180568894bABB8DBc21A559AE9F1',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "lqdr-lqdr-ftm",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'LiquidDriver',
-  assets: ['LQDR', 'FTM'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
-     
-      ...zapTokens,
-
-
-
-    ],
-  },
-},
-
-{
-  id: "lqdr-yfi-ftm",
-  logo: 'fantom/YFI-FTM.png',
-  name: 'YFI-FTM LP',
-  token: 'YFI-FTM LP (LiquidDriver)',
-  tokenDescription: 'LiquidDriver',
-  tokenAddress: '0x280AbC0D9727f4DE3A46Ca9CF93C16b4a9c127D1',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-YFI-FTM-0',
-  earnedTokenAddress: '0xc7710dfE548E6f4b9DaaDA96FAd8DC6B8B790ea8',
-  earnContractAddress: '0xc7710dfE548E6f4b9DaaDA96FAd8DC6B8B790ea8',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "lqdr-yfi-ftm",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'LiquidDriver',
-  assets: ['YFI', 'FTM'],
-  callFee: 0.5,
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
-
-      ...zapTokens,
-
-
-
-    ],
-  },
-},
-
-{
-  id: "lqdr-link-ftm",
-  logo: 'fantom/LINK-FTM.png',
-  name: 'LINK-FTM LP',
-  token: 'LINK-FTM LP (LiquidDriver)',
-  tokenDescription: 'LiquidDriver',
-  tokenAddress: '0x1Ca86e57103564F47fFCea7259a6ce8Cc1301549',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-LIN-FTM-0',
-  earnedTokenAddress: '0x10129aEc48f87e45376413Ca1fD08962f95204cf',
-  earnContractAddress: '0x10129aEc48f87e45376413Ca1fD08962f95204cf',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "lqdr-link-ftm",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'LiquidDriver',
-  assets: ['LINK', 'FTM'],
-  callFee: 0.5,
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
-     
-      ...zapTokens,
-
-
-
-    ],
-  },
-},
-
-{
-  id: "lqdr-weth-ftm",
-  logo: 'fantom/WETH-FTM.png',
-  name: 'WETH-FTM LP',
-  token: 'WETH-FTM LP (LiquidDriver)',
-  tokenDescription: 'LiquidDriver',
-  tokenAddress: '0x3d0BD54c48C2C433ea6fed609Cc3d5Fb7A77622B',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-WET-FTM-0',
-  earnedTokenAddress: '0x50Cab7317df87f4d377B1433467b617EeC9F3D98',
-  earnContractAddress: '0x50Cab7317df87f4d377B1433467b617EeC9F3D98',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "lqdr-weth-ftm",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'LiquidDriver',
-  assets: ['ETH', 'FTM'],
-  callFee: 0.5,
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x74b23882a30290451A17c44f4F05243b6b58C76d',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
-     
-      ...zapTokens,
-
-
-
-    ],
-  },
-},
-
-{
-  id: "lqdr-wbtc-ftm",
-  logo: 'fantom/WBTC-FTM.png',
-  name: 'WBTC-FTM LP',
-  token: 'WBTC-FTM LP (LiquidDriver)',
-  tokenDescription: 'LiquidDriver',
-  tokenAddress: '0xC92D97416328A461BcE2F539498b505c6c97748f',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-WBT-FTM-0',
-  earnedTokenAddress: '0xDda08B5F3c9d5d24A1Aa5ae6b8f6D902b4288B33',
-  earnContractAddress: '0xDda08B5F3c9d5d24A1Aa5ae6b8f6D902b4288B33',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "lqdr-wbtc-ftm",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'LiquidDriver',
-  assets: ['BTC', 'FTM'],
-  callFee: 0.5,
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x321162Cd933E2Be498Cd2267a90534A804051b11',
-  buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
-     
-      ...zapTokens,
-
-
-
-    ],
-  },
-},
-
-{
   id: "lqdr-ice-ftm",
   logo: 'fantom/ICE-FTM.png',
   name: 'ICE-FTM LP',
@@ -6348,42 +6109,6 @@ const pools = [
 },
 
 {
-  id: 'steak-usdc-ifusd',
-  logo: 'fantom/IFUSD-USDC.png',
-  name: 'USDC-iFUSD LP',
-  token: 'USDC-iFUSD LP (SpiritSwap)',
-  tokenDescription: 'Steak',
-  tokenAddress: '0xA58fAD33798BD98Bd957446cbcae6c0809Db1486',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-USD-IFU-7',
-  earnedTokenAddress: '0xe17019FfAdc42748965Ebec8de55249F303d31c8',
-  earnContractAddress: '0xe17019FfAdc42748965Ebec8de55249F303d31c8',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'steak-usdc-ifusd',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Steak',
-  assets: ['USDC','iFUSD'],
-  callFee: 0.5,
-  depositFee: '0.5% from Farm Provider',
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0x9fC071cE771c7B27b7d9A57C32c0a84c18200F8a',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      ...spiritTokens,
-      ...zapTokens,
-    ],
-  },
-},
-
-{
   id: 'steak-tomb-ifusd',
   logo: 'fantom/IFUSD-TOMB.png',
   name: 'TOMB-iFUSD LP',
@@ -6491,42 +6216,41 @@ const pools = [
   },
 },
 
-// {
-//   id: 'steak-usdc-fusd',
-//   logo: 'fantom/USDC-FUSD.png',
-//   name: 'USDC-FUSD LP',
-//   token: 'USDC-FUSD LP (SpookySwap)',
-//   tokenDescription: 'Steak',
-//   tokenAddress: '0xa0828eE559110b041DEdbf10Ae0cf42274251de1',
-//   tokenDecimals: 6,
-//   tokenDescriptionUrl: '#',
-//   earnedToken: 'G-USD-FUS-7',
-//   earnedTokenAddress: '0x7d2df8360Bab95F9F6A54a96E9fd63aB62Aa627d',
-//   earnContractAddress: '0x7d2df8360Bab95F9F6A54a96E9fd63aB62Aa627d',
-//   pricePerFullShare: 1,
-//   tvl: 0,
-//   oracle: 'lps',
-//   oracleId: 'steak-usdc-fusd',
-//   oraclePrice: 0,
-//   depositsPaused: false,
-//   status: 'active',
-//   platform: 'Steak',
-//   assets: ['USDC','FUSD'],
-//   callFee: 0.5,
-//   depositFee: '0.5% from Farm Provider',
-//   addLiquidityUrl: 'https://stakesteak.app/',
-//   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-//   zap: {
-//     zapAddress: VAULT_ZAP,
-//     router: SPOOKY_ROUTER,
+{
+  id: 'steak-usdc-fusd',
+  logo: 'fantom/USDC-FUSD.png',
+  name: 'USDC-FUSD LP',
+  token: 'USDC-FUSD LP (SpookySwap)',
+  tokenDescription: 'Steak',
+  tokenAddress: '0xa0828ee559110b041dedbf10ae0cf42274251de1',
+  tokenDecimals: 6,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-USD-FUS-7',
+  earnedTokenAddress: '0x901cAFDCba3e7CFB1A5a1B5D48b6E2BF2DBD9079',
+  earnContractAddress: '0x901cAFDCba3e7CFB1A5a1B5D48b6E2BF2DBD9079',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'steak-usdc-fusd',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Steak',
+  assets: ['USDC','FUSD'],
+  callFee: 0.5,
+  depositFee: '0.5% from Farm Provider',
+  addLiquidityUrl: 'https://stakesteak.app/',
+  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x05848B832E872d9eDd84AC5718D58f21fD9c9649',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
 
-//     tokens: [
-//       // ...spookyTokens,
-//       // ...zapTokens,
-//     ],
-//   },
-// },
-
+    tokens: [
+      // ...spookyTokens,
+      // ...zapTokens,
+    ],
+  },
+},
 
 {
   id: 'babyboo',
