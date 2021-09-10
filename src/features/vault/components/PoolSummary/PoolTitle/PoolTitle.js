@@ -31,12 +31,13 @@ const PoolTitle = ({
   buyTokenUrl,
   addLiquidityUrl,
   removeLiquidityUrl,
+  priceChart,
   statsUrl,
   assets,
 }) => {
   const classes = useStyles();
   const { t } = useTranslation();
-
+  console.log(priceChart)
   let avatar;
   if (logo) {
     avatar = (
@@ -73,7 +74,7 @@ const PoolTitle = ({
       <div className={classes.texts}>
         <Typography className={classes.title} variant="body2" gutterBottom>
           {poolId ? (
-            <a className={classes.url}> {name} </a>
+            <a className={classes.url} href={priceChart} target="_blank" rel="noopener noreferrer"> {name} </a>
             // <a href={`/vault/${poolId}`} className={classes.url}>
             //   {name}
             // </a>

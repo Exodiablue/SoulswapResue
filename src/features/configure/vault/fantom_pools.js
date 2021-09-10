@@ -369,6 +369,7 @@ const pools = [
   platform: 'Grim Finance',
   assets: ['GRIM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x7ec94c4327dc757601b4273cd67014d7760be97e',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -403,6 +404,7 @@ const pools = [
   platform: 'Totem',
   assets: ['GRIM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x7ec94c4327dc757601b4273cd67014d7760be97e',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -438,6 +440,7 @@ const pools = [
   platform: 'Grim Finance',
   assets: ['FTM', 'GRIM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x2c18c39622b90318b0124ecfd6d4ac81efcc51db',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   zap: {
@@ -473,6 +476,7 @@ const pools = [
   platform: 'Totem',
   assets: ['GRIM', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x2c18c39622b90318B0124eCFd6d4aC81efcC51db',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   zap: {
@@ -508,6 +512,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'GRIM'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x0b3b9452c6ed14f823cfb95ed271a43ada9e12cd',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -543,6 +548,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['GRIM', 'SPIRIT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xebe5174d117af9c71d76b3138b16e743df983c76',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   zap: {
@@ -578,6 +584,7 @@ const pools = [
   platform: 'Grim Finance',
   assets: ['REAPER'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -611,6 +618,7 @@ const pools = [
   platform: 'Grim Finance',
   assets: ['FTM', 'REAPER'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x355416b389a25244f4b842516fbd98de869bbb74',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
   zap: {
@@ -646,6 +654,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['REAPER','FTM'],
   callFee: 0.5,
+  priceChart: '',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
@@ -685,6 +694,7 @@ const pools = [
   platform: 'Grim Finance',
   assets: ['USDC', 'REAPER'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x63AA709D3Bae838AafC5000B0b6f475Bf01BCbaA',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
   zap: {
@@ -719,6 +729,7 @@ const pools = [
   platform: 'Grim Finance',
   assets: ['BTC', 'renBTC'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x69ea05ee07c2d06753827f90b522b0ba3d3dab63',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0xDBf31dF14B66535aF65AaC99C32e9eA844e14501/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0xdbf31df14b66535af65aac99c32e9ea844e14501',
   zap: {
@@ -756,6 +767,7 @@ const pools = [
   assets: ['SPIRIT','GinSPIRIT'],
   analytics: false,
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x5cc61a78f164885776aa610fb0fe1257df78e59b',
   withdrawalFee: 'NA',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
@@ -789,6 +801,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['SPIRIT','GinSPIRIT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x2787bea3366335068bf8b4a253044d09ea4e1c96',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -820,6 +833,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['FTM', 'SPIRIT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x30748322B6E34545DBe0788C421886AEB5297789',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
@@ -857,6 +871,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['ETH', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x613BF4E46b4817015c01c6Bb31C7ae9edAadc26e',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x74b23882a30290451A17c44f4F05243b6b58C76d',
@@ -894,6 +909,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['BTC', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x279b2c897737a50405ED2091694F225D83F2D3bA',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x74b23882a30290451A17c44f4F05243b6b58C76d',
@@ -932,6 +948,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['SPIRIT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x5cc61a78f164885776aa610fb0fe1257df78e59b',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -967,6 +984,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['FTM', 'SPIRIT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x30748322B6E34545DBe0788C421886AEB5297789',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
@@ -1003,6 +1021,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['GinSPIRIT', 'SPIRIT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xc6ED96EdC14a199bde017A273A2CBd4a129bdC65',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x2787bea3366335068bf8b4a253044d09ea4e1c96/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
@@ -1039,6 +1058,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['START', 'SPIRIT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x466EB66161B2dfC000a37017896c7a5d846b0900',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x8ca2ecbCE34c322fceA6Db912d9DbfD2DdA5920D/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
@@ -1075,6 +1095,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['DAI', 'SPIRIT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xfFbfc0446cA725b21256461e214E9D472f9be390',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
@@ -1110,6 +1131,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['BUSD', 'fUSDT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x1Ac51904cFAaD15679B3500F0fC41D2971657f80',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xC931f61B1534EB21D8c11B24f3f5Ab2471d4aB50/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xC931f61B1534EB21D8c11B24f3f5Ab2471d4aB50',
   zap: {
@@ -1146,6 +1168,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['ICE', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x936D23C83c2469f6a14B9f5bEaec13879598A5aC',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xf16e81dce15B08F326220742020379B855B87DF9/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xf16e81dce15B08F326220742020379B855B87DF9',
   zap: {
@@ -1182,6 +1205,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['YFI', 'WOOFY'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x287ebF376c59a037B8D8E0e987461b2fd8550D8c',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x29b0Da86e484E1C0029B56e817912d778aC0EC69/0xD0660cD418a64a1d44E9214ad8e459324D8157f1',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xD0660cD418a64a1d44E9214ad8e459324D8157f1',
   zap: {
@@ -1218,6 +1242,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['FTM', 'USDC'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xe7E90f5a767406efF87Fdad7EB07ef407922EC1D',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
@@ -1254,6 +1279,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['MIM', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xB32b31DfAfbD53E310390F641C7119b5B9Ea0488',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x82f0B8B456c1A451378467398982d4834b6829c1/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x82f0B8B456c1A451378467398982d4834b6829c1',
   zap: {
@@ -1290,6 +1316,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['SUSHI', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x9Fe4c0CE5F533e96C2b72d852f190961AD5a7bB3',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   zap: {
@@ -1326,6 +1353,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['ANY', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x26D583028989378Cc1b7CBC023f4Ae049d5e5899',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xdDcb3fFD12750B45d32E084887fdf1aABAb34239/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xdDcb3fFD12750B45d32E084887fdf1aABAb34239',
   zap: {
@@ -1361,6 +1389,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['BNB', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x74fE5Ddc4c27F91a1898ccd5Ac62dFeb2d3dF726',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   zap: {
@@ -1396,6 +1425,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['LINK', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xd061c6586670792331E14a80f3b3Bb267189C681',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
   zap: {
@@ -1432,6 +1462,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['CRV', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x374C8ACb146407Ef0AE8F82BaAFcF8f4EC1708CF',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x1E4F97b9f9F913c46F1632781732927B9019C68b/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x1E4F97b9f9F913c46F1632781732927B9019C68b',
   zap: {
@@ -1468,6 +1499,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['fUSDT', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xd14Dd3c56D9bc306322d4cEa0E1C49e9dDf045D4',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   zap: {
@@ -1504,6 +1536,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['BNB', 'SPIRIT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x9D103Bc85A33B007B58bE2fDee3e1A64651f676d',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   zap: {
@@ -1542,6 +1575,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['SPIRIT', 'XSTEAK'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xe276a71991a7a7b16cb453db2994ce9fcda2eda6',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0xb632c5d42BD4a44a617608Ad1c7d38f597E22E3C',
   buyTokenUrl: 'https://stakesteak.com/staking',
   zap: {
@@ -1578,6 +1612,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['DIS', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xa6020794594568e2bf987718b6520C14b9C4Ccd9',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x0e121961DD741C9D49C9A04379da944A9D2FAc7a',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x0e121961DD741C9D49C9A04379da944A9D2FAc7a',
   zap: {
@@ -1614,6 +1649,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['YFI', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x4fc38a2735C7da1d71ccAbf6DeC235a7DA4Ec52C',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   zap: {
@@ -1650,6 +1686,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['USDC', 'GTON'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x8a5555c4996B72E5725Cf108Ad773Ce5E715DED4',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0xC1Be9a4D5D45BeeACAE296a7BD5fADBfc14602C4',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xC1Be9a4D5D45BeeACAE296a7BD5fADBfc14602C4',
   zap: {
@@ -1687,6 +1724,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['ZOO', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xDF18DD2631f02D930071DF7d6FF89bbc3718C62F',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
   zap: {
@@ -1724,6 +1762,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['SPIRIT', 'LQDR'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xFeBbfeA7674720cEdD35e9384d07F235365c1B3e',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
@@ -1761,6 +1800,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['SPIRIT', 'UNIDX'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x2a520963F332C347C83a6e20F4CA33E2F24B6305',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/0x2130d2a1e51112D349cCF78D2a1EE65843ba36e0',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
@@ -1798,6 +1838,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['JUST', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x0133660D0578Bf9D085033Ea753a27F5Aa2b9de1',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x37C045bE4641328DFEB625f1Dde610D061613497/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x37c045be4641328dfeb625f1dde610d061613497',
   zap: {
@@ -1835,6 +1876,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['RAI', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x414F9DC80bFe3966d4D30878fd4CE9cAC3cE63c4',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xa71353Bb71DdA105D383B02fc2dD172C4D39eF8B/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xa71353Bb71DdA105D383B02fc2dD172C4D39eF8B',
   zap: {
@@ -1871,6 +1913,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['CREAM', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x040dd0d0f5e2a01fEb0C5457AbB588B23Cf4c43a',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6',
   zap: {
@@ -1907,6 +1950,7 @@ const pools = [
   platform: 'SpiritSwap',
   assets: ['FRAX', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x0eC0E1629E776272FA3E55548D4A656BE0EEdcF4',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0xaf319E5789945197e365E7f7fbFc56B130523B33',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xaf319E5789945197e365E7f7fbFc56B130523B33',
   zap: {
@@ -1943,6 +1987,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['BOO'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x841fad6eae12c286d1fd18d1d525dffa75c7effe',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -1978,6 +2023,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'BOO'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xEc7178F4C41f346b2721907F5cF7628E388A7a58',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x841fad6eae12c286d1fd18d1d525dffa75c7effe',
   zap: {
@@ -2015,6 +2061,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'MIM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x6f86e65b255c9111109d2d2325ca2dfc82456efc',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x82f0B8B456c1A451378467398982d4834b6829c1',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x82f0b8b456c1a451378467398982d4834b6829c1',
   zap: {
@@ -2052,6 +2099,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'LINK'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x89d9bc2f2d091cfbfc31e333d6dc555ddbc2fd29',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xb3654dc3d10ea7645f8319668e8f54d2574fbdc8',
   zap: {
@@ -2088,6 +2136,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'ANY'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x5c021D9cfaD40aaFC57786b409A9ce571de375b4',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xdDcb3fFD12750B45d32E084887fdf1aABAb34239',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xddcb3ffd12750b45d32e084887fdf1aabab34239',
   zap: {
@@ -2124,6 +2173,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'BNB'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x956DE13EA0FA5b577E4097Be837BF4aC80005820',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454',
   zap: {
@@ -2159,6 +2209,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'SUSHI'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xf84e313b36e86315af7a06ff26c8b20e9eb443c3',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   zap: {
@@ -2195,6 +2246,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'WOOFY'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xfD0aB56B83130ce8f2b7A4f4d4532dEe495c0794',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xD0660cD418a64a1d44E9214ad8e459324D8157f1',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xd0660cd418a64a1d44e9214ad8e459324d8157f1',
   zap: {
@@ -2229,6 +2281,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'BAND'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x91b39d5584e2a7dc829f696235742cc293f2e8cf',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x46E7628E8b4350b2716ab470eE0bA1fa9e76c6C5',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x46E7628E8b4350b2716ab470eE0bA1fa9e76c6C5',
   zap: {
@@ -2264,6 +2317,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'CREAM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xb77b223490e1f5951ec79a8d09db9eab2adcb934',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6',
   zap: {
@@ -2299,6 +2353,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['CRV', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xb471ac6ef617e952b84c6a9ff5de65a9da96c93b',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x1E4F97b9f9F913c46F1632781732927B9019C68b',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x1E4F97b9f9F913c46F1632781732927B9019C68b',
   zap: {
@@ -2335,6 +2390,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'BADGER'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x1c94665fd3ecfa969feda7ed01e35522e6982022',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x753fbc5800a8C8e3Fb6DC6415810d627A387Dfc9',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x753fbc5800a8C8e3Fb6DC6415810d627A387Dfc9',
   zap: {
@@ -2370,6 +2426,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'ICE'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x623ee4a7f290d11c11315994db70fb148b13021d',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xf16e81dce15B08F326220742020379B855B87DF9',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xf16e81dce15b08f326220742020379b855b87df9',
   zap: {
@@ -2405,6 +2462,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['fUSDT', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x5965e53aa80a0bcf1cd6dbdd72e6a9b2aa047410',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x049d68029688eabf473097a2fc38ef61633a3c7a',
   zap: {
@@ -2440,6 +2498,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['USDC', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x2b4c76d0dc16be1c31d4c1dc53bf9b45987fc75c',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x04068da6c83afcfa0e13ba15a6696662335d5b75',
   zap: {
@@ -2475,6 +2534,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'DAI'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xe120ffbda0d14f3bb6d6053e90e63c572a66a428',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e',
   zap: {
@@ -2510,6 +2570,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'BTC'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xfdb9ab8b9513ad9e419cf19530fee49d412c3ee3',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
@@ -2545,6 +2606,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['ETH', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xf0702249f4d3a25cd3ded7859a165693685ab577',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
@@ -2581,6 +2643,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'AAVE'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xebf374bb21d83cf010cc7363918776adf6ff2bf6',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B',
   zap: {
@@ -2617,6 +2680,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'SNX'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x06d173628be105fe81f1c82c9979ba79ebcafcb7',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc',
   zap: {
@@ -2653,6 +2717,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'BIFI'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x1656728af3a14e1319F030Dc147fAbf6f627059e',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xd6070ae98b8069de6B494332d1A1a81B6179D960',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xd6070ae98b8069de6b494332d1a1a81b6179d960',
   zap: {
@@ -2689,6 +2754,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'KEK'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xf3582dbaebb4287b462f00d308911621a960a5fd',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x627524d78B4fC840C887ffeC90563c7A42b671fD',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x627524d78B4fC840C887ffeC90563c7A42b671fD',
   zap: {
@@ -2724,6 +2790,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['YFI', 'ETH'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x0845c0bfe75691b1e21b24351aac581a7fb6b7df',
   addLiquidityUrl: 'https://spookyswap.finance/add/0x29b0Da86e484E1C0029B56e817912d778aC0EC69/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   zap: {
@@ -2760,6 +2827,7 @@ const pools = [
   platform: 'SpookySwap',
   assets: ['FTM', 'FOO'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x157f913Ed0961a8D0d06a258019840919111D9B9',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xFbc3c04845162F067A0B6F8934383E63899c3524',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xFbc3c04845162F067A0B6F8934383E63899c3524',
   zap: {
@@ -2796,6 +2864,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['AURORA', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x483D07BC99CdD1DF66F64aE0A769A70725C46fA4',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0xbc2451AaD349b6B43FD05F4F0cC327F8A6bcA2d4',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0xbc2451aad349b6b43fd05f4f0cc327f8a6bca2d4',
@@ -2833,6 +2902,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ORI', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x0433305Ae161d28eD1408D11581610339dfC9BE4',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0x0575f8738EFdA7F512e3654F277C77e80C7d2725',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
@@ -2869,6 +2939,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['USDC', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x50Cc648E45B84D68405BA0707e94c507b08e593d',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x04068da6c83afcfa0e13ba15a6696662335d5b75',
@@ -2906,6 +2977,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ORI', 'USDC'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0xF70a9Af9f581c2F752Acc779148712c43E58d2f0',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
@@ -2943,6 +3015,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['DAI', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x6D898d98818e670C695E374ED77cd1753cF109Dd',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e',
@@ -2981,6 +3054,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['DAI', 'USDC'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0xD7Ee3fd59a2d8082B56319f858fceaD9a902C0A1',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e',
@@ -3019,6 +3093,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ETH', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0xc81a9cE5Be68dF6A52F82D83398420D8A1C245c2',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
@@ -3056,6 +3131,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ETH', 'ORI'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0xb18E654Af9c3bd229aD72C9F1e8B67518CE6aF37',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/0x0575f8738EFdA7F512e3654F277C77e80C7d2725',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
@@ -3093,6 +3169,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['BTC', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x9a2B08B7620B8c387d96f9C1DC315aFD93651F5e',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
@@ -3131,6 +3208,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['BTC', 'ORI'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0xdDe0ACA9Dc806544f7D5D4DD308a4ee065364Cca',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/0x0575f8738EFdA7F512e3654F277C77e80C7d2725',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
@@ -3168,6 +3246,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['LINK', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x442bEcA06141F99466d288bde60e79330eCbDf51',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0xb3654dc3d10ea7645f8319668e8f54d2574fbdc8',
@@ -3205,6 +3284,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['LINK', 'ORI'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x9571d8B11035657d6FcC26fbD26ABFa23Fb62ae2',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8/0x0575f8738EFdA7F512e3654F277C77e80C7d2725',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
@@ -3242,6 +3322,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['SUSHI', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0xF9f979b0283031c4afA4d668626779363B5fE510',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
@@ -3278,6 +3359,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['YFI', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0xbD9d4981dEd98F5Dedfd7920C3857c4d6A5eA113',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
@@ -3314,6 +3396,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['SNX', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0xF2fCd382Ee404B105bfc0086ED41F1Bd19B8952a',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc',
@@ -3351,6 +3434,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['FTM', 'ESWAP'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x08492d0fF546B08a9Fb3bd056665cfD240B7D55c',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0x735aBE48e8782948a37C7765ECb76b98CdE97B0F',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x735abe48e8782948a37c7765ecb76b98cde97b0f',
@@ -3389,6 +3473,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ORI', 'ESWAP'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x1935776c366db172a3c4881c7548Cd35D7457c5c',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0x735aBE48e8782948a37C7765ECb76b98CdE97B0F',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
@@ -3426,6 +3511,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['BNB', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x55c5B2868eae98f38C8c6b84435eD90B400466f9',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454',
@@ -3463,6 +3549,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renBTC', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x91BDC3Dc2028E53Be65f7fd84f21a4a46eA3CB4B',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0xDBf31dF14B66535aF65AaC99C32e9eA844e14501',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0xdbf31df14b66535af65aac99c32e9ea844e14501',
@@ -3500,6 +3587,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renBTC', 'ORI'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0xB7A8659fe7a9741EB2082F177d102f58C86BBe87',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0xDBf31dF14B66535aF65AaC99C32e9eA844e14501',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
@@ -3537,6 +3625,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renZEC', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x6B7EDB556B0428fa4FE58609052618b56CCC7C46',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0x31a0D1A199631D244761EEba67e8501296d2E383',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x31a0d1a199631d244761eeba67e8501296d2e383',
@@ -3574,6 +3663,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renZEC', 'ORI'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x28ac64a278A51c84E0C4C65ba561148e5b15CF43',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0x31a0D1A199631D244761EEba67e8501296d2E383',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
@@ -3611,6 +3701,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renBCH', 'FTM'],
   callFee: 0.5,
+  priceChart: 'hhttps://ftm-info.hyperjump.fi/pair/0xCb90e14e3d73090C6137623225c2E155272038D2',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0xc3fEd6eB39178A541D274e6Fc748d48f0Ca01CC3',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0xc3fEd6eB39178A541D274e6Fc748d48f0Ca01CC3',
@@ -3648,6 +3739,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['renBCH', 'ORI'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x9b6553e4A939DC1f56524337AE10E298B3aFb9CD',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0xc3fEd6eB39178A541D274e6Fc748d48f0Ca01CC3',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
@@ -3685,6 +3777,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ICE', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x3D7bC2eE79a21e56dc52B874de3aD5c341f6D888',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0xf16e81dce15B08F326220742020379B855B87DF9/FTM',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0xf16e81dce15b08f326220742020379b855b87df9',
@@ -3722,6 +3815,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['ZOO', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0xe200510dC1F28b53C1b1f629861ddE4f8B06B373',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56/FTM',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x09e145a1d53c0045f41aeef25d8ff982ae74dd56',
@@ -3759,6 +3853,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['CRV', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x7785698F2Aa354558C77a0186bE0dFD2a9B2452d',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x1E4F97b9f9F913c46F1632781732927B9019C68b/FTM',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x1E4F97b9f9F913c46F1632781732927B9019C68b',
@@ -3796,6 +3891,7 @@ const pools = [
   platform: 'HyperJump',
   assets: ['CRV', 'ORI'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x1449Eb84698D6C2faf86863faB8A91aa975ef2F8',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x1E4F97b9f9F913c46F1632781732927B9019C68b/0x0575f8738EFdA7F512e3654F277C77e80C7d2725',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
@@ -3833,6 +3929,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['WAKA', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x696885e9581bd33ee9877bd8750ddda65381ff01',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0xf61cCdE1D4bB76CeD1dAa9D4c429cCA83022B08B',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -3869,6 +3966,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'BTC'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x195C45044B121D8CAF4C9e2d8F47fb81f4E12f21',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -3906,6 +4004,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'YFI'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0xb0e5d65b4c22ff9f099e449df03acb3a57bb5f27',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -3942,6 +4041,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'USDC'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x97a490e7c90b4d8f6d18752672f4c8e3c35891a2',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -3978,6 +4078,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'DAI'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x78da2bd2c18837c9d1b9008c81078e378f1952c6',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4013,6 +4114,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'SUSHI'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x1b084cda6e11347b3c15eae537cf8a7ce39f96da',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4049,6 +4151,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'BADGER'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x8a400d6bf3cdf070af6e3312ef4f9681f16a92bd',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x753fbc5800a8C8e3Fb6DC6415810d627A387Dfc9',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4085,6 +4188,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'AAVE'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x2e783ce36830a6274761cc4a9d04d275553f3bc1',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4121,6 +4225,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'ICE'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0xef179689b6d242ffc93dfc69241f74d4d391fa7c',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0xf16e81dce15B08F326220742020379B855B87DF9',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4157,6 +4262,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'SNX'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0xff09b99aed8fb58c209904f6adc4a1fcceea79ac',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4192,6 +4298,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'CREAM'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x3c4ad49f26b47f00f7e5165b942d41367dd60a04',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4227,6 +4334,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'COVER'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x9c58df352fcd984700c57324a116845378adc5ba',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0xB01E8419d842beebf1b70A7b5f7142abbaf7159D',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4262,6 +4370,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'LINK'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x32736ae178d0debf137326a0c0c6d50e374d9f19',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4298,6 +4407,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'CRV'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x3b1b72d6de14a45096227c3319dd58fceae95faf',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x1E4F97b9f9F913c46F1632781732927B9019C68b',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4334,6 +4444,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'BAND'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x60ff8c1dffc8252cfd94c07f65feb4ce90ee9b99',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x46E7628E8b4350b2716ab470eE0bA1fa9e76c6C5',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4370,6 +4481,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'ETH'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x0eea1bf6342c71171882c2ac3838a9c78e00b5cb',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4407,6 +4519,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'ATARI'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x0370dc24570ed93db0b67d20340923e56c0aadd9',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4444,6 +4557,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'BOMB'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0xbb51d140661bfc4232d0838a0400d5161984616f',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x8503eb4A136bDBeB323E37Aa6e0FA0C772228378',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4481,6 +4595,7 @@ const pools = [
   platform: 'WakaSwap',
   assets: ['FTM', 'SHIBA'],
   callFee: 0.5,
+  priceChart: 'https://info.waka.finance/pair/0x5d520c7cfd8ed8acf2b2529e374676121639680a',
   addLiquidityUrl: 'https://exchange.waka.finance/#/add/FTM/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
   buyTokenUrl: 'https://exchange.waka.finance/#/exchange',
   zap: {
@@ -4519,6 +4634,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['SHIBA','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/FTM/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x9ba3e4f84a34df4e08c112e1a0ff148b81655615',
   zap: {
@@ -4557,6 +4673,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['GBONE','SHIBA'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x004B122eb5632077abdD2C38e8d9392348d5cA15/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x004B122eb5632077abdD2C38e8d9392348d5cA15',
   zap: {
@@ -4595,6 +4712,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['GBONE','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x004B122eb5632077abdD2C38e8d9392348d5cA15/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x004B122eb5632077abdD2C38e8d9392348d5cA15',
   zap: {
@@ -4633,6 +4751,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BONE','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
@@ -4642,8 +4761,6 @@ const pools = [
     tokens: [
       // ...shibaTokens,
       // ...zapTokensReduced,
-
-
 
     ],
   },
@@ -4671,6 +4788,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['USDC','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
@@ -4709,6 +4827,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BOO','FTM'],
   callFee: 0.5,
+  priceChart: '',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
@@ -4748,6 +4867,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['WAKA','FTM'],
   callFee: 0.5,
+  priceChart: '',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0xf61cCdE1D4bB76CeD1dAa9D4c429cCA83022B08B/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
@@ -4787,6 +4907,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['DAI','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4825,6 +4946,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['fUSDT','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4863,6 +4985,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['ETH','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4901,6 +5024,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BTC','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4939,6 +5063,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BNB','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
   zap: {
@@ -4977,6 +5102,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['LQDR','FTM'],
   callFee: 0.5,
+  priceChart: '',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9/FTM',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap',
@@ -5016,6 +5142,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BONE','SHIBA'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
@@ -5054,6 +5181,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['BONE','BABYBONE'],
   callFee: 0.5,
+  priceChart: '',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0x7f431316E419e0188337739196D04E67cb7A23D7',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
@@ -5093,6 +5221,7 @@ const pools = [
   platform: 'ShibaSwap',
   assets: ['LAIKA','FTM'],
   callFee: 0.5,
+  priceChart: '',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0xaeDdc4A469acE97e90C605e3F52EB89620e305C0',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
@@ -5132,6 +5261,7 @@ const pools = [
   platform: 'Curve',
   assets: ['fUSDT', 'USDC', 'DAI'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://ftm.curve.fi/fusdt/deposit',
   buyTokenUrl: 'https://app.sushi.com/swap',
   zap: {
@@ -5171,6 +5301,7 @@ const pools = [
   platform: 'Zoo',
   assets: ['WILD','FTM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x80C70A23AB388c3B8624f8FC9dBfB4ee469A69a1',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xAe0C241Ec740309c2cbdc27456eB3C1a2aD74737&outputCurrency=FTM',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xAe0C241Ec740309c2cbdc27456eB3C1a2aD74737',
   zap: {
@@ -5209,6 +5340,7 @@ const pools = [
   platform: 'Zoo',
   assets: ['USDC','FTM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x38E3AD31EC5eee7D0908353231E639849E1510c0',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75&outputCurrency=FTM',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
@@ -5247,6 +5379,7 @@ const pools = [
   platform: 'Zoo',
   assets: ['fUSDT','FTM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x9b7f941894548c905866843a50fDF54517eAeAbb',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A&outputCurrency=FTM',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   zap: {
@@ -5285,6 +5418,7 @@ const pools = [
   platform: 'Zoo',
   assets: ['ETH','FTM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0xC89dbCB06A74BD2Ec521A3e49e192906C2CC5512',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d&outputCurrency=FTM',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
@@ -5323,6 +5457,7 @@ const pools = [
   platform: 'Zoo',
   assets: ['ZOO','FTM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x128dF293532203eFaf6e2801656844F8738dB001',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56&outputCurrency=FTM',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
   zap: {
@@ -5361,6 +5496,7 @@ const pools = [
   platform: 'Zoo',
   assets: ['JUST','FTM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x0427f89dD11025560CB32F51e058120dbd015B7D',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x37C045bE4641328DFEB625f1Dde610D061613497&outputCurrency=FTM',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x37C045bE4641328DFEB625f1Dde610D061613497',
   zap: {
@@ -5399,6 +5535,7 @@ const pools = [
   platform: 'Popsicle',
   assets: ['ICE', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x623ee4a7f290d11c11315994db70fb148b13021d',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xf16e81dce15B08F326220742020379B855B87DF9',
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
@@ -5437,6 +5574,7 @@ const pools = [
   platform: 'Popsicle',
   assets: ['ICE', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://analytics-ftm.sushi.com/pairs/0x84311ecc54d7553378c067282940b0fdfb913675',
   addLiquidityUrl: 'https://app.sushi.com/add/ETH/0xf16e81dce15B08F326220742020379B855B87DF9',
   buyTokenUrl: 'https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0xf16e81dce15B08F326220742020379B855B87DF9',
   zap: {
@@ -5475,6 +5613,7 @@ const pools = [
   platform: 'Tomb',
   assets: ['TOMB', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x2A651563C9d3Af67aE0388a5c8F89b867038089e',
   addLiquidityUrl: 'https://spookyswap.finance/add',
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
@@ -5511,6 +5650,7 @@ const pools = [
   platform: 'Tomb',
   assets: ['TSHARE', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x4733bc45eF91cF7CcEcaeeDb794727075fB209F2',
   addLiquidityUrl: 'https://spookyswap.finance/add',
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
@@ -5547,6 +5687,7 @@ const pools = [
   platform: 'LiquidDriver',
   assets: ['ICE', 'FTM'],
   callFee: 0.5,
+  priceChart: '',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://app.sushi.com/add/ETH/0xf16e81dce15B08F326220742020379B855B87DF9',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
@@ -5595,6 +5736,7 @@ const pools = [
   platform: 'LiquidDriver',
   assets: ['ZOO', 'FTM'],
   callFee: 0.5,
+  priceChart: '',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
   buyTokenUrl: 'https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x09e145a1d53c0045f41aeef25d8ff982ae74dd56',
@@ -5643,6 +5785,7 @@ const pools = [
   platform: 'LiquidDriver',
   assets: ['CRV', 'FTM'],
   callFee: 0.5,
+  priceChart: '',
   depositFee: '1% from Farm Provider',
   addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x1E4F97b9f9F913c46F1632781732927B9019C68b',
   buyTokenUrl: 'https://app.sushi.com/swap?outputCurrency=0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
@@ -5691,6 +5834,7 @@ const pools = [
   platform: 'ShadeCash',
   assets: ['SHADE'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0x3A3841f5fa9f2c283EA567d5Aeea3Af022dD2262',
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -5728,6 +5872,7 @@ const pools = [
   platform: 'ShadeCash',
   assets: ['SHADE', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x20aa395F3bcc4dc44a94215D129650533B3da0b3',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x3A3841f5fa9f2c283EA567d5Aeea3Af022dD2262',
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
@@ -5766,6 +5911,7 @@ const pools = [
   platform: 'BombSwap',
   assets: ['BOMB','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.fbomb.finance/#/add/FTM/0x8503eb4A136bDBeB323E37Aa6e0FA0C772228378',
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
@@ -5802,6 +5948,7 @@ const pools = [
   platform: 'BombSwap',
   assets: ['SHRAP','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.fbomb.finance/#/add/FTM/0xbf4906762C38F50bC7Be0A11BB452C944f6C72E1',
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
@@ -5838,6 +5985,7 @@ const pools = [
   platform: 'BombSwap',
   assets: ['BOMB','SHRAP'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.fbomb.finance/#/add/0x8503eb4A136bDBeB323E37Aa6e0FA0C772228378/0xbf4906762C38F50bC7Be0A11BB452C944f6C72E1',
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
@@ -5876,6 +6024,7 @@ const pools = [
   platform: 'BombSwap',
   assets: ['BOMB','USDC'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.fbomb.finance/#/add/0x8503eb4A136bDBeB323E37Aa6e0FA0C772228378/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
@@ -5912,6 +6061,7 @@ const pools = [
   platform: 'BombSwap',
   assets: ['SHRAP','USDC'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.fbomb.finance/#/add/0xbf4906762C38F50bC7Be0A11BB452C944f6C72E1/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
@@ -5949,6 +6099,7 @@ const pools = [
   platform: 'BombSwap',
   assets: ['FTM','USDC'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.fbomb.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
@@ -5986,6 +6137,7 @@ const pools = [
   platform: 'BombSwap',
   assets: ['FTM','BTC'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.fbomb.finance/#/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
@@ -6023,6 +6175,7 @@ const pools = [
   platform: 'BombSwap',
   assets: ['FTM','ETH'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.fbomb.finance/#/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
@@ -6060,6 +6213,7 @@ const pools = [
   platform: 'BombSwap',
   assets: ['bBOMB','FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.fbomb.finance/#/add/FTM/0x0d318ef2CF0AaFA2713419AEd6c0F6A21FD34Cf0',
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
@@ -6095,6 +6249,7 @@ const pools = [
   platform: 'BombSwap',
   assets: ['bBOMB','BOMB'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.fbomb.finance/#/add/0x8503eb4A136bDBeB323E37Aa6e0FA0C772228378/0x0d318ef2CF0AaFA2713419AEd6c0F6A21FD34Cf0',
   buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
   zap: {
@@ -6130,6 +6285,7 @@ const pools = [
   platform: 'Steak',
   assets: ['TOMB','iFUSD'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xF6C7197eaFF13002a7b2A2e835a7bB6969A4b026',
   depositFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7',
@@ -6166,6 +6322,7 @@ const pools = [
   platform: 'Steak',
   assets: ['SCREAM','FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x30872e4fc4edbfd7a352bfc2463eb4fae9c09086',
   depositFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
@@ -6202,6 +6359,7 @@ const pools = [
   platform: 'Steak',
   assets: ['STEAK','FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xD10CC1b46D806D6ac803AF367Da489dEA5EE76FA',
   depositFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x05848B832E872d9eDd84AC5718D58f21fD9c9649',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x05848B832E872d9eDd84AC5718D58f21fD9c9649',
@@ -6220,7 +6378,7 @@ const pools = [
   id: 'steak-usdc-fusd',
   logo: 'fantom/USDC-FUSD.png',
   name: 'USDC-FUSD LP',
-  token: 'USDC-FUSD LP (SpookySwap)',
+  token: 'USDC-FUSD LP (Steak)',
   tokenDescription: 'Steak',
   tokenAddress: '0xa0828ee559110b041dedbf10ae0cf42274251de1',
   tokenDecimals: 6,
@@ -6238,6 +6396,7 @@ const pools = [
   platform: 'Steak',
   assets: ['USDC','FUSD'],
   callFee: 0.5,
+  priceChart: '',
   depositFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://stakesteak.app/',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x05848B832E872d9eDd84AC5718D58f21fD9c9649',
@@ -6275,6 +6434,7 @@ const pools = [
   assets: ['BABYBOO'],
   analytics: false,
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0x471762A7017A5B1A3e931F1A97aa03Ef1E7F4A73',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x471762A7017A5B1A3e931F1A97aa03Ef1E7F4A73',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6310,6 +6470,7 @@ const pools = [
   platform: 'Totem',
   assets: ['TOTEM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6345,6 +6506,7 @@ const pools = [
   platform: 'Totem',
   assets: ['SPIRIT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x5cc61a78f164885776aa610fb0fe1257df78e59b',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6380,6 +6542,7 @@ const pools = [
   platform: 'Totem',
   assets: ['ZOO'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6415,6 +6578,7 @@ const pools = [
   platform: 'Totem',
   assets: ['TOTEM', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xe6c7f64A2D8B0D40a02D27CAE14e84DaAD60cEbe',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
   zap: {
@@ -6450,6 +6614,7 @@ const pools = [
   platform: 'Totem',
   assets: ['TOTEM', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x85263F06633A75f43A4074CaC84d6C4474080c9C',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
   zap: {
@@ -6485,6 +6650,7 @@ const pools = [
   platform: 'Totem',
   assets: ['TOTEM', 'USDC'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xc36EbbE7CbDDcAe9c4A4BFf5874E44F31168F832',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
   zap: {
@@ -6520,6 +6686,7 @@ const pools = [
   platform: 'Totem',
   assets: ['SPIRIT', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x30748322B6E34545DBe0788C421886AEB5297789',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x5cc61a78f164885776aa610fb0fe1257df78e59b',
   zap: {
@@ -6555,6 +6722,7 @@ const pools = [
   platform: 'Totem',
   assets: ['USDC', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xe7E90f5a767406efF87Fdad7EB07ef407922EC1D',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
@@ -6590,6 +6758,7 @@ const pools = [
   platform: 'Totem',
   assets: ['HODL', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xBE7133Ee3a172D2a92c26e40f511f9d089a9b1fe',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343',
   zap: {
@@ -6625,6 +6794,7 @@ const pools = [
   platform: 'Totem',
   assets: ['BUTT', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x5A14032cD11BEc488e58D90dF3EF3a7C002d1b9F',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0xf42cc7284389fbf749590f26539002ca931323d0',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xF42cc7284389fBf749590f26539002ca931323D0',
   zap: {
@@ -6660,6 +6830,7 @@ const pools = [
   platform: 'Totem',
   assets: ['BSCR', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x69967F59b596b36aAE7d4CE70ce0Dc67a17761fF',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x133bf038277FDA5eaa2B5fc4CC4e6E15bc5CACE3/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x133bf038277FDA5eaa2B5fc4CC4e6E15bc5CACE3',
   zap: {
@@ -6695,6 +6866,7 @@ const pools = [
   platform: 'Totem',
   assets: ['SCREAM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6729,6 +6901,7 @@ const pools = [
   platform: 'Scream',
   assets: ['WFTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6846,13 +7019,14 @@ const pools = [
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'tokens',
-  oracleId: 'USDC',
+  oracleId: 'usdc',
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
   platform: 'Scream',
   assets: ['USDC'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6888,6 +7062,7 @@ const pools = [
   platform: 'Scream',
   assets: ['DAI'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6923,6 +7098,7 @@ const pools = [
   platform: 'Scream',
   assets: ['fUSDT'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6959,6 +7135,7 @@ const pools = [
   platform: 'Scream',
   assets: ['ETH'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -6994,6 +7171,7 @@ const pools = [
   platform: 'Scream',
   assets: ['BTC'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/token/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -7029,6 +7207,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['BRUSH'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/token/0x85dec8c4B2680793661bCA91a8F129607571863d',
   withdrawalFee: '0.5% from Farm Provider',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x85dec8c4B2680793661bCA91a8F129607571863d',
   zap: {
@@ -7065,6 +7244,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['BRUSH', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x452590b8Aa292b963a9d0f2B5E71bC7c927859b3',
   withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x85dec8c4B2680793661bCA91a8F129607571863d',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x85dec8c4b2680793661bca91a8f129607571863d',
@@ -7102,6 +7282,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['USDC', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x7924F76918769fcdcF854C2fdf5D5538DCD7401A',
   withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x04068da6c83afcfa0e13ba15a6696662335d5b75',
@@ -7139,6 +7320,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['BNB', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0xC6Cf63EC4d79C710a880c2f8cD0e7C8eE7Cdbc27',
   withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
@@ -7176,6 +7358,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['ETH', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x21e93724a11870Ab65857373bc38dbd1eFfC3738',
   withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
@@ -7213,6 +7396,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['BTC', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x84dC02D1D1416B696406F2172c847ec07b3EB3ef',
   withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
@@ -7250,6 +7434,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['ZOO', 'BRUSH'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x1eb9E69f58c2B0a6c73522156Cc2dBE529ADf81b',
   withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56/0x85dec8c4B2680793661bCA91a8F129607571863d',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x85dec8c4b2680793661bca91a8f129607571863d',
@@ -7287,6 +7472,7 @@ const pools = [
   platform: 'PaintSwap',
   assets: ['HODL', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x06BEF78Cd8bb17a6dAceD10B610884C09f36FdB7',
   withdrawalFee: '0.5% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343/FTM',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343',
@@ -7324,6 +7510,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['HTZ'],
   callFee: 0.5,
+  priceChart: '',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -7356,6 +7543,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['HTZ', 'FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/ETH/0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7389,6 +7577,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['HTZ', 'USDC'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7422,6 +7611,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['HTZ', 'ETH'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7455,6 +7645,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['HTZ', 'LINK'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8/0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7488,6 +7679,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['HTZ', 'CRV'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/0x1E4F97b9f9F913c46F1632781732927B9019C68b/0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7521,6 +7713,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['ETH', 'FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7554,6 +7747,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['BTC', 'ETH'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7587,6 +7781,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['fUSD', 'FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/0xAd84341756Bf337f5a0164515b1f6F993D194E1f/ETH',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7620,6 +7815,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['BTC', 'FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/ETH',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7653,6 +7849,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['HTZ', 'ICE'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD/0xf16e81dce15B08F326220742020379B855B87DF9',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7686,6 +7883,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['HTZ', 'iFUSD'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD/0x9fC071cE771c7B27b7d9A57C32c0a84c18200F8a',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7719,6 +7917,7 @@ const pools = [
   platform: 'xDAO',
   assets: ['HTZ', 'BAND'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://swap.thexdao.com/#/add/0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD/0x46E7628E8b4350b2716ab470eE0bA1fa9e76c6C5',
   buyTokenUrl: 'https://swap.thexdao.com/#/swap?outputCurrency=0x68F7880F7af43a81bEf25E2aE83802Eb6c2DdBFD',
   zap: {
@@ -7752,6 +7951,7 @@ const pools = [
   platform: 'YEL',
   assets: ['YEL'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0xD3b71117E6C1558c1553305b44988cd944e97300',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xD3b71117E6C1558c1553305b44988cd944e97300',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -7785,6 +7985,7 @@ const pools = [
   platform: 'YEL',
   assets: ['YEL', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x8BFf7b8B6a14e576a3634d6c0466A19A6E9b170a',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xD3b71117E6C1558c1553305b44988cd944e97300',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xD3b71117E6C1558c1553305b44988cd944e97300',
   zap: {
@@ -7820,6 +8021,7 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD', 'GRIM'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x6680B936216e770605E43E7214e5838E2803f514',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   zap: {
@@ -7856,6 +8058,7 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/token/0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -7890,6 +8093,7 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x55a00f4daf71e3ef4b385991b2bf23bd3bef627a',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
@@ -7927,6 +8131,7 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD', 'USDC'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x698a49A0Bb3947897611A4C5e289FbeDB557D150',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
@@ -7964,6 +8169,7 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD', 'BRUSH'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0xaf7ae01e65244f260eb5c8f0142ecf5d4434aa05',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
@@ -8001,6 +8207,7 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD', 'BOMB'],
   callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x2acf18104ffce06ac4b7dfb9c1ff539119d96b27',
   addLiquidityUrl: 'https://spookyswap.finance/add/0xCcE93540b80ABF71B66E0a44fd71E322cE9C4D9e/0x8503eb4A136bDBeB323E37Aa6e0FA0C772228378',
   buyTokenUrl: 'https://spookyswap.finance/swap',
   zap: {
@@ -8038,6 +8245,7 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD', 'TOMB'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x777445A6E9DE0e7a2E38D091f76060Dd4c09cdd9',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
@@ -8074,6 +8282,7 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD', 'CZTEARS'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x2B932f3C08C73f4d698E1D91Bb838435bA7b4931',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
@@ -8111,6 +8320,7 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD', 'ATARI'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0xb7b3Ca37483117B797Db428948d9CAf79491E97C',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
@@ -8147,6 +8357,7 @@ const pools = [
   platform: 'Chad',
   assets: ['CHAD', 'SHIBA'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x5886A4566Dc8605DF9A477863D1A2aA9a4384143',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xcce93540b80abf71b66e0a44fd71e322ce9c4d9e',
   zap: {
@@ -8184,6 +8395,7 @@ const pools = [
   platform: 'Chad',
   assets: ['FTM', 'SHIBA'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x71020669C6cbeD08e511ecE3A28e5aF5eA0cB6aE',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x9ba3e4f84a34df4e08c112e1a0ff148b81655615',
   zap: {
@@ -8220,6 +8432,7 @@ const pools = [
   platform: 'Chad',
   assets: ['FTM', 'HODL'],
   callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0x06BEF78Cd8bb17a6dAceD10B610884C09f36FdB7',
   depositFee: '4% from Farm Provider',
   addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xb2da66c4a89d0f93935d1efdb9c9c8d1d3ba9343',
@@ -8257,6 +8470,7 @@ const pools = [
   platform: 'Yoro',
   assets: ['REAPER', 'CATNIP'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0xE177d58724092d6d3a3178b0C557C35928DD471F',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb&outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb&inputCurrency=FTM',
   zap: {
@@ -8295,6 +8509,7 @@ const pools = [
   platform: 'Yoro',
   assets: ['CATNIP'],
   callFee: 0.5,
+  priceChart: '',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -8332,6 +8547,7 @@ const pools = [
   platform: 'Yoro',
   assets: ['YORO', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x116f65A1F1A206Dd541d58cb7580DdC4675D13b5',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xCF7e516E2dd67C3B0Bd52266DA41F403A0F19A07',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xCF7e516E2dd67C3B0Bd52266DA41F403A0F19A07',
   zap: {
@@ -8370,6 +8586,7 @@ const pools = [
   platform: 'Yoro',
   assets: ['CATNIP', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0xDaBaCA4523345023C32BfC6B156Ae42e41A49821',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0xBbd946041824416A4e2EB37d5880718B3812c9Cb',
   zap: {
@@ -8408,6 +8625,7 @@ const pools = [
   platform: 'Yoro',
   assets: ['ECHO', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x79d25d00C159BAf1bdE8831B00e2f7370Bf5Fe46',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x54477A1D1bb8C1139eEF754Fd2eFd4DDeE7933dd&outputCurrency=FTM',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56&inputCurrency=FTM',
   zap: {
@@ -8446,6 +8664,7 @@ const pools = [
   platform: 'StrangeBrew',
   assets: ['SBRW'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/token/0x3853f3839ca1655acc8c433eef8c086f9895d0bf',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x3853f3839ca1655acc8c433eef8c086f9895d0bf',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -8483,6 +8702,7 @@ const pools = [
   platform: 'StrangeBrew',
   assets: ['SBRW', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x5360aedcaed83d4fc694755af80ef8c6896d04c6',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0x3853F3839ca1655AcC8c433EEF8C086F9895d0BF',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x3853f3839ca1655acc8c433eef8c086f9895d0bf',
   zap: {
@@ -8521,6 +8741,7 @@ const pools = [
   platform: 'StrangeBrew',
   assets: ['SBRW', 'USDC'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0x01fa4d84f5bd205e11ac5aff836094ee77363c2c',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/0x3853F3839ca1655AcC8c433EEF8C086F9895d0BF/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0x3853f3839ca1655acc8c433eef8c086f9895d0bf',
   zap: {
@@ -8559,6 +8780,7 @@ const pools = [
   platform: 'StrangeBrew',
   assets: ['BEERMONEY', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://ftm-info.hyperjump.fi/pair/0xaab4b34e89e9b3d8f628019278b8bfd2745671a3',
   addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0xb207A6623764E149ee5cd681DC95F71620a0abD5',
   buyTokenUrl: 'https://ftm.hyperjump.app/swap?outputCurrency=0xb207a6623764e149ee5cd681dc95f71620a0abd5',
   zap: {
@@ -8598,6 +8820,7 @@ const pools = [
   platform: 'Buttcoin',
   assets: ['BUTT', 'REAPER'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x3309AD0e5Eb8DF992F7D153AFb48866B0e5cC829',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0&outputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
   zap: {
@@ -8634,6 +8857,7 @@ const pools = [
   platform: 'Buttcoin',
   assets: ['SHIT', 'REAPER'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x5Fc97bB549b607F6A2f22AE9bdfd5aF06836378e',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B&outputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
   zap: {
@@ -8670,6 +8894,7 @@ const pools = [
   platform: 'Buttcoin',
   assets: ['BUTT'],
   callFee: 0.5,
+  priceChart: '',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -8704,6 +8929,7 @@ const pools = [
   platform: 'Buttcoin',
   assets: ['BUTT', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x823aa5dccb5bb602b393081365d9e3e92867e123',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0&outputCurrency=FTM',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
   zap: {
@@ -8740,6 +8966,7 @@ const pools = [
   platform: 'Buttcoin',
   assets: ['SHIT', 'FTM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0xf386ce2d4de9fe8fc47d00ebc6816cc5f79a350b',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B&outputCurrency=FTM',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
   zap: {
@@ -8751,42 +8978,6 @@ const pools = [
       ...zapTokensReduced,
 
 
-
-    ],
-  },
-},
-
-{
-  id: 'butt-butt-shit',
-  logo: 'fantom/BUTT-SHIT.png',
-  name: 'BUTT-SHIT LP',
-  token: 'BUTT-SHIT LP (Zoo)',
-  tokenDescription: 'Buttcoin',
-  tokenAddress: '0xf5F1Bc0100D8A46091a861c8C5c2a18e2427c169',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-BUT-SHI-E',
-  earnedTokenAddress: '0xe44264e71f03c5e83B8e07d51Ee4B53EE640279D',
-  earnContractAddress: '0xe44264e71f03c5e83B8e07d51Ee4B53EE640279D',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'butt-butt-shit',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'Buttcoin',
-  assets: ['BUTT', 'SHIT'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: ZOO_ROUTER,
-
-    tokens: [
-      ...zooTokens,
-      ...zapTokensReduced,
 
     ],
   },
@@ -8814,44 +9005,9 @@ const pools = [
   platform: 'Buttcoin',
   assets: ['BUTT', 'ZOO'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x81d82a53f2b96ad0307a30626559ca164e4acd8a',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0&outputCurrency=0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: ZOO_ROUTER,
-
-    tokens: [
-      ...zooTokens,
-      ...zapTokensReduced,
-
-    ],
-  },
-},
-
-{
-  id: 'butt-shit-wild',
-  logo: 'fantom/SHIT-WILD.png',
-  name: 'WILD-SHIT LP',
-  token: 'WILD-SHIT LP (Zoo)',
-  tokenDescription: 'Buttcoin',
-  tokenAddress: '0x4aC3643E27E41f630F1c0b7E39B2e849876D01C3',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-SHI-WIL-E',
-  earnedTokenAddress: '0xE437C40d70A465af670aaE0b0FEa32D33Dc5e624',
-  earnContractAddress: '0xE437C40d70A465af670aaE0b0FEa32D33Dc5e624',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'butt-shit-wild',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'Buttcoin',
-  assets: ['SHIT', 'WILD'],
-  callFee: 0.5,
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B&outputCurrency=0xAe0C241Ec740309c2cbdc27456eB3C1a2aD74737',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
   zap: {
     zapAddress: VAULT_ZAP,
     router: ZOO_ROUTER,
@@ -8886,6 +9042,7 @@ const pools = [
   platform: 'Buttcoin',
   assets: ['HODL', 'SHIT'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x9030c1F9Af5a7457A8E89a05C42a0Ed6DeE51A8D',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B&outputCurrency=0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
   zap: {
@@ -8922,6 +9079,7 @@ const pools = [
   platform: 'Buttcoin',
   assets: ['HODL', 'BUTT'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x3cAF51d882594c5aA980611aead947f80794A804',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0&outputCurrency=0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
   zap: {
@@ -8960,6 +9118,7 @@ const pools = [
   platform: 'Buttcoin',
   assets: ['SHIT', 'TOTEM'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x778569244e2a7A73804435f170832E938596EF94',
   addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B&outputCurrency=0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
   buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
   zap: {
@@ -8996,6 +9155,7 @@ const pools = [
   platform: 'Buttcoin',
   assets: ['SHIT', 'BABYBOO'],
   callFee: 0.5,
+  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x2B870b5EcD0Ad4ACeeCb4Aa27A8A2c47eB476d50',
   addLiquidityUrl: 'https://spookyswap.finance/add/0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B/0x471762A7017A5B1A3e931F1A97aa03Ef1E7F4A73',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x471762a7017a5b1a3e931f1a97aa03ef1e7f4a73',
   zap: {
@@ -9031,6 +9191,7 @@ const pools = [
   platform: 'OperaSwap',
   assets: ['OPERA'],
   callFee: 0.5,
+  priceChart: '',
   buyTokenUrl: 'https://exchange.operaswap.finance/#/swap',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -9073,6 +9234,7 @@ const pools = [
   platform: 'OperaSwap',
   assets: ['OPERA', 'FTM'],
   callFee: 0.5,
+  priceChart: '',
   addLiquidityUrl: 'https://exchange.operaswap.finance/#/pool',
   buyTokenUrl: 'https://exchange.operaswap.finance/#/swap',
   zap: {
