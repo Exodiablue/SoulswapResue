@@ -73,13 +73,13 @@ const PoolTitle = ({
       {avatar}
       <div className={classes.texts}>
         <Typography className={classes.title} variant="body2" gutterBottom>
-          {poolId ? (
+          {poolId && priceChart != '' ? (
             <a className={classes.url} href={priceChart} target="_blank" rel="noopener noreferrer"> {name} </a>
             // <a href={`/vault/${poolId}`} className={classes.url}>
             //   {name}
             // </a>
           ) : (
-            name
+            <a className={classes.url}>{name} </a>
           )}
         </Typography>
         <Typography className={classes.subtitle} variant="body2">

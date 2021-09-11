@@ -40,11 +40,18 @@ const Pool = ({
       }
     }
   };
+  var accordionClass = classes.accordion
+  if (pool.id.includes("inspirit-")){
+    accordionClass=classes.inspiritAccordion
+  }
+  if (pool.id.includes("xboo")){
+    accordionClass=classes.xbooAccordion
+  }
   return (
     <Grid item xs={12} container key={index} className={classes.container} spacing={0}>
       <Accordion
         expanded={isOpen}
-        className={ pool.id.includes("inspirit-") ? classes.inspiritAccordiion : classes.accordion }
+        className={accordionClass}
         square={true}
         TransitionProps={{ unmountOnExit: true }}
       >
