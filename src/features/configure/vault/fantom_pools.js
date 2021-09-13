@@ -1967,6 +1967,42 @@ const pools = [
 },
 
 {
+  id: 'xboo',
+  logo: 'fantom/xBOO.png',
+  name: 'xBOO',
+  token: 'BOO',
+  tokenDescription: 'SpookySwap | By depositing BOO your balance will be converted into xBOO and you’re earning the usual rewards from both xBOO protocol revenue (swap fees) and wFTM (token choice rewards). All rewards are compounded into BOO.',
+  tokenAddress: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'GxBOO',
+  earnedTokenAddress: '0x4EEC400c28989FB4E3532699c78fF31bA16303a3',
+  earnContractAddress: '0x4EEC400c28989FB4E3532699c78fF31bA16303a3',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'BOO',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SpookySwap',
+  assets: ['BOO'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x841fad6eae12c286d1fd18d1d525dffa75c7effe',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+
+    tokens: [
+     
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
   id: 'boo',
   logo: 'fantom/BOO.png',
   name: 'BOO',
@@ -5178,7 +5214,7 @@ const pools = [
   oracleId: 'bone-babybone-bone',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'ShibaSwap (Purge Weekend Event)',
   assets: ['BONE','BABYBONE'],
   callFee: 0.5,
@@ -7490,7 +7526,7 @@ const pools = [
 },
 
 {
-  id: 'hertz',
+  id: 'htz',
   logo: 'fantom/HERTZ.png',
   name: 'HERTZ',
   token: 'HERTZ',
