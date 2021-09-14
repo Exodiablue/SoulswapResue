@@ -5567,7 +5567,7 @@ const pools = [
   oracleId: 'bone-laika-ftm',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'ShibaSwap',
   assets: ['LAIKA','FTM'],
   callFee: 0.5,
@@ -9696,8 +9696,7 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spookyTokens,
-      ...zapTokensNoFtm,
+      ...zapTokens,
     ],
   },
 },
