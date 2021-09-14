@@ -154,15 +154,15 @@ const zapTokensReduced = [
 ];
 
 const zapTokensNoFtm = [
-  {
-    name: 'Dai Stablecoin',
-    address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
-    symbol: 'DAI',
-    decimals: 18,
-    chainId: 250,
-    logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
-    isToken: true,
-  },
+  // {
+  //   name: 'Dai Stablecoin',
+  //   address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+  //   symbol: 'DAI',
+  //   decimals: 18,
+  //   chainId: 250,
+  //   logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
+  //   isToken: true,
+  // },
   {
     name: 'USD Coin',
     address: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
@@ -9507,6 +9507,7 @@ const pools = [
   platform: 'Morpheus',
   assets: ['MORPH'],
   callFee: 0.5,
+  depositFee: '4% from Farm Provider',
   priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
   zap: {
@@ -9542,6 +9543,7 @@ const pools = [
   platform: 'Morpheus',
   assets: ['MORPH'],
   callFee: 0.5,
+  depositFee: '4% from Farm Provider',
   priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
   zap: {
@@ -9576,6 +9578,7 @@ const pools = [
   platform: 'Morpheus',
   assets: ['MORPH'],
   callFee: 0.5,
+  depositFee: '4% from Farm Provider',
   priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
@@ -9611,6 +9614,7 @@ const pools = [
   platform: 'Morpheus',
   assets: ['BTC'],
   callFee: 0.5,
+  depositFee: '4% from Farm Provider',
   priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
@@ -9646,6 +9650,7 @@ const pools = [
   platform: 'Morpheus',
   assets: ['BNB'],
   callFee: 0.5,
+  depositFee: '4% from Farm Provider',
   priceChart: 'https://spookyswap.finance/swap?outputCurrency=0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   zap: {
@@ -9681,6 +9686,7 @@ const pools = [
   platform: 'Morpheus',
   assets: ['SCREAM'],
   callFee: 0.5,
+  depositFee: '4% from Farm Provider',
   priceChart: 'https://spookyswap.finance/swap?outputCurrency=0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
   zap: {
@@ -9716,6 +9722,7 @@ const pools = [
   platform: 'Morpheus',
   assets: ['USDC'],
   callFee: 0.5,
+  depositFee: '4% from Farm Provider',
   priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
@@ -9751,6 +9758,7 @@ const pools = [
   platform: 'Morpheus',
   assets: ['fUSDT'],
   callFee: 0.5,
+  depositFee: '4% from Farm Provider',
   priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   zap: {
@@ -9786,6 +9794,7 @@ const pools = [
   platform: 'Morpheus',
   assets: ['DAI'],
   callFee: 0.5,
+  depositFee: '4% from Farm Provider',
   priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   zap: {
