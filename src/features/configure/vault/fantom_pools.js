@@ -1131,6 +1131,43 @@ const pools = [
 },
 
 {
+  id: 'spirit-spell-fusdt',
+  logo: 'fantom/SPELL-FUSDT.png',
+  name: 'SPELL-FUSDT LP',
+  token: 'SPELL-FUSDT LP (SpiritSwap)',
+  tokenDescription: 'SpiritSwap',
+  tokenAddress: '0x31c0385DDE956f95D43Dac80Bd74FEE149961f4c',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SPE-FUS-1',
+  earnedTokenAddress: '0x2860eE2A8D3e90BF648e3d5899D42144D28dE710',
+  earnContractAddress: '0x2860eE2A8D3e90BF648e3d5899D42144D28dE710',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'spirit-spell-fusdt',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SpiritSwap',
+  assets: ['SPELL', 'fUSDT'],
+  callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x31c0385DDE956f95D43Dac80Bd74FEE149961f4c',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x468003B688943977e6130F4F68F23aad939a1040/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x468003B688943977e6130F4F68F23aad939a1040',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
   id: 'spirit-dai-spirit',
   logo: 'fantom/DAI-SPIRIT.png',
   name: 'DAI-SPIRIT LP',
@@ -6904,6 +6941,41 @@ const pools = [
 }, 
 
 {
+  id: 'totem-musd-usdc',
+  logo: 'fantom/MUSD-USDC.png',
+  name: 'MUSD-USDC LP',
+  token: 'MUSD-USDC LP (PaintSwap)',
+  tokenDescription: 'Totem',
+  tokenAddress: '0xbbDC6709a3094243900781a66BAE05a9F5149d46',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-MUS-USD-M',
+  earnedTokenAddress: '0xe2210b9b82Df850041d247688871c32a4B8688E2',
+  earnContractAddress: '0xe2210b9b82Df850041d247688871c32a4B8688E2',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'totem-musd-usdc',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Totem',
+  assets: ['MUSD', 'USDC'],
+  callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0xbbDC6709a3094243900781a66BAE05a9F5149d46',
+  addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/0x3f43494A716fB3F341280bc664b69766878BC78d/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x3f43494a716fb3f341280bc664b69766878bc78d',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: PAINT_ROUTER,
+
+    tokens: [
+      ...paintTokens,
+    ],
+  },
+}, 
+
+{
   id: 'totem-totem-usdc',
   logo: 'fantom/TOTEM-USDC.png',
   name: 'TOTEM-USDC LP',
@@ -6973,43 +7045,7 @@ const pools = [
       ...zapTokens,
     ],
   },
-}, 
-
-{
-  id: 'totem-usdc-ftm',
-  logo: 'fantom/USDC-FTM.png',
-  name: 'USDC-FTM LP',
-  token: 'USDC-FTM LP (SpiritSwap)',
-  tokenDescription: 'Totem',
-  tokenAddress: '0xe7E90f5a767406efF87Fdad7EB07ef407922EC1D',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-USD-FTM-M',
-  earnedTokenAddress: '0x97F8e88fC5AD29e301373EC2b055C268A2176D75',
-  earnContractAddress: '0x97F8e88fC5AD29e301373EC2b055C268A2176D75',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'totem-usdc-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Totem',
-  assets: ['USDC', 'FTM'],
-  callFee: 0.5,
-  priceChart: 'https://info.spiritswap.finance/pair/0xe7E90f5a767406efF87Fdad7EB07ef407922EC1D',
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      ...spiritTokens,
-      ...zapTokens,
-    ],
-  },
-}, 
+},  
 
 {
   id: 'totem-hodl-ftm',
@@ -7630,44 +7666,6 @@ const pools = [
     tokens: [
     
     // ...paintTokens,
-
-    ],
-  },
-},
-
-{
-  id: 'paint-hodl-ftm',
-  logo: 'fantom/HODL-FTM.png',
-  name: 'HODL-FTM LP',
-  token: 'HODL-FTM LP (PaintSwap)',
-  tokenDescription: 'PaintSwap | Note: 50% of Rewards are Locked and Automatically Redeemed After 12 Weeks',
-  tokenAddress: '0x06BEF78Cd8bb17a6dAceD10B610884C09f36FdB7',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-HOD-FTM-N',
-  earnedTokenAddress: '0x1DFFe61B283BF4aFbC9265A33f58Efe221157d73',
-  earnContractAddress: '0x1DFFe61B283BF4aFbC9265A33f58Efe221157d73',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'paint-hodl-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'PaintSwap',
-  assets: ['HODL', 'FTM'],
-  callFee: 0.5,
-  priceChart: 'https://info.paintswap.finance/pair/0x06BEF78Cd8bb17a6dAceD10B610884C09f36FdB7',
-  withdrawalFee: '0.5% from Farm Provider',
-  addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343/FTM',
-  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0xB2Da66c4a89D0f93935D1efDB9C9c8D1d3Ba9343',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: PAINT_ROUTER,
-
-    tokens: [
-    
-    ...paintTokens,
 
     ],
   },
@@ -9472,7 +9470,7 @@ const pools = [
   platform: 'Morpheus',
   assets: ['MORPH'],
   callFee: 0.5,
-  priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x0789ff5ba37f72abc4d561d00648acadc897b32d',
+  priceChart: 'https://info.spookyswap.finance/token/0x0789fF5bA37f72ABC4D561D00648acaDC897b32d',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x0789ff5ba37f72abc4d561d00648acadc897b32d',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -9508,7 +9506,7 @@ const pools = [
   assets: ['MORPH'],
   callFee: 0.5,
   depositFee: '4% from Farm Provider',
-  priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+  priceChart: 'https://info.spookyswap.finance/token/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -9544,7 +9542,7 @@ const pools = [
   assets: ['MORPH'],
   callFee: 0.5,
   depositFee: '4% from Farm Provider',
-  priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+  priceChart: 'https://info.spookyswap.finance/token/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -9579,7 +9577,7 @@ const pools = [
   assets: ['MORPH'],
   callFee: 0.5,
   depositFee: '4% from Farm Provider',
-  priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  priceChart: 'https://info.spookyswap.finance/token/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -9615,7 +9613,7 @@ const pools = [
   assets: ['BTC'],
   callFee: 0.5,
   depositFee: '4% from Farm Provider',
-  priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
+  priceChart: 'https://info.spookyswap.finance/token/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -9651,7 +9649,7 @@ const pools = [
   assets: ['BNB'],
   callFee: 0.5,
   depositFee: '4% from Farm Provider',
-  priceChart: 'https://spookyswap.finance/swap?outputCurrency=0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
+  priceChart: 'https://info.spookyswap.finance/token/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -9687,7 +9685,7 @@ const pools = [
   assets: ['SCREAM'],
   callFee: 0.5,
   depositFee: '4% from Farm Provider',
-  priceChart: 'https://spookyswap.finance/swap?outputCurrency=0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
+  priceChart: 'https://info.spookyswap.finance/token/0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -9723,7 +9721,7 @@ const pools = [
   assets: ['USDC'],
   callFee: 0.5,
   depositFee: '4% from Farm Provider',
-  priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  priceChart: 'https://info.spookyswap.finance/token/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -9759,7 +9757,7 @@ const pools = [
   assets: ['fUSDT'],
   callFee: 0.5,
   depositFee: '4% from Farm Provider',
-  priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+  priceChart: 'https://info.spookyswap.finance/token/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   zap: {
     zapAddress: VAULT_ZAP,
@@ -9795,7 +9793,7 @@ const pools = [
   assets: ['DAI'],
   callFee: 0.5,
   depositFee: '4% from Farm Provider',
-  priceChart: 'https://spookyswap.finance/swap?outputCurrency=0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+  priceChart: 'https://info.spookyswap.finance/token/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   zap: {
     zapAddress: VAULT_ZAP,
