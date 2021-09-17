@@ -726,6 +726,44 @@ const pools = [
 },
 
 {
+  id: 'morph-reaper-ftm',
+  logo: 'fantom/REAPER-FTM.png',
+  name: 'REAPER-FTM',
+  token: 'REAPER-FTM LP (SpookySwap)',
+  tokenDescription: 'Morpheus',
+  tokenAddress: '0x8c24602E232b13703AFCda2FB661228C9005cE8C',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-REA-FTM-Q',
+  earnedTokenAddress: '0x1884bF349815E66aAD5201E47294F1EA2336db3D',
+  earnContractAddress: '0x1884bF349815E66aAD5201E47294F1EA2336db3D',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'morph-reaper-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Morpheus',
+  assets: ['REAPER', 'FTM'],
+  callFee: 0.5,
+  depositFee: '2% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/pair/0x8c24602E232b13703AFCda2FB661228C9005cE8C',
+  addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x117db78176c8ede4f12fcd29d85cd96b91a4cbbb',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
   id: 'bone-reaper-ftm',
   logo: 'fantom/REAPER-FTM.png',
   name: 'REAPER-FTM LP',
@@ -1641,44 +1679,6 @@ const pools = [
       ...spiritTokens,
       ...zapTokens,
 
-
-    ],
-  },
-},
-
-
-{
-  id: 'spirit-spirit-xsteak',
-  logo: 'fantom/SPIRIT-XSTEAK.png',
-  name: 'SPIRIT-XSTEAK LP',
-  token: 'SPIRIT-XSTEAK LP (SpiritSwap)',
-  tokenDescription: 'SpiritSwap',
-  tokenAddress: '0xe276a71991a7a7b16cb453db2994ce9fcda2eda6',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-SPI-XSTE-1',
-  earnedTokenAddress: '0xB5a7854D6F034D53FF3c57E5E75E3F2A3B4957e0',
-  earnContractAddress: '0xB5a7854D6F034D53FF3c57E5E75E3F2A3B4957e0',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'spirit-spirit-xsteak',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'SpiritSwap',
-  assets: ['SPIRIT', 'XSTEAK'],
-  callFee: 0.5,
-  priceChart: 'https://info.spiritswap.finance/pair/0xe276a71991a7a7b16cb453db2994ce9fcda2eda6',
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0xb632c5d42BD4a44a617608Ad1c7d38f597E22E3C',
-  buyTokenUrl: 'https://stakesteak.com/staking',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      // ...spiritTokens,
-      // ...zapTokens,
 
     ],
   },
@@ -5476,46 +5476,6 @@ const pools = [
 },
 
 {
-  id: 'bone-laika-ftm',
-  logo: 'fantom/LAIKA-FTM.png',
-  name: 'LAIKA-FTM LP',
-  token: 'LAIKA-FTM LP (ShibaSwap)',
-  tokenDescription: 'ShibaSwap',
-  tokenAddress: '0x96403B19065D604De3D3D7FC9aAE84BFe96Fd3dC',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-LAI-FTM-I',
-  earnedTokenAddress: '0x0b3A36b28e7c5E01635c1d33983c10eAF9109402',
-  earnContractAddress: '0x0b3A36b28e7c5E01635c1d33983c10eAF9109402',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'bone-laika-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'ShibaSwap',
-  assets: ['LAIKA','FTM'],
-  callFee: 0.5,
-  priceChart: '',
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0xaeDdc4A469acE97e90C605e3F52EB89620e305C0',
-  buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SHIBA_ROUTER,
-
-    tokens: [
-      // ...shibaTokens,
-      // ...zapTokensReduced,
-
-
-
-    ],
-  },
-},
-
-{
   id: 'curve-ftm-fusdt',
   logo: 'fantom/DAI-USDC-FUSDT.png',
   name: 'DAI-USDT-FUSDT LP',
@@ -5973,63 +5933,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
-     
-      ...zapTokens,
 
-
-
-    ],
-  },
-},
-
-{
-  id: "lqdr-zoo-ftm",
-  logo: 'fantom/ZOO-FTM.png',
-  name: 'ZOO-FTM LP',
-  token: 'ZOO-FTM LP (LiquidDriver)',
-  tokenDescription: 'LiquidDriver',
-  tokenAddress: '0x3Ac28d350C59ef9054B305DFe9078fADc3cecABe',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-ZOO-FTM-0',
-  earnedTokenAddress: '0x499b4B436c394B6564dA90f535B2ac70697d3830',
-  earnContractAddress: '0x499b4B436c394B6564dA90f535B2ac70697d3830',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "lqdr-zoo-ftm",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'LiquidDriver',
-  assets: ['ZOO', 'FTM'],
-  callFee: 0.5,
-  priceChart: '',
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://app.sushi.com/add/ETH/0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56',
-  buyTokenUrl: 'https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x09e145a1d53c0045f41aeef25d8ff982ae74dd56',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SUSHI_ROUTER,
-
-    tokens: [
-
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
      
       ...zapTokens,
 
@@ -6071,14 +5975,7 @@ const pools = [
 
     tokens: [
 
-      {
-        name: 'LQDR',
-        symbol: 'LQDR',
-        address: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        tokenAddress: '0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9',
-        decimals: 18,
-        logoURI: '',
-      },
+
      
       ...zapTokens,
 
@@ -6970,7 +6867,7 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-      ...paintTokens,
+      // ...paintTokens,
     ],
   },
 }, 
@@ -9906,6 +9803,43 @@ const pools = [
   priceChart: 'https://info.spookyswap.finance/pair/0xEc7178F4C41f346b2721907F5cF7628E388A7a58',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'morph-tomb-morph',
+  logo: 'fantom/MORPH-TOMB.png',
+  name: 'TOMB-MORPH',
+  token: 'TOMB-MORPH LP (SpookySwap)',
+  tokenDescription: 'Morpheus',
+  tokenAddress: '0x224A9029c65d4A34dde7393c439ba0C6089c207d',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-TOM-MOR-Q',
+  earnedTokenAddress: '0xf80CaECd4053fd9B85EB290094d1e558743f6b36',
+  earnContractAddress: '0xf80CaECd4053fd9B85EB290094d1e558743f6b36',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'morph-tomb-morph',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Morpheus',
+  assets: ['MORPH', 'TOMB'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x224A9029c65d4A34dde7393c439ba0C6089c207d',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7/0x0789fF5bA37f72ABC4D561D00648acaDC897b32d',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x0789fF5bA37f72ABC4D561D00648acaDC897b32d',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
