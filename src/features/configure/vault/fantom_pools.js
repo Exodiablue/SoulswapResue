@@ -11,6 +11,7 @@ const SHIBA_ROUTER = '0xB6f7b3d8CD9dBf30805C0dd79809dace5603Ce6A';
 const OPERA_ROUTER = '0xE372753F66644A1197AB85Ff529ed02995ED2d6C';
 const ZOO_ROUTER = '0x40b12a3E261416fF0035586ff96e23c2894560f2';
 const XDAO_ROUTER = '0xD9B37cA21e53581F784fFB265F9BFBcF9AD255d6';
+const OLIVE_ROUTER = '0xF491e7B69E4244ad4002BC14e878a34207E38c29';
 
 const zapTokens = [
   {
@@ -433,6 +434,27 @@ const bombTokens = [
   //   chainId: 250,
   //   logoURI: '',
   // },
+
+];
+
+const oliveTokens = [
+  {
+    name: 'Fantom',
+    address: '',
+    symbol: 'FTM',
+    wrappedSymbol: 'WFTM',
+    decimals: 18,
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/WFTM_32.png',
+  },
+  {
+    name: 'USD Coin',
+    address: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+    symbol: 'USDC',
+    decimals: 6,
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/USDC_32.png',
+  },
 
 ];
 
@@ -9959,12 +9981,406 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spookyTokens,
-      ...zapTokens,
+      ...zapTokensReduced,
 
     ],
   },
 },
+
+{
+  id: 'olive-olive',
+  logo: 'fantom/OLIVE.png',
+  name: 'OLIVE',
+  token: 'OLIVE',
+  tokenDescription: 'OliveSwap',
+  tokenAddress: '0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-OLIVE-R',
+  earnedTokenAddress: '0x1f4a1327f521f86870BE4a5011e8A73eF20C5Af7',
+  earnContractAddress: '0x1f4a1327f521f86870BE4a5011e8A73eF20C5Af7',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'fOLIVE',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'OliveSwap',
+  assets: ['fOLIVE'],
+  callFee: 0.5,
+  priceChart: '',
+  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: OLIVE_ROUTER,
+
+    tokens: [
+      ...oliveTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'olive-olive-ftm',
+  logo: 'fantom/OLIVE-FTM.png',
+  name: 'OLIVE-FTM',
+  token: 'OLIVE-FTM LP (OliveSwap)',
+  tokenDescription: 'OliveSwap',
+  tokenAddress: '0xf1D412010EDA1bbf09A2BCC938bc8d9EBbDc5889',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-OLI-FTM-R',
+  earnedTokenAddress: '0x8fF61b93E2F6e3cB29c4AF0C656530F8a140624e',
+  earnContractAddress: '0x8fF61b93E2F6e3cB29c4AF0C656530F8a140624e',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'olive-olive-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'OliveSwap',
+  assets: ['fOLIVE', 'FTM'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://fantom.olive.cash/add/FTM/0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: OLIVE_ROUTER,
+
+    tokens: [
+      ...oliveTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'olive-olive-usdc',
+  logo: 'fantom/OLIVE-FTM.png',
+  name: 'OLIVE-FTM',
+  token: 'OLIVE-FTM LP (OliveSwap)',
+  tokenDescription: 'OliveSwap',
+  tokenAddress: '0x2438d4f480860AeA036D5711Fa1b7DcD621dc5D7',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-OLI-USD-R',
+  earnedTokenAddress: '0x03E532534336B87036E64244c4851Af782956Eb3',
+  earnContractAddress: '0x03E532534336B87036E64244c4851Af782956Eb3',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'olive-olive-usdc',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'OliveSwap',
+  assets: ['fOLIVE', 'USDC'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://fantom.olive.cash/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: OLIVE_ROUTER,
+
+    tokens: [
+      ...oliveTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'olive-usdc-ftm',
+  logo: 'fantom/USDC-FTM.png',
+  name: 'USDC-FTM',
+  token: 'USDC-FTM LP (OliveSwap)',
+  tokenDescription: 'OliveSwap',
+  tokenAddress: '0x2b4C76d0dc16BE1C31D4C1DC53bF9B45987Fc75c',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-USD-FTM-R',
+  earnedTokenAddress: '0x5Fdc4D309aaa76c68c3757057776298824D9BA2A',
+  earnContractAddress: '0x5Fdc4D309aaa76c68c3757057776298824D9BA2A',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'olive-usdc-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'OliveSwap',
+  assets: ['FTM', 'USDC'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://fantom.olive.cash/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/FTM',
+  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: OLIVE_ROUTER,
+
+    tokens: [
+      ...oliveTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'olive-boo-ftm',
+  logo: 'fantom/BOO-FTM.png',
+  name: 'BOO-FTM',
+  token: 'BOO-FTM LP (OliveSwap)',
+  tokenDescription: 'OliveSwap',
+  tokenAddress: '0xEc7178F4C41f346b2721907F5cF7628E388A7a58',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BOO-FTM-R',
+  earnedTokenAddress: '0xCE3754f280874124F304788A075867cF3C8F19dD',
+  earnContractAddress: '0xCE3754f280874124F304788A075867cF3C8F19dD',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'olive-boo-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'OliveSwap',
+  assets: ['FTM', 'BOO'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://fantom.olive.cash/add/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE/FTM',
+  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: OLIVE_ROUTER,
+
+    tokens: [
+      ...oliveTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'olive-usdc-fusdt',
+  logo: 'fantom/USDC-FUSDT.png',
+  name: 'USDC-FUSDT',
+  token: 'USDC-FUSDT LP (OliveSwap)',
+  tokenDescription: 'OliveSwap',
+  tokenAddress: '0xFdef392aDc84607135C24ca45DE5452d77aa10DE',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-USD-FUS-R',
+  earnedTokenAddress: '0xc62A9dF6f51Ac6f4A537aFc4d3C080C29E51B004',
+  earnContractAddress: '0xc62A9dF6f51Ac6f4A537aFc4d3C080C29E51B004',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'olive-usdc-fusdt',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'OliveSwap',
+  assets: ['USDC', 'fUSDT'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://fantom.olive.cash/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: OLIVE_ROUTER,
+
+    tokens: [
+      ...oliveTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'olive-totem-ftm',
+  logo: 'fantom/TOTEM-FTM.png',
+  name: 'TOTEM-FTM',
+  token: 'TOTEM-FTM LP (OliveSwap)',
+  tokenDescription: 'OliveSwap',
+  tokenAddress: '0x85263F06633A75f43A4074CaC84d6C4474080c9C',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-TOT-FTM-R',
+  earnedTokenAddress: '0xc2F69EAB010c15668A90b9D6ac3188Ae54Ff157b',
+  earnContractAddress: '0xc2F69EAB010c15668A90b9D6ac3188Ae54Ff157b',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'olive-totem-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'OliveSwap',
+  assets: ['FTM', 'TOTEM'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://fantom.olive.cash/add/0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f/FTM',
+  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: OLIVE_ROUTER,
+
+    tokens: [
+      ...oliveTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'olive-morph-ftm',
+  logo: 'fantom/MORPH-FTM.png',
+  name: 'MORPH-FTM',
+  token: 'MORPH-FTM LP (OliveSwap)',
+  tokenDescription: 'OliveSwap',
+  tokenAddress: '0x7D42442f764985F208E6fa6A7CD0e253CB447D58',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-MOR-FTM-R',
+  earnedTokenAddress: '0xE1B5D6702da690214AbD682F41210Cb2B58Ff917',
+  earnContractAddress: '0xE1B5D6702da690214AbD682F41210Cb2B58Ff917',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'olive-morph-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'OliveSwap',
+  assets: ['FTM', 'MORPH'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://fantom.olive.cash/add/0x0789fF5bA37f72ABC4D561D00648acaDC897b32d/FTM',
+  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0x0789fF5bA37f72ABC4D561D00648acaDC897b32d',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: OLIVE_ROUTER,
+
+    tokens: [
+      ...oliveTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'olive-dai-usdc',
+  logo: 'fantom/DAI-USDC.png',
+  name: 'DAI-USDC',
+  token: 'DAI-USDC LP (OliveSwap)',
+  tokenDescription: 'OliveSwap',
+  tokenAddress: '0x484237bc35cA671302d19694c66d617142FBC235',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-DAI-USD-R',
+  earnedTokenAddress: '0x17665Eb957b9F9A575aC114E08318b245D5f56AD',
+  earnContractAddress: '0x17665Eb957b9F9A575aC114E08318b245D5f56AD',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'olive-dai-usdc',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'OliveSwap',
+  assets: ['DAI', 'USDC'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://fantom.olive.cash/add/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: OLIVE_ROUTER,
+
+    tokens: [
+      ...oliveTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'olive-fusd-usdc',
+  logo: 'fantom/DAI-USDC.png',
+  name: 'DAI-USDC',
+  token: 'DAI-USDC LP (OliveSwap)',
+  tokenDescription: 'OliveSwap',
+  tokenAddress: '0x2e534f61137312078E94cb90Cdc596D8BcD3C36F',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-FUS-USD-R',
+  earnedTokenAddress: '0x42ecC143bbbDc1461372FF303dB7127A5849e69f',
+  earnContractAddress: '0x42ecC143bbbDc1461372FF303dB7127A5849e69f',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'olive-fusd-usdc',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'OliveSwap',
+  assets: ['FUSD', 'USDC'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://fantom.olive.cash/add/0xAd84341756Bf337f5a0164515b1f6F993D194E1f/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: OLIVE_ROUTER,
+
+    tokens: [
+      ...oliveTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'olive-usdc-mim',
+  logo: 'fantom/USDC-MIM.png',
+  name: 'DAI-USDC',
+  token: 'DAI-USDC LP (OliveSwap)',
+  tokenDescription: 'OliveSwap',
+  tokenAddress: '0x484237bc35cA671302d19694c66d617142FBC235',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-DAI-USD-R',
+  earnedTokenAddress: '0x833F6d14B0990e1f8eD5106E47b4EB7B3d132Be3',
+  earnContractAddress: '0x833F6d14B0990e1f8eD5106E47b4EB7B3d132Be3',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'olive-usdc-mim',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'OliveSwap',
+  assets: ['MIM', 'USDC'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://fantom.olive.cash/add/0x82f0B8B456c1A451378467398982d4834b6829c1/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: OLIVE_ROUTER,
+
+    tokens: [
+      ...oliveTokens,
+
+    ],
+  },
+}
 
 ];
 
