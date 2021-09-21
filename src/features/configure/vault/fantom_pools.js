@@ -1299,6 +1299,42 @@ const pools = [
 },
 
 {
+  id: 'spirit-usdc-papr',
+  logo: 'fantom/PAPR-USDC.png',
+  name: 'PAPR-USDC LP',
+  token: 'PAPR-USDC LP (SpiritSwap)',
+  tokenDescription: 'SpiritSwap',
+  tokenAddress: '0x64bB8a5A4b2f7bd354876059c845c77Cb4554818',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-PAP-USD-1',
+  earnedTokenAddress: '0xb575f7009eAA5112aD87d6a8EF0ba910C9Ab1EF5',
+  earnContractAddress: '0xb575f7009eAA5112aD87d6a8EF0ba910C9Ab1EF5',
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'spirit-usdc-papr',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SpiritSwap',
+  assets: ['USDC', 'PAPR'],
+  callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x64bB8a5A4b2f7bd354876059c845c77Cb4554818',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0xC5e7A99A20941cBF56E0D4De608332cDB792e23e/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xC5e7A99A20941cBF56E0D4De608332cDB792e23e',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
   id: 'spirit-busd-fusdt',
   logo: 'fantom/BUSD-FUSDT.png',
   name: 'BUSD-FUSDT LP',
