@@ -570,6 +570,43 @@ const pools = [
 },
 
 {
+  id: 'spirit-grim-ftm',
+  logo: 'fantom/GRIM-FTM.png',
+  name: 'GRIM-FTM LP',
+  token: 'GRIM-FTM LP (SpiritSwap)',
+  tokenDescription: 'SpiritSwap',
+  tokenAddress: '0x2c18c39622b90318b0124ecfd6d4ac81efcc51db',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-GRI-FTM-1',
+  earnedTokenAddress: '0x1e77c29D95A6a3d5DD97Ff3d057929Edf880A8Df',
+  earnContractAddress: '0x1e77c29D95A6a3d5DD97Ff3d057929Edf880A8Df',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'spirit-grim-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SpiritSwap',
+  assets: ['GRIM', 'FTM'],
+  callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x2c18c39622b90318b0124ecfd6d4ac81efcc51db',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x7eC94C4327dC757601B4273cD67014d7760Be97E',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+    ],
+  },
+}, 
+
+
+{
   id: 'totem-grim-ftm',
   logo: 'fantom/GRIM-FTM.png',
   name: 'GRIM-FTM LP ',
