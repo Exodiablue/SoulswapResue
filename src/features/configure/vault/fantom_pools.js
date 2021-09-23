@@ -1851,44 +1851,6 @@ const pools = [
 },
 
 {
-  id: 'spirit-usdc-gton',
-  logo: 'fantom/GTON-USDC.png',
-  name: 'USDC-GTON LP',
-  token: 'USDC-GTON LP (SpiritSwap)',
-  tokenDescription: 'SpiritSwap',
-  tokenAddress: '0x8a5555c4996B72E5725Cf108Ad773Ce5E715DED4',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-USD-GTO-1',
-  earnedTokenAddress: '0xb64d101172600FF652B669A813Fee37616182023',
-  earnContractAddress: '0xb64d101172600FF652B669A813Fee37616182023',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'spirit-usdc-gton',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'SpiritSwap',
-  assets: ['USDC', 'GTON'],
-  callFee: 0.5,
-  priceChart: 'https://info.spiritswap.finance/pair/0x8a5555c4996B72E5725Cf108Ad773Ce5E715DED4',
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0xC1Be9a4D5D45BeeACAE296a7BD5fADBfc14602C4',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xC1Be9a4D5D45BeeACAE296a7BD5fADBfc14602C4',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      // ...spiritTokens,
-      // ...zapTokens,
-
-
-    ],
-  },
-},
-
-{
   id: 'spirit-zoo-ftm',
   logo: 'fantom/ZOO-FTM.png',
   name: 'ZOO-FTM LP',
@@ -2102,43 +2064,6 @@ const pools = [
   priceChart: 'https://info.spiritswap.finance/pair/0x040dd0d0f5e2a01fEb0C5457AbB588B23Cf4c43a',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6/FTM',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      ...spiritTokens,
-      ...zapTokens,
-
-    ],
-  },
-},
-
-{
-  id: 'spirit-frax-ftm',
-  logo: 'fantom/FRAX-FTM.png',
-  name: 'FRAX-FTM LP',
-  token: 'FRAX-FTM LP (SpiritSwap)',
-  tokenDescription: 'SpiritSwap',
-  tokenAddress: '0x0eC0E1629E776272FA3E55548D4A656BE0EEdcF4',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-FRA-FTM-1',
-  earnedTokenAddress: '0x8C2DCB72c80a4e4014D0EAda094a4DD690c6fe37',
-  earnContractAddress: '0x8C2DCB72c80a4e4014D0EAda094a4DD690c6fe37',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'spirit-frax-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'SpiritSwap',
-  assets: ['FRAX', 'FTM'],
-  callFee: 0.5,
-  priceChart: 'https://info.spiritswap.finance/pair/0x0eC0E1629E776272FA3E55548D4A656BE0EEdcF4',
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/FTM/0xaf319E5789945197e365E7f7fbFc56B130523B33',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xaf319E5789945197e365E7f7fbFc56B130523B33',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPIRIT_ROUTER,
@@ -5512,46 +5437,6 @@ const pools = [
   callFee: 0.5,
   priceChart: '',
   addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0x9Ba3e4F84a34DF4e08C112e1a0FF148b81655615',
-  buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SHIBA_ROUTER,
-
-    tokens: [
-      // ...shibaTokens,
-      // ...zapTokensReduced,
-
-
-
-    ],
-  },
-},
-
-{
-  id: 'bone-babybone-bone',
-  logo: 'fantom/BONE-BABYBONE.png',
-  name: 'BABYBONE-BONE LP',
-  token: 'BABYBONE-BONE LP (ShibaSwap)',
-  tokenDescription: 'ShibaSwap',
-  tokenAddress: '0x0a40278fC50389F73E73e6e02A159784f7F67CE2',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-BAB-BON-I',
-  earnedTokenAddress: '0x54994eA8Ba0304dB0A50ef8E4Df589580688F70e',
-  earnContractAddress: '0x54994eA8Ba0304dB0A50ef8E4Df589580688F70e',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'bone-babybone-bone',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'ShibaSwap',
-  assets: ['BONE','BABYBONE'],
-  callFee: 0.5,
-  priceChart: '',
-  depositFee: '1% from Farm Provider',
-  addLiquidityUrl: 'https://swap.shibafantom.finance/#/add/0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a/0x7f431316E419e0188337739196D04E67cb7A23D7',
   buyTokenUrl: 'https://swap.shibafantom.finance/#/swap?outputCurrency=0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
   zap: {
     zapAddress: VAULT_ZAP,
