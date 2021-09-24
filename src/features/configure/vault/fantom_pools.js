@@ -9980,44 +9980,6 @@ const pools = [
 },
 
 {
-  id: 'morph-papr-usdc',
-  logo: 'fantom/PAPR-USDC.png',
-  name: 'PAPR-USDC',
-  token: 'PAPR-USDC LP (SpiritSwap)',
-  tokenDescription: 'Morpheus',
-  tokenAddress: '0x64bB8a5A4b2f7bd354876059c845c77Cb4554818',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-PAP-USD-Q',
-  earnedTokenAddress: '0xc88bBF967d01e51a8d14525631F96754E38BFfDA',
-  earnContractAddress: '0xc88bBF967d01e51a8d14525631F96754E38BFfDA',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'morph-papr-usdc',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'Morpheus',
-  assets: ['PAPR', 'USDC'],
-  callFee: 0.5,
-  depositFee: '2% from Farm Provider',
-  priceChart: 'https://info.spiritswap.finance/pair/0x64bB8a5A4b2f7bd354876059c845c77Cb4554818',
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0xC5e7A99A20941cBF56E0D4De608332cDB792e23e',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      // ...zapTokens,
-
-    ],
-  },
-},
-
-
-{
   id: 'morph-scream-ftm',
   logo: 'fantom/SCREAM-FTM.png',
   name: 'SCREAM-FTM',
