@@ -9,7 +9,7 @@ import { shouldHideFromHarvest } from '../../../helpers/utils';
 
 const PoolActions = ({ pool, balanceSingle, index, sharesBalance }) => {
 
-  console.log('Pool in PoolActions: ', pool);
+  //console.log('Pool in PoolActions: ', pool);
   return (
     <Grid container>
       <DepositSection index={index} pool={pool} balanceSingle={balanceSingle} />

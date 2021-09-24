@@ -80,7 +80,7 @@ const DepositSection = ({ pool }) => {
     };
   }, [pool.tokenAddress]);
 
-  console.log('Pool: ', pool);
+  //console.log('Pool: ', pool);
 
   const [depositSettings, setDepositSettings] = useState({
     tokenIndex: 0,

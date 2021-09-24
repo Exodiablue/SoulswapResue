@@ -37,7 +37,7 @@ const PoolTitle = ({
 }) => {
   const classes = useStyles();
   const { t } = useTranslation();
-  console.log(priceChart)
+  //console.log(priceChart)
   let avatar;
   if (logo) {
     avatar = (
