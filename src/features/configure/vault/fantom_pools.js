@@ -9459,7 +9459,7 @@ const pools = [
 
     tokens: [
       ...spookyTokens,
-      ...zapTokensNoFtm,
+      ...zapTokens,
     ],
   },
 },
@@ -9495,7 +9495,7 @@ const pools = [
 
     tokens: [
       ...spookyTokens,
-      ...zapTokensNoFtm,
+      ...zapTokens,
     ],
   },
 },
@@ -9531,7 +9531,7 @@ const pools = [
 
     tokens: [
       ...spookyTokens,
-      ...zapTokensNoFtm,
+      ...zapTokens,
     ],
   },
 },
@@ -9567,7 +9567,7 @@ const pools = [
 
     tokens: [
       ...spookyTokens,
-      ...zapTokensNoFtm,
+      ...zapTokens,
     ],
   },
 },
@@ -9603,7 +9603,7 @@ const pools = [
 
     tokens: [
       ...spookyTokens,
-      ...zapTokensNoFtm,
+      ...zapTokens,
     ],
   },
 },
@@ -9639,7 +9639,7 @@ const pools = [
 
     tokens: [
       ...spookyTokens,
-      ...zapTokensNoFtm,
+      ...zapTokens,
     ],
   },
 },
@@ -9675,7 +9675,7 @@ const pools = [
 
     tokens: [
       ...spookyTokens,
-      ...zapTokensNoFtm,
+      ...zapTokens,
     ],
   },
 },
@@ -9707,11 +9707,11 @@ const pools = [
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
+    router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spookyTokens,
-      ...zapTokensNoFtm,
+      ...spiritTokens,
+      ...zapTokens,
     ],
   },
 },
@@ -9972,7 +9972,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      ...zapTokensReduced,
+      ...spookyTokens,
+      ...zapTokens,
 
     ],
   },
@@ -10009,7 +10010,7 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...zapTokensReduced,
+      // ...zapTokens,
 
     ],
   },
@@ -10047,7 +10048,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      ...zapTokensReduced,
+      ...spookyTokens,
+      ...zapTokens,
 
     ],
   },
@@ -10083,7 +10085,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...zapTokensReduced,
+      ...spiritTokens,
+      ...zapTokens,
 
     ],
   },
