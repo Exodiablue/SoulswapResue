@@ -5729,7 +5729,7 @@ const pools = [
 {
   id: 'ice-ice-ftm-boo',
   logo: 'fantom/ICE-FTM.png',
-  name: 'ICE-FTM LP (SpookySwap)',
+  name: 'ICE-FTM LP (SpookySwap) [Purge Weekend: Zero Harvest Fees until 12:00AM 9/27/21]',
   token: 'ICE-FTM LP (SpookySwap)',
   tokenDescription: 'Popsicle',
   tokenAddress: '0x623ee4a7f290d11c11315994db70fb148b13021d',
@@ -5745,7 +5745,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Popsicle',
+  platform: 'Popsicle [Purge Weekend]',
   assets: ['ICE', 'FTM'],
   callFee: 0.5,
   priceChart: 'https://info.spookyswap.finance/pair/0x623ee4a7f290d11c11315994db70fb148b13021d',
@@ -5768,7 +5768,7 @@ const pools = [
 {
   id: 'ice-ice-ftm-sushi',
   logo: 'fantom/ICE-FTM.png',
-  name: 'ICE-FTM LP-SUSHISWAP',
+  name: 'ICE-FTM LP-SUSHISWAP [Purge Weekend: Zero Harvest Fees until 12:00AM 9/27/21]',
   token: 'ICE-FTM LP-SUSHISWAP',
   tokenDescription: 'Popsicle',
   tokenAddress: '0x84311ECC54D7553378c067282940b0fdfb913675',
@@ -5784,7 +5784,7 @@ const pools = [
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
-  platform: 'Popsicle',
+  platform: 'Popsicle [Purge Weekend]',
   assets: ['ICE', 'FTM'],
   callFee: 0.5,
   priceChart: 'https://analytics-ftm.sushi.com/pairs/0x84311ecc54d7553378c067282940b0fdfb913675',
@@ -10047,8 +10047,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
