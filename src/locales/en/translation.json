@@ -21,7 +21,7 @@
   "Vault-Withdrawing": "Withdraw...",
   "Vault-WithdrawButton": "Withdraw",
   "Vault-WithdrawButtonAll": "Withdraw All",
-  "Vault-WithdrawFee": "0.1% withdrawal fee on all vaults which is distributed back to stakers.",
+  "Vault-WithdrawFee": "0.1% withdrawal fee on all vaults is distributed back to stakers.",
   "Vault-WithdrawSuccess": "Withdraw success",
   "Vault-WithdrawError": "Withdraw error: {{error}}",
   "Vault-Harvesting": "Harvesting...",
