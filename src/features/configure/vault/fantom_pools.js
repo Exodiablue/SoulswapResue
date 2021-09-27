@@ -10502,7 +10502,7 @@ const pools = [
   oracleId: 'ONYX',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'eol',
+  status: 'active',
   platform: 'Onyx',
   assets: ['ONYX'],
   callFee: 0.5,
