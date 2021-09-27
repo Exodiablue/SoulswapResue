@@ -10501,7 +10501,7 @@ const pools = [
   oracle: 'tokens',
   oracleId: 'ONYX',
   oraclePrice: 0,
-  depositsPaused: false,
+  depositsPaused: true,
   status: 'active',
   platform: 'Onyx',
   assets: ['ONYX'],
