@@ -6976,10 +6976,10 @@ const pools = [
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spiritTokens,
+      ...spookyTokens,
       ...zapTokensNoFtm,
     ],
   },
@@ -7011,10 +7011,10 @@ const pools = [
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spiritTokens,
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -7047,10 +7047,10 @@ const pools = [
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spiritTokens,
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -7083,10 +7083,10 @@ const pools = [
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spiritTokens,
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -7120,10 +7120,10 @@ const pools = [
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spiritTokens,
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -7156,10 +7156,10 @@ const pools = [
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
+    router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spiritTokens,
+      ...spookyTokens,
       ...zapTokens,
 
     ],
@@ -7960,7 +7960,7 @@ const pools = [
   oracleId: 'chad-chad-grim',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['CHAD', 'GRIM'],
   callFee: 0.5,
@@ -7997,7 +7997,7 @@ const pools = [
   oracleId: 'CHAD',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['CHAD'],
   callFee: 0.5,
@@ -8032,7 +8032,7 @@ const pools = [
   oracleId: 'chad-chad-ftm',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['CHAD', 'FTM'],
   callFee: 0.5,
@@ -8070,7 +8070,7 @@ const pools = [
   oracleId: 'chad-chad-usdc',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['CHAD', 'USDC'],
   callFee: 0.5,
@@ -8108,7 +8108,7 @@ const pools = [
   oracleId: 'chad-chad-brush',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['CHAD', 'BRUSH'],
   callFee: 0.5,
@@ -8146,7 +8146,7 @@ const pools = [
   oracleId: 'chad-chad-fbomb',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['CHAD', 'BOMB'],
   callFee: 0.5,
@@ -8184,7 +8184,7 @@ const pools = [
   oracleId: 'chad-chad-tomb',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['CHAD', 'TOMB'],
   callFee: 0.5,
@@ -8221,7 +8221,7 @@ const pools = [
   oracleId: 'chad-chad-cztears',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['CHAD', 'CZTEARS'],
   callFee: 0.5,
@@ -8259,7 +8259,7 @@ const pools = [
   oracleId: 'chad-chad-atari',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['CHAD', 'ATARI'],
   callFee: 0.5,
@@ -8296,7 +8296,7 @@ const pools = [
   oracleId: 'chad-chad-shiba',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['CHAD', 'SHIBA'],
   callFee: 0.5,
@@ -8334,7 +8334,7 @@ const pools = [
   oracleId: 'chad-shiba-ftm',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['FTM', 'SHIBA'],
   callFee: 0.5,
@@ -8371,7 +8371,7 @@ const pools = [
   oracleId: 'chad-ftm-hodl',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Chad',
   assets: ['FTM', 'HODL'],
   callFee: 0.5,
@@ -8448,7 +8448,7 @@ const pools = [
   oracleId: 'CATNIP',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Yoro',
   assets: ['CATNIP'],
   callFee: 0.5,
@@ -8461,9 +8461,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokens,
-
-
-
     ],
   },
 },
@@ -8486,7 +8483,7 @@ const pools = [
   oracleId: "yoro-yoro-ftm",
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Yoro',
   assets: ['YORO', 'FTM'],
   callFee: 0.5,
@@ -8500,9 +8497,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokensReduced,
-
-
-
     ],
   },
 },
@@ -8525,7 +8519,7 @@ const pools = [
   oracleId: "yoro-catnip-ftm",
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Yoro',
   assets: ['CATNIP', 'FTM'],
   callFee: 0.5,
@@ -8539,9 +8533,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokensReduced,
-
-
-
     ],
   },
 },
@@ -8564,7 +8555,7 @@ const pools = [
   oracleId: "yoro-echo-ftm",
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Yoro',
   assets: ['ECHO', 'FTM'],
   callFee: 0.5,
@@ -8578,9 +8569,6 @@ const pools = [
     tokens: [
       // ...zooTokens,
       // ...zapTokensReduced,
-
-
-
     ],
   },
 },
@@ -8616,9 +8604,6 @@ const pools = [
     tokens: [
       // ...hyperTokens,
       // ...zapTokens,
-
-
-
     ],
   },
 },
@@ -8655,9 +8640,6 @@ const pools = [
     tokens: [
       // ...hyperTokens,
       // ...zapTokens,
-
-
-
     ],
   },
 },
@@ -8694,9 +8676,6 @@ const pools = [
     tokens: [
       //...hyperTokens,
       //...zapTokens,
-
-
-
     ],
   },
 },
@@ -8733,13 +8712,9 @@ const pools = [
     tokens: [
       //...hyperTokens,
       //...zapTokens,
-
-
-
     ],
   },
 },
-
 
 {
   id: 'butt-butt-reaper',
@@ -8759,7 +8734,7 @@ const pools = [
   oracleId: 'butt-butt-reaper',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Buttcoin',
   assets: ['BUTT', 'REAPER'],
   callFee: 0.5,
@@ -8773,7 +8748,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokensReduced,
-
     ],
   },
 },
@@ -8796,7 +8770,7 @@ const pools = [
   oracleId: 'butt-shit-reaper',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Buttcoin',
   assets: ['SHIT', 'REAPER'],
   callFee: 0.5,
@@ -8810,7 +8784,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokensReduced,
-
     ],
   },
 },
@@ -8833,7 +8806,7 @@ const pools = [
   oracleId: 'BUTT',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Buttcoin',
   assets: ['BUTT'],
   callFee: 0.5,
@@ -8868,7 +8841,7 @@ const pools = [
   oracleId: 'butt-butt-ftm',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Buttcoin',
   assets: ['BUTT', 'FTM'],
   callFee: 0.5,
@@ -8882,7 +8855,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokensReduced,
-
     ],
   },
 },
@@ -8905,7 +8877,7 @@ const pools = [
   oracleId: 'butt-shit-ftm',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Buttcoin',
   assets: ['SHIT', 'FTM'],
   callFee: 0.5,
@@ -8919,9 +8891,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokensReduced,
-
-
-
     ],
   },
 },
@@ -8944,7 +8913,7 @@ const pools = [
   oracleId: 'butt-butt-zoo',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Buttcoin',
   assets: ['BUTT', 'ZOO'],
   callFee: 0.5,
@@ -8958,7 +8927,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokensReduced,
-
     ],
   },
 },
@@ -8981,7 +8949,7 @@ const pools = [
   oracleId: 'butt-hodl-shit',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Buttcoin',
   assets: ['HODL', 'SHIT'],
   callFee: 0.5,
@@ -8995,7 +8963,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokensReduced,
-
     ],
   },
 },
@@ -9018,7 +8985,7 @@ const pools = [
   oracleId: 'butt-hodl-butt',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Buttcoin',
   assets: ['HODL', 'BUTT'],
   callFee: 0.5,
@@ -9032,9 +8999,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokensReduced,
-
-
-
     ],
   },
 },
@@ -9057,7 +9021,7 @@ const pools = [
   oracleId: 'butt-shit-totem',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Buttcoin',
   assets: ['SHIT', 'TOTEM'],
   callFee: 0.5,
@@ -9071,7 +9035,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokensReduced,
-
     ],
   },
 },
@@ -9094,7 +9057,7 @@ const pools = [
   oracleId: 'butt-shit-babyboo',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Buttcoin',
   assets: ['SHIT', 'BABYBOO'],
   callFee: 0.5,
@@ -9130,7 +9093,7 @@ const pools = [
   oracleId: 'OPERA',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'OperaSwap',
   assets: ['OPERA'],
   callFee: 0.5,
@@ -9173,7 +9136,7 @@ const pools = [
   oracleId: "opera-opera-ftm",
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'OperaSwap',
   assets: ['OPERA', 'FTM'],
   callFee: 0.5,
