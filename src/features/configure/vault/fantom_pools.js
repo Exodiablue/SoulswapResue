@@ -7050,7 +7050,14 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spookyTokens,
+      {
+        name: 'BOO',
+        address: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+        symbol: 'BOO',
+        decimals: 18,
+        chainId: 250,
+        logoURI: '',
+      },
       ...zapTokens,
 
     ],
