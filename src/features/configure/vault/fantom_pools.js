@@ -2014,43 +2014,6 @@ const pools = [
 },
 
 {
-  id: 'spirit-spirit-start',
-  logo: 'fantom/SPIRIT-START.png',
-  name: 'SPIRIT-START LP',
-  token: 'SPIRIT-START LP (SpiritSwap)',
-  tokenDescription: 'SpiritSwap',
-  tokenAddress: '0x466EB66161B2dfC000a37017896c7a5d846b0900',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-SPI-BSC-1',
-  earnedTokenAddress: '0x42Db7251139F610e7B1C969967285294f354998a',
-  earnContractAddress: '0x42Db7251139F610e7B1C969967285294f354998a',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'spirit-spirit-start',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'SpiritSwap',
-  assets: ['START', 'SPIRIT'],
-  callFee: 0.5,
-  priceChart: 'https://info.spiritswap.finance/pair/0x466EB66161B2dfC000a37017896c7a5d846b0900',
-  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x8ca2ecbCE34c322fceA6Db912d9DbfD2DdA5920D/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPIRIT_ROUTER,
-
-    tokens: [
-      // ...spiritTokens,
-      // ...zapTokens,
-
-    ],
-  },
-},
-
-{
   id: 'xboo',
   logo: 'fantom/xBOO.png',
   name: 'xBOO',
@@ -2565,42 +2528,6 @@ const pools = [
   },
 },
 
-{
-  id: 'boo-ftm-badger',
-  logo: 'fantom/BADGER-FTM.png',
-  name: 'FTM-BADGER LP',
-  token: 'FTM-BADGER LP (SpookySwap)',
-  tokenDescription: 'SpookySwap',
-  tokenAddress: '0x1c94665fd3ecfa969feda7ed01e35522e6982022',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-FTM-BAD-2',
-  earnedTokenAddress: '0xa484E9a6C10C1a8d777ae26Dc4340958d79C3FFB',
-  earnContractAddress: '0xa484E9a6C10C1a8d777ae26Dc4340958d79C3FFB',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'boo-ftm-badger',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'SpookySwap',
-  assets: ['FTM', 'BADGER'],
-  callFee: 0.5,
-  priceChart: 'https://info.spookyswap.finance/pair/0x1c94665fd3ecfa969feda7ed01e35522e6982022',
-  addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x753fbc5800a8C8e3Fb6DC6415810d627A387Dfc9',
-  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x753fbc5800a8C8e3Fb6DC6415810d627A387Dfc9',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
-
-    tokens: [
-      ...spookyTokens,
-      ...zapTokens,
-
-    ],
-  },
-},
 {
   id: 'boo-ftm-ice',
   logo: 'fantom/ICE-FTM.png',
@@ -8061,44 +7988,6 @@ const pools = [
 },
 
 {
-  id: 'chad-chad-fbomb',
-  logo: 'fantom/CHAD-FBOMB.png',
-  name: 'CHAD-BOMB LP',
-  token: 'CHAD-BOMB LP (SpookySwap)',
-  tokenDescription: 'Chad Finance',
-  tokenAddress: '0x2acf18104ffce06ac4b7dfb9c1ff539119d96b27',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-CHA-FBO-5',
-  earnedTokenAddress: '0xcbF73e45c9F192539950C3eF525b359a4fe4A3c4',
-  earnContractAddress: '0xcbF73e45c9F192539950C3eF525b359a4fe4A3c4',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'chad-chad-fbomb',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Chad',
-  assets: ['CHAD', 'BOMB'],
-  callFee: 0.5,
-  priceChart: 'https://info.spookyswap.finance/pair/0x2acf18104ffce06ac4b7dfb9c1ff539119d96b27',
-  addLiquidityUrl: 'https://spookyswap.finance/add/0xCcE93540b80ABF71B66E0a44fd71E322cE9C4D9e/0x8503eb4A136bDBeB323E37Aa6e0FA0C772228378',
-  buyTokenUrl: 'https://spookyswap.finance/swap',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
-
-    tokens: [
-      // ...spookyTokens,
-      // ...zapTokens,
-
-
-    ],
-  },
-},
-
-{
   id: 'chad-chad-tomb',
   logo: 'fantom/CHAD-TOMB.png',
   name: 'CHAD-TOMB LP',
@@ -10983,7 +10872,7 @@ const pools = [
   oracle: 'tokens',
   oracleId: 'fWINGS',
   oraclePrice: 0,
-  depositsPaused: false,
+  depositsPaused: true,
   status: 'active',
   platform: 'JetSwap',
   assets: ['fWINGS'],
