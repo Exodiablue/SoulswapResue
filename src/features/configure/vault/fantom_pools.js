@@ -478,7 +478,7 @@ const pools = [
   logo: 'fantom/GRIM.png',
   name: 'GRIM',
   token: 'GRIM',
-  tokenDescription: 'Grim Finance | Note: 50% of all Grim Finance platform harvest fees are distributed to this pool.',
+  tokenDescription: 'Grim Finance | Note: 50% of all Grim Finance platform harvest fees are distributed to this pool. \u26A0 A 2% BURN is incurred on deposits for this pool.',
   tokenAddress: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -513,7 +513,7 @@ const pools = [
   logo: 'fantom/GRIM.png',
   name: 'GRIM',
   token: 'GRIM',
-  tokenDescription: 'Totem',
+  tokenDescription: 'Totem | \u26A0 A 2% BURN is incurred on deposits for this pool.',
   tokenAddress: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -2186,43 +2186,6 @@ const pools = [
   priceChart: 'https://info.spookyswap.finance/pair/0x30872e4fc4edbFD7a352bFC2463eb4fAe9C09086',
   addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
-
-    tokens: [
-      ...spookyTokens,
-      ...zapTokens,
-
-    ],
-  },
-},
-
-{
-  id: 'boo-steak-ftm',
-  logo: 'fantom/STEAK-FTM.png',
-  name: 'STEAK-FTM LP',
-  token: 'STEAK-FTM LP (SpookySwap)',
-  tokenDescription: 'SpookySwap',
-  tokenAddress: '0xD10CC1b46D806D6ac803AF367Da489dEA5EE76FA',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-STE-FTM-2',
-  earnedTokenAddress: '0xe585D45dE0Da641aC03f11e05e17686e8ed80c59',
-  earnContractAddress: '0xe585D45dE0Da641aC03f11e05e17686e8ed80c59',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'boo-steak-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'SpookySwap',
-  assets: ['FTM', 'STEAK'],
-  callFee: 0.5,
-  priceChart: 'https://info.spookyswap.finance/pair/0xD10CC1b46D806D6ac803AF367Da489dEA5EE76FA',
-  addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x05848B832E872d9eDd84AC5718D58f21fD9c9649',
-  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x05848B832E872d9eDd84AC5718D58f21fD9c9649',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
@@ -6234,43 +6197,6 @@ const pools = [
 },
 
 {
-  id: 'steak-steak-ftm',
-  logo: 'fantom/STEAK-FTM.png',
-  name: 'STEAK-FTM LP',
-  token: 'STEAK-FTM LP (SpookySwap)',
-  tokenDescription: 'Steak',
-  tokenAddress: '0xD10CC1b46D806D6ac803AF367Da489dEA5EE76FA',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-STE-FTM-7',
-  earnedTokenAddress: '0x6B79A088fCc619aB9B57867a01d16C7341ddeD86',
-  earnContractAddress: '0x6B79A088fCc619aB9B57867a01d16C7341ddeD86',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'steak-steak-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'Steak',
-  assets: ['STEAK','FTM'],
-  callFee: 0.5,
-  priceChart: 'https://info.spookyswap.finance/pair/0xD10CC1b46D806D6ac803AF367Da489dEA5EE76FA',
-  depositFee: '0.5% from Farm Provider',
-  addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x05848B832E872d9eDd84AC5718D58f21fD9c9649',
-  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x05848B832E872d9eDd84AC5718D58f21fD9c9649',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
-
-    tokens: [
-      // ...spookyTokens,
-      // ...zapTokens,
-    ],
-  },
-},
-
-{
   id: 'steak-usdc-fusd',
   logo: 'fantom/USDC-FUSD.png',
   name: 'USDC-FUSD LP',
@@ -9178,7 +9104,7 @@ const pools = [
   logo: 'fantom/KINS.png',
   name: 'KINS',
   token: 'KINS',
-  tokenDescription: 'Morpheus',
+  tokenDescription: 'Morpheus | \u26A0 A 10% BURN is incurred on deposits for this pool.',
   tokenAddress: '0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -9203,8 +9129,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
     ],
   },
 },
@@ -11406,8 +11332,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
     ],
   },
 },
@@ -11442,8 +11368,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -11479,8 +11405,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -11516,8 +11442,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spookyTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -11553,7 +11479,7 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-      ...paintTokens,
+      // ...spiritTokens,
       // ...zapTokens,
 
     ],
@@ -11590,7 +11516,7 @@ const pools = [
     router: PAINT_ROUTER,
 
     tokens: [
-      ...paintTokens,
+      // ...spiritTokens,
       // ...zapTokens,
 
     ],
@@ -11627,8 +11553,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -11664,8 +11590,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -11701,8 +11627,8 @@ const pools = [
     router: SPIRIT_ROUTER,
 
     tokens: [
-      ...spiritTokens,
-      ...zapTokens,
+      // ...spiritTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -11739,7 +11665,7 @@ const pools = [
 
     tokens: [
       // ...spiritTokens,
-      ...zapTokensReduced,
+      // ...zapTokens,
 
     ],
   },
