@@ -4949,7 +4949,7 @@ const pools = [
   oracleId: 'bone-waka-ftm',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'ShibaSwap',
   assets: ['WAKA','FTM'],
   callFee: 0.5,
@@ -5272,14 +5272,44 @@ const pools = [
   buyTokenUrl: 'https://app.sushi.com/swap',
   zap: {
     disabled: true,
-
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
-     
 
+    ],
+  },
+},
 
+{
+  id: 'iron-3pool',
+  logo: 'fantom/DAI-USDC-FUSDT.png',
+  name: 'DAI-USDC-FUSDT LP',
+  token: 'IS3USD LP (Iron)',
+  tokenDescription: 'Iron',
+  tokenAddress: '0xc143a1500ca4a471eE9cc70B9AC0C739576F84bb',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-3POOL-W',
+  earnedTokenAddress: '0x405f2115D66c1bd1F13Ada4Bade6BCb11d30F272',
+  earnContractAddress: '0x405f2115D66c1bd1F13Ada4Bade6BCb11d30F272',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'curve-ftm-fusdt',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Iron',
+  assets: ['fUSDT', 'USDC', 'DAI'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://app.iron.finance/pools/is3usd/deposit',
+  buyTokenUrl: 'https://app.iron.finance/swap',
+  zap: {
+    disabled: true,
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
 
     ],
   },
@@ -8395,42 +8425,6 @@ const pools = [
 },
 
 {
-  id: 'butt-butt-reaper',
-  logo: 'fantom/BUTT-REAPER.png',
-  name: 'BUTT-REAPER LP',
-  token: 'BUTT-REAPER LP (Zoo)',
-  tokenDescription: 'Buttcoin',
-  tokenAddress: '0x3309AD0e5Eb8DF992F7D153AFb48866B0e5cC829',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-BUT-REA-E',
-  earnedTokenAddress: '0xbEd160F93757C623C4CFC9B7A80b14e120a13173',
-  earnContractAddress: '0xbEd160F93757C623C4CFC9B7A80b14e120a13173',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'butt-butt-reaper',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Buttcoin',
-  assets: ['BUTT', 'REAPER'],
-  callFee: 0.5,
-  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x3309AD0e5Eb8DF992F7D153AFb48866B0e5cC829',
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0&outputCurrency=0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0xF42cc7284389fBf749590f26539002ca931323D0',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: ZOO_ROUTER,
-
-    tokens: [
-      ...zooTokens,
-      ...zapTokensReduced,
-    ],
-  },
-},
-
-{
   id: 'butt',
   logo: 'fantom/BUTT.png',
   name: 'BUTT',
@@ -8934,7 +8928,7 @@ const pools = [
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'tokens',
-  oracleId: 'USDC',
+  oracleId: 'usdc',
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
