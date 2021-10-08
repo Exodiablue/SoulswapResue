@@ -11664,6 +11664,43 @@ const pools = [
   },
 },
 
+{
+  id: 'geist-geist-ftm',
+  logo: 'fantom/GEIST-FTM.png',
+  name: 'GEIST-FTM',
+  token: 'GEIST-FTM LP (SpookySwap)',
+  tokenDescription: 'Geist',
+  tokenAddress: '0x668ae94d0870230ac007a01b471d02b2c94ddcb9',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-GEI-FTM-X',
+  earnedTokenAddress: '0x2e4Ad20E60c93f10110F671Fd31523bb9b13Bf5D',
+  earnContractAddress: '0x2e4Ad20E60c93f10110F671Fd31523bb9b13Bf5D',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'geist-geist-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Geist',
+  assets: ['GEIST', 'FTM'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x668ae94d0870230ac007a01b471d02b2c94ddcb9',
+  addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0xd8321AA83Fb0a4ECd6348D4577431310A6E0814d',
+  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xd8321AA83Fb0a4ECd6348D4577431310A6E0814d',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+
+    tokens: [
+       ...spookyTokens,
+      ...zapTokensReduced,
+
+    ],
+  },
+},
+
 
 ];
 
