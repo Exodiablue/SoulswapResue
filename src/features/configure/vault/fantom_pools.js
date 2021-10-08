@@ -11682,7 +11682,7 @@ const pools = [
   oracleId: 'geist-geist-ftm',
   oraclePrice: 0,
   depositsPaused: false,
-  status: 'active',
+  status: 'eol',
   platform: 'Geist',
   assets: ['GEIST', 'FTM'],
   callFee: 0.5,
@@ -11694,8 +11694,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-       ...spookyTokens,
-      ...zapTokensReduced,
+      ...spookyTokens,
+      ...zapTokens,
 
     ],
   },
