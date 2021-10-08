@@ -9294,15 +9294,15 @@ const pools = [
   assets: ['YFI'],
   callFee: 0.5,
   depositFee: '2% from Farm Provider',
-  priceChart: 'https://info.spookyswap.finance/token/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
-  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
+  priceChart: 'https://info.spiritswap.finance/pair/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
   zap: {
     zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
+    router: SPIRIT_ROUTER,
 
     tokens: [
-      // ...spookyTokens,
-      // ...zapTokens,
+      ...spiritTokens,
+      ...zapTokens,
     ],
   },
 },
