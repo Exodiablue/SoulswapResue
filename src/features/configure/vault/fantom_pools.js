@@ -5229,6 +5229,7 @@ const pools = [
   platform: 'Curve',
   assets: ['fUSDT', 'USDC', 'DAI'],
   callFee: 0.5,
+  withdrawalFee: '0.01%',
   priceChart: '',
   addLiquidityUrl: 'https://ftm.curve.fi/fusdt/deposit',
   buyTokenUrl: 'https://app.sushi.com/swap',
@@ -5264,6 +5265,7 @@ const pools = [
   platform: 'Iron',
   assets: ['fUSDT', 'USDC', 'DAI'],
   callFee: 0.5,
+  withdrawalFee: '0.01%',
   priceChart: '',
   addLiquidityUrl: 'https://app.iron.finance/pools/is3usd/deposit',
   buyTokenUrl: 'https://app.iron.finance/swap',
@@ -6787,6 +6789,7 @@ const pools = [
   platform: 'Scream',
   assets: ['WFTM'],
   callFee: 0.5,
+  withdrawalFee: '0.01%',
   priceChart: 'https://info.spookyswap.finance/token/0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83',
   zap: {
@@ -6822,6 +6825,7 @@ const pools = [
   platform: 'Scream',
   assets: ['USDC'],
   callFee: 0.5,
+  withdrawalFee: '0.01%',
   priceChart: 'https://info.spookyswap.finance/token/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
@@ -6858,6 +6862,7 @@ const pools = [
   platform: 'Scream',
   assets: ['DAI'],
   callFee: 0.5,
+  withdrawalFee: '0.01%',
   priceChart: 'https://info.spookyswap.finance/token/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   zap: {
@@ -6894,6 +6899,7 @@ const pools = [
   platform: 'Scream',
   assets: ['fUSDT'],
   callFee: 0.5,
+  withdrawalFee: '0.01%',
   priceChart: 'https://info.spookyswap.finance/token/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   zap: {
@@ -6931,6 +6937,7 @@ const pools = [
   platform: 'Scream',
   assets: ['ETH'],
   callFee: 0.5,
+  withdrawalFee: '0.01%',
   priceChart: 'https://info.spookyswap.finance/token/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
@@ -6967,6 +6974,7 @@ const pools = [
   platform: 'Scream',
   assets: ['BTC'],
   callFee: 0.5,
+  withdrawalFee: '0.01%',
   priceChart: 'https://info.spookyswap.finance/token/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
