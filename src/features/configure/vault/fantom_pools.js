@@ -6043,6 +6043,78 @@ const pools = [
 },
 
 {
+  id: 'bomb-mim-ftm',
+  logo: 'fantom/MIM-FTM.png',
+  name: 'MIM-FTM LP',
+  token: 'MIM-FTM LP (BombSwap)',
+  tokenDescription: 'BombSwap',
+  tokenAddress: '0x74928bFaE5D4dE45Df48d9652DE02ecE529E8729',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-MIM-FTM-L',
+  earnedTokenAddress: '0x486c08825c02559D48Fa38f5e16153eE114073EE',
+  earnContractAddress: '0x486c08825c02559D48Fa38f5e16153eE114073EE',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'bomb-mim-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'BombSwap',
+  assets: ['MIM','FTM'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://swap.fbomb.finance/#/add/FTM/0x82f0B8B456c1A451378467398982d4834b6829c1',
+  buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: BOMB_ROUTER,
+
+    tokens: [
+    //...bombTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'bomb-pgunk-ftm',
+  logo: 'fantom/PGUNK-FTM.png',
+  name: 'PGUNK-FTM LP',
+  token: 'PGUNK-FTM LP (BombSwap)',
+  tokenDescription: 'BombSwap',
+  tokenAddress: '0xFf8E84070D542e816797C1F0f2CAd97AFFF6B2de',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-PGU-FTM-L',
+  earnedTokenAddress: '0xc7A39eB8482BC2A4aE63A8Fd1638f380d151b096',
+  earnContractAddress: '0xc7A39eB8482BC2A4aE63A8Fd1638f380d151b096',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'bomb-pgunk-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'BombSwap',
+  assets: ['PGUNK','FTM'],
+  callFee: 0.5,
+  priceChart: '',
+  addLiquidityUrl: 'https://swap.fbomb.finance/#/add/FTM/0xf8Fc059dAfDCe4EF2EdFc72cbBAF410d7531E610',
+  buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: BOMB_ROUTER,
+
+    tokens: [
+    //...bombTokens,
+
+    ],
+  },
+},
+
+{
   id: 'bomb-bbomb-ftm',
   logo: 'fantom/BBOMB-FTM.png',
   name: 'bBOMB-FTM LP',
