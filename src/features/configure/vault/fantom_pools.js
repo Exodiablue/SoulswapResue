@@ -1,5 +1,4 @@
 const VAULT_ZAP = '0xe6098d5A2F817Ab55D91eF74b775236825ab9808'; //blues zapper - private
-
 const SPIRIT_ROUTER = '0x16327E3FbDaCA3bcF7E38F5Af2599D2DDc33aE52';
 const SPOOKY_ROUTER = '0xF491e7B69E4244ad4002BC14e878a34207E38c29';
 const HYPER_ROUTER = '0x53c153a0df7E050BbEFbb70eE9632061f12795fB';
@@ -14,6 +13,7 @@ const XDAO_ROUTER = '0xD9B37cA21e53581F784fFB265F9BFBcF9AD255d6';
 const OLIVE_ROUTER = '0xF491e7B69E4244ad4002BC14e878a34207E38c29';
 const JET_ROUTER = '0x845E76A8691423fbc4ECb8Dd77556Cb61c09eE25';
 const ELK_ROUTER = '0x4D2cf285a519261F30b4d9c2c344Baf260d65Fa2';
+const SOUL_ROUTER = '0x6b3d631B87FE27aF29efeC61d2ab8CE4d621cCBF';
 
 const zapTokens = [
   {
@@ -10222,42 +10222,6 @@ const pools = [
   priceChart: '',
   addLiquidityUrl: 'https://fantom.olive.cash/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: OLIVE_ROUTER,
-
-    tokens: [
-      ...oliveTokens,
-
-    ],
-  },
-},
-
-{
-  id: 'olive-morph-ftm',
-  logo: 'fantom/MORPH-FTM.png',
-  name: 'MORPH-FTM',
-  token: 'MORPH-FTM LP (OliveSwap)',
-  tokenDescription: 'OliveSwap',
-  tokenAddress: '0x7D42442f764985F208E6fa6A7CD0e253CB447D58',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-MOR-FTM-R',
-  earnedTokenAddress: '0xE1B5D6702da690214AbD682F41210Cb2B58Ff917',
-  earnContractAddress: '0xE1B5D6702da690214AbD682F41210Cb2B58Ff917',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'olive-morph-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'OliveSwap',
-  assets: ['FTM', 'MORPH'],
-  callFee: 0.5,
-  priceChart: '',
-  addLiquidityUrl: 'https://fantom.olive.cash/add/0x0789fF5bA37f72ABC4D561D00648acaDC897b32d/FTM',
-  buyTokenUrl: 'https://fantom.olive.cash/swap?outputCurrency=0x0789fF5bA37f72ABC4D561D00648acaDC897b32d',
   zap: {
     zapAddress: VAULT_ZAP,
     router: OLIVE_ROUTER,
