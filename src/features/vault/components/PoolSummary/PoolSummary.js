@@ -82,7 +82,9 @@ const PoolSummary = ({
     var date = new Date();
     var seconds = Math.round(date.getTime() / 1000);
     n = n-seconds;
-
+    if (n<0){
+      return 'WAITING FOR NEXT HARVEST'
+    }
     var day = parseInt( n / (24 * 3600));
 
     n = n % (24 * 3600);
@@ -93,13 +95,16 @@ const PoolSummary = ({
 
     return  day + " " + "days " + 
             hour + " " + "hours " + 
-            minutes.toFixed() + " " + "minutes "
+            minutes.toFixed() + " " + "minutes"
   }
 
   function SecondsToDays(n) {
     var day = parseInt( n / (24 * 3600));
 
     n = n % (24 * 3600);
+    if (n<0){
+      return 'WAITING FOR NEXT HARVEST'
+    }
     var hour = parseInt(n / 3600);
 
     n %= 3600;
@@ -107,7 +112,7 @@ const PoolSummary = ({
 
     return  day + " " + "days " + 
             hour + " " + "hours " + 
-            minutes.toFixed() + " " + "minutes "
+            minutes.toFixed() + " " + "minutes"
   }
 
   //============ START SOUL WITHDRAWAL LOCK - IMPLEMENTATION =========================
