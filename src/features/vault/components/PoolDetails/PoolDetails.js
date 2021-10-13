@@ -126,7 +126,7 @@ const PoolDetails = ({ vaultId }) => {
       </div>
     );
   }
-
+  
   return (
     <>
       <Helmet>
