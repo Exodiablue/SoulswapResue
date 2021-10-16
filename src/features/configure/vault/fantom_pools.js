@@ -1309,6 +1309,43 @@ const pools = [
 },
 
 {
+  id: 'spirit-mim-mem',
+  logo: 'fantom/MIM-MEMO.png',
+  name: 'MIM-wMEMO LP',
+  token: 'MIM-wMEMO LP (SpiritSwap)',
+  tokenDescription: 'SpiritSwap',
+  tokenAddress: '0xC9B98e4A4e306DFc24bc5b5F66e271e19Fd74c5A',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-MIM-MIM-1',
+  earnedTokenAddress: '0xf2cd1C8e7963E57676a614F0f0B8b4aEe3A2A49e',
+  earnContractAddress: '0xf2cd1C8e7963E57676a614F0f0B8b4aEe3A2A49e',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'spirit-mim-mem',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SpiritSwap',
+  assets: ['MEM', 'MIM'],
+  callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xC9B98e4A4e306DFc24bc5b5F66e271e19Fd74c5A',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x82f0B8B456c1A451378467398982d4834b6829c1/0xDDc0385169797937066bBd8EF409b5B3c0dFEB52',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xDDc0385169797937066bBd8EF409b5B3c0dFEB52',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
   id: 'spirit-dai-spirit',
   logo: 'fantom/DAI-SPIRIT.png',
   name: 'DAI-SPIRIT LP',
@@ -8319,43 +8356,6 @@ const pools = [
 },
 
 {
-  id: 'chad-shiba-ftm',
-  logo: 'fantom/FTM-SHIBA.png',
-  name: 'FTM-SHIBA LP',
-  token: 'FTM-SHIBA LP (PaintSwap)',
-  tokenDescription: 'Chad Finance',
-  tokenAddress: '0x71020669C6cbeD08e511ecE3A28e5aF5eA0cB6aE',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-FTM-SHI-5',
-  earnedTokenAddress: '0xe8D247aD0E5e31f919B3D0dF3C1190A79B02564b',
-  earnContractAddress: '0xe8D247aD0E5e31f919B3D0dF3C1190A79B02564b',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'chad-shiba-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Chad',
-  assets: ['FTM', 'SHIBA'],
-  callFee: 0.5,
-  priceChart: 'https://info.paintswap.finance/pair/0x71020669C6cbeD08e511ecE3A28e5aF5eA0cB6aE',
-  addLiquidityUrl: 'https://exchange.paintswap.finance/#/pool',
-  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x9ba3e4f84a34df4e08c112e1a0ff148b81655615',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: PAINT_ROUTER,
-
-    tokens: [
-
-    // ...paintTokens,
-
-    ],
-  },
-},
-
-{
   id: 'chad-ftm-hodl',
   logo: 'fantom/HODL-FTM.png',
   name: 'FTM-HODL LP',
@@ -8500,42 +8500,6 @@ const pools = [
     tokens: [
       ...zooTokens,
       ...zapTokensReduced,
-    ],
-  },
-},
-
-{
-  id: "yoro-echo-ftm",
-  logo: 'fantom/ECHO-FTM.png',
-  name: 'ECHO-FTM LP',
-  token: 'ECHO-FTM LP (Zoo)',
-  tokenDescription: 'Yoro',
-  tokenAddress: '0x79d25d00C159BAf1bdE8831B00e2f7370Bf5Fe46',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-ECH-FTM-C',
-  earnedTokenAddress: '0x7998F8D0E83E440C7F920A0b5Fa36033970d9bE4',
-  earnContractAddress: '0x7998F8D0E83E440C7F920A0b5Fa36033970d9bE4',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: "yoro-echo-ftm",
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Yoro',
-  assets: ['ECHO', 'FTM'],
-  callFee: 0.5,
-  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0x79d25d00C159BAf1bdE8831B00e2f7370Bf5Fe46',
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x54477A1D1bb8C1139eEF754Fd2eFd4DDeE7933dd&outputCurrency=FTM',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?outputCurrency=0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56&inputCurrency=FTM',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: ZOO_ROUTER,
-
-    tokens: [
-      // ...zooTokens,
-      // ...zapTokensReduced,
     ],
   },
 },
