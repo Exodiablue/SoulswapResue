@@ -1328,7 +1328,7 @@ const pools = [
   depositsPaused: false,
   status: 'active',
   platform: 'SpiritSwap',
-  assets: ['MEM', 'MIM'],
+  assets: ['wMEMO', 'MIM'],
   callFee: 0.5,
   priceChart: 'https://info.spiritswap.finance/pair/0xC9B98e4A4e306DFc24bc5b5F66e271e19Fd74c5A',
   addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x82f0B8B456c1A451378467398982d4834b6829c1/0xDDc0385169797937066bBd8EF409b5B3c0dFEB52',
