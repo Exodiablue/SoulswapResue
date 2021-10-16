@@ -7282,6 +7282,43 @@ const pools = [
 },
 
 {
+  id: 'scream-link',
+  logo: 'fantom/LINK.png',
+  name: 'LINK',
+  token: 'LINK',
+  tokenDescription: 'Scream',
+  tokenAddress: '0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SCREA-LIN',
+  earnedTokenAddress: '0x8e8b618958Af8E02dfF94d1Db1Ac7EA89C1859A1',
+  earnContractAddress: '0x8e8b618958Af8E02dfF94d1Db1Ac7EA89C1859A1',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'LINK',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scream',
+  assets: ['LINK'],
+  callFee: 0.5,
+  withdrawalFee: '0.01%',
+  priceChart: 'https://info.spookyswap.finance/token/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
+  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
   id: 'brush',
   logo: 'fantom/BRUSH.png',
   name: 'BRUSH',
