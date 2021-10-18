@@ -3069,8 +3069,8 @@ const pools = [
     router: SPOOKY_ROUTER,
 
     tokens: [
-      ...spookyTokens,
-      ...zapTokens,
+      // ...spookyTokens,
+      // ...zapTokens,
 
     ],
   },
@@ -9607,6 +9607,78 @@ const pools = [
 },
 
 {
+  id: 'morph-tomb',
+  logo: 'fantom/TOMB.png',
+  name: 'TOMB',
+  token: 'TOMB',
+  tokenDescription: 'Morpheus',
+  tokenAddress: '0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-TOMB-Q',
+  earnedTokenAddress: '0x35555e0339F2595fA1f6fe5B69468FA474e6F8de',
+  earnContractAddress: '0x35555e0339F2595fA1f6fe5B69468FA474e6F8de',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'TOMB',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Morpheus',
+  assets: ['TOMB'],
+  callFee: 0.5,
+  depositFee: '2% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'morph-memo',
+  logo: 'fantom/MEMO.png',
+  name: 'wMEMO',
+  token: 'wMEMO',
+  tokenDescription: 'Morpheus',
+  tokenAddress: '0xDDc0385169797937066bBd8EF409b5B3c0dFEB52',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-MEMO-Q',
+  earnedTokenAddress: '0x05B886e4d398204FCEc89815450Cd58845b78eB6',
+  earnContractAddress: '0x05B886e4d398204FCEc89815450Cd58845b78eB6',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'WMEMO',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Morpheus',
+  assets: ['wMEMO'],
+  callFee: 0.5,
+  depositFee: '2% from Farm Provider',
+  priceChart: 'https://info.spiritswap.finance/pair/0xDDc0385169797937066bBd8EF409b5B3c0dFEB52',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xDDc0385169797937066bBd8EF409b5B3c0dFEB52',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spookyTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
   id: 'morph-morph-ftm',
   logo: 'fantom/MORPH-FTM.png',
   name: 'MORPH-FTM',
@@ -9637,6 +9709,80 @@ const pools = [
 
     tokens: [
       ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'morph-yfi-eth',
+  logo: 'fantom/YFI-ETH.png',
+  name: 'YFI-ETH',
+  token: 'YFI-ETH LP (SpookySwap)',
+  tokenDescription: 'Morpheus',
+  tokenAddress: '0x0845c0bFe75691B1e21b24351aAc581a7FB6b7Df',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-YFI-ETH-Q',
+  earnedTokenAddress: '0xb2fB894aaC57D23a0b2c7995F817B17F82215FDC',
+  earnContractAddress: '0xb2fB894aaC57D23a0b2c7995F817B17F82215FDC',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'morph-yfi-eth',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Morpheus',
+  assets: ['ETH', 'YFI'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x0845c0bFe75691B1e21b24351aAc581a7FB6b7Df',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+
+    tokens: [
+      // ...spookyTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'morph-yfi-ftm',
+  logo: 'fantom/YFI-FTM.png',
+  name: 'YFI-FTM',
+  token: 'YFI-FTM LP (SpiritSwap)',
+  tokenDescription: 'Morpheus',
+  tokenAddress: '0x4fc38a2735C7da1d71ccAbf6DeC235a7DA4Ec52C',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-YFI-FTM-Q',
+  earnedTokenAddress: '0x8A4A35f8e4e265c38590D9D4aC9D4faABB7a4D13',
+  earnContractAddress: '0x8A4A35f8e4e265c38590D9D4aC9D4faABB7a4D13',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'morph-yfi-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Morpheus',
+  assets: ['FTM', 'YFI'],
+  callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x4fc38a2735C7da1d71ccAbf6DeC235a7DA4Ec52C',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x29b0Da86e484E1C0029B56e817912d778aC0EC69/FTM',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      ...spiritTokens,
       ...zapTokens,
 
     ],
@@ -13734,6 +13880,42 @@ const pools = [
   },
 },
 
+{
+  id: 'sing-sing-usdc',
+  logo: 'fantom/SING-USDC.png',
+  name: 'SING-USDC',
+  token: 'SING-USDC LP (SpookySwap)',
+  tokenDescription: 'Singular',
+  tokenAddress: '0x49710DFc04f11704003d0C9beeb953822F62fBaf',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SIN-USD-a',
+  earnedTokenAddress: '0xDbc946e585f26576adf993554474ceE7bDd05cAf',
+  earnContractAddress: '0xDbc946e585f26576adf993554474ceE7bDd05cAf',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'sing-sing-usdc',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Singular',
+  assets: ['SING', 'USDC'],
+  callFee: 0.5,
+  priceChart: '',
+  priceChart: 'https://info.spookyswap.finance/pair/0x49710DFc04f11704003d0C9beeb953822F62fBaf',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0x53D831e1db0947c74e8a52618f662209ec5dE0cE',
+  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x53D831e1db0947c74e8a52618f662209ec5dE0cE',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
 
 ];
 
