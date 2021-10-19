@@ -14782,6 +14782,41 @@ const pools = [
 },
 
 {
+  id: 'cgs-olive',
+  logo: 'fantom/SCARE.png',
+  name: 'fOLIVE',
+  token: 'fOLIVE',
+  tokenDescription: 'CougarSwap',
+  tokenAddress: '0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-OLIVE-b',
+  earnedTokenAddress: '0xEBC073997D932eCd750376661E3ECa1889C4E294',
+  earnContractAddress: '0xEBC073997D932eCd750376661E3ECa1889C4E294',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'fOLIVE',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'CougarSwap',
+  assets: ['fOLIVE'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
   id: 'cgs-cgs-ftm',
   logo: 'fantom/CGS-FTM.png',
   name: 'CGS-FTM',
