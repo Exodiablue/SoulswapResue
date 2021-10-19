@@ -14135,42 +14135,6 @@ const pools = [
 },
 
 {
-  id: 'cgs-usdc',
-  logo: 'fantom/USDC.png',
-  name: 'USDC',
-  token: 'USDC',
-  tokenDescription: 'CougarSwap',
-  tokenAddress: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  tokenDecimals: 6,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-USDC-b',
-  earnedTokenAddress: '0x58574231fE286eD909Cd2252A14dCc75040adcee',
-  earnContractAddress: '0x58574231fE286eD909Cd2252A14dCc75040adcee',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'tokens',
-  oracleId: 'usdc',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'active',
-  platform: 'CougarSwap',
-  assets: ['USDC'],
-  callFee: 0.5,
-  depositFee: '4% from Farm Provider',
-  priceChart: 'https://info.spookyswap.finance/token/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
-
-    tokens: [
-      ...spookyTokens,
-      ...zapTokens,
-    ],
-  },
-},
-
-{
   id: 'cgs-fusdt',
   logo: 'fantom/FUSDT.png',
   name: 'fUSDT',
