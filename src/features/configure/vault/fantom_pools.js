@@ -14049,6 +14049,7 @@ const pools = [
   platform: 'CougarSwap',
   assets: ['WFTM'],
   callFee: 0.5,
+  depositFee: '4% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
   zap: {
