@@ -14257,7 +14257,7 @@ const pools = [
   pricePerFullShare: 1,
   tvl: 0,
   oracle: 'tokens',
-  oracleId: 'DAI',
+  oracleId: 'dai',
   oraclePrice: 0,
   depositsPaused: false,
   status: 'active',
