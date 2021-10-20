@@ -5414,7 +5414,7 @@ const pools = [
   callFee: 0.5,
   withdrawalFee: '0.01%',
   priceChart: '',
-  addLiquidityUrl: 'https://ftm.curve.fi/fusdt/deposit',
+  addLiquidityUrl: 'https://ftm.curve.fi/tricrypto/deposit',
   buyTokenUrl: 'https://app.sushi.com/swap',
   zap: {
     disabled: true,
