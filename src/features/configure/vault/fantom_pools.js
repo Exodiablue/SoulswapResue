@@ -946,7 +946,7 @@ const pools = [
   logo: 'fantom/GinSpirit.png',
   name: 'GinSPIRIT',
   token: 'GinSPIRIT',
-  tokenDescription: 'Grim Finance | By staking GinSPIRIT, you’re earning the usual rewards from inSPIRIT protocol revenue (swap fees) plus any airdrops received.',
+  tokenDescription: 'Grim Finance | By staking GinSPIRIT, you’re earning the usual rewards from inSPIRIT protocol revenue (swap fees) plus any airdrops.',
   tokenAddress: '0x2787bea3366335068bf8b4a253044d09ea4e1c96',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
