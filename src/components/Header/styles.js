@@ -218,6 +218,9 @@ const styles = theme => ({
   logo: {
     // marginRight: '12px',
   },
+  auditBadge: {
+    // left:'0',
+  },
   middleNav: {
     display: 'flex',
     justifyContent: 'center',

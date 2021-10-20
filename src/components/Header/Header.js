@@ -81,6 +81,24 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             <Menu />
           </IconButton>
         </Hidden>
+        <Button href="https://solidity.finance/audits/GrimVault/" target="_blank" className={classes.title}>
+          <Hidden xsDown>
+            <img
+              alt="GRIM"
+              src={require(`images/auditBadge.png`)}
+              height={'40px'}
+              className={classes.auditBadge}
+            />
+          </Hidden>
+          <Hidden smUp>
+            <img
+              alt="GRIM"
+              src={require(`images/auditBadge.png`)}
+              height={'35px'}
+              className={classes.auditBadge}
+            />
+          </Hidden>
+        </Button>
       </Toolbar>
 
       <Hidden mdUp implementation="js">
