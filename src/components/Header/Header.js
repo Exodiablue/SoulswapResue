@@ -81,7 +81,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             <Menu />
           </IconButton>
         </Hidden>
-        <Button href="https://solidity.finance/audits/GrimVault/" target="_blank" className={classes.title}>
+        {/* <Button href="https://solidity.finance/audits/GrimVault/" target="_blank" className={classes.title}>
           <Hidden xsDown>
             <img
               alt="GRIM"
@@ -98,7 +98,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
               className={classes.auditBadge}
             />
           </Hidden>
-        </Button>
+        </Button> */}
       </Toolbar>
 
       <Hidden mdUp implementation="js">
