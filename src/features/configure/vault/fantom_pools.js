@@ -5391,6 +5391,42 @@ const pools = [
 },
 
 {
+  id: 'curve-ftm-tricrypto',
+  logo: 'fantom/3POOLV2.png',
+  name: 'TriCrypto LP',
+  token: 'TriCrypto LP (Curve)',
+  tokenDescription: 'Curve',
+  tokenAddress: '0x58e57cA18B7A47112b877E31929798Cd3D703b0f',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-3POOL-V2',
+  earnedTokenAddress: '0x9F490Db207C362211B0Ec5ab80382618E1488030',
+  earnContractAddress: '0x9F490Db207C362211B0Ec5ab80382618E1488030',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'curve-ftm-tricrypto',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Curve',
+  assets: ['ETH', 'BTC', 'fUSDT'],
+  callFee: 0.5,
+  withdrawalFee: '0.01%',
+  priceChart: '',
+  addLiquidityUrl: 'https://ftm.curve.fi/fusdt/deposit',
+  buyTokenUrl: 'https://app.sushi.com/swap',
+  zap: {
+    disabled: true,
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+
+    ],
+  },
+},
+
+{
   id: 'curve-ftm-fusdt',
   logo: 'fantom/DAI-USDC-FUSDT.png',
   name: 'DAI-USDT-fUSDT LP',
