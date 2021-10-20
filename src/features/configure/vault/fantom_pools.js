@@ -12324,7 +12324,7 @@ const pools = [
   platform: 'Meso',
   assets: ['WFTM'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
   zap: {
@@ -12360,7 +12360,7 @@ const pools = [
   platform: 'Meso',
   assets: ['ETH'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0x74b23882a30290451A17c44f4F05243b6b58C76d',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
   zap: {
@@ -12396,7 +12396,7 @@ const pools = [
   platform: 'Meso',
   assets: ['BTC'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0x321162Cd933E2Be498Cd2267a90534A804051b11',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
   zap: {
@@ -12432,7 +12432,7 @@ const pools = [
   platform: 'Meso',
   assets: ['fUSDT'],
   callFee: 0.5,
-  depositFee: '2.5% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A',
   zap: {
@@ -12468,7 +12468,7 @@ const pools = [
   platform: 'Meso',
   assets: ['USDC'],
   callFee: 0.5,
-  depositFee: '2.5% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
   zap: {
@@ -12504,7 +12504,7 @@ const pools = [
   platform: 'Meso',
   assets: ['DAI'],
   callFee: 0.5,
-  depositFee: '2.5% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
   zap: {
@@ -12540,7 +12540,7 @@ const pools = [
   platform: 'Meso',
   assets: ['TAROT'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0xC5e2B037D30a390e62180970B3aa4E91868764cD',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0xC5e2B037D30a390e62180970B3aa4E91868764cD',
   zap: {
@@ -12576,7 +12576,7 @@ const pools = [
   platform: 'Meso',
   assets: ['ICE'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0xf16e81dce15B08F326220742020379B855B87DF9',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0xf16e81dce15B08F326220742020379B855B87DF9',
   zap: {
@@ -12612,7 +12612,7 @@ const pools = [
   platform: 'Meso',
   assets: ['BOO'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
   zap: {
@@ -12648,7 +12648,7 @@ const pools = [
   platform: 'Meso',
   assets: ['SCREAM'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
   zap: {
@@ -12684,7 +12684,7 @@ const pools = [
   platform: 'Meso',
   assets: ['IronICE'],
   callFee: 0.5,
-  depositFee: '2.5% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0x260b3E40c714Ce8196465Ec824Cd8Bb915081812',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0x260b3E40c714Ce8196465Ec824Cd8Bb915081812',
   zap: {
@@ -12720,7 +12720,7 @@ const pools = [
   platform: 'Meso',
   assets: ['TOMB'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7',
   zap: {
@@ -12756,7 +12756,7 @@ const pools = [
   platform: 'Meso',
   assets: ['SPIRIT'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spiritswap.finance/pair/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
   zap: {
@@ -12792,7 +12792,7 @@ const pools = [
   platform: 'Meso',
   assets: ['MIM'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spiritswap.finance/pair/0x82f0B8B456c1A451378467398982d4834b6829c1',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x82f0B8B456c1A451378467398982d4834b6829c1',
   zap: {
@@ -12828,7 +12828,7 @@ const pools = [
   platform: 'Meso',
   assets: ['LINK'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
   zap: {
@@ -12864,7 +12864,7 @@ const pools = [
   platform: 'Meso',
   assets: ['GEIST'],
   callFee: 0.5,
-  depositFee: '3% from Farm Provider',
+  depositFee: '2% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0xd8321AA83Fb0a4ECd6348D4577431310A6E0814d',
   buyTokenUrl: 'https://spookyswap.finance/swap?outputCurrency=0xd8321AA83Fb0a4ECd6348D4577431310A6E0814d',
   zap: {
