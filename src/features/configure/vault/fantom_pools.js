@@ -8796,42 +8796,6 @@ const pools = [
 },
 
 {
-  id: 'butt-shit-ftm',
-  logo: 'fantom/SHIT-FTM.png',
-  name: 'SHIT-FTM LP',
-  token: 'SHIT-FTM LP (Zoo)',
-  tokenDescription: 'Buttcoin',
-  tokenAddress: '0xf386ce2d4de9fe8fc47d00ebc6816cc5f79a350b',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-SHI-FTM-E',
-  earnedTokenAddress: '0x5329f72C169E8642abF2eFbF60D5ed2597ED79F2',
-  earnContractAddress: '0x5329f72C169E8642abF2eFbF60D5ed2597ED79F2',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'lps',
-  oracleId: 'butt-shit-ftm',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Buttcoin',
-  assets: ['SHIT', 'FTM'],
-  callFee: 0.5,
-  priceChart: 'https://charts.zoocoin.cash/charts?exchange=ZooDex&pair=0xf386ce2d4de9fe8fc47d00ebc6816cc5f79a350b',
-  addLiquidityUrl: 'https://dex.zoocoin.cash/pool/add?inputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B&outputCurrency=FTM',
-  buyTokenUrl: 'https://dex.zoocoin.cash/orders/market?inputCurrency=FTM&outputCurrency=0x65414A8581A7571531eA2BCDcBa8A3F0c1A1554B',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: ZOO_ROUTER,
-
-    tokens: [
-      ...zooTokens,
-      ...zapTokensReduced,
-    ],
-  },
-},
-
-{
   id: 'opera',
   logo: 'fantom/OPERA.png',
   name: 'OPERA',
