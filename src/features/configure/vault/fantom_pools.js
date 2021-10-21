@@ -13625,6 +13625,42 @@ const pools = [
 },
 
 {
+  id: 'soul-soul',
+  logo: 'fantom/SOUL.png',
+  name: 'SOUL',
+  token: 'SOUL',
+  tokenDescription: 'SoulSwap',
+  tokenAddress: '0xe2fb177009FF39F52C0134E8007FA0e4BaAcBd07',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SOUL-Z',
+  earnedTokenAddress: '0x613dcbc575034eB8dbBF3FD5AF90697C241F4C73',
+  earnContractAddress: '0x613dcbc575034eB8dbBF3FD5AF90697C241F4C73',
+  strategyAddress: '',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'SOUL',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'SoulSwap',
+  assets: ['SOUL'],
+  callFee: 0.5,
+  priceChart: 'https://analytics.soulswap.finance/tokens/0xe2fb177009FF39F52C0134E8007FA0e4BaAcBd07',
+  buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SOUL_ROUTER,
+
+    tokens: [
+      // ...soulTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
   id: 'soul-soul-ftm',
   logo: 'fantom/SOUL-FTM.png',
   name: 'SOUL-FTM LP (SoulSwap)',
