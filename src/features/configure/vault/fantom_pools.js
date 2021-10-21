@@ -7489,7 +7489,6 @@ const pools = [
   assets: ['BRUSH'],
   callFee: 0.5,
   priceChart: 'https://info.paintswap.finance/token/0x85dec8c4B2680793661bCA91a8F129607571863d',
-  withdrawalFee: '0.5% from Farm Provider',
   buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x85dec8c4B2680793661bCA91a8F129607571863d',
   zap: {
     zapAddress: VAULT_ZAP,
