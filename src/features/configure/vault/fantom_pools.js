@@ -7414,7 +7414,7 @@ const pools = [
   assets: ['FRAX'],
   callFee: 0.5,
   withdrawalFee: '0.01%',
-  priceChart: 'https://info.spiritswap.finance/pair/0xdc301622e621166BD8E82f2cA0A26c13Ad0BE355',
+  priceChart: 'https://info.spiritswap.finance/token/0xdc301622e621166BD8E82f2cA0A26c13Ad0BE355',
   buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xdc301622e621166BD8E82f2cA0A26c13Ad0BE355',
   zap: {
     zapAddress: VAULT_ZAP,
