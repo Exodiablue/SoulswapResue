@@ -1,4 +1,5 @@
 import { connectors } from 'web3modal';
+import { indexBy } from './utils';
 import WalletConnectProvider from '@walletconnect/web3-provider';
 
 import {
@@ -24,6 +25,8 @@ import {
   polygonAddressBook,
   polygonZaps,
 } from '../configure';
+
+export const appNetworkId = window.REACT_APP_NETWORK_ID;
 
 const networkTxUrls = {
   56: hash => `https://bscscan.com/tx/${hash}`,
@@ -67,6 +70,40 @@ export const getNetworkPools = () => {
       return fantomPools;
     default:
       return [];
+  }
+};
+
+export const getNetworkVaults = (networkId = appNetworkId) => {
+  switch (networkId) {
+    case 56:
+      return indexBy(bscPools, 'id');
+    case 128:
+      return indexBy(hecoPools, 'id');
+    case 43114:
+      return indexBy(avalanchePools, 'id');
+    case 137:
+      return indexBy(polygonPools, 'id');
+    case 250:
+      return indexBy(fantomPools, 'id');
+    default:
+      return {};
+  }
+};
+
+export const getNetworkLaunchpools = (networkId = appNetworkId) => {
+  switch (networkId) {
+    case 56:
+      return indexBy(bscStakePools, 'id');
+    case 128:
+      return indexBy(hecoStakePools, 'id');
+    case 43114:
+      return indexBy(avalancheStakePools, 'id');
+    case 137:
+      return indexBy(polygonStakePools, 'id');
+    case 250:
+      return indexBy(fantomStakePools, 'id');
+    default:
+      return {};
   }
 };
 
@@ -362,3 +399,6 @@ export const getNetworkConnectors = t => {
 export const getNetworkTxUrl = networkTxUrls[process.env.REACT_APP_NETWORK_ID];
 export const getNetworkFriendlyName = () => networkFriendlyName[process.env.REACT_APP_NETWORK_ID];
 export const getNetworkBuyLink = () => networkBuyLinks[process.env.REACT_APP_NETWORK_ID];
+
+export const launchpools = getNetworkLaunchpools();
+export const vaults = getNetworkVaults();
