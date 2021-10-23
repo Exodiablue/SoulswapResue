@@ -1,0 +1,1722 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["sports-card-wc"],{"+aHC":function(t,e,a){"use strict";a.d(e,"d",(function(){return h})),a.d(e,"b",(function(){return p})),a.d(e,"c",(function(){return g})),a.d(e,"a",(function(){return m}));var r=a("XlyT"),i=a("HxRh"),n=a("rvYQ"),s=a("I6Lx"),o=a("5Uqz");var c=a("y+Kz"),d=a("4wjP"),l=a("u5KZ");const h=1;let u;async function p(t){if(!t)return null;try{const e=t.tryGetApi("authenticator",h,h);return await e.getProperty("ProviderAuthority")}catch(t){return Object(r.c)(t,i.dc,"Exception fetching ProviderAuthority",JSON.stringify(t)),null}}async function g(t){if(!t)return null;try{const e=t.tryGetApi("authenticator",h,h);return await e.getProperty("MUID")}catch(t){return Object(r.c)(t,i.dc,"Exception fetching MUID",JSON.stringify(t)),null}}async function m(t,e=!1,a,p,m){var b;const f=Object(n.b)(),v=(null===(b=null==f?void 0:f.CurrentRequestTargetScope)||void 0===b?void 0:b.audienceMode)===d.a.Enterprise,y={};if(!t)return l.a.sendAppErrorEvent(Object.assign(Object.assign({},i.oc),{message:"Failed to retrieve user auth token and MUID from WDX client due to undefined widget instance",pb:Object.assign(Object.assign({},i.oc.pb),{widgetInstance:t,widgetInstanceId:a,windowsSessionId:p})})),y;const S=await async function(t,e,a,n,s=""){if(!t)return null;try{const r=t.tryGetApi("authenticator",h,h);return await r.getToken(e,a,n,s)}catch(t){return Object(r.c)(t,i.dc,"Exception calling GetToken",JSON.stringify(t)),null}}(t,v?"3a4d129e-7f50-4e0d-a7fd-033add0a29f4":"00000000400F9D16",v?"User.Read Userinfo.ReadWrite":"service::www.msn.com::MBI_SSL",v?"https://enterprisenews.microsoft.com/":"https://www.api.msn.com/");u=await g(t),S?(v&&e&&(y[c.r.entAuthorization]=S),v||(y[c.r.rpsToken]=S)):m&&l.a.sendAppErrorEvent(Object.assign(Object.assign({},i.nc),{message:"WDX Client failed to return user auth token",pb:Object.assign(Object.assign({},i.nc.pb),{widgetInstance:t,widgetInstanceId:a,windowsSessionId:p,isBackgroundRefresh:!m})}));const w=Object(o.b)();return u?(y[c.r.muid]=u,u!==w&&function(t){var e;const a=n.a.IsCnDomain||"zh-cn"===(null===(e=null===s.b||void 0===s.b?void 0:s.b.Locale)||void 0===e?void 0:e.toLowerCase());t&&Object(o.c)("MUID",t,365,a?".msn.cn":".msn.com","/")}(u)):w&&(y[c.r.muid]=w),y}},"/ooL":function(t,e,a){"use strict";var r=a("NkR4"),i=Object(r.a)({À:"A",Á:"A",Â:"A",Ã:"A",Ä:"A",Å:"A",à:"a",á:"a",â:"a",ã:"a",ä:"a",å:"a",Ç:"C",ç:"c",Ð:"D",ð:"d",È:"E",É:"E",Ê:"E",Ë:"E",è:"e",é:"e",ê:"e",ë:"e",Ì:"I",Í:"I",Î:"I",Ï:"I",ì:"i",í:"i",î:"i",ï:"i",Ñ:"N",ñ:"n",Ò:"O",Ó:"O",Ô:"O",Õ:"O",Ö:"O",Ø:"O",ò:"o",ó:"o",ô:"o",õ:"o",ö:"o",ø:"o",Ù:"U",Ú:"U",Û:"U",Ü:"U",ù:"u",ú:"u",û:"u",ü:"u",Ý:"Y",ý:"y",ÿ:"y",Æ:"Ae",æ:"ae",Þ:"Th",þ:"th",ß:"ss",Ā:"A",Ă:"A",Ą:"A",ā:"a",ă:"a",ą:"a",Ć:"C",Ĉ:"C",Ċ:"C",Č:"C",ć:"c",ĉ:"c",ċ:"c",č:"c",Ď:"D",Đ:"D",ď:"d",đ:"d",Ē:"E",Ĕ:"E",Ė:"E",Ę:"E",Ě:"E",ē:"e",ĕ:"e",ė:"e",ę:"e",ě:"e",Ĝ:"G",Ğ:"G",Ġ:"G",Ģ:"G",ĝ:"g",ğ:"g",ġ:"g",ģ:"g",Ĥ:"H",Ħ:"H",ĥ:"h",ħ:"h",Ĩ:"I",Ī:"I",Ĭ:"I",Į:"I",İ:"I",ĩ:"i",ī:"i",ĭ:"i",į:"i",ı:"i",Ĵ:"J",ĵ:"j",Ķ:"K",ķ:"k",ĸ:"k",Ĺ:"L",Ļ:"L",Ľ:"L",Ŀ:"L",Ł:"L",ĺ:"l",ļ:"l",ľ:"l",ŀ:"l",ł:"l",Ń:"N",Ņ:"N",Ň:"N",Ŋ:"N",ń:"n",ņ:"n",ň:"n",ŋ:"n",Ō:"O",Ŏ:"O",Ő:"O",ō:"o",ŏ:"o",ő:"o",Ŕ:"R",Ŗ:"R",Ř:"R",ŕ:"r",ŗ:"r",ř:"r",Ś:"S",Ŝ:"S",Ş:"S",Š:"S",ś:"s",ŝ:"s",ş:"s",š:"s",Ţ:"T",Ť:"T",Ŧ:"T",ţ:"t",ť:"t",ŧ:"t",Ũ:"U",Ū:"U",Ŭ:"U",Ů:"U",Ű:"U",Ų:"U",ũ:"u",ū:"u",ŭ:"u",ů:"u",ű:"u",ų:"u",Ŵ:"W",ŵ:"w",Ŷ:"Y",ŷ:"y",Ÿ:"Y",Ź:"Z",Ż:"Z",Ž:"Z",ź:"z",ż:"z",ž:"z",Ĳ:"IJ",ĳ:"ij",Œ:"Oe",œ:"oe",ŉ:"'n",ſ:"s"}),n=a("SNCn"),s=/[\xc0-\xd6\xd8-\xf6\xf8-\xff\u0100-\u017f]/g,o=RegExp("[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]","g");e.a=function(t){return(t=Object(n.a)(t))&&t.replace(s,i).replace(o,"")}},"0hJ9":function(t,e,a){"use strict";var r=a("v6nU");e.a=function(t){return"number"==typeof t&&t==Object(r.a)(t)}},"39vG":function(t,e,a){"use strict";a.d(e,"a",(function(){return i}));var r=a("6BDD");const i=(t,e)=>r.b`
+    <slot></slot>
+`},"4uqX":function(t,e,a){"use strict";e.a='<svg width="11" height="12" viewBox="0 0 11 12" fill="none"><path d="M10.64 5.9v.7h-4.9v4.9h-.7V6.6H.14v-.7h4.9V1h.7v4.9h4.9Z" stroke="#000" stroke-opacity=".83" stroke-width=".2"/></svg>'},"5tHy":function(t,e,a){"use strict";a.d(e,"a",(function(){return i})),a.d(e,"b",(function(){return h})),a.d(e,"c",(function(){return u})),a.d(e,"d",(function(){return p}));var r,i,n,s=a("w7FX"),o=a("QBS5"),c=a("oePG"),d=a("6BDD"),l=a("TDEi");!function(t){t.half="1x_1y",t.full="1x_2y",t.tall="1x_3y"}(r||(r={})),function(t){t.preGame="pre-game",t.inprogressGame="inprogress-game",t.postGame="post-game"}(i||(i={})),function(t){t.singleparticipant="single",t.dualparticipants="dual"}(n||(n={}));class h extends l.a{constructor(){super(...arguments),this.cardLayout=r.half,this.sportsMatchData=[],this.clickthroughTarget="_blank"}}function u(t,e){if(t){if("tennis"===e.toLowerCase()){const e=t.split(", "),a=/\((.*?)\)/i;let r,i="";return e.forEach(t=>{t.includes("(")?(i+=t.charAt(0),r=t.match(a),null!=r&&(i+=r[1].sup()+"  ")):i+=t+"  "}),d.b` ${i.trim()} `}return t}}function p(t){return"cricket"===t||"tennis"===t||"Tennis"===t?"long-score":""}Object(s.a)([Object(o.b)({attribute:"card-layout"})],h.prototype,"cardLayout",void 0),Object(s.a)([o.b],h.prototype,"background",void 0),Object(s.a)([o.b],h.prototype,"uxstyle",void 0),Object(s.a)([c.d],h.prototype,"sportsMatchupCardData",void 0),Object(s.a)([c.d],h.prototype,"sportsMatchData",void 0),Object(s.a)([Object(o.b)({attribute:"clickthrough-target"})],h.prototype,"clickthroughTarget",void 0),Object(s.a)([c.d],h.prototype,"matchTelemetryTags",void 0),Object(s.a)([c.d],h.prototype,"headerTelemetryTag",void 0),Object(s.a)([c.d],h.prototype,"seeMoreTelemetryTag",void 0)},"6ADy":function(t,e,a){"use strict";a.d(e,"b",(function(){return d})),a.d(e,"c",(function(){return h})),a.d(e,"a",(function(){return u}));var r=a("rvYQ"),i=a("I6Lx"),n=a("kN1G"),s=a("tMmC");let o,c;function d(){const t=Object(r.b)();if(!o){!function(t){o=new URL("",t),p(o)}(Object(n.j)()&&Object(n.k)()?t.EnterpriseServiceUrlBase:t.ServiceUrlBase)}return o}function l(){const t=Object(r.b)();if(!c){!function(t){c=new URL("",t),p(c)}(Object(n.j)()&&Object(n.k)()?t.EnterpriseServiceUrlBase:t.FeedServiceUrlBase)}return c}function h(t,e=d()){return new URL(t+(null==e?void 0:e.search),e)}function u(t,e=l()){return new URL(t+(null==e?void 0:e.search),e)}function p(t){let e=!1;"dev"!==t.searchParams.get("env.service")&&Object(i.a)().UserIsSignedIn&&(e=!0),s.a.log("u-si: "+Object(r.b)().UserId),s.a.log("a-si: "+e),s.a.log("ss-si: "+Object(i.a)().UserIsSignedIn)}},"6SUv":function(t,e,a){"use strict";e.a='<svg width="5" height="10" viewBox="0 0 5 10" fill="none"><path d="M5 0 0 5.22 5 10V0Z"/></svg>'},"7ffs":function(t,e,a){"use strict";a.d(e,"a",(function(){return o})),a.d(e,"b",(function(){return c}));var r=a("w7FX"),i=a("QBS5"),n=a("oePG"),s=a("TDEi");class o{constructor(){this.actionAppearance="neutral"}}class c extends s.a{}Object(r.a)([i.b],c.prototype,"target",void 0),Object(r.a)([n.d],c.prototype,"data",void 0),Object(r.a)([n.d],c.prototype,"headerTelemetryTag",void 0),Object(r.a)([n.d],c.prototype,"seeMoreTelemetryTag",void 0)},CgWR:function(t,e,a){"use strict";var r;a.d(e,"a",(function(){return r})),function(t){t.AutosMarketplaceCard="autosmarketplaceCardEnabled",t.HoroscopeCard="horoscopeCardEnabled",t.WeatherCard="weatherCardEnabled",t.SportsCard="sportsCardEnabled",t.MoneyCard="moneyCardEnabled",t.FinanceCard="financeCardEnabled",t.OnThisDayCard="onthisdayCardEnabled",t.ShoppingCard="shoppingCardEnabled",t.TrafficCard="trafficCardEnabled",t.EsportsCard="esportsCardEnabled",t.ElectionsCard="genericelectionCardEnabled",t.LotteryCard="lotteryCardEnabled",t.QnaCard="qnaCardEnabled",t.RecipesCard="recipeCardEnabled",t.TravelCard="travelCardEnabled",t.HealthCard="healthCardEnabled",t.TopStoriesCard="topstoriesCardEnabled",t.LocalGuideCard="localGuideCardEnabled"}(r||(r={}))},KETb:function(t,e,a){"use strict";a.d(e,"a",(function(){return $})),a.d(e,"b",(function(){return E}));var r=a("D57K"),i=a("XlyT"),n=a("IhCV"),s=a("z2Ro"),o=a("vq4Z"),c=a("VcDS");class d extends s.a{constructor(t,e,a,r){super(t,a,c.a.BeginActivity,n.a.newGuid(),new Date,e),this.LogLevel=o.a.Activity,this.Ended=!1,this.correlationVector=r}}var l=a("KSHU"),h=a("mRXR");class u extends s.a{constructor(t,e,a,r,i,s,d,l){super(t,l,c.a.BeginNetworkActivity,n.a.newGuid(),new Date,d),this.serviceName=e,this.LogLevel=o.a.Activity,this.Ended=!1,this.requestUri=a,this.requestHttpMethod=r,this.currentOperationName=i,this.correlationVector=s}}var p=a("9RHM");class g extends l.a{constructor(t,e){super(t),this.correlationVectorProvider=e}static getInstance(t,e){var a=t||"Default",r=g.InstancesMap[a];if(r)return r;var i=new h.a(a,o.a.Activity);return r=new g(i,e),g.InstancesMap[a]=r,r}isActivityEnabled(){return this.logger.isEnabledFor(o.a.Activity)}createActivity(t,e,a){if(this.isActivityEnabled()){let r,i;e&&(r=e.ActivityId,i=this.getVectorForNewActivity(e,!1));let n=new d(t,r,a,i);return this.logger.log(o.a.Activity,n),n}return e||null}createActivityCallback(t,e,a){return this.isActivityEnabled()?this.createActivity(t(),e,a):e||null}endActivity(t){if(this.isActivityEnabled()&&t&&!t.Ended){t.Ended=!0;const e=new Date,a=Object(p.a)(t);a.LogType=c.a.EndActivity,a.LogDateTime=e;const r=a.LogDateTime.getTime()-t.LogDateTime.getTime();a.Message=a.Message+" ElapsedTime (Milliseconds):"+r.toString(),a.elapsedTimeInMs=r,this.logger.log(o.a.Activity,a)}}createNetworkActivity(t,e,a,r,i,n,s,o){if(this.isActivityEnabled()){n||s||console.warn("'correlationVector' or 'parentActivity' is required to create network activity");let c=n||this.getVectorForNewActivity(s,!0),d=s?s.ActivityId:"";return new u(t,e,a,r,i,c,d,o)}return null}endSuccessfulNetworkActivity(t,e,a){this.endNetworkActivity(t,!0,e,a)}endFailedNetworkActivity(t,e,a,r){this.endNetworkActivity(t,!1,e,a,r)}endNetworkActivity(t,e,a,r,i){if(t&&!t.Ended){t.Ended=!0;let n=new Date,s=Object(p.a)(t);s.LogType=c.a.EndNetworkActivity,s.LogDateTime=n,s.elapsedTimeInMs=s.LogDateTime.getTime()-t.LogDateTime.getTime(),s.successful=e,s.responseSize=a,s.responseStatusCode=r,s.errorMessage=i,this.logger.log(o.a.Activity,s)}}getVectorForNewActivity(t,e){return t&&this.correlationVectorProvider?(t.latestChildCorrelationVector?t.latestChildCorrelationVector=this.correlationVectorProvider.incrementExternalVector(t.latestChildCorrelationVector):(t.latestChildCorrelationVector=this.correlationVectorProvider.extendExternalVector(t.correlationVector),e&&(t.latestChildCorrelationVector=this.correlationVectorProvider.incrementExternalVector(t.latestChildCorrelationVector))),t.latestChildCorrelationVector):""}}g.InstancesMap={};var m=a("/wq8");class b{constructor(t){if(this.loggingService=t,!t)throw"loggingService is required for LoggedExceptionManager."}error(t){throw this.loggingService.error(t),t}fatal(t){throw this.loggingService.fatal(t),t}}var f=a("HDSB");class v{constructor(t,e,a,r,i,n,s){if(!t)throw new Error("loggingService is required for ExponentialBackoffRetry.");const o=new b(t);this.logInvalidParams(o,e,a,r,i,s),this.loggingService=t,this.maxRetries=e||v.defaultMaxRetries,this.baseRetryDelayInMs=a||v.defaultBaseRetryDelayInMs,this.maxRetryDelayInMs=r||v.maxAllowedRetryDelayInMs,this.factor=i||v.defaultFactor,this.minOffsetInMs=n||v.defaultMinOffsetInMs,this.maxOffsetInMs=s||v.defaultMaxOffsetInMs,Object(f.a)()&&this.loggingService.infoCallback(()=>"ExponentialBackoffRetry has been configured.",null,{maxRetries:e,minTimeout:a,maxTimeout:r,factor:i})}executeRequest(t,e,a){return Object(r.a)(this,void 0,void 0,(function*(){return new Promise((i,n)=>Object(r.a)(this,void 0,void 0,(function*(){yield this.tryRequest(t,i,n,0,e,a)})))}))}logInvalidParams(t,e,a,r,i,n){e&&(e<1||e>v.maxAllowedRetries)&&t.fatal(`maxRetries should be at least 1 and less than ${v.maxAllowedRetries}.`),a&&a<v.defaultBaseRetryDelayInMs&&t.fatal("baseRetryDelay has to be a positive value greater than or equal to 100."),a&&n&&a<=n&&t.fatal("baseRetryDelay must not be smaller than the maximum delay offset."),r&&(r<=0||r>v.maxAllowedRetryDelayInMs)&&t.fatal(`maxRetryDelay has to be a positive value less than ${v.maxAllowedRetryDelayInMs}.`),i&&i<=0&&t.fatal("factor has to be a positive value.")}tryRequest(t,e,a,i,n,s){return Object(r.a)(this,void 0,void 0,(function*(){try{const a=1e4,r=yield this.timeoutServiceRequest(a,t());e(r)}catch(r){if(Object(f.a)()&&i<this.maxRetries){const o=3,c=parseFloat((Math.random()*(this.minOffsetInMs-this.maxOffsetInMs)+this.maxOffsetInMs).toFixed(o)),d=.5,l=Math.random()<d?-1:1,h=Math.min(this.baseRetryDelayInMs*Math.pow(this.factor,i),this.maxRetryDelayInMs)+c*l;this.loggingService.warnCallback(()=>`Retrying the request in ${h} milliseconds.`,s,{error:r,currentRetry:i+1,requestInfo:n}),setTimeout(()=>this.tryRequest(t,e,a,i+1,n,s),h)}else this.loggingService.errorCallback(()=>Object(f.a)()&&i<this.maxRetries?"ExponentialBackoffRetry has exceeded maximum retries "+this.maxRetries:"Request has failed.",s,{error:r,currentRetry:i,requestInfo:n}),a(r)}}))}timeoutServiceRequest(t,e){return Object(r.a)(this,void 0,void 0,(function*(){return new Promise((a,i)=>Object(r.a)(this,void 0,void 0,(function*(){const r=setTimeout(()=>i(new Error("Service Request Timed out!")),t);try{const t=yield e;a(t),clearTimeout(r)}catch(t){i(t),clearTimeout(r)}})))}))}}v.defaultBaseRetryDelayInMs=100,v.defaultFactor=2,v.defaultMaxOffsetInMs=25,v.defaultMaxRetries=5,v.defaultMinOffsetInMs=1,v.maxAllowedRetries=10,v.maxAllowedRetryDelayInMs=2e3;var y,S=a("VOUN"),w=a("hqLi");class O extends s.a{constructor(t,e,a,r,i){super(t,a,c.a.Instrumentation,r,i),this._counterName=t,this.CounterValue=e}get CounterName(){return this._counterName}incrementValue(){if("number"!=typeof this.CounterValue)throw"ERROR: Counter value is never initialized, cannot perform increment action.";this.CounterValue++}}class C extends l.a{constructor(t){super(t)}static getInstance(t){const e=t||"Default";let a=C.InstancesMap[e];if(a)return a;let r=new h.a(e,o.a.Trace);return a=new C(r),C.InstancesMap[e]=a,a}static getDimensionedLogItems(t,e){let a=[],r=new O(t.CounterName,t.CounterValue,Object(p.a)(t.Data),t.ActivityId,t.LogDateTime);if(r.LogLevel=o.a.Trace,a.push(r),e&&!Object(w.a)(e))for(let r of Object.keys(e))for(let i of e[r]){let e=r.indexOf(":")>-1?`${t.CounterName}(${r.replace(":","-")}: ${i})`:`${t.CounterName}(${r}: ${i})`,n=new O(e,t.CounterValue,Object(p.a)(t.Data),t.ActivityId,t.LogDateTime);n.LogLevel=o.a.Trace,a.push(n)}return a}logPerfCounter(t,e,a,r){const i=new O(t,e,r);this.logPerfCounterItem(i,a)}logPerfCounterItem(t,e){const a=C.getDimensionedLogItems(t,e);for(let t of a)this.logger.log(o.a.Trace,t)}}C.InstancesMap={};class M extends s.a{constructor(t,e,a,r,i,n,s,c){super(t,s),this.pageName=t,this.LogLevel=o.a.Activity,this._userActivityType=e,this.correlationVector=a,this.trackingData=r,this.pageTitle=i,this.pageUri=n,this.eventData=c}get userActivityType(){return this._userActivityType}}!function(t){t[t.None=0]="None",t[t.PageAction=1]="PageAction",t[t.PageView=2]="PageView"}(y||(y={}));class x extends l.a{constructor(t){super(t)}static getInstance(t){var e=t||"Default",a=x.InstancesMap[e];if(a)return a;var r=new h.a(e,o.a.Activity);return a=new x(r),x.InstancesMap[e]=a,a}isActivityTrackingEnabled(){return this.logger.isEnabledFor(o.a.Activity)}logPageView(t,e,a,r,i,n){this.isActivityTrackingEnabled()&&this.logger.log(o.a.Activity,this.getUserActivityLogItem(t,e,a,i,n,r))}logPageActionEvent(t,e,a,r,i,n,s){if(this.isActivityTrackingEnabled()){if(!t)throw"''eventData' required for logging page action event.";t.elementTitle&&t.eventType&&t.elementTitle.trim()&&t.eventType.trim()&&this.logger.log(o.a.Activity,this.getUserActivityLogItem(e,a,r,n,s,i,t))}}getUserActivityLogItem(t,e,a,r,i,n,s){if(!t)throw"''pageName' is required for logging user activity.";return s?new M(t,y.PageAction,e,a,r,i,n,s):new M(t,y.PageView,e,a,r,i,n)}}x.InstancesMap={};class j{constructor(t,e,a,r){this.loggingServiceInstance=t||S.a.getInstance(),this.activityServiceInstance=e||g.getInstance(),this.userActivityServiceInstance=a||x.getInstance(),this.perfCounterServiceInstance=r||C.getInstance()}get loggingService(){return this.loggingServiceInstance}get activityLoggingService(){return this.activityServiceInstance}get userActivityTrackingService(){return this.userActivityServiceInstance}get perfCounterLoggingService(){return this.perfCounterServiceInstance}getLoggingServiceByName(t){return this.checkLoggerName(t),S.a.getInstance(t)}getActivityLoggingServiceByName(t){return this.checkLoggerName(t),g.getInstance(t)}getUserActivityTrackingServiceByName(t){return this.checkLoggerName(t),x.getInstance(t)}getPerfCounterLoggingServiceByName(t){return this.checkLoggerName(t),C.getInstance(t)}addActivityLoggingService(t){this.checkServiceInstance(t),g.getInstance(t.getLoggerName())}checkLoggerName(t){if(!t)throw"'loggerName' is required."}checkServiceInstance(t){if(!t)throw"'serviceInstance' is required."}}var D=a("msIb"),T=a("tMmC");let k,I;function $(t,e,a){return Object(r.a)(this,void 0,void 0,(function*(){let r,n;try{if(r=yield fetch(t,e),r&&r.ok)return r}catch(e){Object(i.c)(e,a,"Exception calling 1S primary Url: "+t)}return r&&r.headers&&r.headers.get("OneWebServiceLatency")?r:t.indexOf("assets.msn.com/service/")>0?(n=t.replace("assets.msn.com/service/","api.msn.com/"),yield fetch(n,e)):r}))}function E(t,e){return Object(r.a)(this,void 0,void 0,(function*(){const a=A().activityLoggingService.createActivity(e);return yield D.a.serviceRequestOnComplete(()=>function(){if(I)return I;return I=new v(A().loggingService,3),I}().executeRequest(t,null,a),()=>A().activityLoggingService.endActivity(a))}))}function A(){if(k)return k;const t=g.getInstance("ExperienceActivityLogger");return Object(f.a)()&&T.a.isDebug()&&t.addAppender(new m.a(o.a.Activity)),k=new j(T.a.getLoggingService(),t),k}},LJMo:function(t,e,a){"use strict";var r;function i(t){switch(t){case"ArticlePreview":return 13;case"SlideshowPreview":return 14;case"VideoPreview":return 15;default:return null}}a.d(e,"a",(function(){return r})),a.d(e,"b",(function(){return i})),function(t){t.Article="article",t.Slideshow="slideshow",t.Video="video",t.Spotlight="content360",t.Infopane="infopane",t.TabbedInfopane="tabbedInfopane",t.HalfPane="HalfPane",t.HeadToHead="HeadToHead",t.Mosaic="Mosaic",t.Triptych="Triptych",t.TabbedInfopaneTab="tabbedInfopaneTab",t.WebContent="webcontent",t.ExternalLink="link",t.DenseList="DenseList",t.BackFillContent="BackfillContent",t.MyBriefRiverCard="toppicks",t.NativeAd="nativead",t.CmsAd="cmsad",t.ShoppingCard="ShoppingCard",t.ShoppingCarousel="ShoppingCarousel",t.ComicsCarousel="ComicsCarousel",t.EditorsPickCarousel="EditorsPickCarousel",t.SelectCarousel="SelectCarousel",t.DailyFixGamesCarousel="DailyFixGamesCarousel",t.NewsSegmentCarousel="NewsSegmentCarousel",t.SubscriptionCarousel="SubscriptionCarousel",t.TopStories="topStories",t.WorkHeadlines="workNews",t.Trending="trendingnow",t.LocalNews="XfeedUpsell",t.LocalNewsFeed="LocalNewsFeed",t.TrendingInTenMinutes="trendingInTenMinutes",t.Horoscope="Horoscope",t.Elections="GenericElection",t.RecommendedSearchCarousel="RecommendedSearch",t.OnThisDay="OnThisDay",t.Lottery="Lottery",t.PartnerUpsell="PartnerUpsell",t.Qna="qnacard",t.Recipes="recipecard",t.TravelDestinationCard="TravelDestinationCard",t.TravelDestinationCarouselCard="TravelDestinationCarouselCard",t.TravelInspirationCard="TravelInspirationCard",t.BingHealthCovid19StatsCard="Covid19Stats",t.PlaceholderCard="placeholder",t.BingVideo="BingVideo",t.BingVideoCarousel="BingVideoCarousel",t.EsportsHighlight="esportsHighlight",t.EsportsLiveStream="esportsLiveStream",t.EsportsMatch="esportsMatch",t.EsportsTournament="esportsTournament",t.WeatherSummary="WeatherSummary",t.WeatherSummary_spotlight="WeatherSummary_spotlight",t.StockQuote="StockQuote",t.StockQuote_spotlight="StockQuote_spotlight",t.MoneyInfo="MoneyInfo",t.SportsMatch="SportsMatch",t.SportsOlympics="SportsOlympics",t.TrafficDelays="TrafficDelays",t.ShoppingMerchantCategoryDeals="ShoppingMerchantCategoryDeals",t.Group="group",t.Upsell="FreUpsell",t.Dense="densetab",t.LocalGuide="LocalDay",t.IndustryNewsCard="IndustryNewsCard",t.RecommendedCardFeed="RecommendedCardFeed",t.RecommendedInterests="RecommendedInterests",t.AutosEntityList="AutosEntityList",t.ContainerizedHalfu="containerizedHalfu",t.TopicFeed="TopicFeed"}(r||(r={}))},Lc5y:function(t,e,a){"use strict";a.d(e,"a",(function(){return d}));var r=a("8hiW"),i=a("yQ0v"),n=a("YBl9"),s=a("swXE"),o=a("mObi");const c=Object(o.a)(t=>{let e=Object(n.c)(t);if(null!==e)return e;if(e=Object(n.d)(t),null!==e)return e;throw new Error(t+' cannot be converted to a ColorRGBA64. Color strings must be one of the following formats: "#RGB", "#RRGGBB", or "rgb(r, g, b)"')});class d{constructor(t,e){this.cache=new WeakMap,this.light=t,this.dark=e}bind(t){this.attach(t)}unbind(t){const e=this.cache.get(t);e&&r.A.unsubscribe(e)}attach(t){const e=this.cache.get(t)||new l(this.light,this.dark,t),a=r.A.getValueFor(t);r.A.subscribe(e,t),e.attach(a),this.cache.set(t,e)}}class l{constructor(t,e,a){this.light=t,this.dark=e,this.source=a,this.attached=null}handleChange({target:t,token:e}){this.attach(e.getValueFor(t))}attach(t){const e=(a=t.toColorString(),Object(s.k)(c(a))<=i.a.DarkMode?"dark":"light");var a;this.attached!==this[e]&&(null!==this.attached&&this.source.$fastController.removeStyles(this.attached),this.attached=this[e],null!==this.attached&&this.source.$fastController.addStyles(this.attached))}}},MWBq:function(t,e,a){"use strict";a.r(e),a.d(e,"ToolingInfo",(function(){return _t})),a.d(e,"SportsCardWC",(function(){return ft})),a.d(e,"SportsCardWCTemplate",(function(){return qt})),a.d(e,"matchupNeutralBackground",(function(){return Ct.b})),a.d(e,"matchupNeutralBackgroundDarkMode",(function(){return Ct.c})),a.d(e,"SportsCardWCStyles",(function(){return Ct.a}));var r=a("5tHy"),i=a("8hiW"),n=a("UPH6"),s=a("4X57"),o=a("wHpb"),c=a("oqLQ"),d=a("xtFa"),l=a("Z5nQ"),h=a("Lc5y");const u=s.a`
+    .sports-match-score-container {
+        flex-direction: row;
+    }
+`,p=s.a`
+    .sports-match-score-container {
+        flex-direction: row-reverse;
+    }
+`,g=s.a`
+    :host([uxstyle="widget"]) .sd-action {
+        color: #003e92;
+    }
+`,m=s.a`
+    :host([uxstyle="widget"]) .sd-action {
+        color: #99ebff;
+    }
+`,b=(t,e)=>s.a`
+    ${l.a}
+    :host {
+        font-family: ${i.u};
+    }
+
+    .sports-matchup-card {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0;
+        height: 100%;
+    }
+
+    :host([background="dynamic"]) .sports-matchup-card {
+        background: ${d.b};
+    }
+
+    :host([background="gradient"]) .sports-matchup-card {
+        background: ${d.a};
+    }
+
+    .sports-matchup-card-header {
+        display: flex;
+        flex-direction: row;
+        min-height: 24px;
+        padding: 0 16px;
+    }
+
+    ::slotted([slot="sports-header-icon"]) {
+        padding-inline-end: 6px;
+        margin-top: 6px;
+    }
+
+    .sports-matchup-card-header-title-link {
+        color: ${i.ub};
+        display: flex;
+        flex: 1;
+        min-width: 0;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        z-index: 2;
+    }
+
+    .sports-matchup-card-header-title {
+        font-size: ${i.Ub};
+        line-height: ${i.Vb};
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-inline-end: 12px;
+    }
+
+    .sports-matchup-card-header-title-link:hover,
+    .sports-matchup-card-header-title-link:active,
+    .sports-matchup-card-header-title-link:${o.a} {
+        text-decoration: underline;
+        outline: none;
+    }
+
+    .sports-matchup-card-header-action-button {
+        z-index: 2;
+        display: flex;
+        margin-top: -4px;
+    }
+
+    .sports-match-clickthrough-link {
+        color: ${i.ub};
+        text-decoration: none;
+        z-index: 2;
+        overflow: hidden;
+        margin: 0 6px;
+    }
+
+    .sports-match-clickthrough-link a::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .sports-match-clickthrough-link:hover,
+    .sports-match-clickthrough-link:${o.a} {
+        background: ${i.ib};
+        border-radius: calc(${i.v} * 2px);
+        overflow: hidden;
+    }
+
+    .sports-matches {
+        display: grid;
+        row-gap: 14px;
+        padding-top: 12px;
+    }
+
+    :host([uxstyle="widget"]):host([card-layout="1x_1y"]) .sports-matches {
+        padding-top: 28px;
+    }
+
+    :host([uxstyle="widget"]):host([card-layout="1x_3y"]) .sports-matches {
+        row-gap: 20px;
+        padding-top: 14px;
+    }
+
+    .sports-match {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 0 16px;
+    }
+
+    .sports-match-dual-participants {
+        display: flex;
+        flex-direction: column;
+        padding: 2px 0;
+        width: 204px;
+        gap: 4px;
+    }
+
+    .sports-match-participant {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 28px;
+    }
+
+    .sports-match-participant-image {
+        height: 28px;
+        padding-inline-end: 8px;
+        width: 28px;
+    }
+
+    .sports-match-participant-image img {
+        width: 100%;
+    }
+
+    .sports-match-participant-name {
+        flex: 1;
+        font-size: ${i.Sb};
+        line-height: ${i.Tb};
+        overflow: hidden;
+        padding-inline-end: 8px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .sports-match-score-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sports-match-participant-score {
+        font-size: ${i.Sb};
+        line-height: ${i.Tb};
+        overflow: hidden;
+        padding-inline-end: 4px;
+        text-align: right;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .sports-match-participant-name.winner,
+    .sports-match-participant-score.winner,
+    .sports-match-detail-attribute-game-time {
+        font-weight: bold;
+    }
+
+    .long-score .sports-match-participant-name {
+        font-size: ${i.Ub};
+        line-height: ${i.Vb};
+    }
+
+    .long-score .sports-match-participant-score {
+        font-size: ${i.Ub};
+        line-height: ${i.Vb};
+    }
+
+    .long-score .sports-match-participant-name.winner,
+    .long-score .sports-match-participant-score.winner {
+        font-weight: 600;
+    }
+
+    .sports-match-participant-winner-tag {
+        padding-inline-end: 4px;
+        width: 5px;
+        height: 24px;
+    }
+
+    .sports-match-participant-winner-tag > svg > path {
+        fill: currentColor;
+    }
+
+    .sports-match-participant-name.loser,
+    .sports-match-participant-score.loser {
+        color: ${i.ub};
+    }
+
+    .sports-match-details {
+        font-size: ${i.Ub};
+        width: 64px;
+        color: ${i.ub};
+    }
+
+    .sports-match-detail-attributes {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .sports-match-detail-attribute {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .sports-match-detail-attribute-game-clock,
+    .sports-match-detail-attribute-game-state,
+    .sports-match-detail-attribute-game-date,
+    .sports-match-detail-attribute-game-time,
+    .sports-match-detail-attribute-game-tv-channel {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+        color: ${i.ub};
+    }
+
+    .inprogress-game .sports-match-detail-attribute-game-clock {
+        color: #cc0000;
+        font-weight: bold;
+    }
+
+    .sports-matchup-card-footer {
+        display: flex;
+        justify-content: center;
+        padding: 0 16px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 8px;
+    }
+
+    .sports-matchup-card-footer-seemore-arrow > svg > path {
+        fill: currentcolor;
+    }
+
+    ::slotted([slot="more-actions"]) {
+        --control-corner-radius: 20;
+        height: 24px;
+        width: 24px;
+        min-width: 24px;
+        background: ${i.db};
+    }
+
+    ::slotted([slot="more-actions"])::part(control) {
+        padding: 0;
+    }
+
+    ::slotted([slot="more-actions"]:hover) {
+        background: ${i.P};
+    }
+
+    .sd-action {
+        height: 24px;
+    }
+
+    .sd-action::part(control) {
+        padding: 0 24px;
+    }
+
+    .sd-action::part(control)::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    :host([uxstyle="widget"]) .sd-action {
+        background: transparent
+    }
+`.withBehaviors(new h.a(g,m),new n.a(u,p),Object(c.c)(s.a`
+                :host {
+                    forced-color-adjust: auto;
+                }
+            `));var f=a("6BDD"),v=a("6vBc"),y=a("UNqU"),S=a("kpPY"),w=a("eUhr");const O=(t,e)=>f.b`
+    <slot name="sports-header-icon"></slot>
+    <a
+        class="sports-matchup-card-header-title-link"
+        href=${t=>{var e;return null===(e=t.sportsMatchupCardData)||void 0===e?void 0:e.cardTitleClickthroughUrl}}
+        target=${t=>t.clickthroughTarget}
+        ${Object(w.b)(t=>t.headerTelemetryTag)}
+    >
+        <div class="sports-matchup-card-header-title">
+            ${t=>{var e;return"widget"==t.uxstyle?"":null===(e=t.sportsMatchupCardData)||void 0===e?void 0:e.cardTitle}}
+        </div>
+    </a>
+    <div class="sports-matchup-card-header-action-button" id="sports-matchup-action">
+        <slot name="more-actions"></slot>
+    </div>
+`,C=(t,e)=>f.b`
+    <a
+        class="sports-match-clickthrough-link"
+        href=${t=>t.matchClickthroughUrl?t.matchClickthroughUrl:void 0}
+        target=${(t,e)=>e.parent.clickthroughTarget}
+        ${Object(w.b)((t,e)=>e.parent.matchTelemetryTags&&t.matchClickthroughUrl?e.parent.matchTelemetryTags.get(t.matchClickthroughUrl):"")}
+    >
+        <div
+            class="sports-match ${(t,e)=>Object(r.d)(e.parent.sportsMatchupCardData.dataType+"")}"
+        >
+            <div class="sports-match-participants">
+                <div class="sports-match-dual-participants">
+                    <div class="sports-match-participant participant-one">
+                        ${Object(v.a)(t=>t.participantOneImageUrl&&!Object(S.b)(t.participantOneImageUrl),f.b` <div
+                                class="sports-match-participant-image"
+                            >
+                                <img
+                                    role="presentation"
+                                    src="${t=>t.participantOneImageUrl}"
+                                    alt="${t=>t.participantOneImageAltText}"
+                                    elementtiming="${(t,e)=>e.parent.sportsMatchupCardData.elementTiming}"
+                                    onLoad="${(t,e)=>e.parent.sportsMatchupCardData.imgLoadCallback?e.parent.sportsMatchupCardData.imgLoadCallback("sports"):void 0}"
+                                />
+                            </div>`)}
+                        <div
+                            class="sports-match-participant-name ${t=>1==t.participantOneIsWinner&&t.gameStateCatetory==r.a.postGame?"winner":0==t.participantOneIsWinner&&t.gameStateCatetory==r.a.postGame?"loser":""}"
+                        >
+                            ${t=>t.participantOneName}
+                        </div>
+                        <div class="sports-match-score-container">
+                            ${Object(v.a)(t=>t.gameStateCatetory==r.a.inprogressGame||t.gameStateCatetory==r.a.postGame,f.b`
+                                    <div
+                                        class="sports-match-participant-score ${t=>1==t.participantOneIsWinner&&t.gameStateCatetory==r.a.postGame?"winner":0==t.participantOneIsWinner&&t.gameStateCatetory==r.a.postGame?"loser":""}"
+                                    >
+                                        ${(t,e)=>Object(r.c)(t.participantOneScore+"",e.parent.sportsMatchupCardData.dataType+"")}
+                                    </div>
+                                    <div class="sports-match-participant-winner-tag">
+                                        ${Object(v.a)(t=>1==t.participantOneIsWinner&&t.gameStateCatetory==r.a.postGame,f.b`
+                                                <svg
+                                                    width="5"
+                                                    height="10"
+                                                    viewBox="0 0 5 10"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path d="M5 0L0 5.21739L5 10V0Z" />
+                                                </svg>
+                                            `)}
+                                    </div>
+                                `)}
+                        </div>
+                    </div>
+                    <div class="sports-match-participant participant-two">
+                        ${Object(v.a)(t=>t.participantTwoImageUrl&&!Object(S.b)(t.participantTwoImageUrl),f.b` <div
+                                class="sports-match-participant-image"
+                            >
+                                <img
+                                    role="presentation"
+                                    src="${t=>t.participantTwoImageUrl}"
+                                    alt="${t=>t.participantTwoImageAltText}"
+                                />
+                            </div>`)}
+                        <div
+                            class="sports-match-participant-name ${t=>1==t.participantTwoIsWinner?"winner":0==t.participantTwoIsWinner?"loser":""}"
+                        >
+                            ${t=>t.participantTwoName}
+                        </div>
+                        <div class="sports-match-score-container">
+                            ${Object(v.a)(t=>t.gameStateCatetory==r.a.inprogressGame||t.gameStateCatetory==r.a.postGame,f.b`
+                                    <div
+                                        class="sports-match-participant-score ${t=>1==t.participantTwoIsWinner&&t.gameStateCatetory==r.a.postGame?"winner":0==t.participantTwoIsWinner&&t.gameStateCatetory==r.a.postGame?"loser":""}"
+                                    >
+                                        ${(t,e)=>Object(r.c)(t.participantTwoScore+"",e.parent.sportsMatchupCardData.dataType+"")}
+                                    </div>
+                                    <div class="sports-match-participant-winner-tag">
+                                        ${Object(v.a)(t=>1==t.participantTwoIsWinner&&t.gameStateCatetory==r.a.postGame,f.b`
+                                                <svg
+                                                    width="5"
+                                                    height="10"
+                                                    viewBox="0 0 5 10"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path d="M5 0L0 5.21739L5 10V0Z" />
+                                                </svg>
+                                            `)}
+                                    </div>
+                                `)}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sports-match-details">
+                ${Object(v.a)(t=>t.gameStateCatetory==r.a.preGame,f.b`
+                        <div class="sports-match-detail-attributes pre-game">
+                            <div class="sports-match-detail-attribute-game-date">
+                                ${t=>t.gameDate}
+                            </div>
+                            <div class="sports-match-detail-attribute-game-time">
+                                ${t=>t.gameStartTime}
+                            </div>
+                            <div class="sports-match-detail-attribute-game-tv-channel">
+                                ${t=>t.tvChannel}
+                            </div>
+                        </div>
+                    `)}
+                ${Object(v.a)(t=>t.gameStateCatetory==r.a.inprogressGame,f.b`
+                        <div class="sports-match-detail-attributes inprogress-game">
+                            <div class="sports-match-detail-attribute-game-clock">
+                                ${t=>t.gamePeriodAndClock}
+                            </div>
+                            <div class="sports-match-detail-attribute-game-tv-channel">
+                                ${t=>t.tvChannel}
+                            </div>
+                        </div>
+                    `)}
+                ${Object(v.a)(t=>t.gameStateCatetory==r.a.postGame,f.b`
+                        <div class="sports-match-detail-attributes post-game">
+                            <div class="sports-match-detail-attribute-game-state">
+                                ${t=>t.gameState}
+                            </div>
+                            <div class="sports-match-detail-attribute-game-date">
+                                ${t=>t.gameDate}
+                            </div>
+                        </div>
+                    `)}
+            </div>
+        </div>
+    </a>
+`,M=(t,e)=>f.b`
+    <fluent-anchor
+        class="sd-action"
+        part="sd-action"
+        href=${t=>{var e;return null===(e=t.sportsMatchupCardData)||void 0===e?void 0:e.seeMoreClickthroughUrl}}
+        target=${t=>t.clickthroughTarget}
+        ${Object(w.b)(t=>t.seeMoreTelemetryTag)}
+    >
+        ${t=>{var e;return null===(e=t.sportsMatchupCardData)||void 0===e?void 0:e.seeMoreText}}
+    </fluent-anchor>
+`,x=r.b.compose({baseName:"sports-matchup-card",template:(t,e)=>f.b`
+    <div class="sports-matchup-card">
+        <div class="sports-matchup-card-header">
+            ${O}
+        </div>
+        <div class="sports-matches">
+            ${Object(y.c)(t=>t.sportsMatchData,C)}
+        </div>
+        <div class="sports-matchup-card-footer">
+            ${M}
+        </div>
+    </div>
+`,styles:b});var j=a("pQjM"),D=a("lFvR"),T=a("TgmJ"),k=a("m1Vi"),I=a("bica"),$=a("Sdge"),E=a("jht9"),A=a("A03o"),P=a("C49W"),L=a("akWC"),U=a("sydv"),F=a("Avji"),R=a("Zn5T");const N=Object(A.a)(R.a.sportsCardWC,"Sports Card Web Component experience",Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({},Object(P.d)("refreshIntervalInMs","300000")),Object(P.d)("pregameIntervalInHrs","pregame refresh interval in hours","24")),Object(P.d)("pregameToInprogressInMins","pregame to inprogress game time in minutes","15")),Object(P.d)("inprogressIntervalInMins","inprogress game refresh interval in minutes","1")),Object(P.d)("postgameIntervalInHrs","postgame refresh interval in hours","1")),Object(P.d)("showUpdateIntervalInMins","show update min time duration from last update","1")),Object(L.a)({sportsStateFinal:"Final",sportsSeeMore:"See More",seeMoreSports:"See More {0}",sportsMoreSetting:"More settings",sportsActionButton:"More options",sportsNotInterested:"Not interested in {0}",sportsHideCard:"Hide sports card",done:"Done",cancel:"Cancel",searchPlaceholder:"Search team or league",noSearchResult:"No search result",suggestedForYou:"Suggested for you",poweredByMSSports:"Powered by Microsoft Sports",widgetHeader:"Sports",teamDescription:"{0} team",leagueDescription:"Sports league",sportsTBA:"TBA",followSports:"Click to follow",haveFollowed:"Have followed",saveSettings:"Save settings",secondsAbbreviation:"s",pointsAbbreviation:"pts",laps:"laps",leader:"Leader",addSports:"Follow team or league",searchSuggestionsTitle:"Click Ꚛ to follow team or league",closeButton:"Close",sportsAddedToast:'Following "{0}"',sportsAddedToastLink:"see favorites"})),Object(U.c)("cardLayout","sports card layout")),Object(U.c)("fetchSearchSuggestionUrl","sports search suggestion api url")),Object(U.c)("fetchEntityUrl","sports get entity api url")),Object(U.c)("ocid","sports 1S url ocid")),Object(P.c)("enableCache","enable local storage cache of sports data")),Object(P.c)("enableCardAction","show action button in sports card")),Object(P.c)("enableHideCard","show hide sports card menu in action menus")),Object(P.c)("enableButtonPagination","show hide sports card button pagination")),Object(P.c)("enablePaginationBackplate","displays backplate in resting state for pagination arrows")),Object(P.c)("enablePaginationLink","enable see more as link not button in footer pagination")),Object(P.c)("enableSdCardMask","Enable Sd Card Mask","If true, enable sd card mask")),Object(P.c)("enableMatchNeutral","Enable sports matches neutral background","Enable sports matches neutral background")),Object(P.c)("enableSideBySideLayout","Enable sports matches side by side layout","Enable sports matches side by side layout")),Object(P.c)("enableTeamColorStripes","Enable sports matches color stripes for teams","Enable sports matches color stripes for teams")),Object(P.c)("enableTeamColorGradientBackground","Enable sports matches team colored gradiant background","Enable sports matches team colored gradiant background")),Object(P.f)("childExperienceReferencesWC","","",Object.assign({},Object(F.b)("sdCardMaskWC","")))),Object(P.c)("enableFast","enable sports match card UX with FAST package")),Object(P.b)("sportsTypesForWidget","sports type list that supported in widget")),Object(P.b)("sportsDataTypesForWidget","sports data type list that supported in widget")));var B=a("D57K"),G=a("W3y6"),H=a("ZwaX"),W=a("gqPI"),V=a("rvYQ"),z=a("FJcQ"),q=a("6ADy"),_=a("dcKg"),K=a("XlyT"),J=a("HxRh"),Z=a("+djJ"),Q=a("u5KZ"),Y=a("Am8i"),X=a("JnE6"),tt=a("Gsg7"),et=a("L1Sn"),at=a("Waj5"),rt=a("a9P4"),it=a("4uqX"),nt=a("NFfa"),st=a("+aHC"),ot=a("Vzrt"),ct=a("IqCT"),dt=a("oePG"),lt=a("C/Vb"),ht=a("YuP+"),ut=a("YBl9"),pt=a("i2HT"),gt=a("yQ0v"),mt=a("3KaK"),bt=a("rRWH");class ft extends ct.a{constructor(){super(),this.isActionMenuOpen=!1,this.isShowReminder=!1,this.SportsIndexedDbStoreName=`${Object(V.b)().CurrentRequestTargetScope.pageType}.${R.a.sportsCardWC}.store`,this.SportsIndexedDbName=`${Object(V.b)().CurrentRequestTargetScope.pageType}.${R.a.sportsCardWC}`,this.getAnotherPage=(t,e)=>{t&&(t.preventDefault(),t.stopPropagation(),Q.a.sendActionEvent(t.currentTarget,Y.a.Click),this.currentPage=this.calculateAnotherPage(e),this.currentSportsMatchupData=this.getCurrentSportsMatchupData())},this.calculateAnotherPage=t=>this.currentPage&&this.pageCount?t?this.currentPage%this.pageCount+1:1==this.currentPage?this.pageCount:this.currentPage-1:1,this.paginateSportsMatchData=t=>{var e,a;let r=1;switch(t){case"medium":r=ft.maxMatchCount-1;break;case"large":r=ft.maxMatchCount;break;default:r=1}const i=this.sportsMatchupData[0].sportsMatchOverallData.length;this.currentPage=null!==(e=this.currentPage)&&void 0!==e?e:1,this.pageCount=null!==(a=this.pageCount)&&void 0!==a?a:Math.ceil(i/r);const[n,s]=this.getSliceIndexes(this.currentPage,r,i);return[n,s,r]},this.getSliceIndexes=(t,e,a)=>{if(null==t||t<=0||null==a)return[0,e];const r=(t-1)*e;let i=r+e;return i=i>a?a:i,[r,i]},this.colorSchemeChangeHandler=()=>{if(this.widgetInstanceId)return void this.parentElement.setAttribute("background-color",this.isDarkMode?"#2C2C2C":"#F2F2F2");this.isDarkMode=Object(mt.e)();const t=Object(ut.c)(this.isDarkMode?"#2C2C2C":"#F2F2F2");i.A.setValueFor(this,pt.a.from(t)),i.t.setValueFor(this,this.widgetBackgroundMode?gt.a.DarkMode:gt.a.LightMode)},this.followSports=t=>Object(B.a)(this,void 0,void 0,(function*(){if(t&&t.id){this.followedSuggest=t,this.sportsEntityId=t.id,this.selectedEntity={id:t.id,name:t.name,type:t.type};const e=this.uxStyle===_.b.feed?null:yield this.getWidgetOneServiceHeaders();yield G.a.postActionRequest(t.id,t.name,H.a.Follow,t.type,this.config.ocid,!1,e)}this.uxStyle===_.b.widget&&(this.refreshEntityIdCache(),this.fetchSportsMatchData(this.sportsEntityId)),this.widgetSettings?this.widgetSettings.hideSettings():this.switchToMatchCard(),this.uxStyle===_.b.feed&&(this.fetchFollowedSports(),this.isShowReminder=!0,setTimeout(()=>{this.isShowReminder=!1,this.followedSuggest=null},5e3))})),this.closeReminder=t=>{this.followedSuggest=null,t&&(this.isShowReminder=!1,Q.a.sendActionEvent(t.target,Y.a.Click,Y.b.Customize))},this.unfollowSports=t=>Object(B.a)(this,void 0,void 0,(function*(){if(t&&t.id&&this.uxStyle===_.b.feed){const e=this.followedSports.filter(e=>e.id===t.id);return e&&e.length>0&&(yield G.a.deleteActionRequest(e[0].feedId,H.a.Follow,e[0].type||""),this.fetchFollowedSports()),this.switchToMatchCard(),void this.refreshFeedCard()}this.sportsEntityId=null,this.selectedEntity=null,this.refreshEntityIdCache(),this.fetchSportsMatchData(this.sportsEntityId),this.widgetSettings?this.widgetSettings.hideSettings():this.switchToMatchCard()})),this.cancelSetting=()=>Object(B.a)(this,void 0,void 0,(function*(){this.widgetSettings?this.widgetSettings.hideSettings():this.switchToMatchCard()})),this.sizeChangeHandler=t=>{this.widgetSize&&(this.cardSize=this.widgetSize.getSize()||this.cardSize,"onSizeChangeEnd"===t&&(this.currentSportsMatchupData=this.getCurrentSportsMatchupData(),this.teamColorGradientBackgrdStyle=this.getMatchupCardGradientBackground(),this.recommendations=this.allRecommendations.slice(0,ft.maxRecommendationCount),this.getCurrentLayout(),this.telemetryContext=this.getSportsCardTelemetry()))},this.getMatchClassNameByDataType=t=>"cricket"===t||"tennis"===t||"Tennis"===t?"long-score":"",this.getMatchClassNameForWinner=t=>t&&!0===t.participantOneIsWinner?"winner":t&&!1===t.participantOneIsWinner&&t.gameStateCatetory==H.g.postGame?"loser":"",this.isMotorSportsCard=()=>this.currentSportsMatchupData&&(this.currentSportsMatchupData.sportsMatchupCardData.dataType===H.b.raceList||this.currentSportsMatchupData.sportsMatchupCardData.dataType===H.b.singleRace),this.shouldRenderSideBySide=()=>{var t;const e=null===(t=this.currentSportsMatchupData)||void 0===t?void 0:t.sportsMatchupCardData;return e&&this.config.enableSideBySideLayout&&Object(_.f)(e.dataType,e.sportType,e.leagueId,_.d.SideBySide)},this.getLinkClickTarget=()=>this.openLinksInNewTab?"_blank":"_self",this.getContentTemplate=()=>Object(B.a)(this,void 0,void 0,(function*(){if(this.isMotorSports()){const{MotorSports:t}=yield a.e(11).then(a.bind(null,"TFY4"));this.matchContent=f.b`
+                <sports-motorsports class="${t=>"widget"==t.uxStyle?"sports-widget-content":"sports-match-content"}"
+                    style="width: 100%; height: 100%; margin: 0;"
+                    uxstyle="${t=>t.uxStyle}"
+                    cardlayout="${t=>t.cardLayout}"
+                    :config=${t=>t.config}
+                    :strings=${t=>t.strings}
+                    :telemetryContext=${t=>t.telemetryContext}
+                    :linkTarget="${t=>t.getLinkClickTarget()}"
+                    :cardSize="${t=>t.cardSize}"
+                    :motorCardData="${t=>{var e;return null===(e=t.currentSportsMatchupData)||void 0===e?void 0:e.sportsMatchupCardData}}"
+                    :motorMatchData="${t=>{var e;return(null===(e=t.currentSportsMatchupData)||void 0===e?void 0:e.sportsMatchOverallData)&&t.currentSportsMatchupData.sportsMatchOverallData.map(t=>t.sportsMatchData)}}"
+                >
+                </sports-motorsports>
+            `}else if(this.shouldRenderSideBySide()){const{SportsSideBySide:t}=yield a.e(13).then(a.bind(null,"8yTu"));this.matchContent=f.b`
+                <sports-side-by-side class="${t=>"widget"==t.uxStyle?"sports-widget-content":"sports-match-content"}"
+                    style="width: 100%; height: 100%; margin: 0;"
+                    uxstyle="${t=>t.uxStyle}"
+                    cardlayout="${t=>t.cardLayout}"
+                    :config=${t=>t.config}
+                    :isDarkMode="${t=>t.isDarkMode}"
+                    :paginationStyle=${t=>t.enableSportsCarousel?"with-pagination":""}
+                    :strings=${t=>t.strings}
+                    :telemetryContext=${t=>t.telemetryContext}
+                    :linkTarget="${t=>t.getLinkClickTarget()}"
+                    :cardData="${t=>{var e;return null===(e=t.currentSportsMatchupData)||void 0===e?void 0:e.sportsMatchupCardData}}"
+                    :matchData="${t=>{var e,a;return(null===(e=t.currentSportsMatchupData)||void 0===e?void 0:e.sportsMatchOverallData)&&(null===(a=t.currentSportsMatchupData)||void 0===a?void 0:a.sportsMatchOverallData.map(t=>t.sportsMatchData))}}"
+                />
+            `}else this.matchContent=f.b`
+                <sports-match
+                    class="${t=>"widget"==t.uxStyle?"sports-widget-content":"sports-match-content"}"
+                    style="width: 100%; height: 100%; margin: 0;"
+                    uxstyle="${t=>t.uxStyle}"
+                    cardlayout="${t=>t.cardLayout}"
+                    :isDarkMode="${t=>t.isDarkMode}"
+                    :config=${t=>t.config}
+                    :strings=${t=>t.strings}
+                    :telemetryContext=${t=>t.telemetryContext}
+                    :linkTarget="${t=>t.getLinkClickTarget()}"
+                    :cardData="${t=>{var e;return null===(e=t.currentSportsMatchupData)||void 0===e?void 0:e.sportsMatchupCardData}}"
+                    :matchData="${t=>{var e;return(null===(e=t.currentSportsMatchupData)||void 0===e?void 0:e.sportsMatchOverallData)&&t.currentSportsMatchupData.sportsMatchOverallData.map(t=>t.sportsMatchData)}}"
+                >
+                </sports-match>
+            `;if(this.enableSportsCarousel){const{SportsCarousel:t}=yield a.e(10).then(a.bind(null,"KnRd"));this.carouselFooter=f.b`
+                <sports-carousel
+                    :config=${t=>t.config}
+                    :strings=${t=>t.strings}
+                    :currentPage=${t=>t.currentPage}
+                    :pageCount=${t=>t.pageCount}
+                    :paginateCallback=${t=>t.getAnotherPage}
+                />
+            `}})),this.shouldShowHeaderIcon=()=>{var t;return this.config.enableMatchNeutral&&(null===(t=this.currentSportsMatchupData)||void 0===t?void 0:t.sportsMatchupCardData)&&!Object(S.b)(this.currentSportsMatchupData.sportsMatchupCardData.cardTitleImageUrl)},this.cardClickHandler=t=>{if(t&&t.target&&("A"===t.target.tagName||"FLUENT-ANCHOR"===t.target.tagName||"FLUENT-BUTTON"===t.target.tagName))return!0;let e=!1;return t&&t.path&&t.path.forEach(t=>{if(t&&"A"===t.tagName)return t.onClick(),void(e=!0)}),e?(t.preventDefault(),t.stopPropagation(),!0):(t&&this.currentSportsMatchupData&&this.currentSportsMatchupData.sportsMatchupCardData&&this.currentSportsMatchupData.sportsMatchupCardData.cardTitleClickthroughUrl&&(t.preventDefault(),t.stopPropagation(),window.open(Object(ht.a)(this.currentSportsMatchupData.sportsMatchupCardData.cardTitleClickthroughUrl),this.getLinkClickTarget()),Q.a.sendActionEvent(t.target,Y.a.Click)),!1)},this.cardKeydownHandler=t=>{"Enter"==t.key&&this.cardClickHandler(t)},this.isSportsCarouselEnabled=()=>this.cardLayout==H.e.Small&&this.config.enablePaginationCarousel&&this.config.enableMatchNeutral&&this.config.enableSideBySideLayout&&(this.config.enableTeamColorStripes||this.config.enableTeamColorGradientBackground)&&this.sportsMatchupData&&this.sportsMatchupData.length>0&&this.sportsMatchupData[0]&&this.sportsMatchupData[0].sportsMatchOverallData&&this.sportsMatchupData[0].sportsMatchOverallData.length>1,this.handleClickForActionMenu=t=>{const e=t.composedPath()&&t.composedPath()[0];t&&(t.target instanceof ft||this.actionButtonControl&&this.actionButtonControl.contains(e))||this.toggleActionMenu(null)},this.handleKeyDownForActionMenu=t=>{"Escape"!==t.code?this.handleClickForActionMenu(t):this.toggleActionMenu(t)},this.handleSportsNotInterested=()=>Object(B.a)(this,void 0,void 0,(function*(){if(this.isActionMenuOpen=!1,!this.currentSportsMatchupData||!this.currentSportsMatchupData.sportsMatchupCardData||Object(S.b)(this.currentSportsMatchupData.sportsMatchupCardData.primaryEntityId))return;const t={id:this.currentSportsMatchupData.sportsMatchupCardData.primaryEntityId,name:this.currentSportsMatchupData.sportsMatchupCardData.primaryEntityName,type:this.currentSportsMatchupData.sportsMatchupCardData.primaryEntityType};(yield G.a.notInterestedSportsCard(t))&&this.refreshFeedCard()})),this.handleHideSports=()=>Object(B.a)(this,void 0,void 0,(function*(){this.isActionMenuOpen=!1;(yield G.a.hideSportsCard())&&this.refreshFeedCard()})),this.refreshFeedCard=()=>{this.refreshFeed?this.refreshFeed():this.$emit("refreshSDCardSection")},this.handleMoreSettings=()=>{this.isActionMenuOpen=!1,this.goToPersonalizeCallback?this.goToPersonalizeCallback():this.$emit("goToPersonalizeCallback")},this.settingsHandler=t=>{switch(t){case"onShowSettingsEnd":this.switchToSetting();break;case"onHideSettingsEnd":this.switchToMatchCard()}},this.visibilityHandler=t=>{"visible"===t?(this.setRefreshTimer(this.refreshIntervalInMs),this.checkTimer=setInterval(()=>this.updateRefreshTimer(),ft.minuteInMs),this.setCardProperties()):"notvisible"===t&&this.clearRefreshTimer()},this.interactionsHandler=t=>{"titleInteracted"===t?(this.headerTitle||(this.headerTitle=Object(nt.b)("sports",this.widgetProperties.activationUrl,this.widgetProperties.title)),Q.a.sendActionEvent(this.headerTitle,Y.a.Click,Y.b.Navigate)):"settingsInteracted"===t&&(this.seeMoreButton||(this.seeMoreButton=Object(nt.a)("sports")),Q.a.sendActionEvent(this.seeMoreButton,Y.a.Click,Y.b.More))},this.lifecycleHandler=t=>Object(B.a)(this,void 0,void 0,(function*(){"removing"===t&&this.clearRefreshTimer()})),this.propertiesHandler=t=>{"colorMode"===t&&(this.widgetBackgroundMode=this.widgetProperties.getProperty(t)||"light",this.setCardProperties())},this.switchToSetting=()=>Object(B.a)(this,void 0,void 0,(function*(){if(!this.searchSuggestion){const{SportsSearch:t}=yield a.e(12).then(a.bind(null,"jwwg"));this.searchSuggestion=f.b`
+                <sports-search class="sports-search"
+                    :config=${t=>t.config}
+                    :strings=${t=>t.strings}
+                    :uxStyle="${t=>t.uxStyle}"
+                    :cancelCallback=${t=>t.cancelSetting}
+                    :followSportsCallback=${t=>t.followSports}
+                    :unfollowSportsCallback=${t=>t.unfollowSports}
+                    :telemetryObject=${t=>t.telemetryObject}
+                    :telemetryContext=${t=>t.telemetryContext}
+                    :recommendations=${t=>t.recommendations}
+                    :selectedEntityId=${t=>t.sportsEntityId}
+                    :followedSports=${t=>t.followedSports}
+                />
+            `}this.sportsViewMode=_.c.Settings,this.setCardProperties()})),this.isMotorSports=()=>this.sportsMatchCardData&&(this.sportsMatchCardData.dataType===H.b.raceList||this.sportsMatchCardData.dataType===H.b.singleRace),this.getSportsCardTelemetry=()=>{var t;const e=this.telemetry&&this.telemetry.sportsCard.contract.ext||Object(nt.c)(null===(t=this.widgetSize)||void 0===t?void 0:t.getSize());return this.isMotorSports()?Object(H.k)(this.telemetryObject,this.sportsMatchDataList,this.sportsMatchCardData,e):Object(H.l)(this.telemetryObject,this.sportsMatchDataList,this.sportsMatchCardData,e)},this.getWidgetOneServiceHeaders=()=>Object(B.a)(this,void 0,void 0,(function*(){let t=null;if(this.widgetInstance){const e=yield Object(st.a)(this.widgetInstance,!1,this.widgetInstanceId,this.widgetProperties&&this.widgetProperties.getProperty("sessionId"),ot.c.get(ot.a.IsDashboardVisible));if(e){t=[];for(const a in e)e[a]&&t.push({key:a,value:e[a]});this.widgetMuid=e[ft.muidKey]}}return t})),this.fetchSportsMatchData=(t=null)=>Object(B.a)(this,void 0,void 0,(function*(){let e=null,a=!0,r=!1,i=null;if(Object(S.b)(t)){const t=Object(q.a)("news/feed/segments/sports");e=t&&(null==t?void 0:t.href)||"https://assets.msn.com/service/news/feed/segments/sports",r=!1,i=this.widgetMuid?[{key:ft.muidKey,value:this.widgetMuid}]:yield this.getWidgetOneServiceHeaders()}else e=this.config.fetchEntityUrl.replace("{entityId}",t),a=!1,r=!0;G.a.fetchSportsFeed(e,this.config.ocid,!1,a,r,i).then(a=>{if(!a)return void Object(K.b)(J.Yh,"Fetch sports feed get null response",`market:${Object(V.b)().CurrentMarket}, entityId:${t}, Url:${e}, ocid:${this.config.ocid}`);let r,i=!1;if(Array.isArray(a)&&a.length?r=a.find(t=>this.config.sportsTypesForWidget&&this.config.sportsTypesForWidget.includes(t.type)&&this.config.sportsDataTypesForWidget&&this.config.sportsDataTypesForWidget.includes(t.dataType)):a.value&&Array.isArray(a.value)&&a.value.length&&(r=a.value[0],i=!0),!r)return void Object(K.b)(J.Yh,"Fetch sports feed get null sports match data",`market:${Object(V.b)().CurrentMarket}, entityId:${t}, Url:${e}, ocid:${this.config.ocid}`);const n=new Map;n.teamImageSize=this.getTeamImageSize();const s=i?W.a.transformSportsMatchDataWithTrans(r,this.strings,ft.maxMatchCount,n):W.a.mapSubCardToSportsMatchData(r,this.strings,ft.maxMatchCount,n);s?(this.sportsMatchCardData=s.sportsMatchupCardData,this.sportsMatchDataList=s.sportsMatchOverallData,this.sportsMatchupData=[],this.sportsMatchupData.push({sportsMatchupCardData:s.sportsMatchupCardData,sportsMatchOverallData:s.sportsMatchOverallData}),this.telemetryContext=this.getSportsCardTelemetry(),this.currentSportsMatchupData=this.getCurrentSportsMatchupData(),this.teamColorGradientBackgrdStyle=this.getMatchupCardGradientBackground(),this.getContentTemplate(),this.sportsViewMode==_.c.Initial&&(this.sportsViewMode=_.c.Default,Object(ot.b)(R.a.sportsCardWC),this.markTimeToVisuallyReady(!0)),this.widgetProperties&&(this.widgetProperties.title=this.sportsMatchCardData&&this.sportsMatchCardData.cardTitle||this.strings.widgetHeader,this.sportsMatchCardData&&this.isLeagueWithNoLandingPage(this.sportsMatchCardData.leagueId)?this.widgetProperties.activationUrl=this.sportsMatchCardData.seeMoreClickthroughUrl:this.sportsMatchCardData&&(this.widgetProperties.activationUrl=this.sportsMatchCardData.cardTitleClickthroughUrl)),this.uxStyle==_.b.widget&&(this.lastUpdateTime=Date.now(),this.updateRefreshTimer()),this.getRecommendations(a),this.enableSportsCarousel=this.isSportsCarouselEnabled(),this.refreshCache()):Object(K.b)(J.Yh,"Parse sports feed data error",`market:${Object(V.b)().CurrentMarket}, entityId:${t}, Url:${e}, ocid:${this.config.ocid}, response:${r}`)})})),this.fetchSportsRecommendations=()=>Object(B.a)(this,void 0,void 0,(function*(){let t=null;const e=Object(q.a)("news/feed/segments/sports");t=(null==e?void 0:e.href)||"https://assets.msn.com/service/news/feed/segments/sports",G.a.fetchSportsFeed(t,this.config.ocid,!1,!0,!1).then(e=>{e?this.getRecommendations(e):Object(K.b)(J.Yh,"Fetch sports feed get null response",`market:${Object(V.b)().CurrentMarket}, Url:${t}, ocid:${this.config.ocid}`)})})),this.fetchFollowedSports=()=>Object(B.a)(this,void 0,void 0,(function*(){G.a.getFollowSportsEntities(t=>{t&&(this.followedSports=t)})})),this.handleKeydown=t=>{"Escape"===t.code&&this.isActionMenuOpen&&(this.isActionMenuOpen=!1)},this.sportsMatchDataList=[],this.allRecommendations=[],this.recommendations=[],this.isInitialSetup=!0,this.sportsViewMode=_.c.Initial,this.sportsEntityId=null}experienceConnected(){var t;return Object(B.a)(this,void 0,void 0,(function*(){this.isInitialSetup?(this.isInitialSetup=!1,this.config.enableSdCardMask&&(null===(t=this.config.childExperienceReferences)||void 0===t?void 0:t.sdCardMaskWC)&&(yield Object(lt.a)(this.config.childExperienceReferences.sdCardMaskWC)),this.telemetryObject=new tt.a({name:H.h.SportsCard,type:Y.e.Module}),this.sportsCardData&&this.sportsMatchData&&this.sportsOverallData?(this.sportsMatchCardData=this.sportsCardData,this.sportsMatchupData=[],this.sportsMatchupData.push({sportsMatchupCardData:this.sportsCardData,sportsMatchOverallData:this.sportsOverallData}),this.sportsMatchDataList=this.sportsMatchDataList.concat(this.sportsOverallData),this.telemetryContext=this.getSportsCardTelemetry(),this.sportsViewMode=_.c.Default,this.uxStyle=_.b.feed,this.cardSize=this.cardLayout==H.e.Small?"small":"medium",this.currentSportsMatchupData=this.getCurrentSportsMatchupData(),this.teamColorGradientBackgrdStyle=this.getMatchupCardGradientBackground(),this.getContentTemplate()):(this.uxStyle=_.b.widget,this.cardSize=this.config.cardLayout==H.e.Small?"small":"medium",this.cardLayout="small"==this.cardSize?H.e.Small:H.e.Medium,this.openLinksInNewTab=!0,this.readSportsDataFromIndexDb()||this.fetchSportsMatchData(),this.refreshIntervalInMs=this.config.refreshIntervalInMs),this.initActionMenuItems(),this.initialWidgetInstance(),this.getWidgetOneServiceHeaders(),this.config.enableAddSports&&this.uxStyle===_.b.feed&&(this.fetchFollowedSports(),this.fetchSportsRecommendations())):this.addWidgetEvents(),this.showSuggests=!1,this.setCardProperties(),this.addEventListener("keydown",this.handleKeydown),this.isDarkMode=this.widgetBackgroundMode?"dark"===this.widgetBackgroundMode:Object(mt.e)(),this.enableSportsCarousel=this.isSportsCarouselEnabled()}))}shadowDomPopulated(){Object(Z.e)(this.getExperienceType()),this.uxStyle==_.b.feed&&(window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",this.colorSchemeChangeHandler),this.cardSize=this.cardLayout==H.e.Small?"small":"medium",this.enableSportsCarousel=this.isSportsCarouselEnabled(),this.currentSportsMatchupData=this.getCurrentSportsMatchupData())}disconnectedCallback(){super.disconnectedCallback(),this.removeEventListener("keydown",this.handleKeydown),this.widgetSize&&this.widgetSize.removeEventListener(this.sizeChangeHandler),this.widgetSettings&&this.widgetSettings.removeEventListener(this.settingsHandler),this.widgetVisibility&&this.widgetVisibility.removeEventListener(this.visibilityHandler),this.widgetLifecycle&&this.widgetLifecycle.removeEventListener(this.lifecycleHandler),this.widgetProperties&&this.widgetProperties.removePropertyChangeListener(this.propertiesHandler),this.widgetInteractions&&this.widgetInteractions.removeEventListener(this.interactionsHandler),this.uxStyle==_.b.feed&&window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change",this.colorSchemeChangeHandler)}initialWidgetInstance(){var t;if(this.uxStyle==_.b.widget&&this.widgetInstanceId){const e=document.getElementById(this.widgetInstanceId);this.widgetInstance=e&&e.instance,this.widgetInstance?(this.widgetProperties=this.widgetInstance.tryGetApi("properties",st.d,st.d),this.widgetProperties&&(this.widgetProperties.title=this.sportsViewMode==_.c.Settings?this.strings.widgetHeader:(null===(t=this.sportsMatchCardData)||void 0===t?void 0:t.cardTitle)||this.strings.widgetHeader,this.widgetProperties.attribution=this.strings.poweredByMSSports,this.widgetBackgroundMode=this.widgetProperties.getProperty("colorMode")||"light",this.widgetProperties.addPropertyChangeListener(this.propertiesHandler)),this.widgetSize=this.widgetInstance.tryGetApi("sizes",st.d,st.d),this.widgetSize&&(this.cardSize=this.widgetSize.getSize()||"small",this.widgetSize.addEventListener(this.sizeChangeHandler),this.getCurrentLayout()),this.widgetStatus=this.widgetInstance.tryGetApi("status",st.d,st.d),this.widgetSettings=this.widgetInstance.tryGetApi("settings",st.d,st.d),this.widgetSettings&&this.widgetSettings.addEventListener(this.settingsHandler),this.widgetVisibility=this.widgetInstance.tryGetApi("visibility",st.d,st.d),this.widgetVisibility&&this.widgetVisibility.addEventListener(this.visibilityHandler),this.widgetLifecycle=this.widgetInstance.tryGetApi("lifecycle",st.d,st.d),this.widgetLifecycle&&this.widgetLifecycle.addEventListener(this.lifecycleHandler),this.widgetInteractions=this.widgetInstance.tryGetApi("interactions",st.d,st.d),this.widgetInteractions&&this.widgetInteractions.addEventListener(this.interactionsHandler)):Q.a.sendAppErrorEvent(Object.assign(Object.assign({},J.ai),{message:"Fail to get sports widget instance"}))}}addWidgetEvents(){this.uxStyle==_.b.widget&&(this.widgetProperties&&this.widgetProperties.addPropertyChangeListener(this.propertiesHandler),this.widgetSize&&this.widgetSize.addEventListener(this.sizeChangeHandler),this.widgetSettings&&this.widgetSettings.addEventListener(this.settingsHandler),this.widgetVisibility&&this.widgetVisibility.addEventListener(this.visibilityHandler),this.widgetLifecycle&&this.widgetLifecycle.addEventListener(this.lifecycleHandler),this.widgetInteractions&&this.widgetInteractions.addEventListener(this.interactionsHandler))}getExperienceType(){return R.a.sportsCardWC}getCurrentSportsMatchupData(){if(!this.sportsMatchupData||!this.sportsMatchupData.length)return;const[t,e,a]=this.paginateSportsMatchData(this.cardSize);return{sportsMatchupCardData:this.sportsMatchupData[0].sportsMatchupCardData,sportsMatchOverallData:a>1?this.sportsMatchupData[0].sportsMatchOverallData.slice(t,e).sort((t,e)=>t.sportsMatchData.gameStartDateTime-e.sportsMatchData.gameStartDateTime):this.sportsMatchupData[0].sportsMatchOverallData.slice(t,e)}}getCurrentLayout(){switch(this.cardSize){case"medium":return void(this.cardLayout=H.e.Medium);case"large":return void(this.cardLayout=H.e.Large);default:return void(this.cardLayout=H.e.Small)}}getMatchupCardGradientBackground(){var t,e,a,r,i,n,s;if(this.neutralBaseColor="#687DCA",this.isMotorSportsCard())return this.neutralBaseColor="#D6D6D6",this.isDarkMode,"background: radial-gradient(98% 132.58% at 98% 100%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%) !important";if(!this.config.enableTeamColorGradientBackground||this.config.enableTeamColorStripes)return null;if(this.cardLayout!=H.e.Small||null==this.currentSportsMatchupData||1!=(null===(t=this.currentSportsMatchupData.sportsMatchOverallData)||void 0===t?void 0:t.length)||!Object(_.f)(null===(e=this.currentSportsMatchupData.sportsMatchupCardData)||void 0===e?void 0:e.dataType,null===(a=this.currentSportsMatchupData.sportsMatchupCardData)||void 0===a?void 0:a.sportType,null===(r=this.currentSportsMatchupData.sportsMatchupCardData)||void 0===r?void 0:r.leagueId,_.d.SideBySide))return null;const o=null===(i=this.currentSportsMatchupData.sportsMatchOverallData[0])||void 0===i?void 0:i.sportsMatchData,c=null!==(n=null==o?void 0:o.participantOnePrimaryColor)&&void 0!==n?n:"#767676",d=null!==(s=null==o?void 0:o.participantTwoPrimaryColor)&&void 0!==s?s:"#767676";let l=Object(_.e)(c,.3),h=Object(_.e)(d,.3);return document.dir==bt.a.rtl&&([l,h]=[h,l]),`background-image: linear-gradient(\n            90deg,\n            ${l} 1.13%,\n            rgba(32, 57, 116, 0.3) 41.7%,\n            rgba(32, 57, 116, 0.3) 60.02%,\n            ${h} 100%)`}actionButtonClickHandler(t){t&&t.preventDefault(),this.toggleActionMenu(t,!this.isActionMenuOpen)}toggleActionMenu(t,e=!1){this.isActionMenuOpen=e,e&&t?(this.actionButtonControl=t&&t.currentTarget,document.addEventListener("click",this.handleClickForActionMenu),document.addEventListener("keydown",this.handleKeyDownForActionMenu)):(this.actionButtonControl=null,document.removeEventListener("click",this.handleClickForActionMenu),document.removeEventListener("keydown",this.handleKeyDownForActionMenu))}initActionMenuItems(){this.config.enableCardAction&&(this.actionMenuItems=[],this.config.enableAddSports&&!Object(S.b)(this.strings.addSports)&&this.actionMenuItems.push({glyph:it.a,title:this.strings.addSports,id:"addSports",telemetryTag:this.telemetryContext&&this.telemetryContext.menuAddSports&&this.telemetryContext.menuAddSports.getMetadataTag(),onClick:()=>Object(B.a)(this,void 0,void 0,(function*(){this.isActionMenuOpen=!1,this.switchToSetting()}))}),this.config.enableHideCard&&this.currentSportsMatchupData&&this.currentSportsMatchupData.sportsMatchupCardData&&!Object(S.b)(this.currentSportsMatchupData.sportsMatchupCardData.primaryEntityType)&&!Object(S.b)(this.currentSportsMatchupData.sportsMatchupCardData.primaryEntityName)&&this.actionMenuItems.push({glyph:at.a,title:Object(S.a)(this.strings.sportsNotInterested,this.currentSportsMatchupData.sportsMatchupCardData.primaryEntityName),id:"dislike",telemetryTag:this.telemetryContext&&this.telemetryContext.menuHideCard&&this.telemetryContext.menuHideCard.getMetadataTag(),onClick:()=>Object(B.a)(this,void 0,void 0,(function*(){this.handleSportsNotInterested()}))}),Object(S.b)(this.strings.sportsHideCard)||this.actionMenuItems.push({glyph:at.a,title:this.strings.sportsHideCard,id:"hide",telemetryTag:this.telemetryContext&&this.telemetryContext.menuHideSports&&this.telemetryContext.menuHideSports.getMetadataTag(),onClick:()=>Object(B.a)(this,void 0,void 0,(function*(){this.handleHideSports()}))}),this.actionMenuItems.push({glyph:rt.a,id:"more",title:this.strings.sportsMoreSetting,telemetryTag:this.telemetryContext&&this.telemetryContext.menuMoreSettings&&this.telemetryContext.menuMoreSettings.getMetadataTag(),onClick:()=>Object(B.a)(this,void 0,void 0,(function*(){this.handleMoreSettings()}))}))}setCardProperties(){var t,e,a,r,n,s,o,c,d,l;this.uxStyle==_.b.widget&&(this.widgetInstanceId?i.A.setValueFor(this.parentElement,pt.a.from(Object(ut.c)("dark"===this.widgetBackgroundMode?"#2C2C2C":"#F2F2F2"))):null===(a=null===(e=null===(t=this.$fastController)||void 0===t?void 0:t.element)||void 0===e?void 0:e.parentElement)||void 0===a||a.setAttribute("fill-color","dark"===this.widgetBackgroundMode?"#2C2C2C":"#F2F2F2"),this.sportsViewMode==_.c.Settings?(null===(s=null===(n=null===(r=this.$fastController)||void 0===r?void 0:r.element)||void 0===n?void 0:n.parentElement)||void 0===s||s.setAttribute("neutral-base-color","dark"===this.widgetBackgroundMode?"#000000":"#FFFFFF"),setTimeout(()=>{this.shadowRoot.querySelectorAll(".sports-search").forEach(t=>{if(t){const e=t.shadowRoot.querySelectorAll(".sports-wc-settings");e&&e.length>0&&(et.a.addElement(e[0]),Q.a.sendContentViewEvent(e[0],X.b.View))}})},200)):(null===(d=null===(c=null===(o=this.$fastController)||void 0===o?void 0:o.element)||void 0===c?void 0:c.parentElement)||void 0===d||d.setAttribute("neutral-base-color",this.neutralBaseColor),setTimeout(()=>{const t="dark"===this.widgetBackgroundMode?"background: linear-gradient(160deg, rgba(48,61,105,0), rgba(48,61,105,1)), #2C2C2C":"background: linear-gradient(160deg, rgba(215,220,241,0), rgba(215,220,241,1)), #F2F2F2";this.shadowRoot.querySelectorAll(".sports-wc").forEach(e=>{e&&e.querySelectorAll("#sports-match-wc").forEach(e=>{e&&e.shadowRoot.querySelectorAll(".sports-matchup-card").forEach(e=>{e&&e.setAttribute("style",t)})})})},200)),this.widgetProperties&&(this.widgetProperties.title=this.sportsViewMode==_.c.Settings?this.strings.widgetHeader:(null===(l=this.sportsMatchCardData)||void 0===l?void 0:l.cardTitle)||this.strings.widgetHeader))}switchToMatchCard(){this.sportsViewMode=_.c.Default,this.setCardProperties()}readSportsDataFromIndexDb(){if(!this.config.enableCache)return!1;if(this.indexedDb||(this.indexedDb=new z.a),!this.indexedDb)return Object(K.b)(J.Zh,"new IndexedDb() failed for sports card"),!1;try{this.indexedDb.initializeIndexedDb(1,this.SportsIndexedDbStoreName,this.SportsIndexedDbName).then(()=>{this.popSportsDataFromIndexDb()})}catch(t){return Object(K.c)(t,J.Zh,`Exception when initial&read indexed db: ${this.SportsIndexedDbStoreName} - ${this.SportsIndexedDbName} , error: ${t&&t.message}`),!1}return!0}popSportsDataFromIndexDb(){this.config.enableCache&&this.indexedDb.getAllObjects().then(t=>{t&&(t.forEach(t=>{switch(t.sportsCardCacheKey){case _.a.SportsMatchCardData:this.sportsMatchCardData=t.sportsCardCacheData,this.widgetProperties&&this.sportsMatchCardData&&(this.widgetProperties.title=this.sportsMatchCardData.cardTitle||this.strings.widgetHeader,this.isLeagueWithNoLandingPage(this.sportsMatchCardData.leagueId)?this.widgetProperties.activationUrl=this.sportsMatchCardData.seeMoreClickthroughUrl:this.widgetProperties.activationUrl=this.sportsMatchCardData.cardTitleClickthroughUrl);break;case _.a.SportsMatchDataList:this.sportsMatchDataList=t.sportsCardCacheData;break;case _.a.SportsSelectedEntityId:this.sportsEntityId=t.sportsCardCacheData;break;case _.a.SportsSelectedEntity:this.selectedEntity=t.sportsCardCacheData;break;case _.a.SportsRecommendation:this.allRecommendations=[],Array.isArray(t.sportsCardCacheData)&&t.sportsCardCacheData.length&&t.sportsCardCacheData.forEach(t=>{this.allRecommendations.push(Object.assign(Object.assign({},t),{telemetryContext:Object(H.m)(this.telemetryObject,t,!0)}))}),this.recommendations=this.allRecommendations.slice(0,ft.maxRecommendationCount)}}),this.sportsMatchCardData&&this.sportsViewMode==_.c.Initial&&(this.sportsMatchupData=[],this.sportsMatchupData.push({sportsMatchupCardData:this.sportsMatchCardData,sportsMatchOverallData:this.sportsMatchDataList}),this.sportsViewMode=_.c.Default,Object(ot.b)(R.a.sportsCardWC),this.markTimeToVisuallyReady(!0)),this.currentSportsMatchupData=this.getCurrentSportsMatchupData(),this.teamColorGradientBackgrdStyle=this.getMatchupCardGradientBackground(),this.recommendations.forEach(t=>{t.selected=t.id===this.sportsEntityId}),this.telemetryContext=this.getSportsCardTelemetry(),this.getContentTemplate(),this.fetchSportsMatchData(this.sportsEntityId))})}refreshCache(){this.config.enableCache&&this.indexedDb&&(this.sportsMatchCardData&&this.indexedDb.setObject(_.a.SportsMatchCardData,{sportsCardCacheKey:_.a.SportsMatchCardData,sportsCardCacheData:this.sportsMatchCardData}),this.sportsMatchDataList&&this.indexedDb.setObject(_.a.SportsMatchDataList,{sportsCardCacheKey:_.a.SportsMatchDataList,sportsCardCacheData:this.sportsMatchDataList}),this.sportsEntityId&&this.indexedDb.setObject(_.a.SportsSelectedEntityId,{sportsCardCacheKey:_.a.SportsSelectedEntityId,sportsCardCacheData:this.sportsEntityId}),this.allRecommendations.length&&this.indexedDb.setObject(_.a.SportsRecommendation,{sportsCardCacheKey:_.a.SportsRecommendation,sportsCardCacheData:this.allRecommendations}),this.selectedEntity&&this.indexedDb.setObject(_.a.SportsSelectedEntity,{SportsCardCacheKey:_.a.SportsSelectedEntity,sportsCardCacheData:this.selectedEntity}))}refreshEntityIdCache(){this.config.enableCache&&this.indexedDb&&(this.indexedDb.setObject(_.a.SportsSelectedEntityId,{sportsCardCacheKey:_.a.SportsSelectedEntityId,sportsCardCacheData:this.sportsEntityId}),this.indexedDb.setObject(_.a.SportsSelectedEntity,{sportsCardCacheKey:_.a.SportsSelectedEntity,sportsCardCacheData:this.selectedEntity}))}getTeamImageSize(){return this.config.enableSideBySideLayout?{width:40,height:40}:this.config.enableMatchNeutral?{width:28,height:28}:null}updateRefreshTimer(){let t=this.config.refreshIntervalInMs||ft.minuteInMs;if(this.sportsMatchDataList&&this.sportsMatchDataList.length){const e=this.sportsMatchDataList.filter(t=>t.sportsMatchData.gameStateCatetory===H.g.inprogressGame);if(e&&e.length)t=this.config.inprogressIntervalInMins*ft.minuteInMs;else{const e=this.sportsMatchDataList.filter(t=>t.sportsMatchData.gameStateCatetory===H.g.preGame);if(e&&e.length){const a=e.sort((t,e)=>t.sportsMatchData.gameStartDateTime-e.sportsMatchData.gameStartDateTime)[0],r=Date.now()+this.config.pregameToInprogressInMins*ft.minuteInMs;t=(a.sportsMatchData.gameStartDateTime||0)<r?this.config.pregameIntervalInHrs*ft.hourInMs:ft.minuteInMs}else{const e=this.sportsMatchDataList.filter(t=>t.sportsMatchData.gameStateCatetory===H.g.postGame);e&&e.length&&(t=this.config.postgameIntervalInHrs*ft.hourInMs)}}}if(this.refreshTimer&&this.refreshIntervalInMs==t||(this.refreshIntervalInMs=t,this.setRefreshTimer(t)),this.widgetStatus&&this.lastUpdateTime>0){Date.now()-this.lastUpdateTime>this.config.showUpdateIntervalInMins*ft.minuteInMs&&this.widgetStatus.showLastUpdated(new Date(this.lastUpdateTime))}else this.widgetStatus&&this.widgetStatus.hideLastUpdated()}setRefreshTimer(t=null){this.clearRefreshTimer(!1),this.refreshTimer=setInterval(()=>this.fetchSportsMatchData(this.sportsEntityId),t||ft.minuteInMs)}clearRefreshTimer(t=!0){this.refreshTimer&&(clearInterval(this.refreshTimer),this.refreshTimer=null),t&&this.checkTimer&&(clearInterval(this.checkTimer),this.checkTimer=null)}getRecommendations(t){return Object(B.a)(this,void 0,void 0,(function*(){if(t&&t.length){this.allRecommendations=[];let e=0;t.forEach(t=>{if(!t||e>ft.maxRecommendationCount-1)return;const a=W.a.mapSubCardToSportsMatchData(t,this.strings,0);if(a){if(a.sportsMatchupCardData.primaryEntityId){const t={index:e++,id:a.sportsMatchupCardData.primaryEntityId,name:a.sportsMatchupCardData.primaryEntityName,displayText:a.sportsMatchupCardData.primaryEntityName,type:a.sportsMatchupCardData.primaryEntityType,typeDisplayHint:a.sportsMatchupCardData.primaryEntityType&&0===a.sportsMatchupCardData.primaryEntityType.localeCompare(H.f.Team,void 0,{sensitivity:"accent"})?Object(S.a)(this.strings.teamDescription,a.sportsMatchupCardData.leagueName):this.strings.leagueDescription};this.allRecommendations.push(Object.assign(Object.assign({},t),{telemetryContext:Object(H.m)(this.telemetryObject,t,!0)}))}}else Object(K.b)(J.Yh,"Parse sports feed data error",`market:${Object(V.b)().CurrentMarket}, entityId:${this.sportsEntityId}, ocid:${this.config.ocid}, response:${t}`)}),this.selectedEntity&&this.selectedEntity.id&&!this.allRecommendations.some(t=>t.id===this.selectedEntity.id)&&this.allRecommendations.push({index:0,id:this.selectedEntity.id,name:this.selectedEntity.name,type:this.selectedEntity.type}),this.recommendations=this.allRecommendations.slice(0,ft.maxRecommendationCount)}}))}isLeagueWithNoLandingPage(t){if(!t)return!1;const e=Object(V.b)().CurrentMarket;if(!e)return!1;const a=t.toLowerCase(),r=e.toString().toLowerCase(),i=this.config.leagueidToMktNoLandingPageMap;if(!i||0==i.length)return!1;const n=new Map;if(i.forEach(t=>{if(!t||!t.leagueId||!t.commaSeperatedMarketList)return;const e=""+t.leagueId;n.has(e)||n.set(e,""+t.commaSeperatedMarketList)}),n.has(a)){const t=n.get(a);return!!t&&t.includes(r)}return!1}}ft.hourInMs=36e5,ft.minuteInMs=6e4,ft.maxMatchCount=4,ft.maxRecommendationCount=2,ft.muidKey="MUID",Object(B.d)([dt.d],ft.prototype,"isDarkMode",void 0),Object(B.d)([dt.d],ft.prototype,"enableSportsCarousel",void 0),Object(B.d)([dt.d],ft.prototype,"sportsViewMode",void 0),Object(B.d)([dt.d],ft.prototype,"currentSportsMatchupData",void 0),Object(B.d)([dt.d],ft.prototype,"sportsMatchupData",void 0),Object(B.d)([dt.d],ft.prototype,"sportsMatchCardData",void 0),Object(B.d)([dt.d],ft.prototype,"sportsMatchDataList",void 0),Object(B.d)([dt.d],ft.prototype,"sportsSuggestions",void 0),Object(B.d)([dt.d],ft.prototype,"activeSuggestIndex",void 0),Object(B.d)([dt.d],ft.prototype,"recommendations",void 0),Object(B.d)([dt.d],ft.prototype,"showSuggests",void 0),Object(B.d)([dt.d],ft.prototype,"noSuggestResult",void 0),Object(B.d)([dt.d],ft.prototype,"actionMenuItems",void 0),Object(B.d)([dt.d],ft.prototype,"isActionMenuOpen",void 0),Object(B.d)([dt.d],ft.prototype,"isShowReminder",void 0),Object(B.d)([dt.d],ft.prototype,"followedSuggest",void 0),Object(B.d)([dt.d],ft.prototype,"followedSports",void 0),Object(B.d)([dt.d],ft.prototype,"widgetBackgroundMode",void 0),Object(B.d)([dt.d],ft.prototype,"telemetryContext",void 0),Object(B.d)([dt.d],ft.prototype,"cardLayout",void 0),Object(B.d)([dt.d],ft.prototype,"uxStyle",void 0),Object(B.d)([dt.d],ft.prototype,"teamColorGradientBackgrdStyle",void 0),Object(B.d)([dt.d],ft.prototype,"neutralBaseColor",void 0),Object(B.d)([dt.d],ft.prototype,"currentPage",void 0),Object(B.d)([dt.d],ft.prototype,"pageCount",void 0),Object(B.d)([dt.d],ft.prototype,"matchContent",void 0),Object(B.d)([dt.d],ft.prototype,"carouselFooter",void 0),Object(B.d)([dt.d],ft.prototype,"searchSuggestion",void 0);var vt=a("Q2Ct"),yt=a("vmYD"),St=a("sBtF"),wt=a("3cVL"),Ot=a("P4Ao"),Ct=a("VVSJ");const Mt=s.a`
+    .more-actions {
+        right: 16px;
+        left: auto;
+    }
+    .score-container {
+        flex-direction: row;
+    }
+`,xt=s.a`
+    .more-actions {
+        left: 16px;
+        right: auto;
+    }
+    .score-container {
+        flex-direction: row-reverse;
+    }
+`,jt=s.a`
+    .match-data {
+        display: flex;
+        align-items: center;
+        width: 100%";
+        text-decoration: none;
+        color: ${i.ub};
+    }
+    .match-data {
+        box-sizing: border-box;
+        flex-direction: column;
+        display: grid;
+        row-gap: 14px;
+        padding-top: 12px;
+    }
+    .match-data.match-neutral {
+        row-gap: 4px;
+        padding-top: 4px;
+    }
+
+    ${Ct.b}
+
+    .match-link {
+        color: ${i.ub};
+        text-decoration: none;
+        z-index: 2;
+        overflow: hidden;
+        margin: 0 16px;
+        border-radius: 6px;
+    }
+
+    .match-link a::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .match-link:hover,
+    .match-link:${o.a} {
+        background: ${i.ib};
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .match-link.match-neutral-link:hover,
+    .match-link.match-neutral-link:${o.a} {
+        background: inherit;
+    }
+
+    .sports-match {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 0 6px;
+    }
+
+    .match-netural-bg {
+        border-radius: 6px;
+        margin: 0 12px;
+        padding: 4px;
+    }
+
+    .match-participants {
+        display: flex;
+        flex-direction: column;
+        padding: 2px 0;
+        width: 204px;
+        min-width: 204px;
+        gap: 4px;
+    }
+
+    .participant {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 28px;
+    }
+
+    .participant-image {
+        height: 28px;
+        padding-inline-end: 8px;
+        width: 28px;
+    }
+
+    .participant-image img {
+        width: 100%;
+    }
+
+    .participant-name {
+        flex: 1;
+        font-size: ${i.Sb};
+        line-height: ${i.Tb};
+        overflow: hidden;
+        padding-inline-end: 8px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .score-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .participant-score {
+        font-size: ${i.Sb};
+        line-height: ${i.Tb};
+        overflow: hidden;
+        padding-inline-end: 4px;
+        text-align: right;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .participant-name.winner,
+    .participant-score.winner,
+    .game-time {
+        font-weight: bold;
+    }
+
+    .long-score .participant-name {
+        font-size: ${i.Ub};
+        line-height: ${i.Vb};
+    }
+
+    .long-score .participant-score {
+        font-size: ${i.Ub};
+        line-height: ${i.Vb};
+    }
+
+    .long-score .participant-name.winner,
+    .long-score .participant-score.winner {
+        font-weight: 600;
+    }
+
+    .participant-winner-tag {
+        padding-inline-end: 4px;
+        width: 5px;
+        height: 24px;
+    }
+
+    .participant-winner-tag > svg > path {
+        fill: currentColor;
+    }
+
+    .participant-name.loser,
+    .participant-score.loser {
+        color: ${i.ub};
+    }
+
+    .participant-name.semibold,
+    .participant-score.semibold {
+        font-weight: 600;
+    }
+
+    .match-details {
+        font-size: ${i.Ub};
+        line-height: ${i.Vb};
+        width: 64px;
+        color: ${i.ub};
+    }
+
+    .detail-attributes {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-width: 0;
+        align-items: center;
+    }
+
+    .game-clock,
+    .game-state,
+    .game-date,
+    .game-time,
+    .game-tv-channel {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+        color: ${i.ub};
+    }
+
+    .inprogress-game .game-clock {
+        color: #cc0000;
+        font-weight: bold;
+    }
+
+    .winner-tag {
+        padding-inline-end: 4px;
+        width: 5px;
+        height: 24px;
+    }
+
+    .winner-tag > svg > path {
+        fill: currentColor;
+    }
+
+    .detail-live-animation {
+        height: 2px;
+        background: #cc0000;
+        animation: liveAnimation 1.6s ease-out infinite 1.0s alternate;
+    }
+    @keyframes liveAnimation {
+        from {
+            width: 100%;
+        }
+        to {
+            width: 2px;
+        }
+    }
+
+`.withBehaviors(new n.a(Mt,xt),Object(c.c)(s.a`
+                :host: 
+                    forced-color-adjust: auto;
+                }
+            `),Object(c.b)(Ct.c));var Dt=a("6SUv");const Tt=(t,e,a,r,i,n)=>f.b`
+    <div class="participant">
+        ${Object(v.a)(e=>t&&!Object(S.b)(t),f.b`
+        <div class="participant-image" >
+            <img role="presentation"
+                src="${t}"
+            />
+        </div>`)}
+        <div class="participant-name ${(t,e)=>e.parent.getParticipantNameClass(a,r)}">
+            ${t=>i}
+        </div>
+        <div class="score-container">
+        ${Object(v.a)(t=>r==H.g.inprogressGame||r==H.g.postGame,f.b`
+            <div class="participant-score ${(t,e)=>e.parent.getParticipantNameClass(a,r)}">
+                ${(t,e)=>e.parent.computeScore(n+"")}
+            </div>
+            <div class="winner-tag">
+            ${Object(v.a)(t=>1==a&&r==H.g.postGame,f.b`
+                ${Dt.a}
+            `)}
+            </div>
+        `)}
+        </div>
+    </div>
+`,kt=f.b`
+    <a class="${(t,e)=>e.parent.getMatchClassName()}"
+        href=${t=>t.matchClickthroughUrl?t.matchClickthroughUrl:void 0}
+        target=${(t,e)=>e.parent.linkTarget}
+        ${Object(w.b)((t,e)=>e.parent.telemetryContext&&e.parent.telemetryContext.destinations&&t.matchClickthroughUrl?e.parent.telemetryContext.destinations.get(t.matchClickthroughUrl):"")}
+    >
+        <div class="sports-match ${(t,e)=>e.parent.getMatchClassNameByDataType()}" style="background-image: ${(t,e)=>e.parent.getMatchBackground(t)};">
+            <div class="match-participants">
+                ${t=>Tt(t.participantOneImageUrl,t.participantOneImageAltText,t.participantOneIsWinner,t.gameStateCatetory,t.participantOneName,t.participantOneScore)}
+                ${t=>Tt(t.participantTwoImageUrl,t.participantTwoImageAltText,t.participantTwoIsWinner,t.gameStateCatetory,t.participantTwoName,t.participantTwoScore)}
+            </div>
+            <div class="match-details">
+            ${Object(v.a)(t=>t.gameStateCatetory==H.g.preGame,f.b`
+                <div class="detail-attributes pre-game">
+                    <div class="game-date">
+                        ${t=>t.gameDate}
+                    </div>
+                    <div class="game-time">
+                        ${t=>t.gameStartTime}
+                    </div>
+                    <div class="game-channel">
+                        ${t=>t.tvChannel}
+                    </div>
+                </div>
+            `)}
+            ${Object(v.a)(t=>t.gameStateCatetory==H.g.inprogressGame,f.b`
+                <div class="detail-attributes inprogress-game">
+                    <div class="game-clock">
+                        ${t=>t.gamePeriodAndClock}
+                    </div>
+                    ${Object(v.a)((t,e)=>e.parent.config.enableLiveAnimation,f.b`<div class="detail-live-animation"/>`)}
+                    <div class="game-channel">
+                        ${t=>t.tvChannel}
+                    </div>
+                </div>
+            `)}
+            ${Object(v.a)(t=>t.gameStateCatetory==H.g.postGame,f.b`
+                <div class="detail-attributes post-game">
+                    <div class="game-state">
+                        ${t=>t.gameState}
+                    </div>
+                    <div class="game-date">
+                        ${t=>t.gameDate}
+                    </div>
+                </div>
+            `)}
+            </div>
+        </div>
+    </a>
+`,It=f.b`
+    ${Object(v.a)(t=>t.matchData.length>0,f.b`
+        <div class="match-data${t=>t.config.enableMatchNeutral?" match-neutral":""}">
+            ${Object(y.c)(t=>t.matchData,kt)}
+        </div>`)}
+`;var $t=a("QBS5"),Et=a("qibw");class At extends Ot.a{constructor(){super(...arguments),this.colorSchemeChangeHandler=()=>{this.isDarkMode=Object(mt.e)()},this.computeScore=t=>{if(t){if("tennis"===this.cardData.dataType.toLowerCase()){const e=t.split(", "),a=/\((.*?)\)/i;let r,i="";return e.forEach(t=>{t.includes("(")?(i+=t.charAt(0),r=t.match(a),null!=r&&(i+=r[1].sup()+"  ")):i+=t+"  "}),f.b` ${i.trim()} `}return t}},this.getMatchClassNameByDataType=()=>{let t="cricket"===this.cardData.dataType||"tennis"===this.cardData.dataType||"Tennis"===this.cardData.dataType?"long-score":"";return this.config.enableMatchNeutral&&(t+=" matchup-neutral-background"),t},this.getMatchBackground=t=>{if(!this.config.enableTeamColorStripes)return"";if(!Object(_.f)(this.cardData.dataType,this.cardData.sportType,this.cardData.leagueId,_.d.Stacked))return"";let e=t.participantOnePrimaryColor;e||(e="#C4C4C4");let a=t.participantTwoPrimaryColor;a||(a="#E4E4E4");return`linear-gradient(${document.dir==Et.a.rtl?"-125deg":"125deg"}, ${e} 0%, ${e} 9.75%, ${a} 10%, ${a} 14.75%, transparent 15%, transparent 100%)`},this.getParticipantNameClass=(t,e)=>1==t&&e==H.g.postGame?"winner":0==t&&e==H.g.postGame?"loser":e!=H.g.postGame&&this.config.enableMatchNeutral&&Object(_.f)(this.cardData.dataType,this.cardData.sportType,this.cardData.leagueId,_.d.Stacked)?"semibold":"",this.getMatchClassName=()=>this.config.enableMatchNeutral?"match-link match-neutral-link":"match-link"}connectedCallback(){super.connectedCallback(),window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",this.colorSchemeChangeHandler)}}Object(B.d)([$t.b],At.prototype,"uxstyle",void 0),Object(B.d)([$t.b],At.prototype,"cardlayout",void 0),Object(B.d)([dt.d],At.prototype,"isDarkMode",void 0),Object(B.d)([dt.d],At.prototype,"cardData",void 0),Object(B.d)([dt.d],At.prototype,"matchData",void 0);let Pt=class extends At{};Pt=Object(B.d)([Object(Ot.b)({name:"sports-match",template:It,styles:jt,shadowOptions:{delegatesFocus:!0}})],Pt),yt.a,St.a;const Lt=f.b`
+    ${t=>Object(wt.a)(t.config.childExperienceReferences.sdCardMaskWC,{properties:{cardType:"sports"}})}
+`,Ut=f.b`
+    <fluent-button
+        class="more-actions"
+        appearance="neutral"
+        style="width: 24px; height: 24px; min-width: 24px; border-width: 0; border-radius: 16px; cursor: pointer;"
+        @click="${(t,e)=>t.actionButtonClickHandler(e.event)}"
+        title="${t=>t.strings.sportsActionButton}"
+        aria-label="${t=>t.strings.sportsActionButton}"
+        ${Object(w.b)(t=>t.telemetryContext&&t.telemetryContext.actionButton&&t.telemetryContext.actionButton.getMetadataTag())}
+    >
+        ${vt.a}
+    </fluent-button>
+`,Ft=f.b`
+    <a
+        class="sports-header"
+        href=${t=>{var e;return null===(e=t.currentSportsMatchupData.sportsMatchupCardData)||void 0===e?void 0:e.cardTitleClickthroughUrl}}
+        target=${t=>t.getLinkClickTarget()}
+        ${Object(w.b)(t=>t.telemetryContext&&t.telemetryContext.header&&t.telemetryContext.header.getMetadataTag())}
+    >
+        ${Object(v.a)(t=>t.shouldShowHeaderIcon(),f.b`
+            <img class="sports-header-icon"
+                role="presentation"
+                src="${t=>t.currentSportsMatchupData.sportsMatchupCardData.cardTitleImageUrl}"
+            />
+        `)}
+        <div class="${t=>t.shouldShowHeaderIcon()?"sports-header-title header-with-icon":"sports-header-title"}" title=${t=>{var e;return"widget"==t.uxStyle?"":null===(e=t.currentSportsMatchupData.sportsMatchupCardData)||void 0===e?void 0:e.cardTitle}}>
+            ${t=>{var e;return"widget"==t.uxStyle?"":null===(e=t.currentSportsMatchupData.sportsMatchupCardData)||void 0===e?void 0:e.cardTitle}}
+        </div>
+        ${Object(v.a)(t=>t.config.enableCardAction,Ut)}
+    </a>
+`,Rt=f.b`
+    ${Object(v.a)(t=>t.enableSportsCarousel,f.b`
+        ${t=>t.carouselFooter}
+    `)}
+`,Nt=f.b`
+    <a
+        class="sports-footer-see-more-with-pagination-link"
+        title=${t=>{var e;return null===(e=t.currentSportsMatchupData.sportsMatchupCardData)||void 0===e?void 0:e.seeMoreText}}
+        aria-label=${t=>{var e;return null===(e=t.currentSportsMatchupData.sportsMatchupCardData)||void 0===e?void 0:e.seeMoreText}}
+        href=${t=>{var e;return null===(e=t.currentSportsMatchupData.sportsMatchupCardData)||void 0===e?void 0:e.seeMoreClickthroughUrl}}
+        target=${t=>t.getLinkClickTarget()}
+        ${Object(w.b)(t=>t.telemetryContext&&t.telemetryContext.seeMore&&t.telemetryContext.seeMore.getMetadataTag())}
+    >
+        <span class="sports-footer-see-more-text with-pagination-link">
+            ${t=>{var e;return null===(e=t.currentSportsMatchupData.sportsMatchupCardData)||void 0===e?void 0:e.seeMoreText}}
+        </span>
+        <span class="sports-footer-see-more-arrow">
+            ${'<svg width="24" height="24" viewBox="10 8 24 24"><rect x="10" y="8" width="24" height="24" rx="12"/><path d="M17.5 20c0-.28.22-.5.5-.5h6.8l-2.65-2.65a.5.5 0 0 1 .7-.7l3.5 3.5c.2.2.2.5 0 .7l-3.5 3.5a.5.5 0 0 1-.7-.7l2.64-2.65H18a.5.5 0 0 1-.5-.5Z"/></svg>'}
+        </span>
+    </a>
+`,Bt=f.b`
+    ${Object(v.a)(t=>t.config.enablePaginationLink&&t.enableSportsCarousel,Nt)} 
+
+    ${Object(v.a)(t=>!(t.config.enablePaginationLink&&t.enableSportsCarousel),f.b`
+        <a
+            class="${t=>"widget"==t.uxStyle?"sports-footer-see-more widget-footer":"sports-footer-see-more"}
+                ${t=>t.enableSportsCarousel?"with-pagination":""}"
+                style="${t=>t.isMotorSportsCard()?"background:":""}"
+                href=${t=>{var e;return null===(e=t.currentSportsMatchupData.sportsMatchupCardData)||void 0===e?void 0:e.seeMoreClickthroughUrl}}
+                target=${t=>t.getLinkClickTarget()}
+                title=${t=>{var e;return null===(e=t.currentSportsMatchupData.sportsMatchupCardData)||void 0===e?void 0:e.seeMoreText}}
+                ${Object(w.b)(t=>t.telemetryContext&&t.telemetryContext.seeMore&&t.telemetryContext.seeMore.getMetadataTag())}
+            >
+                <div class="sports-footer-see-more-text ${t=>t.enableSportsCarousel?"with-pagination":""}">
+                    ${t=>{var e;return null===(e=t.currentSportsMatchupData.sportsMatchupCardData)||void 0===e?void 0:e.seeMoreText}}
+                </div>
+        </a>
+    `)}
+`,Gt=f.b`
+    <div class="sports-footer-container ${t=>t.enableSportsCarousel?"with-pagination":""}">
+        ${Rt}
+        ${Bt}
+    </div>
+`,Ht=f.b`
+    ${Object(v.a)(t=>t.uxStyle!=_.b.widget,Ft)}
+    ${t=>t.matchContent}
+    ${Gt}
+`,Wt=f.b`
+    <msft-sports-matchup-card
+        id="sports-match-wc"
+        background="gradient"
+        uxstyle="${t=>t.uxStyle}"
+        card-layout="${t=>t.cardLayout}"
+        :sportsMatchupCardData="${t=>{var e;return null===(e=t.currentSportsMatchupData)||void 0===e?void 0:e.sportsMatchupCardData}}"
+        :sportsMatchData="${t=>{var e;return(null===(e=t.currentSportsMatchupData)||void 0===e?void 0:e.sportsMatchOverallData)&&t.currentSportsMatchupData.sportsMatchOverallData.map((function(t){return t.sportsMatchData}))}}"
+        clickthrough-target=${t=>t.getLinkClickTarget()}
+        ${Object(w.b)(t=>t.telemetryContext&&t.telemetryContext.sportsCard&&t.telemetryContext.sportsCard.getMetadataTag())}
+        :matchTelemetryTags=${t=>t.telemetryContext&&t.telemetryContext.destinations}
+        :headerTelemetryTag=${t=>t.telemetryContext&&t.telemetryContext.header&&t.telemetryContext.header.getMetadataTag()}
+        :seeMoreTelemetryTag=${t=>t.telemetryContext&&t.telemetryContext.seeMore&&t.telemetryContext.seeMore.getMetadataTag()}
+    />
+    ${Object(v.a)(t=>t.config.enableCardAction,Ut)}
+`,Vt=f.b`
+    <msn-actions-menu 
+        :referrerButton=${t=>t.actionButtonControl}
+        :menuItems=${t=>t.actionMenuItems}
+    />
+`,zt=f.b`
+    <div class="sports-follow-reminder">
+        <div class="sports-reminder-content">
+            <span class="sports-reminder-text">${t=>Object(S.a)(t.strings.sportsAddedToast,t.followedSuggest&&t.followedSuggest.name)}</span>
+            <button class="sports-reminder-close"
+                @click=${(t,e)=>t.closeReminder(e.event)}
+                title=${t=>t.strings.closeButton}
+                aria-label=${t=>t.strings.closeButton}
+            >
+            <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.588591 0.715694L0.646447 0.646447C0.820013 0.47288 1.08944 0.453595 1.28431 0.588591L1.35355 0.646447L6 5.293L10.6464 0.646447C10.8417 0.451185 11.1583 0.451185 11.3536 0.646447C11.5488 0.841709 11.5488 1.15829 11.3536 1.35355L6.707 6L11.3536 10.6464C11.5271 10.82 11.5464 11.0894 11.4114 11.2843L11.3536 11.3536C11.18 11.5271 10.9106 11.5464 10.7157 11.4114L10.6464 11.3536L6 6.707L1.35355 11.3536C1.15829 11.5488 0.841709 11.5488 0.646447 11.3536C0.451185 11.1583 0.451185 10.8417 0.646447 10.6464L5.293 6L0.646447 1.35355C0.47288 1.17999 0.453595 0.910563 0.588591 0.715694L0.646447 0.646447L0.588591 0.715694Z" />
+            </svg>
+            </button>
+        </div>
+        <a class="sports-reminder-link"
+            target="_blank"
+            href=${t=>{var e;return null===(e=t.followedSuggest)||void 0===e?void 0:e.webSearchUrl}}
+            ${Object(w.b)(t=>t.followedSuggest&&t.followedSuggest.telemetryContext&&t.followedSuggest.telemetryContext.webSearchUrl.getMetadataTag())}>
+            ${t=>Object(S.a)(t.strings.seeMoreSports,t.followedSuggest&&t.followedSuggest.name)}
+        </a>
+    </div>
+`,qt=f.b`
+    ${Object(v.a)(t=>t.sportsViewMode==_.c.Settings,f.b`
+        <div class="sports-wc">
+            ${t=>t.searchSuggestion}
+        </div>
+    `)}
+    ${Object(v.a)(t=>t.sportsViewMode!=_.c.Settings,f.b`
+        <fluent-design-system-provider
+            neutral-base-color="${t=>t.neutralBaseColor}"
+            style="padding: 0; width: 100%; height: 100%; margin: 0;"
+        >
+        ${Object(v.a)(t=>t.config.enableFast,f.b`
+            <a class="sports-wc"
+                href=${t=>t.currentSportsMatchupData&&t.currentSportsMatchupData.sportsMatchupCardData&&t.currentSportsMatchupData.sportsMatchupCardData.cardTitleClickthroughUrl}
+                @click="${(t,e)=>t.cardClickHandler&&t.cardClickHandler(e.event)}"
+                @keypress="${(t,e)=>t.cardKeydownHandler&&t.cardKeydownHandler(e.event)}"
+                target=${t=>t.getLinkClickTarget()}
+                ${Object(w.b)(t=>t.telemetryContext&&t.telemetryContext.header&&t.telemetryContext.header.getMetadataTag())}>
+                ${Object(v.a)(t=>!t.sportsViewMode||t.sportsViewMode==_.c.Default,f.b`
+                    ${Wt}
+                `)}
+            </a>
+        `)}
+        ${Object(v.a)(t=>!t.config.enableFast,f.b`
+            <div class="sports-match-card${t=>t.config.enableMatchNeutral?" sports-match-card-t1":""}
+                ${t=>t.enableSportsCarousel?" with-pagination":""}"
+                style="${t=>t.teamColorGradientBackgrdStyle}"
+                href=${t=>t.currentSportsMatchupData&&t.currentSportsMatchupData.sportsMatchupCardData&&t.currentSportsMatchupData.sportsMatchupCardData.cardTitleClickthroughUrl}
+                @click="${(t,e)=>t.cardClickHandler&&t.cardClickHandler(e.event)}"
+                @keypress="${(t,e)=>t.cardKeydownHandler&&t.cardKeydownHandler(e.event)}"
+                target=${t=>t.getLinkClickTarget()}
+            >
+                ${Object(v.a)(t=>!t.sportsViewMode||t.sportsViewMode==_.c.Default,f.b`
+                    ${Ht}
+                `)}
+            </div>
+        `)}
+        ${Object(v.a)(t=>{var e,a,r;return(null===(e=t.config)||void 0===e?void 0:e.enableSdCardMask)&&(null===(r=null===(a=t.config)||void 0===a?void 0:a.childExperienceReferences)||void 0===r?void 0:r.sdCardMaskWC)},Lt)}
+        </fluent-design-system-provider>
+    `)}
+    ${Object(v.a)(t=>t.isActionMenuOpen,Vt)}
+    ${Object(v.a)(t=>t.isShowReminder,zt)}
+`,_t={experienceConfigSchema:N};Object(D.a)().withShadowRootMode("closed").withElementDisambiguation(()=>E.ElementDisambiguation.ignoreDuplicate).register(Object(T.b)(),Object(k.c)(),Object(I.c)(),Object($.a)()),E.DesignSystem.getOrCreate().withShadowRootMode("open").withElementDisambiguation(()=>E.ElementDisambiguation.ignoreDuplicate).withPrefix("msft").register(x(),Object(j.a)())},NFfa:function(t,e,a){"use strict";a.d(e,"a",(function(){return s})),a.d(e,"b",(function(){return o})),a.d(e,"f",(function(){return c})),a.d(e,"e",(function(){return d})),a.d(e,"d",(function(){return l})),a.d(e,"c",(function(){return h}));var r=a("Am8i"),i=a("JnE6"),n=a("Gsg7");function s(t,e){const a=new n.a({name:t+"_customization",type:r.e.ActionButton,content:{headline:t+"_customization",type:r.c.StructuredData,vertical:e||t}}),s=document.createElement("button");return s.setAttribute(i.a,a.getMetadataTag()),s}function o(t,e,a,s){const o=new n.a({name:t+"_header",type:r.e.ActionButton,content:{headline:a,type:r.c.StructuredData,vertical:s||t}}),c=document.createElement("a");return c.href=e,c.setAttribute(i.a,o.getMetadataTag()),c}function c(t,e){const a=new n.a({name:`${t}_customization_size${e}`,type:r.e.ActionButton,content:{headline:""+e,type:r.c.StructuredData,vertical:t}}),i=document.createElement("button");return i.setAttribute("data-t",a.getMetadataTag()),i}function d(t){const e=new n.a({name:t+"_setting}",type:r.e.ActionButton,content:{headline:"setting",type:r.c.StructuredData,vertical:t}}),a=document.createElement("button");return a.setAttribute("data-t",e.getMetadataTag()),a}function l(t){const e=new n.a({name:t+"_removeWidget",type:r.e.ActionButton,content:{headline:"removeWidget",type:r.c.StructuredData,vertical:t}}),a=document.createElement("button");return a.setAttribute("data-t",e.getMetadataTag()),a}function h(t){if(!t)return;return"large"===t?{width:"300",height:"412"}:"medium"===t?{width:"300",height:"304"}:"small"===t?{width:"300",height:"146"}:void 0}},NkR4:function(t,e,a){"use strict";e.a=function(t){return function(e){return null==t?void 0:t[e]}}},Q2Ct:function(t,e,a){"use strict";e.a='<svg width="20" height="20" viewBox="0 0 20 20"><path d="M6 10a1.25 1.25 0 1 1-2.5 0A1.25 1.25 0 0 1 6 10zM11.25 10a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM15.25 11.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5z"/></svg>'},RIQ7:function(t,e,a){"use strict";a.d(e,"d",(function(){return s})),a.d(e,"b",(function(){return o})),a.d(e,"a",(function(){return c})),a.d(e,"c",(function(){return d}));var r=a("Am8i"),i=a("u5KZ"),n=a("y+Kz");function s(t,e){if(t){const a={type:r.e.Module,name:e,content:{}};return t.addOrUpdateChild(a)}return null}function o(){if(!i.a)return;const t=i.a.getPageMetadata();return t&&t.contract&&t.contract.page?t.contract.page.ocid:void 0}function c(t){const e=o(),a=t.toLowerCase();if(!e||-1!=a.indexOf("?ocid=")||-1!=a.indexOf("&ocid="))return t;const r=-1==t.indexOf("?")?"?":"&";return`${t}${r}ocid=${encodeURIComponent(e)}`}function d(t){if(!t)return null;const e=Object.assign({},t);return e[n.r.entAuthorization]&&(e[n.r.entAuthorization]="*****"),e[n.r.rpsToken]&&(e[n.r.rpsToken]="*****"),e}},S7gc:function(t,e,a){"use strict";a.d(e,"a",(function(){return n}));var r,i=a("dMmp");!function(t){t[t.Default=0]="Default",t[t.Medium=1]="Medium",t[t.MonthDate=2]="MonthDate",t[t.Weekday=3]="Weekday",t[t.Time=4]="Time"}(r||(r={}));class n{constructor(){this.dateFormatOptionsMap=new Map,this.setSupportsLocaleSpecifiers(),this.dateFormatOptionsMap.set(r.Medium,{year:"numeric",month:"short",day:"numeric"}),this.dateFormatOptionsMap.set(r.MonthDate,{month:"short",day:"numeric"}),this.dateFormatOptionsMap.set(r.Weekday,{weekday:"short"}),this.dateFormatOptionsMap.set(r.Time,{hour:"numeric",minute:"numeric"})}overrideDateFormat(t,e){t&&e&&this.dateFormatOptionsMap.set(t,e)}localizedDateString(t,e){return this.formatDate(t,r.Default,e)}localizedDateStringMedium(t,e){return this.formatDate(t,r.Medium,e)}localizedMonthDate(t,e){return this.formatDate(t,r.MonthDate,e)}localizedWeekday(t,e){return this.formatDate(t,r.Weekday,e)}formatTimeFromDate(t,e){return this.supportsLocaleSpecifiers&&this.dateFormatOptionsMap?t.toLocaleTimeString(e,this.dateFormatOptionsMap.get(r.Time)):t.toTimeString()}format(t,...e){return t?i.String.Format(t,...e):""}localizedNumberString(t,e){return this.supportsLocaleSpecifiers?t.toLocaleString(e):t.toString()}formatDate(t,e,a){let i=null;if(this.supportsLocaleSpecifiers)if(e===r.Default)i=t.toLocaleDateString(a);else if(this.dateFormatOptionsMap){const r=this.dateFormatOptionsMap.get(e);i=t.toLocaleDateString(a,r)}return null===i&&(i=t.toDateString()),null!==i?i.replace(/\u200E/g,"").replace(/\u200F/g,""):i}setSupportsLocaleSpecifiers(){this.supportsLocaleSpecifiers=(()=>{try{(0).toLocaleString("i")}catch(t){return"RangeError"===t.name}return!1})()}}},Sdge:function(t,e,a){"use strict";a.d(e,"a",(function(){return y}));var r,i=a("eftJ"),n=a("QBS5"),s=a("TDEi");!function(t){t.next="next",t.previous="previous"}(r||(r={}));class o extends s.a{constructor(){super(...arguments),this.hiddenFromAT=!0,this.direction=r.next}keyupHandler(t){if(!this.hiddenFromAT){const e=t.key;"Enter"===e&&this.$emit("click",t),"Escape"===e&&this.blur()}}}Object(i.a)([Object(n.b)({mode:"boolean"})],o.prototype,"disabled",void 0),Object(i.a)([Object(n.b)({attribute:"aria-hidden",converter:n.c})],o.prototype,"hiddenFromAT",void 0),Object(i.a)([n.b],o.prototype,"direction",void 0);var c=a("6BDD"),d=a("6vBc");var l=a("4X57"),h=a("xY0q"),u=a("2i1/"),p=a("wHpb"),g=a("oqLQ"),m=a("j9Xn"),b=a("QkLF"),f=a("8hiW");const v=(t,e)=>l.a`
+    ${Object(h.a)("inline-flex")} :host {
+      width: calc(${b.a} * 1px);
+      height: calc(${b.a} * 1px);
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      position: relative;
+      fill: currentcolor;
+      color: ${f.ub};
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 0;
+    }
+
+    :host::before {
+      content: '';
+      opacity: 0.8;
+      background: ${f.lb};
+      border: calc(${f.Rb} * 1px) solid ${f.Lb};
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .next,
+    .previous {
+      position: relative;
+      ${""} width: 16px;
+      height: 16px;
+    }
+
+    :host(.disabled) {
+      opacity: ${f.z};
+      cursor: ${u.a};
+    }
+
+    :host(:hover) {
+      cursor: pointer;
+    }
+
+    :host(:hover)::before {
+      background: ${f.ib};
+      border-color: ${f.Jb};
+    }
+
+    :host(:${p.a}) {
+      outline: none;
+    }
+
+    :host(:${p.a})::before {
+      box-shadow: 0 0 0 1px ${f.D} inset;
+      border-color: ${f.D};
+    }
+
+    :host(:active)::before {
+      background: ${f.fb};
+      border-color: ${f.Db};
+    }
+
+    :host::-moz-focus-inner {
+      border: 0;
+    }
+  `.withBehaviors(Object(g.c)(l.a`
+        :host {
+          background: ${m.a.Canvas};
+        }
+        :host .next,
+        :host .previous {
+          color: ${m.a.ButtonText};
+          fill: currentcolor;
+        }
+        :host::before {
+          background: ${m.a.Canvas};
+          border-color: ${m.a.ButtonText};
+        }
+        :host(:hover)::before {
+          forced-color-adjust: none;
+          background: ${m.a.Highlight};
+          border-color: ${m.a.ButtonText};
+          opacity: 1;
+        }
+        :host(:hover) .next,
+        :host(:hover) .previous {
+          forced-color-adjust: none;
+          color: ${m.a.HighlightText};
+          fill: currentcolor;
+        }
+        :host(.disabled) {
+          opacity: 1;
+        }
+        :host(.disabled)::before,
+        :host(.disabled:hover)::before,
+        :host(.disabled) .next,
+        :host(.disabled) .previous,
+        :host(.disabled:hover) .next,
+        :host(.disabled:hover) .previous {
+          forced-color-adjust: none;
+          background: ${m.a.Canvas};
+          border-color: ${m.a.GrayText};
+          color: ${m.a.GrayText};
+          fill: ${m.a.GrayText};
+        }
+        :host(:${p.a})::before {
+          forced-color-adjust: none;
+          border-color: ${m.a.Highlight};
+          box-shadow: 0 0 0 2px ${m.a.Field}, 0 0 0 4px ${m.a.FieldText};
+        }
+      `)),y=o.compose({baseName:"flipper",template:(t,e)=>c.b`
+    <template
+        role="button"
+        aria-disabled="${t=>!!t.disabled||void 0}"
+        tabindex="${t=>t.hiddenFromAT?-1:0}"
+        class="${t=>t.direction} ${t=>t.disabled?"disabled":""}"
+        @keyup="${(t,e)=>t.keyupHandler(e.event)}"
+    >
+        ${Object(d.a)(t=>t.direction===r.next,c.b`
+                <span part="next" class="next">
+                    <slot name="next">
+                        ${e.next||""}
+                    </slot>
+                </span>
+            `)}
+        ${Object(d.a)(t=>t.direction===r.previous,c.b`
+                <span part="previous" class="previous">
+                    <slot name="previous">
+                        ${e.previous||""}
+                    </slot>
+                </span>
+            `)}
+    </template>
+`,styles:v,next:'\n    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">\n        <path\n            d="M4.023 15.273L11.29 8 4.023.727l.704-.704L12.71 8l-7.984 7.977-.704-.704z"\n        />\n    </svg>\n  ',previous:'\n    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">\n        <path\n            d="M11.273 15.977L3.29 8 11.273.023l.704.704L4.71 8l7.266 7.273-.704.704z"\n        />\n    </svg>\n  '})},VLcu:function(t,e,a){"use strict";var r=a("SNCn"),i=a("IXgy");e.a=function(t){return Object(i.a)(Object(r.a)(t).toLowerCase())}},VVSJ:function(t,e,a){"use strict";a.d(e,"b",(function(){return h})),a.d(e,"c",(function(){return u})),a.d(e,"a",(function(){return p}));var r=a("8hiW"),i=a("UPH6"),n=a("4X57"),s=a("wHpb"),o=a("oqLQ");const c=n.a`
+    .sports-reminder-link {
+        text-align: left;
+    }
+    .sports-header-icon {
+        padding: 0 8px 0 0;
+    }
+    .sports-header-title {
+        margin: 0 8px 0 0;
+    }
+`,d=n.a`
+    .sports-reminder-link {
+        text-align: right;
+    }
+    .sports-header-icon {
+        padding: 0 0 0 8px;
+    }
+    .sports-header-title {
+        margin: 0 0 0 8px;
+    }
+    .sports-footer-see-more-text.with-pagination-link {
+        text-align: right;
+    }
+`,l=n.a`
+    :host {
+        --menu-z-index: 700;
+        --footer-link-background: #2E3A65;
+        --footer-link-hover-background: #354271;
+        --sports-card-bg-color: linear-gradient(160deg, rgba(40,51,90,0), rgba(40,51,90,1)), #242424;
+    }
+    .sports-match-card {
+        background: linear-gradient(160deg, rgba(46,58,101,0), rgba(46,58,101,1)), #2B2B2B;
+    }
+    .sports-footer.widget-footer {
+        color: #99ebff;
+    }
+    .sports-wc-search-input {
+        margin-left: 8px;
+    }
+    .sports-footer-see-more-text.with-pagination {
+        color: rgba(255, 255, 255, 255);
+    }
+`,h=n.a`
+    .matchup-neutral-background {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .matchup-neutral-background:hover,
+    .matchup-neutral-background:${s.a} {
+        background: rgba(255, 255, 255, 0.8);
+    }
+`,u=n.a`
+    .matchup-neutral-background {
+        background: rgba(255, 255, 255, 0.09);
+    }
+    .matchup-neutral-background:hover,
+    .matchup-neutral-background:${s.a} {
+        background: rgba(255, 255, 255, 0.13);
+    }
+`,p=n.a`
+:host {
+    --footer-link-background: #E8EBF7;
+    --footer-link-hover-background: #DDE2F3;
+    --sports-card-bg-color: linear-gradient(160deg, rgba(104,125,202,0.2), rgba(104,125,202,0.6)), #FFFFFF;
+}
+
+.sports-wc,
+.sports-search {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    outline: none;
+}
+
+.sports-match-card {
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    background: linear-gradient(160deg, rgba(232,235,247,0), rgba(232,235,247,1)), #FFFFFF;
+}
+
+.sports-match-card.with-pagination {
+    padding-top: 16px;
+}
+
+.sports-match-card.sports-match-card-t1 {
+    background: var(--sports-card-bg-color);
+}
+
+.sports-header {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: calc(100% - 32px);
+    min-height: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.sports-header-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: -4px;
+    padding: 0 8px 0 0;
+}
+
+.sports-header-title {
+    font-size: ${r.Ub};
+    line-height: ${r.Vb};
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--neutral-foreground-rest);
+    width: calc(100% - 32px);
+}
+
+.sports-header-title.header-with-icon {
+    width: calc(100% - 64px);
+}
+
+.sports-header-title:hover,
+.sports-header-title:active,
+.sports-header-title:${s.a} {
+    text-decoration: underline;
+    outline: none;
+}
+
+.sports-widget-content[cardlayout="1x_1y"] {
+    padding-top: 48px;
+}
+.sports-widget-content[cardlayout="1x_2y"] {
+    padding-top: 24px;
+}
+.sports-widget-content[cardlayout="1x_3y"] {
+    padding-top: 32px;
+}
+
+.sports-footer-container {
+    align-items: center;
+    height: 24px;
+    padding-top: 4px;
+}
+
+sports-carousel {
+    width: 67px; 
+    height: 20px; 
+    padding: 2px 0; 
+    display: grid; 
+    grid-template-columns: 20px 27px 20px; 
+    align-items: center;
+}
+
+.sports-footer-container.with-pagination {
+    display: grid;
+    padding: 6px 0px 0px;
+    grid-template-columns: 75px auto;
+    margin: 0px 16px;
+    position: fixed;
+    bottom: 12px;
+    width: 268px;
+}
+
+.sports-footer-see-more {
+    background: ${r.db};
+    color: ${r.ub};
+    font-size: var(--type-ramp-minus-1-font-size);
+    line-height: var(--type-ramp-minus-1-line-height);
+    border-radius: 20px;
+    padding: 0 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
+.sports-footer-see-more:hover,
+.sports-footer-see-more:active,
+.sports-footer-see-more:${s.a} {
+    background: ${r.L};
+}
+
+.sports-footer-see-more.widget-footer {
+    color: #003e92;
+    background: ${r.db};
+}
+.sports-footer-see-more.widget-footer:hover,
+.sports-footer-see-more.widget-footer:active,
+.sports-footer-see-more.widget-footer:${s.a} {
+    background: ${r.L};
+}
+
+.sports-footer-see-more.with-pagination {
+    padding: 0 0px;
+    align-items: end;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-width: 0;
+    margin-top: 2px;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: auto;
+}
+.sports-footer-see-more.with-pagination:${s.a} {
+    outline: 2px solid;
+}
+
+.sports-footer-see-more-text.with-pagination {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 20px;
+    padding: 0 24px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    color: ${r.ub};
+    background: ${r.lb};
+    margin-top: -4px;
+    border: solid 1px;
+    border-color: ${r.o};
+}
+.sports-footer-see-more-text.with-pagination:hover,
+.sports-footer-see-more-text.with-pagination:active,
+.sports-footer-see-more-text.with-pagination:${s.a} {
+    border-color: ${r.m};
+    background: ${r.ib};
+    text-decoration: underline;
+}
+
+.sports-footer-see-more-with-pagination-link {
+    width: 193px;
+    display: grid;
+    text-decoration: none;
+    grid-template-columns: 161px 24px;
+    grid-column-gap: 8px;
+    align-items: center;
+}
+
+.sports-footer-see-more-text.with-pagination-link {
+    text-align: right;
+    color: ${r.ub};
+    text-decoration: none;
+    height: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sports-footer-see-more-text.with-pagination-link:hover,
+.sports-footer-see-more-text.with-pagination-link:${s.a} {
+    text-decoration: underline;
+    color: ${r.m};
+}
+
+.sports-footer-see-more-text.with-pagination-link:active {
+    color: ${r.m};
+}
+
+.with-pagination-link.t1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.55)
+}
+
+.sports-footer-see-more-arrow {
+    width: 24px;
+    height: 24px;
+}
+
+.sports-footer-see-more-arrow  > svg {
+    float: left;
+}
+
+.sports-footer-see-more-arrow  > svg > rect {
+    fill: ${r.g};
+}
+
+.sports-footer-see-more-arrow  > svg > rect:hover {
+    fill: ${r.e};
+}
+
+.sports-footer-see-more-arrow  > svg > path {
+    fill: #FFFFFF;
+}
+
+.no-background {
+    background: transparent;
+}
+
+.more-actions {
+    margin-top: -4px;
+    --control-corner-radius: 16;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    z-index: 9;
+}
+
+.sports-follow-reminder {
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 16px;
+    width: 236px;
+    padding: 16px;
+    border-radius: 6px;
+    background: var(--neutral-foreground-rest);
+    text-decoration: none;
+    z-index: 2;
+    color: var(--neutral-fill-stealth-rest);
+    font-size: var(--type-ramp-minus-1-font-size);
+    line-height: var(--type-ramp-minus-1-line-height);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 40px;
+}
+.sports-reminder-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.sports-reminder-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.sports-reminder-close {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    fill: var(--neutral-fill-stealth-rest);
+}
+.sports-reminder-link {
+    margin-top: 6px;
+    color: #63ADE5;
+    cursor: pointer;
+    text-align: left;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+::slotted([slot="more-actions"]) {
+    --control-corner-radius: 20;
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+
+}
+
+::slotted([slot="more-actions"])::part(control) {
+    padding: 0;
+}
+
+::slotted([slot="more-actions"]:hover) {
+}
+`.withBehaviors(Object(o.b)(l),new i.a(c,d),Object(o.c)(n.a`
+            :host {
+                forced-color-adjust: auto;
+            }
+        `))},Vzrt:function(t,e,a){"use strict";a.d(e,"b",(function(){return s})),a.d(e,"c",(function(){return o})),a.d(e,"a",(function(){return c}));var r=a("4bc2"),i=a("zEbR");const n=new r.a("WidgetLoadTracker");function s(t){n.has(t)||("hidden"!==document.visibilityState?Object(i.a)(()=>n.set(t,!0)):n.set(t,!0))}const o=new r.a("WidgetAppState");var c;!function(t){t[t.IsDarkMode=0]="IsDarkMode",t[t.IsDashboardVisible=1]="IsDashboardVisible"}(c||(c={}))},W3y6:function(t,e,a){"use strict";a.d(e,"a",(function(){return r}));var r,i=a("D57K"),n=a("Ybri"),s=a("rvYQ"),o=a("ADRF"),c=a("I6Lx"),d=a("msIb"),l=a("KETb"),h=a("6ADy"),u=a("HxRh"),p=a("XlyT"),g=a("fuIx"),m=a("e8jz"),b=a("CgWR"),f=a("tERu"),v=a("ZwaX"),y=a("YuP+"),S=a("u5KZ"),w=a("/+Un"),O=a("kpPY"),C=a("hSGL"),M=a("lifk");!function(t){t.sportsApi="https://api.sports.microsoft.com/SportsReco/v1/SportsRecommendation?apikey=be5b9e52150e49f1b58fafff97d11487";const e={width:32,height:32,enableDpiScaling:!1,format:M.d.PNG};let a,r;function x(t,e,a,r,n=null,s=!1,o=null){return Object(i.a)(this,void 0,void 0,(function*(){if(Object(O.b)(t))return null;const c=a===v.a.Follow?"sid:"+t:t,g={Title:e,Sid:t},m={method:"POST",body:JSON.stringify({actionType:a,targetId:c,targetType:a===v.a.Follow?null:r,metadata:g}),headers:yield d.a.getOneServiceHeaders()};k()&&(m.credentials="include");const b=Object(h.c)("graph/actions");let f;(yield T(n,s)).forEach(t=>t.value&&b.searchParams.set(t.key,t.value)),o&&o.forEach(t=>t.value&&b.searchParams.set(t.key,t.value));try{return f=yield Object(l.b)(()=>Object(i.a)(this,void 0,void 0,(function*(){const t=yield Object(l.a)(b.href,m,u.fi);if(t.status>=400){const e=`postActionRequest OneService returned error response. Status: ${t.status} for actionType: ${a}, targetId: ${c}, targetType: ${r}`;throw new Error(e)}return t.json()})),"postCardAction"+a),yield f}catch(t){Object(p.c)(t,u.gi,"Error while posting action for card interest action",`Url: ${b.href} Params: ${m.body}`)}return f}))}function j(){return Object(i.a)(this,void 0,void 0,(function*(){const t=yield function(){return Object(i.a)(this,void 0,void 0,(function*(){const t={method:"GET",headers:yield d.a.getOneServiceHeaders()};k()&&(t.credentials="include");const e=Object(h.c)("graph/actions");let a;(yield T()).forEach(t=>t.value&&e.searchParams.set(t.key,t.value)),e.searchParams.set("$top","100");try{return a=yield Object(l.b)(()=>Object(i.a)(this,void 0,void 0,(function*(){const a=yield Object(l.a)(e.href,t,u.gi);if(a.status>=400){const t="getActionRequest OneService returned error response. Status: "+a.status;throw new Error(t)}return a.json()})),"getCardAction"),yield a}catch(t){return Object(p.c)(t,u.gi,"Error while getting action for card interest action",`Url: ${e.href} error: ${t&&t.message}`),null}}))}();t&&t.value&&t.value.length?function(t){if(!t)return;a=[],r=[];const e=t.filter(t=>null!=t&&0===t.actionType.localeCompare(v.a.Dislike,void 0,{sensitivity:"accent"})&&(0===t.targetType.localeCompare(v.f.League,void 0,{sensitivity:"accent"})||0===t.targetType.localeCompare(v.f.Team,void 0,{sensitivity:"accent"}))),i=t.filter(t=>null!=t&&0===t.actionType.localeCompare(v.a.Follow,void 0,{sensitivity:"accent"})&&(0===t.targetType.localeCompare(v.f.League,void 0,{sensitivity:"accent"})||0===t.targetType.localeCompare(v.f.Team,void 0,{sensitivity:"accent"})||t.metadata));e.length>0&&e.forEach(t=>{t.metadata&&t.metadata.Title&&a.push({id:t.targetId,name:t.metadata.Title,type:t.targetType})});i.length>0&&i.forEach(t=>{var e,a;r.push({id:(null===(e=t.metadata)||void 0===e?void 0:e.Sid)||"",name:null===(a=t.metadata)||void 0===a?void 0:a.Title,type:t.targetType,feedId:t.targetId})})}(t.value):t&&(a=[],r=[])}))}function D(t,e,a){return Object(i.a)(this,void 0,void 0,(function*(){if(Object(O.b)(t))return null;const r=t,n={method:"DELETE",headers:yield d.a.getOneServiceHeaders()};k()&&(n.credentials="include");const s=Object(h.c)("graph/actions");let o;(yield T()).forEach(t=>t.value&&s.searchParams.set(t.key,t.value));try{return o=yield Object(l.b)(()=>Object(i.a)(this,void 0,void 0,(function*(){const t=yield Object(l.a)(`${s.href}&$filter=actionType+eq+'${e}'+and+targetId+eq+'${r}'+and+targetType+eq+'${a}'`,n,u.fi);if(t.status>=400){const i=`deleteActionRequest OneService returned error response. Status: ${t.status} for actionType: ${e}, targetId: ${r}, targetType: ${a}`;throw new Error(i)}return t})),"deleteCardAction"+e),yield o}catch(t){Object(p.c)(t,u.gi,"Error while delete action for card interest action","Url: "+s.href)}}))}function T(t=null,e=!0){return Object(i.a)(this,void 0,void 0,(function*(){return k()?d.a.getOneServiceParamsWithAuth(Object(s.b)().UserId,t||"Peregrine",e):d.a.getOneServiceParamsWithoutAuth(Object(s.b)().UserId,t||"Peregrine",e)}))}function k(){return Object(i.a)(this,void 0,void 0,(function*(){return!!c.b.UserIsSignedIn||(yield Object(w.d)())===f.c.SignedIn}))}function I(t){const e="undefined"!=typeof window&&Object(g.b)()&&Object(m.b)(),a=e?e.market||"en-us":Object(s.b)().CurrentMarket||"en-us",r=e?e.anid:Object(s.b)().UserId,i=e?e.latitude:Object(s.b)().Latitude,n=e?e.longitude:Object(s.b)().Longitude;t.set("market",a),Object(O.b)(r)||t.set("user",r),i&&n&&(t.set("lat",i),t.set("long",n))}t.fetchSports=function(){return Object(i.a)(this,void 0,void 0,(function*(){const e=t.sportsApi;if(Object(n.a)(e)){const t=new URL(e),a=yield d.a.getBaseRequestData("GET");I(t.searchParams);try{const e=yield Object(l.b)(()=>Object(i.a)(this,void 0,void 0,(function*(){const e=yield Object(l.a)(decodeURIComponent(t.href),a,u.fi);if(!e.ok)throw S.a.sendAppErrorEvent(Object.assign(Object.assign({},u.fi),{message:"Error while calling fetch for sports data ",pb:Object.assign(Object.assign({},u.fi.pb),{fetchNetworkResponse:{statusCode:e.status,statusText:e.statusText,activityId:Object(s.b)().ActivityId,requestUrl:t.href,requestHeaders:JSON.stringify(a&&a.headers)},customMessage:`URL: ${t.href}, responseMessage: ${JSON.stringify(e)}`})})),Error(e.statusText);return e})),"FetchSports");return yield e.json()}catch(e){let r;a&&a.headers&&(r=a.headers),S.a.sendAppErrorEvent(Object.assign(Object.assign({},u.ei),{message:"Error while request sports data with exception.",pb:Object.assign(Object.assign({},u.ei.pb),{fetchNetworkResponse:{activityId:Object(s.b)().ActivityId,requestUrl:t.href,requestHeaders:JSON.stringify(a&&a.headers)},customMessage:`Error: ${e&&e.message} URL: ${t.href} headers: ${JSON.stringify(r)}`})}))}}}))},t.fetchSportsFeed=function(t=null,e=null,a=!1,r=!0,n=!1,c=null){return Object(i.a)(this,void 0,void 0,(function*(){const h=t;if(!Object(O.b)(h)){let t,p;try{if(t=new URL(h),!t||!o.a.isValidUrl(t.href,!0))return}catch(t){return void S.a.sendAppErrorEvent(Object.assign(Object.assign({},u.ei),{message:"Error while request sports feed data with URL exception.",pb:Object.assign(Object.assign({},u.ei.pb),{fetchNetworkResponse:{activityId:Object(s.b)().ActivityId,requestUrl:h},customMessage:`Error while request sports feed data with URL exception: ${t&&t.message} URL: ${h}`})}))}if(r){p=yield d.a.getBaseRequestData("GET"),I(t.searchParams);(yield T(e,a)).forEach(e=>e.value&&t.searchParams.set(e.key,e.value))}if(n){const e="undefined"!=typeof window&&Object(g.b)()&&Object(m.b)(),a=e?e.market:Object(s.b)().CurrentMarket;t.searchParams.set("market",a)}c&&c.length&&c.forEach(e=>{e.value&&t.searchParams.set(e.key,e.value)});try{const e=yield Object(l.b)(()=>Object(i.a)(this,void 0,void 0,(function*(){const e=yield Object(l.a)(decodeURIComponent(t.href),r?p:null,u.fi);if(e&&e.ok)return e;S.a.sendAppErrorEvent(Object.assign(Object.assign({},u.fi),{message:"Error while calling fetch sports feed data.",pb:Object.assign(Object.assign({},u.fi.pb),{fetchNetworkResponse:{statusCode:e.status,statusText:e.statusText,activityId:Object(s.b)().ActivityId,requestUrl:t.href,requestHeaders:JSON.stringify(p&&p.headers)},customMessage:`Error while calling fetch sports feed data: URL: ${t.href}, responseMessage: ${JSON.stringify(e)}`})}))})),"FetchSportsFeed");return yield e.json()}catch(e){S.a.sendAppErrorEvent(Object.assign(Object.assign({},u.ei),{message:"Error while request sports feed data with exception.",pb:Object.assign(Object.assign({},u.ei.pb),{fetchNetworkResponse:{activityId:Object(s.b)().ActivityId,requestUrl:t.href,requestHeaders:JSON.stringify(p&&p.headers)},customMessage:`Error while request sports feed data with exception: ${e&&e.message} URL: ${t.href} headers: ${(null==p?void 0:p.headers)&&JSON.stringify(null==p?void 0:p.headers)}`})}))}}}))},t.hideSportsCard=function(){return Object(i.a)(this,void 0,void 0,(function*(){try{return yield C.a.updateSegmentCardsEnableStatus([{cardType:b.a.SportsCard,enabled:!1}]),!0}catch(t){return Object(p.c)(t,u.gi,"Sports card settings save failed while hide sports card."),!1}}))},t.notInterestedSportsCard=function(t){return Object(i.a)(this,void 0,void 0,(function*(){if(!t||Object(O.b)(t.id))return!1;try{return yield x(t.id,t.name,v.a.Dislike,t.type||""),!0}catch(e){return Object(p.c)(e,u.gi,"Sports card settings save failed while dislike sports card leagueId: "+t.leagueId),!1}}))},t.removeDislikeSportsCard=function(t){return Object(i.a)(this,void 0,void 0,(function*(){if(!t||Object(O.b)(t.id))return!1;try{return yield D(t.id,v.a.Dislike,t.type||v.f.League),a=null,r=null,!0}catch(e){return Object(p.c)(e,u.gi,"Sports card settings save failed while remove dislike sports card leagueId: "+t.leagueId),!1}}))},t.getDislikeSportsEntities=function(t){j().then(()=>{a&&t(a)})},t.getFollowSportsEntities=function(t){j().then(()=>{r&&t(r)})},t.fetchSuggestions=function(a,r){return Object(i.a)(this,void 0,void 0,(function*(){const i=r.replace("{searchText}",a),n=Object(s.b)().CurrentMarket||"en-us",o=[];return yield t.fetchSportsFeed(i,null,!1,!1,!0).then(t=>{if(!t||!t.suggestionGroups||!t.suggestionGroups.length)return Object(p.b)(u.Xh,"Fetch sports suggestion get null response.",`market=${n}, input:${a}, searchUrl:${i}`),o;if(!t.suggestionGroups[0].searchSuggestions||!t.suggestionGroups[0].searchSuggestions.length)return Object(p.b)(u.Xh,"Fetch sports suggestion get empty groups.",`market=${n}, input:${a}, searchUrl:${i}`),o;let r=0;t.suggestionGroups[0].searchSuggestions.forEach(t=>{var a,i,s,c;if((null===(i=null===(a=t.entityPresentationInfo)||void 0===a?void 0:a.formattedFacts)||void 0===i?void 0:i.length)&&(null===(c=null===(s=t.entityPresentationInfo)||void 0===s?void 0:s.formattedFacts[0].items)||void 0===c?void 0:c.length)&&t.contractualRules.length){let a=t.richContent&&t.richContent.length&&t.richContent[0].webSearchUrl;a=a&&(a.startsWith("/")?a:"/"+a);const i=t.richContent&&t.richContent.length&&t.richContent[0].screenshot&&t.richContent[0].screenshot.imageId;let s=i&&Object(y.b)(i,e);s=s&&s.startsWith("//")?"https:"+s:s,o.push({index:r++,id:t.entityPresentationInfo.formattedFacts[0].items[0].text,name:t.displayText,type:t.contractualRules[0].targetPropertyName,displayText:t.displayText,typeDisplayHint:t.entityPresentationInfo.entityTypeDisplayHint,webSearchUrl:a&&`https://${Object(y.g)(n)}/${n}${a}`,imageUrl:s})}})}),o}))},t.postActionRequest=x,t.deleteActionRequest=D}(r||(r={}))},Waj5:function(t,e,a){"use strict";e.a='<svg width="14" height="14" viewBox="0 0 14 14"><path d="M.4.15A.5.5 0 0 0 .37.8l.05.05 2.69 2.7A6.66 6.66 0 0 0 .46 7.36a.5.5 0 0 0 .97.25 5.66 5.66 0 0 1 2.39-3.36l1.2 1.2A2.66 2.66 0 0 0 6.92 10c.73 0 1.4-.29 1.87-.76l3.95 3.94a.5.5 0 0 0 .75-.65l-.04-.05L9.37 8.4l-.8-.8L6.66 5.7 4.74 3.77 4 3.02 1.12.15a.5.5 0 0 0-.71 0Zm5.33 6.03 2.36 2.35a1.66 1.66 0 0 1-2.83-1.2c0-.45.18-.85.47-1.15Zm1.2-3.85c-.67 0-1.32.1-1.93.29l.83.82a5.68 5.68 0 0 1 6.6 4.18.5.5 0 0 0 .96-.24 6.67 6.67 0 0 0-6.46-5.05Zm.13 2.34L9.59 7.2a2.67 2.67 0 0 0-2.53-2.53Z" fill-opacity=".83"/></svg>'},"YuP+":function(t,e,a){"use strict";a.d(e,"f",(function(){return d})),a.d(e,"e",(function(){return l})),a.d(e,"a",(function(){return h})),a.d(e,"g",(function(){return u})),a.d(e,"d",(function(){return p})),a.d(e,"b",(function(){return g})),a.d(e,"c",(function(){return m}));var r=a("kpPY"),i=a("rvYQ"),n=a("RIQ7"),s=a("fuIx"),o=a("e8jz"),c=a("lifk");c.d.PNG,c.d.PNG,c.d.PNG;function d(){let t,e=null;return Object(s.b)()&&(e=Object(o.b)()),t=e?e.market:i.a.CurrentMarket,t||"en-us"}function l(t,e,a){if(!(a&&t&&e&&a[t]))return null;if(a[t][e])return a[t][e];const r=e?e.substr(0,2):"en";return a[t][r]?a[t][r]:a[t].en}function h(t){if(!t||!t.length||t.includes("ocid="))return t;const e=Object(n.b)();return e?t+"?ocid="+e:t}function u(t){return"zh-cn"===t?"www.msn.cn":"www.msn.com"}function p(t,e,a=!1){return Object(r.b)(t)?a?Object(c.h)("BB1dV8FG",e):null:t.indexOf(".")>0?Object(c.g)(`${c.a}?id=${t}&pid=MSports`,e):Object(c.h)(t,e)}function g(t,e,a=!1){return Object(r.b)(t)?a?Object(c.h)("BB1dV8FG",e):null:Object(c.g)(`${c.a}?id=${t}&pid=MSports`,e)}function m(t,e,a=!1){return Object(r.b)(t)?a?Object(c.h)("BB1dV8FG",e):null:Object(c.g)(t,e)}},Z5nQ:function(t,e,a){"use strict";a.d(e,"b",(function(){return i})),a.d(e,"a",(function(){return n}));var r=a("4X57");const i=r.a`
+    .line-clamp {
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: var(--heading-max-lines, 3);
+    }
+`,n=r.a`
+    .sd-action:not([appearance="lightweight"]) {
+        --control-corner-radius: 999;
+        font-size: var(--type-ramp-minus-1-font-size);
+        line-height: var(--type-ramp-minus-1-line-height);
+    }
+
+    .sd-action::part(control) {
+        width: 100%;
+    }
+
+    .sd-action::part(content) {
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+`},ZwaX:function(t,e,a){"use strict";a.d(e,"g",(function(){return r})),a.d(e,"i",(function(){return i})),a.d(e,"c",(function(){return n})),a.d(e,"j",(function(){return o})),a.d(e,"b",(function(){return c})),a.d(e,"h",(function(){return d})),a.d(e,"f",(function(){return l})),a.d(e,"a",(function(){return h})),a.d(e,"e",(function(){return u})),a.d(e,"d",(function(){return p})),a.d(e,"l",(function(){return g})),a.d(e,"m",(function(){return b})),a.d(e,"k",(function(){return f}));var r,i,n,s=a("Am8i");!function(t){t.preGame="pre-game",t.inprogressGame="inprogress-game",t.postGame="post-game"}(r||(r={})),function(t){t.singleparticipant="single",t.dualparticipants="dual"}(i||(i={})),function(t){t.unknown="Unknown",t.football="Football",t.baseball="Baseball",t.basketball="Basketball",t.basketball3x3="Basketball3x3",t.cricket="Cricket",t.icehockey="IceHockey",t.fieldhockey="FieldHockey",t.racing="Racing",t.tennis="Tennis",t.soccer="Soccer",t.golf="Golf",t.australianrules="AustralianRules",t.rugbyunion="RugbyUnion",t.rugbyleague="RugbyLeague",t.archery="Archery",t.athletics="Athletics",t.badminton="Badminton",t.cycling="Cycling",t.boxing="Boxing",t.canoeing="Canoeing",t.climbing="Climbing",t.equestrianism="Equestrianism",t.fencing="Fencing",t.gymnasticsartistic="GymnasticsArtistic",t.gymnasticsrhytmic="GymnasticsRhytmic",t.gymnasticstrampoline="GymnasticsTrampoline",t.handball="Handball",t.judo="Judo",t.karate="Karate",t.summerolympics="SummerOlympics",t.paralympics="Paralympics",t.pentathlon="Pentathlon",t.swimmingartistic="SwimmingArtistic",t.swimming="Swimming",t.diving="Diving",t.waterpolo="WaterPolo",t.rowing="Rowing",t.sailing="Sailing",t.shooting="Shooting",t.skateboarding="Skateboarding",t.surfing="Surfing",t.taekwondo="Taekwondo",t.triathlon="Triathlon",t.tabletennis="TableTennis",t.volleyballteam="VolleyballTeam",t.volleyballbeach="VolleyballBeach",t.weightlifting="Weightlifting",t.wrestling="Wrestling",t.softball="Softball",t.trackandfield="TrackAndField",t.mma="MMA",t.netball="Netball",t.boccia="Boccia"}(n||(n={}));const o=new Map([[n.soccer,new Set(["*"])],[n.football,new Set(["Football_NFL","Football_CollegeFootball"])],[n.baseball,new Set(["Baseball_MLB"])],[n.icehockey,new Set(["*"])],[n.basketball,new Set(["*"])]]);var c,d;!function(t){t.singleRace="MotorSportsSingleRace",t.raceList="MotorSportsRaceList"}(c||(c={}));!function(t){t.SportsCard="SportsCard",t.Homepage="homepage",t.Game="sports_game",t.Header="sports_header",t.SeeMore="seemore",t.Customization="sportscard_customization",t.MoreSettings="sportscard_customization_moresettings",t.Vertical="sports",t.HideCard="HideSport",t.HideSports="HideSportsCard",t.SaveSetting="done",t.CancelSetting="Cancel",t.SportsInput="searchsports",t.SportsSuggest="suggestresult",t.SportsSuggestUrl="suggesturl",t.ConfidenceScoreKey="cs",t.PreviousMatch="previous",t.NextMatch="next",t.AddSports="FollowWizard",t.AddSportsMenu="FollowTeamOrLeague",t.FollowSports="Follow",t.GoBack="Goback",t.EditSports="FollowWizard",t.ClickCarouselDot="CarouselDotClick",t.MotorSports="Motorsports",t.MotorRace="sing",t.MotorRaceTime="sports_gametime",t.MotorRaceScore="sports_gamescore"}(d||(d={}));const l={League:"League",Team:"Team"},h={Dislike:"Dislike",Follow:"Follow"};var u;!function(t){t.Small="1x_1y",t.Medium="1x_2y",t.Large="1x_3y"}(u||(u={}));const p="#",g=(t,e,a,r)=>{if(!t||!e||!a)return;const i=e||[],n=a||{},o=a.leagueName,c=a.leagueId,l=n.cardTitleClickthroughUrl,h=n.seeMoreClickthroughUrl,u=m(d.SportsCard,t,{category:o,headline:o},r),p=m(d.Header,t,{headline:o,id:c,type:s.c.StructuredData,category:o,destinationUrl:l},r),g=m(d.Customization,t,{headline:d.Customization,id:d.Customization,category:o},r),b=m(d.SeeMore,t,{headline:o,id:c,type:s.c.StructuredData,category:o,destinationUrl:h},r),f=m(d.MoreSettings,t,{category:o},r),v=m(d.HideCard,t,{category:o},r),y=m(d.HideSports,t,{category:o},r),S=new Map,w=new Map;i.forEach(e=>{if(!e.sportsMatchData.matchClickthroughUrl)return;const a=e.sportsMatchData.gameId,i=m(d.Game,t,{category:o,headline:o,gameId:a,destinationUrl:e.sportsMatchData.matchClickthroughUrl},r);S.set(e.sportsMatchData.matchClickthroughUrl,null==i?void 0:i.getMetadataTag()),w.set(a,i)});const O=m(d.SaveSetting,t,{headline:o,id:c,type:s.c.StructuredData,category:o},r),C=m(d.CancelSetting,t,{headline:o,id:c,type:s.c.StructuredData,category:o},r),M=m(d.SportsInput,t,{headline:o,id:c,type:s.c.StructuredData,category:o},r),x=m(d.SportsSuggest,t,{headline:o,id:c,type:s.c.StructuredData,category:o},r),j=m(d.PreviousMatch,t,{headline:o,id:c,type:s.c.StructuredData,category:o},r),D=m(d.NextMatch,t,{headline:o,id:c,type:s.c.StructuredData,category:o},r),T=m(d.AddSports,t,{headline:o,id:c,type:s.c.StructuredData,category:o},r),k=m(d.AddSportsMenu,t,{headline:o,id:c,type:s.c.StructuredData,category:o},r),I=m(d.FollowSports,t,{headline:o,id:c,type:s.c.StructuredData,category:o},r),$=m(d.GoBack,t,{headline:o,id:c,type:s.c.StructuredData,category:o},r),E=m(d.EditSports,t,{category:o,headline:o},r),A=m(d.ClickCarouselDot,t,{category:o,headline:o},r);return{componentRoot:t,sportsCard:u,destinations:S,games:w,header:p,actionButton:g,seeMore:b,menuMoreSettings:f,menuHideCard:v,menuHideSports:y,saveSetting:O,cancelSetting:C,sportsInput:M,sportsSuggest:x,previousMatch:j,nextMatch:D,addSports:T,menuAddSports:k,followSports:I,goBack:$,editSports:E,clickCarouselDot:A}};function m(t,e,a,r){if(!e||!a||!a.category)return null;const i=e.addOrUpdateChild({name:d.SportsCard,type:s.e.Module}),n={contentVertical:d.Vertical,category:a.category};switch(t){case d.SportsCard:return i.addOrUpdateChild({name:d.SportsCard,content:{vertical:n.contentVertical,category:n.category,type:s.c.StructuredData,id:""},ext:r},a.savedChildObject);case d.Header:return i.addOrUpdateChild({name:d.Header,behavior:s.b.Navigate,destinationUrl:a.destinationUrl,content:{vertical:n.contentVertical,category:n.category,headline:a.headline,type:s.c.StructuredData,id:""},ext:r},a.savedChildObject);case d.SeeMore:return i.addOrUpdateChild({name:d.SeeMore,behavior:s.b.Navigate,destinationUrl:a.destinationUrl,content:{vertical:n.contentVertical,category:n.category,headline:a.headline,type:s.c.StructuredData,id:""},ext:r},a.savedChildObject);case d.Game:return i.addOrUpdateChild({name:d.Game,behavior:s.b.Navigate,destinationUrl:a.destinationUrl,content:{vertical:n.contentVertical,category:n.category,headline:a.headline,type:s.c.StructuredData,id:""},ext:r},a.savedChildObject);case d.Customization:return i.addOrUpdateChild({name:d.Customization,behavior:s.b.More,content:{headline:d.Customization,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.Interaction,ext:r},a.savedChildObject);case d.MoreSettings:return i.addOrUpdateChild({name:d.MoreSettings,content:{headline:d.MoreSettings,vertical:n.contentVertical,type:s.c.StructuredData,id:""},overrideDestinationUrl:(window.location.origin||"")+"/personalize",type:s.e.ActionButton,ext:r},a.savedChildObject);case d.HideCard:return i.addOrUpdateChild({name:d.HideCard,behavior:s.b.Hide,content:{headline:d.HideCard,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.ActionButton,ext:r},a.savedChildObject);case d.HideSports:return i.addOrUpdateChild({name:d.HideSports,behavior:s.b.Hide,content:{headline:d.HideSports,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.ActionButton,ext:r},a.savedChildObject);case d.PreviousMatch:return i.addOrUpdateChild({name:d.PreviousMatch,behavior:s.b.Undefined,content:{headline:d.PreviousMatch,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.ActionButton,ext:r},a.savedChildObject);case d.NextMatch:return i.addOrUpdateChild({name:d.NextMatch,behavior:s.b.Undefined,content:{headline:d.NextMatch,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.ActionButton,ext:r},a.savedChildObject);case d.SaveSetting:return i.addOrUpdateChild({name:d.SaveSetting,behavior:s.b.Save,content:{headline:d.SaveSetting,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.ActionButton,ext:r},a.savedChildObject);case d.CancelSetting:{const t=i.addOrUpdateChild({name:d.AddSports,action:s.a.View,type:s.e.Module});return t.addOrUpdateChild({name:d.CancelSetting,behavior:s.b.Cancel,content:{headline:d.CancelSetting,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.ActionButton,ext:r},t)}case d.SportsInput:return i.addOrUpdateChild({name:d.SportsInput,content:{headline:d.SportsInput,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.InputBox,ext:r},a.savedChildObject);case d.SportsSuggest:return i.addOrUpdateChild({name:d.SportsSuggest,content:{headline:d.SportsSuggest,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.AutoSuggest,ext:r},a.savedChildObject);case d.AddSports:return i.addOrUpdateChild({name:d.AddSports,action:s.a.View,type:s.e.Module});case d.AddSportsMenu:return i.addOrUpdateChild({name:d.AddSportsMenu,behavior:s.b.Open,content:{headline:d.AddSportsMenu,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.ActionButton,ext:r},a.savedChildObject);case d.FollowSports:return i.addOrUpdateChild({name:d.FollowSports,behavior:s.b.Follow,content:{headline:d.FollowSports,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.ActionButton,ext:r},a.savedChildObject);case d.GoBack:return i.addOrUpdateChild({name:d.GoBack,behavior:s.b.Navigate,content:{headline:d.GoBack,vertical:n.contentVertical,type:s.c.StructuredData,id:""},destinationUrl:"",type:s.e.Interaction,ext:r},a.savedChildObject);case d.EditSports:return i.addOrUpdateChild({name:d.EditSports,content:{vertical:n.contentVertical,category:n.category,type:s.c.StructuredData,id:""},ext:r},a.savedChildObject);case d.ClickCarouselDot:return i.addOrUpdateChild({name:d.ClickCarouselDot,content:{vertical:n.contentVertical,category:n.category,type:s.c.StructuredData,id:""},ext:r},a.savedChildObject)}}const b=(t,e,a=!1)=>{if(!t||!e)return null;const r=t.addOrUpdateChild({name:a?d.AddSports:d.SportsCard,action:s.a.View,type:s.e.Module});return{componentRoot:t,webSearchUrl:r.addOrUpdateChild({name:d.SportsSuggestUrl,behavior:s.b.Navigate,content:{headline:d.SportsSuggestUrl,vertical:d.Vertical,category:e.name,type:s.c.StructuredData,id:""},overrideDestinationUrl:e.webSearchUrl}),followEntity:r.addOrUpdateChild({name:d.FollowSports,behavior:s.b.Follow,content:{headline:e.name,vertical:d.Vertical,category:e.name,type:s.c.StructuredData,id:e.id},destinationUrl:""})}},f=(t,e,a,i)=>{var n;if(!t||!e)return null;const o=t.addOrUpdateChild({name:d.SportsCard,action:s.a.View,type:s.e.Module}),l=g(t,e,a,i);null===(n=l.games)||void 0===n||n.clear();const h=e||[];if(a.dataType===c.raceList&&h.forEach(t=>{const e=o.addOrUpdateChild({name:d.MotorRace,behavior:s.b.Navigate,content:{vertical:d.Vertical,category:d.MotorSports,subcategory:a.leagueName,type:s.c.StructuredData,id:t.sportsMatchData.gameId},overrideDestinationUrl:t.sportsMatchData.matchClickthroughUrl});l.games.set(t.sportsMatchData.gameId,e)}),a.dataType===c.singleRace&&h.length>0){const t=o.addOrUpdateChild({name:h[0].sportsMatchData.gameStateCatetory===r.inprogressGame?d.MotorRaceTime:d.MotorRaceScore,behavior:s.b.Navigate,content:{vertical:d.Vertical,category:d.MotorSports,subcategory:a.leagueName,type:s.c.StructuredData,id:h[0].sportsMatchData.gameId},overrideDestinationUrl:h[0].sportsMatchData.matchClickthroughUrl});l.games.set(h[0].sportsMatchData.gameId,t)}return l}},a9P4:function(t,e,a){"use strict";e.a='<svg width="17" height="17" viewBox="0 0 17 17"><path d="M.02 5.88A8.5 8.5 0 0 1 1.8 2.8a.5.5 0 0 1 .54-.13l1.92.68a1 1 0 0 0 1.32-.76l.37-2a.5.5 0 0 1 .39-.4 8.53 8.53 0 0 1 3.55 0c.2.04.35.2.39.4l.36 2a1 1 0 0 0 1.32.76l1.92-.68a.5.5 0 0 1 .54.13 8.5 8.5 0 0 1 1.78 3.08c.07.2 0 .4-.15.54L14.5 7.74a1 1 0 0 0 0 1.52l1.55 1.32a.5.5 0 0 1 .15.54 8.5 8.5 0 0 1-1.78 3.08.5.5 0 0 1-.54.13l-1.92-.68a1 1 0 0 0-1.32.76l-.36 2a.5.5 0 0 1-.39.4 8.53 8.53 0 0 1-3.55 0 .5.5 0 0 1-.4-.4l-.36-2a1 1 0 0 0-1.32-.76l-1.92.68a.5.5 0 0 1-.54-.13 8.5 8.5 0 0 1-1.78-3.08.5.5 0 0 1 .16-.54l1.55-1.32a1 1 0 0 0 0-1.52L.18 6.42a.5.5 0 0 1-.16-.54Zm1.06 0 1.3 1.1a2 2 0 0 1 0 3.04l-1.3 1.1c.3.79.72 1.51 1.25 2.16l1.6-.58a2 2 0 0 1 2.64 1.53l.3 1.67a7.56 7.56 0 0 0 2.49 0l.3-1.67a2 2 0 0 1 2.64-1.53l1.6.58a7.5 7.5 0 0 0 1.24-2.16l-1.3-1.1a2 2 0 0 1 0-3.04l1.3-1.1a7.5 7.5 0 0 0-1.24-2.16l-1.6.58a2 2 0 0 1-2.64-1.53l-.3-1.67a7.55 7.55 0 0 0-2.49 0l-.3 1.67A2 2 0 0 1 3.93 4.3l-1.6-.58a7.5 7.5 0 0 0-1.25 2.16ZM5.61 8.5a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Zm1 0a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0Z" fill-opacity=".83"/></svg>'},bXLQ:function(t,e,a){"use strict";a.d(e,"a",(function(){return i}));var r=a("TDEi");class i extends r.a{}},bica:function(t,e,a){"use strict";a.d(e,"a",(function(){return y})),a.d(e,"c",(function(){return S})),a.d(e,"b",(function(){return w}));var r=a("3rEL"),i=a("bXLQ"),n=a("+Cud"),s=a("39vG"),o=a("oePG"),c=a("QBS5"),d=a("YBl9"),l=a("8hiW"),h=a("i2HT"),u=a("hv+n"),p=a("4X57"),g=a("xY0q"),m=a("oqLQ"),b=a("j9Xn"),f=a("cQsl");const v=(t,e)=>p.a`
+      ${Object(g.a)("block")} :host {
+        --elevation: 4;
+        display: block;
+        contain: content;
+        height: var(--card-height, 100%);
+        width: var(--card-width, 100%);
+        box-sizing: border-box;
+        background: ${l.A};
+        color: ${l.ub};
+        border-radius: calc(${l.J} * 1px);
+        ${f.a}
+      }
+
+      :host(:hover) {
+        --elevation: 8;
+      }
+
+      :host(:focus-within) {
+        --elevation: 8;
+      }
+
+      :host {
+        content-visibility: auto;
+      }
+    `.withBehaviors(Object(m.c)(p.a`
+          :host {
+            forced-color-adjust: none;
+            background: ${b.a.Canvas};
+            box-shadow: 0 0 0 1px ${b.a.CanvasText};
+          }
+        `));class y extends i.a{cardFillColorChanged(t,e){if(e){const t=Object(d.c)(e);null!==t&&(this.neutralPaletteSource=e,l.A.setValueFor(this,h.a.create(t.r,t.g,t.b)))}}neutralPaletteSourceChanged(t,e){if(e){const t=Object(d.c)(e),a=h.a.create(t.r,t.g,t.b);l.Cb.setValueFor(this,u.a.create(a))}}handleChange(t,e){this.cardFillColor||l.A.setValueFor(this,e=>l.Z.getValueFor(e).evaluate(e,l.A.getValueFor(t)))}connectedCallback(){super.connectedCallback();const t=Object(n.a)(this);if(t){const e=o.b.getNotifier(t);e.subscribe(this,"fillColor"),e.subscribe(this,"neutralPalette"),this.handleChange(t,"fillColor")}}}Object(r.a)([Object(c.b)({attribute:"card-fill-color",mode:"fromView"})],y.prototype,"cardFillColor",void 0),Object(r.a)([Object(c.b)({attribute:"neutral-palette-source",mode:"fromView"})],y.prototype,"neutralPaletteSource",void 0);const S=y.compose({baseName:"card",baseClass:i.a,template:s.a,styles:v}),w=v},dMmp:function(t,e,a){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r=function(){function t(){}return t.IsNullOrWhiteSpace=function(t){try{return null==t||"undefined"==t||t.toString().replace(/\s/g,"").length<1}catch(t){return console.log(t),!1}},t.Join=function(e){for(var a=[],r=1;r<arguments.length;r++)a[r-1]=arguments[r];try{var i=a[0];if(Array.isArray(i)||i instanceof Array){for(var n=t.Empty,s=0;s<i.length;s++){var o=i[s];s<i.length-1?n+=o+e:n+=o}return n}if("object"==typeof i){var c=t.Empty,d=i;return Object.keys(i).forEach((function(t){c+=d[t]+e})),c=c.slice(0,c.length-e.length)}var l=a;return t.join.apply(t,[e].concat(l))}catch(e){return console.log(e),t.Empty}},t.Format=function(e){for(var a=[],r=1;r<arguments.length;r++)a[r-1]=arguments[r];try{return e.match(t.regexNumber)?t.format(t.regexNumber,e,a):e.match(t.regexObject)?t.format(t.regexObject,e,a,!0):t.Empty}catch(e){return console.log(e),t.Empty}},t.format=function(e,a,r,i){return void 0===i&&(i=!1),a.replace(e,(function(e,a){var n,s=e.split(":");return s.length>1&&(a=s[0].replace("{",""),e=s[1].replace("}","")),null==(n=i?r[0][a]:r[a])||null==n||e.match(/{\d+}/)||void 0!==(n=t.parsePattern(e,n))&&null!=n?n:t.Empty}))},t.parsePattern=function(e,a){switch(e){case"L":return a.toLowerCase();case"U":return a.toUpperCase();case"d":if("string"==typeof a)return t.getDisplayDateFromString(a);if(a instanceof Date)return t.Format("{0:00}.{1:00}.{2:0000}",a.getDate(),a.getMonth(),a.getFullYear());break;case"s":if("string"==typeof a)return t.getSortableDateFromString(a);if(a instanceof Date)return t.Format("{0:0000}-{1:00}-{2:00}",a.getFullYear(),a.getMonth(),a.getDate());break;case"n":"string"!=typeof a&&(a=a.toString());var r=a.replace(/,/g,".");if(isNaN(parseFloat(r))||r.length<=3)break;var i=r.split(/[^0-9]+/g),n=i;i.length>1&&(n=[t.join.apply(t,[""].concat(i.splice(0,i.length-1))),i[i.length-1]]);var s=n[0],o=s.length%3,c=o>0?s.substring(0,o):t.Empty,d=s.substring(o).match(/.{3}/g);return(c=c+"."+t.Join(".",d))+(n.length>1?","+n[1]:"")}return"number"!=typeof a&&isNaN(a)||isNaN(+e)||t.IsNullOrWhiteSpace(a)?a:t.formatNumber(a,e)},t.getDisplayDateFromString=function(t){var e;if((e=t.split("-")).length<=1)return t;var a=e[e.length-1],r=e[e.length-2],i=e[e.length-3];return(a=(a=a.split("T")[0]).split(" ")[0])+"."+r+"."+i},t.getSortableDateFromString=function(e){var a=e.replace(",","").split(".");if(a.length<=1)return e;var r=a[a.length-1].split(" "),i=t.Empty;r.length>1&&(i=r[r.length-1]);var n=a[a.length-1].split(" ")[0]+"-"+a[a.length-2]+"-"+a[a.length-3];return!t.IsNullOrWhiteSpace(i)&&i.length>1?n+="T"+i:n+="T00:00:00",n},t.formatNumber=function(t,e){var a=e.length,r=t.toString();if(a<=r.length)return r;var i=a-r.length;return new Array(i+=1).join("0")+r},t.join=function(e){for(var a=[],r=1;r<arguments.length;r++)a[r-1]=arguments[r];for(var i=t.Empty,n=0;n<a.length;n++)if(!("string"==typeof a[n]&&t.IsNullOrWhiteSpace(a[n])||"number"!=typeof a[n]&&"string"!=typeof a[n])){i+=""+a[n];for(var s=n+1;s<a.length;s++)if(!t.IsNullOrWhiteSpace(a[s])){i+=e,n=s-1;break}}return i},t.regexNumber=/{(\d+(:\w*)?)}/g,t.regexObject=/{(\w+(:\w*)?)}/g,t.Empty="",t}();e.String=r;var i=function(){function t(t){void 0===t&&(t=r.Empty),this.Values=[],this.Values=new Array(t)}return t.prototype.ToString=function(){return this.Values.join("")},t.prototype.Append=function(t){this.Values.push(t)},t.prototype.AppendFormat=function(t){for(var e=[],a=1;a<arguments.length;a++)e[a-1]=arguments[a];this.Values.push(r.Format.apply(r,[t].concat(e)))},t.prototype.Clear=function(){this.Values=[]},t}();e.StringBuilder=i},dcKg:function(t,e,a){"use strict";a.d(e,"c",(function(){return r})),a.d(e,"b",(function(){return n})),a.d(e,"e",(function(){return s})),a.d(e,"f",(function(){return o})),a.d(e,"d",(function(){return c})),a.d(e,"a",(function(){return d}));var r,i=a("ZwaX");!function(t){t.Initial="initial",t.Default="default",t.League="league",t.Team="team",t.Standings="standings",t.Hybrid="hybrid",t.Settings="settings"}(r||(r={}));const n={widget:"widget",feed:"feed"},s=(t,e=1)=>{const[a,r,i]=t.match(/\w\w/g).map(t=>parseInt(t,16));return`rgba(${a},${r},${i},${e})`},o=(t,e,a,r)=>{if((null==r?void 0:r.layoutMode)==c.Stacked&&"Cricket"===t)return!0;if("TeamVsTeam"!==t)return!1;const n=i.j.get(e);return!!n&&(!!n.has("*")||n.has(a))};var c,d;!function(t){t[t.Stacked=0]="Stacked",t[t.SideBySide=1]="SideBySide"}(c||(c={})),function(t){t.SportsMatchCardData="SportsMatchCardData",t.SportsMatchDataList="SportsMatchDataList",t.SportsSelectedEntityId="SportsSelectedEntityId",t.SportsRecommendation="SportsRecommendation",t.SportsSelectedEntity="SportsSelectedEntity"}(d||(d={}))},eNhF:function(t,e,a){"use strict";a.d(e,"a",(function(){return n}));var r=a("YBl9"),i=a("6eT7");function n(t=0,e=1,a,n){const s=n.toColorString(),{r:o,g:c,b:d}=Object(r.c)(s),l=`linear-gradient(160deg, ${new i.a(o,c,d,t).toStringWebRGBA()}, ${new i.a(o,c,d,e).toStringWebRGBA()})`;if(a){return[l,null==a?void 0:a.toColorString()].join()}return l}},gqPI:function(t,e,a){"use strict";a.d(e,"a",(function(){return r}));var r,i=a("ZwaX"),n=a("XlyT"),s=a("HxRh"),o=a("YuP+"),c=a("S7gc"),d=a("LJMo"),l=a("dMmp"),h=a("kpPY"),u=a("lifk");!function(t){const e={width:24,height:24,enableDpiScaling:!1,format:u.d.PNG};function a(a,d,l=4,u=null){var v,y,S;const w=a.Model.DataType&&a.Model.DataType===i.b.raceList||a.Model.DataType===i.b.singleRace,O=w?a.Model.Races:a.Model.SportsMatches;if(!(a&&a.Model&&O&&a.Trans))return null;const C=u&&u.disableMatchClickThroughBySport,M=u&&u.segmentList,x=u&&u.teamImageSize;x&&(x.width&&(t.teamImageInfo.width=x.width),x.height&&(t.teamImageInfo.height=x.height));const j=Object(o.f)(),D=function(t,e,a,r=null){if(!t||!a)return null;const i="DisplayText_"+t,n="UrlSegment_"+t,s=r&&r.find(t=>t.market.toLowerCase()===e.toLowerCase()),c=Object(o.e)("UrlSegment_Racing",e,a),d=c?c+"/"+Object(o.e)(n,e,a):Object(o.e)(n,e,a);return{id:t,name:Object(o.e)(i,e,a),urlSegment:s&&s.leagueSegment?s.leagueSegment:d,urlSegmentGameCenter:Object(o.e)("UrlSegment_gamecenter",e,a)||Object(o.e)("UrlSegment_RaceResults",e,a),urlSegmentSchedule:Object(o.e)("UrlSegment_schedule",e,a)||Object(o.e)("UrlSegment_RaceCalendar",e,a),urlSegmentSports:s&&s.sportsVertical?s.sportsVertical:Object(o.e)("UrlSegment_verticalname_sports",e,a)}}(a.Model.SportsMatches?a.Model.SportsMatches.League.Id:a.Model.Id,j,a.Trans,M);if(!D)return null;Object(h.b)(D.name)&&Object(n.b)(s.ci,`Sports card title(league name) has no value. LeagueId=${D.id} Market=${j}`);const T=a.Model.SportsMatches&&a.Model.SportsMatches.Sport&&a.Model.SportsMatches.Sport,k=C&&T&&C.filter(t=>t.toLowerCase()==T.toLowerCase()).length>0,I=`https://${Object(o.g)(j)}/${j}/${D.urlSegmentSports}/${D.urlSegment}`;let $,E,A=Object(h.b)(D.urlSegmentSports)||Object(h.b)(D.urlSegment)||Object(h.b)(D.urlSegmentSchedule)?null:`${I}/${D.urlSegmentSchedule}`,P=null===(v=D.name)||void 0===v?void 0:v.toLocaleUpperCase();if(w){if($=i.i.singleparticipant,E=a.Model.PrimaryEntityImage,A=A||I,a.Model.DataType===i.b.singleRace){const t=a.Model.Races[0]&&(null===(S=null===(y=a.Model.Races[0])||void 0===y?void 0:y.RaceName)||void 0===S?void 0:S.toUpperCase())||"";P=t?`${P} : ${t}`:P}}else $=i.i.dualparticipants,E=a.Model.SportsMatches.League.ImageId;const L={cardTitle:P,cardTitleClickthroughUrl:A,cardTitleImageUrl:Object(o.d)(E,e),particiapntFormat:$,seeMoreText:r(d,D.name),seeMoreClickthroughUrl:Object(h.b)(D.urlSegmentSports)||Object(h.b)(D.urlSegment)?null:I,dataType:a.Model.DataType,sportType:f(T),leagueId:D.id,leagueName:D.name,primaryEntityId:a.Model.PrimaryEntityId,primaryEntityName:Object(o.e)(a.Model.PrimaryEntityLoc,j,a.Trans),primaryEntityType:a.Model.PrimaryEntityType};L.cardTitleClickthroughUrl=Object(o.a)(L.cardTitleClickthroughUrl),L.seeMoreClickthroughUrl=Object(o.a)(L.seeMoreClickthroughUrl);const U=w?a.Model.Races:a.Model.SportsMatches.League.Matches,F=w?function(e,a,r,n,s,d,l){if(!e||e.length<1)return null;if(e&&e.length){const d=t=>({GameStartDateTime:t.RaceDateTime,GameState:t.RaceState,Rank:t.Rank});e=e.sort((t,e)=>p(d(t),d(e)));const u=[];return e.some(e=>{if(e){const d=function(e,a,r,n,s,d){const l=Object(o.f)(),u=e.RaceState?e.RaceState:null,p=new Date(parseInt(e.RaceDateTime)),g=new c.a,b=m(u),f=!e.RaceDateTime&&b===i.g.preGame,v=d||Object(h.b)(a.urlSegmentSports)||Object(h.b)(a.urlSegment)||Object(h.b)(a.urlSegmentGameCenter)||Object(h.b)(e.RaceId)?null:`${n}/${a.urlSegmentGameCenter}/sp-id-${e.RaceId}`,y=Object(h.b)(e.ImageId),S=e.Participants&&e.Participants.map(t=>({driverName:t.DriverName,driverNumber:t.DriverNumber,isWinner:t.IsWinner,lapsCompleted:t.LapsCompleted,points:t.Points,rank:t.Rank,timeDifferenceFromLeader:t.TimeDifferenceFromLeader}));return{sportsMatchData:{laps:e.Laps,matchClickthroughUrl:Object(o.a)(v),locationName:e.LocationName,gameStateCatetory:b,raceName:e.RaceName,raceImageUrl:Object(o.d)(e.ImageId,t.teamImageInfo,y),gameId:e.RaceId,gameDate:g.localizedMonthDate(p,l),gameStartTime:f?r.sportsTBA:g.formatTimeFromDate(p,l),gameStartDateTime:e.RaceDateTime,participants:S||[]}}}(e,a,r,n,0,l);if(d&&(u.push(d),u.length>=s))return!0}}),u}}(U,D,d,I,l,a.Trans,k):function(e,a,r,n,s,d,l){if(!e||e.length<1)return null;e=e.sort(p);const u=[];return e.some(e=>{if(e){const p=function(e,a,r,n,s,d){if(!e||!a||!r)return null;const l=Object(o.f)(),u=new c.a,p=e.GameState&&e.GameState.State?e.GameState.State:null,f=new Date(parseInt(e.GameStartDateTime)),v=e.GameState&&e.GameState.GamePeriod?e.GameState.GamePeriod:"",y=e.GameState&&e.GameState.GameClock?e.GameState.GameClock:"",S=m(p),w=e.ParticipantOne.Score,O=e.ParticipantTwo.Score,C=S===i.g.postGame&&w&&O;let M=!1;M=e.ParticipantOne.IsWinner?"true"===e.ParticipantOne.IsWinner.toString().toLowerCase():C?parseInt(w)>parseInt(O):null;let x=!1;x=e.ParticipantTwo.IsWinner?"true"===e.ParticipantTwo.IsWinner.toString().toLowerCase():C?parseInt(O)>parseInt(w):null;const j=d||Object(h.b)(a.urlSegmentSports)||Object(h.b)(a.urlSegment)||Object(h.b)(a.urlSegmentGameCenter)||Object(h.b)(e.GameId)||Object(h.b)(e.ParticipantOne.GameCenterUrlSegment)||Object(h.b)(e.ParticipantTwo.GameCenterUrlSegment)?null:`${n}/${a.urlSegmentGameCenter}/sp-id-${e.GameId}`,D=!(Object(h.b)(e.ParticipantOne.ImageId)&&Object(h.b)(e.ParticipantTwo.ImageId)),T=e.GameStartDateTimeIsToBeAnnounced&&S===i.g.preGame;return{sportsMatchData:{participantOneImageUrl:Object(o.d)(e.ParticipantOne.ImageId,t.teamImageInfo,D),participantOneImageAltText:e.ParticipantOne.Name,participantOneName:Object(o.e)(e.ParticipantOne.Loc,l,s)||e.ParticipantOne.Name,participantOneScore:w||"",participantOneIsWinner:M,participantOnePrimaryColor:g(e.ParticipantOne.PrimaryColorHex),participantTwoImageUrl:Object(o.d)(e.ParticipantTwo.ImageId,t.teamImageInfo,D),participantTwoImageAltText:e.ParticipantTwo.Name,participantTwoName:Object(o.e)(e.ParticipantTwo.Loc,l,s)||e.ParticipantTwo.Name,participantTwoScore:O||"",participantTwoIsWinner:x,participantTwoPrimaryColor:g(e.ParticipantTwo.PrimaryColorHex),matchClickthroughUrl:Object(o.a)(j),gameStateCatetory:S,gameState:b(S,r),gameDate:u.localizedMonthDate(f,l),gameStartTime:T?r.sportsTBA:u.formatTimeFromDate(f,l),gamePeriodAndClock:v+" "+y,tvChannel:e.TvChannel,gameId:e.GameId,gameStartDateTime:e.GameStartDateTime,isAdaptiveCardAvailable:e.IsAdaptiveCardAvailable&&"true"===e.IsAdaptiveCardAvailable.toLowerCase()}}}(e,a,r,n,d,l);if(p&&(u.push(p),u.length>=s))return!0}}),u}(U,D,d,I,l,a.Trans,k);return{sportsMatchOverallData:1===l?F.slice(0,1):F,sportsMatchupCardData:L}}function r(t,e){var a;const r=t.sportsSeeMore||t.seeMoreTooltip||(null===(a=t.cardActionsTooltips)||void 0===a?void 0:a.seeMore)||"";return Object(h.b)(e)||Object(h.b)(t.seeMoreSports)?r:l.String.Format(t.seeMoreSports,e)}function p(t,e){if(!t||!e)return-1;const a=t.GameState&&t.GameState.State?m(t.GameState.State):i.g.preGame,r=e.GameState&&e.GameState.State?m(e.GameState.State):i.g.preGame;if(a==i.g.inprogressGame&&r!=i.g.inprogressGame)return-1;if(a!=i.g.inprogressGame&&r==i.g.inprogressGame)return 1;const n=(new Date).getTime(),s=t.GameStartDateTime?parseInt(t.GameStartDateTime):0,o=e.GameStartDateTime?parseInt(e.GameStartDateTime):0,c=Number.isNaN(s)||!s?0:s-n,d=Number.isNaN(o)||!o?0:o-n,l=t.Rank&&parseInt(t.Rank)||0,h=e.Rank&&parseInt(e.Rank)||0,u=Number.isNaN(l)?0:l,p=Number.isNaN(h)?0:h;return t.GameStartDateTime&&e.GameStartDateTime&&(c>0&&(c<d||c==d&&u<p)||c<0&&(c>d||c==d&&u<p)||c<0&&d>0&&(Math.abs(c)<d||Math.abs(c)==d&&u<p)||c>0&&d<0&&(c<Math.abs(d)||c==Math.abs(d)&&u<p))?-1:1}function g(t){return t?t.startsWith("#")?t:"#"+t:t}function m(t){switch(t){case"PreGame":return i.g.preGame;case"InProgressGame":return i.g.inprogressGame;case"Final":case"PostGame":return i.g.postGame;default:return i.g.preGame}}function b(t,e){switch(t){case i.g.postGame:return e.sportsStateFinal;default:return""}}function f(t){if(!t)return i.c.unknown;const e=i.c[t.toLowerCase()];return e||i.c.unknown}t.teamImageInfo={width:26,height:26,enableDpiScaling:!1,format:u.d.PNG},t.mapSubCardToSportsMatchData=function(t,e,r=4,i=null){if(!t||!t.data)return null;let o;try{o=JSON.parse(t.data)}catch(e){Object(n.c)(e,s.bi,`Sports card parse exception. CardId=${t.id} data=${t.data} dataType=${t.dataType}`)}if(!o)return Object(n.b)(s.di,`Sports card data has no value. dataType=${t.dataType} cardId=${t.id}`),null;switch(t.type){case d.a.SportsMatch:return a(o,e,r,i);default:return Object(n.b)(s.bi,`Sports card unknown type value: type=${t.type} cardId=${t.id} dataType=${t.dataType}`),null}},t.transformSportsMatchDataWithTrans=a}(r||(r={}))},hSGL:function(t,e,a){"use strict";a.d(e,"a",(function(){return S}));var r=a("D57K"),i=a("tERu"),n=a("ypwz"),s=a("tMmC"),o=a("HxRh"),c=a("XlyT"),d=a("rvYQ"),l=a("zfSW"),h=a("msIb"),u=a("6ADy"),p=a("KETb"),g=a("u8F0"),m=a("CgWR"),b=a("u5KZ"),f=a("l+Jz"),v=a("HDSB"),y=a("/+Un");const S=new class extends class{constructor(t){this.fetchImpl=t,this.userUpdateEndpoint="msn/user",this.pdpServiceEndpoint="graph/actions",this.locationsServiceEndPoint="v1/news/users/me/locations",this.ocid="Peregrine",this.ocidOverride=!1}getUserDefaultLocation(t){return Object(r.a)(this,void 0,void 0,(function*(){const e={method:"GET",headers:yield h.a.getOneServiceHeaders(),credentials:"include"},a=Object(u.c)(this.locationsServiceEndPoint);let i;[...h.a.getCommonParams2(this.ocid,!this.ocidOverride),{key:"autodetect",value:t&&""+t}].forEach(t=>{t.value&&a.searchParams.set(t.key,t.value)});try{i=yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(a.href,e);if(t.status>=400){const e=`OneService returned error response. Status: ${t.status} for actionType: getUserDefaultLocation}`;throw new Error(e)}return t})),"getUserDefaultLocation")}catch(t){return i}return i}))}addToFavoriteLocation(t,e){return Object(r.a)(this,void 0,void 0,(function*(){const a={method:"POST",body:JSON.stringify({actionType:"Follow",targetType:"Location",definitionName:e,degree:"FavoriteLocation",metaData:t}),headers:yield h.a.getOneServiceHeaders(),credentials:"include"},n=Object(u.c)(this.pdpServiceEndpoint);let s;((yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride)).forEach(t=>{t.value&&n.searchParams.set(t.key,t.value)});try{s=yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(n.href,a);if(t.status>=400){const e=`OneService returned error response. Status: ${t.status} for actionType: Follow, targetType: Location`;throw new Error(e)}return t.json()})),"addToFavoriteLocation")}catch(t){return!1}return!0}))}removeFavoriteLocation(t){return Object(r.a)(this,void 0,void 0,(function*(){return yield this.deleteFromPdp(g.a.Location,"definitionName",[t])}))}updatePdpHomeLocation(t,e,a={},n){return Object(r.a)(this,void 0,void 0,(function*(){const s=g.a.Location,o=yield this.getRequestInit({method:"POST"},a);o.body=JSON.stringify({actionType:"Follow",targetType:s,definitionName:e,degree:"DefaultLocation",metaData:t});const c=Object(u.c)(this.pdpServiceEndpoint);return((yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(null!=n?n:Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(null!=n?n:Object(d.b)().UserId,this.ocid,!this.ocidOverride)).forEach(t=>{t.value&&c.searchParams.set(t.key,t.value)}),yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(c.href,o);if(t.status>=400){const e=`OneService returned error response. Status: ${t.status} for actionType: Follow, targetType: ${s}`;throw new Error(e)}return t})),"setPdpHomeLocation"),this.tryInvalidateBulkFetchedPdpTargetType(s),!0}))}updateTrafficMyRoutes(t,e,a,i,n){return Object(r.a)(this,void 0,void 0,(function*(){const o=g.a.Traffic,c={method:"POST",body:JSON.stringify({actionType:"Follow",targetType:o,targetId:a,degree:t,definitionName:e,metadata:i}),headers:yield h.a.getOneServiceHeaders(),credentials:"include"},d=yield this.getTrafficPdpUrl(null,null,n);try{yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(d.href,c);if(t.status>=400){const e=`OneService returned error response. Status: ${t.status} for actionType: Follow, targetType: ${o}`;throw new Error(e)}return t.json()})),"updateTrafficMyRoutes");this.tryInvalidateBulkFetchedPdpTargetType(o)}catch(t){return s.a.logError(t.message),!1}return!0}))}deleteTrafficMyRoutes(t,e,a){return Object(r.a)(this,void 0,void 0,(function*(){const i={method:"DELETE",headers:yield this.getOneserviceHeaders(),credentials:"include"},n=yield this.getTrafficPdpUrl(t,e,a);try{yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(n.href,i);if(t.status>=400){const e=`OneService returned error response. Status: ${t.status} for actionType: Follow, targetType: ${g.a.Traffic}`;throw new Error(e)}return t})),"deleteTrafficFromPdp"),this.tryInvalidateBulkFetchedPdpTargetType(g.a.Traffic)}catch(t){return!1}return!0}))}getTrafficMyRoutes(t,e){var a;return Object(r.a)(this,void 0,void 0,(function*(){const i={method:"GET",headers:yield this.getOneserviceHeaders(),credentials:"include"},n=yield this.getTrafficPdpUrl(t,null,e);try{const t=yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(n.href,i);if(t.status>=400){const e=`OneService returned error response. Status: ${t.status} for actionType: Follow, targetType: ${g.a.Traffic}`;throw new Error(e)}return t})),"getTrafficFromPdp");return null===(a=yield t.json())||void 0===a?void 0:a.value}catch(t){return null}}))}getTrafficPdpUrl(t,e,a){return Object(r.a)(this,void 0,void 0,(function*(){const r=Object(u.c)(this.pdpServiceEndpoint),n=(yield Object(y.d)())===i.c.SignedIn,s=Object(d.b)().UserId,o=n?h.a.getOneServiceParamsWithAuth(s,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(s,this.ocid,!this.ocidOverride);if(t||e){const a=`targetType eq '${g.a.Traffic}'`,i=t?`degree eq '${t}'`:"",n=e?`definitionName eq '${e}'`:"";r.searchParams.set("$filter",`actionType eq 'Follow' and (${a})${i?` and (${i})`:""}${n?` and (${n})`:""}`)}return[...o,...a||[]].forEach(t=>{t.value&&r.searchParams.set(t.key,t.value)}),r}))}addToWatchList(t,e=0,a={}){return Object(r.a)(this,void 0,void 0,(function*(){const n=g.a.Finance,s={method:"POST",body:JSON.stringify({actionType:"Follow",targetType:n,targetId:t,metadata:{securityType:e,tickerId:this.generateUUID()}}),headers:yield this.getOneserviceHeaders(a),credentials:"include"},o=Object(u.c)(this.pdpServiceEndpoint),c="zh-cn"!==Object(d.b)().CurrentMarket;let l;((yield Object(y.d)())===i.c.SignedIn&&c?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride)).forEach(t=>{t.value&&o.searchParams.set(t.key,t.value)});try{l=yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(o.href,s);if(t.status>=400){const e=`OneService returned error response. Status: ${t.status} for actionType: Follow, targetType: ${n}`;throw new Error(e)}return t.json()})),"addToWatchList"),this.tryInvalidateBulkFetchedPdpTargetType(n)}catch(t){return!1}return!0}))}generateUUID(){let t=(new Date).getTime();return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,(function(e){const a=(t+16*Math.random())%16|0;return t=Math.floor(t/16),("x"==e?a:3&a|8).toString(16)}))}sortWatchList(t,e={}){return Object(r.a)(this,void 0,void 0,(function*(){const a=g.a.Finance,n=yield S.readPdpWithTargetType(g.a.Finance,!0,200,e),s=n&&n.value;if(s.length!=t.length)return!1;const o={};t.forEach((t,e)=>{const r=s.filter(e=>e.targetId===t)[0];if(!r)return!1;o[t]=JSON.stringify({actionType:"Follow",targetId:t,targetType:a,rank:e,metadata:r.metadata})});const c={method:"PUT",body:JSON.stringify(o),headers:yield this.getOneserviceHeaders(e),credentials:"include"},l=Object(u.c)(this.pdpServiceEndpoint);((yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride)).forEach(t=>{t.value&&l.searchParams.set(t.key,t.value)});try{yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(l.href,c);if(t.status>=400){const e=`OneService returned error response. Status: ${t.status} for actionType: Follow, targetType: ${a}`;throw new Error(e)}return t.json()})),"sortWatchList"),this.tryInvalidateBulkFetchedPdpTargetType(g.a.Finance)}catch(t){return!1}return!0}))}updateWeatherSettings(t,e,a={},n){return Object(r.a)(this,void 0,void 0,(function*(){if(!t&&!e)return!0;let r="";r=t&&!e?'{"weatherDisplayUnit":"'+t+'"}':!t&&e?'{"userSettings":{"weatherLocationSettingMode":"'+e+'"}}':'{"weatherDisplayUnit":"'+t+'","userSettings":{"weatherLocationSettingMode":"'+e+'"}}';const s=yield this.getRequestInit({method:"POST"},a);s.body=r;const o=Object(u.c)(this.userUpdateEndpoint);((yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(null!=n?n:Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(null!=n?n:Object(d.b)().UserId,this.ocid,!this.ocidOverride)).forEach(t=>{t.value&&o.searchParams.set(t.key,t.value)});const c=yield this.fetchImpl(o.href,s);if(c.status>=400){const t=`OneService returned error response. Status: ${c.status} for update weather setting call`;throw new Error(t)}return!0}))}updateUserSettings(t,e={},a){return Object(r.a)(this,void 0,void 0,(function*(){if(!t)return!0;const r=[];let n;for(n in t)null!=t[n]&&r.push('"'+n+'": '+JSON.stringify(t[n]));const o='{"userSettings":{'+r.join(", ")+"}}",c=yield this.getRequestInit({method:"POST"},e);c.body=o;const l=Object(u.c)(this.userUpdateEndpoint);((yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(null!=a?a:Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(null!=a?a:Object(d.b)().UserId,this.ocid,!this.ocidOverride)).forEach(t=>{t.value&&l.searchParams.set(t.key,t.value)});try{const t=yield this.fetchImpl(l.href,c);if(t.status>=400){const e=`OneService returned error response. Status: ${t.status} for update weather setting call`;throw new Error(e)}}catch(t){return s.a.logError(t.message),!1}return!0}))}getPdpUserPreference(t={}){return Object(r.a)(this,void 0,void 0,(function*(){const e=yield this.getRequestInit({method:"GET"},t),a=Object(u.c)(this.userUpdateEndpoint);[...(yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride)].forEach(t=>{t.value&&a.searchParams.set(t.key,t.value)});try{const t=yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(a.href,e);if(!t.ok){if(t.status>=400&&t.status<500&&408!=t.status)return t;throw Error(t.statusText)}return t})),"readPDPData");if(!t.ok)throw Error(`code=${t.status}, ${t.statusText}`);return yield t.json()}catch(t){return s.a.logError(t.message),null}}))}updatePdpLayoutPreference(t){return Object(r.a)(this,void 0,void 0,(function*(){const e={method:"PUT",credentials:"include",body:JSON.stringify({dummyid:{userLayoutPreference:t}})},a=Object(u.c)(this.userUpdateEndpoint);((yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride)).forEach(t=>{t.value&&a.searchParams.set(t.key,t.value)});try{const t=yield this.fetchImpl(a.href,e);if(t.status>=400){const e=`OneService returned error response. Status: ${t.status} for update layout preference setting call`;throw new Error(e)}}catch(t){return s.a.logError(t.message),!1}return!0}))}updateSegmentCardsEnableStatus(t,e=null){return Object(r.a)(this,void 0,void 0,(function*(){if(!t&&!t.length)return!0;const a=[];if(e){let t;for(t in e)null!=e[t]&&a.push('"'+t+'": '+JSON.stringify(e[t]))}const r=t.map(t=>t.cardType!=m.a.TopStoriesCard?`\\"${t.cardType}\\":${t.enabled?'\\"1\\"':'\\"0\\"'}`:"").join(","),i=a.length>0?'{"segmentCardSettings":"{'+r+'}","userSettings":{'+a.join(", ")+"}}":'{"segmentCardSettings":"{'+r+'}"}';return this.updateUserPreference(i)}))}updateProductivityCardsEnableStatus(t){return Object(r.a)(this,void 0,void 0,(function*(){if(!t&&!t.length)return!0;const e='{"productivityCardSettings":"{'+t.map(t=>`\\"${t.cardType}\\":${t.enabled?'\\"1\\"':'\\"0\\"'}`).join(",")+'}"}';return this.updateUserPreference(e)}))}updateCommunitySettingsOptOutStatus(t){return Object(r.a)(this,void 0,void 0,(function*(){if(!t&&!t.length)return!0;const e={};t.forEach(t=>{e[t.settingType]=t.optedOut?"1":"0"});const a={communitySettings:e};return this.updateUserPreference(JSON.stringify(a))}))}updateUserPreference(t){return Object(r.a)(this,void 0,void 0,(function*(){const e={method:"POST",body:t,credentials:"include"},a=Object(u.c)(this.userUpdateEndpoint);((yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride)).forEach(t=>{t.value&&a.searchParams.set(t.key,t.value)});try{const r=yield this.fetchImpl(a.href,e);if(r.status>=400){const e=`OneService returned error response while updating user preference. Status: ${r.status}, payload: ${t}`;throw new Error(e)}}catch(t){return!1}return!0}))}setPdpTargetTypesForBulkLoad(t){t&&t.length&&!this.bulkGraphActionTargetTypes&&(this.bulkGraphActionTargetTypes=t)}readPdpWithTargetType(t,e=!1,a,i={},n=!0){return Object(r.a)(this,void 0,void 0,(function*(){if(n){const e=yield this.getFromWebWorker(t);if(e)return e}if(this.bulkGraphActionTargetTypes&&this.bulkGraphActionTargetTypes.length)if(this.bulkGraphActionTargetTypes.indexOf(t)>=0){this.bulkGraphActionResultCache=this.bulkGraphActionResultCache||(yield this.bulkGraphActionPromise||(this.bulkGraphActionPromise=this.fetchPdpWithTargetTypes(this.bulkGraphActionTargetTypes,e,a)));const r=this.bulkGraphActionResultCache.get(t);if(r)return{value:r}}else b.a.sendAppErrorEvent(Object.assign(Object.assign({},o.Ri),{message:`Received an unknown target type "${t}" that was not in the bulk graph action target types list "${this.bulkGraphActionTargetTypes}". Falling back to new network call. Please update the EntryPoint config's "graphActionsToBulkLoad" property to include this type.`}));const r=(yield this.fetchPdpWithTargetTypes([t],e,a,i)).get(t);if(r)return{value:r}}))}deleteFromPdp(t,e,a,n={},s){return Object(r.a)(this,void 0,void 0,(function*(){const o={method:"DELETE",headers:yield this.getOneserviceHeaders(n),credentials:"include"},c=Object(u.c)(this.pdpServiceEndpoint),l=(yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride),g=`targetType eq '${t}'`;let m=`actionType eq 'Follow' and (${a.map(t=>`${e} eq '${t}'`).join(" or ")}) and (${g})`;s&&(m+=` and (degree eq '${s}')`),c.searchParams.set("$filter",m),l.forEach(t=>{t.value&&c.searchParams.set(t.key,t.value)});try{yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const e=yield this.fetchImpl(c.href,o);if(e.status>=400){const a=`OneService returned error response. Status: ${e.status} for actionType: Follow, targetType: ${t}`;throw new Error(a)}return e})),"deleteFromPdp"),this.tryInvalidateBulkFetchedPdpTargetType(t)}catch(t){return!1}return!0}))}tryInvalidateBulkFetchedPdpTargetType(t){this.bulkGraphActionResultCache&&this.bulkGraphActionResultCache.delete(t)}fetchPdpWithTargetTypes(t,e=!1,a,n={}){return Object(r.a)(this,void 0,void 0,(function*(){if(!t.length)return new Map;const s=t.map(t=>`targetType eq '${t}'`).join(" or "),o=[{key:"$top",value:""+(a=a||10*t.length*2)},{key:"$filter",value:`actionType eq 'Follow' and (${s})`}],c=yield this.getRequestInit({method:"GET"},n);!0===e&&(c.cache="no-store");const l=Object(u.c)(this.pdpServiceEndpoint);[...o,...(yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride)].forEach(t=>{t.value&&l.searchParams.set(t.key,t.value)});const g=yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(l.href,c);if(!t.ok){if(t.status>=400&&t.status<500&&408!=t.status)return t;throw Error(t.statusText)}return t})),"readPDPData");if(!g.ok)throw Error(`code=${g.status}, ${g.statusText}`);const m=new Map,b=yield g.json();if(!b)return m;if(b.value)for(const t of b.value){let e=m.get(t.targetType);e||m.set(t.targetType,e=[]),e.push(t)}for(const e of t)m.get(e)||m.set(e,[]);return m}))}updateMarketPreference(t){return Object(r.a)(this,void 0,void 0,(function*(){const e={method:"POST",credentials:"include",body:JSON.stringify({userSettings:{preferredMarket:t}})},a=Object(u.c)(this.userUpdateEndpoint);((yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride)).forEach(t=>{t.value&&a.searchParams.set(t.key,t.value)});try{const t=yield this.fetchImpl(a.href,e);if(!t.ok)throw new Error("Failed to update market preference: Status: "+t.status);return!0}catch(t){return s.a.logError(t.message),!1}}))}getFromWebWorker(t){return Object(r.a)(this,void 0,void 0,(function*(){let e=null;if(l.c){const a=this.maptoWebWorkerId(t);if(a&&a.trim()){const a=yield Object(l.b)({id:this.maptoWebWorkerId(t)});a.fetched&&(e=a.payload)}}return e}))}maptoWebWorkerId(t){switch(t){case g.a.Location:return f.a.WeatherPdp;case g.a.League:return f.a.SportsLeaguePdp;case g.a.Player:return f.a.SportsPlayerPdp;case g.a.Team:return f.a.SportsTeamPdp;case g.a.Finance:return f.a.MoneyPdp;default:return""}}getRequestInit(t={method:"GET"},e={}){return Object(r.a)(this,void 0,void 0,(function*(){const a=yield h.a.getOneServiceHeaders();return t.headers=Object.assign(Object.assign({},a),e),t.credentials="include",t}))}getOneserviceHeaders(t={}){return Object(r.a)(this,void 0,void 0,(function*(){const e=yield h.a.getOneServiceHeaders();return Object.assign(Object.assign({},e),t)}))}getFollowedLists(){return Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.getRequestInit({method:"GET"}),e=Object(u.c)(this.userUpdateEndpoint);[...(yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride)].forEach(t=>{t.value&&e.searchParams.set(t.key,t.value)});try{const a=yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const a=yield this.fetchImpl(e.href,t);if(!a.ok){if(a.status>=400&&a.status<500&&408!=a.status)return a;Object(c.c)(null,o.bd,"Error get followed list")}return a})),"getFollowedLists");return a.ok||Object(c.c)(null,o.bd,"Error get followed list"),yield a.json()}catch(t){return s.a.logError(t.message),null}}))}addToFollowedLists(t){return Object(r.a)(this,void 0,void 0,(function*(){const e=g.a.Finance,a={method:"POST",body:JSON.stringify({financeListIds:t}),headers:yield h.a.getOneServiceHeaders(),credentials:"include"},n=Object(u.c)(this.userUpdateEndpoint);let s;((yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride)).forEach(t=>{t.value&&n.searchParams.set(t.key,t.value)});try{s=yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(n.href,a);if(t.status>=400){const a=`OneService returned error response. Status: ${t.status} for actionType: FollowList, targetType: ${e}`;throw new Error(a)}return t.json()})),"addToFollowedLists")}catch(t){return!1}return!0}))}deleteFromFollowedLists(t){return Object(r.a)(this,void 0,void 0,(function*(){const e=g.a.Finance,a={method:"DELETE",body:null,headers:yield h.a.getOneServiceHeaders(),credentials:"include"},n=Object(u.c)(this.userUpdateEndpoint);let s;[...(yield Object(y.d)())===i.c.SignedIn?h.a.getOneServiceParamsWithAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride):h.a.getOneServiceParamsWithoutAuth(Object(d.b)().UserId,this.ocid,!this.ocidOverride),...[{key:"financeListIds",value:t.toString()}]].forEach(t=>{t.value&&n.searchParams.set(t.key,t.value)});try{s=yield Object(p.b)(()=>Object(r.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(n.href,a);if(t.status>=400){const a=`OneService returned error response. Status: ${t.status} for actionType: UnFollowList, targetType: ${e}`;throw new Error(a)}return t.json()})),"deleteFromFollowedLists")}catch(t){return!1}return!0}))}}{constructor(){super(Object(v.a)()?window.fetch.bind(window):fetch),d.a.AppType!==n.a.WindowsNewsPlus&&d.a.AppType!==n.a.NewsAndInterests&&d.a.AppType!==n.a.WindowsNewsWidgets||(this.ocid="winp2",this.ocidOverride=!0),d.a.AppType===n.a.SharedWidgets&&(this.ocid="BingHp01",this.ocidOverride=!0)}}},kpPY:function(t,e,a){"use strict";a.d(e,"a",(function(){return r})),a.d(e,"c",(function(){return i})),a.d(e,"b",(function(){return n}));a("nwjK");function r(t,...e){return t.replace(/{(\d+)}/g,(function(t,a){if(a>=e.length)return t;const r=e[a];return"number"==typeof r||r?r:""}))}function i(t,e,a=0){return!(!t||!e)&&t.substr(a,e.length)===e}function n(t){return!t||!t.trim()}},lifk:function(t,e,a){"use strict";a.d(e,"d",(function(){return s})),a.d(e,"e",(function(){return o})),a.d(e,"c",(function(){return c})),a.d(e,"a",(function(){return d})),a.d(e,"b",(function(){return l})),a.d(e,"h",(function(){return h})),a.d(e,"g",(function(){return u})),a.d(e,"f",(function(){return g}));var r=a("HDSB"),i=a("0hJ9");let n;var s,o;!function(t){t.JPG="jpg",t.PNG="png"}(s||(s={})),function(t){t[t.None=0]="None",t[t.Letterbox=1]="Letterbox",t[t.Scale=2]="Scale",t[t.Stretch=3]="Stretch",t[t.Crop=4]="Crop",t[t.FocalCrop=5]="FocalCrop",t[t.FacialCrop=6]="FacialCrop"}(o||(o={}));const c=90,d="www.bing.com/th",l=new RegExp(/bing.(com|net)\/th/);function h(t,e){return u("//img-s-msn-com.akamaized.net/tenant/amp/entityid/"+t,e)}function u(t,e){if(t&&l.test(t))return g(t,e);const{focalRegion:a,backgroundColor:o}=e;let{width:c=0,height:d=0,format:h=s.JPG}=e,u="";if(a){const t=m(a.x1,a.x2),e=m(a.y1,a.y2);null!=t&&null!=e&&(u+=`&x=${t}&y=${e}`)}o&&(u+="&b="+o);const p=null==e.mode?6:e.mode;if(6===p&&(u+="&u=t"),e.enableDpiScaling){if(!e.devicePixelRatio)throw new Error("A valid devicePixelRatio value must be provided when DPI scaling is enabled");const t=function(t){if(Object(r.a)()&&n)return n;if(t<1)return null;let e=t;Object(i.a)(4*e)||(e=Math.ceil(10*e)/10);e>3&&(e=3);Object(r.a)()&&(n=e);return e}(e.devicePixelRatio);t&&(c=Math.round(c*t),d=Math.round(d*t))}return`${t}?w=${c}&h=${d}&q=${e.quality||60}&m=${p}&f=${h}${u}`}function p(t,e){const{width:a=0,height:r=0}=e,i=e.quality||c;return t.searchParams.set("w",""+a),t.searchParams.set("h",""+r),t.searchParams.set("qlt",""+i),t.searchParams.set("c","1"),t.searchParams.set("rs","1"),e.enableDpiScaling&&(t.searchParams.set("dpr",""+e.devicePixelRatio),t.searchParams.set("p","0")),t}function g(t,e){try{return p(new URL(t),e).href}catch(a){const r=p(new URL("https://"+t),e);return`//${r.host}${r.pathname}${r.search}`}}function m(t,e){if(null!=t&&null!=e)return Math.floor((t+e)/2)}},mH2s:function(t,e,a){"use strict";var r=a("yvDU"),i=a("/ooL"),n=a("nkFl"),s=RegExp("['’]","g");e.a=function(t){return function(e){return Object(r.a)(Object(n.a)(Object(i.a)(e).replace(s,"")),t,"")}}},msIb:function(t,e,a){"use strict";a.d(e,"a",(function(){return r}));var r,i=a("D57K"),n=a("rvYQ"),s=a("y+Kz"),o=a("I6Lx"),c=a("wBSZ"),d=a("ax+D"),l=a("BQg2"),h=a("kN1G"),u=a("/+Un"),p=a("HDSB"),g=a("NIfb"),m=a("MptA");!function(t){function e(t=null,e,a=!0,i=null,c=!1,d=Object(h.j)()){const l=Object(n.b)(),u=[{key:s.s.apiKey,value:l.OneServiceApiKey},{key:s.s.activityId,value:l.ActivityId},{key:s.s.ocid,value:a?r(l.TrackInfo,e):e},{key:s.s.market,value:l.CurrentMarket}];t&&u.push({key:s.s.user,value:t});let p=Object(o.a)().CurrentFlights;if(i){p=p?`${p},${i}`:i;const t="prg-bngimg-t";-1===p.indexOf(t)&&(p+=","+t),!0===c&&(p=i)}return p&&u.push({key:s.s.fdhead,value:p}),d&&u.push({key:h.c,value:h.d}),o.b.IsBlendedEnterprise&&u.push({key:"audienceMode",value:"enterprise"}),u}function a(t=Object(h.j)(),e){return Object(i.a)(this,void 0,void 0,(function*(){const a={};if(t&&!(yield Object(h.g)())){const t=yield Object(h.e)(c.c,c.f,c.e);t&&t.token&&e?a[s.r.entAuthorization]=t.token:t&&t.token&&(a[s.r.authorization]="Bearer "+t.token)}if(!Object(p.a)()){const t=Object(g.a)().cookie;t&&(a.Cookie=t);const e=Object(g.a)().referer;e&&(a.Referer=e)}return a}))}function r(t,e){return d.a.isNonNullObject(t)&&d.a.isNonNullObject(t.sitePage)&&Object(m.a)(t.sitePage.page_product)&&Object(m.a)(t.sitePage.page_type)?t.sitePage.page_product+"-"+t.sitePage.page_type+(e?"-"+e:""):e}t.authenticationTicketType="10",t.signedInCookieNameHeader="signedInCookieName",t.userLocationHeader="user-location",t.serviceRequestOnComplete=function(t,e){return Object(i.a)(this,void 0,void 0,(function*(){try{const a=yield t();return e(),a}catch(t){throw e(),t}}))},t.getOneServiceParamsWithoutAuth=e,t.getOneServiceNonDynamicParamsWithoutAuth=function(t,e=!0){const a=Object(n.b)(),i=[{key:s.s.apiKey,value:a.OneServiceApiKey},{key:s.s.ocid,value:e?r(a.TrackInfo,t):t},{key:s.s.market,value:a.CurrentMarket}];return Object(h.j)()&&i.push({key:h.c,value:h.d}),i},t.getOneServiceParamsWithAuth=function(t=null,a,r=!0,i=null,o=!1){const c=Object(n.b)().AuthCookieName,d=[...e(t,a,r,i,o)];return c&&d.push({key:s.s.signInCookieName,value:c.toUpperCase()}),d},t.getOneServiceHeaders=a,t.getOneServiceFeedCallHeaders=function(t,e){return Object(i.a)(this,void 0,void 0,(function*(){const r=yield a(t,e),i=Object(n.b)(),o=i.ActivityId;return i.SendFeedCallActivityIdInHeader&&o&&(r[s.r.activityId]=o),r}))},t.getLocationParams=function(t,e){const a=Object(n.b)(),r=t||a.Latitude,i=e||a.Longitude;return r&&i?{key:s.s.location,value:`${r}|${i}`}:null},t.getOneServiceOCID=r,t.getBaseRequestData=function(e){return Object(i.a)(this,void 0,void 0,(function*(){return{headers:yield t.getOneServiceHeaders(),method:e}}))},t.getCommonParams=function(t,e=!1){return Object(o.a)().UserIsSignedIn?this.getOneServiceParamsWithAuth(Object(n.b)().UserId,t,e):this.getOneServiceParamsWithoutAuth(Object(n.b)().UserId,t,e)},t.getCommonParams2=function(t,e=!0,a=!1){return Object(u.e)()?this.getOneServiceParamsWithAuth(Object(n.b)().UserId,t,e,a):this.getOneServiceParamsWithoutAuth(Object(n.b)().UserId,t,e,a)},t.urlContainsOcidParam=function(t){if(!t)return!1;const e=t.split("?");if(e.length<2)return!1;const a=e[1].split("#")[0];return!!new l.a(a).get("ocid")},t.removeOcidFromUrl=function(t){if(!t)return t;const e=t.split("?");if(e.length<2)return t;const a=e[1].split("#")[0],r=new l.a(a);if(r.get("ocid")){r.delete("ocid");let e=t.replace(a,r.toString());return"?"===e.charAt(e.length-1)&&(e=e.substring(0,e.length-1)),e}return t},t.removeOcidFromRiverCardProviderResponse=function(e){e&&e.cardMetadata&&e.cardMetadata.length&&e.cardMetadata.forEach(e=>{e.cardContent&&e.cardContent.destinationUrl?e.cardContent.destinationUrl=t.removeOcidFromUrl(e.cardContent.destinationUrl):e.subItems&&e.subItems.length&&e.subItems.forEach(e=>{e.cardContent&&e.cardContent.destinationUrl&&(e.cardContent.destinationUrl=t.removeOcidFromUrl(e.cardContent.destinationUrl))})})},t.removeOcidFromWindowsOneServiceResponse=function(e){e&&e.cards&&e.cards.forEach(e=>{e.subCards.forEach(e=>{e.url?e.url=t.removeOcidFromUrl(e.url):e.subCards&&e.subCards.forEach(e=>{e.url&&(e.url=t.removeOcidFromUrl(e.url))})})})}}(r||(r={}))},nkFl:function(t,e,a){"use strict";var r=/[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g;var i=function(t){return t.match(r)||[]},n=/[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/;var s=function(t){return n.test(t)},o=a("SNCn"),c="\\xac\\xb1\\xd7\\xf7\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf\\u2000-\\u206f \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",d="["+c+"]",l="\\d+",h="[\\u2700-\\u27bf]",u="[a-z\\xdf-\\xf6\\xf8-\\xff]",p="[^\\ud800-\\udfff"+c+l+"\\u2700-\\u27bfa-z\\xdf-\\xf6\\xf8-\\xffA-Z\\xc0-\\xd6\\xd8-\\xde]",g="(?:\\ud83c[\\udde6-\\uddff]){2}",m="[\\ud800-\\udbff][\\udc00-\\udfff]",b="[A-Z\\xc0-\\xd6\\xd8-\\xde]",f="(?:"+u+"|"+p+")",v="(?:"+b+"|"+p+")",y="(?:[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]|\\ud83c[\\udffb-\\udfff])?",S="[\\ufe0e\\ufe0f]?"+y+("(?:\\u200d(?:"+["[^\\ud800-\\udfff]",g,m].join("|")+")[\\ufe0e\\ufe0f]?"+y+")*"),w="(?:"+[h,g,m].join("|")+")"+S,O=RegExp([b+"?"+u+"+(?:['’](?:d|ll|m|re|s|t|ve))?(?="+[d,b,"$"].join("|")+")",v+"+(?:['’](?:D|LL|M|RE|S|T|VE))?(?="+[d,b+f,"$"].join("|")+")",b+"?"+f+"+(?:['’](?:d|ll|m|re|s|t|ve))?",b+"+(?:['’](?:D|LL|M|RE|S|T|VE))?","\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])","\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",l,w].join("|"),"g");var C=function(t){return t.match(O)||[]};e.a=function(t,e,a){return t=Object(o.a)(t),void 0===(e=a?void 0:e)?s(t)?C(t):i(t):t.match(e)||[]}},nwjK:function(t,e,a){"use strict";var r=a("VLcu"),i=a("mH2s"),n=Object(i.a)((function(t,e,a){return e=e.toLowerCase(),t+(a?Object(r.a)(e):e)}));e.a=n},pQjM:function(t,e,a){"use strict";a.d(e,"a",(function(){return g}));var r=a("7ffs"),i=a("xY0q"),n=a("wHpb"),s=a("oqLQ"),o=a("4X57"),c=a("j9Xn"),d=a("8hiW");const l=(t,e)=>o.a`
+    ${Object(i.a)("grid")}:host {
+        position: relative;
+        width: auto;
+        height: 100%;
+        box-sizing: border-box;
+        font-family: ${d.u};
+        grid-template-rows: auto 1fr auto;
+        padding: var(--content-padding, 12px 0);
+        outline: none;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        padding: var(--footer-padding, 0 16px);
+    }
+
+    .title {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-gap: 12px;
+        padding: var(--title-padding, 0 16px);
+        overflow: visible;
+    }
+
+    .title-link {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 12px;
+        color: ${d.sb};
+        display: flex;
+        font-size: ${d.Ub};
+        justify-content: flex-start;
+        line-height: ${d.Vb};
+        outline: none;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.7px;
+    }
+
+    .title-link:hover,
+    .title-link:active,
+    .title-link:${n.a} {
+        text-decoration: underline;
+    }
+
+    .title-content {
+        font-size: ${d.Ub};
+        line-height: ${d.Vb};
+        margin-top: 4px;
+    }
+
+    ::slotted([slot="title-icon"]) {
+        margin-top: 4px;
+        fill: ${d.sb};
+    }
+
+    .sd-action {
+        --control-corner-radius: 16;
+        height: 24px;
+        grid-column: 2;
+        z-index: 1;
+    }
+
+    .sd-action:not([appearance="lightweight"]) {
+        font-size: ${d.Ub};
+        line-height: ${d.Vb};
+    }
+
+    .sd-action::part(control) {
+        width: 100%;
+        padding: var(--sd-action-padding, 0px 24px);
+    }
+
+    .sd-action::part(content) {
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    ::slotted([slot="more-actions"]) {
+        min-width: 24px;
+        width: 24px;
+        height: 24px;
+        --control-corner-radius: 16;
+        z-index: 1;
+    }
+`.withBehaviors(Object(s.c)(o.a`
+                .title-link {
+                    color: ${c.a.ButtonText};
+                }
+                a[href] {
+                    color: ${c.a.LinkText};
+                }
+            `));var h=a("6BDD"),u=a("6vBc"),p=a("eUhr");const g=r.b.compose({baseName:"structured-data-card",template:(t,e)=>h.b`
+    <div class="title" part="title">
+        ${Object(u.a)(t=>{var e;return null===(e=t.data)||void 0===e?void 0:e.titleContent},h.b`
+                <a
+                    class="title-link"
+                    part="title-link"
+                    href="${t=>{var e;return null===(e=t.data)||void 0===e?void 0:e.link}}"
+                    target=${t=>t.target}
+                    title="${t=>{var e;return null===(e=t.data)||void 0===e?void 0:e.titleContent}}"
+                    ${Object(p.b)(t=>t.headerTelemetryTag)}
+                >
+                    <slot name="title-icon"></slot>
+                    <div class="title-content" part="title-content">
+                        ${t=>{var e;return null===(e=t.data)||void 0===e?void 0:e.titleContent}}
+                    </div>
+                </a>
+            `)}
+        <slot name="more-actions"></slot>
+    </div>
+    <slot></slot>
+    <div class="footer" part="footer">
+        <slot name="footer-start"></slot>
+        ${Object(u.a)(t=>{var e;return null===(e=t.data)||void 0===e?void 0:e.footerContent},h.b`
+                <fluent-anchor
+                    class="sd-action"
+                    part="sd-action"
+                    appearance="${t=>{var e;return null===(e=t.data)||void 0===e?void 0:e.actionAppearance}}"
+                    href="${t=>{var e,a,r;return(null===(e=t.data)||void 0===e?void 0:e.footerLink)?null===(a=t.data)||void 0===a?void 0:a.footerLink:null===(r=t.data)||void 0===r?void 0:r.link}}"
+                    target=${t=>t.target}
+                    ${Object(p.b)(t=>t.seeMoreTelemetryTag)}
+                >
+                    ${t=>{var e;return null===(e=t.data)||void 0===e?void 0:e.footerContent}}
+                </fluent-anchor>
+            `)}
+        <slot name="footer-end"></slot>
+    </div>
+`,styles:l,shadowOptions:{delegatesFocus:!0}})},rRWH:function(t,e,a){"use strict";var r;function i(t){return e=>{if("string"!=typeof e)return"";const a=e.split(" ");return 4!==a.length?e:t===r.rtl?[a[0],a[3],a[2],a[1]].join(" "):e}}function n(t,e,a){return a===r.ltr?t:e}function s(t,e){return a=>{const i=(a&&a.direction?a.direction:r.ltr)===r.rtl?e:t;return"function"==typeof i?i(a):i}}a.d(e,"a",(function(){return r})),a.d(e,"d",(function(){return i})),a.d(e,"b",(function(){return n})),a.d(e,"c",(function(){return s})),function(t){t.ltr="ltr",t.rtl="rtl"}(r||(r={}))},sBtF:function(t,e,a){"use strict";a.d(e,"a",(function(){return l}));var r=a("D57K"),i=a("IqCT"),n=a("oePG"),s=a("Zn5T"),o=a("Am8i"),c=a("u5KZ"),d=a("Gsg7");class l extends i.a{constructor(){super(...arguments),this.sdCardMaskVisible=!0}experienceConnected(){this.telemetryObject=new d.a({name:"SdCardMaskWC",action:o.a.Click,behavior:o.b.View,content:{headline:this.cardType}}),this.sdCardMaskVisible=!l.visited.has(this.cardType)}getExperienceType(){return s.a.sdCardMaskWC}removeSdCardMask(t){c.a.sendActionEvent(t.currentTarget),this.sdCardMaskVisible=!1,l.visited.add(this.cardType)}}l.visited=new Set,Object(r.d)([n.d],l.prototype,"sdCardMaskVisible",void 0)},u8F0:function(t,e,a){"use strict";var r;a.d(e,"a",(function(){return r})),function(t){t.Location="Location",t.Finance="Finance",t.Team="Team",t.League="League",t.Player="Player",t.Traffic="Traffic"}(r||(r={}))},xtFa:function(t,e,a){"use strict";a.d(e,"b",(function(){return c})),a.d(e,"a",(function(){return d})),a.d(e,"c",(function(){return l})),a.d(e,"d",(function(){return h})),a.d(e,"e",(function(){return g}));var r=a("8GQ4"),i=a("i2HT"),n=a("8hiW"),s=a("eNhF");const{create:o}=r.a,c=o("gradient-white-fill").withDefault(t=>Object(s.a)(.8,1,i.a.create(1,1,1),n.db.getValueFor(t))),d=o("gradient-background-fill").withDefault(t=>Object(s.a)(0,1,null,n.db.getValueFor(t))),l=o("neutral-fill-bubble-on-rest").withDefault(t=>function(t,e){const a=t.closestIndexOf(e);return t.get(a-5)}(n.Cb.getValueFor(t),n.db.getValueFor(t))),h=o("neutral-foreground-hint-on-bubble-on-rest").withDefault(t=>n.tb.getValueFor(t).evaluate(t,l.getValueFor(t)));function u(t,e,a){return t.get(t.closestIndexOf((r=e,i.a.create(r,r,r)))-a);var r}const p=o({name:"neutral-layer-card-recipe",cssCustomPropertyName:null}).withDefault({evaluate:t=>u(n.Cb.getValueFor(t),n.t.getValueFor(t),n.bb.getValueFor(t))}),g=o("neutral-layer-card").withDefault(t=>p.getValueFor(t).evaluate(t))},yvDU:function(t,e,a){"use strict";e.a=function(t,e,a,r){var i=-1,n=null==t?0:t.length;for(r&&n&&(a=t[++i]);++i<n;)a=e(a,t[i],i,t);return a}}}]);

@@ -1,0 +1,128 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["toast-wc"],{"+qLX":function(t,e,a){"use strict";var s,o,n,i,r,c,l;a.d(e,"a",(function(){return i})),function(t){t.Article="article",t.Gallery="gallery",t.Video="video",t.Win32="win32",t.UWP="uwp",t[t.Module=8]="Module",t[t.ActionButton=11]="ActionButton",t[t.Navigation=14]="Navigation",t[t.WebView=31]="WebView",t[t.SmartList=35]="SmartList"}(s||(s={})),function(t){t[t.Taboola=0]="Taboola",t[t.Outbrain=1]="Outbrain",t[t.MediaNet=2]="MediaNet",t[t.Editor=3]="Editor",t[t.Personalization=4]="Personalization",t[t.Autocuration=5]="Autocuration"}(o||(o={})),function(t){t[t.MUID=0]="MUID",t[t.ANID=1]="ANID",t[t.AAD=2]="AAD"}(n||(n={})),function(t){t.StartPage="startpage",t.SpartanDhp="default",t.SpartanNtp="default",t.ArticleVnext="article_vnext",t.GalleryVnext="gallery_vnext",t.GalleryClassic="gallery_classic",t.GalleryFlex="gallery_flex",t.ArticleFlex="article_flex",t.StockDetailsPage="stockdetails",t.TeamStatsPage="teamstats",t.Xfeed="xfeed",t.Interests="cinterests"}(i||(i={})),function(t){t.DHP="dhp",t.NTP="ntp",t.Article="article",t.Gallery="gallery",t.Video="video"}(r||(r={})),function(t){t.Emmx="emmx",t.Prime="prime",t.Spartan="spartan",t.ChromeExt="chromeext",t.IEExt="ieext"}(c||(c={})),function(t){t[t.Empty=0]="Empty",t[t.SearchBox=1]="SearchBox",t[t.TopSites=2]="TopSites",t[t.Suggested=4]="Suggested",t[t.ContentFeed=8]="ContentFeed",t[t.WinFRE=16]="WinFRE"}(l||(l={}))},"635p":function(t,e,a){"use strict";a.d(e,"a",(function(){return s}));const s=Object.freeze(function(){const t=JSON.parse(document.head.dataset.clientSettings||"{}"),e={activityId:t.aid||"",appType:t.apptype,categoryKey:t.categoryKey,pageType:t.pagetype,verticalKey:t.verticalKey||t.vk,ocid:t.ocid};try{if(t.locale)e.market=`${t.locale.language}-${t.locale.market}`;else{const t=location.pathname.split("/");t&&t[1]&&(e.market=t[1].toLowerCase())}}catch(t){}return e}())},"8ntK":function(t,e,a){"use strict";var s;a.d(e,"a",(function(){return s})),function(t){t.Save="Save",t.Mute="Mute",t.Follow="Follow",t.Unfollow="Unfollow",t.InterestFailure="InterestFailure",t.ShowMore="ShowMore",t.ShowFewer="ShowFewer",t.Hide="Hide",t.DisableNotification="DisableNotification",t.EnableNotification="EnableNotification",t.RecommendedInterestsFailure="RecommendedInterestsFailure",t.Refresh="Refresh"}(s||(s={}))},FaOE:function(t,e,a){"use strict";a.d(e,"a",(function(){return c}));var s,o=a("Am8i"),n=a("Gsg7"),i=a("635p"),r=a("mJTN");!function(t){t[t.Router=0]="Router",t[t.ExternalLink=2]="ExternalLink",t[t.PrimeExternalLink=3]="PrimeExternalLink"}(s||(s={}));const c=new class{constructor(){this.routeMap=new Map,this.market=i.a.market,this.currentUrl=new URL(location.href.toLowerCase())}init(t){if(this.options||!t)return;this.options=t,this.config=t.config,this.options.localizedStrings=this.options.localizedStrings||{},this.options.blockedQueryParams=this.options.blockedQueryParams||[],"/"===location.pathname&&(location.pathname=`/${this.market}${t.basePath||""}`);const e=this.currentUrl.searchParams.get("spapage");this.currentPath=e?`/${this.market}${t.basePath}/${e}`:this.currentUrl.pathname,this.currentUrl.searchParams.delete("spapage"),this.options.blockedQueryParams.forEach(t=>{this.currentUrl.searchParams.delete(t.toLowerCase())}),this.setRoutes(this.config),this.currentRoute&&(r.b.set(r.a.CurrentRoute,this.currentRoute),window.history.replaceState(this.currentRoute,"")),window.addEventListener("popstate",t=>{r.b.set(r.a.CurrentRoute,t.state||this.routeMap.get("myfeed"))})}subscribe(t){(t||"function"==typeof t)&&r.b.subscribe(r.a.CurrentRoute,t)}getCurrentRoute(){return r.b.get(r.a.CurrentRoute)}navigate(t,e){const a=r.b.get(r.a.CurrentRoute);if(a&&a.id===t)return;const s=this.routeMap.get(t),o=new URL(s.destinationUrl);if(o.hash&&(o.hash="",s.destinationUrl=decodeURIComponent(o.toString())),!s)return;const n=Object.assign(Object.assign({},s),{dynamicContext:e});history.pushState(n,s.display,s.destinationUrl),r.b.set(r.a.CurrentRoute,n),window.dispatchEvent(new CustomEvent("header-route-changed",{detail:{route:s}}))}getRouteById(t){return this.routeMap.get(t)}updateMarket(t){location.replace(location.href.replace(`/${this.market}/`,`/${t}/`))}preserveQueryParams(t){const e=t.searchParams;this.currentUrl.search&&this.currentUrl.searchParams.forEach((a,s)=>{s=s.toLowerCase(),-1===e.getAll(s).indexOf(a)&&t.searchParams.append(s,a)}),!t.searchParams.get("ocid")&&this.options.ocid&&t.searchParams.set("ocid",this.options.ocid)}getUrlInfo(t){const{renderType:e,path:a,externalUrl:o}=t.renderInfo;if(t.id===this.config.homeNavigationItem.id)return{url:`${location.origin}/${this.market}/feed${this.currentUrl.search}`,path:`/${this.market}/feed`};if(e===s.Router){const t=`${0===a.indexOf("personalize")?"":"/interest"}/${a}`;return{url:`${location.origin}/${this.market}/feed${t}${this.currentUrl.search}${location.hash}`,path:`/${this.market}/feed${t}`}}let n=new URL(o);return-1===n.hostname.indexOf(".msn.com")&&-1===n.hostname.indexOf(".msn.cn")||(n.hostname!==location.hostname&&(n=new URL(`${n.pathname}${n.search}`,location.origin)),this.preserveQueryParams(n)),{url:decodeURIComponent(n.toString()),path:n.pathname,searchParams:n.searchParams}}setRoutes(t){if(!t)return;const{contextualNavItems:e=[],hamburgerMenuItems:a=[],homeNavigationItem:s,interestsNavigationItem:o}=t;s&&a.length&&e.length&&(this.buildNavMap(s),this.mapChildItems(a),this.mapChildItems(e),this.buildNavMap(o))}processRoute(t,e){const{id:a,display:s,displayKey:i}=t,r=i?this.options.localizedStrings[i]:s,c=this.getUrlInfo(t),l=decodeURIComponent(c.url),u=Object.assign(Object.assign({},t),{display:r,destinationUrl:l,parentId:e,telemetryMetadata:new n.a({name:r,action:o.a.Click,behavior:o.b.Navigate,content:{headline:r},destinationUrl:l,overrideDestinationUrl:l,feed:{id:a,name:r,type:"category filter"}}).getMetadata()});return this.detectCurrentRoute(u,c.path,c.searchParams),u}detectCurrentRoute(t,e="",a){if(e=e.toLowerCase(),this.currentPath===e||this.currentPath===e+"/"){let e=!1;if(a&&a.toString()&&a.forEach((t,a)=>{a=a.toLowerCase(),-1===this.currentUrl.searchParams.getAll(a).indexOf(t.toLowerCase())&&(e=!0)}),e)return;this.currentRoute=t}}buildNavMap(t){if(!t)return;const{id:e,children:a=[]}=t;this.setRouteMap(this.processRoute(t)),this.mapChildItems(a,t.id)}mapChildItems(t=[],e){t.forEach(t=>{this.setRouteMap(this.processRoute(t,e));const{children:a}=t;a&&a.length&&this.mapChildItems(a,t.id)})}setRouteMap(t){this.routeMap.set(t.id,Object.assign(Object.assign({},this.routeMap.get(t.id)||{}),t))}}},P6f5:function(t,e,a){"use strict";a.r(e),a.d(e,"ToolingInfo",(function(){return nt})),a.d(e,"ToastWC",(function(){return y})),a.d(e,"ToastWCTemplate",(function(){return Y})),a.d(e,"ToastWCStyles",(function(){return ot}));var s=a("lFvR"),o=a("m1Vi"),n=a("jht9"),i=a("A03o"),r=a("C49W"),c=a("sydv"),l=a("akWC"),u=a("Zn5T");const d=Object(i.a)(u.a.toastWC,"A sample Peregrine Web Component experience",Object.assign(Object.assign(Object.assign(Object.assign({},Object(r.c)("savedStoriesWithinPersonalize","Set to true when Saved Stories is within personalize.")),Object(r.c)("hideCurrentSearchParams","Set to true when current search params should not be added to url.")),Object(r.f)("OneRiverInterestsPivotInfo","OneRiverInterestsPivotInfo","Information for the interests pivot",Object.assign(Object.assign(Object.assign({},Object(c.c)("pivotId","Pivot Id","The ID of the interests pivot")),Object(c.c)("configIndexHref","Config Index Link","The config index href for the interests experience")),Object(c.c)("displayName","Interests Pivot Display Name","The display string for the interests pivot")))),Object(l.a)({toastCloseButtonTitle:"Toast Close Button Title ",saveStoryToastText:"Save toast content text (i.e. Story saved in {0}) ",personalizeTabName:"Save toast personalize tab name (i.e. Personalize) ",muteToastBodyText:"Mute toast content text (i.e. Stories from {0} have been hidden) ",interestErrorMessage:" Interest error message (i.e. We can't update your feed right now. Please try again later.)",followSuccessMessage:"Follow success content text (i.e. Great! You are now following {0}.)",unfollowSuccessMessage:"Unfollow success content text (i.e. You've unfollowed {bold}.)",showFewerToastText:"Show Fewer toast text (i.e. You'll see fewer stories like this) ",showMoreToastText:"Show More toast text (i.e. You'll see more stories like this) ",showMoreFewerToastButtonText:"Undo button for show more/fewer toast text (i.e. Undo) ",hideToastText:"Hide toast text (i.e. The {0} card has been hidden. {1}.)",undoHideToastButtonText:"Undo button for hide toast text (i.e. Undo)",manageHideToastButtonText:"Manage button for hide toast text (i.e. Manage)"})));var h=a("D57K"),p=a("IqCT"),b=a("oePG"),g=a("Qo3E"),m=a("Am8i");const f={telemetryContracts:{toastCloseButton:{name:"Close",behavior:m.b.Close,action:m.a.Click,type:m.e.ActionButton}},savedStoriesWithinPersonalizeUrl:"/{locale}/feed/personalize#saves",standaloneSavedStoriesUrl:"/{locale}/feed/personalize/saves",urlBase:"https://www.msn.com",locale:"{locale}",defaultBottomPosition:32};var w=a("rvYQ"),T=a("W+kI"),v=a("RIQ7");class y extends p.a{constructor(){super(...arguments),this.candidateSelectors="input,a[href],fluent-anchor[href],button,fluent-button,[tabindex]",this.focusBack=!1,this.keyDownHandler=t=>{switch(t.key){case"Escape":this.closeToast();break;case"Tab":if(window.clearTimeout(this.timer),this.tabbableElements)this.handleTabKeyDown(t);else{const t=this.toast.querySelectorAll(this.candidateSelectors);t&&t.length&&(this.tabbableElements=Array.from(t),this.toast.focus(),this.focusBack=!0)}break;default:return!0}},this.handleTabKeyDown=t=>{const e=this.tabbableElements.length;if(0===e)return this.toast.focus(),void t.preventDefault();let a=t.target;for(;a&&a.shadowRoot&&a.shadowRoot.activeElement;)a=a.shadowRoot.activeElement;t.shiftKey&&a===this.tabbableElements[0]?(this.tabbableElements[e-1].focus(),t.preventDefault()):t.shiftKey||a!==this.tabbableElements[e-1]||(this.tabbableElements[0].focus(),t.preventDefault())}}experienceConnected(){const t=(this.config.savedStoriesWithinPersonalize?f.savedStoriesWithinPersonalizeUrl:f.standaloneSavedStoriesUrl).replace(f.locale,w.a.CurrentMarket);if(this.personalizeUrl=new URL(t,f.urlBase),!this.config.hideCurrentSearchParams){const t=Object(T.a)();this.personalizeUrl.search=t.toString()}const e=Object(v.b)();e&&this.personalizeUrl.searchParams.set("ocid",e),g.a.setRenderToastCallback(t=>{this.toastDataProps=t,window.addEventListener("keydown",this.keyDownHandler),this.timer=window.setTimeout(()=>this.closeToast(t.id),t.expirationInMs||5e3)}),g.a.setExpireToastCallback(t=>this.closeToast(t))}getExperienceType(){return u.a.toastWC}closeToast(t){(this.toastDataProps&&this.toastDataProps.id===t||!t)&&(this.timer&&window.clearTimeout(this.timer),this.toastDataProps=null),window.removeEventListener("keydown",this.keyDownHandler),this.tabbableElements=null}dismissToast(t){this.toastDataProps&&this.toastDataProps.onClick&&this.toastDataProps.onClick(t),this.toastDataProps=null}}Object(h.d)([b.d],y.prototype,"toastDataProps",void 0),Object(h.d)([b.d],y.prototype,"focusBack",void 0);var x=a("u5KZ"),C=a("6BDD"),k=a("UNqU"),I=a("+53S"),S=a("+qLX"),O=a("8ntK"),P=a("Gsg7");const{telemetryContracts:M}=f,R=t=>new P.a(Object.assign(Object.assign({},M.toastCloseButton),{content:{headline:t.toastCloseButtonTitle}})).getMetadataTag(),$=t=>{const e=Object(T.a)(),a=new URL("/personalize",window.location.origin);return a.search=e.toString(),new P.a({name:"ToastButton",type:m.e.Interaction,content:{headline:t.personalizeTabName},action:m.a.Click,destinationUrl:a.href}).getMetadataTag()},j=t=>new P.a({name:"ToastButton",type:m.e.ActionButton,behavior:m.b.Unlike,content:{headline:[t.showMoreFewerToastButtonText,O.a.ShowMore].join(" ")},action:m.a.Click}).getMetadataTag(),D=t=>new P.a({name:"ToastButton",type:m.e.ActionButton,behavior:m.b.Undislike,content:{headline:[t.showMoreFewerToastButtonText,O.a.ShowFewer].join(" ")},action:m.a.Click}).getMetadataTag(),E=t=>new P.a({name:"ToastButton",type:m.e.ActionButton,behavior:m.b.Hide,content:{headline:[t.hideToastText,O.a.Hide].join(" ")},action:m.a.Click}).getMetadataTag(),U=t=>{const e=Object(T.a)(),a=new URL("/personalize",window.location.origin);return a.search=e.toString(),new P.a({name:"ManageToastButton",type:m.e.ActionButton,behavior:m.b.Navigate,content:{headline:[t.manageHideToastButtonText,O.a.Hide].join(" ")},action:m.a.Click,destinationUrl:a.href}).getMetadataTag()},B=t=>new P.a({name:t,type:m.e.Module}).getMetadataTag();var A=a("w0HK"),L=a("AxnZ"),F=a("FaOE"),N=a("eUhr");a("OI02").a;const z=C.b`${t=>t}`,H=(t,e)=>C.b`
+<fluent-button
+    class = "lightweight toast-navigation-button"
+    aria-label="${e?t.strings.manageHideToastButtonText:t.strings.personalizeTabName}"
+     ${Object(N.b)(()=>e?U(t.strings):$(t.strings))}
+    @click ="${(a,{event:s})=>{const{config:o}=t;x.a.sendActionEvent(s.target,m.a.Click);const n={isRequestFromSavedStoryToast:!0,noScroll:!0};if(F.a.getRouteById("my-saves"))return void F.a.navigate("my-saves",n);const i={isRequestFromSdCardAddRemoveClick:!0};o.oneRiverInterestsPivotInfo?Object(A.a)(t.pivotsNavInstanceId).switchPivot({pivotId:o.oneRiverInterestsPivotInfo.pivotId,configIndexHref:o.oneRiverInterestsPivotInfo.configIndexHref,configIndexRef:o.oneRiverInterestsPivotInfo.configIndexRef,context:e?i:n,telemetryPageName:S.a.Interests,display:o.oneRiverInterestsPivotInfo.displayName}):window.open(t.personalizeUrl.href,"_blank")}}">
+    ${e?t.strings.manageHideToastButtonText:t.strings.personalizeTabName}
+</fluent-button>`,W=C.b`
+    <span class="toast-middle-align">
+        ${Object(k.c)(t=>Object(L.a)(t.strings.saveStoryToastText,H(t,!1)),z)}
+    </span>`,K=C.b`
+    <span>
+      ${Object(k.c)(t=>Object(L.a)(t.strings.muteToastBodyText,C.b`<b key="muteToastContent">${t.toastDataProps.inputText}</b>`),z)}
+    </span>
+`,V=C.b`
+    <span>
+        ${Object(k.c)(t=>Object(L.a)(t.strings.followSuccessMessage,C.b`<b key="interestToastContent">${t.toastDataProps.inputText}</b>`),z)}
+    </span>
+`,G=C.b`
+    <span>
+      ${Object(k.c)(t=>Object(L.a)(t.strings.unfollowSuccessMessage,C.b`<b key="interestToastContent">${t.toastDataProps.inputText}</b>`),z)}
+    </span>
+`,Q=C.b`
+    <span class="toast-middle-align">
+      ${Object(k.c)(t=>Object(L.a)(t.toastDataProps.toastType===O.a.ShowMore?t.strings.showMoreToastText:t.strings.showFewerToastText,C.b`
+            <fluent-button
+                ${Object(N.b)(()=>t.toastDataProps.toastType===O.a.ShowMore?j(t.strings):D(t.strings))}
+                key="showMoreFewerToastContent"
+                class="lightweight toast-navigation-button"
+                @click=${(e,a)=>t.dismissToast(a.event)}
+            >
+                ${t.strings.showMoreFewerToastButtonText}
+            </fluent-button>`),z)}
+    </span>
+`,q=t=>C.b`
+    <span class="toast-middle-align toast-hide-sdcard">
+      ${Object(k.c)(t=>Object(L.a)(t.strings.hideToastText,t.toastDataProps.inputText,C.b`
+        <fluent-button
+            ${Object(N.b)(E(t.strings))}
+            key="undoHideSDCard"
+            class="lightweight toast-navigation-button"
+            @click=${(e,a)=>t.dismissToast(a.event)}
+        >
+            ${t.strings.undoHideToastButtonText}
+        </fluent-button>`,H(t,!0)),z)}
+    </span>
+`,Z=C.b`<span>${t=>t.strings.interestErrorMessage}</span>`,_=C.b`<span>${t=>t.strings.recommendedInterestsErrorMessage}</span>`,J=C.b`<span>${t=>t.toastDataProps.inputText}</span>`,X=t=>{var e;return C.b`<div
+        class="toast-root-wrapper"
+        style="bottom: ${!t.useRouter&&(()=>{const t=document.querySelectorAll("div[class^='footer']");if(t&&t.length){const e=parseInt(window.getComputedStyle(t[0]).marginTop)||0,a=t[0].getBoundingClientRect().height+e;return a?a+10:null}return null})()||t.toastBottomPosition||f.defaultBottomPosition}px ;">
+        <msn-toast :focusBack=${t=>t.focusBack} ${Object(I.b)("toast")} ${Object(N.b)(t.toastDataProps.moduleTelemetryTags||B(t.toastDataProps.toastType))}>
+            <output role="alert">${(t=>{const{toastDataProps:e}=t;if(e)switch(e.toastType){case O.a.Save:return W;case O.a.Mute:return K;case O.a.Follow:return V;case O.a.Unfollow:return G;case O.a.InterestFailure:return Z;case O.a.ShowMore:case O.a.ShowFewer:return Q;case O.a.Hide:return q;case O.a.RecommendedInterestsFailure:return _;default:return J}})(t)}</output>
+            ${(null===(e=t.toastDataProps)||void 0===e?void 0:e.buttonText)?C.b`
+            <fluent-button class="lightweight toast-navigation-button"
+                slot = "actions"
+                ${Object(N.b)(U(t.strings))}
+                @click=${(e,a)=>t.dismissToast(a.event)}
+            > ${t.toastDataProps.buttonText}</fluent-button>`:""}
+            <fluent-button
+                ${Object(N.b)(R(t.strings))}
+                class="toast-close-button"
+                slot = "close-button"
+                appearance = "stealth"
+                @click=${()=>t.closeToast()}
+                title = "${t.strings.toastCloseButtonTitle}"
+                aria-label="${t.strings.toastCloseButtonTitle}" >
+                <svg width="12" height = "12" viewBox = "0 0 12 12" xmlns = "http://www.w3.org/2000/svg" > <path d="M6.84961 6L12 11.1504L11.1504 12L6 6.84961L0.849609 12L0 11.1504L5.15039 6L0 0.849609L0.849609 0L6 5.15039L11.1504 0L12 0.849609L6.84961 6Z" /> </svg>
+            </fluent-button>
+        </msn-toast>
+    </div>`},Y=C.b`${t=>t.toastDataProps?X(t):""}`;var tt=a("3KaK"),et=a("MZhw"),at=a("HzrG"),st=a("8hiW");const ot=a("4X57").a`
+    ms-toast::host {
+        box-sizing: border-box;
+        display: block;
+        height: 100%;
+    }
+
+    .toast-middle-align {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    b {
+        margin: 0 5px;
+    }
+
+    .toast-root-wrapper {
+        position: fixed;
+        left: 50%;
+        --fill-color: ${(()=>{const t=Object(et.b)(()=>tt.d)(at.b);return Object(tt.e)()?tt.c:t})()};
+        --neutral-foreground-rest: ${(()=>{const t=Object(et.b)(()=>tt.d)(at.b);return Object(tt.e)()?t:tt.c})()};
+        --accent-foreground-rest: ${Object(tt.e)()?"#006CBE":"#63ADE5"};
+        --toast-max-width: 490px;
+        transform: translate(-50%, 0);
+        width: fit-content;
+        max-width: 95%;
+    }
+
+    msn-toast::part(toast-root){
+        color: ${st.ub};
+        background: ${st.A};
+    }
+
+    .toast-close-button {
+        background: transparent;
+    }
+    
+    .toast-close-button svg:hover {
+        stroke: ${st.ub};
+    }
+
+    .toast-navigation-button {
+        margin-inline-start: 4px;
+        background: transparent;
+        color: ${st.o};
+    }
+   
+    .toast-navigation-button::part(control):hover {
+        border-bottom: 1px solid ${st.o};
+    }
+
+    .toast-hide-sdcard .toast-navigation-button:not(:first-of-type) {
+        margin-inline-start: -10px;
+    }
+
+    fluent-button::part(control) {
+        padding: 0px 2px;
+    }
+`,nt={experienceConfigSchema:d};Object(s.a)().withShadowRootMode("closed").withElementDisambiguation(()=>n.ElementDisambiguation.ignoreDuplicate).register(Object(o.c)())},Qo3E:function(t,e,a){"use strict";a.d(e,"a",(function(){return i}));var s=a("u5KZ"),o=a("XlyT"),n=a("HxRh");class i{static renderToast(t){this.renderToastCallback?this.renderToastCallback(t):s.a.sendAppErrorEvent(Object(o.a)(n.Qi,"Undefined toast render callback function"))}static setRenderToastCallback(t){this.renderToastCallback=t}static expireToast(t){this.expireToastCallback?this.expireToastCallback(t):s.a.sendAppErrorEvent(Object(o.a)(n.Pi,"Undefined toast expire callback function"))}static setExpireToastCallback(t){this.expireToastCallback=t}static setCurrentToast(t,e){this.currentToastId!==t&&(this.currentToastId=t,this.renderToastCallback=e,this.currentToastIdChangeCallbacks.forEach(e=>e(t)),this.renderToast())}static addCurrentToastIdChangeCallback(t){t&&this.currentToastIdChangeCallbacks.push(t)}}i.currentToastIdChangeCallbacks=[]},RIQ7:function(t,e,a){"use strict";a.d(e,"d",(function(){return i})),a.d(e,"b",(function(){return r})),a.d(e,"a",(function(){return c})),a.d(e,"c",(function(){return l}));var s=a("Am8i"),o=a("u5KZ"),n=a("y+Kz");function i(t,e){if(t){const a={type:s.e.Module,name:e,content:{}};return t.addOrUpdateChild(a)}return null}function r(){if(!o.a)return;const t=o.a.getPageMetadata();return t&&t.contract&&t.contract.page?t.contract.page.ocid:void 0}function c(t){const e=r(),a=t.toLowerCase();if(!e||-1!=a.indexOf("?ocid=")||-1!=a.indexOf("&ocid="))return t;const s=-1==t.indexOf("?")?"?":"&";return`${t}${s}ocid=${encodeURIComponent(e)}`}function l(t){if(!t)return null;const e=Object.assign({},t);return e[n.r.entAuthorization]&&(e[n.r.entAuthorization]="*****"),e[n.r.rpsToken]&&(e[n.r.rpsToken]="*****"),e}},mJTN:function(t,e,a){"use strict";a.d(e,"a",(function(){return s})),a.d(e,"b",(function(){return r}));var s,o=a("HxRh"),n=a("u5KZ");class i extends Map{constructor(t){super(),this.identifier=t,this.subscriptions=new Map}set(t,e){super.set(t,e);const a=this.subscriptions.get(t);return a&&a.size?(a.forEach(a=>{try{a&&a(e)}catch(e){n.a.sendAppErrorEvent(Object.assign(Object.assign({},o.ji),{message:"Failed to execute subscription callback",pb:Object.assign(Object.assign({},o.ji.pb),{customMessage:`Error executing subscription callback for key [${t}]`,instanceId:this.identifier,errorMessage:e&&e.message})}))}}),this):this}subscribe(t,e){if(!e||"function"!=typeof e)return;let a=this.subscriptions.get(t);a||(this.subscriptions.set(t,new Set),a=this.subscriptions.get(t)),a.add(e),this.has(t)&&e(this.get(t))}unsubscribe(t,e){const a=this.subscriptions.get(t);a&&a.delete(e)}}!function(t){t[t.IsSignedIn=1]="IsSignedIn",t[t.CookieConsentStatus=2]="CookieConsentStatus",t[t.OnetrustActiveCookieGroups=3]="OnetrustActiveCookieGroups",t[t.IsDarkMode=4]="IsDarkMode",t[t.ColumnArrangement=5]="ColumnArrangement",t[t.CurrentRoute=6]="CurrentRoute",t[t.TopicData=7]="TopicData",t[t.AboveTheFoldVisuallyReady=8]="AboveTheFoldVisuallyReady",t[t.IsDocumentVisible=9]="IsDocumentVisible"}(s||(s={}));const r=new class extends i{subscribe(t,e){this.has(t)||(t===s.IsDarkMode&&this.initBrowserThemeListener(),t===s.IsDocumentVisible&&this.initBrowserVisibilityListener()),super.subscribe(t,e)}initBrowserThemeListener(){const t=matchMedia("(prefers-color-scheme:dark)");this.set(s.IsDarkMode,t.matches),t.addEventListener("change",t=>{this.set(s.IsDarkMode,t.matches)})}initBrowserVisibilityListener(){this.set(s.IsDocumentVisible,"visible"===document.visibilityState),document.addEventListener("visibilitychange",()=>{this.set(s.IsDocumentVisible,"visible"===document.visibilityState)})}}("AppState")}}]);

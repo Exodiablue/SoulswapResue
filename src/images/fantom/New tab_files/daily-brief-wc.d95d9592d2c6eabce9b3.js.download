@@ -1,0 +1,197 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["daily-brief-wc"],{"0hJ9":function(e,t,i){"use strict";var r=i("v6nU");t.a=function(e){return"number"==typeof e&&e==Object(r.a)(e)}},"26DL":function(e,t,i){"use strict";i.d(t,"a",(function(){return f}));var r=i("D57K"),n=i("P4Ao"),a=i("QBS5"),o=i("oePG"),s=i("lifk");class c extends n.a{get imageUrl(){return this.imageBaseUrl?Object(s.g)(this.imageBaseUrl,{width:48,height:48,focalRegion:this.imageFocalRegion,enableDpiScaling:!0,devicePixelRatio}):""}attributeChangedCallback(e,t,i){super.attributeChangedCallback(e,t,i)}connectedCallback(){super.connectedCallback()}}Object(r.d)([a.b],c.prototype,"ariaHelpText",void 0),Object(r.d)([a.b],c.prototype,"imageBaseUrl",void 0),Object(r.d)([a.b],c.prototype,"imageFocalRegion",void 0),Object(r.d)([a.b],c.prototype,"providerName",void 0),Object(r.d)([a.b],c.prototype,"telemetryTags",void 0),Object(r.d)([a.b],c.prototype,"title",void 0),Object(r.d)([a.b],c.prototype,"url",void 0),Object(r.d)([o.f],c.prototype,"imageUrl",null);var l=i("4X57"),u=i("8hiW");const d=l.a`
+.root {
+  height: 92px;
+  display: flex;
+  padding: 2px;
+  text-decoration: none;
+  background-color:${u.yb};
+}
+.root:hover {
+ background: ${u.ib};
+}
+.root:active {
+  background: ${u.fb};
+}
+.root:focus {
+  outline: none;
+  padding: 0;
+  border-color: ${u.D};;
+  border-style: solid;
+  border-width: 2px;
+}
+.mainContent {
+  margin: 14px;
+  flex-grow: 1;
+}
+.titleText {
+  color: ${u.ub};
+  display: -webkit-box;
+  overflow: hidden;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 14px;
+  line-height: 20px;
+}
+.providerText {
+  color: ${u.sb};
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 12px;
+  padding-top: 4px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.imageHolder {
+  width: 48px;
+  height: 48px;
+  margin-top: 14px;
+  margin-inline-end: 14px;
+}
+.image {
+  width: 48px;
+  height: 48px;
+  border-radius: 2px;
+}
+`;var h=i("6BDD"),g=i("6vBc");const v=h.b`
+ ${({title:e,url:t,ariaHelpText:i,providerName:r,imageUrl:n})=>h.b`
+ <a
+    href="${t}"
+    target="_blank"
+    rel="noopener"
+    class="root"
+    aria-label="${e+". "+i}"
+    tabIndex={-1}
+    >
+    <div class="mainContent">
+        <span class="titleText">${e}</span>
+        ${Object(g.a)(()=>r,h.b`
+            <div class="providerText">${r}</div>
+        `)}
+    </div>
+    ${Object(g.a)(()=>n,h.b`<div class="imageHolder"><img src="${n}" class="image" /></div>`)}
+</a>`}
+`;let f=class extends c{};f=Object(r.d)([Object(n.b)({name:"hover-flyout-article",template:v,styles:d})],f)},"6ADy":function(e,t,i){"use strict";i.d(t,"b",(function(){return l})),i.d(t,"c",(function(){return d})),i.d(t,"a",(function(){return h}));var r=i("rvYQ"),n=i("I6Lx"),a=i("kN1G"),o=i("tMmC");let s,c;function l(){const e=Object(r.b)();if(!s){!function(e){s=new URL("",e),g(s)}(Object(a.j)()&&Object(a.k)()?e.EnterpriseServiceUrlBase:e.ServiceUrlBase)}return s}function u(){const e=Object(r.b)();if(!c){!function(e){c=new URL("",e),g(c)}(Object(a.j)()&&Object(a.k)()?e.EnterpriseServiceUrlBase:e.FeedServiceUrlBase)}return c}function d(e,t=l()){return new URL(e+(null==t?void 0:t.search),t)}function h(e,t=u()){return new URL(e+(null==t?void 0:t.search),t)}function g(e){let t=!1;"dev"!==e.searchParams.get("env.service")&&Object(n.a)().UserIsSignedIn&&(t=!0),o.a.log("u-si: "+Object(r.b)().UserId),o.a.log("a-si: "+t),o.a.log("ss-si: "+Object(n.a)().UserIsSignedIn)}},"6fq4":function(e,t,i){"use strict";i.d(t,"a",(function(){return n}));var r=i("HDSB");let n=!1;Object(r.a)()&&(window.addEventListener("keydown",()=>{n=!0}),window.addEventListener("mousedown",()=>{n=!1}))},KETb:function(e,t,i){"use strict";i.d(t,"a",(function(){return D})),i.d(t,"b",(function(){return M}));var r=i("D57K"),n=i("XlyT"),a=i("IhCV"),o=i("z2Ro"),s=i("vq4Z"),c=i("VcDS");class l extends o.a{constructor(e,t,i,r){super(e,i,c.a.BeginActivity,a.a.newGuid(),new Date,t),this.LogLevel=s.a.Activity,this.Ended=!1,this.correlationVector=r}}var u=i("KSHU"),d=i("mRXR");class h extends o.a{constructor(e,t,i,r,n,o,l,u){super(e,u,c.a.BeginNetworkActivity,a.a.newGuid(),new Date,l),this.serviceName=t,this.LogLevel=s.a.Activity,this.Ended=!1,this.requestUri=i,this.requestHttpMethod=r,this.currentOperationName=n,this.correlationVector=o}}var g=i("9RHM");class v extends u.a{constructor(e,t){super(e),this.correlationVectorProvider=t}static getInstance(e,t){var i=e||"Default",r=v.InstancesMap[i];if(r)return r;var n=new d.a(i,s.a.Activity);return r=new v(n,t),v.InstancesMap[i]=r,r}isActivityEnabled(){return this.logger.isEnabledFor(s.a.Activity)}createActivity(e,t,i){if(this.isActivityEnabled()){let r,n;t&&(r=t.ActivityId,n=this.getVectorForNewActivity(t,!1));let a=new l(e,r,i,n);return this.logger.log(s.a.Activity,a),a}return t||null}createActivityCallback(e,t,i){return this.isActivityEnabled()?this.createActivity(e(),t,i):t||null}endActivity(e){if(this.isActivityEnabled()&&e&&!e.Ended){e.Ended=!0;const t=new Date,i=Object(g.a)(e);i.LogType=c.a.EndActivity,i.LogDateTime=t;const r=i.LogDateTime.getTime()-e.LogDateTime.getTime();i.Message=i.Message+" ElapsedTime (Milliseconds):"+r.toString(),i.elapsedTimeInMs=r,this.logger.log(s.a.Activity,i)}}createNetworkActivity(e,t,i,r,n,a,o,s){if(this.isActivityEnabled()){a||o||console.warn("'correlationVector' or 'parentActivity' is required to create network activity");let c=a||this.getVectorForNewActivity(o,!0),l=o?o.ActivityId:"";return new h(e,t,i,r,n,c,l,s)}return null}endSuccessfulNetworkActivity(e,t,i){this.endNetworkActivity(e,!0,t,i)}endFailedNetworkActivity(e,t,i,r){this.endNetworkActivity(e,!1,t,i,r)}endNetworkActivity(e,t,i,r,n){if(e&&!e.Ended){e.Ended=!0;let a=new Date,o=Object(g.a)(e);o.LogType=c.a.EndNetworkActivity,o.LogDateTime=a,o.elapsedTimeInMs=o.LogDateTime.getTime()-e.LogDateTime.getTime(),o.successful=t,o.responseSize=i,o.responseStatusCode=r,o.errorMessage=n,this.logger.log(s.a.Activity,o)}}getVectorForNewActivity(e,t){return e&&this.correlationVectorProvider?(e.latestChildCorrelationVector?e.latestChildCorrelationVector=this.correlationVectorProvider.incrementExternalVector(e.latestChildCorrelationVector):(e.latestChildCorrelationVector=this.correlationVectorProvider.extendExternalVector(e.correlationVector),t&&(e.latestChildCorrelationVector=this.correlationVectorProvider.incrementExternalVector(e.latestChildCorrelationVector))),e.latestChildCorrelationVector):""}}v.InstancesMap={};var f=i("/wq8");class p{constructor(e){if(this.loggingService=e,!e)throw"loggingService is required for LoggedExceptionManager."}error(e){throw this.loggingService.error(e),e}fatal(e){throw this.loggingService.fatal(e),e}}var m=i("HDSB");class y{constructor(e,t,i,r,n,a,o){if(!e)throw new Error("loggingService is required for ExponentialBackoffRetry.");const s=new p(e);this.logInvalidParams(s,t,i,r,n,o),this.loggingService=e,this.maxRetries=t||y.defaultMaxRetries,this.baseRetryDelayInMs=i||y.defaultBaseRetryDelayInMs,this.maxRetryDelayInMs=r||y.maxAllowedRetryDelayInMs,this.factor=n||y.defaultFactor,this.minOffsetInMs=a||y.defaultMinOffsetInMs,this.maxOffsetInMs=o||y.defaultMaxOffsetInMs,Object(m.a)()&&this.loggingService.infoCallback(()=>"ExponentialBackoffRetry has been configured.",null,{maxRetries:t,minTimeout:i,maxTimeout:r,factor:n})}executeRequest(e,t,i){return Object(r.a)(this,void 0,void 0,(function*(){return new Promise((n,a)=>Object(r.a)(this,void 0,void 0,(function*(){yield this.tryRequest(e,n,a,0,t,i)})))}))}logInvalidParams(e,t,i,r,n,a){t&&(t<1||t>y.maxAllowedRetries)&&e.fatal(`maxRetries should be at least 1 and less than ${y.maxAllowedRetries}.`),i&&i<y.defaultBaseRetryDelayInMs&&e.fatal("baseRetryDelay has to be a positive value greater than or equal to 100."),i&&a&&i<=a&&e.fatal("baseRetryDelay must not be smaller than the maximum delay offset."),r&&(r<=0||r>y.maxAllowedRetryDelayInMs)&&e.fatal(`maxRetryDelay has to be a positive value less than ${y.maxAllowedRetryDelayInMs}.`),n&&n<=0&&e.fatal("factor has to be a positive value.")}tryRequest(e,t,i,n,a,o){return Object(r.a)(this,void 0,void 0,(function*(){try{const i=1e4,r=yield this.timeoutServiceRequest(i,e());t(r)}catch(r){if(Object(m.a)()&&n<this.maxRetries){const s=3,c=parseFloat((Math.random()*(this.minOffsetInMs-this.maxOffsetInMs)+this.maxOffsetInMs).toFixed(s)),l=.5,u=Math.random()<l?-1:1,d=Math.min(this.baseRetryDelayInMs*Math.pow(this.factor,n),this.maxRetryDelayInMs)+c*u;this.loggingService.warnCallback(()=>`Retrying the request in ${d} milliseconds.`,o,{error:r,currentRetry:n+1,requestInfo:a}),setTimeout(()=>this.tryRequest(e,t,i,n+1,a,o),d)}else this.loggingService.errorCallback(()=>Object(m.a)()&&n<this.maxRetries?"ExponentialBackoffRetry has exceeded maximum retries "+this.maxRetries:"Request has failed.",o,{error:r,currentRetry:n,requestInfo:a}),i(r)}}))}timeoutServiceRequest(e,t){return Object(r.a)(this,void 0,void 0,(function*(){return new Promise((i,n)=>Object(r.a)(this,void 0,void 0,(function*(){const r=setTimeout(()=>n(new Error("Service Request Timed out!")),e);try{const e=yield t;i(e),clearTimeout(r)}catch(e){n(e),clearTimeout(r)}})))}))}}y.defaultBaseRetryDelayInMs=100,y.defaultFactor=2,y.defaultMaxOffsetInMs=25,y.defaultMaxRetries=5,y.defaultMinOffsetInMs=1,y.maxAllowedRetries=10,y.maxAllowedRetryDelayInMs=2e3;var b,O=i("VOUN"),w=i("hqLi");class x extends o.a{constructor(e,t,i,r,n){super(e,i,c.a.Instrumentation,r,n),this._counterName=e,this.CounterValue=t}get CounterName(){return this._counterName}incrementValue(){if("number"!=typeof this.CounterValue)throw"ERROR: Counter value is never initialized, cannot perform increment action.";this.CounterValue++}}class I extends u.a{constructor(e){super(e)}static getInstance(e){const t=e||"Default";let i=I.InstancesMap[t];if(i)return i;let r=new d.a(t,s.a.Trace);return i=new I(r),I.InstancesMap[t]=i,i}static getDimensionedLogItems(e,t){let i=[],r=new x(e.CounterName,e.CounterValue,Object(g.a)(e.Data),e.ActivityId,e.LogDateTime);if(r.LogLevel=s.a.Trace,i.push(r),t&&!Object(w.a)(t))for(let r of Object.keys(t))for(let n of t[r]){let t=r.indexOf(":")>-1?`${e.CounterName}(${r.replace(":","-")}: ${n})`:`${e.CounterName}(${r}: ${n})`,a=new x(t,e.CounterValue,Object(g.a)(e.Data),e.ActivityId,e.LogDateTime);a.LogLevel=s.a.Trace,i.push(a)}return i}logPerfCounter(e,t,i,r){const n=new x(e,t,r);this.logPerfCounterItem(n,i)}logPerfCounterItem(e,t){const i=I.getDimensionedLogItems(e,t);for(let e of i)this.logger.log(s.a.Trace,e)}}I.InstancesMap={};class C extends o.a{constructor(e,t,i,r,n,a,o,c){super(e,o),this.pageName=e,this.LogLevel=s.a.Activity,this._userActivityType=t,this.correlationVector=i,this.trackingData=r,this.pageTitle=n,this.pageUri=a,this.eventData=c}get userActivityType(){return this._userActivityType}}!function(e){e[e.None=0]="None",e[e.PageAction=1]="PageAction",e[e.PageView=2]="PageView"}(b||(b={}));class S extends u.a{constructor(e){super(e)}static getInstance(e){var t=e||"Default",i=S.InstancesMap[t];if(i)return i;var r=new d.a(t,s.a.Activity);return i=new S(r),S.InstancesMap[t]=i,i}isActivityTrackingEnabled(){return this.logger.isEnabledFor(s.a.Activity)}logPageView(e,t,i,r,n,a){this.isActivityTrackingEnabled()&&this.logger.log(s.a.Activity,this.getUserActivityLogItem(e,t,i,n,a,r))}logPageActionEvent(e,t,i,r,n,a,o){if(this.isActivityTrackingEnabled()){if(!e)throw"''eventData' required for logging page action event.";e.elementTitle&&e.eventType&&e.elementTitle.trim()&&e.eventType.trim()&&this.logger.log(s.a.Activity,this.getUserActivityLogItem(t,i,r,a,o,n,e))}}getUserActivityLogItem(e,t,i,r,n,a,o){if(!e)throw"''pageName' is required for logging user activity.";return o?new C(e,b.PageAction,t,i,r,n,a,o):new C(e,b.PageView,t,i,r,n,a)}}S.InstancesMap={};class j{constructor(e,t,i,r){this.loggingServiceInstance=e||O.a.getInstance(),this.activityServiceInstance=t||v.getInstance(),this.userActivityServiceInstance=i||S.getInstance(),this.perfCounterServiceInstance=r||I.getInstance()}get loggingService(){return this.loggingServiceInstance}get activityLoggingService(){return this.activityServiceInstance}get userActivityTrackingService(){return this.userActivityServiceInstance}get perfCounterLoggingService(){return this.perfCounterServiceInstance}getLoggingServiceByName(e){return this.checkLoggerName(e),O.a.getInstance(e)}getActivityLoggingServiceByName(e){return this.checkLoggerName(e),v.getInstance(e)}getUserActivityTrackingServiceByName(e){return this.checkLoggerName(e),S.getInstance(e)}getPerfCounterLoggingServiceByName(e){return this.checkLoggerName(e),I.getInstance(e)}addActivityLoggingService(e){this.checkServiceInstance(e),v.getInstance(e.getLoggerName())}checkLoggerName(e){if(!e)throw"'loggerName' is required."}checkServiceInstance(e){if(!e)throw"'serviceInstance' is required."}}var A=i("msIb"),k=i("tMmC");let T,R;function D(e,t,i){return Object(r.a)(this,void 0,void 0,(function*(){let r,a;try{if(r=yield fetch(e,t),r&&r.ok)return r}catch(t){Object(n.c)(t,i,"Exception calling 1S primary Url: "+e)}return r&&r.headers&&r.headers.get("OneWebServiceLatency")?r:e.indexOf("assets.msn.com/service/")>0?(a=e.replace("assets.msn.com/service/","api.msn.com/"),yield fetch(a,t)):r}))}function M(e,t){return Object(r.a)(this,void 0,void 0,(function*(){const i=L().activityLoggingService.createActivity(t);return yield A.a.serviceRequestOnComplete(()=>function(){if(R)return R;return R=new y(L().loggingService,3),R}().executeRequest(e,null,i),()=>L().activityLoggingService.endActivity(i))}))}function L(){if(T)return T;const e=v.getInstance("ExperienceActivityLogger");return Object(m.a)()&&k.a.isDebug()&&e.addAppender(new f.a(s.a.Activity)),T=new j(k.a.getLoggingService(),e),T}},ac9z:function(e,t,i){"use strict";i.d(t,"a",(function(){return l})),i.d(t,"d",(function(){return d})),i.d(t,"e",(function(){return h})),i.d(t,"b",(function(){return g})),i.d(t,"c",(function(){return v}));var r=i("D57K"),n=i("k3mM"),a=i("rvYQ"),o=i("zfSW"),s=i("5Uqz"),c=i("l+Jz");const l="cbypass";let u=parseInt(Object(s.a)(l))||0;function d(){return Object(r.a)(this,void 0,void 0,(function*(){u=Date.now(),Object(s.c)(l,u.toString(),10/1440,a.a.HostPage.topDomain,"/"),yield n.b.purgeCacheAsync(n.a.river),Object(o.d)({id:c.a.UpdateMyFeed,payload:u})}))}function h(){return Object(r.a)(this,void 0,void 0,(function*(){u=Date.now(),Object(s.c)(l,u.toString(),10/1440,a.a.HostPage.topDomain,"/"),yield n.b.purgeCacheAsync(n.a.river)}))}function g(){return u}function v(e){u>0&&e.searchParams.set(l,u.toString())}},cc39:function(e,t,i){"use strict";i.d(t,"a",(function(){return h}));var r=i("D57K"),n=i("P4Ao"),a=i("oePG"),o=i("6fq4"),s=i("Gy7L");class c extends n.a{constructor(){super(...arguments),this.isTransparent=!1,this.handleResize=()=>{this.onClosed(!0)},this.handleScroll=()=>{this.onClosed(!0)}}get styles(){if(!this.targetRect)return;const e=this.targetRect.top+this.targetRect.bottom<window.innerHeight;let t,i,r,n=Math.round((this.targetRect.left+this.targetRect.right-this.flyoutWidth)/2);n<16?n=16:n>innerWidth-16-this.flyoutWidth&&(n=innerWidth-16-this.flyoutWidth);const a=n+"px",o=this.flyoutWidth+"px";if(e){const e=this.targetRect.bottom+0;r=e+"px",i=window.innerHeight-e-16+"px"}else{t=window.innerHeight-this.targetRect.top+0+"px",i=this.targetRect.top-0-16+"px"}return`bottom: ${t}; left: ${a}; max-height: ${i};  top: ${r}; width: ${o};`}requestOpenChanged(e,t){t?(this.cancelCloseIfNeeded(),this.cancelStrayMouseTimerIfNeeded()):this.startStrayMouseTimerIfNeeded()}connectedCallback(){super.connectedCallback(),window.addEventListener("resize",this.handleResize),window.addEventListener("scroll",this.handleScroll),this.isTransparent=!0}disconnectedCallback(){window.removeEventListener("resize",this.handleResize),window.removeEventListener("scroll",this.handleScroll),this.cancelStrayMouseTimerIfNeeded(),this.cancelCloseIfNeeded()}handleBlur(e){this.focusInFlyout=!1,this.startStrayMouseTimerIfNeeded()}handleFocus(e){o.a&&(this.focusInFlyout=!0,this.cancelCloseIfNeeded(),this.cancelStrayMouseTimerIfNeeded())}handleKeyDown(e){e.keyCode===s.h&&this.onClosed(!0)}handleMouseEnter(e){this.mouseOverFlyout=!0,this.cancelCloseIfNeeded(),this.cancelStrayMouseTimerIfNeeded()}handleMouseLeave(e){this.mouseOverFlyout=!1,this.startStrayMouseTimerIfNeeded()}cancelCloseIfNeeded(){this.closeAnimationTimerHandle&&clearTimeout(this.closeAnimationTimerHandle),this.isTransparent||(this.isTransparent=!0)}cancelStrayMouseTimerIfNeeded(){this.strayMouseTimerHandle&&clearTimeout(this.strayMouseTimerHandle)}startStrayMouseTimerIfNeeded(){this.strayMouseTimerHandle=setTimeout(()=>{this.mouseOverFlyout||this.focusInFlyout||(this.startClosing(),this.strayMouseTimerHandle=null)},200)}startClosing(){this.closeAnimationTimerHandle=setTimeout(()=>{this.onClosed(!1)},200),this.isTransparent=!1}}Object(r.d)([a.d],c.prototype,"flyoutWidth",void 0),Object(r.d)([a.d],c.prototype,"isTransparent",void 0),Object(r.d)([a.d],c.prototype,"onClosed",void 0),Object(r.d)([a.d],c.prototype,"requestOpen",void 0),Object(r.d)([a.d],c.prototype,"targetRect",void 0),Object(r.d)([a.f],c.prototype,"styles",null);var l=i("0fst");const u=i("4X57").a`
+    .hoverFlyout {
+        box-shadow: 2px 5px 20px 0px rgba(0,0,0,0.22), 0px 13px 13px rgba(0,0,0,0.18);
+        border-radius: 4px;
+        opacity: 1;
+        overflow: auto;
+        position: fixed;
+        transition: opacity .2s ease-in;
+        opacity:1;
+        z-index: ${l.a.Flyout.toString()}
+    }
+    .hoverFlyout.hide{
+        opacity: 0;
+    }
+`;const d=i("6BDD").b`
+    <div
+        @blur=${(e,t)=>e.handleBlur(t.event)}
+        @focus=${(e,t)=>e.handleFocus(t.event)}
+        @keydown=${(e,t)=>e.handleKeyDown(t.event)}
+        @mouseenter=${(e,t)=>e.handleMouseEnter(t.event)}
+        @mouseleave=${(e,t)=>e.handleMouseLeave(t.event)}
+        class="${e=>e.isTransparent?"hoverFlyout":"hoverFlyout hide"}"
+        part="contentWrapper"
+        style="${e=>e.styles}"
+    >
+        <slot></slot>
+    </div>
+`;let h=class extends c{};h=Object(r.d)([Object(n.b)({name:"hover-flyout",template:d,styles:u})],h)},lifk:function(e,t,i){"use strict";i.d(t,"d",(function(){return o})),i.d(t,"e",(function(){return s})),i.d(t,"c",(function(){return c})),i.d(t,"a",(function(){return l})),i.d(t,"b",(function(){return u})),i.d(t,"h",(function(){return d})),i.d(t,"g",(function(){return h})),i.d(t,"f",(function(){return v}));var r=i("HDSB"),n=i("0hJ9");let a;var o,s;!function(e){e.JPG="jpg",e.PNG="png"}(o||(o={})),function(e){e[e.None=0]="None",e[e.Letterbox=1]="Letterbox",e[e.Scale=2]="Scale",e[e.Stretch=3]="Stretch",e[e.Crop=4]="Crop",e[e.FocalCrop=5]="FocalCrop",e[e.FacialCrop=6]="FacialCrop"}(s||(s={}));const c=90,l="www.bing.com/th",u=new RegExp(/bing.(com|net)\/th/);function d(e,t){return h("//img-s-msn-com.akamaized.net/tenant/amp/entityid/"+e,t)}function h(e,t){if(e&&u.test(e))return v(e,t);const{focalRegion:i,backgroundColor:s}=t;let{width:c=0,height:l=0,format:d=o.JPG}=t,h="";if(i){const e=f(i.x1,i.x2),t=f(i.y1,i.y2);null!=e&&null!=t&&(h+=`&x=${e}&y=${t}`)}s&&(h+="&b="+s);const g=null==t.mode?6:t.mode;if(6===g&&(h+="&u=t"),t.enableDpiScaling){if(!t.devicePixelRatio)throw new Error("A valid devicePixelRatio value must be provided when DPI scaling is enabled");const e=function(e){if(Object(r.a)()&&a)return a;if(e<1)return null;let t=e;Object(n.a)(4*t)||(t=Math.ceil(10*t)/10);t>3&&(t=3);Object(r.a)()&&(a=t);return t}(t.devicePixelRatio);e&&(c=Math.round(c*e),l=Math.round(l*e))}return`${e}?w=${c}&h=${l}&q=${t.quality||60}&m=${g}&f=${d}${h}`}function g(e,t){const{width:i=0,height:r=0}=t,n=t.quality||c;return e.searchParams.set("w",""+i),e.searchParams.set("h",""+r),e.searchParams.set("qlt",""+n),e.searchParams.set("c","1"),e.searchParams.set("rs","1"),t.enableDpiScaling&&(e.searchParams.set("dpr",""+t.devicePixelRatio),e.searchParams.set("p","0")),e}function v(e,t){try{return g(new URL(e),t).href}catch(i){const r=g(new URL("https://"+e),t);return`//${r.host}${r.pathname}${r.search}`}}function f(e,t){if(null!=e&&null!=t)return Math.floor((e+t)/2)}},msIb:function(e,t,i){"use strict";i.d(t,"a",(function(){return r}));var r,n=i("D57K"),a=i("rvYQ"),o=i("y+Kz"),s=i("I6Lx"),c=i("wBSZ"),l=i("ax+D"),u=i("BQg2"),d=i("kN1G"),h=i("/+Un"),g=i("HDSB"),v=i("NIfb"),f=i("MptA");!function(e){function t(e=null,t,i=!0,n=null,c=!1,l=Object(d.j)()){const u=Object(a.b)(),h=[{key:o.s.apiKey,value:u.OneServiceApiKey},{key:o.s.activityId,value:u.ActivityId},{key:o.s.ocid,value:i?r(u.TrackInfo,t):t},{key:o.s.market,value:u.CurrentMarket}];e&&h.push({key:o.s.user,value:e});let g=Object(s.a)().CurrentFlights;if(n){g=g?`${g},${n}`:n;const e="prg-bngimg-t";-1===g.indexOf(e)&&(g+=","+e),!0===c&&(g=n)}return g&&h.push({key:o.s.fdhead,value:g}),l&&h.push({key:d.c,value:d.d}),s.b.IsBlendedEnterprise&&h.push({key:"audienceMode",value:"enterprise"}),h}function i(e=Object(d.j)(),t){return Object(n.a)(this,void 0,void 0,(function*(){const i={};if(e&&!(yield Object(d.g)())){const e=yield Object(d.e)(c.c,c.f,c.e);e&&e.token&&t?i[o.r.entAuthorization]=e.token:e&&e.token&&(i[o.r.authorization]="Bearer "+e.token)}if(!Object(g.a)()){const e=Object(v.a)().cookie;e&&(i.Cookie=e);const t=Object(v.a)().referer;t&&(i.Referer=t)}return i}))}function r(e,t){return l.a.isNonNullObject(e)&&l.a.isNonNullObject(e.sitePage)&&Object(f.a)(e.sitePage.page_product)&&Object(f.a)(e.sitePage.page_type)?e.sitePage.page_product+"-"+e.sitePage.page_type+(t?"-"+t:""):t}e.authenticationTicketType="10",e.signedInCookieNameHeader="signedInCookieName",e.userLocationHeader="user-location",e.serviceRequestOnComplete=function(e,t){return Object(n.a)(this,void 0,void 0,(function*(){try{const i=yield e();return t(),i}catch(e){throw t(),e}}))},e.getOneServiceParamsWithoutAuth=t,e.getOneServiceNonDynamicParamsWithoutAuth=function(e,t=!0){const i=Object(a.b)(),n=[{key:o.s.apiKey,value:i.OneServiceApiKey},{key:o.s.ocid,value:t?r(i.TrackInfo,e):e},{key:o.s.market,value:i.CurrentMarket}];return Object(d.j)()&&n.push({key:d.c,value:d.d}),n},e.getOneServiceParamsWithAuth=function(e=null,i,r=!0,n=null,s=!1){const c=Object(a.b)().AuthCookieName,l=[...t(e,i,r,n,s)];return c&&l.push({key:o.s.signInCookieName,value:c.toUpperCase()}),l},e.getOneServiceHeaders=i,e.getOneServiceFeedCallHeaders=function(e,t){return Object(n.a)(this,void 0,void 0,(function*(){const r=yield i(e,t),n=Object(a.b)(),s=n.ActivityId;return n.SendFeedCallActivityIdInHeader&&s&&(r[o.r.activityId]=s),r}))},e.getLocationParams=function(e,t){const i=Object(a.b)(),r=e||i.Latitude,n=t||i.Longitude;return r&&n?{key:o.s.location,value:`${r}|${n}`}:null},e.getOneServiceOCID=r,e.getBaseRequestData=function(t){return Object(n.a)(this,void 0,void 0,(function*(){return{headers:yield e.getOneServiceHeaders(),method:t}}))},e.getCommonParams=function(e,t=!1){return Object(s.a)().UserIsSignedIn?this.getOneServiceParamsWithAuth(Object(a.b)().UserId,e,t):this.getOneServiceParamsWithoutAuth(Object(a.b)().UserId,e,t)},e.getCommonParams2=function(e,t=!0,i=!1){return Object(h.e)()?this.getOneServiceParamsWithAuth(Object(a.b)().UserId,e,t,i):this.getOneServiceParamsWithoutAuth(Object(a.b)().UserId,e,t,i)},e.urlContainsOcidParam=function(e){if(!e)return!1;const t=e.split("?");if(t.length<2)return!1;const i=t[1].split("#")[0];return!!new u.a(i).get("ocid")},e.removeOcidFromUrl=function(e){if(!e)return e;const t=e.split("?");if(t.length<2)return e;const i=t[1].split("#")[0],r=new u.a(i);if(r.get("ocid")){r.delete("ocid");let t=e.replace(i,r.toString());return"?"===t.charAt(t.length-1)&&(t=t.substring(0,t.length-1)),t}return e},e.removeOcidFromRiverCardProviderResponse=function(t){t&&t.cardMetadata&&t.cardMetadata.length&&t.cardMetadata.forEach(t=>{t.cardContent&&t.cardContent.destinationUrl?t.cardContent.destinationUrl=e.removeOcidFromUrl(t.cardContent.destinationUrl):t.subItems&&t.subItems.length&&t.subItems.forEach(t=>{t.cardContent&&t.cardContent.destinationUrl&&(t.cardContent.destinationUrl=e.removeOcidFromUrl(t.cardContent.destinationUrl))})})},e.removeOcidFromWindowsOneServiceResponse=function(t){t&&t.cards&&t.cards.forEach(t=>{t.subCards.forEach(t=>{t.url?t.url=e.removeOcidFromUrl(t.url):t.subCards&&t.subCards.forEach(t=>{t.url&&(t.url=e.removeOcidFromUrl(t.url))})})})}}(r||(r={}))},pcN6:function(e,t,i){"use strict";i.d(t,"a",(function(){return d}));var r=i("D57K"),n=i("P4Ao"),a=i("oePG"),o=i("Gy7L");class s extends n.a{constructor(){super(...arguments),this.onKeyDown=e=>{switch(e.keyCode){case o.e:this.focusPreviousItem(e);break;case o.b:this.focusNextItem(e);break;case o.m:e.shiftKey?this.focusPreviousItem(e):this.focusNextItem(e)}}}attributeChangedCallback(e,t,i){super.attributeChangedCallback(e,t,i)}connectedCallback(){super.connectedCallback()}focusNextItem(e){var t;let i=null===(t=document.activeElement)||void 0===t?void 0:t.nextElementSibling;for(;i&&-1===i.tabIndex;)i=i.nextElementSibling;i?(i.focus(),e.preventDefault()):this.blurHandler&&this.blurHandler()}focusPreviousItem(e){var t;let i=null===(t=document.activeElement)||void 0===t?void 0:t.previousElementSibling;for(;i&&-1===i.tabIndex;)i=i.previousElementSibling;i?(i.focus(),e.preventDefault()):this.blurHandler&&this.blurHandler()}}Object(r.d)([a.d],s.prototype,"blurHandler",void 0);const c=i("4X57").a``;var l=i("6BDD");const u=l.b`
+ ${({onKeyDown:e})=>l.b`
+   <div @keydown="${(t,i)=>{e(i.event)}}">
+        <slot name="list"/>
+   </div>`}
+`;let d=class extends s{};d=Object(r.d)([Object(n.b)({name:"hover-flyout-list",template:u,styles:c})],d)},peaz:function(e,t,i){"use strict";i.r(t),i.d(t,"ToolingInfo",(function(){return q})),i.d(t,"DailyBriefWC",(function(){return A})),i.d(t,"DailyBriefWCTemplate",(function(){return E})),i.d(t,"DailyBriefWCStyles",(function(){return U}));var r=i("A03o"),n=i("C49W"),a=i("akWC"),o=i("Zn5T");const s=Object(r.a)(o.a.dailyBriefWC,"A sample Peregrine Web Component experience",Object.assign(Object.assign({},Object(n.d)("articleCount","The number of articles to show")),Object(a.a)({articleAriaHelpText:"Text to read after the article title to tell users how to navigate between articles.",errorMessage:"We are unable to retrieve articles at this time",heading:"The localized heading string "})));var c=i("D57K"),l=i("IqCT"),u=i("oePG"),d=i("GqIT"),h=i("rvYQ"),g=i("XzyE"),v=i("s9+9"),f=i("msIb"),p=i("6ADy"),m=i("KETb"),y=i("ac9z"),b=i("HxRh"),O=i("tERu"),w=i("u5KZ");const x="/service/News/Briefing",I="Peregrine";var C=i("/+Un");class S{getDailyBriefArticles(e=5){return Object(c.a)(this,void 0,void 0,(function*(){const t=yield this.getDailyBriefArticleList(e);if(!t||!t.value)return null;if(!t.value.length)return[];const i=t.value;if(!i||!i.length)return null;const r=i[0].subCards;if(!r||!r.length)return w.a.sendAppErrorEvent(Object.assign(Object.assign({},b.Cb.OneServiceArticleListWasNullOrErroneous),{message:"Daily brief article is unable to map the response"})),null;return r.filter(e=>e.title&&e.url&&e.provider&&e.provider.name)}))}getDailyBriefArticleList(e=5){return Object(c.a)(this,void 0,void 0,(function*(){const t=yield f.a.getBaseRequestData("GET"),i=(yield Object(C.d)())===O.c.SignedIn,r=f.a.getCommonParams(I);i&&(t.credentials="include");const n=[...r,{key:"$top",value:""+e},{key:"market",value:h.a.CurrentMarket}],a=Object(y.b)();a>0&&n.push({key:y.a,value:a.toString()});const o=Object(p.c)(x);let s;n.forEach(e=>e.value&&o.searchParams.set(e.key,e.value));try{const e=yield Object(m.b)(()=>Object(c.a)(this,void 0,void 0,(function*(){return yield fetch(o.href,t)})),"getDailyBriefArticleList");if(!e.ok)throw w.a.sendAppErrorEvent(Object.assign(Object.assign({},b.Cb.OneServiceResponseWasNullOrErroneous),{message:"Error while calling daily brief url",pb:Object.assign(Object.assign({},b.Cb.OneServiceResponseWasNullOrErroneous.pb),{customMessage:`URL: ${o.href}, error: ${e.statusText}`})})),Error(e.statusText);s=yield e.json()}catch(e){w.a.sendAppErrorEvent(Object.assign(Object.assign({},b.Cb.OneServiceResponseWasNullOrErroneous),{message:"Error while parsing the response json data"}))}return s}))}}class j{constructor(e){this.experienceType=o.a.dailyBrief,this.renderShouldFire=e=>{const t=null==e?void 0:e.getBoundingClientRect();t&&t.top&&t.bottom&&t.left&&t.right&&(this.wcInstance.targetTopsSitesRect=t,this.wcInstance.hoverFlyoutOpen=!0)},this.unmountShouldFire=()=>{this.wcInstance.hoverFlyoutOpen=!1},this.focusShouldMove=e=>!!e,this.wcInstance=e}initShouldFire(){var e;const t=(null===(e=this.wcInstance.config)||void 0===e?void 0:e.articleCount)||5;(new S).getDailyBriefArticles(t).then(e=>{if(e&&e.length>0){this.wcInstance.dailyBriefArticleList=e;const t=d.a.getInstance().rootReducer.connector(v.a.SmartListSharedData),i={children:e.length.toString()};t&&g.a.updateSmartListBadgeProps.getActionSender(t).send(o.a.dailyBrief,i)}})}}class A extends l.a{experienceConnected(){const e=d.a.getInstance().rootReducer.connector(v.a.SmartListSharedData);e&&g.a.registerSmartList.getActionSender(e).send(new j(this)),this.articleAriaHelpText=this.strings?this.strings.articleAriaHelpText:"",this.feedName=this.strings?this.strings.heading:"",this.date=function(){const e=new Date,t=h.a.CurrentRequestTargetScope&&h.a.CurrentRequestTargetScope.locale,i=t&&t.language&&t.market?`${t.language}-${t.market}`:"en-us";return e.toLocaleString(i,{month:"long",day:"numeric"})}()}getExperienceType(){return o.a.dailyBriefWC}onClosed(){this.targetTopsSitesRect=void 0}}Object(c.d)([u.d],A.prototype,"dailyBriefArticleList",void 0),Object(c.d)([u.d],A.prototype,"articleAriaHelpText",void 0),Object(c.d)([u.d],A.prototype,"date",void 0),Object(c.d)([u.d],A.prototype,"feedName",void 0),Object(c.d)([u.d],A.prototype,"hoverFlyoutOpen",void 0),Object(c.d)([u.d],A.prototype,"requestOpen",void 0),Object(c.d)([u.d],A.prototype,"targetTopsSitesRect",void 0);var k=i("6BDD"),T=i("6vBc"),R=i("UNqU"),D=i("cc39"),M=i("26DL"),L=i("pcN6");D.a,M.a,L.a;const $=k.b`<hover-flyout-article
+    :title="${e=>e.title}"
+    :ariaHelpText="${e=>e.articleAriaHelpText}"
+    class="hoverFlyout"
+    :url="${e=>e.url}"
+    :providerName="${e=>e.provider.name}"
+    :imageBaseUrl="${e=>e.images&&e.images.length&&e.images[0]&&e.images[0].url?e.images[0].url:""}"
+    :imageFocalRegion="${e=>e.images&&e.images.length&&e.images[0]&&e.images[0].focalRegion?e.images[0].focalRegion:""}">
+</hover-flyout-article>`,N=k.b`
+    <div class="error">
+        <div class="errorMessage">
+            ${e=>e.config.localizedStrings.errorMessage}
+        </div>
+    </div>
+`,E=k.b`${Object(T.a)(e=>!!e.targetTopsSitesRect,k.b`<hover-flyout
+    class="root"
+    :targetRect="${e=>e.targetTopsSitesRect}"
+    :flyoutWidth="${e=>320}"
+    :requestOpen="${e=>e.hoverFlyoutOpen}"
+    :onClosed="${(e,t)=>e.onClosed.bind(e)}">
+        <div>
+            <div class="header">
+                <span class="headerText">${e=>e.feedName}</span>
+                <span class="headerDate">${e=>e.date}</span>
+            </div>
+            <hr class="separatorPadding">
+            ${Object(T.a)(e=>!e.dailyBriefArticleList,N)}
+            ${Object(T.a)(e=>e.dailyBriefArticleList,k.b`
+                <hover-flyout-list @blurHandler=${e=>e.onClosed()}>
+                    ${e=>k.b`<div slot="list">
+                        ${Object(R.c)(()=>e.dailyBriefArticleList,$)}
+                    </div>`}
+                </hover-flyout-list>
+            `)}
+        </div>
+    </hover-flyout>`)}`;var P=i("4X57"),B=i("8hiW"),F=i("0fst");const U=P.a`
+    .root {
+        z-index: ${String(F.a.Flyout)};
+    }
+    .root::part(contentWrapper){
+        background-color:${B.yb};
+    }
+    .error {
+        display: table;
+        min-height: 210px;
+        width: 100%;
+    }
+    .errorMessage {
+        color: ${B.sb};
+        display: table-cell;
+        font-size: 12px;
+        text-align: center;
+        user-select: none;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    .header {
+        margin: 12px 16px;
+        display: flex;
+    }
+    .headerText {
+        color: ${B.ub};
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .headerDate {
+        color: ${B.sb};
+        font-size: 14px;
+        font-weight: 600;
+        margin-inline-end: auto;
+        margin-inline-start: 10px;
+    }
+    .separator {
+        border: none;
+        height: 1px;
+        margin: 0;
+        background: ${B.Fb};
+    }
+    .hoverFlyout {
+        height: 85px;
+    }
+    .separatorPadding {
+        margin-block-end: 0px;
+        margin-inline-end: auto;
+        margin: 0 auto;
+        color: ${B.Fb};
+    }
+`,q={experienceConfigSchema:s}}}]);

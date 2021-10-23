@@ -1,0 +1,778 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["feed-toggle-wc"],{"4N55":function(e,t,o){"use strict";o.d(t,"a",(function(){return p}));var i,s=o("eftJ"),a=o("oePG"),n=o("QBS5"),d=o("vhqU"),r=o("TDEi"),c=o("EeEq"),l=o("uXNP"),h=o("6fxl");!function(e){e.listbox="listbox"}(i||(i={}));class p extends r.a{constructor(){super(...arguments),this.selectedIndex=-1,this.typeaheadBuffer="",this.typeaheadTimeout=-1,this.typeAheadExpired=!0,this.role=i.listbox,this._options=[],this.selectedOptions=[],this.shouldSkipFocus=!1,this.handleTypeAhead=e=>{this.typeaheadTimeout&&window.clearTimeout(this.typeaheadTimeout),this.typeaheadTimeout=window.setTimeout(()=>this.typeAheadExpired=!0,p.TYPE_AHEAD_TIMEOUT_MS),e.length>1||(this.typeaheadBuffer=`${this.typeAheadExpired?"":this.typeaheadBuffer}${e}`)}}selectedIndexChanged(e,t){this.setSelectedOptions()}typeaheadBufferChanged(e,t){if(this.$fastController.isConnected){const e=this.typeaheadBuffer.replace(/[.*+\-?^${}()|[\]\\]/g,"\\$&"),t=new RegExp("^"+e,"gi"),o=this.options.filter(e=>e.text.trim().match(t));if(o.length){const e=this.options.indexOf(o[0]);e>-1&&(this.selectedIndex=e)}this.typeAheadExpired=!1}}slottedOptionsChanged(e,t){this.$fastController.isConnected&&(this.options=t.reduce((e,t)=>(Object(c.b)(t)&&e.push(t),e),[]),this.options.forEach(e=>{e.id=e.id||Object(d.a)("option-")}),this.setSelectedOptions(),this.setDefaultSelectedOption())}get options(){return a.b.track(this,"options"),this._options}set options(e){this._options=e,a.b.notify(this,"options")}selectedOptionsChanged(e,t){this.$fastController.isConnected&&this.options.forEach(e=>{e.selected=t.includes(e)})}get firstSelectedOption(){return this.selectedOptions[0]}focusAndScrollOptionIntoView(){this.contains(document.activeElement)&&this.firstSelectedOption&&(this.firstSelectedOption.focus(),requestAnimationFrame(()=>{this.firstSelectedOption.scrollIntoView({block:"nearest"})}))}focusinHandler(e){this.shouldSkipFocus||e.target!==e.currentTarget||(this.setSelectedOptions(),this.focusAndScrollOptionIntoView()),this.shouldSkipFocus=!1}mousedownHandler(e){return this.shouldSkipFocus=!this.contains(document.activeElement),!0}setDefaultSelectedOption(){if(this.options&&this.$fastController.isConnected){const e=this.options.findIndex(e=>null!==e.getAttribute("selected"));if(-1!==e)return void(this.selectedIndex=e);this.selectedIndex=0}}setSelectedOptions(){if(this.$fastController.isConnected&&this.options){const e=this.options[this.selectedIndex]||null;this.selectedOptions=this.options.filter(t=>t.isSameNode(e)),this.ariaActiveDescendant=this.firstSelectedOption?this.firstSelectedOption.id:"",this.focusAndScrollOptionIntoView()}}selectFirstOption(){this.disabled||(this.selectedIndex=0)}selectLastOption(){this.disabled||(this.selectedIndex=this.options.length-1)}selectNextOption(){!this.disabled&&this.options&&this.selectedIndex<this.options.length-1&&(this.selectedIndex+=1)}get length(){return this.options?this.options.length:0}selectPreviousOption(){!this.disabled&&this.selectedIndex>0&&(this.selectedIndex=this.selectedIndex-1)}clickHandler(e){const t=e.target.closest("option,[role=option]");if(t&&!t.disabled)return this.selectedIndex=this.options.indexOf(t),!0}keydownHandler(e){if(this.disabled)return!0;this.shouldSkipFocus=!1;const t=e.key;switch(t){case"Home":e.shiftKey||(e.preventDefault(),this.selectFirstOption());break;case"ArrowDown":e.shiftKey||(e.preventDefault(),this.selectNextOption());break;case"ArrowUp":e.shiftKey||(e.preventDefault(),this.selectPreviousOption());break;case"End":e.preventDefault(),this.selectLastOption();break;case"Tab":return this.focusAndScrollOptionIntoView(),!0;case"Enter":case"Escape":return!0;case" ":if(this.typeAheadExpired)return!0;default:return 1===t.length&&this.handleTypeAhead(""+t),!0}}}p.TYPE_AHEAD_TIMEOUT_MS=1e3,p.slottedOptionFilter=e=>Object(c.b)(e)&&!e.disabled&&!e.hidden,Object(s.a)([a.d],p.prototype,"selectedIndex",void 0),Object(s.a)([a.d],p.prototype,"typeaheadBuffer",void 0),Object(s.a)([n.b],p.prototype,"role",void 0),Object(s.a)([Object(n.b)({mode:"boolean"})],p.prototype,"disabled",void 0),Object(s.a)([a.d],p.prototype,"slottedOptions",void 0),Object(s.a)([a.d],p.prototype,"selectedOptions",void 0);class u{constructor(){this.ariaActiveDescendant=""}}Object(s.a)([a.d],u.prototype,"ariaActiveDescendant",void 0),Object(s.a)([a.d],u.prototype,"ariaDisabled",void 0),Object(s.a)([a.d],u.prototype,"ariaExpanded",void 0),Object(h.a)(u,l.a),Object(h.a)(p,u)},"8EPn":function(e,t,o){"use strict";o.d(t,"a",(function(){return d}));var i=o("6BDD"),s=o("UauI"),a=o("4N55"),n=o("C5kU");const d=(e,t)=>i.b`
+    <template
+        class="${e=>e.open?"open":""} ${e=>e.disabled?"disabled":""} ${e=>e.position}"
+        role="${e=>e.role}"
+        tabindex="${e=>e.disabled?null:"0"}"
+        aria-disabled="${e=>e.ariaDisabled}"
+        aria-expanded="${e=>e.ariaExpanded}"
+        @click="${(e,t)=>e.clickHandler(t.event)}"
+        @focusout="${(e,t)=>e.focusoutHandler(t.event)}"
+        @keydown="${(e,t)=>e.keydownHandler(t.event)}"
+    >
+        <div
+            aria-activedescendant="${e=>e.open?e.ariaActiveDescendant:null}"
+            aria-controls="listbox"
+            aria-expanded="${e=>e.ariaExpanded}"
+            aria-haspopup="listbox"
+            class="control"
+            part="control"
+            role="button"
+            ?disabled="${e=>e.disabled}"
+        >
+            ${Object(n.d)(e,t)}
+            <slot name="button-container">
+                <div class="selected-value" part="selected-value">
+                    <slot name="selected-value">${e=>e.displayValue}</slot>
+                </div>
+                <div class="indicator" part="indicator">
+                    <slot name="indicator">
+                        ${t.indicator||""}
+                    </slot>
+                </div>
+            </slot>
+            ${Object(n.b)(e,t)}
+        </div>
+        <div
+            aria-disabled="${e=>e.disabled}"
+            class="listbox"
+            id="listbox"
+            part="listbox"
+            role="listbox"
+            style="--max-height: ${e=>e.maxHeight}px"
+            ?disabled="${e=>e.disabled}"
+            ?hidden="${e=>!e.open}"
+        >
+            <slot
+                ${Object(s.b)({filter:a.a.slottedOptionFilter,flatten:!0,property:"slottedOptions"})}
+            ></slot>
+        </div>
+    </template>
+`},EeEq:function(e,t,o){"use strict";o.d(t,"b",(function(){return l})),o.d(t,"a",(function(){return h}));var i=o("eftJ"),s=o("oePG"),a=o("QBS5"),n=o("RM8H"),d=o("C5kU"),r=o("6fxl"),c=o("TDEi");function l(e){return Object(n.c)(e)&&("option"===e.getAttribute("role")||e instanceof HTMLOptionElement)}class h extends c.a{constructor(e,t,o,i){super(),this.defaultSelected=!1,this.dirtySelected=!1,this.selected=this.defaultSelected,this.dirtyValue=!1,this.initialValue=this.initialValue||"",e&&(this.textContent=e),t&&(this.initialValue=t),o&&(this.defaultSelected=o),i&&(this.selected=i),this.proxy=new Option(""+this.textContent,this.initialValue,this.defaultSelected,this.selected),this.proxy.disabled=this.disabled}defaultSelectedChanged(){this.dirtySelected||(this.selected=this.defaultSelected,this.proxy instanceof HTMLOptionElement&&(this.proxy.selected=this.defaultSelected))}disabledChanged(e,t){this.proxy instanceof HTMLOptionElement&&(this.proxy.disabled=this.disabled)}selectedAttributeChanged(){this.defaultSelected=this.selectedAttribute,this.proxy instanceof HTMLOptionElement&&(this.proxy.defaultSelected=this.defaultSelected)}selectedChanged(){this.$fastController.isConnected&&(this.dirtySelected||(this.dirtySelected=!0),this.proxy instanceof HTMLOptionElement&&(this.proxy.selected=this.selected))}initialValueChanged(e,t){this.dirtyValue||(this.value=this.initialValue,this.dirtyValue=!1)}get label(){return this.value?this.value:this.textContent?this.textContent:""}get text(){return this.textContent}set value(e){this._value=e,this.dirtyValue=!0,this.proxy instanceof HTMLElement&&(this.proxy.value=e),s.b.notify(this,"value")}get value(){return s.b.track(this,"value"),this._value?this._value:this.text}get form(){return this.proxy?this.proxy.form:null}}Object(i.a)([s.d],h.prototype,"defaultSelected",void 0),Object(i.a)([Object(a.b)({mode:"boolean"})],h.prototype,"disabled",void 0),Object(i.a)([Object(a.b)({attribute:"selected",mode:"boolean"})],h.prototype,"selectedAttribute",void 0),Object(i.a)([s.d],h.prototype,"selected",void 0),Object(i.a)([Object(a.b)({attribute:"value",mode:"fromView"})],h.prototype,"initialValue",void 0),Object(r.a)(h,d.a)},HGcg:function(e,t,o){"use strict";o.d(t,"a",(function(){return u})),o.d(t,"b",(function(){return b}));var i=o("4X57"),s=o("wHpb"),a=o("xY0q"),n=o("2i1/"),d=o("oqLQ"),r=o("j9Xn"),c=o("cQsl"),l=o("QkLF"),h=o("57ob"),p=o("8hiW");const u=(e,t)=>i.a`
+  :host([appearance='filled']) {
+    background: ${p.db};
+    border-color: transparent;
+  }
+
+  :host([appearance='filled']:hover:not([disabled])) {
+    background: ${p.P};
+    border-color: transparent;
+  }
+
+  :host([appearance="filled"]:${s.a}) {
+    border-color: ${p.D};
+  }
+`,b=(e,t)=>i.a`
+    ${Object(a.a)("inline-flex")} :host {
+      --elevation: 14;
+      background: ${p.W};
+      border-radius: calc(${p.v} * 1px);
+      border: calc(${p.Rb} * 1px) solid ${p.Lb};
+      box-sizing: border-box;
+      color: ${p.ub};
+      font-family: ${p.u};
+      height: calc(${l.a} * 1px);
+      position: relative;
+      user-select: none;
+      min-width: 250px;
+      vertical-align: top;
+    }
+
+    .listbox {
+      ${c.a}
+      background: ${p.yb};
+      border-radius: calc(${p.v} * 1px);
+      box-sizing: border-box;
+      display: inline-flex;
+      flex-direction: column;
+      left: 0;
+      max-height: calc(var(--max-height) - (${l.a} * 1px));
+      padding: calc(${p.x} * 1px) 0;
+      overflow-y: auto;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      margin: 1px 0;
+    }
+
+    .listbox[hidden] {
+      display: none;
+    }
+
+    .control {
+      align-items: center;
+      box-sizing: border-box;
+      cursor: pointer;
+      display: flex;
+      font-size: ${p.Sb};
+      font-family: inherit;
+      min-height: 100%;
+      line-height: ${p.Tb};
+      padding: 0 calc(${p.x} * 2.25px);
+      width: 100%;
+    }
+
+    :host(:not([disabled]):hover) {
+      background: ${p.U};
+      border-color: ${p.Jb};
+    }
+
+    :host(:focus) {
+      outline: none;
+    }
+
+    :host(:${s.a}) {
+      border-color: ${p.D};
+      outline: none;
+      box-shadow: 0 0 0 1px inset ${p.D};
+    }
+
+    :host([open]:${s.a}) {
+      border-color: ${p.Lb};
+      outline: none;
+      box-shadow: none;
+    }
+
+    :host(:${s.a}) ::slotted([aria-selected="true"][role="option"]:not([disabled])) {
+      box-shadow: 0 0 0 calc(${p.E} * 1px) inset ${p.C};
+      border-color: ${p.D};
+      background: ${p.c};
+      color: ${p.G};
+    }
+
+    :host([disabled]) {
+      cursor: ${n.a};
+      opacity: ${p.z};
+    }
+
+    :host([disabled]) .control {
+      cursor: ${n.a};
+      user-select: none;
+    }
+
+    :host([disabled]:hover) {
+      background: ${p.lb};
+      color: ${p.ub};
+      fill: currentcolor;
+    }
+
+    :host(:not([disabled])) .control:active {
+      background: ${p.R};
+      border-color: ${p.Db};
+      border-radius: calc(${p.v} * 1px);
+    }
+
+    :host([open][position='above']) .listbox {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    :host([open][position='below']) .listbox {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    :host([open][position='above']) .listbox {
+      border-bottom: 0;
+      bottom: calc(${l.a} * 1px);
+    }
+
+    :host([open][position='below']) .listbox {
+      border-top: 0;
+      top: calc(${l.a} * 1px);
+    }
+
+    .selected-value {
+      font-family: inherit;
+      flex: 1 1 auto;
+      text-align: start;
+    }
+
+    .indicator {
+      flex: 0 0 auto;
+      margin-inline-start: 1em;
+    }
+
+    slot[name='listbox'] {
+      display: none;
+      width: 100%;
+    }
+
+    :host([open]) slot[name='listbox'] {
+      display: flex;
+      position: absolute;
+      ${c.a}
+    }
+
+    .end {
+      margin-inline-start: auto;
+    }
+
+    .start,
+    .end,
+    .indicator,
+    .select-indicator,
+    ::slotted(svg) {
+      ${""}
+      fill: currentcolor;
+      height: 1em;
+      min-height: calc(${p.x} * 4px);
+      min-width: calc(${p.x} * 4px);
+      width: 1em;
+    }
+
+    ::slotted([role='option']) {
+      flex: 0 0 auto;
+    }
+  `.withBehaviors(Object(h.a)("filled",u(e,t)),Object(d.c)(i.a`
+        :host([disabled]) {
+          border-color: ${r.a.GrayText};
+          background-color: ${r.a.ButtonFace};
+          color: ${r.a.GrayText};
+          opacity: 1;
+          forced-color-adjust: none;
+        }
+
+        :host([disabled]:hover) {
+          background: ${r.a.ButtonFace};
+        }
+
+        :host([disabled]) .control {
+          color: ${r.a.GrayText};
+          border-color: ${r.a.GrayText};
+        }
+
+        :host(:not([disabled]):hover) {
+          background: ${r.a.ButtonFace};
+          border-color: ${r.a.Highlight};
+        }
+
+        :host(:${s.a}) {
+          forced-color-adjust: none;
+          background: ${r.a.ButtonFace};
+          border-color: ${r.a.Highlight};
+          box-shadow: 0 0 0 1px inset ${r.a.Highlight};
+          color: ${r.a.ButtonText};
+          fill: currentcolor;
+        }
+
+        :host([open]) .listbox {
+          background: ${r.a.ButtonFace};
+          border: 1px solid ${r.a.ButtonText};
+        }
+
+        :host(:${s.a}) ::slotted([aria-selected="true"][role="option"]:not([disabled])) {
+          background: ${r.a.Highlight};
+          border-color: ${r.a.ButtonText};
+          box-shadow: 0 0 0 calc(${p.E} * 1px) inset ${r.a.HighlightText};
+          color: ${r.a.HighlightText};
+          fill: currentcolor;
+        }
+
+        ::slotted([role='option']:not([aria-selected='true']):not([disabled]):hover) {
+          forced-color-adjust: none;
+          color: ${r.a.ButtonText};
+          background: ${r.a.ButtonFace};
+          border-color: ${r.a.Highlight};
+          box-shadow: none;
+        }
+      `))},Or6M:function(e,t,o){"use strict";o.d(t,"a",(function(){return a}));var i=o("6BDD"),s=o("C5kU");const a=(e,t)=>i.b`
+    <template
+        aria-selected="${e=>e.selected}"
+        class="${e=>e.selected?"selected":""} ${e=>e.disabled?"disabled":""}"
+        role="option"
+    >
+        ${Object(s.d)(e,t)}
+        <span class="content" part="content">
+            <slot></slot>
+        </span>
+        ${Object(s.b)(e,t)}
+    </template>
+`},XiV1:function(e,t,o){"use strict";o.d(t,"a",(function(){return w}));var i=o("eftJ"),s=o("QBS5"),a=o("oePG"),n=o("A3Hh"),d=o("o87Z"),r=o("TDEi");class c extends r.a{}class l extends(Object(d.a)(c)){constructor(){super(...arguments),this.proxy=document.createElement("input")}}class h extends l{constructor(){super(),this.initialValue="on",this.dirtyChecked=!1,this.formResetCallback=()=>{this.checked=this.checkedAttribute,this.dirtyChecked=!1},this.keypressHandler=e=>{switch(e.key){case n.m:this.checked=!this.checked}},this.clickHandler=e=>{this.disabled||this.readOnly||(this.checked=!this.checked)},this.defaultChecked=!!this.checkedAttribute,this.checked=this.defaultChecked}readOnlyChanged(){this.proxy instanceof HTMLInputElement&&(this.proxy.readOnly=this.readOnly),this.readOnly?this.classList.add("readonly"):this.classList.remove("readonly")}checkedAttributeChanged(){this.defaultChecked=this.checkedAttribute}defaultCheckedChanged(){this.dirtyChecked||(this.checked=this.defaultChecked,this.dirtyChecked=!1)}checkedChanged(){this.dirtyChecked||(this.dirtyChecked=!0),this.updateForm(),this.proxy instanceof HTMLInputElement&&(this.proxy.checked=this.checked),this.$emit("change"),this.checked?this.classList.add("checked"):this.classList.remove("checked"),this.validate()}connectedCallback(){super.connectedCallback(),this.proxy.setAttribute("type","checkbox"),this.updateForm()}updateForm(){const e=this.checked?this.value:null;this.setFormValue(e,e)}}Object(i.a)([Object(s.b)({attribute:"readonly",mode:"boolean"})],h.prototype,"readOnly",void 0),Object(i.a)([Object(s.b)({attribute:"checked",mode:"boolean"})],h.prototype,"checkedAttribute",void 0),Object(i.a)([a.d],h.prototype,"defaultSlottedNodes",void 0),Object(i.a)([a.d],h.prototype,"defaultChecked",void 0),Object(i.a)([a.d],h.prototype,"checked",void 0);var p=o("6BDD"),u=o("UauI");var b=o("4X57"),g=o("j9Xn"),f=o("xY0q"),x=o("2i1/"),$=o("wHpb"),y=o("oqLQ"),k=o("QkLF"),m=o("UPH6"),v=o("8hiW");const O=(e,t)=>b.a`
+    :host([hidden]) {
+      display: none;
+    }
+
+    ${Object(f.a)("inline-flex")} :host {
+      align-items: center;
+      outline: none;
+      font-family: ${v.u};
+      margin: calc(${v.x} * 1px) 0;
+      ${""} user-select: none;
+    }
+
+    :host(.disabled) {
+      opacity: ${v.z};
+    }
+
+    :host(.disabled) .label,
+    :host(.readonly) .label,
+    :host(.readonly) .switch,
+    :host(.disabled) .switch {
+      cursor: ${x.a};
+    }
+
+    .switch {
+      position: relative;
+      outline: none;
+      box-sizing: border-box;
+      width: calc(((${k.a} / 2) + ${v.x}) * 2px);
+      height: calc(((${k.a} / 2) + ${v.x}) * 1px);
+      background: ${v.W};
+      border-radius: calc(${k.a} * 1px);
+      border: calc(${v.Rb} * 1px) solid ${v.Pb};
+    }
+
+    :host(:enabled) .switch:hover {
+      background: ${v.U};
+      border-color: ${v.Ob};
+      cursor: pointer;
+    }
+
+    :host(:enabled) .switch:active {
+      background: ${v.R};
+      border-color: ${v.Nb};
+    }
+
+    :host(:${$.a}) .switch {
+      box-shadow: 0 0 0 2px ${v.A}, 0 0 0 4px ${v.D};
+      border-color: ${v.D};
+    }
+
+    .checked-indicator {
+      position: absolute;
+      height: calc((${k.a} - (${v.x} * 5.5)) * 1px);
+      width: calc((${k.a} - (${v.x} * 5.5)) * 1px);
+      top: calc(${v.x} * 1px);
+      background: ${v.ub};
+      border-radius: 50%;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .status-message {
+      color: ${v.ub};
+      cursor: pointer;
+      font-size: ${v.Sb};
+      line-height: ${v.Tb};
+    }
+
+    .label__hidden {
+      display: none;
+      visibility: hidden;
+    }
+
+    .label {
+      color: ${v.ub};
+      font-size: ${v.Sb};
+      line-height: ${v.Tb};
+      margin-inline-end: calc(${v.x} * 2px + 2px);
+      cursor: pointer;
+    }
+
+    ::slotted(*) {
+      ${""} margin-inline-start: calc(${v.x} * 2px + 2px);
+    }
+
+    :host([aria-checked='true']) .checked-indicator {
+      background: ${v.I};
+    }
+
+    :host([aria-checked='true']) .switch {
+      background: ${v.g};
+    }
+
+    :host([aria-checked='true']:enabled) .switch:hover {
+      background: ${v.e};
+    }
+
+    :host([aria-checked='true']:enabled) .switch:hover .checked-indicator {
+      background: ${v.H};
+    }
+
+    :host([aria-checked='true']:enabled) .switch:active {
+      background: ${v.a};
+    }
+
+    :host([aria-checked='true']:enabled) .switch:active .checked-indicator {
+      background: ${v.F};
+    }
+
+    :host([aria-checked="true"]:${$.a}:enabled) .switch {
+      box-shadow: 0 0 0 2px ${v.A}, 0 0 0 4px ${v.D};
+      border-color: transparent;
+    }
+
+    .unchecked-message {
+      display: block;
+    }
+
+    .checked-message {
+      display: none;
+    }
+
+    :host([aria-checked='true']) .unchecked-message {
+      display: none;
+    }
+
+    :host([aria-checked='true']) .checked-message {
+      display: block;
+    }
+  `.withBehaviors(new m.a(b.a`
+        .checked-indicator {
+          left: calc(${v.x} * 1px);
+        }
+
+        :host([aria-checked='true']) .checked-indicator {
+          left: calc((((${k.a} / 2) + ${v.x}) + ${v.x}) * 1px);
+        }
+      `,b.a`
+        .checked-indicator {
+          right: calc(${v.x} * 1px);
+        }
+
+        :host([aria-checked='true']) .checked-indicator {
+          right: calc((((${k.a} / 2) + ${v.x}) + ${v.x}) * 1px);
+        }
+      `),Object(y.c)(b.a`
+        .checked-indicator,
+        :host(:enabled) .switch:active .checked-indicator {
+          forced-color-adjust: none;
+          background: ${g.a.FieldText};
+        }
+        .switch {
+          forced-color-adjust: none;
+          background: ${g.a.Field};
+          border-color: ${g.a.FieldText};
+        }
+        :host(:enabled) .switch:hover {
+          background: ${g.a.HighlightText};
+          border-color: ${g.a.Highlight};
+        }
+        :host(.checked) .switch {
+          background: ${g.a.Highlight};
+          border-color: ${g.a.Highlight};
+        }
+        :host(.checked:enabled) .switch:hover,
+        :host(:enabled) .switch:active {
+          background: ${g.a.HighlightText};
+          border-color: ${g.a.Highlight};
+        }
+        :host(.checked) .checked-indicator {
+          background: ${g.a.HighlightText};
+        }
+        :host(.checked:enabled) .switch:hover .checked-indicator {
+          background: ${g.a.Highlight};
+        }
+        :host(:${$.a}) .switch {
+          border-color: ${g.a.Highlight};
+          box-shadow: 0 0 0 2px ${g.a.Field}, 0 0 0 4px ${g.a.FieldText};
+        }
+        :host(.checked:${$.a}:enabled) .switch {
+          box-shadow: 0 0 0 2px ${g.a.Field}, 0 0 0 4px ${g.a.FieldText};
+        }
+        :host(.disabled) {
+          opacity: 1;
+        }
+        :host(.disabled) .checked-indicator {
+          background: ${g.a.GrayText};
+        }
+        :host(.disabled) .switch {
+          background: ${g.a.Field};
+          border-color: ${g.a.GrayText};
+        }
+        .status-message,
+        .label {
+          color: ${g.a.FieldText};
+        }
+      `)),w=h.compose({baseName:"switch",template:(e,t)=>p.b`
+    <template
+        role="switch"
+        aria-checked="${e=>e.checked}"
+        aria-disabled="${e=>e.disabled}"
+        aria-readonly="${e=>e.readOnly}"
+        tabindex="${e=>e.disabled?null:0}"
+        @keypress="${(e,t)=>e.keypressHandler(t.event)}"
+        @click="${(e,t)=>e.clickHandler(t.event)}"
+        class="${e=>e.checked?"checked":""}"
+    >
+        <label
+            part="label"
+            class="${e=>e.defaultSlottedNodes&&e.defaultSlottedNodes.length?"label":"label label__hidden"}"
+        >
+            <slot ${Object(u.b)("defaultSlottedNodes")}></slot>
+        </label>
+        <div part="switch" class="switch">
+            <slot name="switch">${t.switch||""}</slot>
+        </div>
+        <span class="status-message" part="status-message">
+            <span class="checked-message" part="checked-message">
+                <slot name="checked-message"></slot>
+            </span>
+            <span class="unchecked-message" part="unchecked-message">
+                <slot name="unchecked-message"></slot>
+            </span>
+        </span>
+    </template>
+`,styles:O,switch:'\n    <span class="checked-indicator" part="checked-indicator"></span>\n  '})},e8No:function(e,t,o){"use strict";o.d(t,"b",(function(){return b})),o.d(t,"a",(function(){return g}));var i=o("EeEq"),s=o("Or6M"),a=o("4X57"),n=o("xY0q"),d=o("wHpb"),r=o("2i1/"),c=o("oqLQ"),l=o("j9Xn"),h=o("QkLF"),p=o("8hiW");const u=(e,t)=>a.a`
+    ${Object(n.a)("inline-flex")} :host {
+      font-family: ${p.u};
+      border-radius: calc(${p.v} * 1px);
+      border: calc(${p.E} * 1px) solid transparent;
+      box-sizing: border-box;
+      color: ${p.ub};
+      cursor: pointer;
+      fill: currentcolor;
+      font-size: ${p.Sb};
+      height: calc(${h.a} * 1px);
+      line-height: ${p.Tb};
+      margin: 0 calc(${p.x} * 1px);
+      outline: none;
+      overflow: hidden;
+      align-items: center;
+      padding: 0 calc(${p.x} * 2.25px);
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    :host(:${d.a}) {
+      box-shadow: 0 0 0 calc(${p.E} * 1px) inset ${p.C};
+      border-color: ${p.D};
+      background: ${p.c};
+      color: ${p.G};
+    }
+
+    :host([aria-selected='true']) {
+      background: ${p.g};
+      color: ${p.I};
+    }
+
+    :host(:hover) {
+      background: ${p.e};
+      color: ${p.H};
+    }
+
+    :host(:active) {
+      background: ${p.a};
+      color: ${p.F};
+    }
+
+    :host(:not([aria-selected='true']):hover) {
+      background: ${p.P};
+      color: ${p.ub};
+    }
+
+    :host(:not([aria-selected='true']):active) {
+      background: ${p.L};
+      color: ${p.ub};
+    }
+
+    :host([disabled]) {
+      cursor: ${r.a};
+      opacity: ${p.z};
+    }
+
+    :host([disabled]:hover) {
+      background-color: inherit;
+    }
+
+    .content {
+      grid-column-start: 2;
+      justify-self: start;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .start,
+    .end,
+    ::slotted(svg) {
+      display: flex;
+    }
+
+    ::slotted(svg) {
+      ${""}
+      height: calc(${p.x} * 4px);
+      width: calc(${p.x} * 4px);
+    }
+
+    ::slotted([slot='end']) {
+      margin-inline-start: 1ch;
+    }
+
+    ::slotted([slot='start']) {
+      margin-inline-end: 1ch;
+    }
+  `.withBehaviors(Object(c.c)(a.a`
+        :host {
+          border-color: transparent;
+          color: ${l.a.ButtonText};
+          forced-color-adjust: none;
+        }
+
+        :host(:not([aria-selected='true']):hover),
+        :host([aria-selected='true']) {
+          background: ${l.a.Highlight};
+          color: ${l.a.HighlightText};
+        }
+
+        :host([disabled]),
+        :host([disabled]:not([aria-selected='true']):hover) {
+          background: ${l.a.Canvas};
+          color: ${l.a.GrayText};
+          fill: currentcolor;
+          opacity: 1;
+        }
+      `)),b=i.a.compose({baseName:"option",template:s.a,styles:u}),g=u},i56n:function(e,t,o){"use strict";o.d(t,"a",(function(){return y})),o.d(t,"b",(function(){return k})),o.d(t,"c",(function(){return m}));var i=o("3rEL"),s=o("QBS5"),a=o("eftJ"),n=o("oePG"),d=o("uXNP"),r=o("C5kU"),c=o("6fxl"),l=o("4N55"),h=o("o87Z");class p extends l.a{}class u extends(Object(h.a)(p)){constructor(){super(...arguments),this.proxy=document.createElement("select")}}var b=o("xDi8");class g extends u{constructor(){super(...arguments),this.open=!1,this.forcedPosition=!1,this.role=b.b.combobox,this.position=b.a.below,this.maxHeight=0,this.displayValue="",this.formResetCallback=()=>{this.setProxyOptions(),this.setDefaultSelectedOption(),this.value=this.firstSelectedOption.value}}openChanged(){this.ariaExpanded=this.open?"true":"false",this.open&&(this.setPositioning(),this.focusAndScrollOptionIntoView(),this.indexWhenOpened=this.selectedIndex)}get value(){return n.b.track(this,"value"),this._value}set value(e){const t=""+this._value;if(this.$fastController.isConnected&&this.options){const t=this.options.findIndex(t=>t.value===e),o=this.options[this.selectedIndex],i=this.options[t],s=o?o.value:null,a=i?i.value:null;-1!==t&&s===a||(e="",this.selectedIndex=t),this.firstSelectedOption&&(e=this.firstSelectedOption.value)}t!==e&&(this._value=e,super.valueChanged(t,e),n.b.notify(this,"value"))}updateValue(e){this.$fastController.isConnected&&(this.value=this.firstSelectedOption?this.firstSelectedOption.value:"",this.displayValue=this.firstSelectedOption?this.firstSelectedOption.textContent||this.firstSelectedOption.value:this.value),e&&(this.$emit("input"),this.$emit("change",this,{bubbles:!0,composed:void 0}))}selectedIndexChanged(e,t){super.selectedIndexChanged(e,t),this.updateValue()}setPositioning(){const e=this.getBoundingClientRect(),t=window.innerHeight-e.bottom;this.position=this.forcedPosition?this.positionAttribute:e.top>t?b.a.above:b.a.below,this.positionAttribute=this.forcedPosition?this.positionAttribute:this.position,this.maxHeight=this.position===b.a.above?~~e.top:~~t}disabledChanged(e,t){super.disabledChanged&&super.disabledChanged(e,t),this.ariaDisabled=this.disabled?"true":"false"}clickHandler(e){if(!this.disabled){if(this.open){const t=e.target.closest("option,[role=option]");if(t&&t.disabled)return}return super.clickHandler(e),this.open=!this.open,this.open||this.indexWhenOpened===this.selectedIndex||this.updateValue(!0),!0}}focusoutHandler(e){var t;if(!this.open)return!0;const o=e.relatedTarget;this.isSameNode(o)?this.focus():(null===(t=this.options)||void 0===t?void 0:t.includes(o))||(this.open=!1,this.indexWhenOpened!==this.selectedIndex&&this.updateValue(!0))}slottedOptionsChanged(e,t){super.slottedOptionsChanged(e,t),this.setProxyOptions(),this.updateValue()}setProxyOptions(){this.proxy instanceof HTMLSelectElement&&this.options&&(this.proxy.options.length=0,this.options.forEach(e=>{const t=e.proxy||(e instanceof HTMLOptionElement?e.cloneNode():null);t&&this.proxy.appendChild(t)}))}keydownHandler(e){super.keydownHandler(e);switch(e.key||e.key.charCodeAt(0)){case" ":this.typeAheadExpired&&(e.preventDefault(),this.open=!this.open);break;case"Enter":e.preventDefault(),this.open=!this.open;break;case"Escape":this.open&&(e.preventDefault(),this.open=!1);break;case"Tab":if(!this.open)return!0;e.preventDefault(),this.open=!1}return this.open||this.indexWhenOpened===this.selectedIndex||(this.updateValue(!0),this.indexWhenOpened=this.selectedIndex),!0}connectedCallback(){super.connectedCallback(),this.forcedPosition=!!this.positionAttribute}}Object(a.a)([Object(s.b)({attribute:"open",mode:"boolean"})],g.prototype,"open",void 0),Object(a.a)([Object(s.b)({attribute:"position"})],g.prototype,"positionAttribute",void 0),Object(a.a)([n.d],g.prototype,"position",void 0),Object(a.a)([n.d],g.prototype,"maxHeight",void 0),Object(a.a)([n.d],g.prototype,"displayValue",void 0);class f{}Object(a.a)([n.d],f.prototype,"ariaExpanded",void 0),Object(a.a)([Object(s.b)({attribute:"aria-pressed",mode:"fromView"})],f.prototype,"ariaPressed",void 0),Object(c.a)(f,d.a),Object(c.a)(g,r.a,f);var x=o("8EPn"),$=o("HGcg");class y extends g{appearanceChanged(e,t){e!==t&&(this.classList.add(t),this.classList.remove(e))}connectedCallback(){super.connectedCallback(),this.appearance||(this.appearance="outline")}}Object(i.a)([Object(s.b)({mode:"fromView"})],y.prototype,"appearance",void 0);const k=y.compose({baseName:"select",baseClass:g,template:x.a,styles:$.b,indicator:'\n    <svg\n        class="select-indicator"\n        part="select-indicator"\n        viewBox="0 0 12 7"\n        xmlns="http://www.w3.org/2000/svg"\n    >\n        <path\n            d="M11.85.65c.2.2.2.5 0 .7L6.4 6.84a.55.55 0 01-.78 0L.14 1.35a.5.5 0 11.71-.7L6 5.8 11.15.65c.2-.2.5-.2.7 0z"\n        />\n    </svg>\n  '}),m=$.b},xDi8:function(e,t,o){"use strict";var i,s;o.d(t,"a",(function(){return i})),o.d(t,"b",(function(){return s})),function(e){e.above="above",e.below="below"}(i||(i={})),function(e){e.combobox="combobox"}(s||(s={}))},y5gg:function(e,t,o){"use strict";o.r(t),o.d(t,"ToolingInfo",(function(){return U})),o.d(t,"FeedToggleWC",(function(){return D})),o.d(t,"OptionWCTemplate",(function(){return L})),o.d(t,"DropdownWCTemplate",(function(){return A})),o.d(t,"FeedToggleWCTemplate",(function(){return M})),o.d(t,"FeedToggleWCStyles",(function(){return z}));var i=o("lFvR"),s=o("m1Vi"),a=o("XiV1"),n=o("i56n"),d=o("e8No"),r=o("Sunj"),c=o("pH9t"),l=o("f6oE"),h=o("jht9"),p=o("A03o"),u=o("C49W"),b=o("akWC"),g=o("Zn5T");const f=Object(p.a)(g.a.feedToggleWC,"A sample Peregrine Web Component experience",Object.assign(Object.assign(Object.assign({},Object(u.c)("noFeedBackgroundEnabled","Enable transparent feed background")),Object(u.c)("enablePillShapedFeedToggle","Enable pill shaped feed toggle")),Object(b.a)({contentVisible:"Localization for the content Visible",feedVisible:"Localization for the feed Visible",headingsOnly:"Localization for the headings only",peekContent:"Localization for the content partially visible"})));var x=o("D57K"),$=o("4k19"),y=o("s9+9"),k=o("Am8i"),m=o("u5KZ"),v=o("QHbP"),O=o("wZHk"),w=o("L1Sn"),S=o("IqCT"),C=o("oePG"),j=o("d0Z1"),T=o("+Ht2");class D extends S.a{constructor(){super(...arguments),this.handleOnScroll=()=>{const e=scrollY<100&&this.layoutState.imageOfTheDayEnabled&&("headingsonly"===this.layoutState.selectedFeedDisplaySetting||"peek"===this.layoutState.selectedFeedDisplaySetting);e!=this.isFeedTranslucent&&(this.isFeedTranslucent=e)}}experienceConnected(){this.templateReady=!1,this.feedMenuItemsMap={headingsonly:{id:"headingsonly",title:this.strings.headingsOnly,index:0},peek:{id:"peek",title:this.strings.peekContent,index:1},always:{id:"always",title:this.strings.contentVisible,index:2}},this.feedMenuItems=[this.feedMenuItemsMap.headingsonly,this.feedMenuItemsMap.peek,this.feedMenuItemsMap.always],this.pageSettingsConnector=Object(T.c)(y.a.ChromiumPageSettings),this.pageSettingsConnector&&Object(j.c)(y.a.ChromiumPageSettings,e=>{this.layoutState=e,this.toggleChecked="always"===this.layoutState.selectedFeedDisplaySetting;const t=this.feedMenuItemsMap[this.layoutState.selectedFeedDisplaySetting];this.currentSetting=t&&t.id,this.telemetryContext=this.getTelemetryContext(),this.templateReady=!0,this.isFeedTranslucent=e.imageOfTheDayEnabled&&scrollY<100&&("headingsonly"===e.selectedFeedDisplaySetting||"peek"===e.selectedFeedDisplaySetting)})}connectedCallback(){super.connectedCallback(),document.addEventListener("scroll",this.handleOnScroll)}getExperienceType(){return g.a.feedToggleWC}shadowDomPopulated(){const e=this.shadowRoot.getElementById("feedToggle");e&&Object(v.b)(O.a.feedToggle,e)}updateFeedVisibility(e){const t=e&&e.target;if(!t)return;const o=t.selectedIndex;if(isNaN(o))return;const i=this.feedMenuItems[o].id,s=i;if((this.layoutState?this.layoutState.currentLayout:$.e.currentLayout)!==$.i.custom){const e=$.k[this.layoutState.currentLayout],t={currentBackgroundImageType:e.current_background_image_type,currentLayout:$.i.custom,greetingEnabled:e.greeting,imageOfTheDayEnabled:e.current_background_image_type!==$.a.off,quickLinksEnabled:e.quick_links,selectedQuickLinksDisplaySetting:e.selectedQuickLinksDisplaySetting,selectedFeedDisplaySetting:i};this.pageSettingsConnector.updateLayout(t)}else this.pageSettingsConnector.updateFeeds(i);this.fireFeedToggleTelemetry(s,t)}getTelemetryContext(){if(!this.telemetryObject)return null;return{feedDropdownTelemetryTag:this.telemetryObject.addOrUpdateChild({name:"PinMyFeed",behavior:k.b.Customize,type:k.e.Interaction}).getMetadataTag()}}fireFeedToggleTelemetry(e,t){const o=t,i=o&&w.a.get(o);i&&i.contract&&(i.contract.content={headline:e,type:k.c.Settings},w.a.setAttribute(o,i.contract),m.a.sendActionEvent(o))}}Object(x.d)([C.d],D.prototype,"currentSetting",void 0),Object(x.d)([C.d],D.prototype,"isFeedTranslucent",void 0),Object(x.d)([C.d],D.prototype,"templateReady",void 0),Object(x.d)([C.d],D.prototype,"toggleChecked",void 0);var E=o("6BDD"),H=o("UNqU"),F=o("6vBc"),I=o("eUhr");const L=E.b`
+    <fluent-option
+        value="${e=>e.title}"
+        id="${e=>e.id}"
+        aria-selected="${(e,t)=>t.parent.currentSetting===e.id}"
+        class=${(e,t)=>t.parent.currentSetting===e.id?"selected":"unselected"}
+        ?selected=${(e,t)=>t.parent.currentSetting===e.id}>
+            <span class="feedOptionTitle">${e=>e.title}</span>
+    </fluent-option>
+`,A=E.b`
+    <fluent-select
+        class="feedDropdown ${e=>e.config.enablePillShapedFeedToggle?"pillShape":""}"
+        ${Object(I.b)(e=>e.telemetryContext&&e.telemetryContext.feedDropdownTelemetryTag)}
+        :selectedIndex="${e=>e.currentSetting&&e.feedMenuItemsMap[e.currentSetting]&&e.feedMenuItemsMap[e.currentSetting].index}"
+        @change=${(e,t)=>e.updateFeedVisibility(t.event)}>
+            <span slot="selected-value">${e=>e.currentSetting&&e.feedMenuItemsMap[e.currentSetting]&&e.feedMenuItemsMap[e.currentSetting].title}</span>
+            ${Object(H.c)(e=>e.feedMenuItems,L)}
+    </fluent-select>
+`,M=E.b`
+    <div id="feedToggle" class=${e=>V(e)}>
+        ${Object(F.a)(e=>e.templateReady,A)}
+    </div>
+`,V=e=>{var t,o;let i="";return(null===(t=e.config)||void 0===t?void 0:t.noFeedBackgroundEnabled)&&(i+="noBackground "),e.isFeedTranslucent?i+="feedLight ":i+="feedDark ",(null===(o=e.config)||void 0===o?void 0:o.enableCommonHeaderStyle)&&(i+="feed-header"),i};var B=o("8hiW"),P=o("UPH6"),_=o("4X57");const N=_.a`
+:host {
+    margin-left: auto;
+}
+`,W=_.a`
+:host {
+    margin-right: auto;
+}
+`,z=_.a`
+:host {
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.feedDark {
+    color: white;
+}
+
+.feedDark .feedDropdown {
+    color: ${B.sb};
+}
+
+.feedDark .feedDropdown:hover {
+    background:  ${B.ib};
+}
+
+.feedDark .feedDropdown::part(control):active {
+    background:  ${B.ib};
+}
+
+.feedDropdown {
+    border-radius: 17px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 34px;
+    min-width: 225px;
+    padding: 2px 0;
+}
+
+.feedDropdown::part(selected-value) {
+   margin-bottom: 4px;
+}
+
+.feed-header .feedDropdown {
+    font-weight: 400;
+}
+
+.feed-header.feedDark .feedDropdown {
+    color: ${B.ub};
+}
+
+.feedLight .feedDropdown {
+    background: transparent;
+    color: white;
+}
+ 
+.feedLight .feedDropdown:hover {
+    background: #404040
+}
+
+.feedLight .feedDropdown::part(control):active {
+    background: #404040
+}
+
+.feedOptionTitle {
+    font-weight: 600;
+}
+
+fluent-option.selected {
+    background: ${B.L};
+    color: ${B.ub};
+}
+
+fluent-option.unselected {
+    background: unset;
+    color: ${B.ub};
+}
+
+fluent-option:hover {
+    background: ${B.P};
+    color: ${B.ub};
+}
+
+.noBackground.feedDark .feedDropdown,
+.noBackground.feedLight .feedDropdown {
+    background: transparent;
+    color: white;
+}
+
+.noBackground.feedDark .feedDropdown:hover,
+.noBackground.feedLight .feedDropdown:hover {
+    background: #404040
+}
+
+.pillShape.feedDropdown {
+    height: 32px;
+    padding: 0px 3px;
+    min-width: 225px;
+    border-radius: 16px;
+    transition: border-radius 0.2s ease-in-out;
+    vertical-align: middle;
+}
+
+.pillShape.feedDropdown::part(control) {
+    margin: -1px 0px;
+}
+
+.pillShape.feedDropdown::part(selected-value) {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.pillShape.feedDropdown::part(control):active {
+    background: transparent!important;
+}
+
+.pillShape.feedDropdown::part(listbox) {
+    border-radius: 4px;
+}
+
+.pillShape.feedDropdown > fluent-option {
+    border-radius: 4px;
+}
+
+.pillShape.feedDropdown::part(indicator),
+.pillShape.feedDropdown::part(select-indicator) {
+    height: 12px;
+    width: 12px;
+    line-height: 12px;
+    min-height: 12px;
+    min-width: 12px;
+}
+
+`.withBehaviors(new P.a(N,W)),U={experienceConfigSchema:f};Object(i.a)().withShadowRootMode("closed").withElementDisambiguation(()=>h.ElementDisambiguation.ignoreDuplicate).register(Object(s.c)(),Object(a.a)(),Object(n.b)(),Object(d.b)(),Object(r.a)(),Object(c.a)(),Object(l.a)())}}]);

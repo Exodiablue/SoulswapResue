@@ -1,0 +1,271 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["coachmark-wc"],{rX1t:function(t,e,a){"use strict";a.r(e),a.d(e,"ToolingInfo",(function(){return ut})),a.d(e,"CoachmarkWC",(function(){return V})),a.d(e,"CoachmarkWCTemplate",(function(){return ct})),a.d(e,"CoachmarkWCStyles",(function(){return mt}));var i=a("A03o"),o=a("C49W"),n=a("sydv"),c=a("rcIs"),r=a("Zn5T");const s=Object(i.a)(r.a.coachmarkWC,"Coachmark Configuration",Object.assign(Object.assign(Object.assign(Object.assign({},Object(o.c)("isTmplStampingRequired","is TMPL Stamping Required","Flag determines whether to stamp tmpl tag or not")),Object(o.b)("messageList","Coachmark messages","List of coachmark messages",Object.assign({},Object(o.e)("Coachmark","Coachmark message",Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({},Object(n.c)("head","Title text","The headline text on the coachmark")),Object(n.c)("body","Body text","The body text on the coachmark")),Object(n.a)("coachmarkPosition","Coachmark position","Where the coachmark should appear in relation to the target element",[c.b.Above,c.b.Below,c.b.Left,c.b.Right])),Object(n.a)("pointerPosition","Pointer position","Where the pointer should appear on the coachmark",[c.c.Adjacent,c.c.Center,c.c.Opposite])),Object(n.c)("targetElement","Target element","The element to attach the coachark to")),Object(o.d)("timeoutInMs","Time out in ms","Number of miliseconds to show the coachmark before removing from the page")),Object(o.f)("eventUrl","Event url","The event url is used to report user event to iris",Object.assign(Object.assign({},Object(n.c)("impressionUrl","Impression url","The Iris impression event url. Used to alert Iris that an impression event has happened.")),Object(n.c)("actionUrl","Action url","The Iris action event url. Used to alert Iris that an action event has happened.")),["impressionUrl","actionUrl"])),Object(o.d)("zIndex","zIndex","Controllable zIndex number in case the defaults do not suffice for the targeting scenario")))))),Object(o.c)("renderCoachmark","Render Coachmark","Flag determines whether to render coachmark or not even if user is eligible to see")),Object(o.d)("tabIndex","Tab index","Override tab order")));var h,d=a("D57K"),l=a("U6Xm"),m=a("VZ41"),u=a("ljWX"),g=a("QnRU");!function(t){t.closeButton="closeButton",t.ctaButton="ctaButton",t.cancelButton="cancelButton",t.coachmarkElement="coachmarkElement",t.coachmarkPointerElement="coachmarkPointerElement"}(h||(h={}));var p=a("s9+9"),b=a("Gy7L"),k=a("qibw"),v=a("Am8i"),f=a("u5KZ"),C=a("1I/+"),w=a("ax+D"),O=a("Bbgt"),y=a("IqCT"),T=a("3i3w"),E=a("HxRh"),j=a("tMmC"),x=a("XlyT"),I=a("Gil3"),B=a("0PLU"),$=a("keKk");const P=(t,e)=>{switch(t.ctaBehavior){case M.launchAndDefaultWebWidget:return()=>Object(d.a)(void 0,void 0,void 0,(function*(){D(e.hideCoachmark);const t=Object(I.d)(e.currentLayout);t&&t()}));case M.openAddDialog:return L(e);case M.openWaffleDialog:return()=>Object(d.a)(void 0,void 0,void 0,(function*(){D(e.hideCoachmark);const t=Object(I.g)();t&&t()}));case M.pinMsnews:return()=>Object(d.a)(void 0,void 0,void 0,(function*(){D(e.hideCoachmark);const t=Object(I.h)();t&&t()}));case M.switchFeedToggleToContentVisible:return()=>Object(d.a)(void 0,void 0,void 0,(function*(){D(e.hideCoachmark);const t=Object(I.j)();t&&t()}));case M.switchFeedToggleToContentPartiallyVisible:return()=>Object(d.a)(void 0,void 0,void 0,(function*(){D(e.hideCoachmark);const t=Object(I.i)();t&&t()}));case M.tryInformationalMode:return()=>Object(d.a)(void 0,void 0,void 0,(function*(){D(e.hideCoachmark);const t=Object(I.k)(e.delayInMs);t&&t()}));case M.tryInformationalModeProg:return()=>Object(d.a)(void 0,void 0,void 0,(function*(){D(e.hideCoachmark);const t=Object(I.m)(e.delayInMs);t&&t()}));case M.tryInformationalModeDirect:return()=>Object(d.a)(void 0,void 0,void 0,(function*(){D(e.hideCoachmark);const t=Object(I.l)();t&&t()}));case M.tryVoiceSearch:return()=>Object(d.a)(void 0,void 0,void 0,(function*(){D(e.hideCoachmark);const t=Object(I.b)();t&&t()}));default:f.a.sendAppErrorEvent(Object.assign(Object.assign({},E.hb.InvalidCTAType),{message:"CTA type is invalid or not found.",pb:Object.assign(Object.assign({},E.hb.InvalidCTAType.pb),{customMessage:`CTA type: ${t.ctaBehavior} is invalid `})}))}},L=t=>()=>Object(d.a)(void 0,void 0,void 0,(function*(){D(t.hideCoachmark);const e=t.delayInMs||2e3;let a;const i=B.a[B.b.clickAddTileButton];i&&(a=yield i({})),j.a.log(`Action completed: ${a.actionCompleted} status: ${a.status}`),yield Object($.a)(e);const o=t.updateCoachmark;o&&o()}));function D(t){t&&t()}var M;!function(t){t.launchAndDefaultWebWidget="launchAndDefaultWebWidget",t.openAddDialog="openAddDialog",t.openWaffleDialog="openWaffleDialog",t.pinMsnews="pinMsnews",t.switchFeedToggleToContentVisible="switchFeedToggleToContentVisible",t.switchFeedToggleToContentPartiallyVisible="switchFeedToggleToContentPartiallyVisible",t.tryVoiceSearch="tryVoiceSearch",t.tryInformationalMode="tryInformationalMode",t.tryInformationalModeDirect="tryInformationalModeDirect",t.tryInformationalModeProg="tryInformationalModeProg"}(M||(M={}));var A=a("QHbP");function S(t){f.a.sendAppErrorEvent(t)}function W(t){f.a.addOrUpdateTmplString(t)}function U(t,e,a,i,o,n){f.a.sendActionEvent(e,o,n,a)}function R(t,e,a,i,o,n){t&&a&&e&&U(0,a,i,0,o,n)}var N=a("bWC+"),F=a("L1Sn"),H=a("Gsg7"),_=a("oePG"),z=a("d0Z1"),K=a("3ZGc"),Q=a("+Ht2");class V extends y.a{constructor(){super(...arguments),this.currentLangDir=document.dir,this.currentPointerTopOffset=0,this.currentPointerLeftOffset=0,this.isTmplStampingRequired=!1,this.reRenderCoachmark=!1,this.windowClickEventCallback=t=>{if(this.coachmarkElement&&this.coachmarkElement&&this.coachmarkElement.getBoundingClientRect){const e=this.coachmarkElement.getBoundingClientRect();!(t.clientX&&t.clientY&&t.clientX>=e.left&&t.clientX<=e.right&&t.clientY>=e.top&&t.clientY<=e.bottom)&&this.addCoachmarkToPage&&(this.userInteractedWithCoachmark||(W(`ClickedAwayFromCoachmark_${this.currentCoachmarkName}:1`),R("click_nonnav","ClickedAwayFromCoachmark_"+this.currentCoachmarkName,this.coachmarkElement,"",v.a.Click,v.b.Hide)),this.hideCoachmark())}return t},this.windowUpdateEventCallback=()=>{window.requestAnimationFrame(()=>{this.updateCoachmarkPosition(this.coachmarkPosition),this.updatePointer(this.coachmarkPosition,this.pointerPosition)})},this.coachmarkPlaced=(t,e,a)=>Object(d.a)(this,void 0,void 0,(function*(){this.coachmarkDataConnector?l.a.updateCoachmarkVisibleStatus.getActionSender(this.coachmarkDataConnector).send(!0):S(Object.assign(Object.assign({},E.hb.CoachmarkDataConnectorUndefined),{message:`Error reporting coachmark: ${t} status due to undefined coachmark data connector.`,pb:Object.assign(Object.assign({},E.hb.CoachmarkDataConnectorUndefined.pb),{customMessage:`coachmark: ${t} creativeId: ${e} positionId: ${a}`})}))})),this.closeButtonKeyDownHandler=t=>{if(t.keyCode===b.m&&this.ctaList)if(t.shiftKey){t.preventDefault();(this.cancelButtonElement?this.cancelButtonElement:this.ctaButtonElement).focus()}else t.preventDefault(),this.ctaButtonElement&&this.ctaButtonElement.focus();else t.keyCode===b.g&&this.closeCoachmark(t,m.a.Dismiss,v.a.Click,v.b.Close)},this.closeCoachmark=(t,e,a,i,o)=>Object(d.a)(this,void 0,void 0,(function*(){if(!o&&!t&&!t.currentTarget){const e=F.a.get(t.currentTarget);e.contract.overrideDestinationUrl=window&&window.location&&window.location.href,e.contract.behavior=i,R("click_nonnav","Dismiss",t.currentTarget,"ntp",a,i)}this.coachmarkSource===c.e.Iris&&this.reportEvent(m.b.Action,this.eventUrl,e,this.creativeId,this.positionId),this.removeCoachmarkFromPage(),this.cleanup()})),this.ctaButtonHandler=(t,e)=>{t.stopPropagation(),this.userInteractedWithCoachmark=!0,"click"==t.type&&(e=m.a.Click);const a={creativeId:this.creativeId,coachmarkSource:this.coachmarkSource,currentLayout:this.chromiumCurrentLayout,delayInMs:1e3,eventUrl:this.eventUrl,hideCoachmark:this.hideCoachmark.bind(this),irisAction:e,name:this.currentCoachmarkName?this.currentCoachmarkName:"COACHMARK",positionId:this.positionId,reportEvent:this.reportEvent.bind(this),trackEvent:U,updateCoachmark:this.updateCoachmark};f.a.sendActionEvent(t.currentTarget),((t,e,a)=>{const{ctaBehavior:i}=t;if(i)if(e){if(a)return()=>Object(d.a)(void 0,void 0,void 0,(function*(){e.coachmarkSource===c.e.Iris&&e.reportEvent(m.b.Action,e.eventUrl,e.irisAction,e.creativeId,e.positionId);const a=P(t,e);return a?yield a():null}));f.a.sendAppErrorEvent(Object.assign(Object.assign({},E.hb.EventNotDefined),{message:"Event is not defined"}))}else f.a.sendAppErrorEvent(Object.assign(Object.assign({},E.hb.CoachmarkStateNotDefined),{message:"Coachmark state is not defined"}));else f.a.sendAppErrorEvent(Object.assign(Object.assign({},E.hb.CTATypeNotDefined),{message:"CTA type is not defined"}))})(this.ctaList[0],a,t)()},this.keyDownHandler=t=>{t.keyCode===b.h&&this.closeCoachmark(t,m.a.Dismiss,v.a.Click,v.b.Hide)},this.lastElementKeyDownHandler=t=>{t.keyCode===b.m?t.shiftKey?(t.preventDefault(),this.ctaButtonElement&&this.ctaButtonElement.focus()):(t.preventDefault(),this.closeButtonElement&&this.closeButtonElement.focus()):t.keyCode===b.g&&this.closeCoachmark(t,m.a.Dismiss,v.a.Click,v.b.Hide,!0)}}experienceConnected(){return Object(d.a)(this,void 0,void 0,(function*(){this.coachmarkDataConnector=Object(Q.c)(p.a.CoachmarkData);let t=null;this.coachmarkTelemetryObject=this.telemetryObject?this.telemetryObject.addOrUpdateChild({name:this.currentCoachmarkName?this.currentCoachmarkName:"Coachmark",content:{headline:this.currentCoachmarkName?this.currentCoachmarkName:"Coachmark",type:v.c.Coachmark}}):null,Object(z.c)(p.a.ChromiumPageSettings,t=>{this.chromiumCurrentLayout=t.currentLayout}),this.coachmarkDataConnector?(Object(z.c)(p.a.CoachmarkData,e=>Object(d.a)(this,void 0,void 0,(function*(){if(e&&e.coachmarkMessages){if(t===e.coachmarkMessages)return;t=e.coachmarkMessages,yield this.showAndPositionCoachmark(e.coachmarkMessages)}}))),this.coachmarkDataConnector.getCoachmarks(u.d.MSNNewsCoachmark).then(t=>Object(d.a)(this,void 0,void 0,(function*(){this.convertMessageFormat(t),yield this.showAndPositionCoachmark(c.a.extractMessages(t))})))):S(Object.assign(Object.assign({},E.hb.CoachmarkDataConnectorUndefined),{message:"Coachmark data connector is undefined"}))}))}convertMessageFormat(t){!t||t.length<=0||t.forEach(t=>{t.ctaList.forEach(t=>{t.ctaButtonText=t.ctaText,t.ctaButtonURL=t.destinationurl;const e=t.ctaType;t.ctaType=t.ctaBehavior,t.ctaBehavior=e})})}getExperienceType(){return r.a.coachmarkWC}addAutoDismiss(){if(this.timeoutInMs>0){const t=this.currentMessageIndex;window.setTimeout(()=>{this.addCoachmarkToPage&&(this.addCoachmarkToPage=!this.addCoachmarkToPage,W(`CoachmarkAutoDismissed_${this.currentCoachmarkName}:1`),R("click_nonnav","CoachmarkAutoDismissed_"+this.currentCoachmarkName,this.coachmarkElement,"",v.a.Click,v.b.Hide),this.timeoutTriggered(t))},this.timeoutInMs)}}addCoachmarkMessages(t){if(!t||!t.length)return;this.coachmarkMessageQueue?"object"==typeof this.coachmarkMessageQueue&&this.coachmarkMessageQueue.length&&(this.coachmarkMessageQueue.push(...t),(this.messageIndex<0||this.messageIndex>=this.coachmarkMessageQueue.length)&&(this.messageIndex=this.coachmarkMessageQueue.length-1)):(this.coachmarkMessageQueue=t,this.messageIndex=0);const e=this.coachmarkMessageQueue[this.messageIndex];this.currentCoachmarkName=e.name,this.targetElementKey=e.targetElement,this.creativeId=e.creativeId,this.positionId=e.positionId}cancelTelemetryTag(){return Object.assign({},this.coachmarkTelemetryObject?this.coachmarkTelemetryObject.addOrUpdateChild({name:"Dismiss",behavior:v.b.Close,content:{headline:"Dismiss",type:v.c.Coachmark}}):null)}checkCoachmarkViewportFit(){if(!(window&&this.coachmarkElement&&this.coachmarkElement&&this.coachmarkElement.getBoundingClientRect))return window?"Coachmark element not found or not able to retrieve coachmark size and relative position to viewport":"Window object undefined";const t=this.coachmarkElement.getBoundingClientRect(),e=Object(C.b)((new C.a).data.innerWidth,"innerWidth"),a=`top: ${t.top} bottom: ${t.bottom} left: ${t.left} right: ${t.right}`;return t.top<0?"Too Far Above. Exceeds Page Top. "+a:t.left<0?"Too Far Left. Exceeds Page Side. "+a:t.bottom>window.innerHeight||t.bottom>document.documentElement.clientHeight?"Too Far Below. Exceeds Page Bottom. "+a+` innnerHeight: ${window.innerHeight} clientHeight: ${document.documentElement.clientHeight}`:t.right>e||t.right>document.documentElement.clientWidth?"Too Far Right. Exceeds Page Side. "+a+` width: ${e} clientWidth: ${document.documentElement.clientWidth}`:null}cleanup(){this.targetElement=null,window.removeEventListener("resize",this.windowUpdateEventCallback),window.removeEventListener("scroll",this.windowUpdateEventCallback),window.removeEventListener("click",this.windowClickEventCallback),this.coachmarkElement&&this.coachmarkElement.style&&(this.coachmarkElement.style.top="0",this.coachmarkElement.style.left="0")}findTargetElement(){const t=Object(A.a)(this.targetElementKey);if(!this.floatingPosition)return t||S(Object.assign(Object.assign({},E.hb.GeneralError),{message:`Error rendering ${this.currentCoachmarkName} coachmark due to absent target element: ${this.targetElement} on page.`,pb:Object.assign(Object.assign({},E.hb.GeneralError.pb),{customMessage:`Coachmark: ${this.currentCoachmarkName} not rendered on user screen due to absent target element: ${this.targetElement} on page\n                            creativeId: ${this.creativeId} positionId: ${this.positionId}`})})),t}getCoachmarkElements(){this.closeButtonElement=this.shadowRoot.getElementById(h.closeButton),this.cancelButtonElement=this.shadowRoot.getElementById(h.cancelButton),this.ctaButtonElement=this.shadowRoot.getElementById(h.ctaButton),this.coachmarkElement=this.shadowRoot.getElementById(h.coachmarkElement),this.coachmarkPointerElement=this.shadowRoot.getElementById(h.coachmarkPointerElement)}hideCoachmark(){this.addCoachmarkToPage=!1}initCoachmark(){var t;if(this.addCoachmarkToPage)if(this.targetElement=this.findTargetElement(),this.targetElement||"128000000002304969"==this.creativeId||"128000000002370389"==this.creativeId||this.floatingPosition){this.userInteractedWithCoachmark=!1,this.updateCoachmarkPosition(this.coachmarkPosition),this.showPointer&&this.updatePointer(this.coachmarkPosition,this.pointerPosition);const e=this.checkCoachmarkViewportFit();if(e)return this.removeCoachmarkFromPage(),void S(Object.assign(Object.assign({},E.hb.NotPlaceable),{message:`Coachmark: ${this.currentCoachmarkName} not placeable on user screen`,pb:Object.assign(Object.assign({},E.hb.NotPlaceable.pb),{customMessage:`Error rendering coachmark: ${this.currentCoachmarkName} creativeId: ${this.creativeId} positionId: ${this.positionId}\n                        on user screen. ${e}`})}));if(addEventListener("scroll",this.windowUpdateEventCallback,!1),addEventListener("resize",this.windowUpdateEventCallback,!1),addEventListener("click",this.windowClickEventCallback,!0),this.addAutoDismiss(),this.isTmplStampingRequired&&W(`userEligibleToSeeCoachmark_${this.currentCoachmarkName}:1`),w.a.isNotNullOrUndefined(this.renderCoachmark)&&!this.renderCoachmark)return this.removeCoachmarkFromPage(),void W(`coachmarkSuppressed_${this.currentCoachmarkName}:1`);this.renderCoachmark&&this.isTmplStampingRequired&&W(`coachmarkShown_${this.currentCoachmarkName}:1`),this.coachmarkPlaced(this.currentCoachmarkName,this.creativeId,this.positionId),t=this.coachmarkElement,f.a&&t&&f.a.observeElementTree(t),this.coachmarkSource===c.e.Iris&&this.reportEvent(m.b.Impression,this.eventUrl,void 0,this.creativeId,this.positionId)}else this.removeCoachmarkFromPage(),this.targetElement=null}isECSFeatureFlagsEnabled(t){var e,a;return Object(d.a)(this,void 0,void 0,(function*(){if(this.configData||(this.configData=yield g.a.getConfigData()),!t||!this.configData)return!1;const i=t.split(",");for(const t in i)if(!this.configData[i[t]])return!1;if(i.find(t=>"canLaunchWebWidget"===t)&&(null===(a=null===(e=null===window||void 0===window?void 0:window.chrome)||void 0===e?void 0:e.desktopWidgetPrivate)||void 0===a?void 0:a.isWebWidgetAllowed)){const t=new N.a;return window.chrome.desktopWidgetPrivate.isWebWidgetAllowed(e=>{!0===e?t.set(!0):t.set(!1)}),yield t.getResultAsync()}return!0}))}populateTelemetryTags(t,e,a){return new H.a({name:t.replace(/\s/g,""),behavior:e?v.b[""+e]:a,content:{headline:t.replace(/\s/g,""),type:v.c.Coachmark}})}removeCoachmarkFromPage(){this.coachmarkMessageQueue=null,this.messageIndex=-1,this.addCoachmarkToPage=!1,this.currentCoachmarkName=void 0}reportEvent(t,e,a,i,o){this.coachmarkDataConnector?this.coachmarkDataConnector.reportEvent(t,e,a,i,o):S(Object.assign(Object.assign({},E.hb.CoachmarkDataConnectorUndefined),{message:"Error reporting iris telemetry due to undefined coachmark data connector.",pb:Object.assign(Object.assign({},E.hb.CoachmarkDataConnectorUndefined.pb),{customMessage:`creativeId: ${i} positionId: ${o} irisAction: ${a} eventType: ${t} eventUrl: ${JSON.stringify(e)}`})}))}showAndPositionCoachmark(t){return Object(d.a)(this,void 0,void 0,(function*(){if(t&&!(t.length<=0)){if(this.removeCoachmarkFromPage(),this.addCoachmarkMessages(t),!t[0].floatingPosition){const t=Object(A.c)(this.targetElementKey),e=Object(O.a)(15e3);if(!(yield Promise.race([t,e])))return S(Object.assign(Object.assign({},E.hb.GeneralError),{message:`Waited for 15000ms. Target element with id ${this.targetElementKey} not found. Coachmark ${this.currentCoachmarkName} cannot be rendered on page.`,pb:Object.assign(Object.assign({},E.hb.GeneralError.pb),{customMessage:`Waited for ${e}ms. Target element with id ${this.targetElementKey} not found. Coachmark ${this.currentCoachmarkName} cannot be rendered on page. creativeId: ${this.creativeId} positionId: ${this.positionId}`})})),void this.removeCoachmarkFromPage()}yield this.updateCoachmarkProperty(),yield Object(T.a)(),this.getCoachmarkElements(),this.initCoachmark()}}))}timeoutTriggered(t){t===this.messageIndex&&this.removeCoachmarkFromPage()}updateCoachmark(){this.messageIndex=this.messageIndex+1,this.addCoachmarkToPage=!0,this.currentCoachmarkName=this.coachmarkMessageQueue[this.messageIndex].name}updateCoachmarkPosition(t){let e=0,a=0;const i=document.documentElement.clientWidth,o=document.documentElement.clientHeight,n=this.currentLangDir===k.a.ltr;if(this.targetElement&&this.targetElement.getBoundingClientRect&&this.coachmarkElement&&this.coachmarkElement.style){const o=this.targetElement.getBoundingClientRect(),r=this.coachmarkElement.getBoundingClientRect(),s=this.showPointer?20:7;switch(t){case c.b.Above:e=o.top-r.height-s,a=o.left+o.width/2-r.width/2;break;case c.b.Below:e=o.bottom+s,a=o.left+o.width/2-r.width/2;break;case c.b.Right:e=o.top+o.height/2-r.height/2,a=n?o.right+s:i-o.left+s;break;case c.b.Left:e=o.top+o.height/2-r.height/2,a=n?o.left-r.width-s:i-o.right-r.width-s;break;default:return void S(Object.assign(Object.assign({},E.hb.GeneralError),{message:`Error rendering ${this.currentCoachmarkName} coachmark pointer due to invalid pointer position value`,pb:Object.assign(Object.assign({},E.hb.GeneralError.pb),{customMessage:`Invalid pointer position value for coachmark: ${this.currentCoachmarkName} creativeId: ${this.creativeId} positionId: ${this.positionId}`})}))}}if(this.coachmarkElement&&this.floatingPosition){const t=this.coachmarkElement.getBoundingClientRect(),n=10;switch(this.floatingPosition){case c.f.TopStart:case c.f.BottomStart:a=n;break;case c.f.TopEnd:case c.f.BottomEnd:a=i-t.width-n;break;default:a=n}switch(this.floatingPosition){case c.f.TopStart:case c.f.TopEnd:e=n;break;case c.f.BottomStart:case c.f.BottomEnd:e=o-t.height-n;break;default:e=n}}this.coachmarkElement&&(this.coachmarkElement.style.top=e?Object(K.a)(e):"auto",n?this.coachmarkElement.style.left=a?Object(K.a)(a):"auto":this.coachmarkElement.style.right=a?Object(K.a)(a):"auto")}updateCoachmarkProperty(){var t;return Object(d.a)(this,void 0,void 0,(function*(){let e=null;this.coachmarkMessageQueue&&this.messageIndex>=0&&this.coachmarkMessageQueue[this.messageIndex]&&(e=this.coachmarkMessageQueue[this.messageIndex]),this.currentMessageIndex=this.messageIndex,this.eventUrl=e&&e.eventUrl?e.eventUrl:void 0,this.currentCoachmarkName=this.currentCoachmarkName?this.currentCoachmarkName.replace(/\s/g,""):"coachmark_module_v2";const a=yield this.isECSFeatureFlagsEnabled(e.ecsFeatureFlags);this.renderCoachmark=e&&e.isEcsExperiment?a:this.config.renderCoachmark,this.isTmplStampingRequired=this.config.isTmplStampingRequired,this.renderCoachmark&&(this.actionPauseInMs=null!==(t=e.actionPauseInMs)&&void 0!==t?t:null,this.body=e.body?e.body:null,this.coachmarkPosition=e.coachmarkPosition,this.coachmarkSize=e.coachmarkSize,this.coachmarkWidth=function(t){switch(c.d[t]){case c.d.Small:return"280px";case c.d.Medium:return"320px";case c.d.Large:return"400px";default:return"280px"}}(e.coachmarkSize),this.coachmarkSource=e.coachmarkSource,this.coachmarkZIndex=e.zIndex,this.creativeId=e.creativeId,this.ctaList=e.ctaList,this.ecsFeatureFlags=e.ecsFeatureFlags,this.eventUrl=e.eventUrl,this.floatingPosition=e.floatingPosition,this.head=e.head?e.head:null,this.isEcsExperiment=e.isEcsExperiment,this.leadImage=e.leadImage,this.leadImageAltText=e.leadImageAltText,this.leadImageWidth=function(t){switch(c.d[t]){case c.d.Small:case c.d.Medium:return"24px";case c.d.Large:return"50px";default:return"24px"}}(e.coachmarkSize),this.mainImage=e.mainImage,this.mainImageAltText=e.mainImageAltText,this.mainImageHeight=function(t){switch(c.d[t]){case c.d.Small:return"145px";case c.d.Medium:return"166px";case c.d.Large:return"208px";default:return"166px"}}(e.coachmarkSize),this.mainImageWidth=function(t){switch(c.d[t]){case c.d.Small:return"280px";case c.d.Medium:return"320px";case c.d.Large:return"400px";default:return"320px"}}(e.coachmarkSize),this.name=e.name,this.pointerPosition=e.pointerPosition,this.pointerDropShadow=function(t){const e=document.dir===k.a.ltr;switch(t){case c.b.Above:return"drop-shadow(-1px 4px 1px rgba(0, 0, 0, 0.11))";case c.b.Below:return"drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.11))";case c.b.Left:return e?"drop-shadow(2.2px 1px 1px rgba(0, 0, 0, 0.11))":"drop-shadow(-1.5px 2px 1px rgba(0, 0, 0, 0.11))";case c.b.Right:return e?"drop-shadow(-1.5px 2px 1px rgba(0, 0, 0, 0.11))":"drop-shadow(2.2px 1px 1px rgba(0, 0, 0, 0.11))";default:return null}}(e.coachmarkPosition),this.pointerPoints=function(t){const e=document.dir===k.a.ltr;switch(t){case c.b.Above:return"0,0 13,13 26,0";case c.b.Below:return"0,13 13,0 26,13";case c.b.Right:return e?"13,0 0,13 13,26":"0,0 13,13 0,26";case c.b.Left:return e?"0,0 13,13 0,26":"13,0 0,13 13,26";default:return null}}(e.coachmarkPosition),this.positionId=e.positionId,this.rewardsInfo=e.rewardsInfo,this.showPointer=!0,this.targetElementKey=e.targetElement,this.timeoutInMs=e.timeoutInMs,this.ctaList?(this.ctaList[0]&&(this.ctaButtonOneText=this.ctaList[0].ctaButtonText?this.ctaList[0].ctaButtonText:null,this.ctaButtonOneTelemetryTag=this.populateTelemetryTags(this.ctaList[0].ctaButtonText,this.ctaList[0].ctaType,v.b.View),"Navigate"===this.ctaList[0].ctaType&&this.ctaList[0].ctaButtonURL&&function(t){const e=/^((microsoft-edge:)?https:\/\/((www)|(cn)|(go)|(aka))\.((msn)|(bing)|(skype)|(microsoft)|(ms))(\.com)?)|(edge:\/\/)/.test(t);return e||Object(x.b)(E.hf,"Invalid URL: "+t),e}(this.ctaList[0].ctaButtonURL)&&(this.ctaButtonOneURL=this.ctaList[0].ctaButtonURL)),this.ctaList[1]&&(this.ctaButtonTwoText=this.ctaList[1].ctaButtonText?this.ctaList[1].ctaButtonText:null,this.ctaButtonTwoTelemetryTag=this.populateTelemetryTags(this.ctaList[1].ctaButtonText,this.ctaList[1].ctaType,v.b.Close))):(this.ctaButtonOneText=null,this.ctaButtonTwoText=null),this.cancelButtonTelemetryTag=this.cancelTelemetryTag(),this.addCoachmarkToPage=!!e)}))}updatePointer(t,e){if(!this.coachmarkElement||!this.coachmarkPointerElement)return;const a=this.coachmarkElement.getBoundingClientRect();let i=0,o=0;const n=this.currentLangDir===k.a.ltr;switch(t){case c.b.Above:o=a.left+a.width/2-13,i=a.bottom;break;case c.b.Below:o=a.left+a.width/2-13,i=a.top-13;break;case c.b.Right:o=n?a.left-13:document.documentElement.clientWidth-a.right-26,i=a.top+a.height/2-13;break;case c.b.Left:o=n?a.right:document.documentElement.clientWidth-a.left-13,i=a.top+a.height/2-13;break;default:return}let r=0,s=0;switch(e){case c.c.Adjacent:switch(t){case c.b.Above:case c.b.Below:r=a.width/2-52+13;break;case c.b.Left:case c.b.Right:s=a.height/2-26-13}break;case c.c.Center:break;case c.c.Opposite:switch(t){case c.b.Above:case c.b.Below:r=-1*(a.width/2-26-13);break;case c.b.Left:case c.b.Right:s=-1*(a.height/2-26-13)}break;default:return void S(Object.assign(Object.assign({},E.hb.GeneralError),{message:`Error rendering ${this.currentCoachmarkName} coachmark pointer due to invalid pointer position value`,pb:Object.assign(Object.assign({},E.hb.GeneralError.pb),{customMessage:`Invalid pointer position value for coachmark: ${this.currentCoachmarkName} creativeId: ${this.creativeId} positionId: ${this.positionId}`})}))}this.currentPointerTopOffset=i,this.currentPointerLeftOffset=o,this.coachmarkPointerElement.style.top=Object(K.a)(i),this.coachmarkPointerElement.style.left=n?Object(K.a)(o):"auto",this.coachmarkPointerElement.style.right=n?"auto":Object(K.a)(o),r&&(n?this.coachmarkElement.style.left=Object(K.a)(a.left+r):this.coachmarkElement.style.right=Object(K.a)(a.left+r+10)),s&&(this.coachmarkElement.style.top=Object(K.a)(a.top+s))}ctaButtonKeyDownHandler(t){if(t.keyCode===b.m)if(t.shiftKey)t.preventDefault(),this.closeButtonElement&&this.closeButtonElement.focus();else{t.preventDefault();(this.cancelButtonElement?this.cancelButtonElement:this.closeButtonElement).focus()}else t.keyCode===b.g&&this.ctaButtonHandler(t,m.a.Click)}}Object(d.d)([_.d],V.prototype,"addCoachmarkToPage",void 0),Object(d.d)([_.d],V.prototype,"body",void 0),Object(d.d)([_.d],V.prototype,"cancelButtonTelemetryTag",void 0),Object(d.d)([_.d],V.prototype,"cancelText",void 0),Object(d.d)([_.d],V.prototype,"coachmarkWidth",void 0),Object(d.d)([_.d],V.prototype,"coachmarkTelemetryObject",void 0),Object(d.d)([_.d],V.prototype,"coachmarkZIndex",void 0),Object(d.d)([_.d],V.prototype,"ctaButtonOneTelemetryTag",void 0),Object(d.d)([_.d],V.prototype,"ctaButtonOneText",void 0),Object(d.d)([_.d],V.prototype,"ctaButtonOneURL",void 0),Object(d.d)([_.d],V.prototype,"ctaButtonTwoTelemetryTag",void 0),Object(d.d)([_.d],V.prototype,"ctaButtonTwoText",void 0),Object(d.d)([_.d],V.prototype,"showPointer",void 0),Object(d.d)([_.d],V.prototype,"leadImage",void 0),Object(d.d)([_.d],V.prototype,"leadImageAltText",void 0),Object(d.d)([_.d],V.prototype,"leadImageWidth",void 0),Object(d.d)([_.d],V.prototype,"mainImage",void 0),Object(d.d)([_.d],V.prototype,"mainImageAltText",void 0),Object(d.d)([_.d],V.prototype,"mainImageHeight",void 0),Object(d.d)([_.d],V.prototype,"mainImageWidth",void 0),Object(d.d)([_.d],V.prototype,"pointerDropShadow",void 0),Object(d.d)([_.d],V.prototype,"pointerPoints",void 0),Object(d.d)([_.d],V.prototype,"renderCoachmark",void 0),Object(d.d)([_.d],V.prototype,"head",void 0);var G=a("6BDD"),q=a("6vBc"),X=a("eUhr");const Z=G.b`
+    <img
+        alt=${t=>t.leadImageAltText}
+        class="coachmark_lead_image"
+        src=${t=>t.leadImage}
+        style="width:${t=>t.leadImageWidth}"
+    />
+`,J=G.b`
+    <img
+        alt=${t=>t.mainImageAltText}
+        class="coachmark-mainImage"
+        src=${t=>t.mainImage}
+        style="height:${t=>t.mainImageHeight};width:${t=>t.mainImageWidth}"
+    />
+`,Y=G.b`
+    <div class="pointerContainer">
+        <svg
+            class="pointer"
+            height="26"
+            id="coachmarkPointerElement"
+            style="filter:${t=>t.pointerDropShadow}"
+            viewBox="0 0 26 26"
+            width="26"
+        >
+            <polygon points="${t=>t.pointerPoints}"></polygon>
+        </svg>
+    </div>
+`,tt=G.b`
+    ${Object(q.a)(t=>t.mainImage,J)}
+`,et=G.b`
+    <fluent-button
+        appearance="accent"
+        aria-label=${t=>t.ctaButtonOneText}
+        class="ctaButton"
+        id="ctaButton"
+        tabindex="0"
+        title=${t=>t.ctaButtonOneText}
+        @click=${(t,e)=>t.ctaButtonHandler(e.event)}
+        @keydown=${(t,e)=>t.ctaButtonKeyDownHandler(e.event)}
+        ${Object(X.b)(t=>t.ctaButtonOneTelemetryTag.getMetadataTag())}
+    >
+        ${t=>t.ctaButtonOneText}
+    </fluent-button>
+`,at=G.b`
+    <fluent-anchor
+        appearance="accent"
+        aria-label=${t=>t.ctaButtonOneText}
+        class="ctaButton"
+        href=${t=>t.ctaButtonOneURL}
+        id="ctaButton"
+        tabindex="0"
+        target="_blank"
+        title=${t=>t.ctaButtonOneText}
+        @click=${(t,e)=>t.ctaButtonHandler(e.event)}
+        @keydown=${(t,e)=>t.ctaButtonKeyDownHandler(e.event)}
+        ${Object(X.b)(t=>t.ctaButtonOneTelemetryTag.getMetadataTag())}
+    >
+        ${t=>t.ctaButtonOneText}
+    </fluent-anchor>
+`,it=G.b`
+    <fluent-button
+        appearance="neutral"
+        aria-label=${t=>t.ctaButtonTwoText}
+        class="ctaButton"
+        id="cancelButton"
+        tabindex="0"
+        title=${t=>t.ctaButtonTwoText}
+        @click=${(t,e)=>t.closeCoachmark(e.event,m.a.Dismiss,v.a.Click,v.b.Hide,!0)}
+        @keydown=${(t,e)=>t.lastElementKeyDownHandler(e.event)}
+        ${Object(X.b)(t=>t.ctaButtonTwoTelemetryTag.getMetadataTag())}
+    >
+        ${t=>t.ctaButtonTwoText}
+    </fluent-button>
+`,ot=G.b`
+   <div class="footer-actions">
+         ${Object(q.a)(t=>t.ctaButtonOneText&&!t.ctaButtonOneURL,et)}
+         ${Object(q.a)(t=>t.ctaButtonOneText&&t.ctaButtonOneURL,at)}
+         <span></span>
+         ${Object(q.a)(t=>t.ctaButtonTwoText,it)}
+    </div>
+`,nt=G.b`
+    <div class="coachmark">
+        ${Object(q.a)(t=>t.showPointer,Y)}
+        <fluent-dialog
+            class="dialog"
+            id="coachmarkElement"
+            part="dialog"
+            style="width:${t=>t.coachmarkWidth}"
+            @keydown=${(t,e)=>t.keyDownHandler(e.event)}
+        >
+        ${Object(q.a)(t=>t.showPointer||t.mainImage,tt)}
+            <div class="main-container">
+            <div class="coachmark_content">
+                    <div class="${t=>t.leadImage?"header_lead_image":"header"}">
+                        ${Object(q.a)(t=>t.leadImage,Z)}
+                        <h1 class="coachmark_title">
+                            ${t=>t.head}
+                        </h1>
+                        <div class="input-container">
+                            ${t=>t.body}
+                        </div>
+                    </div>
+                </div>
+                ${Object(q.a)(t=>t.ctaButtonOneText||t.ctaButtonTwoText,ot)}
+            </div>
+            <fluent-button
+                    appearance="stealth"
+                    aria-label=${t=>t.cancelText}
+                    class="close-button"
+                    id="closeButton"
+                    title=${t=>t.cancelText}
+                    @click=${(t,e)=>t.closeCoachmark(e.event,m.a.Dismiss,v.a.Click,v.b.Close)}
+                    @keydown=${(t,e)=>t.closeButtonKeyDownHandler(e.event)}
+                    ${Object(X.b)(t=>t.cancelButtonTelemetryTag)}
+                >
+                    <svg viewBox="0 0 16 16" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg"><path d="M14.1016 1.60156L8.20312 7.5L14.1016 13.3984L13.3984 14.1016L7.5 8.20312L1.60156 14.1016L0.898438 13.3984L6.79688 7.5L0.898438 1.60156L1.60156 0.898438L7.5 6.79688L13.3984 0.898438L14.1016 1.60156Z"></path></svg>
+                </fluent-button>
+        </fluent-dialog>
+    </div>
+`,ct=G.b`
+    ${Object(q.a)(t=>t.addCoachmarkToPage,nt)}
+`;var rt=a("8hiW"),st=a("UPH6"),ht=a("4X57");const dt=ht.a`
+    .close-button {
+        left: auto;
+        right: 4px;
+    }
+    .coachmark_lead_image {
+        margin-left: auto;
+        margin-right: 16px;
+    }
+`,lt=ht.a`
+    .close-button {
+        left: 4px;
+        right: auto;
+    }
+    .coachmark_lead_image {
+        margin-left: 16px;
+        margin-right: auto;
+    }
+`,mt=ht.a`
+    .coachmark_title {
+        grid-column: 2;
+        grid-row: 1;
+        letter-spacing: 0.6px;
+        line-height: 24px;
+        margin-bottom: 12px;
+        -webkit-user-select: none;
+    }
+    .close-button {
+        background: transparent;
+        height: 24px;
+        min-width: 24px;
+        position: absolute;
+        top: 4px;
+    }
+    .close-button::part(control) {
+        margin: 0;
+        padding: 0;
+    }
+    .close-button svg {
+        height: 12px;
+        width: 12px;
+    }
+    .coachmark: {
+        z-index: var(--top-site-dialog-z-index);
+    }
+    .coachmark-mainImage {
+        display: grid;
+        -webkit-user-drag: none;
+    }
+    .coachmark_content {
+        display: grid;
+        grid-template-columns: max-content auto;
+    }
+    .ctaButton {
+        font-size: 12px;
+        height: auto;
+        line-height: 16px;
+        min-height: 32px;
+    }
+    .ctaButton::part(control) {
+        white-space: normal;
+        word-break: break-word;
+    }
+    .dialog {
+        bottom: var(--dialog-bottom, auto);
+        left: var(--dialog-left, auto);
+        position: fixed;
+        right: var(--dialog-right, auto);
+        top: var(--dialog-top, auto);
+        --dialog-height: var(--top-site-dialog-height, auto);
+    }
+    fluent-dialog::part(positioning-region) {
+        border-radius: 2px;
+        overflow: unset;
+        position: var(--dialog-position, relative);
+        width: inherit;
+    }
+    fluent-dialog::part(control) {
+        border: none;
+        height: auto;
+        width: auto;
+    }
+    .footer-actions {
+        margin-top: 14px;
+        text-align: center;
+        width: 100%;
+    }
+    .footer-actions span {
+        display: inline-block;
+    }
+    .footer-actions fluent-button {
+        width: 48%;
+    }
+    .header {
+        grid-column: 2;
+        grid-row: 1;
+        letter-spacing: 0.6px;
+        line-height: 20px;
+    }
+    .header_lead_image:has(> img) {
+        grid-column: 1;
+    }
+    .header_lead_image {
+        display: grid;
+        grid-column: 2;
+        grid-row: 1;
+        letter-spacing: 0.6px;
+        line-height: 20px;
+        text-align: left;
+    }
+    :host {
+        position: relative;
+        --control-corner-radius: 2;
+        --dialog-z-index: 0;
+        --layer-corner-radius: 4;
+    }
+    h1 {
+        color: ${rt.ub};
+        cursor: default;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .input-container {
+        color: ${rt.ub};
+        display: grid;
+        font-family: ${rt.u};
+        font-size: ${rt.Sb};
+        grid-column: 2;
+        grid-row: 2;
+        justify-content: space-between;
+        line-height: 20px;
+        -webkit-user-select: none;
+    }
+    .main-container {
+        background-color: ${rt.yb};
+        display: grid;
+        padding: 14px 16px;
+    }
+    .pointer {
+        fill: var(--neutral-layer-floating);
+        position: fixed;
+        z-index: 2;
+    }
+    .pointerContainer {
+        height: 13px;
+    }
+`.withBehaviors(new st.a(dt,lt)),ut={experienceConfigSchema:s}}}]);

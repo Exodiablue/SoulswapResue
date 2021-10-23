@@ -1,0 +1,204 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["shopping-smart-list"],{"6fq4":function(e,t,i){"use strict";i.d(t,"a",(function(){return n}));var r=i("HDSB");let n=!1;Object(r.a)()&&(window.addEventListener("keydown",()=>{n=!0}),window.addEventListener("mousedown",()=>{n=!1}))},"7wgy":function(e,t,i){"use strict";i.r(t),i.d(t,"ToolingInfo",(function(){return Y})),i.d(t,"ShoppingSmartListWC",(function(){return N})),i.d(t,"ShoppingSmartListWCTemplate",(function(){return _})),i.d(t,"ShoppingSmartListWCStyles",(function(){return Z}));var r=i("Zn5T"),n=i("C49W"),o=i("sydv"),s=i("Pant"),a=i("akWC"),c=i("A03o");function l(e,t,i){return Object(n.f)(e,t,i,Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({},Object(o.c)("additionalUrlAugmentations","Additional Url Augmentations","Additional URL augmentations for ShoppingSmartListWC service ex: '&flightname=ShoppingSmartListWC'")),Object(s.b)("pathComponents","Path components","Path componenets used in Shopping Smart List service path","Path component key","Path component value",Object(o.b)("","Path component key-value pairs"))),Object(s.b)("queryParams","Query params","Query parameters added to the Shopping Smart List service request","Query param key","Query param value",Object(o.b)("","Query param key-value pairs"))),Object(o.c)("serviceBaseUrl","Service base url","Base url of the Shopping Smartlist service")),Object(o.c)("servicePath","Service Api","The Api realative path of the Shopping SmartList service")))}const d=l("primaryServiceClientSettings","Primary Service Client Settings","The shopping smart list primary service client settings"),h=l("secondaryServiceClientSettings","Secondary Service Client Settings","The shopping smart list secondary service client settings. Used in case of fallback"),u=Object(a.a)({ariaLabelFooterLink:"Localization for the footer link Aria Label",ariaLabelOfferItem:"Localization for the offer item Aria Label",ariaLabelTrendingDeals:"Localization for trending deals Aria Label",offerExpiryText:"Localization for the Offer expiry message"}),g=Object(s.b)("formCodes","Form Codes","Section wise form codes","Section key","Form codes for a section",Object(s.a)("Form codes","Form codes appended to clickout urls","form codes key","form code value",Object(o.b)("","Query param key-value pairs"))),p=Object(n.b)("footer","Footer","Fallback Shopping Smart List footer links",Object(n.e)("Footer link Item","The footer link item details",Object.assign(Object.assign({},Object(o.c)("glyphType","Glyph Type","Footer Glyph/Icon Name")),Object(n.f)("link","Link","clickout link details",Object.assign(Object.assign({},Object(o.c)("clickUrl","Click Url","Footer click url")),Object(o.c)("text","Text","Footer link text")),["clickUrl","text"])),["glyphType","link"])),f=Object(c.a)(r.a.shoppingSmartListWC,"Shopping Smart List Structured Data configuration",Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({},Object(n.d)("dataValidityInSeconds","Data Validity In Seconds","The data validity threshold in seconds")),Object(n.c)("enableBadgeNotifications","Enable badge notifications","Enable shopping smartlist badge notifications")),Object(o.c)("gps","gps","Represents experience position and page info")),p),g),Object(n.d)("numberOfFooterItems","Number of Footer Items","Number of footer items to display")),Object(n.d)("numberOfOfferItems","Number of Offer Items","Number of offer items to display")),Object(n.d)("offerExpiryCutOffInSeconds","Offer Expiry Cut-Off In Seconds","Offer expiry cut off time in seconds")),d),h),u),["localizedStrings","gps","numberOfFooterItems","numberOfOfferItems","offerExpiryCutOffInSeconds","primaryServiceClientSettings"]);var m=i("D57K"),v=i("IqCT"),y=i("oePG"),b=i("GqIT"),S=i("XzyE"),O=i("s9+9"),I=i("rvYQ"),x=i("y+Kz"),w=i("ADRF");const C={CardSize:{width:320,height:290},OfferListItemBulletSize:{width:6,height:6},FooterIconSize:{width:16,height:16},FooterLinkSize:{width:256,height:20},ApiVersion:"v1"},j="shopping_smartlist_footer-link",k="shopping_smartlist_offers";var T;!function(e){e[e.ntp=0]="ntp",e[e.dhp=1]="dhp"}(T||(T={}));var L=i("HxRh"),A=i("u5KZ"),M=i("KETb");class q{constructor(e,t,i){this.fetchImpl=e,this.ocid="Peregrine",this.config=i,this.serviceClientSetting=t,this.generateServiceClientSettings()}generateServiceClientSettings(){const e=Object(I.b)(),{apiKey:t,market:i,ocid:r}=x.s;this.serviceClientSetting.queryParams&&(this.queryParamsMap=new Map(Object.entries(this.serviceClientSetting.queryParams)),this.queryParamsMap.set(t,e.OneServiceApiKey),this.queryParamsMap.set("gps",this.config.gps),this.queryParamsMap.set(i,e.CurrentMarket),this.queryParamsMap.set(r,this.ocid),this.queryParamsMap.set("trackingid",e.ActivityId)),this.serviceClientSetting.pathComponents?this.pathComponentsMap=new Map(Object.entries(this.serviceClientSetting.pathComponents)):this.pathComponentsMap=new Map,this.pathComponentsMap.set(i,e.CurrentMarket),this.pathComponentsMap.set("version",C.ApiVersion),this.pathComponentsMap.set("gps",this.config.gps)}getShoppingSmartListData(e){return Object(m.a)(this,void 0,void 0,(function*(){let t=null;return yield this.getShoppingSmartListResponseJson().then(i=>{t=this.TryGetShoppingSmartListData(e,i)}).catch(e=>{A.a.sendAppErrorEvent(Object.assign(Object.assign({},L.Sh.ShoppingSmartListServiceFetchError),{message:"Failed to fetch MSN Shopping Smart List response",pb:Object.assign(Object.assign({},L.Sh.ShoppingSmartListServiceFetchError.pb),{customMessage:"Failed to fetch MSN Shopping Smart List response: "+e})}))}),t}))}getShoppingSmartListResponseJson(){return Object(m.a)(this,void 0,void 0,(function*(){const e={method:"GET",headers:{accept:"application/json"}};let{serviceBaseUrl:t,servicePath:i}=this.serviceClientSetting;const r=[];if(this.queryParamsMap)for(const e of this.queryParamsMap.entries())r.push({key:e[0],value:e[1]});if(this.pathComponentsMap)for(const e of this.pathComponentsMap.entries())i=i.replace(`{${e[0]}}`,e[1]);const n=new URL(i,t);n.search=w.a.keyValueArrayToQueryString(r),this.serviceClientSetting.additionalUrlAugmentations&&(n.search=n.search.concat(this.serviceClientSetting.additionalUrlAugmentations));return yield Object(M.b)(()=>Object(m.a)(this,void 0,void 0,(function*(){const t=yield this.fetchImpl(n.href,e);if(!t.ok)throw Error(t.statusText);return t.json()})),"getShoppingSmartListData")}))}TryGetShoppingSmartListData(e,t){if(!t)return A.a.sendAppErrorEvent(Object.assign(Object.assign({},L.Sh.ShoppingSmartListServiceEmptyResponse),{message:"Received empty ShoppingSmartList response."})),null;let{footer:i,offers:r}=t;const n="1"===w.a.getQueryParameterByName("startpage",e)?T.dhp:T.ntp;i||(i=this.config.footer),i.length<this.config.numberOfFooterItems&&(A.a.sendAppErrorEvent(Object.assign(Object.assign({},L.Sh.ShoppingSmartListServiceInvalidResponse),{message:"Response does not contain minimum required number of footer items."})),i=this.config.footer);const o=this.getFormCode("footer",n);if(i&&i.forEach(e=>{e&&e.link&&e.link.clickUrl&&o&&(e.link.clickUrl=`${e.link.clickUrl}&FORM=${o}`)}),!r)return A.a.sendAppErrorEvent(Object.assign(Object.assign({},L.Sh.ShoppingSmartListServiceMissingRequiredFields),{message:"Missing required fields in ShoppingSmartList response."})),null;r.length<this.config.numberOfOfferItems&&A.a.sendAppErrorEvent(Object.assign(Object.assign({},L.Sh.ShoppingSmartListServiceInvalidResponse),{message:"Response does not contain minimum required number of offers items."}));const s=this.getFormCode("offers",n);return r&&(r=r.filter(e=>!!(e.id&&e.clickUrl&&e.merchantName&&e.title)&&(e.clickUrl=s&&`${e.clickUrl}&FORM=${s}`,!0))),{footer:i,offers:r}}getFormCode(e,t){const{formCodes:i}=this.config;return i&&i[e]&&i[e][T[t]]}}var D=i("tMmC"),E=i("Am8i");class R{constructor(e){this.experienceType=r.a.shoppingSmartList,this.renderShouldFire=e=>{var t,i;const r=null==e?void 0:e.getBoundingClientRect();if(!(r&&r.top&&r.bottom&&r.left&&r.right))return;const{numberOfOfferItems:n=3,numberOfFooterItems:o=2,offerExpiryCutOffInSeconds:s}=this.wcInstance.config;this.wcInstance.targetTopsSitesRect=r,this.wcInstance.hoverFlyoutOpen=!0;const a=this.wcInstance.telemetryObject;this.wcInstance.footer=null===(t=this.footer)||void 0===t?void 0:t.slice(0,o).map((e,t)=>(e.telemetryTag=a.addOrUpdateChild({name:`${j}-${t+1}`,behavior:E.b.Navigate}).getMetadataTag(),e.index=t,e.ariaHelpText=this.wcInstance.strings.ariaLabelFooterLink,e)),this.wcInstance.offers=null===(i=this.offers)||void 0===i?void 0:i.filter(e=>{const t=Date.now()+1e3*s;return!(e.expiryUnixTime&&e.expiryUnixTime<=t)}).slice(0,n).map((e,t)=>(e.telemetryTag=a.addOrUpdateChild({name:`${k}-${t+1}`,behavior:E.b.Navigate}).getMetadataTag(),e.isOfferExpired=!e.annotation&&e.timeLeftForExpiry&&e.timeLeftForExpiry<=0,e.index=t,e.offerExpiryText=this.wcInstance.strings.offerExpiryText,e.ariaHelpText=this.wcInstance.strings.ariaLabelOfferItem,e))},this.unmountShouldFire=()=>{this.wcInstance.hoverFlyoutOpen=!1},this.focusShouldMove=e=>e,this.wcInstance=e}updateData(e){const{enableBadgeNotifications:t}=this.wcInstance.config;if(e){const i=b.a.getInstance().rootReducer.connector(O.a.SmartListSharedData),n={};return this.footer=e.footer,this.offers=e.offers,t&&i&&(n.children=e.offers.length.toString(),S.a.updateSmartListBadgeProps.getActionSender(i).send(r.a.shoppingSmartList,n)),!0}return!1}initShouldFire(){const{primaryServiceClientSettings:e,secondaryServiceClientSettings:t}=this.wcInstance.config,i=window.fetch.bind(window);let r=new q(i,e,this.wcInstance.config);r.getShoppingSmartListData(location.href).then(e=>{this.updateData(e)||(D.a.logError("Failed to fetch offers data from primary source"),t?(r=new q(i,t,this.wcInstance.config),r.getShoppingSmartListData(location.href).then(e=>{this.updateData(e)||D.a.logError("Failed to fetch offers data from secondary source")})):D.a.logError("Failed to fetch offers data from primary source. No fallback source available"))})}}var $=i("JnE6"),F=i("L1Sn");class N extends v.a{experienceConnected(){this.currentTime=Date.now();const e=b.a.getInstance().rootReducer.connector(O.a.SmartListSharedData);e&&S.a.registerSmartList.getActionSender(e).send(new R(this))}targetTopsSitesRectChanged(e,t){t?(this.currentTimerController=setInterval(()=>this.currentTime=Date.now(),1e3),setTimeout(()=>{this.shadowRoot.querySelectorAll(".telemetryAnchor").forEach(e=>{F.a.addElement(e),A.a.sendContentViewEvent(e,$.b.View)})},300)):this.currentTimerController&&clearInterval(this.currentTimerController)}getExperienceType(){return r.a.shoppingSmartListWC}onClosed(){this.targetTopsSitesRect=void 0}}Object(m.d)([y.d],N.prototype,"footer",void 0),Object(m.d)([y.d],N.prototype,"hoverFlyoutOpen",void 0),Object(m.d)([y.d],N.prototype,"numberOfFooterItems",void 0),Object(m.d)([y.d],N.prototype,"numberOfOfferItems",void 0),Object(m.d)([y.d],N.prototype,"offers",void 0),Object(m.d)([y.d],N.prototype,"requestOpen",void 0),Object(m.d)([y.d],N.prototype,"targetTopsSitesRect",void 0),Object(m.d)([y.d],N.prototype,"articleAriaHelpText",void 0),Object(m.d)([y.d],N.prototype,"currentTime",void 0),Object(m.d)([y.d],N.prototype,"currentTimerController",void 0);var P=i("6BDD"),U=i("6vBc"),z=i("UNqU"),B=i("cc39"),V=i("pcN6"),H=i("eUhr"),W=i("3KaK");B.a,V.a;const K=P.b`<a aria-label="${e=>e.ariaHelpText}" class="item" href="${e=>e.clickUrl}" rel="noopener" target="_blank">
+      <div class="offerItemContainerStyle telemetryAnchor" ${Object(H.b)(e=>e.telemetryTag)}>
+        <div class="offerItemBulletDiv">
+            ${e=>P.b`<div class= "${"offerItemBullet "+(e.isOfferExpired?"expiredOfferItemBullet":"validOfferItemBullet")}" />`}
+        </div>
+        <div class="${e=>e.isOfferExpired?"expiredOffer":"validOffer"}">
+            <div class="offerItemTitleDiv">
+                <span class="offerItemTitleText">
+                    ${e=>e.title}
+                </span>
+            </div>
+            <div class="offerItemDetailsDiv">
+                <span class="offerMerchantName">
+                    ${e=>e.merchantName}
+                </span>
+            </div>
+            ${e=>e.annotation?P.b`<div class="offerDecoration"><span>${e.annotation}</span></div>`:""}
+             ${e=>!e.annotation&&e.expiryUnixTime?P.b`
+                <div class="offerDecoration">
+                    <span class="offerTimerRoot">${function(e){if(e>864e5){const t=new Date(Date.now()+e);return`Valid till ${t.getDate()} ${t.toLocaleString("default",{month:"short"})} ${t.getFullYear()}`}e/=1e3;const t=Math.floor(e/3600);e%=3600;const i=Math.floor(e/60);return e=Math.floor(e%60),t>0?`${t} hours ${i>0?i+" mins":""}  to go`:i>0?`${i} mins ${e>0?e+" secs":""} to go`:e>0?e+" secs to go":void 0}(e.expiryUnixTime-e.currentTime)||e.offerExpiryText}</span>
+                </div>`:""}
+        </div>
+    </div>
+</a>`,G=P.b`<a aria-label="${e=>e.ariaHelpText}" class="item" href="${e=>{var t;return null===(t=e.link)||void 0===t?void 0:t.clickUrl}}" rel="noopener" target="_blank">
+    <div class="${e=>0===e.index?"footerFirstItemDivStyle":"footerItemDivStyle"} telemetryAnchor" ${Object(H.b)(e=>e.telemetryTag)}>
+        <div class="clickoutIconDiv">
+            ${e=>(e=>{const t=!Object(W.e)();switch(e){case"ShoppingDeals":return P.b`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="16" height="16">
+                    <path d="M624 832q0 36-14 68t-38 56-56 38-68 14q-36 0-68-14t-56-38-38-56-14-68q0-36 14-68t38-56 56-38 68-14q36 0 68 14t56 38 38 56 14 68zm-176 80q33 0 56-23t24-57q0-33-23-56t-57-24q-33 0-56 23t-24 57q0 33 23 56t57 24zm512 128q36 0 68 14t56 38 38 56 14 68q0 36-14 68t-38 56-56 38-68 14q-36 0-68-14t-56-38-38-56-14-68q0-36 14-68t38-56 56-38 68-14zm0 256q33 0 56-23t24-57q0-33-23-56t-57-24q-33 0-56 23t-24 57q0 33 23 56t57 24zM842 640h108l-384 768H458l384-768zm566-256l640 640-640 640H0V384h1408zm-53 1152l512-512-512-512H128v1024h1227zm181-576q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19z" fill="${t?"#383838":"#F5F5F5"}"/>
+                    </svg>`;case"WeeklyAds":default:return P.b`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="16" height="16">
+                    <path d="M1664 1426q39 14 83 35t83 50 64 67 26 86q0 52-22 95t-59 75-82 53-93 28v133h-128v-133q-35-5-68-17t-63-30-54-42-43-56l112-63q17 32 49 50t67 27v-266q-38-13-82-34t-83-50-65-68-26-86q0-52 22-95t59-75 82-52 93-29V896h128v133q34 5 67 17t64 30 54 42 43 56l-112 63q-17-32-49-50t-67-27v266zm-128-266q-21 5-43 15t-41 25-31 36-13 44q0 15 16 31t37 30 42 25 33 15v-221zm128 624q21-5 43-15t41-25 31-36 13-44q0-15-16-31t-37-30-42-24-33-16v221zm-490 8q20 36 41 67t53 61H128v-128h128q0-106 30-206t91-189q31-46 65-82t72-67 81-55 93-50q36-17 58-47t22-72q0-42-21-71t-59-47q-49-23-92-49t-82-56-72-68-65-82q-60-88-90-188t-31-207H128V128h1664v128h-128q0 106-30 206t-91 189q-31 45-65 82t-72 67-82 57-92 49q-37 17-58 46t-22 72q0 27 11 51t32 43q-16 29-25 61t-14 66q-60-34-96-93t-36-128q0-81 43-142t115-95q81-37 146-90t112-121 71-148 25-172H384q0 91 25 171t71 148 111 121 147 91q72 33 115 94t43 143q0 81-43 142t-115 95q-81 37-146 90t-112 121-71 148-25 172h790z" fill="${t?"#383838":"#F5F5F5"}"/>
+                    </svg>`}})(e.glyphType)}
+        </div>
+        <div class="clickoutLinkDiv">
+            <span class="clickoutLink">  ${e=>{var t;return null===(t=e.link)||void 0===t?void 0:t.text}} </span>
+        </div>
+    </div>
+</a>`,_=P.b`
+${Object(U.a)(e=>{var t;return!!e.targetTopsSitesRect&&(null===(t=e.offers)||void 0===t?void 0:t.length)},P.b`<hover-flyout
+    class="root"
+    :targetRect="${e=>e.targetTopsSitesRect}"
+    :flyoutWidth="${()=>C.CardSize.width}"
+    :requestOpen="${e=>e.hoverFlyoutOpen}"
+    :onClosed="${(e,t)=>e.onClosed.bind(e)}">
+        <div id="shoppingSmartListWC" class="telemetryAnchor" ${Object(H.b)(e=>e.telemetryObject.getMetadataTag())}>
+            <hover-flyout-list aria-label="${e=>e.strings.ariaLabelTrendingDeals}" @blurHandler=${e=>e.onClosed()}>
+                <div slot="list">
+                    ${Object(z.c)(e=>(e.offers||[]).map(t=>Object.assign(Object.assign({},t),{currentTime:e.currentTime})),K)}
+                    ${Object(z.c)(e=>e.footer||[],G)}
+                </div>
+            </hover-flyout-list>
+        </div>
+    </hover-flyout>`)}
+`;var Q=i("4X57"),X=i("8hiW"),J=i("0fst");const Z=Q.a`
+.item {
+    display: flex;
+    text-decoration: none;
+}
+.item:hover {
+    background: ${X.ib};
+}
+.item:active {
+    background: ${X.fb};
+}
+.item:focus {
+    background: ${X.fb};
+}
+.root {
+    margin: 0 auto;
+    background-color:${X.yb};
+    z-index: ${String(J.a.Flyout)};
+}
+.root::part(contentWrapper){
+    background-color:${X.yb};
+}
+.clickoutIconDiv {
+    width: ${C.FooterIconSize.width.toString()}px;
+    height: ${C.FooterIconSize.height.toString()}px;
+    padding: 7px 6px;
+}
+.clickoutIconDiv svg{
+    width:100%;
+}
+.clickoutLink {
+    color: ${X.ub};
+    line-height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    max-height: 20px;
+    white-space: nowrap;
+    display:inline-block;
+}
+.clickoutLinkDiv {
+    width: ${C.FooterLinkSize.width.toString()}px;
+    padding: 6px;
+    overflow: hidden;
+}
+.footerFirstItemDivStyle {
+    height: 32px;
+    display: flex;
+    padding: 6px 10px 0px 10px;
+}
+.footerItemDivStyle {
+    height: 34px;
+    display: flex;
+    padding: 0px 10px;
+}
+.offerItemContainerStyle {
+    color: ${X.Fb};
+    display: flex;
+    padding: 6px;
+    border-bottom: 1px solid;
+}
+.offerItemBullet {
+    width:	${C.OfferListItemBulletSize.width.toString()}px;
+    height:	${C.OfferListItemBulletSize.height.toString()}px;
+    border-radius: 4px;
+}
+.expiredOfferItemBullet {
+    background: ${X.sb};
+}
+.validOfferItemBullet {
+    background: ${X.g};
+}
+.offerItemBulletDiv {
+    padding: 15px 6px;
+}
+.offerItemTitleDiv {
+    width: 278px;
+    overflow: hidden;
+    padding-bottom: 2px;
+}
+.offerItemTitleText {
+    color: ${X.ub};
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    box-sizing: content-box;
+    max-height: 20px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+.offerItemDetailsDiv {
+    justify-content: flex-start;
+    overflow: hidden;
+    max-width: 118px;
+    padding-top: 2px;
+}
+.offerMerchantName {
+    line-height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    max-height: 20px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+.offerDecoration {
+    overflow: hidden;
+    max-width: 140px;
+    line-height: 16px;
+    padding-top: 2px;
+    font-size: 12px;
+    padding-bottom: 1px;
+}
+.validOffer {
+    color: ${X.g};
+    padding: 6px;
+}
+.expiredOffer {
+    color: ${X.sb};
+    padding: 6px;
+}
+`,Y={experienceConfigSchema:f}},KETb:function(e,t,i){"use strict";i.d(t,"a",(function(){return M})),i.d(t,"b",(function(){return q}));var r=i("D57K"),n=i("XlyT"),o=i("IhCV"),s=i("z2Ro"),a=i("vq4Z"),c=i("VcDS");class l extends s.a{constructor(e,t,i,r){super(e,i,c.a.BeginActivity,o.a.newGuid(),new Date,t),this.LogLevel=a.a.Activity,this.Ended=!1,this.correlationVector=r}}var d=i("KSHU"),h=i("mRXR");class u extends s.a{constructor(e,t,i,r,n,s,l,d){super(e,d,c.a.BeginNetworkActivity,o.a.newGuid(),new Date,l),this.serviceName=t,this.LogLevel=a.a.Activity,this.Ended=!1,this.requestUri=i,this.requestHttpMethod=r,this.currentOperationName=n,this.correlationVector=s}}var g=i("9RHM");class p extends d.a{constructor(e,t){super(e),this.correlationVectorProvider=t}static getInstance(e,t){var i=e||"Default",r=p.InstancesMap[i];if(r)return r;var n=new h.a(i,a.a.Activity);return r=new p(n,t),p.InstancesMap[i]=r,r}isActivityEnabled(){return this.logger.isEnabledFor(a.a.Activity)}createActivity(e,t,i){if(this.isActivityEnabled()){let r,n;t&&(r=t.ActivityId,n=this.getVectorForNewActivity(t,!1));let o=new l(e,r,i,n);return this.logger.log(a.a.Activity,o),o}return t||null}createActivityCallback(e,t,i){return this.isActivityEnabled()?this.createActivity(e(),t,i):t||null}endActivity(e){if(this.isActivityEnabled()&&e&&!e.Ended){e.Ended=!0;const t=new Date,i=Object(g.a)(e);i.LogType=c.a.EndActivity,i.LogDateTime=t;const r=i.LogDateTime.getTime()-e.LogDateTime.getTime();i.Message=i.Message+" ElapsedTime (Milliseconds):"+r.toString(),i.elapsedTimeInMs=r,this.logger.log(a.a.Activity,i)}}createNetworkActivity(e,t,i,r,n,o,s,a){if(this.isActivityEnabled()){o||s||console.warn("'correlationVector' or 'parentActivity' is required to create network activity");let c=o||this.getVectorForNewActivity(s,!0),l=s?s.ActivityId:"";return new u(e,t,i,r,n,c,l,a)}return null}endSuccessfulNetworkActivity(e,t,i){this.endNetworkActivity(e,!0,t,i)}endFailedNetworkActivity(e,t,i,r){this.endNetworkActivity(e,!1,t,i,r)}endNetworkActivity(e,t,i,r,n){if(e&&!e.Ended){e.Ended=!0;let o=new Date,s=Object(g.a)(e);s.LogType=c.a.EndNetworkActivity,s.LogDateTime=o,s.elapsedTimeInMs=s.LogDateTime.getTime()-e.LogDateTime.getTime(),s.successful=t,s.responseSize=i,s.responseStatusCode=r,s.errorMessage=n,this.logger.log(a.a.Activity,s)}}getVectorForNewActivity(e,t){return e&&this.correlationVectorProvider?(e.latestChildCorrelationVector?e.latestChildCorrelationVector=this.correlationVectorProvider.incrementExternalVector(e.latestChildCorrelationVector):(e.latestChildCorrelationVector=this.correlationVectorProvider.extendExternalVector(e.correlationVector),t&&(e.latestChildCorrelationVector=this.correlationVectorProvider.incrementExternalVector(e.latestChildCorrelationVector))),e.latestChildCorrelationVector):""}}p.InstancesMap={};var f=i("/wq8");class m{constructor(e){if(this.loggingService=e,!e)throw"loggingService is required for LoggedExceptionManager."}error(e){throw this.loggingService.error(e),e}fatal(e){throw this.loggingService.fatal(e),e}}var v=i("HDSB");class y{constructor(e,t,i,r,n,o,s){if(!e)throw new Error("loggingService is required for ExponentialBackoffRetry.");const a=new m(e);this.logInvalidParams(a,t,i,r,n,s),this.loggingService=e,this.maxRetries=t||y.defaultMaxRetries,this.baseRetryDelayInMs=i||y.defaultBaseRetryDelayInMs,this.maxRetryDelayInMs=r||y.maxAllowedRetryDelayInMs,this.factor=n||y.defaultFactor,this.minOffsetInMs=o||y.defaultMinOffsetInMs,this.maxOffsetInMs=s||y.defaultMaxOffsetInMs,Object(v.a)()&&this.loggingService.infoCallback(()=>"ExponentialBackoffRetry has been configured.",null,{maxRetries:t,minTimeout:i,maxTimeout:r,factor:n})}executeRequest(e,t,i){return Object(r.a)(this,void 0,void 0,(function*(){return new Promise((n,o)=>Object(r.a)(this,void 0,void 0,(function*(){yield this.tryRequest(e,n,o,0,t,i)})))}))}logInvalidParams(e,t,i,r,n,o){t&&(t<1||t>y.maxAllowedRetries)&&e.fatal(`maxRetries should be at least 1 and less than ${y.maxAllowedRetries}.`),i&&i<y.defaultBaseRetryDelayInMs&&e.fatal("baseRetryDelay has to be a positive value greater than or equal to 100."),i&&o&&i<=o&&e.fatal("baseRetryDelay must not be smaller than the maximum delay offset."),r&&(r<=0||r>y.maxAllowedRetryDelayInMs)&&e.fatal(`maxRetryDelay has to be a positive value less than ${y.maxAllowedRetryDelayInMs}.`),n&&n<=0&&e.fatal("factor has to be a positive value.")}tryRequest(e,t,i,n,o,s){return Object(r.a)(this,void 0,void 0,(function*(){try{const i=1e4,r=yield this.timeoutServiceRequest(i,e());t(r)}catch(r){if(Object(v.a)()&&n<this.maxRetries){const a=3,c=parseFloat((Math.random()*(this.minOffsetInMs-this.maxOffsetInMs)+this.maxOffsetInMs).toFixed(a)),l=.5,d=Math.random()<l?-1:1,h=Math.min(this.baseRetryDelayInMs*Math.pow(this.factor,n),this.maxRetryDelayInMs)+c*d;this.loggingService.warnCallback(()=>`Retrying the request in ${h} milliseconds.`,s,{error:r,currentRetry:n+1,requestInfo:o}),setTimeout(()=>this.tryRequest(e,t,i,n+1,o,s),h)}else this.loggingService.errorCallback(()=>Object(v.a)()&&n<this.maxRetries?"ExponentialBackoffRetry has exceeded maximum retries "+this.maxRetries:"Request has failed.",s,{error:r,currentRetry:n,requestInfo:o}),i(r)}}))}timeoutServiceRequest(e,t){return Object(r.a)(this,void 0,void 0,(function*(){return new Promise((i,n)=>Object(r.a)(this,void 0,void 0,(function*(){const r=setTimeout(()=>n(new Error("Service Request Timed out!")),e);try{const e=yield t;i(e),clearTimeout(r)}catch(e){n(e),clearTimeout(r)}})))}))}}y.defaultBaseRetryDelayInMs=100,y.defaultFactor=2,y.defaultMaxOffsetInMs=25,y.defaultMaxRetries=5,y.defaultMinOffsetInMs=1,y.maxAllowedRetries=10,y.maxAllowedRetryDelayInMs=2e3;var b,S=i("VOUN"),O=i("hqLi");class I extends s.a{constructor(e,t,i,r,n){super(e,i,c.a.Instrumentation,r,n),this._counterName=e,this.CounterValue=t}get CounterName(){return this._counterName}incrementValue(){if("number"!=typeof this.CounterValue)throw"ERROR: Counter value is never initialized, cannot perform increment action.";this.CounterValue++}}class x extends d.a{constructor(e){super(e)}static getInstance(e){const t=e||"Default";let i=x.InstancesMap[t];if(i)return i;let r=new h.a(t,a.a.Trace);return i=new x(r),x.InstancesMap[t]=i,i}static getDimensionedLogItems(e,t){let i=[],r=new I(e.CounterName,e.CounterValue,Object(g.a)(e.Data),e.ActivityId,e.LogDateTime);if(r.LogLevel=a.a.Trace,i.push(r),t&&!Object(O.a)(t))for(let r of Object.keys(t))for(let n of t[r]){let t=r.indexOf(":")>-1?`${e.CounterName}(${r.replace(":","-")}: ${n})`:`${e.CounterName}(${r}: ${n})`,o=new I(t,e.CounterValue,Object(g.a)(e.Data),e.ActivityId,e.LogDateTime);o.LogLevel=a.a.Trace,i.push(o)}return i}logPerfCounter(e,t,i,r){const n=new I(e,t,r);this.logPerfCounterItem(n,i)}logPerfCounterItem(e,t){const i=x.getDimensionedLogItems(e,t);for(let e of i)this.logger.log(a.a.Trace,e)}}x.InstancesMap={};class w extends s.a{constructor(e,t,i,r,n,o,s,c){super(e,s),this.pageName=e,this.LogLevel=a.a.Activity,this._userActivityType=t,this.correlationVector=i,this.trackingData=r,this.pageTitle=n,this.pageUri=o,this.eventData=c}get userActivityType(){return this._userActivityType}}!function(e){e[e.None=0]="None",e[e.PageAction=1]="PageAction",e[e.PageView=2]="PageView"}(b||(b={}));class C extends d.a{constructor(e){super(e)}static getInstance(e){var t=e||"Default",i=C.InstancesMap[t];if(i)return i;var r=new h.a(t,a.a.Activity);return i=new C(r),C.InstancesMap[t]=i,i}isActivityTrackingEnabled(){return this.logger.isEnabledFor(a.a.Activity)}logPageView(e,t,i,r,n,o){this.isActivityTrackingEnabled()&&this.logger.log(a.a.Activity,this.getUserActivityLogItem(e,t,i,n,o,r))}logPageActionEvent(e,t,i,r,n,o,s){if(this.isActivityTrackingEnabled()){if(!e)throw"''eventData' required for logging page action event.";e.elementTitle&&e.eventType&&e.elementTitle.trim()&&e.eventType.trim()&&this.logger.log(a.a.Activity,this.getUserActivityLogItem(t,i,r,o,s,n,e))}}getUserActivityLogItem(e,t,i,r,n,o,s){if(!e)throw"''pageName' is required for logging user activity.";return s?new w(e,b.PageAction,t,i,r,n,o,s):new w(e,b.PageView,t,i,r,n,o)}}C.InstancesMap={};class j{constructor(e,t,i,r){this.loggingServiceInstance=e||S.a.getInstance(),this.activityServiceInstance=t||p.getInstance(),this.userActivityServiceInstance=i||C.getInstance(),this.perfCounterServiceInstance=r||x.getInstance()}get loggingService(){return this.loggingServiceInstance}get activityLoggingService(){return this.activityServiceInstance}get userActivityTrackingService(){return this.userActivityServiceInstance}get perfCounterLoggingService(){return this.perfCounterServiceInstance}getLoggingServiceByName(e){return this.checkLoggerName(e),S.a.getInstance(e)}getActivityLoggingServiceByName(e){return this.checkLoggerName(e),p.getInstance(e)}getUserActivityTrackingServiceByName(e){return this.checkLoggerName(e),C.getInstance(e)}getPerfCounterLoggingServiceByName(e){return this.checkLoggerName(e),x.getInstance(e)}addActivityLoggingService(e){this.checkServiceInstance(e),p.getInstance(e.getLoggerName())}checkLoggerName(e){if(!e)throw"'loggerName' is required."}checkServiceInstance(e){if(!e)throw"'serviceInstance' is required."}}var k=i("msIb"),T=i("tMmC");let L,A;function M(e,t,i){return Object(r.a)(this,void 0,void 0,(function*(){let r,o;try{if(r=yield fetch(e,t),r&&r.ok)return r}catch(t){Object(n.c)(t,i,"Exception calling 1S primary Url: "+e)}return r&&r.headers&&r.headers.get("OneWebServiceLatency")?r:e.indexOf("assets.msn.com/service/")>0?(o=e.replace("assets.msn.com/service/","api.msn.com/"),yield fetch(o,t)):r}))}function q(e,t){return Object(r.a)(this,void 0,void 0,(function*(){const i=D().activityLoggingService.createActivity(t);return yield k.a.serviceRequestOnComplete(()=>function(){if(A)return A;return A=new y(D().loggingService,3),A}().executeRequest(e,null,i),()=>D().activityLoggingService.endActivity(i))}))}function D(){if(L)return L;const e=p.getInstance("ExperienceActivityLogger");return Object(v.a)()&&T.a.isDebug()&&e.addAppender(new f.a(a.a.Activity)),L=new j(T.a.getLoggingService(),e),L}},Pant:function(e,t,i){"use strict";i.d(t,"a",(function(){return o})),i.d(t,"b",(function(){return s}));var r=i("C49W"),n=i("wAA9");const o=(e,t,i,o,s,a,c,l)=>{const d=Object(r.e)(e,t,c,l);a&&Object.assign(d,{[n.a.propertyNames]:{enum:a}});const h=Object.assign(Object.assign({},s),{[n.a.title]:o});return Object.assign(d,{[n.a.additionalProperties]:h})},s=(e,t,i,r,n,s,a,c,l)=>({[e]:Object.assign({},o(t,i,r,n,s,a,c,l))})},cc39:function(e,t,i){"use strict";i.d(t,"a",(function(){return u}));var r=i("D57K"),n=i("P4Ao"),o=i("oePG"),s=i("6fq4"),a=i("Gy7L");class c extends n.a{constructor(){super(...arguments),this.isTransparent=!1,this.handleResize=()=>{this.onClosed(!0)},this.handleScroll=()=>{this.onClosed(!0)}}get styles(){if(!this.targetRect)return;const e=this.targetRect.top+this.targetRect.bottom<window.innerHeight;let t,i,r,n=Math.round((this.targetRect.left+this.targetRect.right-this.flyoutWidth)/2);n<16?n=16:n>innerWidth-16-this.flyoutWidth&&(n=innerWidth-16-this.flyoutWidth);const o=n+"px",s=this.flyoutWidth+"px";if(e){const e=this.targetRect.bottom+0;r=e+"px",i=window.innerHeight-e-16+"px"}else{t=window.innerHeight-this.targetRect.top+0+"px",i=this.targetRect.top-0-16+"px"}return`bottom: ${t}; left: ${o}; max-height: ${i};  top: ${r}; width: ${s};`}requestOpenChanged(e,t){t?(this.cancelCloseIfNeeded(),this.cancelStrayMouseTimerIfNeeded()):this.startStrayMouseTimerIfNeeded()}connectedCallback(){super.connectedCallback(),window.addEventListener("resize",this.handleResize),window.addEventListener("scroll",this.handleScroll),this.isTransparent=!0}disconnectedCallback(){window.removeEventListener("resize",this.handleResize),window.removeEventListener("scroll",this.handleScroll),this.cancelStrayMouseTimerIfNeeded(),this.cancelCloseIfNeeded()}handleBlur(e){this.focusInFlyout=!1,this.startStrayMouseTimerIfNeeded()}handleFocus(e){s.a&&(this.focusInFlyout=!0,this.cancelCloseIfNeeded(),this.cancelStrayMouseTimerIfNeeded())}handleKeyDown(e){e.keyCode===a.h&&this.onClosed(!0)}handleMouseEnter(e){this.mouseOverFlyout=!0,this.cancelCloseIfNeeded(),this.cancelStrayMouseTimerIfNeeded()}handleMouseLeave(e){this.mouseOverFlyout=!1,this.startStrayMouseTimerIfNeeded()}cancelCloseIfNeeded(){this.closeAnimationTimerHandle&&clearTimeout(this.closeAnimationTimerHandle),this.isTransparent||(this.isTransparent=!0)}cancelStrayMouseTimerIfNeeded(){this.strayMouseTimerHandle&&clearTimeout(this.strayMouseTimerHandle)}startStrayMouseTimerIfNeeded(){this.strayMouseTimerHandle=setTimeout(()=>{this.mouseOverFlyout||this.focusInFlyout||(this.startClosing(),this.strayMouseTimerHandle=null)},200)}startClosing(){this.closeAnimationTimerHandle=setTimeout(()=>{this.onClosed(!1)},200),this.isTransparent=!1}}Object(r.d)([o.d],c.prototype,"flyoutWidth",void 0),Object(r.d)([o.d],c.prototype,"isTransparent",void 0),Object(r.d)([o.d],c.prototype,"onClosed",void 0),Object(r.d)([o.d],c.prototype,"requestOpen",void 0),Object(r.d)([o.d],c.prototype,"targetRect",void 0),Object(r.d)([o.f],c.prototype,"styles",null);var l=i("0fst");const d=i("4X57").a`
+    .hoverFlyout {
+        box-shadow: 2px 5px 20px 0px rgba(0,0,0,0.22), 0px 13px 13px rgba(0,0,0,0.18);
+        border-radius: 4px;
+        opacity: 1;
+        overflow: auto;
+        position: fixed;
+        transition: opacity .2s ease-in;
+        opacity:1;
+        z-index: ${l.a.Flyout.toString()}
+    }
+    .hoverFlyout.hide{
+        opacity: 0;
+    }
+`;const h=i("6BDD").b`
+    <div
+        @blur=${(e,t)=>e.handleBlur(t.event)}
+        @focus=${(e,t)=>e.handleFocus(t.event)}
+        @keydown=${(e,t)=>e.handleKeyDown(t.event)}
+        @mouseenter=${(e,t)=>e.handleMouseEnter(t.event)}
+        @mouseleave=${(e,t)=>e.handleMouseLeave(t.event)}
+        class="${e=>e.isTransparent?"hoverFlyout":"hoverFlyout hide"}"
+        part="contentWrapper"
+        style="${e=>e.styles}"
+    >
+        <slot></slot>
+    </div>
+`;let u=class extends c{};u=Object(r.d)([Object(n.b)({name:"hover-flyout",template:h,styles:d})],u)},msIb:function(e,t,i){"use strict";i.d(t,"a",(function(){return r}));var r,n=i("D57K"),o=i("rvYQ"),s=i("y+Kz"),a=i("I6Lx"),c=i("wBSZ"),l=i("ax+D"),d=i("BQg2"),h=i("kN1G"),u=i("/+Un"),g=i("HDSB"),p=i("NIfb"),f=i("MptA");!function(e){function t(e=null,t,i=!0,n=null,c=!1,l=Object(h.j)()){const d=Object(o.b)(),u=[{key:s.s.apiKey,value:d.OneServiceApiKey},{key:s.s.activityId,value:d.ActivityId},{key:s.s.ocid,value:i?r(d.TrackInfo,t):t},{key:s.s.market,value:d.CurrentMarket}];e&&u.push({key:s.s.user,value:e});let g=Object(a.a)().CurrentFlights;if(n){g=g?`${g},${n}`:n;const e="prg-bngimg-t";-1===g.indexOf(e)&&(g+=","+e),!0===c&&(g=n)}return g&&u.push({key:s.s.fdhead,value:g}),l&&u.push({key:h.c,value:h.d}),a.b.IsBlendedEnterprise&&u.push({key:"audienceMode",value:"enterprise"}),u}function i(e=Object(h.j)(),t){return Object(n.a)(this,void 0,void 0,(function*(){const i={};if(e&&!(yield Object(h.g)())){const e=yield Object(h.e)(c.c,c.f,c.e);e&&e.token&&t?i[s.r.entAuthorization]=e.token:e&&e.token&&(i[s.r.authorization]="Bearer "+e.token)}if(!Object(g.a)()){const e=Object(p.a)().cookie;e&&(i.Cookie=e);const t=Object(p.a)().referer;t&&(i.Referer=t)}return i}))}function r(e,t){return l.a.isNonNullObject(e)&&l.a.isNonNullObject(e.sitePage)&&Object(f.a)(e.sitePage.page_product)&&Object(f.a)(e.sitePage.page_type)?e.sitePage.page_product+"-"+e.sitePage.page_type+(t?"-"+t:""):t}e.authenticationTicketType="10",e.signedInCookieNameHeader="signedInCookieName",e.userLocationHeader="user-location",e.serviceRequestOnComplete=function(e,t){return Object(n.a)(this,void 0,void 0,(function*(){try{const i=yield e();return t(),i}catch(e){throw t(),e}}))},e.getOneServiceParamsWithoutAuth=t,e.getOneServiceNonDynamicParamsWithoutAuth=function(e,t=!0){const i=Object(o.b)(),n=[{key:s.s.apiKey,value:i.OneServiceApiKey},{key:s.s.ocid,value:t?r(i.TrackInfo,e):e},{key:s.s.market,value:i.CurrentMarket}];return Object(h.j)()&&n.push({key:h.c,value:h.d}),n},e.getOneServiceParamsWithAuth=function(e=null,i,r=!0,n=null,a=!1){const c=Object(o.b)().AuthCookieName,l=[...t(e,i,r,n,a)];return c&&l.push({key:s.s.signInCookieName,value:c.toUpperCase()}),l},e.getOneServiceHeaders=i,e.getOneServiceFeedCallHeaders=function(e,t){return Object(n.a)(this,void 0,void 0,(function*(){const r=yield i(e,t),n=Object(o.b)(),a=n.ActivityId;return n.SendFeedCallActivityIdInHeader&&a&&(r[s.r.activityId]=a),r}))},e.getLocationParams=function(e,t){const i=Object(o.b)(),r=e||i.Latitude,n=t||i.Longitude;return r&&n?{key:s.s.location,value:`${r}|${n}`}:null},e.getOneServiceOCID=r,e.getBaseRequestData=function(t){return Object(n.a)(this,void 0,void 0,(function*(){return{headers:yield e.getOneServiceHeaders(),method:t}}))},e.getCommonParams=function(e,t=!1){return Object(a.a)().UserIsSignedIn?this.getOneServiceParamsWithAuth(Object(o.b)().UserId,e,t):this.getOneServiceParamsWithoutAuth(Object(o.b)().UserId,e,t)},e.getCommonParams2=function(e,t=!0,i=!1){return Object(u.e)()?this.getOneServiceParamsWithAuth(Object(o.b)().UserId,e,t,i):this.getOneServiceParamsWithoutAuth(Object(o.b)().UserId,e,t,i)},e.urlContainsOcidParam=function(e){if(!e)return!1;const t=e.split("?");if(t.length<2)return!1;const i=t[1].split("#")[0];return!!new d.a(i).get("ocid")},e.removeOcidFromUrl=function(e){if(!e)return e;const t=e.split("?");if(t.length<2)return e;const i=t[1].split("#")[0],r=new d.a(i);if(r.get("ocid")){r.delete("ocid");let t=e.replace(i,r.toString());return"?"===t.charAt(t.length-1)&&(t=t.substring(0,t.length-1)),t}return e},e.removeOcidFromRiverCardProviderResponse=function(t){t&&t.cardMetadata&&t.cardMetadata.length&&t.cardMetadata.forEach(t=>{t.cardContent&&t.cardContent.destinationUrl?t.cardContent.destinationUrl=e.removeOcidFromUrl(t.cardContent.destinationUrl):t.subItems&&t.subItems.length&&t.subItems.forEach(t=>{t.cardContent&&t.cardContent.destinationUrl&&(t.cardContent.destinationUrl=e.removeOcidFromUrl(t.cardContent.destinationUrl))})})},e.removeOcidFromWindowsOneServiceResponse=function(t){t&&t.cards&&t.cards.forEach(t=>{t.subCards.forEach(t=>{t.url?t.url=e.removeOcidFromUrl(t.url):t.subCards&&t.subCards.forEach(t=>{t.url&&(t.url=e.removeOcidFromUrl(t.url))})})})}}(r||(r={}))},pcN6:function(e,t,i){"use strict";i.d(t,"a",(function(){return h}));var r=i("D57K"),n=i("P4Ao"),o=i("oePG"),s=i("Gy7L");class a extends n.a{constructor(){super(...arguments),this.onKeyDown=e=>{switch(e.keyCode){case s.e:this.focusPreviousItem(e);break;case s.b:this.focusNextItem(e);break;case s.m:e.shiftKey?this.focusPreviousItem(e):this.focusNextItem(e)}}}attributeChangedCallback(e,t,i){super.attributeChangedCallback(e,t,i)}connectedCallback(){super.connectedCallback()}focusNextItem(e){var t;let i=null===(t=document.activeElement)||void 0===t?void 0:t.nextElementSibling;for(;i&&-1===i.tabIndex;)i=i.nextElementSibling;i?(i.focus(),e.preventDefault()):this.blurHandler&&this.blurHandler()}focusPreviousItem(e){var t;let i=null===(t=document.activeElement)||void 0===t?void 0:t.previousElementSibling;for(;i&&-1===i.tabIndex;)i=i.previousElementSibling;i?(i.focus(),e.preventDefault()):this.blurHandler&&this.blurHandler()}}Object(r.d)([o.d],a.prototype,"blurHandler",void 0);const c=i("4X57").a``;var l=i("6BDD");const d=l.b`
+ ${({onKeyDown:e})=>l.b`
+   <div @keydown="${(t,i)=>{e(i.event)}}">
+        <slot name="list"/>
+   </div>`}
+`;let h=class extends a{};h=Object(r.d)([Object(n.b)({name:"hover-flyout-list",template:d,styles:c})],h)}}]);

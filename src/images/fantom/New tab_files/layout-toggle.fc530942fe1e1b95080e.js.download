@@ -1,0 +1,154 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["layout-toggle"],{f3hN:function(e,t,n){"use strict";n.r(t),n.d(t,"ToolingInfo",(function(){return M})),n.d(t,"LayoutToggle",(function(){return C})),n.d(t,"LayoutToggleTemplate",(function(){return F})),n.d(t,"LayoutToggleStyles",(function(){return H}));var a=n("Zn5T"),i=n("A03o");const l=Object(i.a)(a.a.layoutToggle,"A sample Peregrine Web Component experience",{});var o=n("D57K"),d=n("s9+9"),r=n("o1cI"),c=n("b/Qm"),s=n("Qf6H"),g=n("8X6I"),u=n("SSDD"),h=n("u5KZ"),p=n("Am8i"),v=n("p1iw"),m=n("IqCT"),y=n("oePG"),b=n("d0Z1"),f=n("+Ht2");class C extends m.a{constructor(){super(...arguments),this.handleOnScroll=()=>{const e=scrollY<100&&this.layoutState.imageOfTheDayEnabled&&("headingsonly"===this.layoutState.selectedFeedDisplaySetting||"peek"===this.layoutState.selectedFeedDisplaySetting);e!=this.isFeedTranslucent&&(this.isFeedTranslucent=e)}}experienceConnected(){this.templateReady=!1,this.populateTelemetryTags(),this.pageSettingsConnector=Object(f.c)(d.a.ChromiumPageSettings),this.pageSettingsConnector&&Object(b.c)(d.a.ChromiumPageSettings,e=>{this.layoutState=e;const t=scrollY<100&&e.imageOfTheDayEnabled&&("headingsonly"===e.selectedFeedDisplaySetting||"peek"===e.selectedFeedDisplaySetting);this.isFeedTranslucent=t;const n=matchMedia("(prefers-color-scheme:dark)");this.isDarkBackground=n&&n.matches,this.templateReady=!0;const a=null===e.isSingleColumn&&this.config.renderSingleColumn;this.isSingleColumn=r.a.getPslFeedLayoutType===c.b.SingleColumn||a})}getExperienceType(){return a.a.layoutToggle}shadowDomPopulated(){addEventListener("scroll",this.handleOnScroll)}disconnectedCallback(){removeEventListener("scroll",this.handleOnScroll)}populateTelemetryTags(){this.telemetryObject&&(this.singleColumnButtonTelemetryTag=this.telemetryObject.addOrUpdateChild({name:"LayoutSingleColumn",content:{headline:"Toggle for SingleColumn"}}).getMetadataTag(),this.multiColumnButtonTelemetryTag=this.telemetryObject.addOrUpdateChild({name:"LayoutMultiColumn",content:{headline:"Toggle for MultiColumn"}}).getMetadataTag())}updateToggleSelection(e,t){return Object(o.a)(this,void 0,void 0,(function*(){const n=t&&t.target;if(!n||this.isSingleColumn===e)return;const a="path"===n.tagName;h.a.sendActionEvent(a?n.parentElement:n,p.a.Click,p.b.Navigate),this.recordUserLayoutChoice(e),r.a.saveFeedLayoutSetting(e?c.b.SingleColumn:c.b.MultiColumn,c.a.Ntp),v.a.isPivotManagerSwitched=!0,Object(g.c)(u.a.FeedLayoutSwitch)}))}recordUserLayoutChoice(e){const t={setting:"single_column",source:"ntp",timestamp:(new Date).getTime(),value:e};s.a.savePreferenceSetting("single_column",t)}}Object(o.d)([y.d],C.prototype,"isSingleColumn",void 0),Object(o.d)([y.d],C.prototype,"isFeedTranslucent",void 0),Object(o.d)([y.d],C.prototype,"isDarkBackground",void 0),Object(o.d)([y.d],C.prototype,"templateReady",void 0);var T=n("6BDD"),S=n("eUhr");const k=T.b`
+    <div id="layoutToggle" class="layoutToggle">
+        <span class=${e=>x(e,"iconContainer linearFeedIcon",e.isSingleColumn)}
+        ${Object(S.b)(e=>e.singleColumnButtonTelemetryTag)}
+            @click=${(e,t)=>null==e?void 0:e.updateToggleSelection(!0,t.event)}
+        >
+            ${'<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M0 1.5C0 .67.67 0 1.5 0h1C3.33 0 4 .67 4 1.5v1C4 3.33 3.33 4 2.5 4h-1A1.5 1.5 0 0 1 0 2.5v-1ZM1.5 1a.5.5 0 0 0-.5.5v1c0 .28.22.5.5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM0 7.5C0 6.67.67 6 1.5 6h1C3.33 6 4 6.67 4 7.5v1c0 .83-.67 1.5-1.5 1.5h-1A1.5 1.5 0 0 1 0 8.5v-1ZM1.5 7a.5.5 0 0 0-.5.5v1c0 .28.22.5.5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM0 13.5c0-.83.67-1.5 1.5-1.5h1c.83 0 1.5.67 1.5 1.5v1c0 .83-.67 1.5-1.5 1.5h-1A1.5 1.5 0 0 1 0 14.5v-1Zm1.5-.5a.5.5 0 0 0-.5.5v1c0 .28.22.5.5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM6 2.5c0-.28.22-.5.5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Zm0 6c0-.28.22-.5.5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Zm0 6c0-.28.22-.5.5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Z" fill="#000" fill-opacity=".55"/></svg>'}
+        </span>
+        <span class=${e=>x(e,"iconContainer gridFeedIcon",!e.isSingleColumn)}
+        ${Object(S.b)(e=>e.multiColumnButtonTelemetryTag)}
+            @click=${(e,t)=>null==e?void 0:e.updateToggleSelection(!1,t.event)}
+        >
+            ${'<svg width="20" height="20" viewBox="0 0 20 19" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 .1v8.78h9.33V.1H0Zm1.33 7.53V1.35H8v6.28H1.33ZM0 18.93v-8.8h9.33v8.8H0Zm1.33-1.26v-6.28H8v6.28H1.33Zm9.34 1.25v-8.78H20v8.78h-9.33ZM12 17.67v-6.28h6.67v6.28H12ZM10.67.1H20v8.78h-9.33V.1Zm8 1.25v6.28H12V1.35h6.67Z" fill="#black" fill-opacity=".55"/></svg>'}
+        </span>   
+    </div>
+`,Z=T.b`
+    <div id="layoutToggle" class="layoutToggle">
+        <button class=${e=>w(e,"iconContainer_updated gridFeedIcon_updated",!e.isSingleColumn)} tabindex="0" aria-label="multicolumn feed"
+        ${Object(S.b)(e=>e.multiColumnButtonTelemetryTag)}
+            @click=${(e,t)=>null==e?void 0:e.updateToggleSelection(!1,t.event)}
+            
+        >
+            ${'<svg width="17" height="17" viewBox="0 0 16 16" fill="none"><path d="M5.5 9c.83 0 1.5.67 1.5 1.5v4c0 .83-.67 1.5-1.5 1.5h-4A1.5 1.5 0 0 1 0 14.5v-4C0 9.67.67 9 1.5 9h4Zm9 0c.83 0 1.5.67 1.5 1.5v4c0 .83-.67 1.5-1.5 1.5h-4A1.5 1.5 0 0 1 9 14.5v-4c0-.83.67-1.5 1.5-1.5h4Zm-9 1h-4a.5.5 0 0 0-.5.5v4c0 .28.22.5.5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5Zm9 0h-4a.5.5 0 0 0-.5.5v4c0 .28.22.5.5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5Zm-9-10C6.33 0 7 .67 7 1.5v4C7 6.33 6.33 7 5.5 7h-4A1.5 1.5 0 0 1 0 5.5v-4C0 .67.67 0 1.5 0h4Zm9 0c.83 0 1.5.67 1.5 1.5v4c0 .83-.67 1.5-1.5 1.5h-4A1.5 1.5 0 0 1 9 5.5v-4C9 .67 9.67 0 10.5 0h4Zm-9 1h-4a.5.5 0 0 0-.5.5v4c0 .28.22.5.5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5Zm9 0h-4a.5.5 0 0 0-.5.5v4c0 .28.22.5.5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5Z" fill="#000" fill-opacity=".55"/></svg>'}
+        </button>      
+        <button class=${e=>w(e,"iconContainer_updated linearFeedIcon_updated",e.isSingleColumn)} tabindex="0" aria-label="singlecolumn feed"
+        ${Object(S.b)(e=>e.singleColumnButtonTelemetryTag)}
+            @click=${(e,t)=>null==e?void 0:e.updateToggleSelection(!0,t.event)}
+        >
+            ${'<svg width="16" height="16" viewBox="0 0 16 13" fill="none"><path d="M10.5 12a.5.5 0 0 1 .09 1H.5a.5.5 0 0 1-.09-1H10.5Zm5-6a.5.5 0 0 1 .09 1H.5a.5.5 0 0 1-.09-.98L.51 6H15.5Zm-4-6a.5.5 0 0 1 .09 1H.5a.5.5 0 0 1-.09-1H11.5Z" fill="#000" fill-opacity=".55"/></svg>'}
+        </button> 
+    </div>
+`,x=(e,t,n)=>(t+=e.isDarkBackground||e.isFeedTranslucent?" dark":" light",t+=n?"":" unselected"),w=(e,t,n)=>(t+=e.isDarkBackground||e.isFeedTranslucent?" dark_updated":" light_updated",n||(t+=" unselected_updated"+(e.isDarkBackground||e.isFeedTranslucent?" dark_unselected":"")),t),F=T.b`
+${e=>e.config.renderUpdatedLayoutToggle?Z:k}
+`;var D=n("UPH6"),O=n("4X57");const _=O.a`
+.layoutToggle {
+    margin-left: 4px;
+}
+
+.gridFeedIcon {
+    margin-left: 6px;
+}
+
+
+.linearFeedIcon_updated {
+    margin-left: 6px;
+}
+`,B=O.a`
+.layoutToggle {
+    margin-right: 4px;
+}
+
+.gridFeedIcon {
+    margin-right: 6px;
+}
+
+
+.linearFeedIcon_updated {
+    margin-right: 6px;
+}
+`,H=O.a`
+/** styles for updated version of layout toggle **/
+    .iconContainer_updated {
+        background: none;
+        border: 1px solid;
+        border-radius: 4px;
+        display: "block";
+        height: 31px;
+        padding: 0px;
+        width: 31px;
+    }
+
+    .iconContainer_updated svg, .iconContainer_updated path {
+        fill: inherit;
+        fill-opacity: inherit;
+        display: block;
+        margin: auto;
+    }
+
+    .dark_updated {
+        border-color: #1683D8;
+        fill: #1683D8;
+    }
+
+    .light_updated {
+        border-color: #1181D7;
+        fill: #1181D7;
+    }
+
+    .unselected_updated {
+        border-color: gray;
+        cursor: pointer;
+        fill: gray;
+    }
+
+    .unselected_updated:hover {
+        border-color: #0066B4;
+        fill: #0066B4;
+    }
+
+    .dark_unselected {
+        border-color: gray;
+        fill: white;
+    }
+
+    .dark_unselected:hover {
+        border-color: white;
+        fill: white;
+    }
+
+    
+    /** styles for old version of layout toggle **/
+    .layoutToggle {
+        background: none;
+        display: flex;
+        padding-top: 1px;
+        width: fit-content;
+    }
+
+    .iconContainer {
+        border-radius: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .iconContainer svg, .iconContainer path {
+        fill: inherit;
+        fill-opacity: inherit;
+    }
+
+    .gridFeedIcon svg {
+        padding: 5px;
+    }
+
+    .linearFeedIcon svg {
+        padding: 7px;
+    }
+
+    .dark, .dark:hover {
+        background: gray;
+        fill: white;
+    }
+
+    .light, .light:hover {
+        background: #EAF1FA;
+        fill: #0078D4;
+    }
+
+    .unselected {
+        background: none;
+        cursor: pointer;
+        fill: gray;
+    }
+
+`.withBehaviors(new D.a(_,B)),M={experienceConfigSchema:l}}}]);

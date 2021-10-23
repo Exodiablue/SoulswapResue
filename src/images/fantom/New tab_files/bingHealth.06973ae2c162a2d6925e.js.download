@@ -1,0 +1,200 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["bingHealth"],{"0hJ9":function(e,t,i){"use strict";var o=i("v6nU");t.a=function(e){return"number"==typeof e&&e==Object(o.a)(e)}},"26DL":function(e,t,i){"use strict";i.d(t,"a",(function(){return u}));var o=i("D57K"),a=i("P4Ao"),n=i("QBS5"),s=i("oePG"),r=i("lifk");class m extends a.a{get imageUrl(){return this.imageBaseUrl?Object(r.g)(this.imageBaseUrl,{width:48,height:48,focalRegion:this.imageFocalRegion,enableDpiScaling:!0,devicePixelRatio}):""}attributeChangedCallback(e,t,i){super.attributeChangedCallback(e,t,i)}connectedCallback(){super.connectedCallback()}}Object(o.d)([n.b],m.prototype,"ariaHelpText",void 0),Object(o.d)([n.b],m.prototype,"imageBaseUrl",void 0),Object(o.d)([n.b],m.prototype,"imageFocalRegion",void 0),Object(o.d)([n.b],m.prototype,"providerName",void 0),Object(o.d)([n.b],m.prototype,"telemetryTags",void 0),Object(o.d)([n.b],m.prototype,"title",void 0),Object(o.d)([n.b],m.prototype,"url",void 0),Object(o.d)([s.f],m.prototype,"imageUrl",null);var c=i("4X57"),l=i("8hiW");const d=c.a`
+.root {
+  height: 92px;
+  display: flex;
+  padding: 2px;
+  text-decoration: none;
+  background-color:${l.yb};
+}
+.root:hover {
+ background: ${l.ib};
+}
+.root:active {
+  background: ${l.fb};
+}
+.root:focus {
+  outline: none;
+  padding: 0;
+  border-color: ${l.D};;
+  border-style: solid;
+  border-width: 2px;
+}
+.mainContent {
+  margin: 14px;
+  flex-grow: 1;
+}
+.titleText {
+  color: ${l.ub};
+  display: -webkit-box;
+  overflow: hidden;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 14px;
+  line-height: 20px;
+}
+.providerText {
+  color: ${l.sb};
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 12px;
+  padding-top: 4px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.imageHolder {
+  width: 48px;
+  height: 48px;
+  margin-top: 14px;
+  margin-inline-end: 14px;
+}
+.image {
+  width: 48px;
+  height: 48px;
+  border-radius: 2px;
+}
+`;var h=i("6BDD"),g=i("6vBc");const p=h.b`
+ ${({title:e,url:t,ariaHelpText:i,providerName:o,imageUrl:a})=>h.b`
+ <a
+    href="${t}"
+    target="_blank"
+    rel="noopener"
+    class="root"
+    aria-label="${e+". "+i}"
+    tabIndex={-1}
+    >
+    <div class="mainContent">
+        <span class="titleText">${e}</span>
+        ${Object(g.a)(()=>o,h.b`
+            <div class="providerText">${o}</div>
+        `)}
+    </div>
+    ${Object(g.a)(()=>a,h.b`<div class="imageHolder"><img src="${a}" class="image" /></div>`)}
+</a>`}
+`;let u=class extends m{};u=Object(o.d)([Object(a.b)({name:"hover-flyout-article",template:p,styles:d})],u)},"6fq4":function(e,t,i){"use strict";i.d(t,"a",(function(){return a}));var o=i("HDSB");let a=!1;Object(o.a)()&&(window.addEventListener("keydown",()=>{a=!0}),window.addEventListener("mousedown",()=>{a=!1}))},cc39:function(e,t,i){"use strict";i.d(t,"a",(function(){return h}));var o=i("D57K"),a=i("P4Ao"),n=i("oePG"),s=i("6fq4"),r=i("Gy7L");class m extends a.a{constructor(){super(...arguments),this.isTransparent=!1,this.handleResize=()=>{this.onClosed(!0)},this.handleScroll=()=>{this.onClosed(!0)}}get styles(){if(!this.targetRect)return;const e=this.targetRect.top+this.targetRect.bottom<window.innerHeight;let t,i,o,a=Math.round((this.targetRect.left+this.targetRect.right-this.flyoutWidth)/2);a<16?a=16:a>innerWidth-16-this.flyoutWidth&&(a=innerWidth-16-this.flyoutWidth);const n=a+"px",s=this.flyoutWidth+"px";if(e){const e=this.targetRect.bottom+0;o=e+"px",i=window.innerHeight-e-16+"px"}else{t=window.innerHeight-this.targetRect.top+0+"px",i=this.targetRect.top-0-16+"px"}return`bottom: ${t}; left: ${n}; max-height: ${i};  top: ${o}; width: ${s};`}requestOpenChanged(e,t){t?(this.cancelCloseIfNeeded(),this.cancelStrayMouseTimerIfNeeded()):this.startStrayMouseTimerIfNeeded()}connectedCallback(){super.connectedCallback(),window.addEventListener("resize",this.handleResize),window.addEventListener("scroll",this.handleScroll),this.isTransparent=!0}disconnectedCallback(){window.removeEventListener("resize",this.handleResize),window.removeEventListener("scroll",this.handleScroll),this.cancelStrayMouseTimerIfNeeded(),this.cancelCloseIfNeeded()}handleBlur(e){this.focusInFlyout=!1,this.startStrayMouseTimerIfNeeded()}handleFocus(e){s.a&&(this.focusInFlyout=!0,this.cancelCloseIfNeeded(),this.cancelStrayMouseTimerIfNeeded())}handleKeyDown(e){e.keyCode===r.h&&this.onClosed(!0)}handleMouseEnter(e){this.mouseOverFlyout=!0,this.cancelCloseIfNeeded(),this.cancelStrayMouseTimerIfNeeded()}handleMouseLeave(e){this.mouseOverFlyout=!1,this.startStrayMouseTimerIfNeeded()}cancelCloseIfNeeded(){this.closeAnimationTimerHandle&&clearTimeout(this.closeAnimationTimerHandle),this.isTransparent||(this.isTransparent=!0)}cancelStrayMouseTimerIfNeeded(){this.strayMouseTimerHandle&&clearTimeout(this.strayMouseTimerHandle)}startStrayMouseTimerIfNeeded(){this.strayMouseTimerHandle=setTimeout(()=>{this.mouseOverFlyout||this.focusInFlyout||(this.startClosing(),this.strayMouseTimerHandle=null)},200)}startClosing(){this.closeAnimationTimerHandle=setTimeout(()=>{this.onClosed(!1)},200),this.isTransparent=!1}}Object(o.d)([n.d],m.prototype,"flyoutWidth",void 0),Object(o.d)([n.d],m.prototype,"isTransparent",void 0),Object(o.d)([n.d],m.prototype,"onClosed",void 0),Object(o.d)([n.d],m.prototype,"requestOpen",void 0),Object(o.d)([n.d],m.prototype,"targetRect",void 0),Object(o.d)([n.f],m.prototype,"styles",null);var c=i("0fst");const l=i("4X57").a`
+    .hoverFlyout {
+        box-shadow: 2px 5px 20px 0px rgba(0,0,0,0.22), 0px 13px 13px rgba(0,0,0,0.18);
+        border-radius: 4px;
+        opacity: 1;
+        overflow: auto;
+        position: fixed;
+        transition: opacity .2s ease-in;
+        opacity:1;
+        z-index: ${c.a.Flyout.toString()}
+    }
+    .hoverFlyout.hide{
+        opacity: 0;
+    }
+`;const d=i("6BDD").b`
+    <div
+        @blur=${(e,t)=>e.handleBlur(t.event)}
+        @focus=${(e,t)=>e.handleFocus(t.event)}
+        @keydown=${(e,t)=>e.handleKeyDown(t.event)}
+        @mouseenter=${(e,t)=>e.handleMouseEnter(t.event)}
+        @mouseleave=${(e,t)=>e.handleMouseLeave(t.event)}
+        class="${e=>e.isTransparent?"hoverFlyout":"hoverFlyout hide"}"
+        part="contentWrapper"
+        style="${e=>e.styles}"
+    >
+        <slot></slot>
+    </div>
+`;let h=class extends m{};h=Object(o.d)([Object(a.b)({name:"hover-flyout",template:d,styles:l})],h)},lifk:function(e,t,i){"use strict";i.d(t,"d",(function(){return s})),i.d(t,"e",(function(){return r})),i.d(t,"c",(function(){return m})),i.d(t,"a",(function(){return c})),i.d(t,"b",(function(){return l})),i.d(t,"h",(function(){return d})),i.d(t,"g",(function(){return h})),i.d(t,"f",(function(){return p}));var o=i("HDSB"),a=i("0hJ9");let n;var s,r;!function(e){e.JPG="jpg",e.PNG="png"}(s||(s={})),function(e){e[e.None=0]="None",e[e.Letterbox=1]="Letterbox",e[e.Scale=2]="Scale",e[e.Stretch=3]="Stretch",e[e.Crop=4]="Crop",e[e.FocalCrop=5]="FocalCrop",e[e.FacialCrop=6]="FacialCrop"}(r||(r={}));const m=90,c="www.bing.com/th",l=new RegExp(/bing.(com|net)\/th/);function d(e,t){return h("//img-s-msn-com.akamaized.net/tenant/amp/entityid/"+e,t)}function h(e,t){if(e&&l.test(e))return p(e,t);const{focalRegion:i,backgroundColor:r}=t;let{width:m=0,height:c=0,format:d=s.JPG}=t,h="";if(i){const e=u(i.x1,i.x2),t=u(i.y1,i.y2);null!=e&&null!=t&&(h+=`&x=${e}&y=${t}`)}r&&(h+="&b="+r);const g=null==t.mode?6:t.mode;if(6===g&&(h+="&u=t"),t.enableDpiScaling){if(!t.devicePixelRatio)throw new Error("A valid devicePixelRatio value must be provided when DPI scaling is enabled");const e=function(e){if(Object(o.a)()&&n)return n;if(e<1)return null;let t=e;Object(a.a)(4*t)||(t=Math.ceil(10*t)/10);t>3&&(t=3);Object(o.a)()&&(n=t);return t}(t.devicePixelRatio);e&&(m=Math.round(m*e),c=Math.round(c*e))}return`${e}?w=${m}&h=${c}&q=${t.quality||60}&m=${g}&f=${d}${h}`}function g(e,t){const{width:i=0,height:o=0}=t,a=t.quality||m;return e.searchParams.set("w",""+i),e.searchParams.set("h",""+o),e.searchParams.set("qlt",""+a),e.searchParams.set("c","1"),e.searchParams.set("rs","1"),t.enableDpiScaling&&(e.searchParams.set("dpr",""+t.devicePixelRatio),e.searchParams.set("p","0")),e}function p(e,t){try{return g(new URL(e),t).href}catch(i){const o=g(new URL("https://"+e),t);return`//${o.host}${o.pathname}${o.search}`}}function u(e,t){if(null!=e&&null!=t)return Math.floor((e+t)/2)}},pcN6:function(e,t,i){"use strict";i.d(t,"a",(function(){return d}));var o=i("D57K"),a=i("P4Ao"),n=i("oePG"),s=i("Gy7L");class r extends a.a{constructor(){super(...arguments),this.onKeyDown=e=>{switch(e.keyCode){case s.e:this.focusPreviousItem(e);break;case s.b:this.focusNextItem(e);break;case s.m:e.shiftKey?this.focusPreviousItem(e):this.focusNextItem(e)}}}attributeChangedCallback(e,t,i){super.attributeChangedCallback(e,t,i)}connectedCallback(){super.connectedCallback()}focusNextItem(e){var t;let i=null===(t=document.activeElement)||void 0===t?void 0:t.nextElementSibling;for(;i&&-1===i.tabIndex;)i=i.nextElementSibling;i?(i.focus(),e.preventDefault()):this.blurHandler&&this.blurHandler()}focusPreviousItem(e){var t;let i=null===(t=document.activeElement)||void 0===t?void 0:t.previousElementSibling;for(;i&&-1===i.tabIndex;)i=i.previousElementSibling;i?(i.focus(),e.preventDefault()):this.blurHandler&&this.blurHandler()}}Object(o.d)([n.d],r.prototype,"blurHandler",void 0);const m=i("4X57").a``;var c=i("6BDD");const l=c.b`
+ ${({onKeyDown:e})=>c.b`
+   <div @keydown="${(t,i)=>{e(i.event)}}">
+        <slot name="list"/>
+   </div>`}
+`;let d=class extends r{};d=Object(o.d)([Object(a.b)({name:"hover-flyout-list",template:l,styles:m})],d)},zq4y:function(e,t,i){"use strict";i.r(t),i.d(t,"ToolingInfo",(function(){return I})),i.d(t,"BingHealth",(function(){return f})),i.d(t,"BingHealthTemplate",(function(){return B})),i.d(t,"BingHealthStyles",(function(){return U}));var o=i("A03o"),a=i("C49W"),n=i("akWC"),s=i("Zn5T");const r=Object(o.a)(s.a.bingHealth,"A sample Peregrine Web Component experience",Object.assign(Object.assign({},Object(a.d)("numberOfHealthItems","The number of articles to show")),Object(n.a)({heading:"The localized heading string ",articleAriaHelpText:"Text to read after the article title to tell users how to navigate between articles."})));var m=i("D57K"),c=i("IqCT"),l=i("oePG"),d=i("XzyE"),h=i("s9+9"),g=i("GqIT");const p=[{category:"Mental Wellness",momentInTime:"A",title:"Feeling low?",subText:"Explore some ways to lift your mood",clickUrl:"https://www.bing.com/search?q=how+to+uplift+yourself&go=Search&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afVwS.img"},{category:"Mental Wellness",momentInTime:"A",title:"Feeling stressed?",subText:"Get tips to manage it",clickUrl:"https://www.bing.com/search?q=how%20to%20deal%20with%20stress&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afQO1.img"},{category:"Mental Wellness",momentInTime:"A",title:"Dealing with anxiety?",subText:"Get tips on how to cope",clickUrl:"https://www.bing.com/search?q=how%20to%20deal%20with%20anxiety&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afYyQ.img"},{category:"Mental Wellness",momentInTime:"A",title:"Feeling depressed?",subText:"Find ways to manage depression",clickUrl:"https://www.bing.com/search?q=how%20to%20deal%20with%20depression&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afVwV.img"},{category:"Mental Wellness",momentInTime:"M",title:"Start your day on a positive note",subText:"Check out these inspiring quotes",clickUrl:"https://www.bing.com/images/search?q=positive+quotes&form=HEANTP&first=1&scenario=ImageBasicHover",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afFjh.img"},{category:"Mental Wellness",momentInTime:"N",title:"Relax after a hectic day",subText:"Listen to soothing music for a good sleep",clickUrl:"https://www.bing.com/videos/search?q=sleep+music&go=Search&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afYz7.img"},{category:"Mental Wellness",momentInTime:"N",title:"Trouble sleeping?",subText:"Learn more about meditation techniques",clickUrl:"https://www.bing.com/videos/search?q=guided+meditation&go=Search&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afBUR.img"},{category:"Exercise",momentInTime:"M-N",title:"Want to start yoga?",subText:"Learn more about beginner yoga exercises",clickUrl:"https://www.bing.com/search?q=beginner%20yoga%20exercises&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afQNP.img"},{category:"Exercise",momentInTime:"M-N",title:"No time to go to gym?",subText:"Learn more about home work-outs",clickUrl:"https://www.bing.com/search?q=no%20equipment%20beginner%20exercises&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afVwJ.img"},{category:"Exercise",momentInTime:"M-N",title:"Want to try Pilates?",subText:"Learn more about beginner pilate exercises",clickUrl:"https://www.bing.com/search?q=beginner%20pilates%20exercises&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afJRA.img"},{category:"Exercise",momentInTime:"M-N",title:"Work on your abs",subText:"Learn more about workouts for abs",clickUrl:"https://www.bing.com/search?q=abs%20workout&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afBUI.img"},{category:"Exercise",momentInTime:"M-N",title:"Keep your core muscles strong",subText:"Learn more about exercises for strong core",clickUrl:"https://www.bing.com/search?q=beginner%20core%20exercises&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afFiZ.img"},{category:"Exercise",momentInTime:"M-N",title:"Looking for more variations in exercise?",subText:"Learn more about resistance band workouts",clickUrl:"https://www.bing.com/search?q=resistance%20band%20workouts&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afTS5.img"},{category:"Exercise",momentInTime:"M-N",title:"Strengthen your lower body",subText:"Try these exercises",clickUrl:"https://www.bing.com/search?q=squat%20exercise&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afVwI.img"},{category:"Exercise",momentInTime:"M-N",title:"Prevent injuries",subText:"Learn more about flexibility exercises",clickUrl:"https://www.bing.com/search?q=flexibility%20exercises&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afLbx.img"},{category:"Exercise",momentInTime:"M-N",title:"Increase your muscle mass",subText:"Learn more about beginner strength workouts",clickUrl:"https://www.bing.com/search?q=beginner+strength+exercises&go=Search&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afYyu.img"},{category:"Self Care",momentInTime:"A",title:"Worried about acne?",subText:"Explore these home remedies",clickUrl:"https://www.bing.com/search?q=home%20remedy%20for%20acne&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afYyD.img"},{category:"Self Care",momentInTime:"A",title:"Is Dandruff bothering you?",subText:"Explore home remedies to get rid of it",clickUrl:"https://www.bing.com/search?q=home%20remedy%20for%20dandruff&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afLbD.img"},{category:"Self Care",momentInTime:"A",title:"Concerned about rashes?",subText:"Learn more about home remedies to soothe it",clickUrl:"https://www.bing.com/search?q=home%20remedy%20for%20body%20rashes&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afYyI.img"},{category:"Self Care",momentInTime:"A",title:"Constipation hampering your daily activities?",subText:"Explore these home remedies",clickUrl:"https://www.bing.com/search?q=home%20remedy%20for%20constipation&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afJRS.img"},{category:"Self Care",momentInTime:"A",title:"Having acidity?",subText:"Explore these home remedies",clickUrl:"https://www.bing.com/search?q=home%20remedy%20for%20acidity&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afTSi.img"},{category:"Self Care",momentInTime:"A",title:"Hairfall bothering you?",subText:"Explore these helpful tips",clickUrl:"https://www.bing.com/search?q=home%20remedy%20for%20fall%20of%20hair&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afFjd.img"},{category:"Self Care",momentInTime:"A",title:"Having a toothache?",subText:"Explore these home remedies ",clickUrl:"https://www.bing.com/search?q=home%20remedy%20for%20toothache&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afTSm.img"},{category:"Self Care",momentInTime:"A",title:"Having high blood pressure?",subText:"Learn more about tips to keep it in control",clickUrl:"https://www.bing.com/search?q=home%20remedy%20for%20high%20blood%20pressure&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afQO4.img"},{category:"Healthy Nutrition",momentInTime:"M-A-N",title:"Improve your bone health",subText:"Learn more about foods rich in Vitamin K",clickUrl:"https://www.bing.com/search?q=foods%20rich%20in%20vitamin%20k&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afVwN.img"},{category:"Healthy Nutrition",momentInTime:"M-A-N",title:"Boost your Vitamin D",subText:"Try these foods",clickUrl:"https://www.bing.com/search?q=foods%20rich%20in%20vitamin%20d&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afQNU.img"},{category:"Healthy Nutrition",momentInTime:"M-A-N",title:"Boost your immunity",subText:"Explore the foods rich in Vitamin C",clickUrl:"https://www.bing.com/search?q=foods%20rich%20in%20vitamin%20c&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afLbz.img"},{category:"Healthy Nutrition",momentInTime:"M-A-N",title:"Keep your blood cells healthy",subText:"Explore the foods rich in Vitamin B12",clickUrl:"https://www.bing.com/search?q=foods%20rich%20in%20vitamin%20b12&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afLbC.img"},{category:"Healthy Nutrition",momentInTime:"A-N",title:"Improve your haemoglobin levels",subText:"Explore the foods rich in iron",clickUrl:"https://www.bing.com/search?q=iron%20rich%20foods&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afLbA.img"},{category:"Healthy Nutrition",momentInTime:"A-N",title:"Improve your digestive health",subText:"Learn more about foods rich in fiber",clickUrl:"https://www.bing.com/search?q=fiber%20rich%20foods&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afVwQ.img"},{category:"Healthy Nutrition",momentInTime:"A-N",title:"Improve muscle mass and strength",subText:"Learn more about foods rich in protein",clickUrl:"https://www.bing.com/search?q=food%20rich%20in%20protein&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afQNY.img"},{category:"Healthy Nutrition",momentInTime:"M-A-N",title:"Keep your eyes healthy",subText:"Learn more about foods rich in Vitamin A",clickUrl:"https://www.bing.com/search?q=food%20rich%20in%20vitamin%20a&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afLbE.img"},{category:"Healthy Nutrition",momentInTime:"A-N",title:"Carbohydrates",subText:"Which foods have the most?",clickUrl:"https://www.bing.com/search?q=food%20rich%20in%20carbohydrates&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afYyy.img"},{category:"Work Related Diseases",momentInTime:"A-N",title:"Back pain due to a long day at work?",subText:"Learn more about common causes and treatment",clickUrl:"https://www.bing.com/search?q=lower%20back%20pain&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afJRx.img"},{category:"Work Related Diseases",momentInTime:"A-N",title:"Continuously sitting in front of laptop causing eye strain?",subText:"Learn how to get some relief",clickUrl:"https://www.bing.com/search?q=eye%20strain%20causes%20and%20treatment&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afQNK.img"},{category:"Work Related Diseases",momentInTime:"A-N",title:"Having hypertension?",subText:"Learn more about tips to keep it in control",clickUrl:"https://www.bing.com/search?q=hypertension%20care&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afTS0.img"},{category:"Work Related Diseases",momentInTime:"A-N",title:"Headache due to long day at work?",subText:"Learn more about tips to find some relief",clickUrl:"https://www.bing.com/search?q=tension%20headache%20care&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afQNN.img"},{category:"Work Related Diseases",momentInTime:"N",title:"Get a better night's sleep",subText:"Learn more about these insomnia tips",clickUrl:"https://www.bing.com/search?q=insomnia&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afVwF.img"},{category:"Work Related Diseases",momentInTime:"A-N",title:"Trouble quitting alcohol?",subText:"Learn how to quit alcohol",clickUrl:"https://www.bing.com/search?q=how%20to%20get%20rid%20of%20alcoholism&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afVwG.img"},{category:"Work Related Diseases",momentInTime:"A-N",title:"Concerned about your weight?",subText:"Check your BMI",clickUrl:"https://www.bing.com/search?q=bmi+calculator&go=Search&qs=ds&form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afYyk.img"},{category:"Coronavirus",momentInTime:"M-A-N",title:"COVID vaccines",subText:"Track the latest info",clickUrl:"https://www.bing.com/covid?form=HEANTP&vert=vaccineTracker",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afTSp.img"},{category:"Coronavirus",momentInTime:"M-A-N",title:"COVID-19 stats",subText:"See your local info",clickUrl:"https://www.bing.com/covid?form=HEANTP",imageUrl:"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1afFj9.img"}];class u{constructor(e){this.experienceType=s.a.bingHealth,this.focusShouldMove=e=>!!e,this.initShouldFire=()=>{var e;const t=(null===(e=this.wcInstance.config)||void 0===e?void 0:e.numberOfHealthItems)||4;this.getBingHealthArticles(t).then(e=>{if(e&&e.length>0){this.wcInstance.bingHealthItemList=e;const t=g.a.getInstance().rootReducer.connector(h.a.SmartListSharedData),i={children:e.length.toString()};t&&d.a.updateSmartListBadgeProps.getActionSender(t).send("BingHealth",i)}})},this.renderShouldFire=e=>{if(!e)return;const t=e.getBoundingClientRect();t&&t.top&&t.bottom&&t.left&&t.right&&(this.wcInstance.targetTopsSitesRect=t,this.wcInstance.hoverFlyoutOpen=!0)},this.unmountShouldFire=()=>{this.wcInstance.hoverFlyoutOpen=!1},this.wcInstance=e}getBingHealthArticles(e){return Object(m.a)(this,void 0,void 0,(function*(){let t;const i=[],o=(new Date).getHours();t=o>=4&&o<11?"M":o>=11&&o<18?"A":"N";for(const e of p){const o=e.momentInTime;o&&o.includes(t)&&i.push(e)}const a=new Map,n=[];for(const e of i){const t=a.get(e.category)||0;a.has(e.category)&&t>=2||(a.has(e.category)?a.has(e.category)&&(a.set(e.category,t+1),n.push(e)):(a.set(e.category,1),n.push(e)))}return n.length>e?this.getRandomArticles(n,e):n}))}getRandomArticles(e,t){const i=[],o=[...e];let a=e.length,n=!1;for(;t--;){const e=Math.floor(Math.random()*a);if(o[e].category.toLowerCase().includes("coronavirus")){if(n){a--,o[e]=o[a],t++;continue}n=!0}i.push(o[e]),a--,o[e]=o[a]}return i}}var b=i("+Ht2");class f extends c.a{experienceConnected(){const e=Object(b.c)(h.a.SmartListSharedData);e&&d.a.registerSmartList.getActionSender(e).send(new u(this)),this.articleAriaHelpText=this.strings?this.strings.articleAriaHelpText:"",this.feedName=this.strings?this.strings.heading:""}getExperienceType(){return s.a.bingHealth}onClosed(){this.targetTopsSitesRect=void 0}}Object(m.d)([l.d],f.prototype,"bingHealthItemList",void 0),Object(m.d)([l.d],f.prototype,"articleAriaHelpText",void 0),Object(m.d)([l.d],f.prototype,"feedName",void 0),Object(m.d)([l.d],f.prototype,"hoverFlyoutOpen",void 0),Object(m.d)([l.d],f.prototype,"requestOpen",void 0),Object(m.d)([l.d],f.prototype,"targetTopsSitesRect",void 0),Object(m.d)([l.d],f.prototype,"requestContext",void 0);var y=i("6BDD"),w=i("6vBc"),x=i("UNqU"),T=i("cc39"),v=i("26DL"),k=i("pcN6");T.a,v.a,k.a;const B=y.b`${Object(w.a)(e=>!!e.targetTopsSitesRect,y.b`<hover-flyout
+    class="root"
+    :targetRect="${e=>e.targetTopsSitesRect}"
+    :flyoutWidth="${e=>320}"
+    :requestOpen="${e=>e.hoverFlyoutOpen}"
+    :onClosed="${(e,t)=>e.onClosed.bind(e)}"
+    :requestContext="${e=>e.requestContext}">
+        <div>
+        <div class="header">
+                    <div class="imageHolder">
+                        <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1b8mio.img" class= "headerIcon" />
+                    </div>
+                    <div>
+                        <span class= "headerText">Health & Wellness</span>
+                        <span class= "headerSource">Powered by bing.com</span>
+                    </div>
+        </div>
+            <hr class="separatorPadding">
+            <hover-flyout-list @blurHandler=${e=>e.onClosed()}>
+              ${e=>{return y.b`<div slot="list"> ${Object(x.c)(()=>e.bingHealthItemList,(t=e.requestContext,y.b`<hover-flyout-article
+    :title="${e=>e.title}"
+    :ariaHelpText="${e=>e.articleAriaHelpText}"
+    class="hoverFlyout"
+    :url="${e=>e.clickUrl}"
+    :providerName="${e=>e.subText}"
+    :imageBaseUrl="${e=>e.imageUrl?e.imageUrl:""}"
+    :imageFocalRegion= "{
+        x1: 2111,
+        x2: 2111,
+        y1: 1231,
+        y2: 1231
+    }"
+    :requestContext="${()=>t}">
+</hover-flyout-article>`))}</div>`;var t}}
+            </hover-flyout-list>
+        </div>
+    </hover-flyout>`)}`;var N=i("4X57"),H=i("8hiW"),q=i("0fst");const U=N.a`
+.root {
+    z-index: ${String(q.a.Flyout)};
+}
+.root::part(contentWrapper){
+    background-color:${H.yb};
+}
+.header {
+    display: flex;
+    margin: 5px 16px;
+}
+.imageHolder {
+    width: 24px;
+    height: 18px;
+    margin-right: directionSwitch(14px, 0);
+    margin-left: directionSwitch(0, 14px);
+    margin-top: 9px
+}
+.headerIcon {
+    border-radius: 2px;
+    width: 18.35px;
+    height: 16px;
+}
+.headerSource {
+    font-family: Segoe UI;
+    font-size: 12px;
+    color: neutralForegroundHint;
+    display: block;
+}
+.headerText {
+    color: ${H.ub};
+    font-size: 14px;
+    font-weight: 600;
+}
+.headerDate {
+    color: ${H.sb};
+    font-size: 14px;
+    font-weight: 600;
+    margin-inline-end: auto;
+    margin-inline-start: 10px;
+}
+.separator {
+    border: none;
+    height: 1px;
+    margin: 0;
+    background: ${H.Fb};
+}
+.hoverFlyout {
+    height: 85px;
+}
+.separatorPadding {
+    margin-block-end: 0px;
+    margin-inline-end: auto;
+    margin: 0 auto;
+    color: ${H.Fb};
+}
+`,I={experienceConfigSchema:r}}}]);
