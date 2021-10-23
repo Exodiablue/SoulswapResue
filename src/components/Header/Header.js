@@ -190,7 +190,7 @@ const LinkSidebar = ({ name, label, icon, classes }) => (
 
 const getLinkUrl = name => {
   if (name === 'Bridge')
-    return 'https://multichain.xyz/';
+    return 'https://swap.spiritswap.finance/#/bridge';
   if (name === 'Discord')
     return 'https://discord.gg/vDFkVT6tE6';
   if (name === 'Twitter')

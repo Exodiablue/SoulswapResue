@@ -478,7 +478,7 @@ const pools = [
   logo: 'fantom/GRIM.png',
   name: 'GRIM',
   token: 'GRIM',
-  tokenDescription: 'Grim Finance | Note: 50% of all Grim Finance platform harvest fees are distributed to this pool. \u26A0 A 2% BURN is incurred on deposits for this pool.',
+  tokenDescription: 'Grim Finance | Note: 50% of all Grim Finance platform harvest fees are distributed to this pool. \u26A0 A BURN FEE is incurred on deposits for this pool.',
   tokenAddress: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -788,7 +788,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2040,7 +2039,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
      
       ...zapTokens,
@@ -2076,7 +2074,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
      
       ...zapTokens,
@@ -2113,7 +2110,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2151,7 +2147,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2188,7 +2183,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2225,7 +2219,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2262,7 +2255,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2299,7 +2291,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2336,7 +2327,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2373,7 +2363,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2411,7 +2400,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2448,7 +2436,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2485,7 +2472,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2521,7 +2507,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2558,7 +2543,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2594,7 +2578,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2630,7 +2613,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2667,7 +2649,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2703,7 +2684,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2739,7 +2719,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2775,7 +2754,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2811,7 +2789,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2847,7 +2824,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2884,7 +2860,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2921,7 +2896,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2958,7 +2932,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -2995,7 +2968,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -3031,7 +3003,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -3068,7 +3039,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -5833,7 +5803,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -5911,7 +5880,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -5948,7 +5916,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -5984,7 +5951,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -6023,7 +5989,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,     
       ...zapTokens,
@@ -6509,7 +6474,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -6546,7 +6510,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -6583,7 +6546,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -6619,7 +6581,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
      
       // ...zapTokens,
@@ -6669,7 +6630,7 @@ const pools = [
   logo: 'fantom/GRIM.png',
   name: 'GRIM',
   token: 'GRIM',
-  tokenDescription: 'Totem | \u26A0 A 2% BURN is incurred on deposits for this pool.',
+  tokenDescription: 'Totem | \u26A0 A BURN FEE is incurred on deposits for this pool.',
   tokenAddress: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
   tokenDecimals: 18,
   tokenDescriptionUrl: '#',
@@ -6908,7 +6869,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -7123,7 +7083,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokensNoFtm,
@@ -7159,7 +7118,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -7196,7 +7154,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -7233,7 +7190,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -7271,7 +7227,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -7308,7 +7263,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -7345,7 +7299,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -7382,7 +7335,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -7457,7 +7409,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -8954,7 +8905,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -8990,7 +8940,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokensNoFtm,
@@ -9026,7 +8975,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...zapTokens,
     ],
@@ -9061,7 +9009,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9097,7 +9044,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9133,7 +9079,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9169,7 +9114,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9205,7 +9149,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9241,7 +9184,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9277,7 +9219,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9313,7 +9254,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9421,7 +9361,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9457,7 +9396,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9493,7 +9431,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9565,7 +9502,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9709,7 +9645,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9745,7 +9680,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9817,7 +9751,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9855,7 +9788,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -9930,7 +9862,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -9968,7 +9899,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10005,7 +9935,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10043,7 +9972,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10081,7 +10009,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10119,7 +10046,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10157,7 +10083,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10195,7 +10120,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10233,7 +10157,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10271,7 +10194,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10308,7 +10230,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10346,7 +10267,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10383,7 +10303,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10458,7 +10377,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -10495,7 +10413,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -11039,7 +10956,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -11075,7 +10991,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -11111,7 +11026,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokensNoFtm,
@@ -11147,7 +11061,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -11183,7 +11096,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -11219,7 +11131,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -11255,7 +11166,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -11290,7 +11200,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -11327,7 +11236,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -11364,7 +11272,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -11402,7 +11309,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -11440,7 +11346,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -11478,7 +11383,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -11516,7 +11420,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -11554,7 +11457,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12218,7 +12120,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12255,7 +12156,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12293,7 +12193,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12329,7 +12228,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12365,7 +12263,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12401,7 +12298,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12437,7 +12333,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12473,7 +12368,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12509,7 +12403,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12545,7 +12438,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12581,7 +12473,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12617,7 +12508,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12653,7 +12543,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12689,7 +12578,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12725,7 +12613,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12833,7 +12720,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -12869,7 +12755,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -13202,7 +13087,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -13240,7 +13124,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -13278,7 +13161,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -13316,7 +13198,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -13354,7 +13235,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -13392,7 +13272,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -13430,7 +13309,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -13468,7 +13346,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -13506,7 +13383,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14206,7 +14082,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -14316,7 +14191,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -14352,7 +14226,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokensNoFtm,
@@ -14388,7 +14261,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14424,7 +14296,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14460,7 +14331,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14496,7 +14366,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14532,7 +14401,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14568,7 +14436,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14640,7 +14507,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -14748,7 +14614,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14784,7 +14649,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14820,7 +14684,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14856,7 +14719,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14892,7 +14754,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14928,7 +14789,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -14964,7 +14824,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -15000,7 +14859,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -15035,7 +14893,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -15071,7 +14928,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -15108,7 +14964,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -15146,7 +15001,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -15184,7 +15038,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -15222,7 +15075,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -15260,7 +15112,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -15298,7 +15149,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -15336,7 +15186,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -15374,7 +15223,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       ...spookyTokens,
       ...zapTokens,
@@ -15411,7 +15259,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -15559,7 +15406,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -15596,7 +15442,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -15633,7 +15478,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -15670,7 +15514,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -15707,7 +15550,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -15745,7 +15587,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -15782,7 +15623,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -15819,7 +15659,6 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
@@ -15856,10 +15695,1479 @@ const pools = [
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
-
     tokens: [
       // ...spookyTokens,
       // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'kins-kins',
+  logo: 'fantom/KINS.png',
+  name: 'KINS',
+  token: 'KINS',
+  tokenDescription: 'Pumpkins | \u26A0 A 10% BURN is incurred on deposits for this pool.',
+  tokenAddress: '0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-KINS-V',
+  earnedTokenAddress: '0x249e866f38360492581C4DFAA4c67Dd98029e465',
+  earnContractAddress: '0x249e866f38360492581C4DFAA4c67Dd98029e465',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'KINS',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Pumpkins',
+  assets: ['KINS'],
+  callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'kins-kins-ftm',
+  logo: 'fantom/KINS-FTM.png',
+  name: 'KINS-FTM (SpiritSwap)',
+  token: 'KINS-FTM LP (SpiritSwap)',
+  tokenDescription: 'Pumpkins',
+  tokenAddress: '0xD24cf15F02D1cC4C868C303925aDF247118CAd9B',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-KIN-FTM-V',
+  earnedTokenAddress: '0x2bDCb198673a80ec2Bd9404E928D36e3f9947E62',
+  earnContractAddress: '0x2bDCb198673a80ec2Bd9404E928D36e3f9947E62',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'kins-kins-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Pumpkins',
+  assets: ['KINS', 'FTM'],
+  callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0xD24cf15F02D1cC4C868C303925aDF247118CAd9B',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x6ECED8E16eDA61E65292f019B165542A5906ecD6/FTM',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'kins-kins-usdc',
+  logo: 'fantom/KINS-USDC.png',
+  name: 'KINS-USDC (SpiritSwap)',
+  token: 'KINS-USDC LP (SpiritSwap)',
+  tokenDescription: 'Pumpkins',
+  tokenAddress: '0x27A2c9CF757424142d262fc6A736C69aF62F1159',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-KIN-USD-V',
+  earnedTokenAddress: '0x5E7E490d8D2EF5d90A930525e3e8CA86a997F071',
+  earnContractAddress: '0x5E7E490d8D2EF5d90A930525e3e8CA86a997F071',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'kins-kins-usdc',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Pumpkins',
+  assets: ['KINS', 'USDC'],
+  callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x27A2c9CF757424142d262fc6A736C69aF62F1159',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x6ECED8E16eDA61E65292f019B165542A5906ecD6/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'kins-kins-morph',
+  logo: 'fantom/KINS-MORPH.png',
+  name: 'KINS-MORPH',
+  token: 'KINS-MORPH LP (SpookySwap)',
+  tokenDescription: 'Pumpkins',
+  tokenAddress: '0x865740c62ec992893a835AbA138cD3cec9b126E0',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-KIN-MOR-V',
+  earnedTokenAddress: '0x4398462EE5FFBEa6573732EAf226059eF5AB95cF',
+  earnContractAddress: '0x4398462EE5FFBEa6573732EAf226059eF5AB95cF',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'kins-kins-morph',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Pumpkins',
+  assets: ['KINS', 'MORPH'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x865740c62ec992893a835AbA138cD3cec9b126E0',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x6ECED8E16eDA61E65292f019B165542A5906ecD6/0x0789fF5bA37f72ABC4D561D00648acaDC897b32d',
+  buyTokenUrl: 'https://spookyswap.finance/swap?input%D0%A1urrency=0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83&outputCurrency=0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'kins-ftm-kins',
+  logo: 'fantom/KINS-FTM.png',
+  name: 'FTM-KINS (PaintSwap)',
+  token: 'FTM-KINS LP (PaintSwap)',
+  tokenDescription: 'Pumpkins',
+  tokenAddress: '0xe64F282c657e2CbaCCBdCE4c973E08C168049920',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-FTM-KIN-V',
+  earnedTokenAddress: '0x5AD19C5993fb634bac27EC6d3b52768a7B88CF29',
+  earnContractAddress: '0x5AD19C5993fb634bac27EC6d3b52768a7B88CF29',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'kins-ftm-kins',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Pumpkins',
+  assets: ['KINS', 'MORPH'],
+  callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0xe64F282c657e2CbaCCBdCE4c973E08C168049920',
+  addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/FTM/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: PAINT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'kins-usdc-kins',
+  logo: 'fantom/KINS-USDC.png',
+  name: 'USDC-KINS (PaintSwap)',
+  token: 'USDC-KINS LP (PaintSwap)',
+  tokenDescription: 'Pumpkins',
+  tokenAddress: '0xaAB5A826e5edcd06c21bD4f914CBd656FbB196bb',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-USD-KIN-V',
+  earnedTokenAddress: '0xD76Af2846f18aa4a508C5b153Cf5924aB2AFfe0D',
+  earnContractAddress: '0xD76Af2846f18aa4a508C5b153Cf5924aB2AFfe0D',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'kins-usdc-kins',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Pumpkins',
+  assets: ['KINS', 'USDC'],
+  callFee: 0.5,
+  priceChart: 'https://info.paintswap.finance/pair/0xaAB5A826e5edcd06c21bD4f914CBd656FbB196bb',
+  addLiquidityUrl: 'https://exchange.paintswap.finance/#/add/0x6ECED8E16eDA61E65292f019B165542A5906ecD6/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://exchange.paintswap.finance/#/swap?outputCurrency=0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: PAINT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'kins-kins-tomb',
+  logo: 'fantom/KINS-TOMB.png',
+  name: 'KINS-TOMB',
+  token: 'KINS-TOMB LP (SpiritSwap)',
+  tokenDescription: 'Pumpkins',
+  tokenAddress: '0x9eEab00fB6BBFC4d75f34196DffE537325f8E45A',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-KIN-TOM-V',
+  earnedTokenAddress: '0x62fc2B719ba61BfAbCa1C0f5f56d959B7d628D4B',
+  earnContractAddress: '0x62fc2B719ba61BfAbCa1C0f5f56d959B7d628D4B',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'kins-kins-tomb',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Pumpkins',
+  assets: ['KINS', 'TOMB'],
+  callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x9eEab00fB6BBFC4d75f34196DffE537325f8E45A',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x6ECED8E16eDA61E65292f019B165542A5906ecD6/0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'kins-kins-spirit',
+  logo: 'fantom/KINS-SPIRIT.png',
+  name: 'KINS-SPIRIT',
+  token: 'KINS-SPIRIT LP (SpiritSwap)',
+  tokenDescription: 'Pumpkins',
+  tokenAddress: '0x102Dc0a06a7A9fDAe5c18847Dfcfed52Feb50e3F',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-KIN-SPI-V',
+  earnedTokenAddress: '0x48b3ADAa8315a535AF6e795c79E62F0d6260d6f1',
+  earnContractAddress: '0x48b3ADAa8315a535AF6e795c79E62F0d6260d6f1',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'kins-kins-spirit',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Pumpkins',
+  assets: ['KINS', 'SPIRIT'],
+  callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x102Dc0a06a7A9fDAe5c18847Dfcfed52Feb50e3F',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x6ECED8E16eDA61E65292f019B165542A5906ecD6/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'kins-kins-eth',
+  logo: 'fantom/KINS-ETH.png',
+  name: 'KINS-ETH',
+  token: 'KINS-ETH LP (SpiritSwap)',
+  tokenDescription: 'Pumpkins',
+  tokenAddress: '0x5E01faB296bB3C5bF9B65Cf3D04442dC02bc15b4',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-KIN-ETH-V',
+  earnedTokenAddress: '0x5eEa8Ca0e783850E658AdC30D733137aE2869283',
+  earnContractAddress: '0x5eEa8Ca0e783850E658AdC30D733137aE2869283',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'kins-kins-eth',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Pumpkins',
+  assets: ['KINS', 'ETH'],
+  callFee: 0.5,
+  priceChart: 'https://info.spiritswap.finance/pair/0x5E01faB296bB3C5bF9B65Cf3D04442dC02bc15b4',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x6ECED8E16eDA61E65292f019B165542A5906ecD6/0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'kins-kins-elk',
+  logo: 'fantom/KINS-ELK.png',
+  name: 'KINS-ELK',
+  token: 'KINS-ELK LP (Elk Finance)',
+  tokenDescription: 'Pumpkins',
+  tokenAddress: '0x72644252881f4da278Ca811906EEA5768c6Bd781',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-KIN-ELK-V',
+  earnedTokenAddress: '0xEDea37619f5fdF1Ce328E563914a372DE99DAe4b',
+  earnContractAddress: '0xEDea37619f5fdF1Ce328E563914a372DE99DAe4b',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'kins-kins-elk',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Pumpkins',
+  assets: ['KINS', 'ELK'],
+  callFee: 0.5,
+  priceChart: 'https://ftm-info.elk.finance/pair/0x72644252881f4da278Ca811906EEA5768c6Bd781',
+  addLiquidityUrl: 'https://app.elk.finance/#/add/0xE1C110E1B1b4A1deD0cAf3E42BfBdbB7b5d7cE1C/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  buyTokenUrl: 'https://app.elk.finance/#/swap/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: ELK_ROUTER,
+
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-spirit-ginspirit',
+  logo: 'fantom/SPIRIT-GINSPIRIT.png',
+  name: 'SPIRIT-GinSPIRIT',
+  token: 'SPIRIT-GinSPIRIT LP (SpiritSwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xc6ED96EdC14a199bde017A273A2CBd4a129bdC65',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SPI-GIN-c',
+  earnedTokenAddress: '0xBcBd8c6D3E98b9D3E6DE115781368859DB55AF1c',
+  earnContractAddress: '0xBcBd8c6D3E98b9D3E6DE115781368859DB55AF1c',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-spirit-ginspirit',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['SPIRIT', 'GinSPIRIT'],
+  callFee: 0.5,
+  depositFee: '2.5% from Farm Provider',
+  priceChart: 'https://info.spiritswap.finance/pair/0xc6ED96EdC14a199bde017A273A2CBd4a129bdC65',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x2787bea3366335068bf8b4a253044d09ea4e1c96/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-dai-reaper',
+  logo: 'fantom/REAPER-DAI.png',
+  name: 'REAPER-DAI',
+  token: 'REAPER-DAI LP (SpiritSwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xdEC189E7e3281EdEf408a40B5EAe9B7BB83A3602',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-DAI-REA-c',
+  earnedTokenAddress: '0x9F21Ab6190cc2D3CA700399d3681F56Fe67A5997',
+  earnContractAddress: '0x9F21Ab6190cc2D3CA700399d3681F56Fe67A5997',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-dai-reaper',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['REAPER', 'DAI'],
+  callFee: 0.5,
+  depositFee: '2.5% from Farm Provider',
+  priceChart: 'https://info.spiritswap.finance/pair/0xdEC189E7e3281EdEf408a40B5EAe9B7BB83A3602',
+  addLiquidityUrl: 'https://swap.spiritswap.finance/#/add/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPIRIT_ROUTER,
+    tokens: [
+      // ...spiritTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-scare',
+  logo: 'fantom/SCARE.png',
+  name: 'SCARE',
+  token: 'SCARE',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SCARE-c',
+  earnedTokenAddress: '0x639a679e5B7aC3f9F3D5df0114b33F88C8CD72aC',
+  earnContractAddress: '0x639a679e5B7aC3f9F3D5df0114b33F88C8CD72aC',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'SCARE',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['SCARE'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-ftm',
+  logo: 'fantom/WFTM.png',
+  name: 'WFTM',
+  token: 'WFTM',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-FTM-c',
+  earnedTokenAddress: '0xE8202cBCb0ede8BBB9bF6dc2693B1A0d0c37A674',
+  earnContractAddress: '0xE8202cBCb0ede8BBB9bF6dc2693B1A0d0c37A674',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'WFTM',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['FTM'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokensNoFtm,
+    ],
+  },
+},
+
+{
+  id: 'scare-eth',
+  logo: 'fantom/ETH.png',
+  name: 'ETH',
+  token: 'ETH',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-ETH-c',
+  earnedTokenAddress: '0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  earnContractAddress: '0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'ETH',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['ETH'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-btc',
+  logo: 'fantom/BTC.png',
+  name: 'BTC',
+  token: 'BTC',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x321162Cd933E2Be498Cd2267a90534A804051b11',
+  tokenDecimals: 8,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BTC-c',
+  earnedTokenAddress: '0x5cB9f1A5A184f56DE000B5Cf7492F1839451a742',
+  earnContractAddress: '0x5cB9f1A5A184f56DE000B5Cf7492F1839451a742',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'BTC',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['BTC'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0x321162Cd933E2Be498Cd2267a90534A804051b11',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-bnb',
+  logo: 'fantom/BNB.png',
+  name: 'BNB',
+  token: 'BNB',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BNB-c',
+  earnedTokenAddress: '0x859d0533C494Df9e044D68A5985435D7D14999eE',
+  earnContractAddress: '0x859d0533C494Df9e044D68A5985435D7D14999eE',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'BNB',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['BNB'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-usdc',
+  logo: 'fantom/USDC.png',
+  name: 'USDC',
+  token: 'USDC',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  tokenDecimals: 6,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-USDC-c',
+  earnedTokenAddress: '0x304bE7c1B7D34f7fCDb4D5cebFF4eDf967266aEA',
+  earnContractAddress: '0x304bE7c1B7D34f7fCDb4D5cebFF4eDf967266aEA',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'usdc',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['USDC'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-fusdt',
+  logo: 'fantom/FUSDT.png',
+  name: 'fUSDT',
+  token: 'fUSDT',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+  tokenDecimals: 6,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-FUSDT-c',
+  earnedTokenAddress: '0x75b4dA13196d6a38b9D51fCe9C9E9a0b33a46CA9',
+  earnContractAddress: '0x75b4dA13196d6a38b9D51fCe9C9E9a0b33a46CA9',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'fUSDT',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['fUSDT'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-dai',
+  logo: 'fantom/DAI.png',
+  name: 'DAI',
+  token: 'DAI',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-DAI-c',
+  earnedTokenAddress: '0x028bf9556fa85337000F5BB2B6d441EA82C72c65',
+  earnContractAddress: '0x028bf9556fa85337000F5BB2B6d441EA82C72c65',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'dai',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['DAI'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-boo',
+  logo: 'fantom/BOO.png',
+  name: 'BOO',
+  token: 'BOO',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BOO-c',
+  earnedTokenAddress: '0x93CFbaB4CDA797a464Eb5ec6c8a400586ce9320d',
+  earnContractAddress: '0x93CFbaB4CDA797a464Eb5ec6c8a400586ce9320d',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'BOO',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['BOO'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-max',
+  logo: 'fantom/MAX.png',
+  name: 'MAX',
+  token: 'MAX',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x287A3f943Db1C053c3e79d2f211FFE5c795b978B',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-MAX-c',
+  earnedTokenAddress: '0x3a8F9d9bf4Ca1a9a3610636324799371FbF711A3',
+  earnContractAddress: '0x3a8F9d9bf4Ca1a9a3610636324799371FbF711A3',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'MAX',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['MAX'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0x287A3f943Db1C053c3e79d2f211FFE5c795b978B',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x287A3f943Db1C053c3e79d2f211FFE5c795b978B',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-olive',
+  logo: 'fantom/OLIVE.png',
+  name: 'fOLIVE',
+  token: 'fOLIVE',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-OLIVE-c',
+  earnedTokenAddress: '0xd8E6cFb0505645FA25EdAD746f7D644b7Cd28142',
+  earnContractAddress: '0xd8E6cFb0505645FA25EdAD746f7D644b7Cd28142',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'fOLIVE',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['fOLIVE'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0xA9937092c4E2B0277C16802Cc8778D252854688A',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-mim',
+  logo: 'fantom/MIM.png',
+  name: 'MIM',
+  token: 'MIM',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x82f0B8B456c1A451378467398982d4834b6829c1',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-MIM-c',
+  earnedTokenAddress: '0x1B589B49A02960973C8A1C2F5ab6e56023a6bbca',
+  earnContractAddress: '0x1B589B49A02960973C8A1C2F5ab6e56023a6bbca',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'MIM',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['MIM'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0x82f0B8B456c1A451378467398982d4834b6829c1',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x82f0B8B456c1A451378467398982d4834b6829c1',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-spell',
+  logo: 'fantom/SPELL.png',
+  name: 'SPELL',
+  token: 'SPELL',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x468003B688943977e6130F4F68F23aad939a1040',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SPELL-c',
+  earnedTokenAddress: '0x8F73C2eB80a0A6E83C6d74161f4872d5B9076A1C',
+  earnContractAddress: '0x8F73C2eB80a0A6E83C6d74161f4872d5B9076A1C',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'SPELL',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['SPELL'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0x468003B688943977e6130F4F68F23aad939a1040',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x468003B688943977e6130F4F68F23aad939a1040',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-scream',
+  logo: 'fantom/SCREAM.png',
+  name: 'SCREAM',
+  token: 'SCREAM',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SCREAM-c',
+  earnedTokenAddress: '0x21d2D39f3E4C5447618c7070E155a69616F33136',
+  earnContractAddress: '0x21d2D39f3E4C5447618c7070E155a69616F33136',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'SCREAM',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['SCREAM'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/token/0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-kins',
+  logo: 'fantom/KINS.png',
+  name: 'KINS',
+  token: 'KINS',
+  tokenDescription: 'Scarecrow | \u26A0 A 10% BURN is incurred on deposits for this pool.',
+  tokenAddress: '0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-KINS-c',
+  earnedTokenAddress: '0x350285b077c8aFD31b2a6b8d0f561118C5Ee3348',
+  earnContractAddress: '0x350285b077c8aFD31b2a6b8d0f561118C5Ee3348',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'KINS',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['KINS'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-cgs',
+  logo: 'fantom/CGS.png',
+  name: 'CGS',
+  token: 'CGS',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x5a2e451Fb1b46FDE7718315661013ae1aE68e28C',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-CGS-c',
+  earnedTokenAddress: '0x7bEf8b10DcAe3C4849e2e320c66680abb2b6c103',
+  earnContractAddress: '0x7bEf8b10DcAe3C4849e2e320c66680abb2b6c103',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'tokens',
+  oracleId: 'CGS',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['CGS'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/token/0x5a2e451Fb1b46FDE7718315661013ae1aE68e28C',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x5a2e451Fb1b46FDE7718315661013ae1aE68e28C',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'scare-scare-ftm',
+  logo: 'fantom/SCARE-FTM.png',
+  name: 'SCARE-FTM',
+  token: 'SCARE-FTM LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xD6B312D05faDBa48eC6B899dD7Db61e79fc36681',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SCA-FTM-c',
+  earnedTokenAddress: '0x08Fef8335ed808F67768f905228FBE241873ae3A',
+  earnContractAddress: '0x08Fef8335ed808F67768f905228FBE241873ae3A',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-scare-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['SCARE', 'FTM'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xD6B312D05faDBa48eC6B899dD7Db61e79fc36681',
+  addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-scare-usdc',
+  logo: 'fantom/SCARE-USDC.png',
+  name: 'SCARE-USDC',
+  token: 'SCARE-USDC LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xC4C9a74b10Ca90DbA51a4ec69c7b3CE6709bAebf',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SCA-USD-c',
+  earnedTokenAddress: '0xc5499f1DCC8a794cce444ABa13D870afC51352b2',
+  earnContractAddress: '0xc5499f1DCC8a794cce444ABa13D870afC51352b2',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-scare-usdc',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['SCARE', 'USDC'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xC4C9a74b10Ca90DbA51a4ec69c7b3CE6709bAebf',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-usdc-ftm',
+  logo: 'fantom/USDC-FTM.png',
+  name: 'USDC-FTM',
+  token: 'USDC-FTM LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x2b4C76d0dc16BE1C31D4C1DC53bF9B45987Fc75c',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-USD-FTM-c',
+  earnedTokenAddress: '0xEe3FCB9eFb63d4C0EB2A335dE777FAdAaD7a7208',
+  earnContractAddress: '0xEe3FCB9eFb63d4C0EB2A335dE777FAdAaD7a7208',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-usdc-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['FTM', 'USDC'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/pair/0x2b4C76d0dc16BE1C31D4C1DC53bF9B45987Fc75c',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/FTM',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-eth-ftm',
+  logo: 'fantom/ETH-FTM.png',
+  name: 'ETH-FTM',
+  token: 'ETH-FTM LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xf0702249F4D3A25cD3DED7859a165693685Ab577',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-ETH-FTM-c',
+  earnedTokenAddress: '0xfA5597cECbf84eAc0D752466ef9a860f9a6D420C',
+  earnContractAddress: '0xfA5597cECbf84eAc0D752466ef9a860f9a6D420C',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-eth-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['FTM', 'ETH'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/pair/0xf0702249F4D3A25cD3DED7859a165693685Ab577',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-boo-ftm',
+  logo: 'fantom/BOO-FTM.png',
+  name: 'BOO-FTM',
+  token: 'BOO-FTM LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xEc7178F4C41f346b2721907F5cF7628E388A7a58',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BOO-FTM-c',
+  earnedTokenAddress: '0x9fD48A251Fc68413c8ec768014aAA8a91b70E1Eb',
+  earnContractAddress: '0x9fD48A251Fc68413c8ec768014aAA8a91b70E1Eb',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-boo-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['FTM', 'BOO'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/pair/0xEc7178F4C41f346b2721907F5cF7628E388A7a58',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE/FTM',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-usdc-fusdt',
+  logo: 'fantom/USDC-FUSDT.png',
+  name: 'USDC-fUSDT',
+  token: 'USDC-fUSDT LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xFdef392aDc84607135C24ca45DE5452d77aa10DE',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-USD-FUS-c',
+  earnedTokenAddress: '0xC5FCB5ed90E7B9017a90723b0676f633Fdae3Cc9',
+  earnContractAddress: '0xC5FCB5ed90E7B9017a90723b0676f633Fdae3Cc9',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-usdc-fusdt',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['USDC', 'fUSDT'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/pair/0xFdef392aDc84607135C24ca45DE5452d77aa10DE',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-eth-btc',
+  logo: 'fantom/ETH-BTC.png',
+  name: 'ETH-BTC',
+  token: 'ETH-BTC LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xEc454EdA10accdD66209C57aF8C12924556F3aBD',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-ETH-BTC-c',
+  earnedTokenAddress: '0x286dB111efF59b433b44E8F531D402a8Aceb6c2d',
+  earnContractAddress: '0x286dB111efF59b433b44E8F531D402a8Aceb6c2d',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-eth-btc',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['ETH', 'BTC'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/pair/0xEc454EdA10accdD66209C57aF8C12924556F3aBD',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/0x321162Cd933E2Be498Cd2267a90534A804051b11',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-fusdt-ftm',
+  logo: 'fantom/FUSDT-FTM.png',
+  name: 'fUSDT-FTM',
+  token: 'fUSDT-FTM LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x5965E53aa80a0bcF1CD6dbDd72e6A9b2AA047410',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-FUS-FTM-c',
+  earnedTokenAddress: '0x157DE8726B21decDbE201DB810B9C6a742B91259',
+  earnContractAddress: '0x157DE8726B21decDbE201DB810B9C6a742B91259',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-fusdt-ftm',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['fUSDT', 'FTM'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/pair/0x5965E53aa80a0bcF1CD6dbDd72e6A9b2AA047410',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/FTM',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-boo-fusdt',
+  logo: 'fantom/BOO-FUSDT.png',
+  name: 'fUSDT-BOO',
+  token: 'fUSDT-BOO LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xBe8da8C007c45e8136b99f14481388cB4d76f8F8',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BOO-FUS-c',
+  earnedTokenAddress: '0x157DE8726B21decDbE201DB810B9C6a742B91259',
+  earnContractAddress: '0x157DE8726B21decDbE201DB810B9C6a742B91259',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-boo-fusdt',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['fUSDT', 'BOO'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/pair/0xBe8da8C007c45e8136b99f14481388cB4d76f8F8',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-boo-usdc',
+  logo: 'fantom/BOO-USDC.png',
+  name: 'USDC-BOO',
+  token: 'USDC-BOO LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xf8Cb2980120469d79958151daa45Eb937c6E1eD6',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-BOO-USD-c',
+  earnedTokenAddress: '0xCb01b69E9c76e4D10ED459f2F5A6d17Dec6bBC21',
+  earnContractAddress: '0xCb01b69E9c76e4D10ED459f2F5A6d17Dec6bBC21',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-boo-usdc',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['USDC', 'BOO'],
+  callFee: 0.5,
+  depositFee: '4% from Farm Provider',
+  priceChart: 'https://info.spookyswap.finance/pair/0xf8Cb2980120469d79958151daa45Eb937c6E1eD6',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-scare-mim',
+  logo: 'fantom/SCARE-MIM.png',
+  name: 'SCARE-MIM',
+  token: 'SCARE-MIM LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0xA0284581778EFaf3834469b64A25cb02187f782E',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SCA-MIM-c',
+  earnedTokenAddress: '0x43AB6258e14C6885D8E0f1603bE42904330E7c4B',
+  earnContractAddress: '0x43AB6258e14C6885D8E0f1603bE42904330E7c4B',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-scare-mim',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['SCARE', 'MIM'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0xA0284581778EFaf3834469b64A25cb02187f782E',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x82f0B8B456c1A451378467398982d4834b6829c1/0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-scare-fusdt',
+  logo: 'fantom/SCARE-FUSDT.png',
+  name: 'SCARE-fUSDT',
+  token: 'SCARE-fUSDT LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x09f0925e27E59312920264AdE739cb48c618ac51',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SCA-FUS-c',
+  earnedTokenAddress: '0x57F00aD3D0A95911B127Eab80eE9C3562E8a049E',
+  earnContractAddress: '0x57F00aD3D0A95911B127Eab80eE9C3562E8a049E',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-scare-fusdt',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['SCARE', 'fUSDT'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x09f0925e27E59312920264AdE739cb48c618ac51',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
+
+    ],
+  },
+},
+
+{
+  id: 'scare-scare-dai',
+  logo: 'fantom/SCARE-DAI.png',
+  name: 'SCARE-DAI',
+  token: 'SCARE-DAI LP (SpookySwap)',
+  tokenDescription: 'Scarecrow',
+  tokenAddress: '0x13f66A471f3d5a40366468232294eb9895C9a201',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SCA-DAI-c',
+  earnedTokenAddress: '0x258C719536EA30dd59fFF913827f4B2e378ce6A9',
+  earnContractAddress: '0x258C719536EA30dd59fFF913827f4B2e378ce6A9',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'scare-scare-dai',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Scarecrow',
+  assets: ['SCARE', 'DAI'],
+  callFee: 0.5,
+  priceChart: 'https://info.spookyswap.finance/pair/0x13f66A471f3d5a40366468232294eb9895C9a201',
+  addLiquidityUrl: 'https://spookyswap.finance/add/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x46e1Ee17f51c52661D04238F1700C547dE3B84A1',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      ...spookyTokens,
+      ...zapTokens,
 
     ],
   },
