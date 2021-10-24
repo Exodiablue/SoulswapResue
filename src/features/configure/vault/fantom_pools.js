@@ -15474,7 +15474,7 @@ const pools = [
   callFee: 0.5,
   priceChart:'https://app.beethovenx.io/#/pool/0xcde5a11a4acb4ee4c805352cec57e236bdbc3837000200000000000000000019',
   addLiquidityUrl: 'https://app.beethovenx.io/#/pool/0xcde5a11a4acb4ee4c805352cec57e236bdbc3837000200000000000000000019',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0xF24Bcf4d1e507740041C9cFd2DddB29585aDCe1e',
+  buyTokenUrl: 'https://app.beethovenx.io/#/trade',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
@@ -15510,7 +15510,7 @@ const pools = [
   callFee: 0.5,
   priceChart:'https://app.beethovenx.io/#/pool/0x03c6b3f09d2504606936b1a4decefad204687890000200000000000000000015',
   addLiquidityUrl: 'https://app.beethovenx.io/#/pool/0x03c6b3f09d2504606936b1a4decefad204687890000200000000000000000015',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://app.beethovenx.io/#/trade',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
@@ -15546,7 +15546,7 @@ const pools = [
   callFee: 0.5,
   priceChart: 'https://app.beethovenx.io/#/pool/0xd41bf724b6e31311db582c5388af6b316e812fe4000200000000000000000003',
   addLiquidityUrl: 'https://app.beethovenx.io/#/pool/0xd41bf724b6e31311db582c5388af6b316e812fe4000200000000000000000003',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://app.beethovenx.io/#/trade',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
@@ -15582,7 +15582,7 @@ const pools = [
   callFee: 0.5,
   priceChart: 'https://app.beethovenx.io/#/pool/0xcdf68a4d525ba2e90fe959c74330430a5a6b8226000200000000000000000008',
   addLiquidityUrl: 'https://app.beethovenx.io/#/pool/0xcdf68a4d525ba2e90fe959c74330430a5a6b8226000200000000000000000008',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://app.beethovenx.io/#/trade',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
@@ -15618,7 +15618,7 @@ const pools = [
   callFee: 0.5,
   priceChart: 'https://app.beethovenx.io/#/pool/0xd47d2791d3b46f9452709fa41855a045304d6f9d000100000000000000000004',
   addLiquidityUrl: 'https://app.beethovenx.io/#/pool/0xd47d2791d3b46f9452709fa41855a045304d6f9d000100000000000000000004',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  buyTokenUrl: 'https://app.beethovenx.io/#/trade',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
@@ -15655,7 +15655,7 @@ const pools = [
   withdrawalFee: '0%',
   priceChart: 'https://app.beethovenx.io/#/pool/0xa07de66aef84e2c01d88a48d57d1463377ee602b000200000000000000000002',
   addLiquidityUrl: 'https://app.beethovenx.io/#/pool/0xa07de66aef84e2c01d88a48d57d1463377ee602b000200000000000000000002',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  buyTokenUrl: 'https://app.beethovenx.io/#/trade',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
@@ -15691,7 +15691,7 @@ const pools = [
   callFee: 0.5,
   priceChart: 'https://app.beethovenx.io/#/pool/0x6fdc8415b654b0f60475944a0b9421dc36ee1363000100000000000000000000',
   addLiquidityUrl: 'https://app.beethovenx.io/#/pool/0x6fdc8415b654b0f60475944a0b9421dc36ee1363000100000000000000000000',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+  buyTokenUrl: 'https://app.beethovenx.io/#/trade',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
@@ -15727,7 +15727,7 @@ const pools = [
   callFee: 0.5,
   priceChart: 'https://app.beethovenx.io/#/pool/0x22b30b00e6796daf710fbe5cafbfc9cdd1377f2a000200000000000000000001',
   addLiquidityUrl: 'https://app.beethovenx.io/#/pool/0x22b30b00e6796daf710fbe5cafbfc9cdd1377f2a000200000000000000000001',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x321162Cd933E2Be498Cd2267a90534A804051b11',
+  buyTokenUrl: 'https://app.beethovenx.io/#/trade',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
@@ -15763,7 +15763,7 @@ const pools = [
   callFee: 0.5,
   priceChart: 'https://app.beethovenx.io/#/pool/0xd163415bd34ef06f57c58d2aed5a5478afb464cc00000000000000000000000e',
   addLiquidityUrl: 'https://app.beethovenx.io/#/pool/0xd163415bd34ef06f57c58d2aed5a5478afb464cc00000000000000000000000e',
-  buyTokenUrl: 'https://swap.spiritswap.finance/#/swap/0x74b23882a30290451A17c44f4F05243b6b58C76d',
+  buyTokenUrl: 'https://app.beethovenx.io/#/trade',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
@@ -15771,6 +15771,158 @@ const pools = [
       // ...spookyTokens,
       // ...zapTokens,
 
+    ],
+  },
+},
+
+{
+  id: 'beets-guqin-qi',
+  logo: 'fantom/BEETS-QI.png',
+  name: 'Guqin Qi',
+  token: 'Guqin Qi',
+  tokenDescription: 'Beethoven X | Assets: USDC, MAI',
+  tokenAddress: '0x2ed55f12e700CdE978E1F0491D681919814ca44B',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-GUQIN',
+  earnedTokenAddress: '0x06df70f93e4c0f1446B4D443E863be3B050a1beb',
+  earnContractAddress: '0x06df70f93e4c0f1446B4D443E863be3B050a1beb',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'beets-guqin-qi',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Beethoven X',
+  assets: ['MAI', 'USDC'],
+  callFee: 0.5,
+  priceChart:
+    'https://app.beethovenx.io/#/pool/0x2ed55f12e700cde978e1f0491d681919814ca44b000200000000000000000021',
+  addLiquidityUrl:
+    'https://app.beethovenx.io/#/pool/0x2ed55f12e700cde978e1f0491d681919814ca44b000200000000000000000021',
+  buyTokenUrl:
+    'https://app.beethovenx.io/#/trade',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      // ...spookyTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'beets-magic-touch-daniele',
+  logo: 'fantom/BEETS-TOUCH.png',
+  name: 'The Magic Touch By Daniele',
+  token: 'The Magic Touch By Daniele',
+  tokenDescription: 'Beethoven X | Assets: FTM, USDC, SPELL, MIM, wMEMO, ICE',
+  tokenAddress: '0x6d12D3fE16dD83115254a32B273B05Ac5444C349',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-TOUCH',
+  earnedTokenAddress: '0x9E6f53c29870C436F4eDC200714713549ADA274f',
+  earnContractAddress: '0x9E6f53c29870C436F4eDC200714713549ADA274f',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'beets-magic-touch-daniele',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Beethoven X',
+  assets: ['FTM','USDC','SPELL','MIM','wMEMO','ICE'],
+  callFee: 0.5,
+  priceChart:
+    'https://app.beethovenx.io/#/pool/0x6d12d3fe16dd83115254a32b273b05ac5444c349000100000000000000000029',
+  addLiquidityUrl:
+    'https://app.beethovenx.io/#/pool/0x6d12d3fe16dd83115254a32b273b05ac5444c349000100000000000000000029',
+  buyTokenUrl:
+    'https://app.beethovenx.io/#/trade',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      // ...spookyTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'beets-ftm-sonata',
+  logo: 'fantom/BEETS-SONATA.png',
+  name: 'FTM Sonata',
+  token: 'FTM Sonata',
+  tokenDescription: 'Beethoven X | Assets: FTM, USDC, CRV, SPIRIT, BOO, LINK, SCREAM',
+  tokenAddress: '0xf0e2c47d4C9FBBbc2F2E19ACdaA3c773A3ECD221',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-SONATA',
+  earnedTokenAddress: '0x4AeCC3d7c373767Be7E19047De3Db1892ae14a2E',
+  earnContractAddress: '0x4AeCC3d7c373767Be7E19047De3Db1892ae14a2E',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'beets-ftm-sonata',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Beethoven X',
+  assets: ['FTM','USDC','CRV','SPIRIT','BOO','LINK','SCREAM'],
+  callFee: 0.5,
+  priceChart:
+    'https://app.beethovenx.io/#/pool/0xf0e2c47d4c9fbbbc2f2e19acdaa3c773a3ecd22100010000000000000000000a',
+  addLiquidityUrl:
+    'https://app.beethovenx.io/#/pool/0xf0e2c47d4c9fbbbc2f2e19acdaa3c773a3ecd22100010000000000000000000a',
+  buyTokenUrl:
+    'https://app.beethovenx.io/#/trade',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      // ...spookyTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'beets-dance-of-degens',
+  logo: 'fantom/BEETS-DANCE.png',
+  name: 'Dance of the Degens',
+  token: 'Dance of the Degens',
+  tokenDescription: 'Beethoven X | Assets: FTM, SPELL, SPIRIT, BOO, TAROT, ANY, SCREAM, ICE',
+  tokenAddress: '0x72C0eB973Dc95e2d185563f58fC26626CC2e8034',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-DEGENS',
+  earnedTokenAddress: '0xf1a9AF49E70D724543D2698882343C85976C037a',
+  earnContractAddress: '0xf1a9AF49E70D724543D2698882343C85976C037a',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'beets-dance-of-degens',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Beethoven X',
+  assets: ['FTM','SPELL','TAROT','SPIRIT','BOO','ANY','SCREAM','ICE'],
+  callFee: 0.5,
+  priceChart:
+    'https://app.beethovenx.io/#/pool/0x72c0eb973dc95e2d185563f58fc26626cc2e8034000100000000000000000011',
+  addLiquidityUrl:
+    'https://app.beethovenx.io/#/pool/0x72c0eb973dc95e2d185563f58fc26626cc2e8034000100000000000000000011',
+  buyTokenUrl:
+    'https://app.beethovenx.io/#/trade',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      // ...spookyTokens,
+      // ...zapTokens,
     ],
   },
 },
