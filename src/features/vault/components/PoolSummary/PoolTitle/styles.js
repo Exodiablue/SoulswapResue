@@ -24,7 +24,8 @@ const styles = theme => ({
     lineHeight: '14px',
     letterSpacing: 0,
     '&:hover,&:focus': {
-      color: theme.palette.text.secondary,
+      // color: theme.palette.text.secondary,
+      color: '#c11828',
     },
   },
   icon: {
