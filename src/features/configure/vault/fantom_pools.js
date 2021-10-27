@@ -5953,8 +5953,8 @@ const pools = [
   assets: ['TOMB', 'FTM'],
   callFee: 0.5,
   priceChart: 'https://info.spookyswap.finance/pair/0x2A651563C9d3Af67aE0388a5c8F89b867038089e',
-  addLiquidityUrl: 'https://spookyswap.finance/add',
-  buyTokenUrl: 'https://spookyswap.finance/swap',
+  addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
@@ -5989,8 +5989,8 @@ const pools = [
   assets: ['TSHARE', 'FTM'],
   callFee: 0.5,
   priceChart: 'https://info.spookyswap.finance/pair/0x4733bc45eF91cF7CcEcaeeDb794727075fB209F2',
-  addLiquidityUrl: 'https://spookyswap.finance/add',
-  buyTokenUrl: 'https://spookyswap.finance/swap',
+  addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
+  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
