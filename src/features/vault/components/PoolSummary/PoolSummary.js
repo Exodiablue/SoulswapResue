@@ -98,17 +98,18 @@ const PoolSummary = ({
             minutes.toFixed() + " " + "minutes"
   }
 
-  function SecondsToDays(n) {
-    var day = parseInt( n / (24 * 3600));
-
-    n = n % (24 * 3600);
-    if (n<0){
+  function SecondsToDays(seconds) {
+    // var date = new Date();
+    // var dateSeconds = Math.round(date.getTime() / 1000);
+    // seconds = seconds-dateSeconds;
+    if (seconds<0){
       return 'WAITING FOR NEXT HARVEST'
     }
-    var hour = parseInt(n / 3600);
 
-    n %= 3600;
-    var minutes = n / 60;
+    var day = Math.floor(seconds / (3600*24));
+    var hour = Math.floor(seconds % (3600*24) / 3600);
+    var minutes = Math.floor(seconds % 3600 / 60);
+    var s = Math.floor(seconds % 60);
 
     return  day + " " + "days " + 
             hour + " " + "hours " + 
@@ -127,9 +128,9 @@ const PoolSummary = ({
         const openWithdrawal = await contract.methods.openWithdrawal().call();
         const timeStaked = new BigNumber( await contract.methods.timeStaked().call() );
         const withdrawLockStart = new BigNumber( await contract.methods.withdrawLockStart().call() );
-        
+        const windowLength = new BigNumber( await contract.methods.windowLength().call() );
         const nextWindowStartTime = new BigNumber( await contract.methods.nextWindowStartTime().call() );
-        const remainingLockTime = nextWindowStartTime - timeStaked + withdrawLockStart ;
+        const remainingLockTime = windowLength-timeStaked;
 
           //var lockVars =  getLockTime();
           var lockDisplay = 'NEXT UNLOCK IN: ' + CountdownEpoch(nextWindowStartTime);
