@@ -124,7 +124,7 @@ const PoolSummary = ({
         var myweb3 = new Web3(new Web3.providers.HttpProvider('https://rpc.ftm.tools'));
         const contract = new myweb3.eth.Contract(SOUL_ABI, pool.strategyAddress);
     
-        const openWithdrawal = new BigNumber( await contract.methods.openWithdrawal().call() );
+        const openWithdrawal = await contract.methods.openWithdrawal().call();
         const timeStaked = new BigNumber( await contract.methods.timeStaked().call() );
         const withdrawLockStart = new BigNumber( await contract.methods.withdrawLockStart().call() );
         
