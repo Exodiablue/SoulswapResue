@@ -15706,7 +15706,7 @@ const pools = [
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
-    oracleId: 'beets-fantom-conservatory"',
+    oracleId: 'beets-fantom-conservatory',
     oraclePrice: 0,
     depositsPaused: false,
     status: 'active',
