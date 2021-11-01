@@ -16035,6 +16035,120 @@ const pools = [
 },
 
 {
+  id: 'beets-a-late-quartet',
+  logo: 'fantom/G-QUARTET.png',
+  name: 'A Late Quartet',
+  token: 'A Late Quartet',
+  tokenDescription: 'Beethoven X | Assets: FTM, USDC, BTC, ETH',
+  tokenAddress: '0xf3A602d30dcB723A74a0198313a7551FEacA7DAc',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-QUARTET',
+  earnedTokenAddress: '0x3471ffB5BF5F0E81EB43f1b73e74D287244387C4',
+  earnContractAddress: '0x3471ffB5BF5F0E81EB43f1b73e74D287244387C4',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'beets-a-late-quartet',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Beethoven X',
+  assets: ['FTM', 'USDC', 'BTC', 'ETH'],
+  callFee: 0.5,
+  priceChart:
+    'https://app.beets.fi/#/farm/0xf3a602d30dcb723a74a0198313a7551feaca7dac00010000000000000000005f',
+  addLiquidityUrl:
+    'https://app.beets.fi/#/farm/0xf3a602d30dcb723a74a0198313a7551feaca7dac00010000000000000000005f',
+  buyTokenUrl:
+    'https://app.beethovenx.io/#/trade',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      // ...spookyTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'beets-fantom-conservatory"',
+  logo: 'fantom/G-CONSER.png',
+  name: 'Fantom Conservatory of Music',
+  token: 'Fantom Conservatory of Music',
+  tokenDescription: 'Beethoven X | Assets: FTM, BEETS, SPIRIT, BOO, TAROT, ANY, SCREAM',
+  tokenAddress: '0xfC092F85125907fFcb0f9012e6e40B3f37c4De60',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-CONSER',
+  earnedTokenAddress: '0x8AC9Bb5Bd58B7be342530C204E0E3E924E8f8887',
+  earnContractAddress: '0x8AC9Bb5Bd58B7be342530C204E0E3E924E8f8887',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'beets-fantom-conservatory"',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Beethoven X',
+  assets: ['FTM', 'BEETS', 'SPIRIT', 'BOO', 'TAROT', 'ANY', 'SCREAM'],
+  callFee: 0.5,
+  priceChart:
+    'https://app.beets.fi/#/farm/0xfc092f85125907ffcb0f9012e6e40b3f37c4de60000100000000000000000044',
+  addLiquidityUrl:
+    'https://app.beets.fi/#/farm/0xfc092f85125907ffcb0f9012e6e40b3f37c4de60000100000000000000000044',
+  buyTokenUrl:
+    'https://app.beethovenx.io/#/trade',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      // ...spookyTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'beets-guqin-qi-2',
+  logo: 'fantom/BEETS-QI.png',
+  name: 'Guqin Qi V2',
+  token: 'Guqin Qi V2',
+  tokenDescription: 'Beethoven X | Assets: USDC, DAI, MAI',
+  tokenAddress: '0x2C580C6F08044D6dfACA8976a66C8fAddDBD9901',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-GUQINV2',
+  earnedTokenAddress: '0x4967d2a2204C7eeBbfA21bbF2d9Cf11157170fF5',
+  earnContractAddress: '0x4967d2a2204C7eeBbfA21bbF2d9Cf11157170fF5',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'beets-guqin-qi-2',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Beethoven X',
+  assets: ['DAI', 'USDC', 'MAI'],
+  callFee: 0.5,
+  priceChart:
+    'https://app.beethovenx.io/#/pool/0x2c580c6f08044d6dfaca8976a66c8fadddbd9901000000000000000000000038',
+  addLiquidityUrl:
+    'https://app.beethovenx.io/#/pool/0x2c580c6f08044d6dfaca8976a66c8fadddbd9901000000000000000000000038',
+  buyTokenUrl:
+    'https://app.beethovenx.io/#/trade',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      // ...spookyTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
   id: 'beets-guqin-qi',
   logo: 'fantom/BEETS-QI.png',
   name: 'Guqin Qi',
@@ -16174,6 +16288,44 @@ const pools = [
     'https://app.beethovenx.io/#/pool/0x72c0eb973dc95e2d185563f58fc26626cc2e8034000100000000000000000011',
   addLiquidityUrl:
     'https://app.beethovenx.io/#/pool/0x72c0eb973dc95e2d185563f58fc26626cc2e8034000100000000000000000011',
+  buyTokenUrl:
+    'https://app.beethovenx.io/#/trade',
+  zap: {
+    zapAddress: VAULT_ZAP,
+    router: SPOOKY_ROUTER,
+    tokens: [
+      // ...spookyTokens,
+      // ...zapTokens,
+    ],
+  },
+},
+
+{
+  id: 'beets-paint-it-black',
+  logo: 'fantom/PAINT-IT-BLACK.png',
+  name: 'Paint It Black',
+  token: 'Paint It Black',
+  tokenDescription: 'Beethoven X | Assets: FTM, BEETS, BRUSH',
+  tokenAddress: '0x7cA132d9E8c420b84578a6618F10b23545513058',
+  tokenDecimals: 18,
+  tokenDescriptionUrl: '#',
+  earnedToken: 'G-PAINT',
+  earnedTokenAddress: '0xaf72aE165ff0Ed1B8261bAd6a67Ca284d82D84e7',
+  earnContractAddress: '0xaf72aE165ff0Ed1B8261bAd6a67Ca284d82D84e7',
+  pricePerFullShare: 1,
+  tvl: 0,
+  oracle: 'lps',
+  oracleId: 'beets-paint-it-black',
+  oraclePrice: 0,
+  depositsPaused: false,
+  status: 'active',
+  platform: 'Beethoven X',
+  assets: ['FTM', 'BEETS', 'BRUSH'],
+  callFee: 0.5,
+  priceChart:
+    'https://app.beethovenx.io/#/pool/0x7ca132d9e8c420b84578a6618f10b2354551305800010000000000000000002b',
+  addLiquidityUrl:
+    'https://app.beethovenx.io/#/pool/0x7ca132d9e8c420b84578a6618f10b2354551305800010000000000000000002b',
   buyTokenUrl:
     'https://app.beethovenx.io/#/trade',
   zap: {
@@ -16490,40 +16642,6 @@ const pools = [
   depositFee: '2.4% from Farm Provider',
   priceChart: 'https://info.spookyswap.finance/token/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
   buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
-  zap: {
-    zapAddress: VAULT_ZAP,
-    router: SPOOKY_ROUTER,
-    tokens: [
-      ...spookyTokens,
-      ...zapTokens,
-    ],
-  },
-},
-
-{
-  id: 'scare-max',
-  logo: 'fantom/MAX.png',
-  name: 'MAX',
-  token: 'MAX',
-  tokenDescription: 'Scarecrow',
-  tokenAddress: '0x287A3f943Db1C053c3e79d2f211FFE5c795b978B',
-  tokenDecimals: 18,
-  tokenDescriptionUrl: '#',
-  earnedToken: 'G-MAX-c',
-  earnedTokenAddress: '0x3a8F9d9bf4Ca1a9a3610636324799371FbF711A3',
-  earnContractAddress: '0x3a8F9d9bf4Ca1a9a3610636324799371FbF711A3',
-  pricePerFullShare: 1,
-  tvl: 0,
-  oracle: 'tokens',
-  oracleId: 'MAX',
-  oraclePrice: 0,
-  depositsPaused: false,
-  status: 'eol',
-  platform: 'Scarecrow',
-  assets: ['MAX'],
-  callFee: 0.5,
-  priceChart: 'https://info.spookyswap.finance/token/0x287A3f943Db1C053c3e79d2f211FFE5c795b978B',
-  buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x287A3f943Db1C053c3e79d2f211FFE5c795b978B',
   zap: {
     zapAddress: VAULT_ZAP,
     router: SPOOKY_ROUTER,
