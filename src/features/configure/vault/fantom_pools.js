@@ -992,7 +992,7 @@ const pools = [
     name: 'Convert SPIRIT to GinSPIRIT',
     token: 'SPIRIT',
     tokenDescription:
-      'Grim Finance | Convert SPIRIT to GinSPIRIT, 1 to 1 by depositing SPIRIT. Converting SPIRIT to GinSPIRIT is irreversible. You may stake and unstake GinSPIRIT tokens, but not convert them back to SPIRIT.',
+      'Grim Finance | Convert SPIRIT to GinSPIRIT, 1 to 1 by depositing SPIRIT. Use SpiritSwap to trade GinSPIRIT back to SPIRIT.',
     tokenAddress: '0x5cc61a78f164885776aa610fb0fe1257df78e59b',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
@@ -1043,7 +1043,7 @@ const pools = [
     depositsPaused: false,
     status: 'active',
     platform: 'SpiritSwap',
-    assets: ['SPIRIT', 'GinSPIRIT'],
+    assets: ['GinSPIRIT'],
     callFee: 0.5,
     priceChart: 'https://info.spiritswap.finance/token/0x2787bea3366335068bf8b4a253044d09ea4e1c96',
     buyTokenUrl:
@@ -7342,7 +7342,7 @@ const pools = [
     oracleId: 'totem-butt-ftm',
     oraclePrice: 0,
     depositsPaused: false,
-    status: 'active',
+    status: 'eol',
     platform: 'Totem',
     assets: ['BUTT', 'FTM'],
     callFee: 0.5,
@@ -9067,48 +9067,6 @@ const pools = [
   },
 
   {
-    id: 'opera',
-    logo: 'fantom/OPERA.png',
-    name: 'OPERA',
-    token: 'OPERA',
-    tokenDescription: 'OperaSwap',
-    tokenAddress: '0xed940c1db02a8e7dc2e6748aff3aab165b59c7e3',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-OPERA-9',
-    earnedTokenAddress: '0x7a4bBdeB10D35F65E7e5F1ed38f51Cd350E176c0',
-    earnContractAddress: '0x7a4bBdeB10D35F65E7e5F1ed38f51Cd350E176c0',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'tokens',
-    oracleId: 'OPERA',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'eol',
-    platform: 'OperaSwap',
-    assets: ['OPERA'],
-    callFee: 0.5,
-    priceChart: '',
-    buyTokenUrl: 'https://exchange.operaswap.finance/#/swap',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: OPERA_ROUTER,
-
-      tokens: [
-        {
-          name: 'Fantom',
-          address: '',
-          symbol: 'FTM',
-          wrappedSymbol: 'WFTM',
-          decimals: 18,
-          chainId: 250,
-          logoURI: 'https://ftmscan.com/token/images/WFTM_32.png',
-        },
-      ],
-    },
-  },
-
-  {
     id: 'opera-opera-ftm',
     logo: 'fantom/OPERA-FTM.png',
     name: 'OPERA-FTM LP',
@@ -10209,6 +10167,42 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: SPOOKY_ROUTER,
       tokens: [...spookyTokens, ...zapTokens],
+    },
+  },
+
+  {
+    id: 'morph-morph-usdc',
+    logo: 'fantom/MORPH-USDC.png',
+    name: 'MORPH-USDC',
+    token: 'MORPH-USDC LP (SpookySwap)',
+    tokenDescription: 'Morpheus',
+    tokenAddress: '0x3425B1c18491dDC780fb5ab7ACC3dF7D8B802C87',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-MOR-USD-Q',
+    earnedTokenAddress: '0x9deD3CB2b53A7858963a2cEC365A788a38AaE72B',
+    earnContractAddress: '0x9deD3CB2b53A7858963a2cEC365A788a38AaE72B',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'morph-morph-usdc',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'eol',
+    platform: 'Morpheus',
+    assets: ['MORPH', 'USDC'],
+    callFee: 0.5,
+    priceChart: 'https://info.spookyswap.finance/pair/0x3425B1c18491dDC780fb5ab7ACC3dF7D8B802C87',
+    addLiquidityUrl: 'https://spookyswap.finance/add/FTM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+    buyTokenUrl: ' https://spookyswap.finance/swap?outputCurrency=0x0789fF5bA37f72ABC4D561D00648acaDC897b32d',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SPOOKY_ROUTER,
+      tokens: [
+        ...spookyTokens,
+        ...zapTokens,
+  
+      ],
     },
   },
 
@@ -12937,45 +12931,6 @@ const pools = [
       router: SPIRIT_ROUTER,
 
       tokens: [...spiritTokens, ...zapTokens],
-    },
-  },
-
-  {
-    id: 'lqdr-fusdt-spell-spirit',
-    logo: 'fantom/SPELL-FUSDT.png',
-    name: 'SPELL-fUSDT (SpiritSwap)',
-    token: 'SPELL-fUSDT LP (SpiritSwap)',
-    tokenDescription: 'LiquidDriver',
-    tokenAddress: '0x31c0385DDE956f95D43Dac80Bd74FEE149961f4c',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-FUS-SPE-0',
-    earnedTokenAddress: '0x90D805957Dfe0125f1fc70e6AD0b6e62e7F2c95d',
-    earnContractAddress: '0x90D805957Dfe0125f1fc70e6AD0b6e62e7F2c95d',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'lps',
-    oracleId: 'lqdr-fusdt-spell-spirit',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'eol',
-    platform: 'LiquidDriver',
-    assets: ['SPELL', 'fUSDT'],
-    callFee: 0.5,
-    priceChart: '',
-    priceChart: 'https://info.spiritswap.finance/pair/0x31c0385DDE956f95D43Dac80Bd74FEE149961f4c',
-    addLiquidityUrl:
-      'https://swap.spiritswap.finance/#/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/0x468003B688943977e6130F4F68F23aad939a1040',
-    buyTokenUrl:
-      'https://swap.spiritswap.finance/#/swap/0x468003B688943977e6130F4F68F23aad939a1040',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: SPIRIT_ROUTER,
-
-      tokens: [
-        // ...spiritTokens,
-        // ...zapTokens,
-      ],
     },
   },
 
@@ -15730,7 +15685,7 @@ const pools = [
 
   {
     id: 'beets-guqin-qi-2',
-    logo: 'fantom/BEETS-QI.png',
+    logo: 'fantom/GUQIN-V2.png',
     name: 'Guqin Qi V2',
     token: 'Guqin Qi V2',
     tokenDescription: 'Beethoven X | Assets: USDC, DAI, MAI',
