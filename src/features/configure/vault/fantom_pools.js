@@ -15959,8 +15959,8 @@ const pools = [
       ' https://spookyswap.finance/swap?outputCurrency=0x29b0Da86e484E1C0029B56e817912d778aC0EC69',
     zap: {
       zapAddress: VAULT_ZAP,
-      router: SPOOKY_ROUTER,
-      tokens: [...spookyTokens, ...zapTokens],
+      router: SPIRIT_ROUTER,
+      tokens: [...spiritTokens, ...zapTokens],
     },
   },
 
@@ -15992,8 +15992,8 @@ const pools = [
       ' https://spookyswap.finance/swap?outputCurrency=0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
     zap: {
       zapAddress: VAULT_ZAP,
-      router: SPOOKY_ROUTER,
-      tokens: [...spookyTokens, ...zapTokens],
+      router: SPIRIT_ROUTER,
+      tokens: [...spiritTokens, ...zapTokens],
     },
   },
 
