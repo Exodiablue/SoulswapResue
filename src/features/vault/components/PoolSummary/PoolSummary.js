@@ -215,7 +215,7 @@ const PoolSummary = ({
           />
         </Grid>
         <Grid item xs={6} className={`${classes.item} ${classes.itemBalances}`}>
-          {pool.id === 'spiritxginspirit' ?  '' :  
+          {pool.id === 'spiritxginspirit' ?  ''  :  
             <LabeledStat
             value={formatDecimals(deposited)}
             subvalue={depositedUsd}
@@ -235,14 +235,12 @@ const PoolSummary = ({
           />
       }
         <Grid item xs={4} className={`${classes.item} ${classes.itemStats}`}>
-        {pool.id === 'spiritxginspirit' ?  '' :  
             <LabeledStat
               value={formatTvl(pool.tvl, pool.oraclePrice)}
               label={t('Vault-TVL')}
               isLoading={!fetchVaultsDataDone}
               className={classes.itemInner}
             />
-        }
         </Grid>
       </Grid>
     </AccordionSummary>

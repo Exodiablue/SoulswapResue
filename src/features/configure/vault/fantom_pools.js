@@ -997,7 +997,7 @@ const pools = [
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
     earnedToken: 'GinSPIRIT',
-    earnedTokenAddress: '0xA20E8756E0BDc405c1A92821131341C6F8232891', //fake to prevent tvl load block, not needed since withdrawal is disabled
+    earnedTokenAddress: '0x928144CD396aC88C84d60086e3Db20555C56322c', //ginspirit MC
     earnContractAddress: '0x777fe54255a14bbDe0661748858B6C9C8DEA08A8', //ginspirit depositer
     pricePerFullShare: 1,
     tvl: 0,
@@ -15196,6 +15196,80 @@ const pools = [
       'https://app.beethovenx.io/#/pool/0x03c6b3f09d2504606936b1a4decefad204687890000200000000000000000015',
     addLiquidityUrl:
       'https://app.beethovenx.io/#/pool/0x03c6b3f09d2504606936b1a4decefad204687890000200000000000000000015',
+    buyTokenUrl: 'https://app.beethovenx.io/#/trade',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SPOOKY_ROUTER,
+      tokens: [
+        // ...spookyTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'beets-song-ice-fire',
+    logo: 'fantom/G-SONG.png',
+    name: 'A Song of Ice and Fire',
+    token: 'A Song of Ice and Fire',
+    tokenDescription: 'Beethoven X | Assets: FTM, SPELL, MIM, ICE',
+    tokenAddress: '0x2BeA17EdE5D83ad19ae112B8592AadaA2B015De7',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-SONG',
+    earnedTokenAddress: '0xA9ed73aCF27c28B5c682005BF5BF8E2dc3D5a072',
+    earnContractAddress: '0xA9ed73aCF27c28B5c682005BF5BF8E2dc3D5a072',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'beets-song-ice-fire',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Beethoven X',
+    assets: ['FTM','SPELL','MIM','ICE'],
+    callFee: 0.5,
+    priceChart:
+      'https://app.beethovenx.io/#/pool/0x2bea17ede5d83ad19ae112b8592aadaa2b015de7000100000000000000000069',
+    addLiquidityUrl:
+      'https://app.beethovenx.io/#/pool/0x2bea17ede5d83ad19ae112b8592aadaa2b015de7000100000000000000000069',
+    buyTokenUrl: 'https://app.beethovenx.io/#/trade',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SPOOKY_ROUTER,
+      tokens: [
+        // ...spookyTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'beets-tubular-bells',
+    logo: 'fantom/G-TUBULAR.png',
+    name: 'Tubular Bells: Curved And Linked',
+    token: 'Tubular Bells: Curved And Linked',
+    tokenDescription: 'Beethoven X | Assets: FTM, LINK, CRV, USDC',
+    tokenAddress: '0x65Bf2d53BD1d7050d22873f6B9Bb59edb0cA0b20',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-TUBULAR',
+    earnedTokenAddress: '0x3A7CD0D0EC8a54e9239Df94d71498D48c167aE5f',
+    earnContractAddress: '0x3A7CD0D0EC8a54e9239Df94d71498D48c167aE5f',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'beets-tubular-bells',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Beethoven X',
+    assets: ['USDC', 'FTM', 'LINK', 'CRV'],
+    callFee: 0.5,
+    priceChart:
+      'https://app.beethovenx.io/#/pool/0x65bf2d53bd1d7050d22873f6b9bb59edb0ca0b2000010000000000000000006e',
+    addLiquidityUrl:
+      'https://app.beethovenx.io/#/pool/0x65bf2d53bd1d7050d22873f6b9bb59edb0ca0b2000010000000000000000006e',
     buyTokenUrl: 'https://app.beethovenx.io/#/trade',
     zap: {
       zapAddress: VAULT_ZAP,

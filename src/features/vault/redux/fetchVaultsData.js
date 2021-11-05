@@ -8,7 +8,7 @@ import {
   VAULT_FETCH_VAULTS_DATA_FAILURE,
 } from './constants';
 import { fetchPrice, whenPricesLoaded } from '../../web3';
-import { erc20ABI, vaultABI } from '../../configure';
+import { erc20ABI, vaultABI, ginspiritABI } from '../../configure';
 import { byDecimals } from 'features/helpers/bignumber';
 import { getNetworkMulticall } from 'features/helpers/getNetworkData';
 import Web3 from 'web3';
@@ -28,10 +28,18 @@ export function fetchVaultsData({ web3, pools }) {
     const promise = new Promise((resolve, reject) => {
       const multicall = new MultiCall(web3, getNetworkMulticall());
       const vaultCalls = pools.map(pool => {
-        const vault = new web3.eth.Contract(vaultABI, pool.earnedTokenAddress);
+        let vault = new web3.eth.Contract(vaultABI, pool.earnedTokenAddress);
+        let tvlBalance = vault.methods.balance();
+        let pricePerShare = vault.methods.getPricePerFullShare();
+        if (pool.id == 'spiritxginspirit'){
+          vault = new web3.eth.Contract(ginspiritABI, pool.earnedTokenAddress);
+          tvlBalance = vault.methods.inSpiritAmount();
+          // console.log ("INSPIRIT AMOUNT " + tvlBalance)
+          pricePerShare = vault.methods.inSpiritAmount();
+        }
         return {
-          pricePerFullShare: vault.methods.getPricePerFullShare(),
-          tvl: vault.methods.balance(),
+          pricePerFullShare: pricePerShare,
+          tvl: tvlBalance,
         };
       });
 

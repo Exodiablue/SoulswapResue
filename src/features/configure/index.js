@@ -20,6 +20,7 @@ export {
   uniswapV2PairABI,
   uniswapV2RouterABI,
   mlnlZapperAbi,
+  ginspiritABI,
 } from './abi';
 export { bscStakePools } from './stake/bsc_stake';
 export { hecoStakePools } from './stake/heco_stake';
