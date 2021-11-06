@@ -8317,7 +8317,7 @@ const pools = [
 
   {
     id: 'yel',
-    logo: 'fantom/YEL-FTM.png',
+    logo: 'fantom/YEL.png',
     name: 'YEL',
     token: 'YEL',
     tokenDescription: 'YEL',
