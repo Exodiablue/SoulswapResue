@@ -14057,6 +14057,7 @@ const pools = [
     platform: 'Singular',
     assets: ['BOO', 'FTM'],
     callFee: 0.5,
+    depositFee: '1% from Farm Provider',
     priceChart: 'https://info.spookyswap.finance/pair/0xEc7178F4C41f346b2721907F5cF7628E388A7a58',
     addLiquidityUrl:
       'https://spookyswap.finance/add/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE/FTM',
@@ -14094,6 +14095,7 @@ const pools = [
     platform: 'Singular',
     assets: ['USDC', 'FTM'],
     callFee: 0.5,
+    depositFee: '1% from Farm Provider',
     priceChart: 'https://info.spookyswap.finance/pair/0x2b4C76d0dc16BE1C31D4C1DC53bF9B45987Fc75c',
     addLiquidityUrl:
       'https://spookyswap.finance/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/FTM',
@@ -14131,6 +14133,7 @@ const pools = [
     platform: 'Singular',
     assets: ['ETH', 'FTM'],
     callFee: 0.5,
+    depositFee: '1% from Farm Provider',
     priceChart: 'https://info.spookyswap.finance/pair/0xf0702249F4D3A25cD3DED7859a165693685Ab577',
     addLiquidityUrl:
       'https://spookyswap.finance/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
@@ -14168,6 +14171,7 @@ const pools = [
     platform: 'Singular',
     assets: ['BTC', 'FTM'],
     callFee: 0.5,
+    depositFee: '1% from Farm Provider',
     priceChart: 'https://info.spookyswap.finance/pair/0xFdb9Ab8B9513Ad9E419Cf19530feE49d412C3Ee3',
     addLiquidityUrl:
       'https://spookyswap.finance/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/FTM',
@@ -14205,6 +14209,7 @@ const pools = [
     platform: 'Singular',
     assets: ['fUSDT', 'FTM'],
     callFee: 0.5,
+    depositFee: '1% from Farm Provider',
     priceChart: 'https://info.spookyswap.finance/pair/0x5965E53aa80a0bcF1CD6dbDd72e6A9b2AA047410',
     addLiquidityUrl:
       'https://spookyswap.finance/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/FTM',
@@ -14242,6 +14247,7 @@ const pools = [
     platform: 'Singular',
     assets: ['BNB', 'FTM'],
     callFee: 0.5,
+    depositFee: '1% from Farm Provider',
     priceChart: 'https://info.spookyswap.finance/pair/0x956DE13EA0FA5b577E4097Be837BF4aC80005820',
     addLiquidityUrl:
       'https://spookyswap.finance/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/FTM',
@@ -14280,6 +14286,7 @@ const pools = [
     assets: ['USDC', 'FTM'],
     callFee: 0.5,
     priceChart:
+    depositFee: '1% from Farm Provider',
       'https://fantom-info.jetswap.finance/pair/0x43CB347acf464a36F3D2D01c7Bf72fC6Be4b4E78',
     addLiquidityUrl:
       'https://fantom-exchange.jetswap.finance/#/add/FANTOM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
@@ -14319,6 +14326,7 @@ const pools = [
     assets: ['USDC', 'WINGS'],
     callFee: 0.5,
     priceChart:
+    depositFee: '1% from Farm Provider',
       'https://fantom-info.jetswap.finance/pair/0x89fF795017AE21A8696d371F685Cd02FC219F56F',
     addLiquidityUrl:
       'https://fantom-exchange.jetswap.finance/#/add/0x3D8f1ACCEe8e263F837138829B6C4517473d0688/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
@@ -14357,6 +14365,7 @@ const pools = [
     platform: 'Singular',
     assets: ['fUSDT', 'FTM'],
     callFee: 0.5,
+    depositFee: '1% from Farm Provider',
     priceChart:
       'https://fantom-info.jetswap.finance/pair/0x515200eF45538C952240687428E171e70A4086c6',
     addLiquidityUrl:
@@ -14396,6 +14405,7 @@ const pools = [
     platform: 'Singular',
     assets: ['fUSDT', 'USDC'],
     callFee: 0.5,
+    depositFee: '1% from Farm Provider',
     priceChart:
       'https://fantom-info.jetswap.finance/pair/0xB8D08e75440b89c2c25a400Ab1883B689C0A1A64',
     addLiquidityUrl:
@@ -14435,6 +14445,7 @@ const pools = [
     platform: 'Singular',
     assets: ['SING', 'FTM'],
     callFee: 0.5,
+    depositFee: '1% from Farm Provider',
     priceChart:
       'https://fantom-info.jetswap.finance/pair/0x7443106f305085BA7e54988DCAB454097444Db5b',
     addLiquidityUrl:
@@ -14474,6 +14485,7 @@ const pools = [
     platform: 'Singular',
     assets: ['WINGS', 'FTM'],
     callFee: 0.5,
+    depositFee: '1% from Farm Provider',
     priceChart:
       'https://fantom-info.jetswap.finance/pair/0x1047f356D7cB29D5939724c69E4eE61e820aFAC6',
     addLiquidityUrl:
@@ -14513,6 +14525,7 @@ const pools = [
     platform: 'Singular',
     assets: ['MIM', 'FTM'],
     callFee: 0.5,
+    depositFee: '1% from Farm Provider',
     priceChart: 'https://info.spookyswap.finance/pair/0x6f86e65b255c9111109d2D2325ca2dFc82456efc',
     addLiquidityUrl:
       'https://spookyswap.finance/add/0x82f0B8B456c1A451378467398982d4834b6829c1/FTM',
