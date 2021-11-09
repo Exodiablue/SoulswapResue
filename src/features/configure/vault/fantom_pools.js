@@ -13983,6 +13983,7 @@ const pools = [
     platform: 'Singular',
     assets: ['wMEMO'],
     callFee: 0.5,
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/token/0xDDc0385169797937066bBd8EF409b5B3c0dFEB52',
     buyTokenUrl:
       'https://swap.spiritswap.finance/#/swap/0xDDc0385169797937066bBd8EF409b5B3c0dFEB52',
