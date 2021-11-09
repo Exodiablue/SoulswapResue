@@ -1265,6 +1265,43 @@ const pools = [
   },
 
   {
+    id: 'spirit-linspirit-spirit',
+    logo: 'fantom/LINSPIRIT-SPIRIT.png',
+    name: 'SPIRIT-linSPIRIT LP',
+    token: 'SPIRIT-linSPIRIT LP (SpiritSwap)',
+    tokenDescription: 'SpiritSwap',
+    tokenAddress: '0x54D5B6881b429A694712fa89875448ca8ADF06F4',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-LIN-SPI-1',
+    earnedTokenAddress: '0x9e965d119C784CFe71967B746351F5057f23A125',
+    earnContractAddress: '0x9e965d119C784CFe71967B746351F5057f23A125',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'spirit-linspirit-spirit',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SpiritSwap',
+    assets: ['linSPIRIT', 'SPIRIT'],
+    callFee: 0.5,
+    priceChart: 'https://info.spiritswap.finance/pair/0x54D5B6881b429A694712fa89875448ca8ADF06F4',
+    addLiquidityUrl:
+      'https://swap.spiritswap.finance/#/add/0xc5713B6a0F26bf0fdC1c52B90cd184D950be515C/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
+    buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SPIRIT_ROUTER,
+
+      tokens: [
+        // ...spiritTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
     id: 'spirit-mim-ftm',
     logo: 'fantom/MIM-FTM.png',
     name: 'MIM-FTM LP',
