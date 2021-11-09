@@ -14285,9 +14285,8 @@ const pools = [
     platform: 'Singular',
     assets: ['USDC', 'FTM'],
     callFee: 0.5,
-    priceChart:
     depositFee: '1% from Farm Provider',
-      'https://fantom-info.jetswap.finance/pair/0x43CB347acf464a36F3D2D01c7Bf72fC6Be4b4E78',
+    priceChart: 'https://info.spookyswap.finance/pair/0x43CB347acf464a36F3D2D01c7Bf72fC6Be4b4E78',
     addLiquidityUrl:
       'https://fantom-exchange.jetswap.finance/#/add/FANTOM/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
     buyTokenUrl:
@@ -14325,8 +14324,8 @@ const pools = [
     platform: 'Singular',
     assets: ['USDC', 'WINGS'],
     callFee: 0.5,
-    priceChart:
     depositFee: '1% from Farm Provider',
+    priceChart:
       'https://fantom-info.jetswap.finance/pair/0x89fF795017AE21A8696d371F685Cd02FC219F56F',
     addLiquidityUrl:
       'https://fantom-exchange.jetswap.finance/#/add/0x3D8f1ACCEe8e263F837138829B6C4517473d0688/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
