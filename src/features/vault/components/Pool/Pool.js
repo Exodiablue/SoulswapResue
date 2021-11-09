@@ -41,7 +41,7 @@ const Pool = ({
     }
   };
   var accordionClass = classes.accordion
-  if (pool.id.includes("inspirit-")){
+  if (pool.id.includes("inspirit-") && !pool.id.includes("linspirit-") ){
     accordionClass=classes.inspiritAccordion
   }
   if (pool.id.includes("xboo")){
