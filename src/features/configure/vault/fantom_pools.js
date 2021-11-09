@@ -12665,7 +12665,7 @@ const pools = [
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
-    oracleId: 'lqdr-3pool',
+    oracleId: 'curve-ftm-fusdt',
     oraclePrice: 0,
     depositsPaused: false,
     status: 'active',
