@@ -1779,7 +1779,7 @@ const pools = [
     oracleId: 'spirit-usdc-papr',
     oraclePrice: 0,
     depositsPaused: false,
-    status: 'active',
+    status: 'eol',
     platform: 'SpiritSwap',
     assets: ['USDC', 'PAPR'],
     callFee: 0.5,
