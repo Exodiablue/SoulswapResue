@@ -9,7 +9,7 @@ const usePoolsTvl = pools => {
     let globalTvl = 0;
 
     pools
-      .filter(p => p.status === 'active')
+      // .filter(p => p.status === 'active')
       .filter(isUniqueEarnContract)
       .forEach(({ tvl, oraclePrice,id }) => {
 
