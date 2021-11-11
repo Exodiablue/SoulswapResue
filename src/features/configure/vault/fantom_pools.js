@@ -587,7 +587,7 @@ const pools = [
     logo: 'fantom/GRIM-FTM.png',
     name: 'GRIM-FTM LP',
     token: 'GRIM-FTM LP (SpiritSwap)',
-    tokenDescription: 'Singular',
+    tokenDescription: 'Singular | Note: Deposit Fee has been refunded',
     tokenAddress: '0x2c18c39622b90318b0124ecfd6d4ac81efcc51db',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
