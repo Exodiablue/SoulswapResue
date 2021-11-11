@@ -18363,43 +18363,6 @@ const pools = [
     },
   },
 
-  {
-    id: 'trick-shade',
-    logo: 'fantom/SHADE.png',
-    name: 'SHADE',
-    token: 'SHADE',
-    tokenDescription: 'Trick or Treat',
-    tokenAddress: '0x3A3841f5fa9f2c283EA567d5Aeea3Af022dD2262',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-SHADE-g',
-    earnedTokenAddress: '0x14C1eacFC2BfeB150d8490F8857476BF18c0932D',
-    earnContractAddress: '0x14C1eacFC2BfeB150d8490F8857476BF18c0932D',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'tokens',
-    oracleId: 'SHADE',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'active',
-    platform: 'Trick or Treat',
-    assets: ['SHADE'],
-    callFee: 0.5,
-    depositFee: '2% from Farm Provider',
-    priceChart: 'https://info.spookyswap.finance/token/0x3A3841f5fa9f2c283EA567d5Aeea3Af022dD2262',
-    buyTokenUrl:
-      'https://spookyswap.finance/swap?outputCurrency=0x3A3841f5fa9f2c283EA567d5Aeea3Af022dD2262',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: SPOOKY_ROUTER,
-
-      tokens: [
-        ...spookyTokens,
-        ...zapTokens,
-      ],
-    },
-  },
-
 ];
 
 const lpTokens = pools
