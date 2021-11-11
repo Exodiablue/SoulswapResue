@@ -7239,7 +7239,7 @@ const pools = [
     oracleId: 'totem-hodl-ftm',
     oraclePrice: 0,
     depositsPaused: false,
-    status: 'active',
+    status: 'eol',
     platform: 'Totem',
     assets: ['HODL', 'FTM'],
     callFee: 0.5,
