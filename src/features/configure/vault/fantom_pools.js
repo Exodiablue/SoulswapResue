@@ -638,7 +638,7 @@ const pools = [
     oracle: 'lps',
     oracleId: 'sing-grim-ftm',
     oraclePrice: 0,
-    depositsPaused: true,
+    depositsPaused: false,
     status: 'active',
     platform: 'Singular',
     assets: ['GRIM', 'FTM'],
