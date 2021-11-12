@@ -9190,7 +9190,10 @@ const pools = [
     zap: {
       zapAddress: VAULT_ZAP,
       router: SPOOKY_ROUTER,
-      tokens: [...spookyTokens, ...zapTokensNoFtm],
+      tokens: [
+        // ...spookyTokens,
+        // ...zapTokensNoFtm
+      ],
     },
   },
 
@@ -9855,9 +9858,9 @@ const pools = [
       'https://swap.spiritswap.finance/#/swap/0x468003B688943977e6130F4F68F23aad939a1040',
     zap: {
       zapAddress: VAULT_ZAP,
-      router: SPIRIT_ROUTER,
+      router: SPOOKY_ROUTER,
 
-      tokens: [...spiritTokens, ...zapTokens],
+      tokens: [...spookyTokens, ...zapTokens],
     },
   },
 
@@ -9889,9 +9892,9 @@ const pools = [
       'https://swap.spiritswap.finance/#/swap/0x468003B688943977e6130F4F68F23aad939a1040',
     zap: {
       zapAddress: VAULT_ZAP,
-      router: SPIRIT_ROUTER,
+      router: SPOOKY_ROUTER,
 
-      tokens: [...spiritTokens, ...zapTokens],
+      tokens: [...spookyTokens, ...zapTokens],
     },
   },
 
