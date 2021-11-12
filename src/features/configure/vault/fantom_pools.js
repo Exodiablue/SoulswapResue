@@ -300,16 +300,7 @@ const spookyTokens = [
     chainId: 250,
     logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
     isToken: true,
-  },
-  {
-    name: 'MORPH',
-    address: '0x0789fF5bA37f72ABC4D561D00648acaDC897b32d',
-    symbol: 'MORPH',
-    decimals: 18,
-    chainId: 250,
-    logoURI: '',
-    isToken: true,
-  },
+  }
 ];
 
 const wakaTokens = [
