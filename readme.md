@@ -9,13 +9,13 @@ Official frontend repo of [grim.finance](https://app.grim.finance). Multichain y
 Required env vars:
 
 ```
-REACT_APP_NETWORK_ID = 56 // Network ID of BSC
+REACT_APP_NETWORK_ID = 250 // Network ID of FANTOM
 ```
 
 ## To Run
 
 ```
-yarn
+yarn add all
 yarn start
 ```
 
