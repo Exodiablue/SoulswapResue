@@ -28,12 +28,12 @@ const NetworksProvider = ({ children }) => {
       url: 'https://avax.grim.finance',
     },
     */
-    {
-      name: 'POLYGON',
-      asset: 'POLYGON',
-      id: '137',
-      url: 'https://polygon.grim.finance',
-    },
+    // {
+    //   name: 'POLYGON',
+    //   asset: 'POLYGON',
+    //   id: '137',
+    //   url: 'https://polygon.grim.finance',
+    // },
     {
       name: 'FANTOM',
       asset: 'FTM',
