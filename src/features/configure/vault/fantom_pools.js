@@ -7517,7 +7517,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: PAINT_ROUTER,
 
-      tokens: [...paintTokens],
+      tokens: [
+        // ...paintTokens
+      ],
     },
   },
 
@@ -7554,7 +7556,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: PAINT_ROUTER,
 
-      tokens: [...paintTokens],
+      tokens: [
+        // ...paintTokens
+      ],
     },
   },
 
@@ -7591,7 +7595,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: PAINT_ROUTER,
 
-      tokens: [...paintTokens],
+      tokens: [
+        // ...paintTokens
+      ],
     },
   },
 
@@ -7628,7 +7634,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: PAINT_ROUTER,
 
-      tokens: [...paintTokens],
+      tokens: [
+        // ...paintTokens
+      ],
     },
   },
 
@@ -7665,7 +7673,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: PAINT_ROUTER,
 
-      tokens: [...paintTokens],
+      tokens: [
+        // ...paintTokens
+      ],
     },
   },
 
@@ -7702,7 +7712,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: PAINT_ROUTER,
 
-      tokens: [...paintTokens],
+      tokens: [
+        // ...paintTokens
+      ],
     },
   },
 
@@ -10932,7 +10944,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: OLIVE_ROUTER,
 
-      tokens: [...oliveTokens],
+      tokens: [
+        // ...oliveTokens
+      ],
     },
   },
 
@@ -10966,7 +10980,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: OLIVE_ROUTER,
 
-      tokens: [...oliveTokens],
+      tokens: [
+        // ...oliveTokens
+      ],
     },
   },
 
@@ -11001,7 +11017,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: OLIVE_ROUTER,
 
-      tokens: [...oliveTokens],
+      tokens: [
+        // ...oliveTokens
+      ],
     },
   },
 
@@ -11035,7 +11053,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: OLIVE_ROUTER,
 
-      tokens: [...oliveTokens],
+      tokens: [
+        // ...oliveTokens
+      ],
     },
   },
 
@@ -11069,7 +11089,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: OLIVE_ROUTER,
 
-      tokens: [...oliveTokens],
+      tokens: [
+        // ...oliveTokens
+      ],
     },
   },
 
@@ -11104,7 +11126,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: OLIVE_ROUTER,
 
-      tokens: [...oliveTokens],
+      tokens: [
+        // ...oliveTokens
+      ],
     },
   },
 
@@ -11139,7 +11163,9 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: OLIVE_ROUTER,
 
-      tokens: [...oliveTokens],
+      tokens: [
+        // ...oliveTokens
+      ],
     },
   },
 
