@@ -6913,7 +6913,10 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: SPIRIT_ROUTER,
 
-      tokens: [...spiritTokens, ...zapTokens],
+      tokens: [
+        // ...spiritTokens, 
+        // ...zapTokens
+      ],
     },
   },
 
@@ -6945,7 +6948,10 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: SPIRIT_ROUTER,
 
-      tokens: [...spiritTokens, ...zapTokens],
+      tokens: [
+        // ...spiritTokens, 
+        // ...zapTokens
+      ],
     },
   },
 
@@ -6977,7 +6983,10 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: PAINT_ROUTER,
 
-      tokens: [...paintTokens, ...zapTokens],
+      tokens: [
+        // ...paintTokens, 
+        // ...zapTokens
+      ],
     },
   },
 
@@ -7010,7 +7019,10 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: SPIRIT_ROUTER,
 
-      tokens: [...spiritTokens, ...zapTokens],
+      tokens: [
+        ...spiritTokens, 
+        ...zapTokens
+      ],
     },
   },
 
@@ -7045,7 +7057,10 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: SPIRIT_ROUTER,
 
-      tokens: [...spiritTokens, ...zapTokens],
+      tokens: [
+        // ...spiritTokens, 
+        // ...zapTokens
+      ],
     },
   },
 
@@ -7079,7 +7094,10 @@ const pools = [
     zap: {
       zapAddress: VAULT_ZAP,
       router: SPOOKY_ROUTER,
-      tokens: [...spookyTokens, ...zapTokens],
+      tokens: [
+        // ...spookyTokens, 
+        // ...zapTokens
+      ],
     },
   },
 
@@ -7114,7 +7132,10 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: SPIRIT_ROUTER,
 
-      tokens: [...spiritTokens, ...zapTokens],
+      tokens: [
+        // ...spiritTokens, 
+        // ...zapTokens
+      ],
     },
   },
 
