@@ -53,7 +53,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             {Number(process.env.REACT_APP_NETWORK_ID) === 56 &&
               renderLink('barn', 'barn', 'warehouse', classes)}
 
-            {renderLink('Arcade', 'Arcade', 'gamepad', classes)}
+            {renderLink('GameFi', 'GameFi', 'gamepad', classes)}
             {renderLink('Bridge', 'Bridge', 'sync-alt', classes)}
             {renderLink('Discord', 'Discord', 'discord', classes)}
             {renderLink('Docs', 'Docs', 'book', classes)}
@@ -124,7 +124,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             {Number(process.env.REACT_APP_NETWORK_ID) === 56 && (
               <LinkSidebar name="barn" label="barn" icon="warehouse" classes={classes} />
             )}
-            <LinkSidebar name="Arcade" label="Arcade" icon="gamepad" classes={classes} />
+            <LinkSidebar name="GameFi" label="GameFi" icon="gamepad" classes={classes} />
             <LinkSidebar name="Bridge" label="Bridge" icon="sync-alt" classes={classes} />
             <LinkSidebar name="Discord" label="Discord" icon="discord" classes={classes} />
             <LinkSidebar name="Docs" label="Docs" icon="book" classes={classes} />
@@ -147,7 +147,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
 };
 
 const renderLink = (name, label, icon, classes) => {
-    if (name =='Bridge' || name == 'Portfolio' || name == 'Stats' || name == 'Docs' || name == 'Arcade' || name == 'Store' || name == 'Lending'){
+    if (name =='Bridge' || name == 'Portfolio' || name == 'Stats' || name == 'Docs' || name == 'GameFi' || name == 'Store' || name == 'Lending'){
       return (
         <a
         href={getLinkUrl(name)}
@@ -205,7 +205,7 @@ const getLinkUrl = name => {
     return 'https://dashboard.grim.finance';
   // if (name === 'Portfolio')
   //   return 'https://beta.degen.watch/?platforms[]=grim.finance';
-  if (name === 'Arcade')
+  if (name === 'GameFi')
     return 'https://main.dlteow40fr5xj.amplifyapp.com/';
   if (name === 'Store')
     return 'https://store.grim.finance/collections/all';
