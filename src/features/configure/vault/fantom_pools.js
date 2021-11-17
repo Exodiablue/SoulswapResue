@@ -1333,6 +1333,43 @@ const pools = [
   },
 
   {
+    id: 'spirit-sspell-spell',
+    logo: 'fantom/SSPELL-SPELL.png',
+    name: 'sSPELL-SPELL LP',
+    token: 'sSPELL-SPELL LP (SpiritSwap)',
+    tokenDescription: 'SpiritSwap',
+    tokenAddress: '0x4f41D03631Ea4dC14016CcF90690d6D22b24C12D',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-SPE-SSP-1',
+    earnedTokenAddress: '0xa08A3C74b95E3d9d5fC81c05d830c15f0E8Df574',
+    earnContractAddress: '0xa08A3C74b95E3d9d5fC81c05d830c15f0E8Df574',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'spirit-sspell-spell',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SpiritSwap',
+    assets: ['sSPELL', 'SPELL'],
+    callFee: 0.5,
+    priceChart: 'https://info.spiritswap.finance/pair/0x4f41D03631Ea4dC14016CcF90690d6D22b24C12D',
+    addLiquidityUrl:
+      'https://swap.spiritswap.finance/#/add/0xbB29D2A58d880Af8AA5859e30470134dEAf84F2B/0x468003B688943977e6130F4F68F23aad939a1040',
+    buyTokenUrl: 'https://swap.spiritswap.finance/#/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SPIRIT_ROUTER,
+
+      tokens: [
+        // ...spiritTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
     id: 'spirit-mim-ftm',
     logo: 'fantom/MIM-FTM.png',
     name: 'MIM-FTM LP',
@@ -12884,6 +12921,78 @@ const pools = [
       'https://swap.spiritswap.finance/#/add/FTM/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
     buyTokenUrl:
       'https://swap.spiritswap.finance/#/swap/0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SPIRIT_ROUTER,
+
+      tokens: [...spiritTokens, ...zapTokens],
+    },
+  },
+
+  {
+    id: 'lqdr-ftm-spirit-spirit',
+    logo: 'fantom/SPIRIT-FTM.png',
+    name: 'SPIRIT-FTM (SpiritSwap)',
+    token: 'SPIRIT-FTM LP (SpiritSwap)',
+    tokenDescription: 'LiquidDriver',
+    tokenAddress: '0x30748322B6E34545DBe0788C421886AEB5297789',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-FTM-SPI-0',
+    earnedTokenAddress: '0x259Ef6759cF3b5Fc1e22C46464fba9a97Aaf93EB',
+    earnContractAddress: '0x259Ef6759cF3b5Fc1e22C46464fba9a97Aaf93EB',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'lqdr-ftm-spirit-spirit',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'LiquidDriver',
+    assets: ['SPIRIT', 'FTM'],
+    callFee: 0.5,
+    priceChart: '',
+    priceChart: 'https://info.spiritswap.finance/pair/0x30748322B6E34545DBe0788C421886AEB5297789',
+    addLiquidityUrl:
+      'https://swap.spiritswap.finance/#/add/FTM/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
+    buyTokenUrl:
+      'https://swap.spiritswap.finance/#/swap/0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SPIRIT_ROUTER,
+
+      tokens: [...spiritTokens, ...zapTokens],
+    },
+  },
+
+  {
+    id: 'lqdr-ftm-btc-spirit',
+    logo: 'fantom/BTC-FTM.png',
+    name: 'BTC-FTM (SpiritSwap)',
+    token: 'BTC-FTM LP (SpiritSwap)',
+    tokenDescription: 'LiquidDriver',
+    tokenAddress: '0x279b2c897737a50405ED2091694F225D83F2D3bA',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-FTM-BTC-0',
+    earnedTokenAddress: '0xdF59C7A54cD540C00A76Da22Fd1eC3756164a26a',
+    earnContractAddress: '0xdF59C7A54cD540C00A76Da22Fd1eC3756164a26a',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'lqdr-ftm-btc-spirit',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'LiquidDriver',
+    assets: ['BTC', 'FTM'],
+    callFee: 0.5,
+    priceChart: '',
+    priceChart: 'https://info.spiritswap.finance/pair/0x279b2c897737a50405ED2091694F225D83F2D3bA',
+    addLiquidityUrl:
+      'https://swap.spiritswap.finance/#/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
+    buyTokenUrl:
+      'https://swap.spiritswap.finance/#/swap/0x321162Cd933E2Be498Cd2267a90534A804051b11',
     zap: {
       zapAddress: VAULT_ZAP,
       router: SPIRIT_ROUTER,
