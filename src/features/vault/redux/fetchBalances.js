@@ -26,13 +26,16 @@ export function fetchBalances({ address, web3, tokens }) {
       Object.entries(tokens).forEach(([symbol, token]) => {
         token.allowance['0xAc788736b0Bdc8A67065c21683593eA565b641B3'] = 0;
         if (!token.tokenAddress) {
+          //This is not used?
+
           const multicallContract = new web3.eth.Contract(multicallABI, multicall.contract);
           balanceCalls.push({
             balance: multicallContract.methods.getEthBalance(address),
             symbol: symbol,
           });
         } else {
-          const tokenContract = new web3.eth.Contract(erc20ABI, token.tokenAddress);
+          let tokenContract = token.Contract ? token.Contract : new web3.eth.Contract(erc20ABI, token.tokenAddress)
+
           balanceCalls.push({
             balance: tokenContract.methods.balanceOf(address),
             symbol: symbol,

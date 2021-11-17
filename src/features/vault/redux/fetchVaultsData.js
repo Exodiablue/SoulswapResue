@@ -28,14 +28,19 @@ export function fetchVaultsData({ web3, pools }) {
     const promise = new Promise((resolve, reject) => {
       const multicall = new MultiCall(web3, getNetworkMulticall());
       const vaultCalls = pools.map(pool => {
-        let vault = new web3.eth.Contract(vaultABI, pool.earnedTokenAddress);
-        let tvlBalance = vault.methods.balance();
-        let pricePerShare = vault.methods.getPricePerFullShare();
+
+        //let vault = new web3.eth.Contract(vaultABI, pool.earnedTokenAddress);
+        let tvlBalance
+        let pricePerShare
         if (pool.id == 'spiritxginspirit'){
-          vault = new web3.eth.Contract(ginspiritABI, pool.earnedTokenAddress);
-          tvlBalance = vault.methods.inSpiritAmount();
+          //vault = new web3.eth.Contract(ginspiritABI, pool.earnedTokenAddress);
+          
+          tvlBalance = pool.Contract.methods.inSpiritAmount();
           // console.log ("INSPIRIT AMOUNT " + tvlBalance)
-          pricePerShare = vault.methods.inSpiritAmount();
+          pricePerShare = pool.Contract.methods.inSpiritAmount();
+        }else{
+          tvlBalance = pool.Contract.methods.balance();
+          pricePerShare = pool.Contract.methods.getPricePerFullShare();
         }
         return {
           pricePerFullShare: pricePerShare,

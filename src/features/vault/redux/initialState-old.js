@@ -1,10 +1,6 @@
 import { getNetworkPools } from '../../helpers/getNetworkData';
 import { getEligibleZap } from 'features/zap/zapUniswapV2';
 
-import { erc20ABI, vaultABI, ginspiritABI } from '../../configure/abi';
-import Web3 from 'web3';
-const web3 = new Web3(new Web3.providers.HttpProvider('https://rpc.ftm.tools/'));
-
 const tokens = {};
 const pools = getNetworkPools();
 
@@ -29,7 +25,6 @@ pools.forEach(
 
     tokens[token] = {
       symbol: token,
-      Contract: new web3.eth.Contract(erc20ABI, tokenAddress),
       decimals: tokenDecimals,
       tokenAddress: tokenAddress,
       tokenBalance: 0,
@@ -42,17 +37,11 @@ pools.forEach(
       symbol: earnedToken,
       decimals: 18,
       tokenAddress: earnedTokenAddress,
-      Contract: new web3.eth.Contract(erc20ABI, earnedTokenAddress),
       tokenBalance: 0,
       allowance: {
         [earnContractAddress]: 0,
       },
     };
-
-    pools[i].Contract = new web3.eth.Contract(vaultABI, pools[i].earnedTokenAddress);
-    if(pools[i].id == 'spiritxginspirit'){
-        pools[i].Contract = new web3.eth.Contract(ginspiritABI, pools[i].earnedTokenAddress);
-    }
 
     const zap = getEligibleZap(pools[i]);
     if (zap) {
