@@ -157,7 +157,7 @@ const PoolSummary = ({
             lockDisplay = 'NEXT UNLOCK IN: ' + SecondsToDays(lockWindowRemaining);
           }
           pool.tokenDescription = 
-            'Tomb | 60% of all deposits into this vault will be deposited into the Tomb-FTM LP (TOMB-FTM 60) vault. Withdrawals from the vault will be locked for 6 Tomb Epoch periods (36 hours) with a 2 hour unlock withdrawal window. ' + lockDisplay
+            'Tomb | Withdrawals from the vault will be locked for 6 Tomb Epoch periods (36 hours) with a 2 hour unlock withdrawal window. ' + lockDisplay
       }
 
     }
