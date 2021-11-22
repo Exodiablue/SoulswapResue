@@ -293,6 +293,14 @@ const spookyTokens = [
     logoURI: '',
   },
   {
+    name: 'TOMB',
+    address: '0x6c021ae822bea943b2e66552bde1d2696a53fbb7',
+    symbol: 'TOMB',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+  {
     name: 'Dai Stablecoin',
     address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
     symbol: 'DAI',
