@@ -5667,7 +5667,7 @@ const pools = [
     logo: 'fantom/TOMB-FTM.png',
     name: 'TOMB-FTM 60/40',
     token: 'TOMB-FTM LP (SpookySwap)',
-    tokenDescription: 'Tomb | 40% of all deposits into this vault will be deposited into the TSHARE Masonry (TSHARE 40) vault.',
+    tokenDescription: 'Tomb | 40% of all deposits into this vault will be deposited into the TSHARE MASONRY vault.',
     tokenAddress: '0x2A651563C9d3Af67aE0388a5c8F89b867038089e',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
