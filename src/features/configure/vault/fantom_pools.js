@@ -5663,11 +5663,11 @@ const pools = [
   },
 
   {
-    id: 'tomb-tomb-ftm',
+    id: 'tomb-tomb-ftm-60',
     logo: 'fantom/TOMB-FTM.png',
     name: 'TOMB-FTM 60',
     token: 'TOMB-FTM LP (SpookySwap)',
-    tokenDescription: 'Tomb | 40% of all deposits into this vault will be deposited into the Tshare Masonry (TSHARE 40) vault.',
+    tokenDescription: 'Tomb | 40% of all deposits into this vault will be deposited into the TSHARE Masonry (TSHARE 40) vault.',
     tokenAddress: '0x2A651563C9d3Af67aE0388a5c8F89b867038089e',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
@@ -5677,7 +5677,7 @@ const pools = [
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
-    oracleId: 'tomb-tomb-ftm',
+    oracleId: 'tomb-tomb-ftm-60',
     oraclePrice: 0,
     depositsPaused: false,
     status: 'active',
@@ -5699,7 +5699,7 @@ const pools = [
   {
     id: 'tshare-masonry',
     logo: 'fantom/TSHARE.png',
-    name: 'TSHARE 40',
+    name: 'TSHARE MASONRY 40',
     token: 'TSHARE',
     tokenDescription: 'Tomb | 60% of all deposits into this vault will be deposited into the Tomb-FTM LP (TOMB-FTM 60) vault. Withdrawals from the vault will be locked for 6 Tomb Epoch periods (36 hours) with a 2 hour unlock withdrawal window. LOADING...',
     tokenAddress: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
