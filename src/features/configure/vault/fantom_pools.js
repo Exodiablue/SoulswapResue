@@ -5701,7 +5701,7 @@ const pools = [
     logo: 'fantom/TSHARE.png',
     name: 'TSHARE MASONRY',
     token: 'TSHARE',
-    tokenDescription: 'Tomb | Withdrawals from the vault will be locked for 6 Tomb Epoch periods (36 hours) with a 2 hour unlock withdrawal window. LOADING...',
+    tokenDescription: 'Tomb | Withdrawals from the vault will be locked for 6 Tomb Epoch periods (36 hours) with a 2 hour unlock withdrawal window. During the unlock period rewards will not be compounded. LOADING...',
     tokenAddress: '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
