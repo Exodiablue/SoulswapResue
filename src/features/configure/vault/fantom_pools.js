@@ -16041,6 +16041,7 @@ const pools = [
         // ...spookyTokens, 
         // ...zapTokens
       ],
+    },
   },
 
   {
