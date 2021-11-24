@@ -15372,7 +15372,7 @@ const pools = [
     logo: 'fantom/RAVEN.png',
     name: 'RAVEN',
     token: 'RAVEN',
-    tokenDescription: 'Raven',
+    tokenDescription: 'Raven | Note: \u26A0 A BURN FEE is incurred on deposits for this pool.',
     tokenAddress: '0x175cbf2809acFD7521fDd387d65aac523Fe4076F',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
