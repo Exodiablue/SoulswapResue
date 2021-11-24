@@ -157,7 +157,7 @@ const PoolSummary = ({
             lockDisplay = 'NEXT UNLOCK IN: ' + SecondsToDays(lockWindowRemaining);
           }
           pool.tokenDescription = 
-            'Tomb | Withdrawals from the vault will be locked for 6 Tomb Epoch periods (36 hours) with a 2 hour unlock withdrawal window. ' + lockDisplay
+            'Tomb | Withdrawals from the vault will be locked for 6 Tomb Epoch periods (36 hours) with a 2 hour unlock withdrawal window. At the start of the unlock period all rewards will be compounded. Newly deposited funds will be staked at the end of the next unlock window. ' + lockDisplay
       }
 
     }
