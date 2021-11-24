@@ -15395,7 +15395,10 @@ const pools = [
     zap: {
       zapAddress: VAULT_ZAP,
       router: SPOOKY_ROUTER,
-      tokens: [...spookyTokens, ...zapTokens],
+      tokens: [
+        // ...spookyTokens, 
+        // ...zapTokens
+      ],
     },
   },
 
@@ -15997,7 +16000,10 @@ const pools = [
     zap: {
       zapAddress: VAULT_ZAP,
       router: SPOOKY_ROUTER,
-      tokens: [...spookyTokens, ...zapTokens],
+      tokens: [
+        // ...spookyTokens, 
+        // ...zapTokens
+      ],
     },
   },
 
@@ -16031,8 +16037,10 @@ const pools = [
     zap: {
       zapAddress: VAULT_ZAP,
       router: SPOOKY_ROUTER,
-      tokens: [...spookyTokens, ...zapTokens],
-    },
+      tokens: [
+        // ...spookyTokens, 
+        // ...zapTokens
+      ],
   },
 
   {
