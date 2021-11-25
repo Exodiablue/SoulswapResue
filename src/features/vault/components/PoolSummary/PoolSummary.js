@@ -82,7 +82,7 @@ const PoolSummary = ({
     var date = new Date();
     var seconds = Math.round(date.getTime() / 1000);
     n = n-seconds;
-    if (n<0){
+    if (n<=0){
       return 'WAITING FOR NEXT HARVEST'
     }
     var day = parseInt( n / (24 * 3600));
@@ -102,7 +102,7 @@ const PoolSummary = ({
     // var date = new Date();
     // var dateSeconds = Math.round(date.getTime() / 1000);
     // seconds = seconds-dateSeconds;
-    if (seconds<0){
+    if (seconds<=0){
       return 'WAITING FOR NEXT HARVEST'
     }
 
