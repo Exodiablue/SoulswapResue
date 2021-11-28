@@ -5422,7 +5422,7 @@ const pools = [
     oracle: 'lps',
     oracleId: 'tomb-tomb-ftm-60',
     oraclePrice: 0,
-    depositsPaused: true,
+    depositsPaused: false,
     status: 'active',
     platform: 'Tomb',
     assets: ['TOMB', 'FTM'],
