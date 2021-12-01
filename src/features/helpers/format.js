@@ -12,6 +12,19 @@ export const formatApy = apy => {
   if (order >= units.length - 1) return `🔥`;
 
   const num = apy / 1000 ** order;
+  return `${num.toFixed(2)}${units[order]}%`;
+};
+
+export const formatDailyApy = apy => {
+  
+  if (!apy) return `???`;
+
+  apy *= 100;
+
+  const order = apy < 1 ? 0 : Math.floor(Math.log10(apy) / 3);
+  if (order >= units.length - 1) return `🔥`;
+
+  const num = apy / 1000 ** order;
   return `${num.toFixed(3)}${units[order]}%`;
 };
 

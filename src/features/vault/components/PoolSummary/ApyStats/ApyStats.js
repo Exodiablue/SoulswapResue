@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import styles from './styles';
-import { formatApy } from '../../../../helpers/format';
+import { formatApy, formatDailyApy } from '../../../../helpers/format';
 import { isNaN } from '../../../../helpers/bignumber';
 import LabeledStat from '../LabeledStat/LabeledStat';
 import { Fade, Tooltip } from '@material-ui/core';
@@ -157,6 +157,9 @@ const ApyStats = ({ apy, launchpool, isLoading = false, itemClasses, itemInnerCl
   const formatted = Object.fromEntries(
     Object.entries(values).map(([key, value]) => [key, formatApy(value)])
   );
+  const formattedDaily = Object.fromEntries(
+    Object.entries(values).map(([key, value]) => [key, formatDailyApy(value)])
+  );
 
   return (
     <>
@@ -172,10 +175,10 @@ const ApyStats = ({ apy, launchpool, isLoading = false, itemClasses, itemInnerCl
       </Grid>
       <Grid item xs={4} className={itemClasses}>
         <LabeledStatWithTooltip
-          value={formatted.totalDaily}
+          value={formattedDaily.totalDaily}
           label={t('Vault-APYDaily')}
-          tooltip={!isLoading && needsTooltip ? <DailyBreakdownTooltip rates={formatted} /> : null}
-          boosted={isBoosted ? formatted.boostedTotalDaily : ''}
+          tooltip={!isLoading && needsTooltip ? <DailyBreakdownTooltip rates={formattedDaily} /> : null}
+          boosted={isBoosted ? formattedDaily.boostedTotalDaily : ''}
           isLoading={isLoading}
           className={`tooltip-toggle ${itemInnerClasses}`}
         />
