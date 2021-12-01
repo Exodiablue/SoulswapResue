@@ -204,7 +204,7 @@ const PoolSummary = ({
           />
         </Grid>
         <Grid item xs={6} className={`${classes.item} ${classes.itemBalances}`}>
-          {pool.id === 'spiritxginspirit' ?  ''  :  
+          {pool.id === 'spiritxginspirit' || pool.id === 'lqdrxgxlqdr' ?  ''  :  
             <LabeledStat
             value={formatDecimals(deposited)}
             subvalue={depositedUsd}
@@ -214,7 +214,7 @@ const PoolSummary = ({
             />
         } 
         </Grid>
-        {pool.id === 'spiritxginspirit' ?  ''  : 
+        {pool.id === 'spiritxginspirit' || pool.id === 'lqdrxgxlqdr' ?  ''  : 
           <ApyStats
             apy={apy}
             launchpool={launchpool}

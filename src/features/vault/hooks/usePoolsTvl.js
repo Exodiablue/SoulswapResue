@@ -35,7 +35,7 @@ const useUserTvl = (pools, tokens) => {
           sharesBalance.multipliedBy(new BigNumber(pool.pricePerFullShare)),
           pool.tokenDecimals,
         );
-        if(pool.id != 'spiritxginspirit'){
+        if(pool.id != 'spiritxginspirit' || pool.id === 'lqdrxgxlqdr' ){
           userTvl += deposited * pool.oraclePrice;
         }
       }

@@ -13,7 +13,7 @@ const PoolActions = ({ pool, balanceSingle, index, sharesBalance }) => {
   return (
     <Grid container>
       <DepositSection index={index} pool={pool} balanceSingle={balanceSingle} />
-      {pool.id === 'spiritxginspirit' ?  '' : <WithdrawSection index={index} pool={pool} sharesBalance={sharesBalance} /> }
+      {pool.id === 'spiritxginspirit' || pool.id === 'lqdrxgxlqdr' ?  '' : <WithdrawSection index={index} pool={pool} sharesBalance={sharesBalance} /> }
       {shouldHideFromHarvest(pool.id) ? '' : <HarvestSection index={index} pool={pool} />}
     </Grid>
   );
