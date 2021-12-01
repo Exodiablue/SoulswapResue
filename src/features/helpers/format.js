@@ -12,7 +12,7 @@ export const formatApy = apy => {
   if (order >= units.length - 1) return `🔥`;
 
   const num = apy / 1000 ** order;
-  return `${num.toFixed(2)}${units[order]}%`;
+  return `${num.toFixed(3)}${units[order]}%`;
 };
 
 export const formatTvl = (tvl, oraclePrice) => {
