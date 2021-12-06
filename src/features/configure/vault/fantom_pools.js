@@ -2054,7 +2054,7 @@ const pools = [
     zap: {
       zapAddress: VAULT_ZAP,
       router: SPOOKY_ROUTER,
-      tokens: [...zapTokens],
+      tokens: [...spookyTokens, ...zapTokens,],
     },
   },
 
@@ -3865,45 +3865,6 @@ const pools = [
   },
 
   {
-    id: 'hyper-ori-usdc',
-    logo: 'fantom/USDC-ORI.png',
-    name: 'ORI-USDC LP',
-    token: 'ORI-USDC LP (HyperJump)',
-    tokenDescription: 'HyperJump',
-    tokenAddress: '0xF70a9Af9f581c2F752Acc779148712c43E58d2f0',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-ORI-USD-3',
-    earnedTokenAddress: '0xAA54cfdD1119f29881C0FBC1d506F10BC15b03ae',
-    earnContractAddress: '0xAA54cfdD1119f29881C0FBC1d506F10BC15b03ae',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'lps',
-    oracleId: 'hyper-ori-usdc',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'eol',
-    platform: 'HyperJump',
-    assets: ['ORI', 'USDC'],
-    callFee: 0.5,
-    priceChart: 'https://ftm-info.hyperjump.fi/pair/0xF70a9Af9f581c2F752Acc779148712c43E58d2f0',
-    depositFee: '1% from Farm Provider',
-    addLiquidityUrl:
-      'https://ftm.hyperjump.app/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-    buyTokenUrl:
-      'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: HYPER_ROUTER,
-
-      tokens: [
-        //...hyperTokens,
-        //...zapTokens,
-      ],
-    },
-  },
-
-  {
     id: 'hyper-dai-ftm',
     logo: 'fantom/DAI-FTM.png',
     name: 'DAI-FTM LP',
@@ -3968,45 +3929,6 @@ const pools = [
     addLiquidityUrl: 'https://ftm.hyperjump.app/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
     buyTokenUrl:
       'https://ftm.hyperjump.app/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: HYPER_ROUTER,
-
-      tokens: [
-        //...hyperTokens,
-        //...zapTokens,
-      ],
-    },
-  },
-
-  {
-    id: 'hyper-btc-ori',
-    logo: 'fantom/WBTC-ORI.png',
-    name: 'BTC-ORI LP',
-    token: 'BTC-ORI LP (HyperJump)',
-    tokenDescription: 'HyperJump',
-    tokenAddress: '0xdDe0ACA9Dc806544f7D5D4DD308a4ee065364Cca',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-BTC-ORI-3',
-    earnedTokenAddress: '0x122B48eca046F467d54A76D81c3bf874Bf2c2F2C',
-    earnContractAddress: '0x122B48eca046F467d54A76D81c3bf874Bf2c2F2C',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'lps',
-    oracleId: 'hyper-btc-ori',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'eol',
-    platform: 'HyperJump',
-    assets: ['BTC', 'ORI'],
-    callFee: 0.5,
-    priceChart: 'https://ftm-info.hyperjump.fi/pair/0xdDe0ACA9Dc806544f7D5D4DD308a4ee065364Cca',
-    depositFee: '1% from Farm Provider',
-    addLiquidityUrl:
-      'https://ftm.hyperjump.app/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/0x0575f8738EFdA7F512e3654F277C77e80C7d2725',
-    buyTokenUrl:
-      'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
     zap: {
       zapAddress: VAULT_ZAP,
       router: HYPER_ROUTER,
@@ -4156,45 +4078,6 @@ const pools = [
     depositFee: '1% from Farm Provider',
     addLiquidityUrl:
       'https://ftm.hyperjump.app/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0x735aBE48e8782948a37C7765ECb76b98CdE97B0F',
-    buyTokenUrl:
-      'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: HYPER_ROUTER,
-
-      tokens: [
-        //...hyperTokens,
-        //...zapTokens,
-      ],
-    },
-  },
-
-  {
-    id: 'hyper-rbch-ori',
-    logo: 'fantom/RENBCH-ORI.png',
-    name: 'renBCH-ORI LP',
-    token: 'renBCH-ORI LP (HyperJump)',
-    tokenDescription: 'HyperJump',
-    tokenAddress: '0x9b6553e4A939DC1f56524337AE10E298B3aFb9CD',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-RBC-ORI-3',
-    earnedTokenAddress: '0xD3CF64FDA8b2e22167f8253009dC1A149DfCd87B',
-    earnContractAddress: '0xD3CF64FDA8b2e22167f8253009dC1A149DfCd87B',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'lps',
-    oracleId: 'hyper-rbch-ori',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'eol',
-    platform: 'HyperJump',
-    assets: ['renBCH', 'ORI'],
-    callFee: 0.5,
-    priceChart: 'https://ftm-info.hyperjump.fi/pair/0x9b6553e4A939DC1f56524337AE10E298B3aFb9CD',
-    depositFee: '1% from Farm Provider',
-    addLiquidityUrl:
-      'https://ftm.hyperjump.app/add/0x0575f8738EFdA7F512e3654F277C77e80C7d2725/0xc3fEd6eB39178A541D274e6Fc748d48f0Ca01CC3',
     buyTokenUrl:
       'https://ftm.hyperjump.app/swap?outputCurrency=0x0575f8738efda7f512e3654f277c77e80c7d2725',
     zap: {
@@ -9327,43 +9210,6 @@ const pools = [
   },
 
   {
-    id: 'morph-kins',
-    logo: 'fantom/KINS.png',
-    name: 'KINS',
-    token: 'KINS',
-    tokenDescription: 'Morpheus | \u26A0 A 10% BURN is incurred on deposits for this pool.',
-    tokenAddress: '0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-KINS-Q',
-    earnedTokenAddress: '0xa232F86296C46849d75685f5c81e014595aB876d',
-    earnContractAddress: '0xa232F86296C46849d75685f5c81e014595aB876d',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'tokens',
-    oracleId: 'KINS',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'eol',
-    platform: 'Morpheus',
-    assets: ['KINS'],
-    callFee: 0.5,
-    depositFee: '1% from Farm Provider',
-    priceChart: 'https://info.spiritswap.finance/token/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
-    buyTokenUrl:
-      'https://swap.spiritswap.finance/#/exchange/swap/0x6ECED8E16eDA61E65292f019B165542A5906ecD6',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: SPIRIT_ROUTER,
-
-      tokens: [
-        // ...spiritTokens,
-        // ...zapTokens,
-      ],
-    },
-  },
-
-  {
     id: 'morph-tarot',
     logo: 'fantom/TAROT.png',
     name: 'TAROT',
@@ -10205,76 +10051,6 @@ const pools = [
     priceChart: 'https://info.spookyswap.finance/pair/0xf0702249F4D3A25cD3DED7859a165693685Ab577',
     addLiquidityUrl:
       'https://spookyswap.finance/add/FTM/0x74b23882a30290451A17c44f4F05243b6b58C76d',
-    buyTokenUrl:
-      ' https://spookyswap.finance/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: SPOOKY_ROUTER,
-      tokens: [...spookyTokens, ...zapTokens],
-    },
-  },
-
-  {
-    id: 'morph-btc-ftm',
-    logo: 'fantom/BTC-FTM.png',
-    name: 'BTC-FTM',
-    token: 'BTC-FTM LP (SpookySwap)',
-    tokenDescription: 'Morpheus',
-    tokenAddress: '0xFdb9Ab8B9513Ad9E419Cf19530feE49d412C3Ee3',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-BTC-FTM-Q',
-    earnedTokenAddress: '0x69bE67608C87cc9246772eBb5B0568C90a208414',
-    earnContractAddress: '0x69bE67608C87cc9246772eBb5B0568C90a208414',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'lps',
-    oracleId: 'morph-btc-ftm',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'eol',
-    platform: 'Morpheus',
-    assets: ['BTC', 'FTM'],
-    callFee: 0.5,
-    depositFee: '2% from Farm Provider',
-    priceChart: 'https://info.spookyswap.finance/pair/0xFdb9Ab8B9513Ad9E419Cf19530feE49d412C3Ee3',
-    addLiquidityUrl:
-      'https://spookyswap.finance/add/FTM/0x321162Cd933E2Be498Cd2267a90534A804051b11',
-    buyTokenUrl:
-      ' https://spookyswap.finance/swap?outputCurrency=0x321162Cd933E2Be498Cd2267a90534A804051b11',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: SPOOKY_ROUTER,
-      tokens: [...spookyTokens, ...zapTokens],
-    },
-  },
-
-  {
-    id: 'morph-btc-eth',
-    logo: 'fantom/BTC-ETH.png',
-    name: 'BTC-ETH',
-    token: 'BTC-ETH LP (SpookySwap)',
-    tokenDescription: 'Morpheus',
-    tokenAddress: '0xEc454EdA10accdD66209C57aF8C12924556F3aBD',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-BTC-ETH-Q',
-    earnedTokenAddress: '0xd4eA80ccC8a07791555165f1B94ed9D50425Edfe',
-    earnContractAddress: '0xd4eA80ccC8a07791555165f1B94ed9D50425Edfe',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'lps',
-    oracleId: 'morph-btc-eth',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'eol',
-    platform: 'Morpheus',
-    assets: ['ETH', 'BTC'],
-    callFee: 0.5,
-    depositFee: '2% from Farm Provider',
-    priceChart: 'https://info.spookyswap.finance/pair/0xEc454EdA10accdD66209C57aF8C12924556F3aBD',
-    addLiquidityUrl:
-      'https://spookyswap.finance/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/0x74b23882a30290451A17c44f4F05243b6b58C76d',
     buyTokenUrl:
       ' https://spookyswap.finance/swap?outputCurrency=0x74b23882a30290451A17c44f4F05243b6b58C76d',
     zap: {
@@ -14397,39 +14173,6 @@ const pools = [
   },
 
   {
-    id: 'cgs-reaper',
-    logo: 'fantom/REAPER.png',
-    name: 'REAPER',
-    token: 'REAPER',
-    tokenDescription: 'CougarSwap',
-    tokenAddress: '0x117dB78176C8eDe4F12fCd29d85Cd96b91A4cbBb',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-REAPER-b',
-    earnedTokenAddress: '0xf12E846E0D935C4dc14c5FCf72F522bB56793Ed3',
-    earnContractAddress: '0xf12E846E0D935C4dc14c5FCf72F522bB56793Ed3',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'tokens',
-    oracleId: 'REAPER',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'eol',
-    platform: 'CougarSwap',
-    assets: ['REAPER'],
-    callFee: 0.5,
-    priceChart: 'https://info.spiritswap.finance/pair/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
-    buyTokenUrl:
-      'https://swap.spiritswap.finance/#/exchange/swap/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: SPIRIT_ROUTER,
-
-      tokens: [...spiritTokens, ...zapTokens],
-    },
-  },
-
-  {
     id: 'cgs-ftm',
     logo: 'fantom/FTM.png',
     name: 'WFTM',
@@ -17736,80 +17479,6 @@ const pools = [
       tokens: [
         ...spiritTokens, 
         ...zapTokens
-      ],
-    },
-  },
-
-  {
-    id: 'trick-spell',
-    logo: 'fantom/SPELL.png',
-    name: 'SPELL',
-    token: 'SPELL',
-    tokenDescription: 'Trick or Treat',
-    tokenAddress: '0x468003B688943977e6130F4F68F23aad939a1040',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-SPELL-g',
-    earnedTokenAddress: '0x9E6D1df926FDDE98f404054D81cFF7631dEADc7B',
-    earnContractAddress: '0x9E6D1df926FDDE98f404054D81cFF7631dEADc7B',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'tokens',
-    oracleId: 'SPELL',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'eol',
-    platform: 'Trick or Treat',
-    assets: ['SPELL'],
-    callFee: 0.5,
-    depositFee: '2% from Farm Provider',
-    priceChart: 'https://info.spookyswap.finance/token/0x468003B688943977e6130F4F68F23aad939a1040',
-    buyTokenUrl:
-      'https://spookyswap.finance/swap?outputCurrency=0x468003B688943977e6130F4F68F23aad939a1040',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: SPOOKY_ROUTER,
-
-      tokens: [
-        ...spookyTokens,
-        ...zapTokens,
-      ],
-    },
-  },
-
-  {
-    id: 'trick-scream',
-    logo: 'fantom/SCREAM.png',
-    name: 'SCREAM',
-    token: 'SCREAM',
-    tokenDescription: 'Trick or Treat',
-    tokenAddress: '0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-SCREAM-g',
-    earnedTokenAddress: '0x733D18b85D006fe8944F0C25Ff9589CD1B738A02',
-    earnContractAddress: '0x733D18b85D006fe8944F0C25Ff9589CD1B738A02',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'tokens',
-    oracleId: 'SCREAM',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'eol',
-    platform: 'Trick or Treat',
-    assets: ['SCREAM'],
-    callFee: 0.5,
-    depositFee: '2% from Farm Provider',
-    priceChart: 'https://info.spookyswap.finance/token/0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
-    buyTokenUrl:
-      'https://spookyswap.finance/swap?outputCurrency=0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: SPOOKY_ROUTER,
-
-      tokens: [
-        ...spookyTokens,
-        ...zapTokens,
       ],
     },
   },
