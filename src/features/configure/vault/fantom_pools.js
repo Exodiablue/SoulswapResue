@@ -301,6 +301,14 @@ const spookyTokens = [
     logoURI: '',
   },
   {
+    name: 'MIM',
+    address: '0x82f0B8B456c1A451378467398982d4834b6829c1',
+    symbol: 'MIM',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
+  {
     name: 'Dai Stablecoin',
     address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
     symbol: 'DAI',
@@ -308,18 +316,18 @@ const spookyTokens = [
     chainId: 250,
     logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
     isToken: true,
-  }
+  },
+  {
+    name: 'SPELL',
+    address: '0x468003B688943977e6130F4F68F23aad939a1040',
+    symbol: 'SPELL',
+    decimals: 18,
+    chainId: 250,
+    logoURI: '',
+  },
 ];
 
 const wakaTokens = [
-  // {
-  //   name: 'GRIM',
-  //   address: '0x7eC94C4327dC757601B4273cD67014d7760Be97E',
-  //   symbol: 'GRIM',
-  //   decimals: 18,
-  //   chainId: 250,
-  //   logoURI: '',
-  // },
   {
     name: 'WAKA',
     address: '0xf61ccde1d4bb76ced1daa9d4c429cca83022b08b',
@@ -339,46 +347,6 @@ const wakaTokens = [
   },
 ];
 
-const hyperTokens = [
-  {
-    name: 'Dai Stablecoin',
-    address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
-    symbol: 'DAI',
-    decimals: 18,
-    chainId: 250,
-    logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
-    isToken: true,
-  },
-];
-
-const shibaTokens = [
-  // {
-  //   name: 'GBONE',
-  //   address: '0x004b122eb5632077abdd2c38e8d9392348d5ca15',
-  //   symbol: 'GBONE',
-  //   decimals: 18,
-  //   chainId: 250,
-  //   logoURI: '',
-  // },
-
-  {
-    name: 'BONE',
-    address: '0x8a0d557BB132Dbe2C9Aa3CFb6Ef81eeE4107057a',
-    symbol: 'BONE',
-    decimals: 18,
-    chainId: 250,
-    logoURI: '',
-  },
-  {
-    name: 'Dai Stablecoin',
-    address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
-    symbol: 'DAI',
-    decimals: 18,
-    chainId: 250,
-    logoURI: 'https://ftmscan.com/token/images/MCDDai_32.png',
-    isToken: true,
-  },
-];
 
 const zooTokens = [
   {
@@ -431,35 +399,9 @@ const bombTokens = [
     chainId: 250,
     logoURI: '',
   },
-  // {
-  //   name: 'BOMB',
-  //   address: '0x8503eb4a136bdbeb323e37aa6e0fa0c772228378',
-  //   symbol: 'BOMB',
-  //   decimals: 0,
-  //   chainId: 250,
-  //   logoURI: '',
-  // },
+
 ];
 
-const oliveTokens = [
-  {
-    name: 'Fantom',
-    address: '',
-    symbol: 'FTM',
-    wrappedSymbol: 'WFTM',
-    decimals: 18,
-    chainId: 250,
-    logoURI: 'https://ftmscan.com/token/images/WFTM_32.png',
-  },
-  {
-    name: 'USD Coin',
-    address: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-    symbol: 'USDC',
-    decimals: 6,
-    chainId: 250,
-    logoURI: 'https://ftmscan.com/token/images/USDC_32.png',
-  },
-];
 
 const pools = [
   {

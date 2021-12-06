@@ -380,15 +380,15 @@ export const getNetworkConnectors = t => {
               description: t('Home-BrowserWallet'),
             },
           },
-          walletconnect: {
-            package: WalletConnectProvider,
-            options: {
-              rpc: {
-                1: 'https://rpcapi.fantom.network',
-                250: 'https://rpcapi.fantom.network',
-              },
-            },
-          },
+          // walletconnect: {
+          //   package: WalletConnectProvider,
+          //   options: {
+          //     rpc: {
+          //       1: 'https://rpcapi.fantom.network',
+          //       250: 'https://rpcapi.fantom.network',
+          //     },
+          //   },
+          // },
         },
       };
     default:
