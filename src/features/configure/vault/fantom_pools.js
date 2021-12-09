@@ -5514,7 +5514,7 @@ const pools = [
     earnedToken: 'G-TSHARE',
     earnedTokenAddress: '0xE3BbAC6429724dcFcFA3DAfdb282AF1210aF31ED',
     earnContractAddress: '0xE3BbAC6429724dcFcFA3DAfdb282AF1210aF31ED',
-    strategyAddress: '0xDD71d774874E5026487Fd6B9BE7C9A6A0701ac4d',
+    strategyAddress: '0x1c6d2eae7ae7a77fcb2905f5b3b5210ac7790fcf',
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'tokens',
