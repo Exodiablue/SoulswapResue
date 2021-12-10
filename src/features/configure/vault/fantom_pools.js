@@ -6016,41 +6016,6 @@ const pools = [
   },
 
   {
-    id: 'bomb-bbomb-ftm',
-    logo: 'fantom/BBOMB-FTM.png',
-    name: 'bBOMB-FTM LP',
-    token: 'bBOMB-FTM LP (BombSwap)',
-    tokenDescription: 'BombSwap',
-    tokenAddress: '0x5f6158c03E773cdAAa93359007760C5A3Fa64a83',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'G-BBO-FTM-L',
-    earnedTokenAddress: '0x82Be845bBEc1E937822C77C36DA0C1F4BC0C2793',
-    earnContractAddress: '0x82Be845bBEc1E937822C77C36DA0C1F4BC0C2793',
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'lps',
-    oracleId: 'bomb-bbomb-ftm',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'active',
-    platform: 'BombSwap',
-    assets: ['bBOMB', 'FTM'],
-    callFee: 0.5,
-    priceChart: '',
-    addLiquidityUrl:
-      'https://swap.fbomb.finance/#/add/FTM/0x0d318ef2CF0AaFA2713419AEd6c0F6A21FD34Cf0',
-    buyTokenUrl: 'https://swap.fbomb.finance/#/swap',
-    zap: {
-      zapAddress: VAULT_ZAP,
-      router: BOMB_ROUTER,
-      tokens: [
-        //...bombTokens,
-      ],
-    },
-  },
-
-  {
     id: 'bomb-bbomb-bomb',
     logo: 'fantom/BBOMB-BOMB.png',
     name: 'bBOMB-BOMB LP',
