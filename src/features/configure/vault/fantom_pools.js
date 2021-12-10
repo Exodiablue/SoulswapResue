@@ -5998,7 +5998,7 @@ const pools = [
     oracleId: 'bomb-pgunk-ftm',
     oraclePrice: 0,
     depositsPaused: false,
-    status: 'active',
+    status: 'eol',
     platform: 'BombSwap',
     assets: ['PGUNK', 'FTM'],
     callFee: 0.5,
