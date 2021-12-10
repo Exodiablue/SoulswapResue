@@ -2350,7 +2350,7 @@ const pools = [
     oracleId: 'boo-shade-ftm',
     oraclePrice: 0,
     depositsPaused: false,
-    status: 'active',
+    status: 'eol',
     platform: 'SpookySwap',
     assets: ['FTM', 'SHADE'],
     callFee: 0.5,
