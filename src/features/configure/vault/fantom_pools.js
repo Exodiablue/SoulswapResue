@@ -13661,6 +13661,846 @@ const pools = [
   },
 
   {
+    id: 'soul-bnb-ftm',
+    logo: 'fantom/BNB-FTM.png',
+    name: 'BNB-FTM LP (SoulSwap)',
+    token: 'BNB-FTM LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x52966a12e3211c92909C28603ca3df8465c06c82',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-BNB-FTM-Z',
+    earnedTokenAddress: '0xfa899d09411c5DbB1eC7ee746236a9dd841Ea05C',
+    earnContractAddress: '0xfa899d09411c5DbB1eC7ee746236a9dd841Ea05C',
+    strategyAddress: '0xC92840946Ed7c187A6Be68b10Ca5377cea2E72fb',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-bnb-ftm',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['BNB', 'FTM'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x52966a12e3211c92909C28603ca3df8465c06c82',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-bnb-dai',
+    logo: 'fantom/BNB-DAI.png',
+    name: 'BNB-DAI LP (SoulSwap)',
+    token: 'BNB-DAI LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0xC1EdFbA9811B696bDFd07d31eD5FF702e031364E',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-BNB-DAI-Z',
+    earnedTokenAddress: '0x91b2691F705453952A93C6b4f6DDd4CD36809B1a',
+    earnContractAddress: '0x91b2691F705453952A93C6b4f6DDd4CD36809B1a',
+    strategyAddress: '0x5974907a854099462B8c63906050e4b98A20EC79',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-bnb-dai',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['BNB', 'DAI'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0xC1EdFbA9811B696bDFd07d31eD5FF702e031364E',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+  
+  {
+    id: 'soul-lux-dai',
+    logo: 'fantom/LUX-DAI.png',
+    name: 'LUX-DAI LP (SoulSwap)',
+    token: 'LUX-DAI LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x46729c2AeeabE7774a0E710867df80a6E19Ef851',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-LUX-DAI-Z',
+    earnedTokenAddress: '0x40ACd0A5d5a63F6001f499259cbD2bc9207abD0e',
+    earnContractAddress: '0x40ACd0A5d5a63F6001f499259cbD2bc9207abD0e',
+    strategyAddress: '0xC1ef84213Cf0D8A6014Bd785a50382139Fe9c57C',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-lux-dai',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['LUX', 'DAI'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x46729c2AeeabE7774a0E710867df80a6E19Ef851',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0x6671E20b83Ba463F270c8c75dAe57e3Cc246cB2b/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-lux-ftm',
+    logo: 'fantom/LUX-FTM.png',
+    name: 'LUX-FTM LP (SoulSwap)',
+    token: 'LUX-FTM LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x951BBB838e49F7081072895947735b0892cCcbCD',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-LUX-FTM-Z',
+    earnedTokenAddress: '0x0Da4b0DA6847Bc1D4F03769336f9cDE558fdB743',
+    earnContractAddress: '0x0Da4b0DA6847Bc1D4F03769336f9cDE558fdB743',
+    strategyAddress: '0x4A87798CEC1D4f36A5FA96810f5798FEa84eB287',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-lux-ftm',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['LUX', 'FTM'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x951BBB838e49F7081072895947735b0892cCcbCD',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0x6671E20b83Ba463F270c8c75dAe57e3Cc246cB2b/ETH',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-dai-fusdt',
+    logo: 'fantom/DAI-FUSDT.png',
+    name: 'DAI-fUSDT LP (SoulSwap)',
+    token: 'DAI-fUSDT LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0xB38508Ed92C4878daE7652d8d46cAE46eEa8aA9A',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-DAI-FUS-Z',
+    earnedTokenAddress: '0x2EF187212BC66512031c90A91184bE79Fbc15154',
+    earnContractAddress: '0x2EF187212BC66512031c90A91184bE79Fbc15154',
+    strategyAddress: '0x33c625FBDF0B3F30266146E1Bc5b53Aa824774Ea',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-dai-fusdt',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['DAI', 'fUSDT'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0xB38508Ed92C4878daE7652d8d46cAE46eEa8aA9A',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-spell-ftm',
+    logo: 'fantom/SPELL-FTM.png',
+    name: 'SPELL-FTM LP (SoulSwap)',
+    token: 'SPELL-FTM LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x3d24C65201566f17d3Ac48C746919788d27Ee743',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-SPE-FTM-Z',
+    earnedTokenAddress: '0x0b9e3344EA8f5dC777461bd3611F46540d282Ca2',
+    earnContractAddress: '0x0b9e3344EA8f5dC777461bd3611F46540d282Ca2',
+    strategyAddress: '0x25Fa9a92eECBC56703021D713d14bC3CbB5ec3d5',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-spell-ftm',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['SPELL', 'FTM'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x3d24C65201566f17d3Ac48C746919788d27Ee743',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0x468003B688943977e6130F4F68F23aad939a1040/ETH',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-crv-ftm',
+    logo: 'fantom/CRV-FTM.png',
+    name: 'CRV-FTM LP (SoulSwap)',
+    token: 'CRV-FTM LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x1C9A342A615E8CAB4d21A2ACA7E40a48b2F8747F',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-CRV-FTM-Z',
+    earnedTokenAddress: '0x8FE1237636D0971d33aE39A17fE13b6E312E3a0C',
+    earnContractAddress: '0x8FE1237636D0971d33aE39A17fE13b6E312E3a0C',
+    strategyAddress: '0x22379a4373472F791979995Fb3925492F2324c85',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-crv-ftm',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['CRV', 'FTM'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x1C9A342A615E8CAB4d21A2ACA7E40a48b2F8747F',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0x1E4F97b9f9F913c46F1632781732927B9019C68b/ETH',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-any-ftm',
+    logo: 'fantom/ANY-FTM.png',
+    name: 'ANY-FTM LP (SoulSwap)',
+    token: 'ANY-FTM LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0xf4199594986E35c49f20beaaCD0f3529D18BF08E',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-ANY-FTM-Z',
+    earnedTokenAddress: '0x5825411b17A7E4d4b7403d0a158f18d88E0Fea9A',
+    earnContractAddress: '0x5825411b17A7E4d4b7403d0a158f18d88E0Fea9A',
+    strategyAddress: '0x6e2745Fa129E26d37684019398480DA58730Be38',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-any-ftm',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['ANY', 'FTM'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0xf4199594986E35c49f20beaaCD0f3529D18BF08E',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0xdDcb3fFD12750B45d32E084887fdf1aABAb34239/ETH',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-ice-ftm',
+    logo: 'fantom/ICE-FTM.png',
+    name: 'ICE-FTM LP (SoulSwap)',
+    token: 'ICE-FTM LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x944Aa704eDaF75dAD30832C6d0f111506a48b1c8',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-ICE-FTM-Z',
+    earnedTokenAddress: '0xEFd1cbEe031B99e77fd3208d44fDf18f28d45f47',
+    earnContractAddress: '0xEFd1cbEe031B99e77fd3208d44fDf18f28d45f47',
+    strategyAddress: '0x29715a5dc2e69A75EbB6cf378e373d5552a211D3',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-ice-ftm',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['ICE', 'FTM'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x944Aa704eDaF75dAD30832C6d0f111506a48b1c8',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0xf16e81dce15B08F326220742020379B855B87DF9/ETH',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-soul-btc',
+    logo: 'fantom/SOUL-BTC.png',
+    name: 'SOUL-BTC LP (SoulSwap)',
+    token: 'SOUL-BTC LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0xDA9D9CB5482EFD10839A676Fe99f05E41F57D885',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-SOU-BTC-Z',
+    earnedTokenAddress: '0xf94E4D314B1B5BFD0Ce67E01c1de329324c8AA2C',
+    earnContractAddress: '0xf94E4D314B1B5BFD0Ce67E01c1de329324c8AA2C',
+    strategyAddress: '0x4350fBA4Eb02b683271371b5d1B88C245E6Ab564',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-soul-btc',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['SOUL', 'BTC'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0xDA9D9CB5482EFD10839A676Fe99f05E41F57D885',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0xe2fb177009FF39F52C0134E8007FA0e4BaAcBd07/0x321162Cd933E2Be498Cd2267a90534A804051b11',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-soul-eth',
+    logo: 'fantom/SOUL-ETH.png',
+    name: 'SOUL-ETH LP (SoulSwap)',
+    token: 'SOUL-ETH LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x778F0d5515A3E78D1DD191f30835420c0275bde1',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-SOU-ETH-Z',
+    earnedTokenAddress: '0x4210334f7418B74e40Fb276140Ed243DC86AaE96',
+    earnContractAddress: '0x4210334f7418B74e40Fb276140Ed243DC86AaE96',
+    strategyAddress: '0xe2eDcCD67974b09122BC8f1F85be64BF24c7e91d',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-soul-eth',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['SOUL', 'ETH'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x778F0d5515A3E78D1DD191f30835420c0275bde1',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0xe2fb177009FF39F52C0134E8007FA0e4BaAcBd07/0x74b23882a30290451A17c44f4F05243b6b58C76d',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-enchant-usdc',
+    logo: 'fantom/ENCHANT-USDC.png',
+    name: 'ENCHANT-USDC LP (SoulSwap)',
+    token: 'ENCHANT-USDC LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x6c6f32008262666CA4acEd0a824c4945AB96e5F3',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-ENC-USD-Z',
+    earnedTokenAddress: '0x2231a8400a69782F8216211B9D7Fa586DDbdeEa1',
+    earnContractAddress: '0x2231a8400a69782F8216211B9D7Fa586DDbdeEa1',
+    strategyAddress: '0x6e7C445658666698eCe43033410bc41a7cbA2c83',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-enchant-usdc',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['ENCHANT', 'USDC'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x6c6f32008262666CA4acEd0a824c4945AB96e5F3',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0x6a1a8368D607c7a808F7BbA4F7aEd1D9EbDE147a/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-soul-fusdt',
+    logo: 'fantom/SOUL-FUSDT.png',
+    name: 'SOUL-fUSDT LP (SoulSwap)',
+    token: 'SOUL-fUSDT LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0xE27Cc06a7F34892BC17a5474303b91b2C9F3F21A',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-SOU-FUS-Z',
+    earnedTokenAddress: '0x1FBba0a2370733b79bA782D43eB8b54fa2D3242F',
+    earnContractAddress: '0x1FBba0a2370733b79bA782D43eB8b54fa2D3242F',
+    strategyAddress: '0xa4517b6a917bD6084E3B13524f7Fe4F4cEFd02B0',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-soul-fusdt',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['SOUL', 'fUSDT'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0xE27Cc06a7F34892BC17a5474303b91b2C9F3F21A',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0xe2fb177009FF39F52C0134E8007FA0e4BaAcBd07/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-unidx-seance',
+    logo: 'fantom/UNIDX-SEANCE.png',
+    name: 'UNIDX-SEANCE LP (SoulSwap)',
+    token: 'UNIDX-SEANCE LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x578c7B9A45D9e55246d3036D48db262b9B3CA48e',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-UNI-SEA-Z',
+    earnedTokenAddress: '0x5c43B10e12F4e638847433282231d8347bE221Ef',
+    earnContractAddress: '0x5c43B10e12F4e638847433282231d8347bE221Ef',
+    strategyAddress: '0x30942018c8F87e8B697a6c1e87858Fe7f1C2516F',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-unidx-seance',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['UNIDX', 'SEANCE'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x578c7B9A45D9e55246d3036D48db262b9B3CA48e',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0x124B06C5ce47De7A6e9EFDA71a946717130079E6/0x2130d2a1e51112D349cCF78D2a1EE65843ba36e0',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-enchant-seance',
+    logo: 'fantom/ENCHANT-SEANCE.png',
+    name: 'ENCHANT-SEANCE LP (SoulSwap)',
+    token: 'ENCHANT-SEANCE LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x5695176D085F8f7320507495066FFeC940da244C',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-ENC-SEA-Z',
+    earnedTokenAddress: '0x1B5269088b7B67C22121F1b80D2331987Db37051',
+    earnContractAddress: '0x1B5269088b7B67C22121F1b80D2331987Db37051',
+    strategyAddress: '0x888cF5d88870d4AFbb3553e18536B94a003D2072',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-enchant-seance',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['ENCHANT', 'SEANCE'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x5695176D085F8f7320507495066FFeC940da244C',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0x124B06C5ce47De7A6e9EFDA71a946717130079E6/0x6a1a8368D607c7a808F7BbA4F7aEd1D9EbDE147a',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-enchant-soul',
+    logo: 'fantom/ENCHANT-SOUL.png',
+    name: 'ENCHANT-SOUL LP (SoulSwap)',
+    token: 'ENCHANT-SOUL LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x9acc8F23680B6d7e295166277e2fb9c88A26cce6',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-ENC-SOU-Z',
+    earnedTokenAddress: '0xE429232cb02f0dFAf0AB57e1EfC766B7FC516d15',
+    earnContractAddress: '0xE429232cb02f0dFAf0AB57e1EfC766B7FC516d15',
+    strategyAddress: '0xE36D13d3DB5af7F7326A77B50EFC16E3151f674B',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-enchant-soul',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['ENCHANT', 'SOUL'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x9acc8F23680B6d7e295166277e2fb9c88A26cce6',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0xe2fb177009FF39F52C0134E8007FA0e4BaAcBd07/0x6a1a8368D607c7a808F7BbA4F7aEd1D9EbDE147a',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-enchant-ftm',
+    logo: 'fantom/ENCHANT-FTM.png',
+    name: 'ENCHANT-FTM LP (SoulSwap)',
+    token: 'ENCHANT-FTM LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0xb4d6Ff768F409e4D102BAD80f9A8ac105453ccdD',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-ENC-FTM-Z',
+    earnedTokenAddress: '0x6110a5e9A31bc0C338b46a1a47dA79a73C5748BD',
+    earnContractAddress: '0x6110a5e9A31bc0C338b46a1a47dA79a73C5748BD',
+    strategyAddress: '0x8c888CeA6139357A0974C9c415b7F6580Cfd4B91',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-enchant-ftm',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['ENCHANT', 'FTM'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0xb4d6Ff768F409e4D102BAD80f9A8ac105453ccdD',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/ETH/0x6a1a8368D607c7a808F7BbA4F7aEd1D9EbDE147a',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-dai-ftm',
+    logo: 'fantom/DAI-FTM.png',
+    name: 'DAI-FTM LP (SoulSwap)',
+    token: 'DAI-FTM LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0xF3d6E8Ecece8647B456d57375Ce0B51B8F0cD40b',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-DAI-FTM-Z',
+    earnedTokenAddress: '0x53DF1a4b2CE1965f052c6c059C44f6C17F23B8Cf',
+    earnContractAddress: '0x53DF1a4b2CE1965f052c6c059C44f6C17F23B8Cf',
+    strategyAddress: '0x3119336ae04fcD0D788D63Ec9cC563beaFa24B5E',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-dai-ftm',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['DAI', 'FTM'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0xF3d6E8Ecece8647B456d57375Ce0B51B8F0cD40b',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/ETH/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-soul-usdc',
+    logo: 'fantom/SOUL-USDC.png',
+    name: 'SOUL-USDC LP (SoulSwap)',
+    token: 'SOUL-USDC LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0xC0A301f1E5E0Fe37a31657e8F60a41b14d01B0Ef',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-SOU-USD-Z',
+    earnedTokenAddress: '0xBFa618eaeCbF5De086c80d1B175442baA11CA0D6',
+    earnContractAddress: '0xBFa618eaeCbF5De086c80d1B175442baA11CA0D6',
+    strategyAddress: '0x87856AFbEC54400E7891B5D1D7C4D490b55957cB',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-soul-usdc',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['SOUL', 'USDC'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0xC0A301f1E5E0Fe37a31657e8F60a41b14d01B0Ef',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0xe2fb177009FF39F52C0134E8007FA0e4BaAcBd07/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-dai-usdc',
+    logo: 'fantom/DAI-USDC.png',
+    name: 'DAI-USDC LP (SoulSwap)',
+    token: 'DAI-USDC LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0x406dE3A93f6B4179E3B21a3d81226B43e1918fd9',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-DAI-USD-Z',
+    earnedTokenAddress: '0x5e4338171F9Dc17996771206c5AeF9f873b4dd19',
+    earnContractAddress: '0x5e4338171F9Dc17996771206c5AeF9f873b4dd19',
+    strategyAddress: '0xac26E580c56a881dAEA515c053e92E56A4d4afa7',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-dai-usdc',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['DAI', 'USDC'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0x406dE3A93f6B4179E3B21a3d81226B43e1918fd9',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
+    id: 'soul-usdc-btc',
+    logo: 'fantom/USDC-BTC.png',
+    name: 'USDC-BTC LP (SoulSwap)',
+    token: 'USDC-BTC LP (SoulSwap)',
+    tokenDescription:
+      'SoulSwap | Withdrawals are locked in 14 day periods with 1 day of unlocking each cycle to avoid the platform withdrawal fee. During the unlock period rewards will not be compounded. LOADING...',
+    tokenAddress: '0xE2d39F7f0c8517Ca2058Fa97eB3D8d4928F7C6D6',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'G-USD-BTC-Z',
+    earnedTokenAddress: '0xeAEE70DD024bAd8fcBe070b32B4F4bc2e655Cb50',
+    earnContractAddress: '0xeAEE70DD024bAd8fcBe070b32B4F4bc2e655Cb50',
+    strategyAddress: '0x6FcC87714925e117b692D74C97182aAf194B5996',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'soul-usdc-btc',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SoulSwap',
+    assets: ['DAI', 'USDC'],
+    callFee: 0.5,
+    priceChart:
+      'https://analytics.soulswap.finance/pairs/0xE2d39F7f0c8517Ca2058Fa97eB3D8d4928F7C6D6',
+    addLiquidityUrl:
+      'https://exchange.soulswap.finance/exchange/add/0x321162Cd933E2Be498Cd2267a90534A804051b11/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+    buyTokenUrl: 'https://exchange.soulswap.finance/swap',
+    zap: {
+      zapAddress: VAULT_ZAP,
+      router: SOUL_ROUTER,
+
+      tokens: [
+        // ...soulTokens,
+        // ...zapTokens,
+      ],
+    },
+  },
+
+  {
     id: 'sing-sing',
     logo: 'fantom/SING.png',
     name: 'SING',
