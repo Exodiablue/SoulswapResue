@@ -18902,7 +18902,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['BANSHEE'],
     callFee: 0.5,
-    depositFee: '1.7% from Farm Provider',
+    depositFee: '1% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/token/0x0d337a5cA6250baC40d995f52cCb23ba594C50f4',
     buyTokenUrl:
       'https://swap.spiritswap.finance/#/exchange/swap/0x0d337a5cA6250baC40d995f52cCb23ba594C50f4',
@@ -18938,7 +18938,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['WFTM'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/token/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
     buyTokenUrl:
       'https://swap.spiritswap.finance/#/exchange/swap/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
@@ -18974,7 +18974,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['wMEMO'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/token/0xDDc0385169797937066bBd8EF409b5B3c0dFEB52',
     buyTokenUrl:
       'https://swap.spiritswap.finance/#/exchange/swap/0xDDc0385169797937066bBd8EF409b5B3c0dFEB52',
@@ -19010,7 +19010,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['ETH'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/token/0x74b23882a30290451A17c44f4F05243b6b58C76d',
     buyTokenUrl:
       'https://swap.spiritswap.finance/#/exchange/swap/0x74b23882a30290451A17c44f4F05243b6b58C76d',
@@ -19046,7 +19046,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['USDC'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/token/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
     buyTokenUrl:
       'https://swap.spiritswap.finance/#/exchange/swap/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
@@ -19082,7 +19082,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['MIM'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/token/0x82f0B8B456c1A451378467398982d4834b6829c1',
     buyTokenUrl:
       'https://swap.spiritswap.finance/#/exchange/swap/0x82f0B8B456c1A451378467398982d4834b6829c1',
@@ -19118,7 +19118,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['ICE'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/token/0xf16e81dce15B08F326220742020379B855B87DF9',
     buyTokenUrl:
       'https://swap.spiritswap.finance/#/exchange/swap/0xf16e81dce15B08F326220742020379B855B87DF9',
@@ -19154,7 +19154,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['fUSDT'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/token/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
     buyTokenUrl:
       'https://swap.spiritswap.finance/#/exchange/swap/0x049d68029688eAbF473097a2fC38ef61633A3C7A',
@@ -19174,12 +19174,12 @@ const pools = [
     name: 'BANSHEE-FTM',
     token: 'BANSHEE-FTM LP (SpiritSwap)',
     tokenDescription: 'Banshee',
-    tokenAddress: '0xf733e2690892f38adb8c0a78f7c9c7cb38321c21',
+    tokenAddress: '0xfe17e2fe6809f499f3343c3cd0765e962734291a',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
     earnedToken: 'G-BAN-FTM-l',
-    earnedTokenAddress: '0xf421955C9BF6a0581e82588E442F2Ef9Ee5BeC02',
-    earnContractAddress: '0xf421955C9BF6a0581e82588E442F2Ef9Ee5BeC02',
+    earnedTokenAddress: '0x866113e351702b0971856918549d3ACbbEf11aC3',
+    earnContractAddress: '0x866113e351702b0971856918549d3ACbbEf11aC3',
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
@@ -19190,8 +19190,8 @@ const pools = [
     platform: 'Banshee',
     assets: ['BANSHEE', 'FTM'],
     callFee: 0.5,
-    depositFee: '1.7% from Farm Provider',
-    priceChart: 'https://info.spiritswap.finance/pair/0xf733e2690892f38adb8c0a78f7c9c7cb38321c21',
+    depositFee: '1% from Farm Provider',
+    priceChart: 'https://info.spiritswap.finance/pair/0xfe17e2fe6809f499f3343c3cd0765e962734291a',
     addLiquidityUrl:
       'https://swap.spiritswap.finance/#/add/0x0d337a5cA6250baC40d995f52cCb23ba594C50f4/FTM',
     buyTokenUrl:
@@ -19212,12 +19212,12 @@ const pools = [
     name: 'BANSHEE-USDC',
     token: 'BANSHEE-USDC LP (SpiritSwap)',
     tokenDescription: 'Banshee',
-    tokenAddress: '0xfffc5b6b83f00b59b549ca3e79d251e21cf98d40',
+    tokenAddress: '0x84219017090427d7690809cd271dbc424dc982e0',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
     earnedToken: 'G-BAN-USD-l',
-    earnedTokenAddress: '0x524AFB8ABfEE10D91D7b91601F9D3C0bdCE577AC',
-    earnContractAddress: '0x524AFB8ABfEE10D91D7b91601F9D3C0bdCE577AC',
+    earnedTokenAddress: '0xcfA8B8ed3302C07CeB1D6De0c1230df4b301538f',
+    earnContractAddress: '0xcfA8B8ed3302C07CeB1D6De0c1230df4b301538f',
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
@@ -19228,8 +19228,8 @@ const pools = [
     platform: 'Banshee',
     assets: ['BANSHEE', 'USDC'],
     callFee: 0.5,
-    depositFee: '1.7% from Farm Provider',
-    priceChart: 'https://info.spiritswap.finance/pair/0xfffc5b6b83f00b59b549ca3e79d251e21cf98d40',
+    depositFee: '1% from Farm Provider',
+    priceChart: 'https://info.spiritswap.finance/pair/0x84219017090427d7690809cd271dbc424dc982e0',
     addLiquidityUrl:
       'https://swap.spiritswap.finance/#/add/0x0d337a5cA6250baC40d995f52cCb23ba594C50f4/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
     buyTokenUrl:
@@ -19266,7 +19266,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['ETH', 'FTM'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/pair/0x613BF4E46b4817015c01c6Bb31C7ae9edAadc26e',
     addLiquidityUrl:
       'https://swap.spiritswap.finance/#/add/0x74b23882a30290451A17c44f4F05243b6b58C76d/FTM',
@@ -19304,7 +19304,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['USDC', 'FTM'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/pair/0xe7E90f5a767406efF87Fdad7EB07ef407922EC1D',
     addLiquidityUrl:
       'https://swap.spiritswap.finance/#/add/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/FTM',
@@ -19329,7 +19329,7 @@ const pools = [
     tokenAddress: '0xB32b31DfAfbD53E310390F641C7119b5B9Ea0488',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
-    earnedToken: 'G-MIM-FTM-l',
+    earnedToken: 'G-MIM-MIM-l',
     earnedTokenAddress: '0xc1253e7AC021836bbCB3E21a0444A15D98e1ce47',
     earnContractAddress: '0xc1253e7AC021836bbCB3E21a0444A15D98e1ce47',
     pricePerFullShare: 1,
@@ -19342,7 +19342,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['MIM', 'FTM'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/pair/0xB32b31DfAfbD53E310390F641C7119b5B9Ea0488',
     addLiquidityUrl:
       'https://swap.spiritswap.finance/#/add/0x82f0B8B456c1A451378467398982d4834b6829c1/FTM',
@@ -19380,7 +19380,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['MIM', 'wMEMO'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/pair/0xC9B98e4A4e306DFc24bc5b5F66e271e19Fd74c5A',
     addLiquidityUrl:
       'https://swap.spiritswap.finance/#/add/0x82f0B8B456c1A451378467398982d4834b6829c1/0xDDc0385169797937066bBd8EF409b5B3c0dFEB52',
@@ -19418,7 +19418,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['FTM', 'ICE'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/pair/0x936D23C83c2469f6a14B9f5bEaec13879598A5aC',
     addLiquidityUrl:
       'https://swap.spiritswap.finance/#/add/0xf16e81dce15B08F326220742020379B855B87DF9/FTM',
@@ -19457,7 +19457,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['FTM', 'fUSDT'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/pair/0xd14Dd3c56D9bc306322d4cEa0E1C49e9dDf045D4',
     addLiquidityUrl:
       'https://swap.spiritswap.finance/#/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/FTM',
@@ -19495,7 +19495,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['FTM', 'SPIRIT'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/pair/0x30748322B6E34545DBe0788C421886AEB5297789',
     addLiquidityUrl:
       'https://swap.spiritswap.finance/#/add/0x5Cc61A78F164885776AA610fb0FE1257df78E59B/FTM',
@@ -19533,7 +19533,7 @@ const pools = [
     platform: 'Banshee',
     assets: ['fUSDT', 'USDC'],
     callFee: 0.5,
-    depositFee: '3.4% from Farm Provider',
+    depositFee: '2% from Farm Provider',
     priceChart: 'https://info.spiritswap.finance/pair/0xe7F86CEf8FEf60ce5050899D1F8e465C00D04a79',
     addLiquidityUrl:
       'https://swap.spiritswap.finance/#/add/0x049d68029688eAbF473097a2fC38ef61633A3C7A/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
