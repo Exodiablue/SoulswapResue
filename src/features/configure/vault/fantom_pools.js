@@ -19224,7 +19224,7 @@ const pools = [
     oracleId: 'banshee-banshee-usdc',
     oraclePrice: 0,
     depositsPaused: false,
-    status: 'active',
+    status: 'eol',
     platform: 'Banshee',
     assets: ['BANSHEE', 'USDC'],
     callFee: 0.5,
