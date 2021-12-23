@@ -28,6 +28,18 @@ export const formatDailyApy = apy => {
   return `${num.toFixed(3)}${units[order]}%`;
 };
 
+export const formatBalance = (tvl, oraclePrice) => {
+  if (oraclePrice) {
+    tvl = BigNumber(tvl).times(oraclePrice).toFixed(2);
+  }
+
+  let order = Math.floor(Math.log10(tvl) / 3);
+  if (order < 0) { order = 0 }
+
+  return '$' + parseFloat(tvl).toFixed(2);;
+};
+
+
 export const formatTvl = (tvl, oraclePrice) => {
   if (oraclePrice) {
     tvl = BigNumber(tvl).times(oraclePrice).toFixed(2);

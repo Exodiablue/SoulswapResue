@@ -12,7 +12,7 @@ import { useFetchVaultsData } from '../../redux/fetchVaultsData';
 
 // import { useFetchApys, useFetchBalances, useFetchVaultsData } from '../../redux/hooks';
 import { byDecimals } from 'features/helpers/bignumber';
-import { formatTvl } from 'features/helpers/format';
+import { formatTvl, formatBalance } from 'features/helpers/format';
 import HomeLink from './HomeLink/HomeLink';
 import PoolActions from '../PoolActions/PoolActions';
 import PoolTitle from '../PoolSummary/PoolTitle/PoolTitle';
@@ -103,13 +103,13 @@ const PoolDetails = ({ vaultId }) => {
   const apy = apys[pool.id.toLowerCase()] || { totalApy: 0 };
 
   const balanceUsd =
-    balanceSingle > 0 && fetchVaultsDataDone ? formatTvl(balanceSingle, pool.oraclePrice) : '';
+    balanceSingle > 0 && fetchVaultsDataDone ? formatBalance(balanceSingle, pool.oraclePrice) : '';
   const deposited = byDecimals(
     sharesBalance.multipliedBy(new BigNumber(pool.pricePerFullShare)),
     pool.tokenDecimals
   );
   const depositedUsd =
-    deposited > 0 && fetchVaultsDataDone ? formatTvl(deposited, pool.oraclePrice) : '';
+    deposited > 0 && fetchVaultsDataDone ? formatBalance(deposited, pool.oraclePrice) : '';
 
   if (!fetchVaultsDataDone) {
     return (
