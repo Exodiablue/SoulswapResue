@@ -61,7 +61,6 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             {/* {renderLink('Github', 'Github', 'github', classes)} */}
             {/* {renderLink('Portfolio', 'Portfolio', 'chart-pie', classes)} */}
             {renderLink('Stats', 'Stats', 'sort-numeric-up', classes)}
-            {renderLink('Store', 'Store', 'tshirt', classes)}
             {renderLink('Twitter', 'Twitter', 'twitter-square', classes)}
              {/* {renderLink('dashboard', t('stats'), 'chart-bar', classes)} */}
           </Hidden>
@@ -132,7 +131,6 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             {/* <LinkSidebar name="Github" label="Github" icon="github" classes={classes} /> */}
             {/* <LinkSidebar name="Portfolio" label="Portfolio" icon="chart-pie" classes={classes} /> */}
             <LinkSidebar name="Stats" label="Stats" icon="sort-numeric-up" classes={classes} />
-            <LinkSidebar name="Store" label="Store" icon="tshit" classes={classes} />
             <LinkSidebar name="Twitter" label="Twitter" icon="twitter-square" classes={classes} />
             {/* <LinkSidebar name="dashboard" label={t('stats')} icon="chart-bar" classes={classes} /> */}
             {/* <LinkSidebar name="buy" label={t('buy')} icon="dollar-sign" classes={classes} /> */}
@@ -207,8 +205,6 @@ const getLinkUrl = name => {
   //   return 'https://beta.degen.watch/?platforms[]=grim.finance';
   if (name === 'GameFi')
     return 'https://main.dlteow40fr5xj.amplifyapp.com/';
-  if (name === 'Store')
-    return 'https://store.grim.finance/collections/all';
   // return name === 'buy'
   //   ? 'https://1inch.exchange/#/r/0xF4cb25a1FF50E319c267b3E51CBeC2699FB2A43B/BNB/BIFI/?network=56'
   //   : `https://${name}.beefy.finance`;
