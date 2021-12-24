@@ -5805,7 +5805,7 @@ const pools = [
       zapAddress: VAULT_ZAP,
       router: ZOO_ROUTER,
 
-      tokens: [...zooTokens, ...zapTokensReduced],
+      tokens: [],
     },
   },
 
